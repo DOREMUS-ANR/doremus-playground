@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Silk>
+
+  <Prefixes>
+  	<Prefix id="rdf" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#" />
+    <Prefix id="dcterms" namespace="http://dublincore.org/documents/dcmi-terms/#" />
+    <Prefix id="mus" namespace="http://data.doremus.org/ontology/" />
+    <Prefix id="cidoc-crm" namespace="http://www.cidoc-crm.org/cidoc-crm/" />
+    <Prefix id="frbroo" namespace="http://erlangen-crm.org/efrbroo/" />
+  </Prefixes>
+
+  <DataSources>
+    <DataSource type="file" id="ontoA">
+      <Param name="file" value="/Users/abderrahmanighorfitayeb/Documents/Studies/Stage/silk-singlemachine/PP.rdf" /> 
+      <Param name="format" value="RDF/XML"/>
+    </DataSource>
+    <DataSource type="file" id="ontoB">
+      <Param name="file" value="/Users/abderrahmanighorfitayeb/Documents/Studies/Stage/silk-singlemachine/BNF.rdf" />   
+      <Param name="format" value="RDF/XML"/>  
+    </DataSource>
+  </DataSources>
+<Blocking blocks="100" />
+  <Interlinks>
+    <Interlink id="oeuvres">
+      <LinkType>owl:sameAs</LinkType>
+
+      <SourceDataset dataSource="ontoA" var="a">
+        <RestrictTo>
+          ?a cidoc-crm:P102_has_title ?n .
+        </RestrictTo>
+      </SourceDataset>
+
+      <TargetDataset dataSource="ontoB" var="b">
+        <RestrictTo>
+          ?b cidoc-crm:P102_has_title ?t .
+        </RestrictTo>
+      </TargetDataset>
+
+      <LinkageRule>
+        <Aggregate type="average">
+          <Compare metric="levenshtein" threshold="1" required="true">
+            <TransformInput function="tokenize">          
+              <Input path="?a/cidoc-crm:P102_has_title" />
+            </TransformInput>
+             <TransformInput function="tokenize">
+              <Input path="?b/cidoc-crm:P102_has_title" />
+            </TransformInput>
+          </Compare>
+        </Aggregate>
+        <Filter limit="1" />
+      </LinkageRule>
+
+      
+
+      <Outputs>
+        <Output  type="file" minConfidence="0.9">
+          <Param name="file" value="accepted_9_PPBNF-titres.rdf" />
+          <Param name="format" value="alignment" />
+        </Output>
+        <Output type="file" maxConfidence="1.0">
+          <Param name="file" value="verify_PPBNF-titres.rdf" />
+          <Param name="format" value="alignment" />
+        </Output>
+      </Outputs>
+    </Interlink>
+  </Interlinks>
+
+</Silk>

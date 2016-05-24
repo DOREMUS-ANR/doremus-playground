@@ -1,0 +1,105 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://dublincore.org/documents/dcmi-terms/#"
+    xmlns:cidoc-crm="http://www.cidoc-crm.org/cidoc-crm/"
+    xmlns:frbroo="http://erlangen-crm.org/efrbroo/"
+    xmlns:mus="http://data.doremus.org/ontology/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://data.doremus.org/Self_Contained_Expression/F22/f04e2b34-cbfd-4e50-931a-ef3bdc490a62">
+    <mus:U16_has_catalogue_statement rdf:nodeID="A0"/>
+    <frbroo:R45i_was_assigned_by rdf:resource="http://data.doremus.org/Identifier_Assignment/F40/4378d00a-6188-48e4-b352-313e205c3cf8"/>
+    <cidoc-crm:P3_has_note>Pièce avec musique en 3 actesLe compositeur en a tiré une suite pour instruments à vent intitulée "Kleine Dreigroschenmusik"</cidoc-crm:P3_has_note>
+    <mus:U17_has_opus_statement rdf:nodeID="A1"/>
+    <frbroo:R17i_was_created_by rdf:resource="http://data.doremus.org/Expression_Creation/F28/4845325f-74de-4598-bfc3-5e944656d62c"/>
+    <cidoc-crm:P102_has_title xml:lang="ger">Drei Klavierstücke</cidoc-crm:P102_has_title>
+    <mus:U12_has_genre rdf:nodeID="A2"/>
+    <cidoc-crm:P67_refers_to rdf:nodeID="A3"/>
+    <cidoc-crm:P102_has_title xml:lang="gerger">3 Klavierstücke</cidoc-crm:P102_has_title>
+    <mus:U16_has_catalogue_statement rdf:nodeID="A4"/>
+    <mus:U17_has_opus_statement rdf:nodeID="A5"/>
+    <cidoc-crm:P67_refers_to rdf:nodeID="A6"/>
+    <frbroo:R40i_is_representative_expression_of rdf:resource="http://data.doremus.org/Complex_Work/F15/6bf0b1b7-07f8-4a33-82dc-23500033e879"/>
+    <cidoc-crm:P102_has_title xml:lang="freeng">The threepenny opera</cidoc-crm:P102_has_title>
+    <cidoc-crm:P3_has_note>Tonalités : mi bémol mineur, mi bémol majeur, do majeur</cidoc-crm:P3_has_note>
+    <cidoc-crm:P102_has_title xml:lang="ger">Die Dreigroschenoper</cidoc-crm:P102_has_title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Identifier_Assignment/F40/4378d00a-6188-48e4-b352-313e205c3cf8">
+    <frbroo:R45_assigned_to rdf:resource="http://data.doremus.org/Self_Contained_Expression/F22/f04e2b34-cbfd-4e50-931a-ef3bdc490a62"/>
+    <cidoc-crm:P14_carried_out_by rdf:resource="http://isni.org/isni/0000000121751303"/>
+    <frbroo:R52_used_rule>NF Z 44-079 (Novembre 1993) - Documentation - Catalogage- Forme et structure des vedettes titres musicaux</frbroo:R52_used_rule>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Representative_Expression_Assignment/F42/84d8be5f-bfaa-4cb3-a1c8-1534218ce2a2">
+    <frbroo:R44_carried_out_by rdf:resource="http://isni.org/isni/0000000121751303"/>
+    <frbroo:R50_assigned_to rdf:resource="http://data.doremus.org/Complex_Work/F15/6bf0b1b7-07f8-4a33-82dc-23500033e879"/>
+    <frbroo:R51_assigned rdf:resource="http://data.doremus.org/Self_Contained_Expression/F22/f04e2b34-cbfd-4e50-931a-ef3bdc490a62"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <cidoc-crm:P131_is_identified_by>Schubert,Franz(1797-1828)</cidoc-crm:P131_is_identified_by>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time_Span"/>
+    <cidoc-crm:P82_at_some_time_within rdf:datatype="http://dublincore.org/documents/dcmi-terms/#terms-W3CDTF">19280101/19281231</cidoc-crm:P82_at_some_time_within>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_activity"/>
+    <cidoc-crm:U35_had_function_of_type>compositeur</cidoc-crm:U35_had_function_of_type>
+    <cidoc-crm:P14_carried_out_by rdf:nodeID="A10"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <cidoc-crm:P3_has_note>D 946</cidoc-crm:P3_has_note>
+    <cidoc-crm:P106_is_composed_of>D</cidoc-crm:P106_is_composed_of>
+    <cidoc-crm:P106_is_composed_of>946</cidoc-crm:P106_is_composed_of>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <cidoc-crm:P131_is_identified_by>Weill,Kurt(1900-1950)</cidoc-crm:P131_is_identified_by>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <cidoc-crm:P1_is_identified_by xml:lang="fr">opéra</cidoc-crm:P1_is_identified_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Performance_Plan/F25/e6fce1c9-7377-4021-8489-2f1fac24e986">
+    <frbroo:R25i_was_performed_by rdf:resource="http://data.doremus.org/Performance/F31/54180338-9d7e-42ba-8d42-f3a48db623ed"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Expression_Creation/F28/4845325f-74de-4598-bfc3-5e944656d62c">
+    <frbroo:R19_created_a_realisation_of rdf:resource="http://data.doremus.org/Individual_Work/F14/7ed6c7e3-cbbf-4f84-8395-47c27f38a09a"/>
+    <frbroo:R17_created rdf:resource="http://data.doremus.org/Self_Contained_Expression/F22/f04e2b34-cbfd-4e50-931a-ef3bdc490a62"/>
+    <cidoc-crm:P4_has_time_span rdf:nodeID="A8"/>
+    <frbroo:R17_created>http://data.doremus.org/Performance/F31/b99ae144-5715-49b9-9993-45dda0d14a90</frbroo:R17_created>
+    <cidoc-crm:P9_consists_of rdf:nodeID="A9"/>
+    <cidoc-crm:P4_has_time_span rdf:nodeID="A11"/>
+    <cidoc-crm:P9_consists_of rdf:nodeID="A12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Performance_Plan/F25/eb73600a-12e5-4aca-9ec3-c8e04bdf75ca">
+    <frbroo:R25i_was_performed_by>http://data.doremus.org/Performance/F31/b99ae144-5715-49b9-9993-45dda0d14a90</frbroo:R25i_was_performed_by>
+    <frbroo:R25i_was_performed_by rdf:resource="http://data.doremus.org/Performance/F31/b99ae144-5715-49b9-9993-45dda0d14a90"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Individual_Work/F14/7ed6c7e3-cbbf-4f84-8395-47c27f38a09a">
+    <mus:U5_had_premiere>http://data.doremus.org/Performance/F31/b99ae144-5715-49b9-9993-45dda0d14a90</mus:U5_had_premiere>
+    <frbroo:R10i_is_member_of rdf:resource="http://data.doremus.org/Complex_Work/F15/6bf0b1b7-07f8-4a33-82dc-23500033e879"/>
+    <frbroo:R19i_was_realised_through rdf:resource="http://data.doremus.org/Expression_Creation/F28/4845325f-74de-4598-bfc3-5e944656d62c"/>
+    <frbroo:R9_is_realised_in rdf:resource="http://data.doremus.org/Self_Contained_Expression/F22/f04e2b34-cbfd-4e50-931a-ef3bdc490a62"/>
+    <frbroo:R45i_was_assigned_by rdf:resource="http://data.doremus.org/Identifier_Assignment/F40/4378d00a-6188-48e4-b352-313e205c3cf8"/>
+    <mus:U4_had_princeps_publication rdf:resource="http://data.doremus.org/Publication_Event/F30/12c67881-765b-4240-8a43-cf6cabb06e2e"/>
+    <mus:U5_had_premiere rdf:resource="http://data.doremus.org/Performance/F31/b99ae144-5715-49b9-9993-45dda0d14a90"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Publication_Event/F30/12c67881-765b-4240-8a43-cf6cabb06e2e">
+    <frbroo:R19_created_a_realisation_of rdf:resource="http://data.doremus.org/Publication_Work/F19/c30cef4b-4b37-4b83-88c4-b4716f7c4d1c"/>
+    <mus:U4i_is_princeps_publication_of rdf:resource="http://data.doremus.org/Individual_Work/F14/7ed6c7e3-cbbf-4f84-8395-47c27f38a09a"/>
+    <frbroo:R24_created rdf:resource="http://data.doremus.org/Publication_Expression/F24/6d5aad90-14a4-4b03-a2f7-cc1f6eb88115"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Complex_Work/F15/6bf0b1b7-07f8-4a33-82dc-23500033e879">
+    <frbroo:R10_has_member rdf:resource="http://data.doremus.org/Individual_Work/F14/7ed6c7e3-cbbf-4f84-8395-47c27f38a09a"/>
+    <frbroo:R40_has_representative_expression rdf:resource="http://data.doremus.org/Self_Contained_Expression/F22/f04e2b34-cbfd-4e50-931a-ef3bdc490a62"/>
+    <frbroo:R45i_was_assigned_by rdf:resource="http://data.doremus.org/Identifier_Assignment/F40/4378d00a-6188-48e4-b352-313e205c3cf8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time_Span"/>
+    <cidoc-crm:P82_at_some_time_within rdf:datatype="http://dublincore.org/documents/dcmi-terms/#terms-W3CDTF">18280501/18280531</cidoc-crm:P82_at_some_time_within>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_activity"/>
+    <cidoc-crm:U35_had_function_of_type>compositeur</cidoc-crm:U35_had_function_of_type>
+    <cidoc-crm:P14_carried_out_by rdf:nodeID="A7"/>
+  </rdf:Description>
+</rdf:RDF>

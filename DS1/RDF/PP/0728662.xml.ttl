@@ -1,0 +1,177 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://dublincore.org/documents/dcmi-terms/#"
+    xmlns:cidoc-crm="http://www.cidoc-crm.org/cidoc-crm/"
+    xmlns:frbroo="http://erlangen-crm.org/efrbroo/"
+    xmlns:mus="http://data.doremus.org/ontology/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://data.doremus.org/Performance_Plan/F25/81583095-0b48-420e-86e7-0ec4edb585a6">
+    <frbroo:R25i_was_performed_by rdf:resource="http://data.doremus.org/Performance/F31/56b0178f-2c60-4ee6-b126-a13ec9b1a5bf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
+    <cidoc-crm:P1_is_identified_by>20 ème siècle - 2 ème moitié</cidoc-crm:P1_is_identified_by>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <cidoc-crm:P131_is_identified_by>Boulez,Pierre(1925-2016)</cidoc-crm:P131_is_identified_by>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time_Span"/>
+    <cidoc-crm:P82_at_some_time_within rdf:datatype="http://dublincore.org/documents/dcmi-terms/#terms-W3CDTF">1828</cidoc-crm:P82_at_some_time_within>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <cidoc-crm:P3_has_note>20041206</cidoc-crm:P3_has_note>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <cidoc-crm:P131_is_identified_by>Schubert,Franz(1797-1828)</cidoc-crm:P131_is_identified_by>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Representative_Expression_Assignment/F42/f2cef268-c2a3-4ef7-b500-358ffeea3f71">
+    <frbroo:R44_carried_out_by rdf:resource="http://data.doremus.org/Philharmonie_de_Paris"/>
+    <frbroo:R50_assigned_to rdf:resource="http://data.doremus.org/Complex_Work/F15/c589ad7e-148a-4508-aab2-a4da4daf3fad"/>
+    <frbroo:R51_assigned rdf:resource="http://data.doremus.org/Self_Contained_Expression/F22/9246054e-6b8d-4135-836c-5019128e0b53"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Individual_Work/F14/dc7b61d3-2c10-4273-93fb-e626fb832371">
+    <frbroo:R10i_is_member_of rdf:resource="http://data.doremus.org/Complex_Work/F15/c589ad7e-148a-4508-aab2-a4da4daf3fad"/>
+    <frbroo:R19i_was_realised_through rdf:resource="http://data.doremus.org/Expression_Creation/F28/71240c33-7a19-4397-93be-b62d0d1c6371"/>
+    <frbroo:R9_is_realised_in rdf:resource="http://data.doremus.org/Self_Contained_Expression/F22/9246054e-6b8d-4135-836c-5019128e0b53"/>
+    <frbroo:R45i_was_assigned_by rdf:resource="http://data.doremus.org/Identifier_Assignment/F40/79d2c77e-53c7-4696-895d-0a5fb30924c6"/>
+    <cidoc-crm:P1_is_identified_by rdf:resource="http://data.doremus.org/Controlled_Access_Point/F50/b4bea58d-2a1a-4f0f-a071-fbabb2e9d79e"/>
+    <mus:U5_had_premiere rdf:resource="http://data.doremus.org/Performance/F31/4a3f8c6c-fe2d-48f8-a439-e51d8153ff1c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Expression_Creation/F28/71240c33-7a19-4397-93be-b62d0d1c6371">
+    <cidoc-crm:P4_has_time_span rdf:nodeID="A2"/>
+    <cidoc-crm:P3_has_note>Mai 1828</cidoc-crm:P3_has_note>
+    <cidoc-crm:P4_has_time_span rdf:nodeID="A5"/>
+    <cidoc-crm:P10_falls_within rdf:nodeID="A0"/>
+    <cidoc-crm:P4_has_time_span rdf:nodeID="A6"/>
+    <frbroo:R17_created rdf:resource="http://data.doremus.org/Performance_Plan/F25/4c43aaea-e509-4325-a4c8-ee38b2151898"/>
+    <cidoc-crm:P9_consists_of rdf:nodeID="A7"/>
+    <frbroo:R19_created_a_realisation_of rdf:resource="http://data.doremus.org/Individual_Work/F14/dc7b61d3-2c10-4273-93fb-e626fb832371"/>
+    <cidoc-crm:P9_consists_of rdf:nodeID="A8"/>
+    <cidoc-crm:P3_has_note>CITE MUSIQUE</cidoc-crm:P3_has_note>
+    <cidoc-crm:P9_consists_of rdf:nodeID="A9"/>
+    <cidoc-crm:P3_has_note>1928</cidoc-crm:P3_has_note>
+    <frbroo:R17_created rdf:resource="http://data.doremus.org/Performance_Plan/F25/81583095-0b48-420e-86e7-0ec4edb585a6"/>
+    <frbroo:R17_created rdf:resource="http://data.doremus.org/Self_Contained_Expression/F22/9246054e-6b8d-4135-836c-5019128e0b53"/>
+    <cidoc-crm:P3_has_note>1981-1984</cidoc-crm:P3_has_note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Complex_Work/F15/c589ad7e-148a-4508-aab2-a4da4daf3fad">
+    <frbroo:R10_has_member rdf:resource="http://data.doremus.org/Individual_Work/F14/dc7b61d3-2c10-4273-93fb-e626fb832371"/>
+    <frbroo:R40_has_representative_expression rdf:resource="http://data.doremus.org/Self_Contained_Expression/F22/9246054e-6b8d-4135-836c-5019128e0b53"/>
+    <frbroo:R45i_was_assigned_by rdf:resource="http://data.doremus.org/Identifier_Assignment/F40/79d2c77e-53c7-4696-895d-0a5fb30924c6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <cidoc-crm:P3_has_note>D 946</cidoc-crm:P3_has_note>
+    <cidoc-crm:P106_is_composed_of>D</cidoc-crm:P106_is_composed_of>
+    <cidoc-crm:P106_is_composed_of>946</cidoc-crm:P106_is_composed_of>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_activity"/>
+    <cidoc-crm:U35_had_function_of_type>compositeur</cidoc-crm:U35_had_function_of_type>
+    <cidoc-crm:P14_carried_out_by rdf:nodeID="A11"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <cidoc-crm:P3_has_note>20040721</cidoc-crm:P3_has_note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Identifier_Assignment/F40/79d2c77e-53c7-4696-895d-0a5fb30924c6">
+    <cidoc-crm:P2_has_Type>Variante</cidoc-crm:P2_has_Type>
+    <cidoc-crm:P2_has_Type>Point d'accès privilégié</cidoc-crm:P2_has_Type>
+    <frbroo:R52_used_rule>Usages de la Philharmonie de Paris</frbroo:R52_used_rule>
+    <cidoc-crm:P14_carried_out_by rdf:resource="http://data.doremus.org/Philharmonie_de_Paris"/>
+    <frbroo:R52_used_rule>NF Z 44-079 (Novembre 1993) - Documentation - Catalogage- Forme et structure des vedettes titres musicaux</frbroo:R52_used_rule>
+    <frbroo:R46_assigned>0301303</frbroo:R46_assigned>
+    <frbroo:R46_assigned>0732531</frbroo:R46_assigned>
+    <frbroo:R45_assigned_to rdf:resource="http://data.doremus.org/Self_Contained_Expression/F22/9246054e-6b8d-4135-836c-5019128e0b53"/>
+    <frbroo:R46_assigned rdf:resource="http://data.doremus.org/Controlled_Access_Point/F50/b4bea58d-2a1a-4f0f-a071-fbabb2e9d79e"/>
+    <frbroo:R46_assigned>0728661</frbroo:R46_assigned>
+    <frbroo:R46_assigned>0728662</frbroo:R46_assigned>
+    <frbroo:R46_assigned>0301484</frbroo:R46_assigned>
+    <frbroo:R46_assigned>0182286</frbroo:R46_assigned>
+    <cidoc-crm:P2_has_Type>N° de notice</cidoc-crm:P2_has_Type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <cidoc-crm:P1_is_identified_by xml:lang="fr">Chanson politique</cidoc-crm:P1_is_identified_by>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <cidoc-crm:P3_has_note>20050103</cidoc-crm:P3_has_note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Performance/F31/4a3f8c6c-fe2d-48f8-a439-e51d8153ff1c">
+    <cidoc-crm:P3_has_note>Créé à Berlin, Theater am Schiffbauerdamm, le 31 août 1928, avec Lotte Lenya (soprano)</cidoc-crm:P3_has_note>
+    <cidoc-crm:P3_has_note>Première édition : 1868</cidoc-crm:P3_has_note>
+    <cidoc-crm:P3_has_note>Dates</cidoc-crm:P3_has_note>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time_Span"/>
+    <cidoc-crm:P82_at_some_time_within rdf:datatype="http://dublincore.org/documents/dcmi-terms/#terms-W3CDTF">1981/1984</cidoc-crm:P82_at_some_time_within>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_activity"/>
+    <cidoc-crm:U35_had_function_of_type>compositeur</cidoc-crm:U35_had_function_of_type>
+    <cidoc-crm:P14_carried_out_by rdf:nodeID="A1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <cidoc-crm:P3_has_note>2 pianos solos, harpe solo, cymbalum solo, vibraphone solo, xylophone/glockenspiel solo, 2 flûte/flûte piccolo, 2 hautbois, 2 clarinettes, clarinette basse, 2 bassons, 2 cors, 2 trompettes, 2 trombones ténor-basse, tuba, 3 violons, 2 altos, 2 violoncelles, contrebasse, ordinateur en temps réel.</cidoc-crm:P3_has_note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Self_Contained_Expression/F22/9246054e-6b8d-4135-836c-5019128e0b53">
+    <mus:U13_has_casting rdf:nodeID="A15"/>
+    <mus:U13_has_casting rdf:nodeID="A14"/>
+    <frbroo:R45i_was_assigned_by rdf:resource="http://data.doremus.org/Identifier_Assignment/F40/79d2c77e-53c7-4696-895d-0a5fb30924c6"/>
+    <frbroo:R17i_was_created_by rdf:resource="http://data.doremus.org/Expression_Creation/F28/71240c33-7a19-4397-93be-b62d0d1c6371"/>
+    <cidoc-crm:P102_has_title>L'opéra de quat'sous</cidoc-crm:P102_has_title>
+    <cidoc-crm:P102_has_title>3 Klavierstücke</cidoc-crm:P102_has_title>
+    <frbroo:R40i_is_representative_expression_of rdf:resource="http://data.doremus.org/Complex_Work/F15/c589ad7e-148a-4508-aab2-a4da4daf3fad"/>
+    <cidoc-crm:P3_has_note>Les trois Klavierstücke D 946 sont d'une forme presque identique : une sorte de rondo (c'est-à-dire un thème-refrain initial entrecoupé de deux ou trois couplets différents). L'enchaînement de leurs tonalités, ainsi que la succession des tempos (vif-lent-vif ), incite à les considérer comme une sorte de sonate. Mais chacun d'eux se présente aussi de façon fermée, comme un univers poétique et dramatique parfaitement indépendant. Durée d'exécution : 25 minutes environ. Première édition : 1868</cidoc-crm:P3_has_note>
+    <cidoc-crm:P102_has_title>Répons</cidoc-crm:P102_has_title>
+    <mus:U13_has_casting rdf:nodeID="A3"/>
+    <mus:U16_has_catalogue_statement rdf:nodeID="A10"/>
+    <cidoc-crm:P3_has_note>Opéra en 3 actes composé sur un livret de . Créé à Berlin, Theater am Schiffbauerdamm, le 31 août 1928, avec Lotte Lenya (soprano)</cidoc-crm:P3_has_note>
+    <cidoc-crm:P3_has_note>FR. </cidoc-crm:P3_has_note>
+    <cidoc-crm:P165i_is_incorporated_in rdf:resource="http://data.doremus.org/Performance_Plan/F25/81583095-0b48-420e-86e7-0ec4edb585a6"/>
+    <mus:U12_has_genre rdf:nodeID="A13"/>
+    <cidoc-crm:P102_has_title>Die Dreigroschenoper</cidoc-crm:P102_has_title>
+    <mus:U13_has_casting rdf:nodeID="A16"/>
+    <cidoc-crm:P102_has_title>Trois pièces</cidoc-crm:P102_has_title>
+    <cidoc-crm:P1_is_identified_by rdf:resource="http://data.doremus.org/Controlled_Access_Point/F50/b4bea58d-2a1a-4f0f-a071-fbabb2e9d79e"/>
+    <cidoc-crm:P102_has_title>Repons</cidoc-crm:P102_has_title>
+    <mus:U13_has_casting rdf:nodeID="A12"/>
+    <cidoc-crm:P3_has_note>Extrait du commentaire de l'auteur : Le titre "Répons" fait référence selon les propres mots du compositeur à "son inclination envers des procédés dérivés de la musique médiévale". Pierre Boulez a conçu Répons comme un "work in progress". Dans son état actuel l'oeuvre comporte huit sections s'enchaînant sans interruption. Les six solistes entourent le public. Leurs sons captés par des microphones sont transformés en temps réel par un système informatique qui consiste essentiellement en des modifications de timbres, de textures, des réinjections et des spatialisations des événements musicaux que produisent les solistes. Au centre, un ensemble de 24 musiciens, dirigé classiquement par le chef, produit une musique basée sur des tempos contrôlés. Durée : 44 minutes. Dates</cidoc-crm:P3_has_note>
+    <mus:U11_has_key rdf:nodeID="A17"/>
+    <mus:U16_has_catalogue_statement rdf:nodeID="A18"/>
+    <cidoc-crm:P102_has_title>Drei Klavierstücke</cidoc-crm:P102_has_title>
+    <cidoc-crm:P102_has_title>L'Opéra de cuat'sous</cidoc-crm:P102_has_title>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_activity"/>
+    <cidoc-crm:U35_had_function_of_type>compositeur</cidoc-crm:U35_had_function_of_type>
+    <cidoc-crm:P14_carried_out_by rdf:nodeID="A4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Performance_Plan/F25/4c43aaea-e509-4325-a4c8-ee38b2151898">
+    <frbroo:R25i_was_performed_by rdf:resource="http://data.doremus.org/Performance/F31/4a3f8c6c-fe2d-48f8-a439-e51d8153ff1c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.doremus.org/Publication_Event/F30/9095e399-10af-4ab0-97cd-6cfbb8f6dbdf">
+    <frbroo:R19_created_a_realisation_of rdf:resource="http://data.doremus.org/Publication_Work/F19/a36d4baf-ba19-4e3b-85f4-a5c1c4ec9224"/>
+    <mus:U4i_is_princeps_publication_of rdf:resource="http://data.doremus.org/Individual_Work/F14/dc7b61d3-2c10-4273-93fb-e626fb832371"/>
+    <frbroo:R24_created rdf:resource="http://data.doremus.org/Publication_Expression/F24/5cb29faa-afe1-42e8-abe8-ee72235a09dc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <cidoc-crm:P1_is_identified_by xml:lang="fr">no 1 en mi bémol mineur. no 2 en mi bémol majeur. no 3 en do majeur</cidoc-crm:P1_is_identified_by>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time_Span"/>
+    <cidoc-crm:P82_at_some_time_within rdf:datatype="http://dublincore.org/documents/dcmi-terms/#terms-W3CDTF">1928</cidoc-crm:P82_at_some_time_within>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <cidoc-crm:P3_has_note>D 946D 346</cidoc-crm:P3_has_note>
+    <cidoc-crm:P106_is_composed_of>DD</cidoc-crm:P106_is_composed_of>
+    <cidoc-crm:P106_is_composed_of>946346</cidoc-crm:P106_is_composed_of>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <cidoc-crm:P131_is_identified_by>Weill,Kurt(1900-1950)</cidoc-crm:P131_is_identified_by>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <cidoc-crm:P3_has_note>Rôles : Jenny, Lucy, Polly (sopranos) ; Frau Peachum (alto) ; Macheath (ténor) ; Brown, Jonathan Peachum, Moritätensänger (barytons)</cidoc-crm:P3_has_note>
+  </rdf:Description>
+</rdf:RDF>
