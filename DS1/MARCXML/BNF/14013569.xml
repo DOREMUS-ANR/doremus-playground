@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="14013569" format="InterXMarc_Complet" type="Authority">
+<leader>01228c0 au22000272  45  <Pos Code="0004">01228</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF140135697<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">14013569</Pos>
+<Pos Code="13">7</Pos>
+</controlfield>
+<controlfield tag="008">980914091022yy    co        1981      1984                   010 <Pos Code="0001">98</Pos>
+<Pos Code="0203">09</Pos>
+<Pos Code="0405">14</Pos>
+<Pos Code="0607">09</Pos>
+<Pos Code="0809">10</Pos>
+<Pos Code="1011">22</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820">co </Pos>
+<Pos Code="2831">1981</Pos>
+<Pos Code="3841">1984</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="b">ka02<Pos Code="0001" Sens="clavier - piano">ka</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="b">ta01<Pos Code="0001" Sens="cordes pincées - harpe">ta</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="b">tz01<Pos Code="0001" Sens="cordes pincées - autre">tz</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="b">pz02<Pos Code="0001" Sens="percussion - autre">pz</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">ob01<Pos Code="0001" Sens="orchestre - orchestre de chambre">ob</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">eb01<Pos Code="0001" Sens="musique électronique - bande magnétique">eb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13891735</subfield>
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Boulez</subfield>
+	<subfield code="m">Pierre</subfield>
+	<subfield code="d">1925-....</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Répons</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Sous-titre : &quot;pour six solistes, ensemble de chambre, sons électroniques et électronique en direct&quot;</subfield>
+	<subfield code="a">Dédicace : &quot;À Alfred Schlee, pour son 80e anniversaire&quot;</subfield>
+	<subfield code="a">Date de composition : 1981</subfield>
+	<subfield code="a">Dates de révision : 1982 et 1984</subfield>
+	<subfield code="a">1re exécution (version originale de 1981) : Donaueschingen (Allemagne), 18 Octobre 1981, par Vincent Bauer, Daniel Ciampolini (percussions), Michel Cerutti (cymbalum), Pierre-Laurent Aimard, Alain Neveux (pianos), Marie-Claire Jamet (harpe), Ensemble intercontemporain, sous la direction de Pierre Boulez</subfield>
+	<subfield code="a">1re exécution (version révisée de 1982) : Londres, 6 septembre 1982</subfield>
+	<subfield code="a">1re exécution (version révisée de 1984) : Turin, 22 Septembre 1984</subfield>
+</datafield>
+<datafield tag="608" ind1=" " ind2=" ">
+	<subfield code="a">cymbalum solo (1)</subfield>
+	<subfield code="a">glockenspiel solo (1)</subfield>
+	<subfield code="a">vibraphone solo (1)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove music online</subfield>
+	<subfield code="u">http://www.oxfordmusiconline.com</subfield>
+	<subfield code="d">2009-10-22</subfield>
+	<subfield code="a">Ircam</subfield>
+	<subfield code="u">http://brahms.ircam.fr/</subfield>
+	<subfield code="d">2009-10-22</subfield>
+</datafield>
+<datafield tag="624" ind1=" " ind2=" ">
+	<subfield code="a">780<Pos Code="0002" Sens="Musique">780</Pos>
+</subfield>
+</datafield>
+<datafield tag="907" ind1=" " ind2=" ">
+	<subfield code="o">GEA</subfield>
+	<subfield code="a">00235332X</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPL</subfield>
+	<subfield code="a">004644754</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">101532430</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100419790</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14815859</subfield>
+	<subfield code="d">20080307</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb140135690</Attr>
+<Attr Nom="NumSource">GEA 00235332X</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13891735</Attr>
+<Attr Nom="DateCreation">14/09/ 1998</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">14/09/ 1998</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource" Rep="1">OPL 004644754</Attr>
+<Attr Nom="NumSource" Rep="2">OPC 101532430</Attr>
+<Attr Nom="NumSource" Rep="3">OPD 100419790</Attr>
+<Attr Nom="NumSource" Rep="4">OPP 14815859</Attr>
+</record>

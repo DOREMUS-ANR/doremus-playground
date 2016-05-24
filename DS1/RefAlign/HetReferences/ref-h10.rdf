@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:mus="http://data.doremus.org/ontology/">
+<Alignment>
+<xml>yes</xml>
+<level>0</level>
+<type>??</type>
+<map>
+<Cell>
+<entity1 rdf:resource="http://data.doremus.org/Self_Contained_Expression/F22/c8b857af-92c9-4681-b48a-92f2f4eb423c"/>
+<entity2 rdf:resource="http://data.doremus.org/Self_Contained_Expression/F22/4c3732f0-00e0-41e8-bc56-e288ac6b1d2b"/>
+<measure rdf:datatype="xsd:float">1.0</measure>
+<relation>=</relation>
+<heterogeneity>h10</heterogeneity>
+</Cell>
+</map>
+</Alignment>
+</rdf:RDF>
