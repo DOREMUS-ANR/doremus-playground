@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/169972dd-fd38-3755-845a-9f1999be7489>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1959" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1959"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c543bf3a-8b26-38c1-bd6b-b2b68dccbb17>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f8b995bf-c5dd-3742-9aa0-7df6606c4b9b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d9edb433-6add-3f42-987b-2ecc6f68a292> .
+
+<http://data.doremus.org/artist/c543bf3a-8b26-38c1-bd6b-b2b68dccbb17>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/532dcfdf-3100-357d-91b3-ebcac6ac56d7>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Donaueschingen, le 17 octobre 1959, lors d'un concert en hommage au prince Max Egon" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/2fb785e4-938f-3762-a356-d94ed054faf3> .
+
+<http://data.doremus.org/expression/f8b995bf-c5dd-3742-9aa0-7df6606c4b9b>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/f8b995bf-c5dd-3742-9aa0-7df6606c4b9b/casting/1> ;
+        ecrm:P102_has_title  "Epitaphe" , "Epitaphe pour flûte, clarinette et harpe" , "Epitaphium" ;
+        ecrm:P3_has_note     "Cette Epitaphe de sept strophes \"à la mémoire du prince Max Egon de Fürstenberg\" a été écrite en avril 1959, peu après la mort de ce dernier, fondateur des Journées Musicales de Donaueschingen. Durée d'exécution : 1minute et 15 secondes environ" , "Créé à Donaueschingen, le 17 octobre 1959, lors d'un concert en hommage au prince Max Egon" .
+
+<http://data.doremus.org/expression/2fb785e4-938f-3762-a356-d94ed054faf3>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f8b995bf-c5dd-3742-9aa0-7df6606c4b9b> .
+
+<http://data.doremus.org/work/8f76ac7b-de3e-3ca1-8a0a-ae783da92326>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d9edb433-6add-3f42-987b-2ecc6f68a292> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f8b995bf-c5dd-3742-9aa0-7df6606c4b9b> .
+
+<http://data.doremus.org/work/d9edb433-6add-3f42-987b-2ecc6f68a292>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/532dcfdf-3100-357d-91b3-ebcac6ac56d7> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f8b995bf-c5dd-3742-9aa0-7df6606c4b9b> .
+
+<http://data.doremus.org/event/0651ebc9-b13c-3a5d-8f53-7e07956fe80d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8f76ac7b-de3e-3ca1-8a0a-ae783da92326> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f8b995bf-c5dd-3742-9aa0-7df6606c4b9b> .
+
+<http://data.doremus.org/expression/f8b995bf-c5dd-3742-9aa0-7df6606c4b9b/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Flûte, clarinette et harpe" .

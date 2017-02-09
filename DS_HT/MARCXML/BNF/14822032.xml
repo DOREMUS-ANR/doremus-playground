@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="14822032" format="InterXMarc_Complet" type="Authority">
+<leader>00517c0 au22000272  45  <Pos Code="0004">00517</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF148220320<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">14822032</Pos>
+<Pos Code="13">0</Pos>
+</controlfield>
+<controlfield tag="008">011227130731yy    qui       1891                             010 <Pos Code="0001">01</Pos>
+<Pos Code="0203">12</Pos>
+<Pos Code="0405">27</Pos>
+<Pos Code="0607">13</Pos>
+<Pos Code="0809">07</Pos>
+<Pos Code="1011">31</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820" Sens="quintette instrumental">qui</Pos>
+<Pos Code="2831">1891</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">wc01<Pos Code="0001" Sens="instruments à vent - clarinette">wc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">sa02<Pos Code="0001" Sens="cordes frottées - violon">sa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">sb01<Pos Code="0001" Sens="cordes frottées - alto">sb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">sc01<Pos Code="0001" Sens="cordes frottées - violoncelle">sc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13891799</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Brahms</subfield>
+	<subfield code="m">Johannes</subfield>
+	<subfield code="d">1833-1897</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Quintettes</subfield>
+	<subfield code="b">Clarinette, quatuor à cordes</subfield>
+	<subfield code="p">Op. 115</subfield>
+	<subfield code="t">Si mineur</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Date de composition : 1891</subfield>
+	<subfield code="a">1re éd. : Berlin : N. Simrock, 1892</subfield>
+</datafield>
+<datafield tag="608" ind1=" " ind2=" ">
+	<subfield code="a">clarinette ou alto</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">McCorkle, Brahms</subfield>
+</datafield>
+<datafield tag="624" ind1=" " ind2=" ">
+	<subfield code="a">780<Pos Code="0002" Sens="Musique">780</Pos>
+</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100488050</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPL</subfield>
+	<subfield code="a">01371093X</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100373530</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">13908861</subfield>
+	<subfield code="d">20090115</subfield>
+</datafield>
+<Alter Ori="13891799">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">...2b.....</subfield>
+	<subfield code="a">Marks</subfield>
+	<subfield code="m">G. W.</subfield>
+	<subfield code="d">1833-1897</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb14822032m</Attr>
+<Attr Nom="NumSource">OPD 100488050</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13891799</Attr>
+<Attr Nom="DateCreation">27/12/ 2001</Attr>
+<Attr Nom="ResponsableCreation">MIGV3</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">31/07/ 2013</Attr>
+<Attr Nom="ResponsableDerniereValidation">GOY FRANCOIS</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">27/12/ 2001</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV3</Attr>
+<Attr Nom="StructDerniereValidation">37</Attr>
+<Attr Nom="NumSource" Rep="1">OPL 01371093X</Attr>
+<Attr Nom="NumSource" Rep="2">OPC 100373530</Attr>
+<Attr Nom="NumSource" Rep="3">OPP 13908861</Attr>
+</record>

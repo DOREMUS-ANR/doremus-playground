@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/eacbcdfb-d419-3669-b539-6765460393fa>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "4" ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/eacbcdfb-d419-3669-b539-6765460393fa/casting/1> ;
+        ecrm:P102_has_title       "Pièce pour piano X" , "Klavierstück 10" , "Klavierstuck X" ;
+        ecrm:P3_has_note          "Commençé en 1954, ce dixième Klavierstück ne fut achevé qu'en 1961. Il se distingue de l'ensemble des \"Klavierstücke\" par son ampleur et sa grande éloquence instrumentale (de très nombreux clusters, glissandis, utilisation des touches muettes, très longues plages de résonnance). Il fera appel, outre l'utilisation de la main, au poignet, avant bras et bras du pianiste dans des formations de clusters très diversifiées. Basé sur le chiffre sept (sept sections divisées elles-mêmes en 7 sous-sections), ce Klaviertück utilise une série de sept chiffres (et non de hauteurs) permettant de créer des relations numériques entre les élèments constitutifs (nombre de notes des clusters ou des accords, rythmes etc).L'idée conductrice de l'oeuvre (qui utilise une notation très particulière) est, selon Stockhausen, une mise en rapport entre ordre et désordre, rapport structuré et unifié par la série de sept chiffres." , "10 Octobre 1962, à Palerme , par Frederic Rzewski" .
+
+<http://data.doremus.org/artist/e5e49d54-4a2a-354b-a6d1-3f9d2090ef64>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/6ff901a9-c3de-3736-9a64-069fefe2be57>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/eacbcdfb-d419-3669-b539-6765460393fa> .
+
+<http://data.doremus.org/work/77e214ae-c15c-34e2-804d-23944eec6a55>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/17329af9-b505-3f4b-b8c1-36b03366c2b8> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/eacbcdfb-d419-3669-b539-6765460393fa> .
+
+<http://data.doremus.org/work/2d8396aa-8ba8-3335-8f46-0db755788096>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/77e214ae-c15c-34e2-804d-23944eec6a55> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/eacbcdfb-d419-3669-b539-6765460393fa> .
+
+<http://data.doremus.org/performance/17329af9-b505-3f4b-b8c1-36b03366c2b8>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "10 Octobre 1962, à Palerme , par Frederic Rzewski" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/6ff901a9-c3de-3736-9a64-069fefe2be57> .
+
+<http://data.doremus.org/expression/eacbcdfb-d419-3669-b539-6765460393fa/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/event/9c2a7faa-ac95-3005-b4a3-84e4416978a3>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1954-1961" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1954/1961"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/e5e49d54-4a2a-354b-a6d1-3f9d2090ef64>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/eacbcdfb-d419-3669-b539-6765460393fa> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/77e214ae-c15c-34e2-804d-23944eec6a55> .
+
+<http://data.doremus.org/event/9bf11476-3d74-38fd-b093-3e9a8163964f>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2d8396aa-8ba8-3335-8f46-0db755788096> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/eacbcdfb-d419-3669-b539-6765460393fa> .

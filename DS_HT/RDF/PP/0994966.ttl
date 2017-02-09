@@ -1,0 +1,82 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/67557318-a8b2-3cc2-835e-aa901f288f48/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Eugenia, Bettina (sopranos) ; Don Asdrubale, Pulcherio (ténors) ; Bocconio (baryton) ; orchestre" .
+
+<http://data.doremus.org/event/d64f3cb4-2ed8-3c82-a38c-93793e8ac8b8>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1784" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1784"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/67557318-a8b2-3cc2-835e-aa901f288f48> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/ead042db-6504-3ed6-844c-476767fc519f> .
+
+<http://data.doremus.org/work/72514acc-7108-32a2-b1a9-772aa586ad9c>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/ead042db-6504-3ed6-844c-476767fc519f> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/67557318-a8b2-3cc2-835e-aa901f288f48> .
+
+<http://data.doremus.org/expression/67557318-a8b2-3cc2-835e-aa901f288f48>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "opera bouffe"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/67557318-a8b2-3cc2-835e-aa901f288f48/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "430" ;
+                  ecrm:P3_has_note              "KV 430"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "424" ;
+                  ecrm:P3_has_note              "KV 424 a"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "K" ;
+                  mus:U41_has_catalogue_number  "430" ;
+                  ecrm:P3_has_note              "K 430"
+                ] ;
+        ecrm:P102_has_title  "Le mari déçu" , "Lo sposo deluso" , "La rivalité de trois femmes pour un seul amant" , "La rivalita di tre donne per un solo amante" ;
+        ecrm:P3_has_note     "Oeuvre inachevée" , "De ce projet d'opéra bouffe de mai-juin 1784, il ne reste que des fragments du premier acte. Mozart n'était visiblement pas satisfait du livret, dont Da Ponte lui même ne dit pas un mot dans ses \"Mémoires\". Mozart, à l'époque très exigeant sur les livrets de ses opéras, avait déjà renonçé à achever \"l'Oie du Caire\"(K 422) quelques semaines auparavant. Il faudra attendre l'année suivante pour leur collaboration, avec \"les Noces de Figaro\", devienne fructueuse." .
+
+<http://data.doremus.org/performance/62a98a0b-0dca-3547-88b5-fc0b2b984b17>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Oeuvre inachevée" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/93e2662e-d3bf-327b-95f2-8ce5094c02ab> .
+
+<http://data.doremus.org/work/ead042db-6504-3ed6-844c-476767fc519f>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/62a98a0b-0dca-3547-88b5-fc0b2b984b17> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/67557318-a8b2-3cc2-835e-aa901f288f48> .
+
+<http://data.doremus.org/event/096b100f-9164-3450-a449-5dadaa6e49e2>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/72514acc-7108-32a2-b1a9-772aa586ad9c> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/67557318-a8b2-3cc2-835e-aa901f288f48> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/93e2662e-d3bf-327b-95f2-8ce5094c02ab>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/67557318-a8b2-3cc2-835e-aa901f288f48> .

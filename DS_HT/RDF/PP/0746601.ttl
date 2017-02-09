@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/0a599b73-dff8-3170-afe5-8300fa600ef0>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "17 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1695 (?)" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1695"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1cd68120-6c81-3dbb-8225-4e04e6050193>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d2c6a345-153b-3fd7-ab73-b02187d249f3> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3dfa76b3-9d71-3c26-8e19-87b799a7912d> .
+
+<http://data.doremus.org/work/0c42adf4-9f2c-3223-b1fb-895555cff1dd>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/3dfa76b3-9d71-3c26-8e19-87b799a7912d> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d2c6a345-153b-3fd7-ab73-b02187d249f3> .
+
+<http://data.doremus.org/artist/1cd68120-6c81-3dbb-8225-4e04e6050193>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/d2c6a345-153b-3fd7-ab73-b02187d249f3/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Quivera, Esprits des airs, Orazia, Dieu du rêve (sopranos) ; jeune Indien, suivant d'Envie, Esprit des airs (contre-ténors) ; Renommée, suivant d'Envie, Esprit des airs (ténors) ; Envie, Ismeron, Grand Prêtre (barytons) 1695 (comp., création)." .
+
+<http://data.doremus.org/event/9c85fe15-3b5c-36b0-aa8e-f9e4a26985a1>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/0c42adf4-9f2c-3223-b1fb-895555cff1dd> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d2c6a345-153b-3fd7-ab73-b02187d249f3> .
+
+<http://data.doremus.org/work/3dfa76b3-9d71-3c26-8e19-87b799a7912d>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d2c6a345-153b-3fd7-ab73-b02187d249f3> .
+
+<http://data.doremus.org/expression/d2c6a345-153b-3fd7-ab73-b02187d249f3>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/d2c6a345-153b-3fd7-ab73-b02187d249f3/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Z" ;
+                  mus:U41_has_catalogue_number  "630" ;
+                  ecrm:P3_has_note              "Z 630"
+                ] ;
+        ecrm:P102_has_title  "The Indian Queen" , "Indian Queen" , "The Indian queen" ;
+        ecrm:P3_has_note     "Semi-opéra en 5 actes. - Livret de John Dryden et Robert Howard. - Créé à Londres, Drury Lane. - Contient un Masque (\"additional act\") de Daniel Purcell. La dernière oeuvre majeure de Purcell, probablement inachevée au moment de sa mort.. Histoire de la reine du Mexique et de son combat contre les Péruviens." .

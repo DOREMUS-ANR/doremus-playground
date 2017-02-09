@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/3faaff49-f4a9-3744-a418-2e1992fc9cc6>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1954" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1954"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/248b1b61-a6b5-3d14-9013-678085e8fb21>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/b318bf3d-4929-30ae-89fb-7f4336324b4e> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/dd93baf5-8ae1-30e2-aef2-60f37a2aedfe> .
+
+<http://data.doremus.org/expression/b318bf3d-4929-30ae-89fb-7f4336324b4e>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/snd> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "pièce concertante"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/b318bf3d-4929-30ae-89fb-7f4336324b4e/casting/1> ;
+        ecrm:P102_has_title  "Sérénade pour violon et orchestre" , "Serenade for violin and orchestra" ;
+        ecrm:P3_has_note     "Contrastant avec le lyrisme populaire de l'évocation des rues de Manhattan dans \"West Side Story\", cette oeuvre montre un autre versant de l'art de Leonard Bernstein : celui d'un néoclacissisme raffiné, s'inspirant de la structure du \"Banquet\" de Platon. Comprend : 1- Phaedrus - Pausanias (lento, allegro) ; 2- Aristophanes (allegretto) ; 3- Erixymatus (presto) ; 4- Agathon (adagio) ; 5- Socrates - Alcibiades (molto tenuto, allegro molto vivace). Il existe une transcription pour violon et piano par le compositeur." , "Créé le 12 sept. 1954 à la Fenice de Venise ; Isaac Stern, Israel Philharmonic Orchestra, dir. le compositeur" .
+
+<http://data.doremus.org/performance/09e74a76-a806-3c10-b84b-b8873667505e>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé le 12 sept. 1954 à la Fenice de Venise ; Isaac Stern, Israel Philharmonic Orchestra, dir. le compositeur" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/89ba29e0-53d4-33a9-b2a9-625a2ac7f1be> .
+
+<http://data.doremus.org/work/dd93baf5-8ae1-30e2-aef2-60f37a2aedfe>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/09e74a76-a806-3c10-b84b-b8873667505e> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/b318bf3d-4929-30ae-89fb-7f4336324b4e> .
+
+<http://data.doremus.org/expression/89ba29e0-53d4-33a9-b2a9-625a2ac7f1be>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/b318bf3d-4929-30ae-89fb-7f4336324b4e> .
+
+<http://data.doremus.org/work/7b4e49fc-8862-3618-a2c9-22bfa32dd483>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/dd93baf5-8ae1-30e2-aef2-60f37a2aedfe> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/b318bf3d-4929-30ae-89fb-7f4336324b4e> .
+
+<http://data.doremus.org/artist/248b1b61-a6b5-3d14-9013-678085e8fb21>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/b318bf3d-4929-30ae-89fb-7f4336324b4e/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Violon, orchestre à cordes, harpe et percussions" .
+
+<http://data.doremus.org/event/76ce6910-598b-30ec-bce5-d6ebd3fb3107>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/7b4e49fc-8862-3618-a2c9-22bfa32dd483> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/b318bf3d-4929-30ae-89fb-7f4336324b4e> .

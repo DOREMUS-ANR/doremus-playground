@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/eeaa6c20-5780-35f8-ab69-3efd747e5ee2>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/dae8c9c7-acbb-3352-888f-2cec0ccb0952> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/29a3dca3-8d28-34e8-9441-23950bb8f05c> .
+
+<http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/dae8c9c7-acbb-3352-888f-2cec0ccb0952>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Leipzig, 7 avril 1724" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/7649a971-3320-3cb3-883f-34e85a2a63be> .
+
+<http://data.doremus.org/work/79c0690c-0b6a-3661-80cf-504215966eea>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/eeaa6c20-5780-35f8-ab69-3efd747e5ee2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/29a3dca3-8d28-34e8-9441-23950bb8f05c> .
+
+<http://data.doremus.org/event/e4701c2b-d33e-3c1c-9b4f-5257c0bc8437>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/7649a971-3320-3cb3-883f-34e85a2a63be> .
+
+<http://data.doremus.org/event/f58d59d5-141a-3a35-bc76-64321a1715e0>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/79c0690c-0b6a-3661-80cf-504215966eea> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/29a3dca3-8d28-34e8-9441-23950bb8f05c> .
+
+<http://data.doremus.org/expression/7649a971-3320-3cb3-883f-34e85a2a63be>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/29a3dca3-8d28-34e8-9441-23950bb8f05c> .
+
+<http://data.doremus.org/event/41371894-7251-3907-aa22-13b0bb398408>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17240101/17241231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/29a3dca3-8d28-34e8-9441-23950bb8f05c> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/eeaa6c20-5780-35f8-ab69-3efd747e5ee2> .
+
+<http://data.doremus.org/expression/29a3dca3-8d28-34e8-9441-23950bb8f05c>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/pm> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "BWV" ;
+                  mus:U41_has_catalogue_number  "245" ;
+                  ecrm:P3_has_note              "BWV 245"
+                ] ;
+        ecrm:P102_has_title  "Passion selon saint Jean" , "Johannespassion" ;
+        ecrm:P3_has_note     "Livret anonyme, en partie d'après Barthold Heinrich Brockes" .

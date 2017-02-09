@@ -1,0 +1,55 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/b903d413-9d2b-3883-b6df-35947a6b780f/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/svl>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/kpf>
+                                    ] ;
+        ecrm:P3_has_note            "Violon, piano" .
+
+<http://data.doremus.org/expression/b903d413-9d2b-3883-b6df-35947a6b780f>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/ft> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/b903d413-9d2b-3883-b6df-35947a6b780f/casting/1> ;
+        ecrm:P102_has_title  "Fantaisie" .
+
+<http://data.doremus.org/work/1d7d7e7b-8305-300e-a09d-a12d370d01b1>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/b903d413-9d2b-3883-b6df-35947a6b780f> .
+
+<http://data.doremus.org/artist/a9018ddf-2206-34ed-9f71-073a94661d14>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/5e92728a-a6df-3d8c-8864-19288e0a0eea>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/1d7d7e7b-8305-300e-a09d-a12d370d01b1> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/b903d413-9d2b-3883-b6df-35947a6b780f> .
+
+<http://data.doremus.org/event/bc5c0b9e-da7b-3614-ab21-b7f1594d5f93>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19330101/19331231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a9018ddf-2206-34ed-9f71-073a94661d14>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/b903d413-9d2b-3883-b6df-35947a6b780f> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/1d7d7e7b-8305-300e-a09d-a12d370d01b1> .
+
+<http://data.doremus.org/event/3e16c234-184e-3d0b-9729-988cef6c1900>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/5e92728a-a6df-3d8c-8864-19288e0a0eea> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/b903d413-9d2b-3883-b6df-35947a6b780f> .

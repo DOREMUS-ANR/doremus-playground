@@ -1,0 +1,80 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/81b7a609-1b76-3d4d-b69e-60d9c3cc74fc>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c02911da-ac61-3ef9-a16f-0fdc80871b4c> .
+
+<http://data.doremus.org/work/5e8003f1-bc71-31e5-9d8e-bc25f0ab456f>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/d7546e75-07dc-3fa7-9eb0-9e33c7e42bd3> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/920d1c5d-3402-332b-9daa-e18e24c4af10> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c02911da-ac61-3ef9-a16f-0fdc80871b4c> .
+
+<http://data.doremus.org/publication/8c6efeac-35d5-3b7c-92ab-a724c76391ab>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c02911da-ac61-3ef9-a16f-0fdc80871b4c> .
+
+<http://data.doremus.org/expression/c02911da-ac61-3ef9-a16f-0fdc80871b4c>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sp> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "CFF" ;
+                  mus:U41_has_catalogue_number  "127" ;
+                  ecrm:P3_has_note              "CFF 127"
+                ] ;
+        ecrm:P102_has_title  "Les Éolides" ;
+        ecrm:P3_has_note     "D'après un poème de C.-M. Leconte de Lisle" , "Tonalité : la majeur" , "Il existe une réduction pour piano à 4 mains (CFF 127a) et une pour 2 pianos (CFF 127b) par le compositeur" .
+
+<http://data.doremus.org/artist/2edd7117-03f6-3f5f-a89e-bfb6fbd34522>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/335506e2-b949-385a-a351-641a26ef32d1>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/88d24af6-0e9d-3a45-9ba1-f25b4f861712> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c02911da-ac61-3ef9-a16f-0fdc80871b4c> .
+
+<http://data.doremus.org/event/313d8b2f-1ae3-352d-9588-3d375cddbb9d>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/81b7a609-1b76-3d4d-b69e-60d9c3cc74fc> .
+
+<http://data.doremus.org/work/6127084d-422b-3b72-af6d-06dc3abf3677>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/8c6efeac-35d5-3b7c-92ab-a724c76391ab> .
+
+<http://data.doremus.org/event/fda0a7c1-c460-3e0f-ae4c-09dee8486a61>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18750928/18760607"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/2edd7117-03f6-3f5f-a89e-bfb6fbd34522>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c02911da-ac61-3ef9-a16f-0fdc80871b4c> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/5e8003f1-bc71-31e5-9d8e-bc25f0ab456f> .
+
+<http://data.doremus.org/performance/920d1c5d-3402-332b-9daa-e18e24c4af10>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Paris, Société nationale de musique, Salle Érard, 13 mai 1877, orchestre sous la direction d'Édouard Colonne" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/81b7a609-1b76-3d4d-b69e-60d9c3cc74fc> .
+
+<http://data.doremus.org/work/88d24af6-0e9d-3a45-9ba1-f25b4f861712>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/5e8003f1-bc71-31e5-9d8e-bc25f0ab456f> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c02911da-ac61-3ef9-a16f-0fdc80871b4c> .
+
+<http://data.doremus.org/event/d7546e75-07dc-3fa7-9eb0-9e33c7e42bd3>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Paris : Enoch, 1893" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/6127084d-422b-3b72-af6d-06dc3abf3677> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/8c6efeac-35d5-3b7c-92ab-a724c76391ab> .

@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/77748c03-701d-3ca6-8325-1ab2830b83cf>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/ddba0b60-f58b-36b4-9c76-2a33dc7487a7> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/b2bf5cf1-103d-3540-b523-8eaafb4e1474> .
+
+<http://data.doremus.org/event/b5812824-c8d7-311e-936b-dce52129b247>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/77748c03-701d-3ca6-8325-1ab2830b83cf> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/b2bf5cf1-103d-3540-b523-8eaafb4e1474> .
+
+<http://data.doremus.org/expression/b2bf5cf1-103d-3540-b523-8eaafb4e1474>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/e> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/b2bf5cf1-103d-3540-b523-8eaafb4e1474/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "K" ;
+                  mus:U41_has_catalogue_number  "380" ;
+                  ecrm:P3_has_note              "K 380"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "L" ;
+                  mus:U41_has_catalogue_number  "23" ;
+                  ecrm:P3_has_note              "L 23"
+                ] ;
+        ecrm:P102_has_title  "Sonate pour clavecin" , "Sonata" , "Sonate pour clavecin ou pianoforte" ;
+        ecrm:P3_has_note     "Domenico Scarlatti a composé 555 sonates. Très peu ont été publiées de son vivant. Il est difficile de les dater et de déterminer à quel (s) instrument (s) elles sont destinées. Andante commodo. 3/4. L 23" .
+
+<http://data.doremus.org/artist/dc30491f-20e4-3859-8244-e13fe97fb78c>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/ddba0b60-f58b-36b4-9c76-2a33dc7487a7>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/b2bf5cf1-103d-3540-b523-8eaafb4e1474> .
+
+<http://data.doremus.org/expression/b2bf5cf1-103d-3540-b523-8eaafb4e1474/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "clavier" .
+
+<http://data.doremus.org/event/759af53b-7ffa-3422-ae7a-3c72cf892db9>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "Première moitié du 18 ème siècle" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1710/1750"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/dc30491f-20e4-3859-8244-e13fe97fb78c>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/b2bf5cf1-103d-3540-b523-8eaafb4e1474> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/ddba0b60-f58b-36b4-9c76-2a33dc7487a7> .

@@ -1,0 +1,78 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/61ee2f32-6015-37db-95d2-1b9f23fe5355>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/61ee2f32-6015-37db-95d2-1b9f23fe5355/casting/1> ;
+        ecrm:P102_has_title  "La plainte, au loin, du faune" ;
+        ecrm:P3_has_note     "Deux ans après la mort de Debussy, Henry Prunières, le directeur de la toute nouvelle Revue musicale, voulut lui rendre hommage en réunissant des textes et des témoignages ainsi qu'un supplément musical qui, sous le titre de \"Tombeau de Claude Debussy\", rassemblait les oeuvres de dix compositeurs dont Paul Dukas. Durée d'exécution : 5 minutes environ" , "Créé à Paris, le 24 janvier 1921, Société Musicale Indépendante, salle des Agriculteurs, avec Paul Dukas au piano. Première édition dans \"Tombeau de Claude Debussy\", Revue musicale, décembre 1920" .
+
+<http://data.doremus.org/artist/5d66572d-a5b3-3ed3-a9f1-e510b46b56fb>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/61ee2f32-6015-37db-95d2-1b9f23fe5355/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/expression/5e8f4c3d-dba4-3a5a-a7bc-d938a983214d>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/61ee2f32-6015-37db-95d2-1b9f23fe5355> .
+
+<http://data.doremus.org/work/f0972236-ec0b-39f0-9ea8-f27b3cd66d56>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/5c5ff380-c40e-3ff7-bc38-ba1019a44241> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/9cf62be5-73b1-3983-8247-fd8e62546a18> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/61ee2f32-6015-37db-95d2-1b9f23fe5355> .
+
+<http://data.doremus.org/event/5c5ff380-c40e-3ff7-bc38-ba1019a44241>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Première édition dans \"Tombeau de Claude Debussy\", Revue musicale, décembre 1920" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e6fa8ca8-84ce-3205-a493-a05e950373c5> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/57d130af-0fd7-3841-b867-89767d456585> .
+
+<http://data.doremus.org/work/14211330-09f9-323a-989e-712e6a33db93>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f0972236-ec0b-39f0-9ea8-f27b3cd66d56> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/61ee2f32-6015-37db-95d2-1b9f23fe5355> .
+
+<http://data.doremus.org/event/51c639cb-9ad4-36c1-bacb-d8a37b8aa4c3>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1920" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1920"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/5d66572d-a5b3-3ed3-a9f1-e510b46b56fb>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/61ee2f32-6015-37db-95d2-1b9f23fe5355> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f0972236-ec0b-39f0-9ea8-f27b3cd66d56> .
+
+<http://data.doremus.org/publication/57d130af-0fd7-3841-b867-89767d456585>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/61ee2f32-6015-37db-95d2-1b9f23fe5355> .
+
+<http://data.doremus.org/event/1fc42bfd-b0f4-344d-8f6c-55867b4a8d74>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/14211330-09f9-323a-989e-712e6a33db93> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/61ee2f32-6015-37db-95d2-1b9f23fe5355> .
+
+<http://data.doremus.org/performance/9cf62be5-73b1-3983-8247-fd8e62546a18>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Paris, le 24 janvier 1921, Société Musicale Indépendante, salle des Agriculteurs, avec Paul Dukas au piano." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/5e8f4c3d-dba4-3a5a-a7bc-d938a983214d> .
+
+<http://data.doremus.org/work/e6fa8ca8-84ce-3205-a493-a05e950373c5>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/57d130af-0fd7-3841-b867-89767d456585> .

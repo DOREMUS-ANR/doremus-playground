@@ -1,0 +1,59 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/2e4dd48c-0e82-3cf2-99cd-b01f85375ab2>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17980101/18001231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/37e4f246-ae4a-3af7-bdfd-0354a004b341> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/fd19c749-4bac-34f7-a264-24dc08defb36> .
+
+<http://data.doremus.org/expression/37e4f246-ae4a-3af7-bdfd-0354a004b341/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "cordes"@fr
+                                              ]
+                                    ] ;
+        ecrm:P3_has_note            "Cordes" .
+
+<http://data.doremus.org/work/fd19c749-4bac-34f7-a264-24dc08defb36>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/37e4f246-ae4a-3af7-bdfd-0354a004b341> .
+
+<http://data.doremus.org/expression/37e4f246-ae4a-3af7-bdfd-0354a004b341>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "5" ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/a> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/qua> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/37e4f246-ae4a-3af7-bdfd-0354a004b341/casting/1> ;
+        mus:U17_has_opus_statement  [ a                           mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number     "18" ;
+                                      mus:U43_has_opus_subnumber  "5" ;
+                                      ecrm:P3_has_note            "Op. 18, no 5"
+                                    ] .
+
+<http://data.doremus.org/work/53a0f1b2-7ed9-3b09-938e-521266ff63ca>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/fd19c749-4bac-34f7-a264-24dc08defb36> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/37e4f246-ae4a-3af7-bdfd-0354a004b341> .
+
+<http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/8e78306d-c1d0-3c8f-a937-a35910c9e981>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/53a0f1b2-7ed9-3b09-938e-521266ff63ca> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/37e4f246-ae4a-3af7-bdfd-0354a004b341> .

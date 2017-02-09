@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/2eb35af3-f880-3fee-936c-b9eda655c4bb>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "24" ;
+                                      ecrm:P3_has_note         "Op. 24"
+                                    ] ;
+        ecrm:P102_has_title         "The gambler" , "Le joueur" , "Igrok" ;
+        ecrm:P3_has_note            "Livret du compositeur, d'après le roman de Fedor Dostoïevsky" , "Opéra en 4 actes" , "Il existe une suite d'orchestre tirée de l'opéra, sous le titre \"Quatre portraits et épilogue d'après Le joueur\" (op. 49)" , "Date de révision : 1928" .
+
+<http://data.doremus.org/event/fcc426b6-3fae-3a29-b3fb-21fcdfc806c1>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19150101/19171231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/94a56443-a4ef-35c5-a038-dac310adba2e>
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7d712efc-ad17-3dba-931a-78804eb18bce>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/2eb35af3-f880-3fee-936c-b9eda655c4bb> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/fa49d805-3975-3adf-8655-c5e5707497af> .
+
+<http://data.doremus.org/work/fa49d805-3975-3adf-8655-c5e5707497af>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/07203e18-af3c-3b46-8260-ba61588f940c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/2eb35af3-f880-3fee-936c-b9eda655c4bb> .
+
+<http://data.doremus.org/performance/07203e18-af3c-3b46-8260-ba61588f940c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation : Bruxelles, Théâtre royal de la Monnaie, 29 avril 19129, en français, sous la direction de Maurice Corneil de Thoran" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/27f6fe91-dd1e-3186-aa23-eb9b74067555> .
+
+<http://data.doremus.org/artist/94a56443-a4ef-35c5-a038-dac310adba2e>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/27f6fe91-dd1e-3186-aa23-eb9b74067555>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/2eb35af3-f880-3fee-936c-b9eda655c4bb> .
+
+<http://data.doremus.org/artist/7d712efc-ad17-3dba-931a-78804eb18bce>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/90dbd4f7-9853-3b59-97f4-2e9a36f517a4>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/27f6fe91-dd1e-3186-aa23-eb9b74067555> .
+
+<http://data.doremus.org/work/a1deaf20-0df2-3ce0-8ba8-2f70c75d5555>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/fa49d805-3975-3adf-8655-c5e5707497af> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/2eb35af3-f880-3fee-936c-b9eda655c4bb> .
+
+<http://data.doremus.org/event/f451e0f6-363f-32da-a408-9f27ec4b6cbf>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/a1deaf20-0df2-3ce0-8ba8-2f70c75d5555> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/2eb35af3-f880-3fee-936c-b9eda655c4bb> .

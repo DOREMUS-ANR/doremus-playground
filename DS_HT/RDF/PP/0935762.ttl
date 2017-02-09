@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/c0527e0a-ca9a-3074-9353-fd8480151b17>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/0e4258b9-c437-387a-8a95-1fdbc268e10c>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/8fe91e53-c7c4-3be9-ad6b-e9d75a65e293> .
+
+<http://data.doremus.org/work/04686649-fc83-3b69-a35c-a839a4c230a0>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0e4258b9-c437-387a-8a95-1fdbc268e10c> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/8fe91e53-c7c4-3be9-ad6b-e9d75a65e293> .
+
+<http://data.doremus.org/expression/8fe91e53-c7c4-3be9-ad6b-e9d75a65e293/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Soprano, deux ténors, basse" .
+
+<http://data.doremus.org/event/d7b6ed9b-4772-3893-9ce4-75761dfb1982>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/04686649-fc83-3b69-a35c-a839a4c230a0> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/8fe91e53-c7c4-3be9-ad6b-e9d75a65e293> .
+
+<http://data.doremus.org/expression/8fe91e53-c7c4-3be9-ad6b-e9d75a65e293>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique sacrée"@fr
+                             ] ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/8fe91e53-c7c4-3be9-ad6b-e9d75a65e293/casting/1> ;
+        ecrm:P102_has_title  "Summa" ;
+        ecrm:P3_has_note     "A propos de Summa, qu'il a composé en 1977 et révisé en 1996, Arvo Pärt a déclaré : \"Je voulais écrire une musique sur les textes du Credo, mais en raison de la censure en Union Soviétique, je n'ai pas pu utiliser ce titre. Summa est par conséquent un titre codé pour Credo.\" L'oeuvre est écrite pour deux groupes de deux voix qui interviennent à tour de rôle, se chevauchent et finissent par se fondre sur \"Amen\". Il en existe deux versions plus récentes, l'une pour cordes seules, l'autre pour orchestre à cordes. Le texte interdit étant totalement absent de ces arrangements, la seule indication quant à l'origine de la pièce est son titre énigmatique. Durée : 5 minutes environ" .
+
+<http://data.doremus.org/event/d82d1066-9a67-3e64-9c85-06af806d6c13>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1977" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1977"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c0527e0a-ca9a-3074-9353-fd8480151b17>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/8fe91e53-c7c4-3be9-ad6b-e9d75a65e293> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0e4258b9-c437-387a-8a95-1fdbc268e10c> .

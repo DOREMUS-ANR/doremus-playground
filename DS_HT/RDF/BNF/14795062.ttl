@@ -1,0 +1,66 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/56449e2f-e8c3-3a2d-81dc-4f394e55c2c5>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/abb7042c-c6c3-3739-9596-f28b863398ea> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/62a73195-8eae-36e3-ac64-2cb205570db5> .
+
+<http://data.doremus.org/artist/7c090d69-93dc-397d-985f-a75268cbab51>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/62a73195-8eae-36e3-ac64-2cb205570db5>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/uuu> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/62a73195-8eae-36e3-ac64-2cb205570db5/casting/1> ;
+        ecrm:P102_has_title  "Dialogue de l'ombre double" ;
+        ecrm:P3_has_note     "D'après la pièce pour clarinette \"Domaine\"" , "Il existe une version pour basson (1995) et une adaptation pour saxophones par P. Boulez et Vincent David (2001)" .
+
+<http://data.doremus.org/event/06c8cd9a-b54c-34a6-8733-112be30943ca>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19820101/19851231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7c090d69-93dc-397d-985f-a75268cbab51>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/62a73195-8eae-36e3-ac64-2cb205570db5> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/abb7042c-c6c3-3739-9596-f28b863398ea> .
+
+<http://data.doremus.org/performance/6d3db8f7-d565-3e05-ba77-036e33969060>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Florence, 28 octobre 1985, Alain Damiens" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/a260ad5e-8af8-33c7-82ee-6036db4e9ca4> .
+
+<http://data.doremus.org/event/d1a6f5b9-d775-3613-babb-84b54ac5d056>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/56449e2f-e8c3-3a2d-81dc-4f394e55c2c5> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/62a73195-8eae-36e3-ac64-2cb205570db5> .
+
+<http://data.doremus.org/work/abb7042c-c6c3-3739-9596-f28b863398ea>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/6d3db8f7-d565-3e05-ba77-036e33969060> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/62a73195-8eae-36e3-ac64-2cb205570db5> .
+
+<http://data.doremus.org/event/ef27cd31-220d-3546-9c55-a077f1ba3586>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/a260ad5e-8af8-33c7-82ee-6036db4e9ca4> .
+
+<http://data.doremus.org/expression/a260ad5e-8af8-33c7-82ee-6036db4e9ca4>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/62a73195-8eae-36e3-ac64-2cb205570db5> .
+
+<http://data.doremus.org/expression/62a73195-8eae-36e3-ac64-2cb205570db5/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/wcl>
+                                    ] ;
+        ecrm:P3_has_note            <http://data.doremus.org/vocabulary/itema3/mop/14> .

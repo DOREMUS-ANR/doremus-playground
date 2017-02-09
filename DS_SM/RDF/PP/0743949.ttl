@@ -1,0 +1,59 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/1e8f4cad-d701-3ace-b817-fdecaac65939>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e> .
+
+<http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/17> .
+
+<http://data.doremus.org/event/c94417d4-7b11-37eb-9869-4530926fc606>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1717" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1717"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/8aa9bad5-8ffe-3f28-978c-34b824d24d1f>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/1e8f4cad-d701-3ace-b817-fdecaac65939> .
+
+<http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "11" ;
+        mus:U11_has_key           [ a                         mus:M4_Key ;
+                                    ecrm:P1_is_identified_by  "Do mineur et majeur"@fr
+                                  ] ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique baroque"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e/casting/1> ;
+        ecrm:P102_has_title       "Onzième ordre" , "La Zénobie" , "Les Fastes de la grande et ancienne Ménestrandise." , "Les grâces-naturelles" , "Ordres" , "Pièces de clavecin. Livre 2 Ordre11" , "La Castelane" , "Ordre no 11" , "L'Etincelante ou la Bontemps" ;
+        ecrm:P3_has_note          "Fait partie du deuxième livre publié en 1716-1717. Couperin publie quatre livres en dix-sept ans (1713, 1717, 1722 et 1730). Deux-cent-trente-trois pièces sont groupées en vingt-sept ordres, . Le 11ème ordre comprend : La Castalane, L'Etincelante ou la Bontemps, Les Grâces naturelles, La Zénobie, Les Fastes de la grande et ancienne Ménestrandise. Les pièces de Couperin portent toujours un titre : le nom d'une danse, un sujet , souvent un nom de femme. Est-ce un portrait? une dédicace? Qui est la \"Castallane\" parmi les nombreux tenants de cette famille apparenté à Mme de Sévigné? Pour la \"Bontemps\"il s'agit de l'épouse de Louis-Alexandre de Bontemps, valet de chambre du roi, chargé d'organiser les concerts privés de sa majesté. Les\" Fastes de la grande et ancienne Ménestrandise\" renvoie à la querelle qui agita le monde musical dans les années 1692-95. La Corporation des Ménestrier dont le chef dirigeait la \"Bande des 24 violons du Roi\", prétendit que tous les musiciens, organistes, clavecinistes inclus, devraient être affiliés et cotiser. Les musiciens indépendants se révoltèrent et eurent gain de cause. Couperin, organiste du Roi et musicien de la \"Chambre\" était l'un d'eux.. Dans cette pièce en cinq parties, il se moque des prétentions des Ménéstriers à asservir tous les artistes." .
+
+<http://data.doremus.org/artist/8aa9bad5-8ffe-3f28-978c-34b824d24d1f>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/5ef3fd01-bc62-38a2-a9c8-731efac531d4>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/1e8f4cad-d701-3ace-b817-fdecaac65939> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e> .
+
+<http://data.doremus.org/event/cdc7c234-71f9-3623-8992-08bd0e50071a>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/5ef3fd01-bc62-38a2-a9c8-731efac531d4> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e> .

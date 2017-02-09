@@ -1,0 +1,66 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/0c71a8de-8db5-3057-8283-3be6ac2cac3d>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/bt> , <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/0c71a8de-8db5-3057-8283-3be6ac2cac3d/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "28" ;
+                                      ecrm:P3_has_note         "Op. 28"
+                                    ] ;
+        ecrm:P102_has_title         "Souvenirs" ;
+        ecrm:P3_has_note            "Suite pour piano à quatre mains. Cette oeuvre a été ensuite orchestrée en vue d'un ballet chorégraphié par Balanchine en 1952. Comprend : 1- valse, 2- schottische, 3- pas de deux, 4- two-step, 5- hésitation tango, 6- galop." , "Créé en 1951 par le compositeur et le dédicataire de l'oeuvre Charles Turner lors d'une tournée en Europe. Version de concert créée à Chicago le 13 novembre 1953 par l'Orchestre symphonique de Chicago dirigé par Fritz Reiner. Créé ensuite comme ballet à New York le 15 novembre 1955" .
+
+<http://data.doremus.org/work/e9213a34-16d6-3773-af65-e18673aeebd0>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/bfcc3558-e707-3118-a2bd-c183638edd19> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/0c71a8de-8db5-3057-8283-3be6ac2cac3d> .
+
+<http://data.doremus.org/expression/7c4d7669-570a-34f1-bd33-6f4f0fdffa20>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/0c71a8de-8db5-3057-8283-3be6ac2cac3d> .
+
+<http://data.doremus.org/event/84b59f01-0406-39e4-a75a-a6d440f66977>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1951" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1951"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/ecb726fd-d0f6-3941-b140-3355d6f4c612>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/0c71a8de-8db5-3057-8283-3be6ac2cac3d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e9213a34-16d6-3773-af65-e18673aeebd0> .
+
+<http://data.doremus.org/work/42dfd388-78ea-3a01-8640-46047cebcb40>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/e9213a34-16d6-3773-af65-e18673aeebd0> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/0c71a8de-8db5-3057-8283-3be6ac2cac3d> .
+
+<http://data.doremus.org/artist/ecb726fd-d0f6-3941-b140-3355d6f4c612>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/0c71a8de-8db5-3057-8283-3be6ac2cac3d/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Piano à quatre mains" .
+
+<http://data.doremus.org/event/9c558b06-33e5-3feb-b23d-669f39e8bea7>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/42dfd388-78ea-3a01-8640-46047cebcb40> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/0c71a8de-8db5-3057-8283-3be6ac2cac3d> .
+
+<http://data.doremus.org/performance/bfcc3558-e707-3118-a2bd-c183638edd19>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé en 1951 par le compositeur et le dédicataire de l'oeuvre Charles Turner lors d'une tournée en Europe. Version de concert créée à Chicago le 13 novembre 1953 par l'Orchestre symphonique de Chicago dirigé par Fritz Reiner. Créé ensuite comme ballet à New York le 15 novembre 1955" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/7c4d7669-570a-34f1-bd33-6f4f0fdffa20> .

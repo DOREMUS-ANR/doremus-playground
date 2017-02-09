@@ -1,0 +1,70 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/3be0f3fd-2239-3f38-ac0c-7efd0328abc8>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "pièce concertante"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/3be0f3fd-2239-3f38-ac0c-7efd0328abc8/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "JW" ;
+                  mus:U41_has_catalogue_number  "VII/11" ;
+                  ecrm:P3_has_note              "JW VII/11"
+                ] ;
+        ecrm:P102_has_title  "Concertino pour piano et six instruments" , "Concertino pour flûte, alto et contrebasse" , "Concertinos" ;
+        ecrm:P3_has_note     "Si l'on en croit Stedron, Janacek envisageait d'intituler cette suite instrumentale \"Printemps\" et de donner un sous-titre à chaque mouvement : Le hanneton, le daim, le grillon, le ruisseau (...) En 1927, dans une revue musicale Janacek poursuit une autre interprétation : le cor du moderato initial jouerait le rôle du hérisson, la clarinette en mi bémol du Piu mosso celui de l'écureuil ; le \"con moto\" qui suit serait plus un nocturne dansant qu'un mouvement lent traditionnel, avec hiboux et autres oiseaux nocturnes, tandis que l'allegro final représenterait une danse générale. Sur le plan de l'écriture, la partition se révèle d'un modernisme inattendu et servira de référence à toute une génération de compositeurs soviétiques et tchèques." , "Le Concertino, dédié à celui qui l'avait inspiré, Jan Herman, ne fut pas créé par lui mais par Ilona Kurz-Stepanova, le 16 février 1926, à Brno, et le 20 février à Prague." .
+
+<http://data.doremus.org/event/55260a9f-d05f-369b-a4a1-9061265bca0f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1925" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1925"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/32dbd491-67d2-3344-a524-e1413cc22c58>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/3be0f3fd-2239-3f38-ac0c-7efd0328abc8> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8ae9a779-d287-3b08-b8a3-d79ade6d683f> .
+
+<http://data.doremus.org/expression/a786158a-8475-3bd6-b921-1fcb09a4fc13>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/3be0f3fd-2239-3f38-ac0c-7efd0328abc8> .
+
+<http://data.doremus.org/work/8ae9a779-d287-3b08-b8a3-d79ade6d683f>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/2ac0e1b2-c10e-3414-9055-ee80242da2ab> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/3be0f3fd-2239-3f38-ac0c-7efd0328abc8> .
+
+<http://data.doremus.org/performance/2ac0e1b2-c10e-3414-9055-ee80242da2ab>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Le Concertino, dédié à celui qui l'avait inspiré, Jan Herman, ne fut pas créé par lui mais par Ilona Kurz-Stepanova, le 16 février 1926, à Brno, et le 20 février à Prague." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/a786158a-8475-3bd6-b921-1fcb09a4fc13> .
+
+<http://data.doremus.org/event/04be35e1-b6e5-3854-940c-3ad332115fef>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/daed4167-14b7-366c-9a63-e787cf2b9b0f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/3be0f3fd-2239-3f38-ac0c-7efd0328abc8> .
+
+<http://data.doremus.org/expression/3be0f3fd-2239-3f38-ac0c-7efd0328abc8/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Piano, deux violons, alto, clarinette, cor et basson" .
+
+<http://data.doremus.org/work/daed4167-14b7-366c-9a63-e787cf2b9b0f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8ae9a779-d287-3b08-b8a3-d79ade6d683f> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/3be0f3fd-2239-3f38-ac0c-7efd0328abc8> .
+
+<http://data.doremus.org/artist/32dbd491-67d2-3344-a524-e1413cc22c58>
+        a       ecrm:E21_Person .

@@ -1,0 +1,48 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/78f0c28b-ef17-36b9-b536-3b8087647c7c>
+        a                  efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key    <http://data.doremus.org/vocabulary/key/gb> ;
+        mus:U12_has_genre  <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "M" ;
+                  mus:U41_has_catalogue_number  "A39" ;
+                  ecrm:P3_has_note              "M A39"
+                ] .
+
+<http://data.doremus.org/work/c683f72b-7866-3455-9d1f-a059fd04adbf>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/78f0c28b-ef17-36b9-b536-3b8087647c7c> .
+
+<http://data.doremus.org/event/63b447a1-b52f-32ab-b50c-a04c8b0b129b>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17810301/17810331"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/2985fe1a-da2d-3445-bf44-d6048add07d8>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/78f0c28b-ef17-36b9-b536-3b8087647c7c> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c683f72b-7866-3455-9d1f-a059fd04adbf> .
+
+<http://data.doremus.org/work/2d73e399-ed77-3f1c-9071-55fb99b6b33d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/c683f72b-7866-3455-9d1f-a059fd04adbf> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/78f0c28b-ef17-36b9-b536-3b8087647c7c> .
+
+<http://data.doremus.org/event/0c02405c-e5ee-3ac9-99b4-a688a9983f02>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2d73e399-ed77-3f1c-9071-55fb99b6b33d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/78f0c28b-ef17-36b9-b536-3b8087647c7c> .
+
+<http://data.doremus.org/artist/2985fe1a-da2d-3445-bf44-d6048add07d8>
+        a       ecrm:E21_Person .

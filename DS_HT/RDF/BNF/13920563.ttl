@@ -1,0 +1,56 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/1bc6ec29-208a-3917-afd0-54be0e5a526c>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/e1eb0032-d886-3592-a5ee-d7bde8eb4a02> .
+
+<http://data.doremus.org/artist/58efc6b8-78c5-3006-bf43-19e0f31d27d1>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/946a19ca-e881-32ef-b09b-181e2b42ad47>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18610101/18691231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/58efc6b8-78c5-3006-bf43-19e0f31d27d1>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e1eb0032-d886-3592-a5ee-d7bde8eb4a02> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8b3d0e01-df44-3591-b617-3e70d3889c65> .
+
+<http://data.doremus.org/work/8b3d0e01-df44-3591-b617-3e70d3889c65>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e1eb0032-d886-3592-a5ee-d7bde8eb4a02> .
+
+<http://data.doremus.org/event/3cbfb064-ab2e-395f-a670-5292f699a153>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/1bc6ec29-208a-3917-afd0-54be0e5a526c> .
+
+<http://data.doremus.org/event/94fe755b-ac42-3804-91fa-0098d4e26e11>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/18584ed3-0e4a-3701-80ce-a88d29ed8cc7> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e1eb0032-d886-3592-a5ee-d7bde8eb4a02> .
+
+<http://data.doremus.org/expression/e1eb0032-d886-3592-a5ee-d7bde8eb4a02>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        ecrm:P102_has_title  "La force du destin" , "La forza del destino" ;
+        ecrm:P3_has_note     "Mélodramma en 4 actes" , "Livret de Francesco Maria Piave d'après la tragédie de Ángel de Saavedra \"Don Alvaro, o La fuerza del sino\" (1835) et une scène de \"Wallenstein\" (1800) de Friedrich von Schiller" , "Date de révision (avec additions et modifications du livret par Antonio Ghislanzoni) : 1868" .
+
+<http://data.doremus.org/work/18584ed3-0e4a-3701-80ce-a88d29ed8cc7>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8b3d0e01-df44-3591-b617-3e70d3889c65> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e1eb0032-d886-3592-a5ee-d7bde8eb4a02> .
+
+<http://data.doremus.org/performance/183bbaa4-f7a1-3b92-b3bf-a7d2c5d3cef9>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation (version révisée) : Milan, Teatro alla Scala, 27 février 1869" , "1re représentation (1re version) : Saint-Pétersbourg, Theâtre impérial, 29 octobre-10 novembre 1862" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/1bc6ec29-208a-3917-afd0-54be0e5a526c> .

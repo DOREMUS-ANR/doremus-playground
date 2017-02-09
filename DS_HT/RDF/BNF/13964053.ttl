@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/3e7e95b6-7fe8-3254-a276-7f2f84b83012>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f35ec0b4-8478-3308-af8e-23fdc5202967> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/18f69c8e-a064-3a5b-999a-1f5209d5f25b> .
+
+<http://data.doremus.org/artist/942e541a-28d1-34e5-af75-4d301b0c13d6>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/3eec9569-96e8-3f63-b9ba-2e0541bb8709>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/80de7355-bc15-3b13-88f9-f09800acf3e3> .
+
+<http://data.doremus.org/event/281b2fbf-2a31-3204-9c66-82755867e9e1>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17060101/17061231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/942e541a-28d1-34e5-af75-4d301b0c13d6>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/18f69c8e-a064-3a5b-999a-1f5209d5f25b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3e7e95b6-7fe8-3254-a276-7f2f84b83012> .
+
+<http://data.doremus.org/expression/18f69c8e-a064-3a5b-999a-1f5209d5f25b>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        ecrm:P102_has_title  "Alcione" , "Alcyone" ;
+        ecrm:P3_has_note     "Tragédie en musique en 1 prologue et 5 actes" , "Livret de Antoine Houdar de Lamotte d'après Ovide" .
+
+<http://data.doremus.org/expression/80de7355-bc15-3b13-88f9-f09800acf3e3>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/18f69c8e-a064-3a5b-999a-1f5209d5f25b> .
+
+<http://data.doremus.org/performance/f35ec0b4-8478-3308-af8e-23fdc5202967>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation : Paris, Académie royale de musique, 18 février 1706" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/80de7355-bc15-3b13-88f9-f09800acf3e3> .
+
+<http://data.doremus.org/event/bf0a661c-b22e-388d-8f1a-48a75d128d31>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/9b6d0fab-fba3-3fde-a320-61efbd246d5c> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/18f69c8e-a064-3a5b-999a-1f5209d5f25b> .
+
+<http://data.doremus.org/work/9b6d0fab-fba3-3fde-a320-61efbd246d5c>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/3e7e95b6-7fe8-3254-a276-7f2f84b83012> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/18f69c8e-a064-3a5b-999a-1f5209d5f25b> .

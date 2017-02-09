@@ -1,0 +1,72 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/13248012-32ea-32a2-9ad2-39bb77b44496>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "17 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1619" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1614/1619"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f8daaa62-4399-3208-98fd-553aa1fd6abd> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/9e96b278-f276-3d58-8fef-23352a15d992> .
+
+<http://data.doremus.org/expression/790470fb-1df4-3469-9258-90d869f76cb8>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f8daaa62-4399-3208-98fd-553aa1fd6abd> .
+
+<http://data.doremus.org/performance/3936ac17-cc84-3412-8766-69929059945a>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première publication : Venise, 1619" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/790470fb-1df4-3469-9258-90d869f76cb8> .
+
+<http://data.doremus.org/expression/f8daaa62-4399-3208-98fd-553aa1fd6abd/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Voix (ténor) et basse continue" .
+
+<http://data.doremus.org/work/9e96b278-f276-3d58-8fef-23352a15d992>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/3936ac17-cc84-3412-8766-69929059945a> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f8daaa62-4399-3208-98fd-553aa1fd6abd> .
+
+<http://data.doremus.org/event/fba23f81-ff8b-3b97-a853-d981ad078dc3>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/672e4ae7-2201-3be1-b79e-c767353f4111> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f8daaa62-4399-3208-98fd-553aa1fd6abd> .
+
+<http://data.doremus.org/work/672e4ae7-2201-3be1-b79e-c767353f4111>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/9e96b278-f276-3d58-8fef-23352a15d992> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f8daaa62-4399-3208-98fd-553aa1fd6abd> .
+
+<http://data.doremus.org/expression/f8daaa62-4399-3208-98fd-553aa1fd6abd>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "Livre 7" , "Livre VII" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/diabolo/genre/madrigal> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique baroque"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/f8daaa62-4399-3208-98fd-553aa1fd6abd/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "142" ;
+                  ecrm:P3_has_note              "SV 142"
+                ] ;
+        ecrm:P102_has_title       "Se pur destina e vole il cielo (Madrigal Livre 7)" , "Se pur destina e vole il cielo" , "madrigaux" , "Partenza amorosa" ;
+        ecrm:P3_has_note          "Première publication : Venise, 1619" , "Ce madrigal appartient au septième livre de madrigaux, publié sous le titre Concerto et accompagné d'une dédicace à la princesse Catherine de Médicis Gonzague, duchesse de Mantoue. Ce septième livre réunit 32 madrigaux de 1 à 6 voix, la plupart avec le soutien de la seule basse continue, mais quelques uns avec accompagnement d'instruments. Ce madrigal est aussi connu sous le nom de Partenza amorosa. (\"Si le ciel a voulu, pour ma destinée\")" .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

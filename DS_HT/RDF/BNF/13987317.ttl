@@ -1,0 +1,43 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/fb5e11a3-29e6-37fc-b326-f2a9f7cbd635>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/bb> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        ecrm:P102_has_title  "Harmonia a cinque con basso continuo" .
+
+<http://data.doremus.org/work/c2978955-afba-3cfe-b397-0982cc229fad>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/fb5e11a3-29e6-37fc-b326-f2a9f7cbd635> .
+
+<http://data.doremus.org/work/2c71ea0b-ecbf-3f66-89f5-b6967acd93c5>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/c2978955-afba-3cfe-b397-0982cc229fad> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/fb5e11a3-29e6-37fc-b326-f2a9f7cbd635> .
+
+<http://data.doremus.org/event/27864b3c-8af1-3147-9863-7fd83089d756>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1700/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/2ca4063a-881a-3488-b436-7f9069679046>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/fb5e11a3-29e6-37fc-b326-f2a9f7cbd635> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c2978955-afba-3cfe-b397-0982cc229fad> .
+
+<http://data.doremus.org/event/006f2e25-a727-3448-82a6-8799fd801fbc>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2c71ea0b-ecbf-3f66-89f5-b6967acd93c5> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/fb5e11a3-29e6-37fc-b326-f2a9f7cbd635> .
+
+<http://data.doremus.org/artist/2ca4063a-881a-3488-b436-7f9069679046>
+        a       ecrm:E21_Person .

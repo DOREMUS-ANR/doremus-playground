@@ -1,0 +1,84 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/fc44574a-43a5-396d-84d3-ad8a0dae23f2>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/c00751ae-ccf7-37ee-98a7-2236040e49b8> .
+
+<http://data.doremus.org/work/470afbca-a2ad-3d19-b645-624d54b1a07a>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/0404ad06-78e6-30dd-a670-9a578ce49da0> .
+
+<http://data.doremus.org/event/973e0c3f-c42f-3d9c-add2-d61e4db9f596>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Paris : Durand, 1922" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/470afbca-a2ad-3d19-b645-624d54b1a07a> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/0404ad06-78e6-30dd-a670-9a578ce49da0> .
+
+<http://data.doremus.org/expression/c00751ae-ccf7-37ee-98a7-2236040e49b8>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/453d8f1c-6320-3658-9c52-9d90f3e7a164> .
+
+<http://data.doremus.org/work/cedd1a29-e88b-384e-8b0c-739e37589c69>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/c5de7149-be2a-3879-87f9-b824ca55c479> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/453d8f1c-6320-3658-9c52-9d90f3e7a164> .
+
+<http://data.doremus.org/work/c5de7149-be2a-3879-87f9-b824ca55c479>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/973e0c3f-c42f-3d9c-add2-d61e4db9f596> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/7837c9a6-5e4c-3151-a5e2-ef6d96cccb34> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/453d8f1c-6320-3658-9c52-9d90f3e7a164> .
+
+<http://data.doremus.org/performance/7837c9a6-5e4c-3151-a5e2-ef6d96cccb34>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Paris, Société nationale de musique, 13 mai 1922" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/c00751ae-ccf7-37ee-98a7-2236040e49b8> .
+
+<http://data.doremus.org/publication/0404ad06-78e6-30dd-a670-9a578ce49da0>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/453d8f1c-6320-3658-9c52-9d90f3e7a164> .
+
+<http://data.doremus.org/event/bd9274ff-54ef-3c5c-9fc3-a7f361a5650a>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/cedd1a29-e88b-384e-8b0c-739e37589c69> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/453d8f1c-6320-3658-9c52-9d90f3e7a164> .
+
+<http://data.doremus.org/event/7caeaff5-342f-36e6-a6ee-032c6144a055>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19210101/19211231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/8f51a4f6-eb1a-3ad6-8071-f41aa77f0f52>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/453d8f1c-6320-3658-9c52-9d90f3e7a164> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c5de7149-be2a-3879-87f9-b824ca55c479> .
+
+<http://data.doremus.org/expression/453d8f1c-6320-3658-9c52-9d90f3e7a164>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/mld> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "118" ;
+                                      ecrm:P3_has_note         "Op. 118"
+                                    ] ;
+        ecrm:P102_has_title         "L'horizon chimérique" ;
+        ecrm:P3_has_note            "Cycle de 4 mélodies" , "Comprend : \"La mer est infinie\" (no 1) ; \"Je me suis embarqué\" (no 2) ; \"Diane Séléné\" (no 3) ; \"Vaisseaux, nous vous aurons aimés\" (no 4)" ;
+        ecrm:P67_refers_to          <http://data.doremus.org/expression/453d8f1c-6320-3658-9c52-9d90f3e7a164/dedication> .
+
+<http://data.doremus.org/expression/453d8f1c-6320-3658-9c52-9d90f3e7a164/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à Charles Panzéra"@fr .
+
+<http://data.doremus.org/artist/8f51a4f6-eb1a-3ad6-8071-f41aa77f0f52>
+        a       ecrm:E21_Person .

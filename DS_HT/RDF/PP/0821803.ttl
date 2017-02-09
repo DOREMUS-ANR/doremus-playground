@@ -1,0 +1,64 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/6f4de1a0-11ef-37f0-bec5-3b44ea148938>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/e93ad736-8425-3913-a699-f96372f98cfa>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "1" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/c> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/e93ad736-8425-3913-a699-f96372f98cfa/casting/1> ;
+        ecrm:P102_has_title       "Symphony no 1 in C" , "Symphonie no 1 en ut majeur" ;
+        ecrm:P3_has_note          "Création posthume à Bâle, sous la direction de Felix Weingartner, le 26 février 1935. Créée à Paris par le même le 29 mai 1936" , "Bizet composa cette symphonie après avoir écouté la Symphonie no 1 en ré majeur de Gounod en avril 1855. Elle n'était pas destinée à être jouée et ne fut redécouverte qu'en 1932 dans un legs de Reynaldo Hahn. au Conservatoire de Paris. Elle devint ensuite très populaire. Comprend : 1- Allegro vivo. 2- Adagio. 3- Scherzo allegro vivace. 4- Allegro vivace. Durée d'exécution : 30 minutes environ" .
+
+<http://data.doremus.org/work/9ec57c3e-1de3-3ef9-a601-c8f262b64523>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/df2dc11b-030d-3d7b-9a58-e011e1d81afc> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e93ad736-8425-3913-a699-f96372f98cfa> .
+
+<http://data.doremus.org/expression/e93ad736-8425-3913-a699-f96372f98cfa/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Les bois par 2, 4 cors, 2 trompettes, timbales, le quintette à cordes" .
+
+<http://data.doremus.org/event/9e034bfa-34d7-3758-b543-40dae88ba500>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1855" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1855"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6f4de1a0-11ef-37f0-bec5-3b44ea148938>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e93ad736-8425-3913-a699-f96372f98cfa> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/df2dc11b-030d-3d7b-9a58-e011e1d81afc> .
+
+<http://data.doremus.org/expression/3df2f2b3-61ca-37b1-b65a-89b0e3c49e4c>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/e93ad736-8425-3913-a699-f96372f98cfa> .
+
+<http://data.doremus.org/work/df2dc11b-030d-3d7b-9a58-e011e1d81afc>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/7eb0fa1d-55ed-3009-bcee-96e564321236> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e93ad736-8425-3913-a699-f96372f98cfa> .
+
+<http://data.doremus.org/event/d9a8883a-32c3-3e16-b657-70d115a6ae65>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/9ec57c3e-1de3-3ef9-a601-c8f262b64523> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e93ad736-8425-3913-a699-f96372f98cfa> .
+
+<http://data.doremus.org/performance/7eb0fa1d-55ed-3009-bcee-96e564321236>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création posthume à Bâle, sous la direction de Felix Weingartner, le 26 février 1935. Créée à Paris par le même le 29 mai 1936" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/3df2f2b3-61ca-37b1-b65a-89b0e3c49e4c> .

@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/1cd87dba-d380-385a-a42a-69ef8e31f8e9>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19910101/19911231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7c090d69-93dc-397d-985f-a75268cbab51>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/5fcf9318-33d3-3b7c-a0f4-8303f01875cc> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/2b8c35cb-b2e4-3a00-9b7f-9f163da6b3ea> .
+
+<http://data.doremus.org/artist/7c090d69-93dc-397d-985f-a75268cbab51>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/27122e4f-cbc7-3b54-83be-d87289880fd0>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/5fcf9318-33d3-3b7c-a0f4-8303f01875cc> .
+
+<http://data.doremus.org/event/9a87fb23-8a21-32b8-91e0-8d2563ac8ea8>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/cf450596-5118-3184-ade7-b685a9406c9e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/5fcf9318-33d3-3b7c-a0f4-8303f01875cc> .
+
+<http://data.doremus.org/work/2b8c35cb-b2e4-3a00-9b7f-9f163da6b3ea>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/9c6a23e5-e104-3bcc-8055-046e733d2d9c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/5fcf9318-33d3-3b7c-a0f4-8303f01875cc> .
+
+<http://data.doremus.org/work/cf450596-5118-3184-ade7-b685a9406c9e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/2b8c35cb-b2e4-3a00-9b7f-9f163da6b3ea> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/5fcf9318-33d3-3b7c-a0f4-8303f01875cc> .
+
+<http://data.doremus.org/expression/5fcf9318-33d3-3b7c-a0f4-8303f01875cc>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/uuu> ;
+        ecrm:P102_has_title  "Anthèmes" ;
+        ecrm:P3_has_note     "Issu d'un fragment de la partie de violon de \"Explosante-fixe...\"" , "Commande du Concours international de violon Yehudi Menuhin" , "Il existe une version pour violon et électronique sous le titre \"Anthèmes II\" (1997)" .
+
+<http://data.doremus.org/performance/9c6a23e5-e104-3bcc-8055-046e733d2d9c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Vienne, 18 novembre 1991, par Irvine Arditti" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/27122e4f-cbc7-3b54-83be-d87289880fd0> .
+
+<http://data.doremus.org/event/b07434d9-5f64-3bd8-9e24-92ed2508b01c>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/27122e4f-cbc7-3b54-83be-d87289880fd0> .

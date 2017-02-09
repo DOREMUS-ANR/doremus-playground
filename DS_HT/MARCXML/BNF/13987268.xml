@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13987268" format="InterXMarc_Complet" type="Authority">
+<leader>00660c1 au22000272  45  <Pos Code="0004">00660</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF13987268X<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13987268</Pos>
+<Pos Code="13">X</Pos>
+</controlfield>
+<controlfield tag="008">960301960301yyeng op        1982      ....                   1   <Pos Code="0001">96</Pos>
+<Pos Code="0203">03</Pos>
+<Pos Code="0405">01</Pos>
+<Pos Code="0607">96</Pos>
+<Pos Code="0809">03</Pos>
+<Pos Code="1011">01</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="anglais">eng</Pos>
+<Pos Code="1820">op </Pos>
+<Pos Code="2831">1982</Pos>
+<Pos Code="3841">....</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">sa01<Pos Code="0001" Sens="cordes frottées - violon">sa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">cn01 <Pos Code="0001" Sens="choeurs - non spécifié">cn</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">on01<Pos Code="0001" Sens="orchestre réduit - non spécifié">on</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13894531</subfield>
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Glass</subfield>
+	<subfield code="m">Philip</subfield>
+	<subfield code="d">1937-....</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a" Barre="4">The photographer</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Créé à Amsterdam, Netherlands Opera</subfield>
+	<subfield code="a">Music-theatre work in three acts</subfield>
+	<subfield code="a">Livret de R. Malasch et du comp. d&apos;après la vie d&apos;Eadweard Muybridge</subfield>
+	<subfield code="a">L&apos;acte I a la forme d&apos;une pièce de théâtre avec 3 intermèdes musicaux, l&apos;acte II a la forme d&apos;un concerto pour violon, l&apos;acte III celle d&apos;un ballet</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Date de composition : 1982</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">1re exécution : 1982-05-30</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Contemporary composers</subfield>
+	<subfield code="a">Grove Opera</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">101189090</subfield>
+</datafield>
+<Alter Ori="13894531">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">    b     </subfield>
+	<subfield code="a">Glass</subfield>
+	<subfield code="m">Phil</subfield>
+	<subfield code="d">1937-....</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb13987268n</Attr>
+<Attr Nom="NumSource">OPC 101189090</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13894531</Attr>
+<Attr Nom="DateCreation">01/03/ 1996</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">01/03/ 1996</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+</record>

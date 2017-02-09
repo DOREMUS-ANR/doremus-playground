@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/3ac9a653-e29a-3f7e-beda-409e60edc082/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à Pierre Boulez"@fr .
+
+<http://data.doremus.org/event/bdb4d122-f85b-36b3-ba4f-30fb22a93498>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/19dd152a-9073-3a55-8605-f8b945990d8c> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/3ac9a653-e29a-3f7e-beda-409e60edc082> .
+
+<http://data.doremus.org/artist/e8993b59-73fd-3143-9361-01993a7fea25>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/33e2fecb-b152-3bd3-8bab-c97f52ffc640>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/835a932f-0582-31db-aab8-ebb8fe040cf2> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/3ac9a653-e29a-3f7e-beda-409e60edc082> .
+
+<http://data.doremus.org/expression/3ac9a653-e29a-3f7e-beda-409e60edc082>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/dec> ;
+        ecrm:P102_has_title  "Streets" ;
+        ecrm:P3_has_note     "Commande de l'Ensemble Intercontemporain" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/3ac9a653-e29a-3f7e-beda-409e60edc082/dedication> .
+
+<http://data.doremus.org/expression/56da0b99-0689-3b2e-98f3-6f7cf1078403>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/3ac9a653-e29a-3f7e-beda-409e60edc082> .
+
+<http://data.doremus.org/work/19dd152a-9073-3a55-8605-f8b945990d8c>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/33e2fecb-b152-3bd3-8bab-c97f52ffc640> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/3ac9a653-e29a-3f7e-beda-409e60edc082> .
+
+<http://data.doremus.org/performance/835a932f-0582-31db-aab8-ebb8fe040cf2>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Paris, 7 novembre 2006, par l'Ensemble Intercontemporain, sous la direction de Pierre Boulez" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/56da0b99-0689-3b2e-98f3-6f7cf1078403> .
+
+<http://data.doremus.org/event/74c832c9-cc8f-3412-9148-66f07c3174dd>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "20060101/20061231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/e8993b59-73fd-3143-9361-01993a7fea25>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/3ac9a653-e29a-3f7e-beda-409e60edc082> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/33e2fecb-b152-3bd3-8bab-c97f52ffc640> .
+
+<http://data.doremus.org/event/a8e6ae09-6c61-3798-a87f-f9d9b44e213a>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/56da0b99-0689-3b2e-98f3-6f7cf1078403> .

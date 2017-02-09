@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/c804722a-90d6-38cd-a18d-7ae5a2b8ea2e>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/c4c313d9-b0c1-35c8-adf8-748c93ba079e> .
+
+<http://data.doremus.org/expression/c4c313d9-b0c1-35c8-adf8-748c93ba079e>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c9162948-0c21-359c-85b4-f7a340677d4b> .
+
+<http://data.doremus.org/event/cce954bb-ad3d-32c1-a028-fdc472161339>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b8b753c4-19da-3a0b-b3d7-6af66132ce6c> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c9162948-0c21-359c-85b4-f7a340677d4b> .
+
+<http://data.doremus.org/work/b8b753c4-19da-3a0b-b3d7-6af66132ce6c>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/31ee1b5d-00bd-3246-a7b6-7b1480a9eed5> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c9162948-0c21-359c-85b4-f7a340677d4b> .
+
+<http://data.doremus.org/expression/c9162948-0c21-359c-85b4-f7a340677d4b>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "Nachtmusik I" ;
+        ecrm:P3_has_note     "créé à Bonn" .
+
+<http://data.doremus.org/performance/c55904e8-26af-389f-abd8-4494b7b2ca98>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1978" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/c4c313d9-b0c1-35c8-adf8-748c93ba079e> .
+
+<http://data.doremus.org/artist/8e8e52a8-926d-3cd7-a8fd-19be259bb44a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/5b190f6c-4e3b-3c77-8059-7071b1df0917>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1977/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/8e8e52a8-926d-3cd7-a8fd-19be259bb44a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c9162948-0c21-359c-85b4-f7a340677d4b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/31ee1b5d-00bd-3246-a7b6-7b1480a9eed5> .
+
+<http://data.doremus.org/work/31ee1b5d-00bd-3246-a7b6-7b1480a9eed5>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/c55904e8-26af-389f-abd8-4494b7b2ca98> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c9162948-0c21-359c-85b4-f7a340677d4b> .

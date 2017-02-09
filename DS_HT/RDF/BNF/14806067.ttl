@@ -1,0 +1,81 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/6295a0d6-bd0a-3883-800a-b0f0b08d485e/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à la baronne Nathaniel de Rotschild"@fr .
+
+<http://data.doremus.org/event/ae5f0a2e-b31d-307d-86b2-64b9841242e7>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b64f542e-d8c5-3107-9726-af40ebfcd927> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6295a0d6-bd0a-3883-800a-b0f0b08d485e> .
+
+<http://data.doremus.org/event/feb52452-74d7-3b6c-9bb2-1579634e831b>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Paris : Schlesinger, 14 décembre 1843 ; Leipzig : Breitkopf & Härtel, novembre 1843 ; Londres : Wessel & Co., avril 1845" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/5b0e7c88-46d6-3093-aba1-00598be75d6e> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/06635f44-6efb-3f26-8b85-6d54716c41f1> .
+
+<http://data.doremus.org/work/797d96c3-c145-33b1-a85e-a34c4aa4b012>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/feb52452-74d7-3b6c-9bb2-1579634e831b> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6295a0d6-bd0a-3883-800a-b0f0b08d485e> .
+
+<http://data.doremus.org/expression/6295a0d6-bd0a-3883-800a-b0f0b08d485e/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/kpf>
+                                    ] ;
+        ecrm:P3_has_note            <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/artist/3bbeb439-01a3-3b23-8c04-1c5c80f0d66c>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/publication/06635f44-6efb-3f26-8b85-6d54716c41f1>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/6295a0d6-bd0a-3883-800a-b0f0b08d485e> .
+
+<http://data.doremus.org/event/5ee9468b-9132-311c-81f5-ce533fa101a8>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18410101/18421231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/3bbeb439-01a3-3b23-8c04-1c5c80f0d66c>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6295a0d6-bd0a-3883-800a-b0f0b08d485e> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/797d96c3-c145-33b1-a85e-a34c4aa4b012> .
+
+<http://data.doremus.org/expression/6295a0d6-bd0a-3883-800a-b0f0b08d485e>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "4" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/fm> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/bdi> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/6295a0d6-bd0a-3883-800a-b0f0b08d485e/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "CT" ;
+                  mus:U41_has_catalogue_number  "5" ;
+                  ecrm:P3_has_note              "CT 5"
+                ] ;
+        ecrm:P67_refers_to        <http://data.doremus.org/expression/6295a0d6-bd0a-3883-800a-b0f0b08d485e/dedication> .
+
+<http://data.doremus.org/work/b64f542e-d8c5-3107-9726-af40ebfcd927>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/797d96c3-c145-33b1-a85e-a34c4aa4b012> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6295a0d6-bd0a-3883-800a-b0f0b08d485e> .
+
+<http://data.doremus.org/work/5b0e7c88-46d6-3093-aba1-00598be75d6e>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/06635f44-6efb-3f26-8b85-6d54716c41f1> .

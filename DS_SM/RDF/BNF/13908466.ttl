@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/d9bf6891-c96b-33f9-b333-4114d4b3d12e>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c66519dc-9b54-3081-99d4-57a10b773f84> .
+
+<http://data.doremus.org/expression/c66519dc-9b54-3081-99d4-57a10b773f84>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "Sequenza IV" ;
+        ecrm:P3_has_note     "Créé à St Louis, Missouri par Jocy de Corvalho" .
+
+<http://data.doremus.org/event/59d7b182-eea9-3e0f-9381-15cc176178a9>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/d9bf6891-c96b-33f9-b333-4114d4b3d12e> .
+
+<http://data.doremus.org/event/ae9d693c-8556-3237-a714-7f57122eb8b7>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/acd6d599-8d19-32fe-9e34-64b5a342d620> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c66519dc-9b54-3081-99d4-57a10b773f84> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/972716b7-eb7c-373e-9f8d-291c4cb0e5f8>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1966/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c66519dc-9b54-3081-99d4-57a10b773f84> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/56d999dd-7611-3e2f-93f5-cf665b7080af> .
+
+<http://data.doremus.org/work/acd6d599-8d19-32fe-9e34-64b5a342d620>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/56d999dd-7611-3e2f-93f5-cf665b7080af> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c66519dc-9b54-3081-99d4-57a10b773f84> .
+
+<http://data.doremus.org/performance/07684b6f-6ee6-32a8-8abc-bc7b909e4b89>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1966" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/d9bf6891-c96b-33f9-b333-4114d4b3d12e> .
+
+<http://data.doremus.org/work/56d999dd-7611-3e2f-93f5-cf665b7080af>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/07684b6f-6ee6-32a8-8abc-bc7b909e4b89> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c66519dc-9b54-3081-99d4-57a10b773f84> .

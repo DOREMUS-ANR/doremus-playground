@@ -1,0 +1,55 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/6eb813fa-a0ae-3e8e-8e8a-982674e2c9c6>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c6aef714-3271-30fa-b251-ea904a7e5aa5> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/dbd9df1d-c267-3d2e-ba17-307e1bfdd921> .
+
+<http://data.doremus.org/expression/dbd9df1d-c267-3d2e-ba17-307e1bfdd921/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Choeur à dix voix mixtes (4 sopranos, 2 altos, 2 ténors, 2 basses) et basse continue." .
+
+<http://data.doremus.org/artist/dc30491f-20e4-3859-8244-e13fe97fb78c>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/8dc92948-be0c-3cae-946d-d0f862fd5a76>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1715 (circa)" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1715/1719"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/dc30491f-20e4-3859-8244-e13fe97fb78c>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/dbd9df1d-c267-3d2e-ba17-307e1bfdd921> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d731062f-edc0-3ebb-95ce-2aa57d5cc09d> .
+
+<http://data.doremus.org/expression/dbd9df1d-c267-3d2e-ba17-307e1bfdd921>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/motet> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique sacrée"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/dbd9df1d-c267-3d2e-ba17-307e1bfdd921/casting/1> ;
+        ecrm:P102_has_title  "Stabat Mater" , "Stabat mater" ;
+        ecrm:P3_has_note     "« Le Stabat Mater de Domenico Scarlatti pourrait avoir été écrit pour la chapelle Giulia de Vatican, pendant le séjour romain du compositeur » (Sylvie Bouissou). « Scarlatti y déploie un dispositif polyphonique inhabituel : les dix voix ne sont pas disposées en double choeur, mais mêlent quatre sopranos, deux altos, deux ténors et deux basses en un dense dialogue concertant. Sa construction est tout aussi originale : héritière du stile misto baroque, elle oppose dix sections contrastées, introduisant divers procédé d+écriture » (Denis Morrier). Durée d'exécution : 23 minutes environ." .
+
+<http://data.doremus.org/work/c6aef714-3271-30fa-b251-ea904a7e5aa5>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d731062f-edc0-3ebb-95ce-2aa57d5cc09d> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/dbd9df1d-c267-3d2e-ba17-307e1bfdd921> .
+
+<http://data.doremus.org/work/d731062f-edc0-3ebb-95ce-2aa57d5cc09d>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/dbd9df1d-c267-3d2e-ba17-307e1bfdd921> .

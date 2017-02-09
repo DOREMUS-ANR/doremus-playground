@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/f740b3c6-509b-352d-9654-3d22f2bc07bf>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/69ba6e4c-5fec-3b3f-8f80-669c784ee9fa>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "8" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/cm> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "WAB" ;
+                  mus:U41_has_catalogue_number  "108" ;
+                  ecrm:P3_has_note              "WAB 108"
+                ] ;
+        ecrm:P3_has_note          "Existe en deux versions : 1re version (juillet 1884-10 août 1887) ; 2e version (octobre 1887-10 mars 1890)" , "Éd. (2e version) : Berlin, 1892 (J. Schalk et M. von Oberleithner)" .
+
+<http://data.doremus.org/event/517398e4-4c35-3e33-84d9-e56b4c2b1a1f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18840701/18900310"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/f740b3c6-509b-352d-9654-3d22f2bc07bf>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/69ba6e4c-5fec-3b3f-8f80-669c784ee9fa> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e17dbfc4-c4e4-3aaf-bc45-ee8db37ed540> .
+
+<http://data.doremus.org/expression/2089e4ca-e2dc-3e21-84b3-65d472027c26>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/69ba6e4c-5fec-3b3f-8f80-669c784ee9fa> .
+
+<http://data.doremus.org/performance/0e81584d-2f40-3778-9274-60a875cf7f36>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution (complète) : Londres, 2 septembre 1973" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/2089e4ca-e2dc-3e21-84b3-65d472027c26> .
+
+<http://data.doremus.org/work/88c183ab-7557-328a-a469-77527c0edae7>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/e17dbfc4-c4e4-3aaf-bc45-ee8db37ed540> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/69ba6e4c-5fec-3b3f-8f80-669c784ee9fa> .
+
+<http://data.doremus.org/event/457e89a7-6e42-3ac4-8cb6-5503057489fe>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/88c183ab-7557-328a-a469-77527c0edae7> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/69ba6e4c-5fec-3b3f-8f80-669c784ee9fa> .
+
+<http://data.doremus.org/work/e17dbfc4-c4e4-3aaf-bc45-ee8db37ed540>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/69ba6e4c-5fec-3b3f-8f80-669c784ee9fa> .
+
+<http://data.doremus.org/event/2895c612-a620-3f8f-b5f5-c3acfb00286e>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/2089e4ca-e2dc-3e21-84b3-65d472027c26> .

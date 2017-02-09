@@ -1,0 +1,64 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/21e29d9a-04ab-3d24-b320-14a113cd4b2a>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/e89c26ae-6af7-36c9-af61-05c935b3c0c9> .
+
+<http://data.doremus.org/work/8281f7cc-2953-3964-a1a5-0a8e433d72f1>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/a7c731e6-17ac-301f-8844-867040d33599> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e89c26ae-6af7-36c9-af61-05c935b3c0c9> .
+
+<http://data.doremus.org/work/a7c731e6-17ac-301f-8844-867040d33599>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/429ec344-59aa-3bd8-8db3-13c51a9e4d71> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e89c26ae-6af7-36c9-af61-05c935b3c0c9> .
+
+<http://data.doremus.org/expression/e89c26ae-6af7-36c9-af61-05c935b3c0c9>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/e89c26ae-6af7-36c9-af61-05c935b3c0c9/casting/1> ;
+        ecrm:P102_has_title  "Transcriptions de la Retraite nocturne de Madrid de Luigi Boccherini" , "Quattro versioni originali della \"Ritirata notturna di Madrid\" di Luigi Boccherini" ;
+        ecrm:P3_has_note     "Répondant à une demande de La Scala de Milan, qui désirait une courte page pouvant être donnée en ouverture, Luciano Berio a repris le finale de La musique nocturne des rues de Madrid composée par Luigi Boccherini (op. 30 n°6). Durée d'exécution : 8 minutes environ." , "Créé à Milan, le 17 juin 1975, par l'Orchestre de La Scala de Milan sous la direction de Piero Bellugi." .
+
+<http://data.doremus.org/performance/429ec344-59aa-3bd8-8db3-13c51a9e4d71>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Milan, le 17 juin 1975, par l'Orchestre de La Scala de Milan sous la direction de Piero Bellugi." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/21e29d9a-04ab-3d24-b320-14a113cd4b2a> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/cad5cac3-d4c5-30fd-8724-3f61da3ac245>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1975" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1975"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e89c26ae-6af7-36c9-af61-05c935b3c0c9> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a7c731e6-17ac-301f-8844-867040d33599> .
+
+<http://data.doremus.org/event/621f3010-1096-3bc0-8ba2-db6ef9f95c92>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8281f7cc-2953-3964-a1a5-0a8e433d72f1> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e89c26ae-6af7-36c9-af61-05c935b3c0c9> .
+
+<http://data.doremus.org/expression/e89c26ae-6af7-36c9-af61-05c935b3c0c9/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Orchestre symphonique" .

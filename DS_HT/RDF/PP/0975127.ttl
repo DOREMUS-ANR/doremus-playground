@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/afe5a087-694a-3b2f-9a3f-ac11c0630187>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création du ballet à Londres en 1938 avec une chorégraphie de Massine, sous la direction musicale de Paul Hindemith. Création de la suite à Venise, le 13 septembre 1938" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/f5314b58-32e0-366a-acbc-4fadc3986ef5> .
+
+<http://data.doremus.org/expression/771b163b-a135-3a2b-ae2f-154ed9a6c1fc/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 flûtes, 2 hautbois, 2 clarinettes, 2 bassons ; 4 cors, 2 trompettes, 3 trombones, tuba ; timbales, percussions diverses et cordes" .
+
+<http://data.doremus.org/artist/68d6fa90-86ef-388d-8256-e94ae5e402fd>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/eaaf927c-4740-3c27-b5ac-379b8b3547c9>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/fb99b646-4f3d-344b-b7d3-e21c764ba276> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/771b163b-a135-3a2b-ae2f-154ed9a6c1fc> .
+
+<http://data.doremus.org/work/fb99b646-4f3d-344b-b7d3-e21c764ba276>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/977984c0-4f69-35f6-b3ee-3246eba86138> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/771b163b-a135-3a2b-ae2f-154ed9a6c1fc> .
+
+<http://data.doremus.org/event/9a338c4e-c6fe-34b0-845e-0d85a3725bd9>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1938" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1938"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/68d6fa90-86ef-388d-8256-e94ae5e402fd>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/771b163b-a135-3a2b-ae2f-154ed9a6c1fc> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/977984c0-4f69-35f6-b3ee-3246eba86138> .
+
+<http://data.doremus.org/expression/f5314b58-32e0-366a-acbc-4fadc3986ef5>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/771b163b-a135-3a2b-ae2f-154ed9a6c1fc> .
+
+<http://data.doremus.org/work/977984c0-4f69-35f6-b3ee-3246eba86138>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/afe5a087-694a-3b2f-9a3f-ac11c0630187> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/771b163b-a135-3a2b-ae2f-154ed9a6c1fc> .
+
+<http://data.doremus.org/expression/771b163b-a135-3a2b-ae2f-154ed9a6c1fc>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/771b163b-a135-3a2b-ae2f-154ed9a6c1fc/casting/1> ;
+        ecrm:P102_has_title  "Nobilissima visione" ;
+        ecrm:P3_has_note     "Suite tirée du ballet de même nom. Comprend : 1- Einleitung und Rondo. 2- Marsch und Pastorale. 3- Passacaglia. Durée d'exécution : 22 minutes environ." , "Création du ballet à Londres en 1938 avec une chorégraphie de Massine, sous la direction musicale de Paul Hindemith. Création de la suite à Venise, le 13 septembre 1938" .

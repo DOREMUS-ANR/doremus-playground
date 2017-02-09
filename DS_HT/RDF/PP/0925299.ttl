@@ -1,0 +1,85 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/8c46ccf0-3297-3c9e-b65e-ee16ab49e585>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/bb2a7dfc-7a33-3b4a-9c0e-e8b13ff481da> .
+
+<http://data.doremus.org/artist/f5f03bae-b7cd-3516-9c89-55eb475beec6>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/d5276eea-e9b1-3796-93d9-0572ea5e61ce>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1962" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1962"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/f5f03bae-b7cd-3516-9c89-55eb475beec6>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/bb2a7dfc-7a33-3b4a-9c0e-e8b13ff481da> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0343f4f4-31a8-37f9-9527-a239a49760b0> .
+
+<http://data.doremus.org/performance/9360054e-9b49-39ea-ab38-1865fb9a15e1>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée à Strasbourg, le 8 juin 1963, par Pierre Pierlot au hautbois et Jacques Février au piano." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/8c46ccf0-3297-3c9e-b65e-ee16ab49e585> .
+
+<http://data.doremus.org/event/71522cf5-7051-3171-9d4b-4f96648ed885>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/64fab1e5-39d2-3b05-a188-66870738e362> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/bb2a7dfc-7a33-3b4a-9c0e-e8b13ff481da> .
+
+<http://data.doremus.org/work/c9328330-a4cd-36bc-a8f7-b95ceac611d6>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/381c251e-8aea-3e72-9b44-65c82783198a> .
+
+<http://data.doremus.org/event/3177ac69-c165-3724-a670-c0e077fbb7e3>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Première édition : Chester, Londres." ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c9328330-a4cd-36bc-a8f7-b95ceac611d6> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/381c251e-8aea-3e72-9b44-65c82783198a> .
+
+<http://data.doremus.org/publication/381c251e-8aea-3e72-9b44-65c82783198a>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/bb2a7dfc-7a33-3b4a-9c0e-e8b13ff481da> .
+
+<http://data.doremus.org/work/64fab1e5-39d2-3b05-a188-66870738e362>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0343f4f4-31a8-37f9-9527-a239a49760b0> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/bb2a7dfc-7a33-3b4a-9c0e-e8b13ff481da> .
+
+<http://data.doremus.org/expression/bb2a7dfc-7a33-3b4a-9c0e-e8b13ff481da/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Hautbois et piano" .
+
+<http://data.doremus.org/expression/bb2a7dfc-7a33-3b4a-9c0e-e8b13ff481da>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/bb2a7dfc-7a33-3b4a-9c0e-e8b13ff481da/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "FP" ;
+                  mus:U41_has_catalogue_number  "185" ;
+                  ecrm:P3_has_note              "FP 185"
+                ] ;
+        ecrm:P102_has_title  "Sonate pour hautbois et piano" , "Sonata" ;
+        ecrm:P3_has_note     "Dédicace à la mémoire de Serge Prokofiev. Comprend : 1- Elégie. 2- Scherzo. 3- Déploration. Durée : 12 minutes environ" , "Créée à Strasbourg, le 8 juin 1963, par Pierre Pierlot au hautbois et Jacques Février au piano. Première édition : Chester, Londres." .
+
+<http://data.doremus.org/work/0343f4f4-31a8-37f9-9527-a239a49760b0>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/3177ac69-c165-3724-a670-c0e077fbb7e3> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/9360054e-9b49-39ea-ab38-1865fb9a15e1> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/bb2a7dfc-7a33-3b4a-9c0e-e8b13ff481da> .

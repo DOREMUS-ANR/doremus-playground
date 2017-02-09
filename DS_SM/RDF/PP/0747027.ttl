@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/44894b0c-5bec-3831-93f9-3954437401e2>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1990, révisé en 1992." ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1990/1992"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/4a7d5c3f-d6bf-34c9-a21c-44860c71ed1a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/b93f2ec8-cddc-35e1-b1cc-85af765871be> .
+
+<http://data.doremus.org/work/008c0bc4-dff2-3b04-93d1-310f7ea9e064>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/b93f2ec8-cddc-35e1-b1cc-85af765871be> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591> .
+
+<http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591/casting/1> ;
+        ecrm:P102_has_title  "Concerto pour violon et orchestre" ;
+        ecrm:P3_has_note     "Cette oeuvre est une commande du violoniste Saschko Gawriloff, qui en est le dédicataire, et du Westdeutscher (WDR) de Cologne. Comprend : 1- Praeludium : Vivacissimo luminoso ; 2- Aria - Hoquetus - Choral : Andante con moto ; 3- Intermezzo : Presto fluido ; 4- Passacaglia : Lento intenso ; 5- Appassionato : Agitato molto. Durée d'exécution : 25 minutes environ" , "1ère version en 3 mouvements : 29 novembre 1990, Paris. Version définitive en 5 mouvements : 8 octobre 1992, Cologne. Saschko Gawriloff, violon, Ensemble Modern sous la direction de Peter Eötvös." .
+
+<http://data.doremus.org/expression/37a086ee-aa6f-3dde-a760-b778fca313f9>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591> .
+
+<http://data.doremus.org/event/fcbe2d1b-59f8-39b9-81a2-8b3136d85425>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/008c0bc4-dff2-3b04-93d1-310f7ea9e064> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591> .
+
+<http://data.doremus.org/work/b93f2ec8-cddc-35e1-b1cc-85af765871be>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/3daee9fa-7245-336f-bdf2-9d5743c74bcf> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591> .
+
+<http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Violon soliste et quatuor de bois : 2 flûtes/piccolo/flûte alto/flûte à bec soprano, hautbois/ocarina en ut, clarinette/clarinette en mi bémol." .
+
+<http://data.doremus.org/artist/4a7d5c3f-d6bf-34c9-a21c-44860c71ed1a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/3daee9fa-7245-336f-bdf2-9d5743c74bcf>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1ère version en 3 mouvements : 29 novembre 1990, Paris. Version définitive en 5 mouvements : 8 octobre 1992, Cologne. Saschko Gawriloff, violon, Ensemble Modern sous la direction de Peter Eötvös." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/37a086ee-aa6f-3dde-a760-b778fca313f9> .

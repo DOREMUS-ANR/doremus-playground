@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/e8651031-b8b4-3ec2-8d15-c9e334484b53/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Piccolo, 3 flûtes, 2 hautbois, 1 cor anglais, 2 clarinettes, clarinette basse, 2 bassons, contrebasson, 6 cors, 3 trompettes, 3 trombones, tuba, percussion, piano, harpe, choeur, soprano, ténor, baryton solistes, cordes." .
+
+<http://data.doremus.org/event/9c049aa6-59e6-3763-a1b7-77dcfbb2aed6>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1912" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1912"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a66d98b7-610e-37f5-b2ab-81ff7d788f36>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e8651031-b8b4-3ec2-8d15-c9e334484b53> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/565b2e3f-b26c-3ce3-a052-60261c78cc1e> .
+
+<http://data.doremus.org/event/bf14634c-103e-3d2b-911f-24c890367a6c>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2539368f-acc3-3488-9d3e-6b18f2b9547b> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e8651031-b8b4-3ec2-8d15-c9e334484b53> .
+
+<http://data.doremus.org/expression/e8651031-b8b4-3ec2-8d15-c9e334484b53>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/e8651031-b8b4-3ec2-8d15-c9e334484b53/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "35" ;
+                                      ecrm:P3_has_note         "Op. 35"
+                                    ] ;
+        ecrm:P102_has_title         "Les cloches" , "The bells" , "Kolokola" ;
+        ecrm:P3_has_note            "C'est l'une des constantes du style de Rachmaninov que l'évocation des cloches, non seulement dans sa musique pour piano mais également dans ses oeuvres orchestrales ou chorales. Aussi quand le compositeur reçut, en 1912, une lettre anonyme (il s'avéra par la suite qu'elle avait été rédigée par une violoncelliste du nom de Maria Danilova), lettre lui suggérant d'utiliser le poème d'Edgar Poe dans une oeuvre musicale, il accueillit cette proposition avec enthousiasme. Elle lui permettait également de concilier deux projets : celui d'une cantate, pour laquelle il recherchait depuis plusieurs années un texte et celui d'une symphonie dont il avait déjà ébauché le plan. De fait, l'oeuvre prend la forme d'une vaste \"symphonie chorale\" en quatre mouvements calqués sur les quatres parties du poème : 1 : évocation de l'enfance (sons de grelots, de clochettes) ; 2 : la cloche d'or du mariage. 3 : le tocsin de bronze (l'age adulte : scherzo très rapide pour choeur sans soliste vocal) ; 4 : le glas (évocation de la mort , citation du \"dies irae\", autre élément favori de Rachmaninov). Outre le choeur, les mouvements 1, 2 et 4 font intervenir un soliste vocal différent : ténor, soprano, baryton. \"Les cloches \" restera l'oeuvre préférée de Rachmaninov. La traduction en russe, libre et très imagée, est due au célèbre poète Constantin Balmont." , "Création sous la direction du compositeur à Saint Petersbourg le 30 novembre 1913." .
+
+<http://data.doremus.org/performance/3bde6f71-c31f-37dc-9b1a-4af77609bc69>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création sous la direction du compositeur à Saint Petersbourg le 30 novembre 1913." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/4a6b8190-e425-3e0a-9f2f-5d2ac7fff711> .
+
+<http://data.doremus.org/artist/a66d98b7-610e-37f5-b2ab-81ff7d788f36>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/565b2e3f-b26c-3ce3-a052-60261c78cc1e>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/3bde6f71-c31f-37dc-9b1a-4af77609bc69> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e8651031-b8b4-3ec2-8d15-c9e334484b53> .
+
+<http://data.doremus.org/expression/4a6b8190-e425-3e0a-9f2f-5d2ac7fff711>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/e8651031-b8b4-3ec2-8d15-c9e334484b53> .
+
+<http://data.doremus.org/work/2539368f-acc3-3488-9d3e-6b18f2b9547b>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/565b2e3f-b26c-3ce3-a052-60261c78cc1e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e8651031-b8b4-3ec2-8d15-c9e334484b53> .

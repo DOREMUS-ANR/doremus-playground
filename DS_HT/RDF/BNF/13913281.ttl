@@ -1,0 +1,50 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/589812a2-65f9-3997-b139-8cef18eb1903>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ddae0854-5bb4-381b-91f1-d73f4b7022eb> .
+
+<http://data.doremus.org/work/7fbf5105-a61e-38f5-8571-844c89d63240>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/589812a2-65f9-3997-b139-8cef18eb1903> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ddae0854-5bb4-381b-91f1-d73f4b7022eb> .
+
+<http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/ddae0854-5bb4-381b-91f1-d73f4b7022eb>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "100" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/gb> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Hob" ;
+                  mus:U41_has_catalogue_number  "I" ;
+                  ecrm:P3_has_note              "Hob I 100"
+                ] ;
+        ecrm:P102_has_title       "Militärsymphonie" , "Symphonie militaire" .
+
+<http://data.doremus.org/event/219ab813-c4f4-3568-877b-6632f2313ccf>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/7fbf5105-a61e-38f5-8571-844c89d63240> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ddae0854-5bb4-381b-91f1-d73f4b7022eb> .
+
+<http://data.doremus.org/event/12b0b2ef-0088-35c3-bcc9-e20d21e655fb>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17940101/17941231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ddae0854-5bb4-381b-91f1-d73f4b7022eb> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/589812a2-65f9-3997-b139-8cef18eb1903> .

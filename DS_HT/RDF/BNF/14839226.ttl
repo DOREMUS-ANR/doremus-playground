@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/8cb56b6e-0672-368c-af77-ef6b84217e91>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/bcd03de2-67b1-3036-adfa-cd293aa01d29> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/a861d449-7b0d-3c5c-9e28-5930010d2051> .
+
+<http://data.doremus.org/event/4be614a7-aa4c-3f67-85d9-79a8aa31287d>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/2a8a7c76-a6fb-3841-bf95-204d0b684748> .
+
+<http://data.doremus.org/artist/18c9ef70-4b55-3028-a2ae-70f3e659cad7>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/55671e4e-cb5f-323b-9c57-46a3105b9299>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "20010101/20011231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/18c9ef70-4b55-3028-a2ae-70f3e659cad7>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/a861d449-7b0d-3c5c-9e28-5930010d2051> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8cb56b6e-0672-368c-af77-ef6b84217e91> .
+
+<http://data.doremus.org/expression/a861d449-7b0d-3c5c-9e28-5930010d2051>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/chr> ;
+        ecrm:P102_has_title  "Chant dormant" , "Dormant chant" , "Chantdormantchant" , "Chant dormant, dormant chant" ;
+        ecrm:P3_has_note     "Choeur a cappella sur des citations de William Shakespeare, de Victor Hugo et d'auteurs anonymes, en français et en anglais" , "Ce choeur, légèrement modifié, a été repris dans le \"Concerto-fantaise\" pour piano et choeur" .
+
+<http://data.doremus.org/performance/bcd03de2-67b1-3036-adfa-cd293aa01d29>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Ann Arbor (Mich.), 2003, par l'University of Michigan Choir" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/2a8a7c76-a6fb-3841-bf95-204d0b684748> .
+
+<http://data.doremus.org/expression/2a8a7c76-a6fb-3841-bf95-204d0b684748>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/a861d449-7b0d-3c5c-9e28-5930010d2051> .
+
+<http://data.doremus.org/event/e8b34171-97a6-3260-95a7-104cd6735ed4>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/0291d462-cbd0-3337-bafd-408f7593cffa> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/a861d449-7b0d-3c5c-9e28-5930010d2051> .
+
+<http://data.doremus.org/work/0291d462-cbd0-3337-bafd-408f7593cffa>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8cb56b6e-0672-368c-af77-ef6b84217e91> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/a861d449-7b0d-3c5c-9e28-5930010d2051> .

@@ -1,0 +1,78 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/publication/af4ed2a3-6f22-3be8-b890-eb0b1e06d9db>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/4b1ff8d4-4bee-3689-9525-2a6992f52045> .
+
+<http://data.doremus.org/work/dd7a9472-924f-3a13-be20-e19dc7a30ee0>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/7a0afbc1-8ce4-3627-92c6-1864554780dc> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f56bf6df-65f2-32b0-ad7d-fda912b56b5a> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/4b1ff8d4-4bee-3689-9525-2a6992f52045> .
+
+<http://data.doremus.org/expression/5e35701a-cfd0-3c21-80a2-26daf1bf396b>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/4b1ff8d4-4bee-3689-9525-2a6992f52045> .
+
+<http://data.doremus.org/work/34d5edd7-6593-3e31-9aa9-5e62c0d6b6f0>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/dd7a9472-924f-3a13-be20-e19dc7a30ee0> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/4b1ff8d4-4bee-3689-9525-2a6992f52045> .
+
+<http://data.doremus.org/event/c42bc2c6-95a4-3615-930d-320c49f7ab55>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18030301/18030331"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/4b1ff8d4-4bee-3689-9525-2a6992f52045> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/dd7a9472-924f-3a13-be20-e19dc7a30ee0> .
+
+<http://data.doremus.org/expression/4b1ff8d4-4bee-3689-9525-2a6992f52045>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/or> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "85" ;
+                                      ecrm:P3_has_note         "Op. 85"
+                                    ] ;
+        ecrm:P102_has_title         "Le Christ au Mont des oliviers" , "Christus am Ölberge" ;
+        ecrm:P3_has_note            "Sur un livret de Franz Xaver Huber" .
+
+<http://data.doremus.org/event/0268a8c2-8d39-3989-9cce-b5cd9d955b54>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/34d5edd7-6593-3e31-9aa9-5e62c0d6b6f0> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/4b1ff8d4-4bee-3689-9525-2a6992f52045> .
+
+<http://data.doremus.org/event/7a0afbc1-8ce4-3627-92c6-1864554780dc>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Leipzig : Breitkopf & Härtel, 1811" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a8cbea77-c59a-335d-a23e-cf9e7d9e2de9> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/af4ed2a3-6f22-3be8-b890-eb0b1e06d9db> .
+
+<http://data.doremus.org/event/1ee56df4-31e8-3692-ae9a-72898355950f>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/5e35701a-cfd0-3c21-80a2-26daf1bf396b> .
+
+<http://data.doremus.org/performance/f56bf6df-65f2-32b0-ad7d-fda912b56b5a>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Vienne, Theater an der Wien, 5 avril 1803" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/5e35701a-cfd0-3c21-80a2-26daf1bf396b> .
+
+<http://data.doremus.org/work/a8cbea77-c59a-335d-a23e-cf9e7d9e2de9>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/af4ed2a3-6f22-3be8-b890-eb0b1e06d9db> .
+
+<http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+        a       ecrm:E21_Person .

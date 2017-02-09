@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/e9c9f3f8-22ae-372a-a9a1-c2367e713048/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Ténor, piano" .
+
+<http://data.doremus.org/work/18d03776-fce9-33d0-825f-29afdfaa9840>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/2213d9fb-b4bd-315e-85a1-2de7812e4f65> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e9c9f3f8-22ae-372a-a9a1-c2367e713048> .
+
+<http://data.doremus.org/expression/974f8f9d-90d8-3b8d-abe8-6056b2fa724c>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/e9c9f3f8-22ae-372a-a9a1-c2367e713048> .
+
+<http://data.doremus.org/work/2213d9fb-b4bd-315e-85a1-2de7812e4f65>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/148d3d76-6233-3c2e-a3ea-4f7657e70760> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e9c9f3f8-22ae-372a-a9a1-c2367e713048> .
+
+<http://data.doremus.org/event/66b821d3-5d50-3141-9676-aea12a173d10>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1997-1998" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1997/1998"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9f052ae2-4766-3063-8700-3ea4a2ccb596>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e9c9f3f8-22ae-372a-a9a1-c2367e713048> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/2213d9fb-b4bd-315e-85a1-2de7812e4f65> .
+
+<http://data.doremus.org/expression/e9c9f3f8-22ae-372a-a9a1-c2367e713048>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/lied> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/e9c9f3f8-22ae-372a-a9a1-c2367e713048/casting/1> ;
+        ecrm:P102_has_title  "Six chants de l'arabe" , "Sechs Gesänge aus dem Arabischen" ;
+        ecrm:P3_has_note     "Ces chants sont dédiés à Ian Bostridge et Julius Drake, créateurs de l'oeuvre : 1- Selím und der Wind (Selím et le vent). 2- Die Gottesanbeterin (La Mante religieuse). 3- Ein Sonnenaufgang (Un Lever de soleil). 4- Cäsarion (Césarion). 5- Fatumas Klage (La Plainte de Fatuma). 6- Das Paradies (Le Paradis)" , "Créés à la Philharmonie de Cologne le 23 novembre 1999 par Ian Bosbridge et Julius Drake. Éditeur : Schott." .
+
+<http://data.doremus.org/performance/148d3d76-6233-3c2e-a3ea-4f7657e70760>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créés à la Philharmonie de Cologne le 23 novembre 1999 par Ian Bosbridge et Julius Drake. Éditeur : Schott." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/974f8f9d-90d8-3b8d-abe8-6056b2fa724c> .
+
+<http://data.doremus.org/event/a441c1aa-86f5-3cb1-a14b-21c5da1630de>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/18d03776-fce9-33d0-825f-29afdfaa9840> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e9c9f3f8-22ae-372a-a9a1-c2367e713048> .
+
+<http://data.doremus.org/artist/9f052ae2-4766-3063-8700-3ea4a2ccb596>
+        a       ecrm:E21_Person .

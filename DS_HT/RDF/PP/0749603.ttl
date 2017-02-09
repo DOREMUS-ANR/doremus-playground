@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/802f9d1a-9590-34f8-bd51-ce210a0c54f4>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/9e2ee013-9607-31d2-abcb-7644898f91ab> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/39f29402-3cd2-35e5-8555-4a0913fc568b> .
+
+<http://data.doremus.org/event/8e5c38b9-1367-3ada-aba0-0d7dcd05ac8a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "Entre 1944 et 1948 (écriture achevée le 15 mars 1948)" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1944/1948"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c543bf3a-8b26-38c1-bd6b-b2b68dccbb17>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/39f29402-3cd2-35e5-8555-4a0913fc568b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/6238f772-9dd7-38ea-afa6-a4fd2e99acc1> .
+
+<http://data.doremus.org/expression/39f29402-3cd2-35e5-8555-4a0913fc568b>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/messe> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique sacrée"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/39f29402-3cd2-35e5-8555-4a0913fc568b/casting/1> ;
+        ecrm:P102_has_title  "Messe, pour choeur mixte et dix instruments" , "Messe" , "Messe, pour choeur mixte et double quintette à vent" , "Mass" , "Mass for mixed chorus and double wind quintet" ;
+        ecrm:P3_has_note     "Cette Messe est la seule oeuvre proprement liturgique du compositeur, la seule qui soit destinée à être jouée durant un office. Comprend : 1- Kyrie. 2- Gloria. 3- Credo. 4- Sanctus. 5- Agnus Dei. Durée d'exécution : 20 minutes environ" , "Création le 27 octobre 1948 à la Scala de Milan, sous la direction de Ernest Ansermet." , "Editeur : Boosey & Hawkes" .
+
+<http://data.doremus.org/work/6238f772-9dd7-38ea-afa6-a4fd2e99acc1>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/aa9adc1d-f94b-33bd-97f6-041f7a4dfb55> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/39f29402-3cd2-35e5-8555-4a0913fc568b> .
+
+<http://data.doremus.org/artist/c543bf3a-8b26-38c1-bd6b-b2b68dccbb17>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/9e2ee013-9607-31d2-abcb-7644898f91ab>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/6238f772-9dd7-38ea-afa6-a4fd2e99acc1> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/39f29402-3cd2-35e5-8555-4a0913fc568b> .
+
+<http://data.doremus.org/performance/aa9adc1d-f94b-33bd-97f6-041f7a4dfb55>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Editeur : Boosey & Hawkes" , "Création le 27 octobre 1948 à la Scala de Milan, sous la direction de Ernest Ansermet." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/b15677a3-756d-313e-b614-60aa61c88b93> .
+
+<http://data.doremus.org/expression/b15677a3-756d-313e-b614-60aa61c88b93>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/39f29402-3cd2-35e5-8555-4a0913fc568b> .
+
+<http://data.doremus.org/expression/39f29402-3cd2-35e5-8555-4a0913fc568b/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Choeur mixte, double quintette à vent : 2 hautbois, cor anglais, 2 bassons, 2 trompettes, 3 trombones." .

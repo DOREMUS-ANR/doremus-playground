@@ -1,0 +1,42 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/1784f45f-648c-3f65-a31d-08cd96d51e74>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c7b02b73-9aa7-3075-ac3e-827ede26f623> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/7665bc36-4238-395c-b475-76099f909c72> .
+
+<http://data.doremus.org/expression/7665bc36-4238-395c-b475-76099f909c72>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/dui> ;
+        ecrm:P102_has_title  "Hommage à Betsy Jolas" , "Ohimé" .
+
+<http://data.doremus.org/artist/62083c13-16d4-337f-9fed-1f431d6faad7>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/c7b02b73-9aa7-3075-ac3e-827ede26f623>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/36471262-fe93-3f38-b449-725c43419cc8> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/7665bc36-4238-395c-b475-76099f909c72> .
+
+<http://data.doremus.org/event/ce5b53e3-a398-3849-8e79-98ede81a6baa>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19920101/19921231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/62083c13-16d4-337f-9fed-1f431d6faad7>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/7665bc36-4238-395c-b475-76099f909c72> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/36471262-fe93-3f38-b449-725c43419cc8> .
+
+<http://data.doremus.org/work/36471262-fe93-3f38-b449-725c43419cc8>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/7665bc36-4238-395c-b475-76099f909c72> .

@@ -1,0 +1,85 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/e5e485e5-18a5-3a89-9499-9e1b43dbc9a3>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Editeur : Faber" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/cbf978ae-dbc5-35a9-ac3c-b615b056d5db> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/aeb6f435-b1cf-38c7-b6fa-ca3c4768b42a> .
+
+<http://data.doremus.org/work/11a310c5-99e5-31d4-9f40-f8fc452ed758>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/10677244-241a-3aa1-8dde-84a54592f671> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/042690c7-43dd-3018-9985-87b5f9e2b157> .
+
+<http://data.doremus.org/work/10677244-241a-3aa1-8dde-84a54592f671>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/e5e485e5-18a5-3a89-9499-9e1b43dbc9a3> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/52aeb55d-db73-34d6-b673-fd2a857ea64f> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/042690c7-43dd-3018-9985-87b5f9e2b157> .
+
+<http://data.doremus.org/work/cbf978ae-dbc5-35a9-ac3c-b615b056d5db>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/aeb6f435-b1cf-38c7-b6fa-ca3c4768b42a> .
+
+<http://data.doremus.org/artist/30612daf-39fe-3c93-bc3b-526ba31f9cf5>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/52aeb55d-db73-34d6-b673-fd2a857ea64f>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création le 25 novembre 1993 à Bristoll, St George's Brandon Hill par Lynsey Marsh, Thomas Adès, Anthony Marwood, Louise Hopkins." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/64c2ac75-5b03-3376-bd01-96fd17792c89> .
+
+<http://data.doremus.org/expression/64c2ac75-5b03-3376-bd01-96fd17792c89>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/042690c7-43dd-3018-9985-87b5f9e2b157> .
+
+<http://data.doremus.org/publication/aeb6f435-b1cf-38c7-b6fa-ca3c4768b42a>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/042690c7-43dd-3018-9985-87b5f9e2b157> .
+
+<http://data.doremus.org/expression/042690c7-43dd-3018-9985-87b5f9e2b157/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "clarinette, piano, violon, violoncelle" .
+
+<http://data.doremus.org/event/423b1e0f-d736-39e0-bdca-0bedda83c405>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1991" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1991"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/30612daf-39fe-3c93-bc3b-526ba31f9cf5>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/042690c7-43dd-3018-9985-87b5f9e2b157> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/10677244-241a-3aa1-8dde-84a54592f671> .
+
+<http://data.doremus.org/expression/042690c7-43dd-3018-9985-87b5f9e2b157>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/042690c7-43dd-3018-9985-87b5f9e2b157/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "4" ;
+                                      ecrm:P3_has_note         "Op. 4"
+                                    ] ;
+        ecrm:P102_has_title         "Catch" ;
+        ecrm:P3_has_note            "Catch explore l'idée de distanciation d'une part en termes d'équilibre avec l'inclusion d'une clarinette dans l'ensemble traditionnel du trio avec piano, et d'autre part d'un point de vue scènique, par le fait que le clarinettiste entre à trois reprises pendant l'exécution, se plaçant à chaque fois à un endroit différent. De plus, ses différentes insertions dans le discours des autres instruments partent d'un jeu totalement contradictoire pour s'intégrer peu à peu dans un trio aboutissant enfin à une réelle homogénéité." , "Création le 25 novembre 1993 à Bristoll, St George's Brandon Hill par Lynsey Marsh, Thomas Adès, Anthony Marwood, Louise Hopkins. Editeur : Faber" .
+
+<http://data.doremus.org/event/21cc02f5-407c-3220-8344-0896f9d8f63a>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/11a310c5-99e5-31d4-9f40-f8fc452ed758> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/042690c7-43dd-3018-9985-87b5f9e2b157> .

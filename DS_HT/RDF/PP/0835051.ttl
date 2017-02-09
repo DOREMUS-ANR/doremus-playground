@@ -1,0 +1,67 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/637ba540-8f5b-3095-a4de-43cd3dacad73>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0fbdb78c-b1fa-3178-a669-cb222ca35d16> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/9ddf1c56-08db-3fb9-b448-80d80bac52d9> .
+
+<http://data.doremus.org/expression/9ddf1c56-08db-3fb9-b448-80d80bac52d9/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Flûte/flûte piccolo, flûte/flûte piccolo/flûte en sol, hautbois/cor anglais, clarinette en si bémol/clarinette en la, clarinette en si bémol/clarinette basse, clarinette basse/clarinette contrebasse, basson/contrebasson, 2 cors en fa, trompette en ut/bugle en mi bémol/trompette piccolo en si bémol, trombone ténor-basse/euphonium, 2 percussions, piano/célesta, harpe, 3 violons, 3 altos, 2 violoncelles, 2 contrebasses dont 1 à 5 cordes (24 exécutants)" .
+
+<http://data.doremus.org/event/349ad0e0-5b62-3c78-a37a-1995e2d4ff03>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1993-95" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1993/1995"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/99e45af8-2104-308a-b8d3-9e649cec7abb>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/9ddf1c56-08db-3fb9-b448-80d80bac52d9> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0fbdb78c-b1fa-3178-a669-cb222ca35d16> .
+
+<http://data.doremus.org/performance/8d1b9841-2320-3f04-b8bc-610aeb95f99e>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé le 27 juillet 1995, Festival de Salzbourg, salle du Mozarteum, par l'Ensemble Modern dirigé par le compositeur. Edité chez Faber" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/5a8d9504-5713-393a-8c8e-391bc121d261> .
+
+<http://data.doremus.org/artist/99e45af8-2104-308a-b8d3-9e649cec7abb>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/9ddf1c56-08db-3fb9-b448-80d80bac52d9>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "invention (genre musical)"@fr
+                             ] ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/9ddf1c56-08db-3fb9-b448-80d80bac52d9/casting/1> ;
+        ecrm:P102_has_title  "3 inventions" , "Trois inventions pour orchestre de chambre" , "Three inventions for chamber orchestra" ;
+        ecrm:P3_has_note     "Commande : Betty Freeman pour le 75e Festival de Salzbourg. Dédicace: I. \"in memory of Olivier Messiaen\" ; II. sans dédicace ; III. \"for Alexander Goehr\". Comprend : Invention I. Molto tranquillo ; Invention II. Noire = 96 ; Invention III. Lento. Durée : environ 17 minutes." , "Créé le 27 juillet 1995, Festival de Salzbourg, salle du Mozarteum, par l'Ensemble Modern dirigé par le compositeur. Edité chez Faber" .
+
+<http://data.doremus.org/expression/5a8d9504-5713-393a-8c8e-391bc121d261>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/9ddf1c56-08db-3fb9-b448-80d80bac52d9> .
+
+<http://data.doremus.org/work/0fbdb78c-b1fa-3178-a669-cb222ca35d16>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/8d1b9841-2320-3f04-b8bc-610aeb95f99e> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/9ddf1c56-08db-3fb9-b448-80d80bac52d9> .
+
+<http://data.doremus.org/event/ec979bbd-a5d1-37fc-b390-6af950f96af1>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/637ba540-8f5b-3095-a4de-43cd3dacad73> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/9ddf1c56-08db-3fb9-b448-80d80bac52d9> .

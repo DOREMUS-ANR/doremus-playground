@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/7cd4133c-b4d2-3b51-9f41-d113ca5d9bc1>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/cc68c389-ca73-3116-95b0-4a4441cb9101> .
+
+<http://data.doremus.org/expression/cc68c389-ca73-3116-95b0-4a4441cb9101/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 hautbois, 2 cors, cordes" .
+
+<http://data.doremus.org/work/5a432d27-260a-3406-bd82-d4084bcdd879>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/7cd4133c-b4d2-3b51-9f41-d113ca5d9bc1> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/cc68c389-ca73-3116-95b0-4a4441cb9101> .
+
+<http://data.doremus.org/expression/cc68c389-ca73-3116-95b0-4a4441cb9101>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "N° 17" , "17" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/gb> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/cc68c389-ca73-3116-95b0-4a4441cb9101/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                           mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name  "K" ;
+                  ecrm:P3_has_note            "K. 129"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "129" ;
+                  ecrm:P3_has_note              "KV 129"
+                ] ;
+        ecrm:P102_has_title       "Sinfonie in G" , "Symphonie en Sol majeur" , "Symphonie no 17" ;
+        ecrm:P3_has_note          "Comprend : 1- allegro. 2- andante. 3- allegretto" .
+
+<http://data.doremus.org/event/8ae7b898-fe52-3b0d-a312-5059093de1d5>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/5a432d27-260a-3406-bd82-d4084bcdd879> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/cc68c389-ca73-3116-95b0-4a4441cb9101> .
+
+<http://data.doremus.org/event/d8684e7c-6708-39ad-aa58-3683f1eb8741>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "Mai 1772" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1772"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/cc68c389-ca73-3116-95b0-4a4441cb9101> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/7cd4133c-b4d2-3b51-9f41-d113ca5d9bc1> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .

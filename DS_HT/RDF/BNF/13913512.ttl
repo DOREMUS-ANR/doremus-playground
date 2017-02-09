@@ -1,0 +1,81 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/f1f1724a-6bd6-36c1-a5c5-30e5d4f00b1f>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Eisenstadt, 23 septembre 1798" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/2b113d9f-303d-367d-9d5d-87d2dc1b5ed7> .
+
+<http://data.doremus.org/work/88612439-c60c-3ab0-9bb2-4aac3149e647>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/65d05938-af4e-3dd7-814a-91b6f8f81e25> .
+
+<http://data.doremus.org/event/ae073751-5a81-32ed-b106-0037debad3ad>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. (augmentée de flûte, hautbois, basson, cor) : Leipzig : Breitkopf et Härtel, mai 1803" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/88612439-c60c-3ab0-9bb2-4aac3149e647> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/65d05938-af4e-3dd7-814a-91b6f8f81e25> .
+
+<http://data.doremus.org/event/4830a1eb-7e4c-3396-8bc7-f312f170b7be>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/4bfe475e-58d4-353a-b887-d9126605ed79> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/b13e53d4-2fd1-3f05-9e4a-65f0796fc26c> .
+
+<http://data.doremus.org/event/4b5b5b74-6372-3bae-869d-7cdbe0ea311d>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17980710/17980831"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/b13e53d4-2fd1-3f05-9e4a-65f0796fc26c> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/9f185e1f-17a6-3b0f-9018-924713087309> .
+
+<http://data.doremus.org/event/8d81a574-43f1-36ba-8da3-46f014234cf0>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/2b113d9f-303d-367d-9d5d-87d2dc1b5ed7> .
+
+<http://data.doremus.org/publication/65d05938-af4e-3dd7-814a-91b6f8f81e25>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/b13e53d4-2fd1-3f05-9e4a-65f0796fc26c> .
+
+<http://data.doremus.org/work/9f185e1f-17a6-3b0f-9018-924713087309>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/ae073751-5a81-32ed-b106-0037debad3ad> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f1f1724a-6bd6-36c1-a5c5-30e5d4f00b1f> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/b13e53d4-2fd1-3f05-9e4a-65f0796fc26c> .
+
+<http://data.doremus.org/work/4bfe475e-58d4-353a-b887-d9126605ed79>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/9f185e1f-17a6-3b0f-9018-924713087309> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/b13e53d4-2fd1-3f05-9e4a-65f0796fc26c> .
+
+<http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/2b113d9f-303d-367d-9d5d-87d2dc1b5ed7>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/b13e53d4-2fd1-3f05-9e4a-65f0796fc26c> .
+
+<http://data.doremus.org/expression/b13e53d4-2fd1-3f05-9e4a-65f0796fc26c>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "11" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/ms> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Hob" ;
+                  mus:U41_has_catalogue_number  "XXII" ;
+                  ecrm:P3_has_note              "Hob XXII 11"
+                ] ;
+        ecrm:P102_has_title       "Coronation mass" , "Imperial mass" , "Messe Nelson" , "Missa in angustiis" , "Nelsonmesse" , "L'impériale" ;
+        ecrm:P3_has_note          "Exécution en présence de Nelson et Lady Hamilton : Eisenstadt, septembre 1800" .

@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/1ffab31e-41b9-3394-a0d7-c8121dfc6b40>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/67794442-38ee-34a5-97c0-a7a1b491d58e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/1e73ad7c-639b-330a-ace4-4529e59a5299> .
+
+<http://data.doremus.org/event/2a291144-a141-3613-921e-0935be929f40>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1967 ; 1970 (IIb) ; 1972 (IIc)" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1967/1972"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/1e73ad7c-639b-330a-ace4-4529e59a5299> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/67794442-38ee-34a5-97c0-a7a1b491d58e> .
+
+<http://data.doremus.org/performance/4c236d46-c57e-36f3-811b-8f5055d86c25>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création : janvier 1968 à Milan, Piccola Scala, par Walter Trampler, alto, et le Julliard Ensemble, direction Luciano Berio. Création de Chemins IIc en 1972 à Rotterdam par Harry Sparnaay sous la direction de Luciano Berio. Edité chez Universal" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/735cfcaa-3800-3746-8744-db5ab6e6a4ba> .
+
+<http://data.doremus.org/event/59f9a059-ee68-3cbe-92f8-a09ab311c05e>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/1ffab31e-41b9-3394-a0d7-c8121dfc6b40> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/1e73ad7c-639b-330a-ace4-4529e59a5299> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/1e73ad7c-639b-330a-ace4-4529e59a5299/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Alto solo, flûte, clarinette en si bémol, trombone ténor-basse, 2 percussions, harpe, orgue électrique manuel, alto, violoncelle" .
+
+<http://data.doremus.org/work/67794442-38ee-34a5-97c0-a7a1b491d58e>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/4c236d46-c57e-36f3-811b-8f5055d86c25> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/1e73ad7c-639b-330a-ace4-4529e59a5299> .
+
+<http://data.doremus.org/expression/735cfcaa-3800-3746-8744-db5ab6e6a4ba>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/1e73ad7c-639b-330a-ace4-4529e59a5299> .
+
+<http://data.doremus.org/expression/1e73ad7c-639b-330a-ace4-4529e59a5299>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/musique_de_chambre> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/1e73ad7c-639b-330a-ace4-4529e59a5299/casting/1> ;
+        ecrm:P102_has_title  "Chemins II pour alto et 9 instruments" , "Chemins II" ;
+        ecrm:P3_has_note     "D'après la Sequenza VI pour alto, Chemin II en est un développement, un commentaire, l'idée initiale se transforme, disparaît et resurgit. Berio a composé 2 autres versions : IIb pour violon et orchestre, et IIc pour clarinette basse et orchestre. Commande : Walter Trampler. Durée : environ 13 minutes." , "Création : janvier 1968 à Milan, Piccola Scala, par Walter Trampler, alto, et le Julliard Ensemble, direction Luciano Berio. Création de Chemins IIc en 1972 à Rotterdam par Harry Sparnaay sous la direction de Luciano Berio. Edité chez Universal" .

@@ -1,0 +1,56 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/64f9f271-8ada-3647-a163-e805207bcd42>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/fa92b8bb-86c2-30f6-b2d3-a9bf9b4fd7e9> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971> .
+
+<http://data.doremus.org/event/18662492-c88c-3b39-a450-13b67cbfdb39>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/64f9f271-8ada-3647-a163-e805207bcd42> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971> .
+
+<http://data.doremus.org/work/fa92b8bb-86c2-30f6-b2d3-a9bf9b4fd7e9>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971> .
+
+<http://data.doremus.org/event/9691b131-c01a-3659-9bfb-2fd4bb8e22af>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1933" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1933"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/fa92b8bb-86c2-30f6-b2d3-a9bf9b4fd7e9> .
+
+<http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/diabolo/genre/lied> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "27" ;
+                                      ecrm:P3_has_note         "Op. 27"
+                                    ] ;
+        ecrm:P102_has_title         "Unvergänglichkeit" ;
+        ecrm:P3_has_note            "Ce cycle de mélodies a été composé en 1933 sur des poèmes de Eleonore van der Straaten. Comprend : 1- Unvergänglichkeit. 2- Das eilende Bächlein. 3- Das schlafende Kind. 4- Stärker als der Tod. 5- Unvergänglichkeit" .
+
+<http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Voix et piano" .

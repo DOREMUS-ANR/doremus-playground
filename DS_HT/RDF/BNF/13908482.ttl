@@ -1,0 +1,86 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/6403ae22-00e3-3c80-9ed9-37aa64b70aae>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/2a467351-acad-3769-9dcd-eb869e53c959>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Paris, salle du Conservatoire, 5 décembre 1830 sous la direction de Habeneck" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/db78a241-0ae4-3091-a6d2-ffea4a9e63e1> .
+
+<http://data.doremus.org/event/9ef8c9fc-5e3e-3004-81e8-a705513e6a44>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/db78a241-0ae4-3091-a6d2-ffea4a9e63e1> .
+
+<http://data.doremus.org/event/f6167919-580f-3de1-9333-b6fb0d716251>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/0b8f850f-ae9c-3f1b-9b12-bd2beab10dae> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f55c828b-7e28-3e32-8004-51e4844ac58a> .
+
+<http://data.doremus.org/event/86f590f3-de0a-36fa-893e-6e2db6f65dbb>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Paris : M. Schlesinger, [1845]" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/56510bd3-8071-34a2-9b4a-bf8198437c79> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/890af959-0dcf-340e-9d44-d92871fec334> .
+
+<http://data.doremus.org/work/0b8f850f-ae9c-3f1b-9b12-bd2beab10dae>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/9833ee20-ea27-302e-8382-cb327a216e2e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f55c828b-7e28-3e32-8004-51e4844ac58a> .
+
+<http://data.doremus.org/event/ef8e1dc6-3ec5-3971-ada0-7c896716d3ca>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18300101/18300430"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6403ae22-00e3-3c80-9ed9-37aa64b70aae>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f55c828b-7e28-3e32-8004-51e4844ac58a> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/9833ee20-ea27-302e-8382-cb327a216e2e> .
+
+<http://data.doremus.org/publication/890af959-0dcf-340e-9d44-d92871fec334>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f55c828b-7e28-3e32-8004-51e4844ac58a> .
+
+<http://data.doremus.org/expression/f55c828b-7e28-3e32-8004-51e4844ac58a/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à Nicolas Ier, tsar de Russie"@fr .
+
+<http://data.doremus.org/expression/f55c828b-7e28-3e32-8004-51e4844ac58a>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "H" ;
+                  mus:U41_has_catalogue_number  "48" ;
+                  ecrm:P3_has_note              "H 48"
+                ] ;
+        ecrm:P102_has_title  "Symphonie fantastique" , "Épisode de la vie d'un artiste" ;
+        ecrm:P3_has_note     "Titre original : \"Épisode de la vie d'un artiste : symphonie fantastique en cinq parties\"" , "Comprend : 1, \"Rêveries, passions\" ; 2, \"Un bal\" ; 3, \"Scène aux champs\" ; 4, \"Marche au supplice\" ; 5, \"Songe d'une nuit de sabbat\"" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/f55c828b-7e28-3e32-8004-51e4844ac58a/dedication> .
+
+<http://data.doremus.org/work/9833ee20-ea27-302e-8382-cb327a216e2e>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/86f590f3-de0a-36fa-893e-6e2db6f65dbb> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/2a467351-acad-3769-9dcd-eb869e53c959> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f55c828b-7e28-3e32-8004-51e4844ac58a> .
+
+<http://data.doremus.org/work/56510bd3-8071-34a2-9b4a-bf8198437c79>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/890af959-0dcf-340e-9d44-d92871fec334> .
+
+<http://data.doremus.org/expression/db78a241-0ae4-3091-a6d2-ffea4a9e63e1>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f55c828b-7e28-3e32-8004-51e4844ac58a> .

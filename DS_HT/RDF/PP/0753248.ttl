@@ -1,0 +1,79 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/3247d655-06e9-39a5-a4dc-d3aa28bfd5fe>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/336e6536-ba32-370e-aa27-3e0901159ef9> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/57d6469e-44c7-373b-9f0c-5e74bd77ddff> .
+
+<http://data.doremus.org/performance/208087e3-eca1-3dcf-9b3f-28b2f627ce60>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Publié par Le Cene à Amsterdam en 1725." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/c3efd336-e17e-3970-ae2c-e96790c151a4> .
+
+<http://data.doremus.org/artist/b7714656-e913-38b0-a84e-688f1b074921>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/c3efd336-e17e-3970-ae2c-e96790c151a4>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/57d6469e-44c7-373b-9f0c-5e74bd77ddff> .
+
+<http://data.doremus.org/event/b5f8aa34-3489-3ed0-88e2-8af052717d85>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/3247d655-06e9-39a5-a4dc-d3aa28bfd5fe> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/57d6469e-44c7-373b-9f0c-5e74bd77ddff> .
+
+<http://data.doremus.org/work/336e6536-ba32-370e-aa27-3e0901159ef9>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/208087e3-eca1-3dcf-9b3f-28b2f627ce60> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/57d6469e-44c7-373b-9f0c-5e74bd77ddff> .
+
+<http://data.doremus.org/expression/57d6469e-44c7-373b-9f0c-5e74bd77ddff>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "1" ;
+        mus:U11_has_key             [ a                         mus:M4_Key ;
+                                      ecrm:P1_is_identified_by  "Mi majeur."@fr
+                                    ] ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "musique baroque"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/57d6469e-44c7-373b-9f0c-5e74bd77ddff/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "RV" ;
+                  mus:U41_has_catalogue_number  "269" ;
+                  ecrm:P3_has_note              "RV 269"
+                ] ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "8." ;
+                                      ecrm:P3_has_note         "Op. 8."
+                                    ] ;
+        ecrm:P102_has_title         "Les quatre saisons" , "Concerto no 1 pour violon, orchestre à cordes et basse continue en mi majeur" , "Il cimento dell'armonia e dell'invenzione" , "Die vier Jahrezeiten" , "Le printemps" , "The four seasons" , "Spring" , "Le quattro stagioni" , "Concerto pour violon, orchestre à cordes et basse continue no 1, \"Le printemps\"" , "La primavera" , "Concerto for violin, strings and basso continuo in E major" , "Il cimento dell'armonia e dell'inventione" , "Les 4 saisons" ;
+        ecrm:P3_has_note            "Dans \"Les quatre saisons\" Vivaldi sut concilier les données descriptives de l'ouvrage avec ses exigences de pur musicien, d'inventeur du concerto classique. Il employa notamment les instruments à cordes avec une invention et une ingéniosité sans limites. Les recherches harmoniques également sont remarquables. A l'audition des \"Quatre saisons\" la vérité de la peinture s'impose, mais c'est la beauté des sons qui émeut. \"Le printemps\" connut très vite un succès considérable ; comme les trois autres concertos il adopte la structure tripartite vif-lent-vif. Sa tonalité de mi majeur évoque la luminosité ; les mouvements vifs lui confèrent une insouciante gaité tandis que dans le mouvement lent le violon évoque le berger endormi et l'alto, le chien qui aboie. L'allegro initial est un modèle de construction et d'élargissement des principes du concerto avec ses six refrains tutti qui encadrent cinq couplets soli. Les cordes sont utilisées avec une grande ingéniosité : ainsi les énergiques unissons évoquant les éclairs et le tonnerre dans le premier mouvement, mais aussi l'effet de légèreté produit parfois par les instruments dans l'aigu (chant des oiseaux) et par la suppression des basses (Largo). Cette oeuvre fait partie de \"Il cimento dell'armonia e dell'invenzione\", recueil de douze concertos dont les quatre premiers forment \"Les quatre saisons\". Dédié au comte Morzin." , "Publié par Le Cene à Amsterdam en 1725." .
+
+<http://data.doremus.org/expression/57d6469e-44c7-373b-9f0c-5e74bd77ddff/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "violon, orchestre à cordes, basse continue" .
+
+<http://data.doremus.org/event/4d964ac4-509d-3d1f-9319-8d4e229bd04f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1720-1725" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1720/1725"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b7714656-e913-38b0-a84e-688f1b074921>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/57d6469e-44c7-373b-9f0c-5e74bd77ddff> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/336e6536-ba32-370e-aa27-3e0901159ef9> .

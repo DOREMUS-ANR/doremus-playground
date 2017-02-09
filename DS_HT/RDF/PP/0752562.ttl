@@ -1,0 +1,79 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/publication/96931c39-7dbf-3f48-9be5-5895bdf5a3b7>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/b720ef63-b9f8-3914-87a0-9a309e2bdc53> .
+
+<http://data.doremus.org/work/ba2c570a-b739-3732-a1d0-bdb2d8ff0a9e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/5fd22f3b-fcff-33d7-9d52-c5e0567e0519> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/b720ef63-b9f8-3914-87a0-9a309e2bdc53> .
+
+<http://data.doremus.org/event/d7276980-eba8-3bc6-833d-35cafa8333ce>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/ba2c570a-b739-3732-a1d0-bdb2d8ff0a9e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/b720ef63-b9f8-3914-87a0-9a309e2bdc53> .
+
+<http://data.doremus.org/expression/b720ef63-b9f8-3914-87a0-9a309e2bdc53/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Clarinette soliste ; flûte, 2 hautbois (et cor anglais), basson, cor, trompette, trombone, tuba, 3 percussionniste, harpe, piano, 2 violons, alto, violoncelle, contrebasse" .
+
+<http://data.doremus.org/expression/0e048d32-569f-3241-8f69-80027d57fcb4>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/b720ef63-b9f8-3914-87a0-9a309e2bdc53> .
+
+<http://data.doremus.org/event/8aebc25a-4dd0-3257-9925-1f00d4f48bfc>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Editeur : Boosey and Hawkes." ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/5278adbc-99ce-3101-83c8-9ab3cf1eee93> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/96931c39-7dbf-3f48-9be5-5895bdf5a3b7> .
+
+<http://data.doremus.org/work/5fd22f3b-fcff-33d7-9d52-c5e0567e0519>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/8aebc25a-4dd0-3257-9925-1f00d4f48bfc> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/e1eae8fd-1fdb-3eef-a8f5-08e4408e620e> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/b720ef63-b9f8-3914-87a0-9a309e2bdc53> .
+
+<http://data.doremus.org/event/8e3bb6b3-de79-3f75-a5e7-26f0620e7ec4>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1996" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1996"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6ec915f0-d52a-3314-8dc7-b65e738725ab>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/b720ef63-b9f8-3914-87a0-9a309e2bdc53> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/5fd22f3b-fcff-33d7-9d52-c5e0567e0519> .
+
+<http://data.doremus.org/performance/e1eae8fd-1fdb-3eef-a8f5-08e4408e620e>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Paris, Cité de la musique , le 10 janvier 1997, sous la direction de Pierre Boulez, avec Alain Damiens à la clarinette." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/0e048d32-569f-3241-8f69-80027d57fcb4> .
+
+<http://data.doremus.org/work/5278adbc-99ce-3101-83c8-9ab3cf1eee93>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/96931c39-7dbf-3f48-9be5-5895bdf5a3b7> .
+
+<http://data.doremus.org/artist/6ec915f0-d52a-3314-8dc7-b65e738725ab>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/b720ef63-b9f8-3914-87a0-9a309e2bdc53>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/b720ef63-b9f8-3914-87a0-9a309e2bdc53/casting/1> ;
+        ecrm:P102_has_title  "Concerto pour clarinette" ;
+        ecrm:P3_has_note     "Comme souvent chez Elliott Carter ce concerto est d'un seul tenant et apparaît comme une véritable dramaturgie musicale, dans laquelle chaque instrument est traité individuellement. Le compositeur traite également le concerto d'une manière nouvelle puisqu'il fait dialoguer le soliste alternativement avec chacun des groupes instrumentaux , ceux-ci étant indépendants les uns des autres et disposés en demi-cercle. L'écriture de cette oeuvre est faite à la fois de virtuosité et de précision dans les articulations et les accents. Commande de l'Ensemble Intercontemporain avec le soutien du ministère de la Culture - direction de la musique et de la danse. Mouvements : Scherzando, Tranquillo, Presto, Largo, Giocoso, Agitato. Durée d'exécution : 20 minutes environ." , "Créé à Paris, Cité de la musique , le 10 janvier 1997, sous la direction de Pierre Boulez, avec Alain Damiens à la clarinette. Editeur : Boosey and Hawkes." .

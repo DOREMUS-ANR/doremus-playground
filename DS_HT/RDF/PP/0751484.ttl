@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/d8c432f6-5a83-3a32-bc4f-2a473111c997>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/55b001c9-0d2d-3c8c-9b0b-18886b59dff7> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/fb2eddd7-420f-388d-8e3e-dceb2e8246dc> .
+
+<http://data.doremus.org/artist/5b1118ba-5b8a-388a-ad2c-d5cd5d9bb112>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/beb5e5c1-19c2-3565-9260-bba823b58a56>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f247bb48-8a37-3041-9eb2-e50dad93acad> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/fb2eddd7-420f-388d-8e3e-dceb2e8246dc> .
+
+<http://data.doremus.org/expression/9f192e01-f757-3dc3-a102-e7c9b608254f>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/fb2eddd7-420f-388d-8e3e-dceb2e8246dc> .
+
+<http://data.doremus.org/event/b6992577-072e-3f6b-b076-29e3690c82fe>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1924" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1924"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/5b1118ba-5b8a-388a-ad2c-d5cd5d9bb112>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/fb2eddd7-420f-388d-8e3e-dceb2e8246dc> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/beb5e5c1-19c2-3565-9260-bba823b58a56> .
+
+<http://data.doremus.org/work/55b001c9-0d2d-3c8c-9b0b-18886b59dff7>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/beb5e5c1-19c2-3565-9260-bba823b58a56> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/fb2eddd7-420f-388d-8e3e-dceb2e8246dc> .
+
+<http://data.doremus.org/expression/fb2eddd7-420f-388d-8e3e-dceb2e8246dc/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Hautbois, clarinette, violon, alto et contrebasse" .
+
+<http://data.doremus.org/expression/fb2eddd7-420f-388d-8e3e-dceb2e8246dc>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/fb2eddd7-420f-388d-8e3e-dceb2e8246dc/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "39" ;
+                                      ecrm:P3_has_note         "Op. 39"
+                                    ] ;
+        ecrm:P102_has_title         "Quintette en sol mineur" ;
+        ecrm:P3_has_note            "En février 1924, alors que Boris Romanov a fondé une troupe de ballets, Prokofiev accepte d'écrire une partition pour ensemble réduit en vue d'une production intitulée \"Trapèze\". Il doit donc s'astreindre à composer 6 courtes séquences pour ce ballet dont le livret est emprunté à la vie du cirque. malgré sa destination chorégraphique, Prokofiev avait bien l'intention de faire jouer sa partition comme oeuvre de chambre. Dans sa destination première, il dut ajouter deux autres numéros, - dont il emprunta la matière à des valses de Schubert à quatre mains. La partition comprend six numéros." , "Création : Moscou, 1927" .
+
+<http://data.doremus.org/performance/f247bb48-8a37-3041-9eb2-e50dad93acad>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création : Moscou, 1927" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/9f192e01-f757-3dc3-a102-e7c9b608254f> .

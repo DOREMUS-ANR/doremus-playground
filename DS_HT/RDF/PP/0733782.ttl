@@ -1,0 +1,67 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/1e7a40a1-d3bf-3605-b92c-96d233b73055>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/49011988-7eca-328e-bec0-ecaca0597e6d/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Les cordes réparties en 2 groupes placés de chaque côté du chef, nombreuses percussions, célesta, harpe, piano à 2 et 4 mains" .
+
+<http://data.doremus.org/expression/49011988-7eca-328e-bec0-ecaca0597e6d>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/49011988-7eca-328e-bec0-ecaca0597e6d/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Sz" ;
+                  mus:U41_has_catalogue_number  "106" ;
+                  ecrm:P3_has_note              "Sz 106"
+                ] ;
+        ecrm:P102_has_title  "Musique pour cordes, percussion et célesta" ;
+        ecrm:P3_has_note     "Oeuvre phare dans l'oeuvre de Bartok, elle rayonne parmi toute la musique du XXe siècle pour son invention instrumentale, rythmique, harmonique. Cette \"Musique\" sans genre déterminé, est construite sur des relations du nombre d'or : Bartok était alors passionné de mathématiques. Quatre mouvements : Andante tranquillo - Allegro - Adagio - Finale (Allegro molto) forment ce chef d'oeuvre d'équilibre et d'exploration." , "Terminée le 7 septembre 1936, créée le 21 janvier 1937 à Bâle par l'orchestre de chambre de Bâle sous la direction de Paul Sacher, dédicataire de l'oeuvre" .
+
+<http://data.doremus.org/work/fec98783-e7f0-3a71-bd39-5a6ca2d034e1>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/c03e9dd6-dcdf-3b3f-9d74-7d5f1be22ac5> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/49011988-7eca-328e-bec0-ecaca0597e6d> .
+
+<http://data.doremus.org/performance/c03e9dd6-dcdf-3b3f-9d74-7d5f1be22ac5>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Terminée le 7 septembre 1936, créée le 21 janvier 1937 à Bâle par l'orchestre de chambre de Bâle sous la direction de Paul Sacher, dédicataire de l'oeuvre" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/86c103c6-d190-343b-9d58-3e21912d28aa> .
+
+<http://data.doremus.org/event/d5f36d73-6556-3061-ac4a-1b49fad11859>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/a0f3a3fc-1020-32f8-a69b-360e50b0e280> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/49011988-7eca-328e-bec0-ecaca0597e6d> .
+
+<http://data.doremus.org/event/32721730-da5d-3677-b98d-a89fd5645506>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1936" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1936"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1e7a40a1-d3bf-3605-b92c-96d233b73055>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/49011988-7eca-328e-bec0-ecaca0597e6d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/fec98783-e7f0-3a71-bd39-5a6ca2d034e1> .
+
+<http://data.doremus.org/work/a0f3a3fc-1020-32f8-a69b-360e50b0e280>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/fec98783-e7f0-3a71-bd39-5a6ca2d034e1> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/49011988-7eca-328e-bec0-ecaca0597e6d> .
+
+<http://data.doremus.org/expression/86c103c6-d190-343b-9d58-3e21912d28aa>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/49011988-7eca-328e-bec0-ecaca0597e6d> .

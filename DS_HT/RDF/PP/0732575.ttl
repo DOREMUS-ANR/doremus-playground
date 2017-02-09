@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/0b6d2735-7cce-349e-97a9-5df675d48b2f>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première édition : 1851" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/b6c3b0ad-b59d-3445-87c9-f1b44cfa6590> .
+
+<http://data.doremus.org/work/087c50fe-c9ae-352d-a5b4-42b1aefc96bd>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/5d324a70-3d29-3a91-bac6-4104639902ad> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f37c8e21-f941-3b48-a302-944ebe6abfcf> .
+
+<http://data.doremus.org/expression/f37c8e21-f941-3b48-a302-944ebe6abfcf>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/f37c8e21-f941-3b48-a302-944ebe6abfcf/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "94" ;
+                                      ecrm:P3_has_note         "Op.94"
+                                    ] ;
+        ecrm:P102_has_title         "Trois romances" , "Drei Romanzen" , "3 Romances" ;
+        ecrm:P3_has_note            "Duo instrumental pour piano et violon, ou piano et clarinette, ou piano et hautbois." , "Première édition : 1851" .
+
+<http://data.doremus.org/event/e0db04e0-4f53-3278-8bad-18bee26e17d4>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/087c50fe-c9ae-352d-a5b4-42b1aefc96bd> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f37c8e21-f941-3b48-a302-944ebe6abfcf> .
+
+<http://data.doremus.org/event/95705a5b-6693-350c-b1c9-29979cbe4e40>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1849" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1849"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/026e4cc2-62b3-3c43-807c-d159857ede90>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f37c8e21-f941-3b48-a302-944ebe6abfcf> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/5d324a70-3d29-3a91-bac6-4104639902ad> .
+
+<http://data.doremus.org/artist/026e4cc2-62b3-3c43-807c-d159857ede90>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/f37c8e21-f941-3b48-a302-944ebe6abfcf/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Piano, violon ou clarinette ou hautbois" .
+
+<http://data.doremus.org/expression/b6c3b0ad-b59d-3445-87c9-f1b44cfa6590>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f37c8e21-f941-3b48-a302-944ebe6abfcf> .
+
+<http://data.doremus.org/work/5d324a70-3d29-3a91-bac6-4104639902ad>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/0b6d2735-7cce-349e-97a9-5df675d48b2f> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f37c8e21-f941-3b48-a302-944ebe6abfcf> .

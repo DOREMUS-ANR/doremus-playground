@@ -1,0 +1,45 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/61f04487-480f-3767-8456-7b5229f0158b>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "K" ;
+                  mus:U41_has_catalogue_number  "387" ;
+                  ecrm:P3_has_note              "K 387"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "387" ;
+                  ecrm:P3_has_note              "KV 387"
+                ] ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "K 387" ;
+                                      ecrm:P3_has_note         "K 387"
+                                    ] ;
+        ecrm:P102_has_title         "String Quartett in G" , "Streichquartett in G" .
+
+<http://data.doremus.org/event/8c51e9c4-26e5-3022-946b-01d4a0a9613e>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/9b747884-6ef8-3e74-9aba-64002aca54f3> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/61f04487-480f-3767-8456-7b5229f0158b> .
+
+<http://data.doremus.org/work/9b747884-6ef8-3e74-9aba-64002aca54f3>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4893609b-2e1a-3c7d-ace2-ba39287381a7> .
+
+<http://data.doremus.org/event/aa497b0f-7cd1-35c6-92e1-7f89a753b2ad>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/61f04487-480f-3767-8456-7b5229f0158b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4893609b-2e1a-3c7d-ace2-ba39287381a7> .
+
+<http://data.doremus.org/work/4893609b-2e1a-3c7d-ace2-ba39287381a7>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/61f04487-480f-3767-8456-7b5229f0158b> .

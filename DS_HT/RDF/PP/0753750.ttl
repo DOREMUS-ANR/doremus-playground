@@ -1,0 +1,71 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/d71e6300-5d7f-364d-838e-77ec3a125091>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/a63ec5ae-e04a-3590-85a7-97e375fa4e19> .
+
+<http://data.doremus.org/artist/00daf19d-1bc9-3e29-874a-7fa88eac1f33>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/921580db-939f-3d9f-84b0-653499a6d1ce>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/610569bd-8d3d-31a3-bab1-87380bbd916e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/a63ec5ae-e04a-3590-85a7-97e375fa4e19> .
+
+<http://data.doremus.org/expression/a63ec5ae-e04a-3590-85a7-97e375fa4e19>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/trl> , <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/a63ec5ae-e04a-3590-85a7-97e375fa4e19/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "HWV" ;
+                  mus:U41_has_catalogue_number  "17" ;
+                  ecrm:P3_has_note              "HWV 17"
+                ] ;
+        ecrm:P102_has_title  "Jules César" , "Giulio Cesare in Egitto" , "Julius Caesar" ;
+        ecrm:P3_has_note     "Créé à Londres, King's Theatre, Hay market, le 20 février 1724." , "Opéra en trois actes, sur un livret de Niccolò Francesco Haym d'après Giacomo Francesco Bussani et \"La mort de Pompée\" de Corneille" .
+
+<http://data.doremus.org/event/8f457cb1-e5ae-34b4-93dd-ed8b43e520e2>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1724" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1724"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/00daf19d-1bc9-3e29-874a-7fa88eac1f33>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/a63ec5ae-e04a-3590-85a7-97e375fa4e19> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/9bebae02-0fec-3617-b14c-4f58a9ec2a2f> .
+
+<http://data.doremus.org/performance/8b81a78d-a827-3859-b963-b7d6a4ccea0c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Londres, King's Theatre, Hay market, le 20 février 1724." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/d71e6300-5d7f-364d-838e-77ec3a125091> .
+
+<http://data.doremus.org/work/610569bd-8d3d-31a3-bab1-87380bbd916e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/9bebae02-0fec-3617-b14c-4f58a9ec2a2f> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/a63ec5ae-e04a-3590-85a7-97e375fa4e19> .
+
+<http://data.doremus.org/expression/a63ec5ae-e04a-3590-85a7-97e375fa4e19/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Jules César (baryton/contralto), Curio (basse), Cornélie (contralto), Sextus Pompée (ténor/soprano), Cléopâtre (soprano), Ptolémée (basse/contralto), Achillas (basse), Nirenus (basse/contralto) ; orchestre et basse continue" .
+
+<http://data.doremus.org/work/9bebae02-0fec-3617-b14c-4f58a9ec2a2f>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/8b81a78d-a827-3859-b963-b7d6a4ccea0c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/a63ec5ae-e04a-3590-85a7-97e375fa4e19> .

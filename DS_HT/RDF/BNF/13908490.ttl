@@ -1,0 +1,86 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/6403ae22-00e3-3c80-9ed9-37aa64b70aae>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/8098c838-5316-3b41-821b-5e6e05be05e8/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à James William Davison"@fr .
+
+<http://data.doremus.org/event/a7175de9-e5b6-3edd-982b-d6ab2a971237>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Paris : Richault, [1852]" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e6bffc3e-d1f9-3e21-a32d-b5f75a34bad7> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/d1f6b63a-7887-3a9c-84cf-47f81a0ef557> .
+
+<http://data.doremus.org/work/157a278c-6764-3f3d-91a4-01abff6bc24b>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/a7175de9-e5b6-3edd-982b-d6ab2a971237> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/36765d36-6a7c-3286-89e3-17261ea1844d> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/8098c838-5316-3b41-821b-5e6e05be05e8> .
+
+<http://data.doremus.org/performance/36765d36-6a7c-3286-89e3-17261ea1844d>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Brunswick, le 8 avril 1854" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/4434f045-c4f1-3e0b-8afa-0d62102e97f5> .
+
+<http://data.doremus.org/event/f994d468-d79c-340c-8369-2a498ba7e58d>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18460101/18511231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6403ae22-00e3-3c80-9ed9-37aa64b70aae>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/8098c838-5316-3b41-821b-5e6e05be05e8> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/157a278c-6764-3f3d-91a4-01abff6bc24b> .
+
+<http://data.doremus.org/event/513d1893-38b3-37b3-9459-217992d33194>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/d8d3e496-d750-3c7a-bdab-fdbd34173fa5> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/8098c838-5316-3b41-821b-5e6e05be05e8> .
+
+<http://data.doremus.org/work/e6bffc3e-d1f9-3e21-a32d-b5f75a34bad7>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/d1f6b63a-7887-3a9c-84cf-47f81a0ef557> .
+
+<http://data.doremus.org/event/b4adf2aa-b3e7-315d-9e0f-a6b3e55c3b37>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/4434f045-c4f1-3e0b-8afa-0d62102e97f5> .
+
+<http://data.doremus.org/publication/d1f6b63a-7887-3a9c-84cf-47f81a0ef557>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/8098c838-5316-3b41-821b-5e6e05be05e8> .
+
+<http://data.doremus.org/work/d8d3e496-d750-3c7a-bdab-fdbd34173fa5>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/157a278c-6764-3f3d-91a4-01abff6bc24b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/8098c838-5316-3b41-821b-5e6e05be05e8> .
+
+<http://data.doremus.org/expression/8098c838-5316-3b41-821b-5e6e05be05e8>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/ov> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "H" ;
+                  mus:U41_has_catalogue_number  "101B" ;
+                  ecrm:P3_has_note              "H 101B"
+                ] ;
+        ecrm:P102_has_title  "Le corsaire" , "Ouverture du corsaire" ;
+        ecrm:P3_has_note     "D'après James Fenimore Cooper (\"The Red Rover\")" , "Existe dans une première version, intitulée successivement \"La Tour de Nice\" et \"Le Corsaire rouge\", composée d'août à novembre 1844 (H 101A)" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/8098c838-5316-3b41-821b-5e6e05be05e8/dedication> .
+
+<http://data.doremus.org/expression/4434f045-c4f1-3e0b-8afa-0d62102e97f5>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/8098c838-5316-3b41-821b-5e6e05be05e8> .

@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/8a492357-584f-33ad-a793-6fc0df8f319e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8059921f-69fc-3754-854d-73e256be5f01> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/60b66722-af86-3649-a21a-071935ca95e2> .
+
+<http://data.doremus.org/work/8059921f-69fc-3754-854d-73e256be5f01>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/60b66722-af86-3649-a21a-071935ca95e2> .
+
+<http://data.doremus.org/expression/60b66722-af86-3649-a21a-071935ca95e2/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "quatre voix égales" .
+
+<http://data.doremus.org/expression/60b66722-af86-3649-a21a-071935ca95e2>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/f> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/cn> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique sacrée"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/60b66722-af86-3649-a21a-071935ca95e2/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "554" ;
+                  ecrm:P3_has_note              "KV 554"
+                ] ;
+        ecrm:P102_has_title  "Ave maria : Vierstimmiger Kanon" , "Ave Maria" , "Ave Maria : canon à quatre voix" ;
+        ecrm:P3_has_note     "Canon à quatre voix à l'unisson." .
+
+<http://data.doremus.org/event/da7b9ad1-922d-30a4-b31b-11659e1d2a07>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1788" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1788"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/60b66722-af86-3649-a21a-071935ca95e2> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8059921f-69fc-3754-854d-73e256be5f01> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/e010530f-6f9c-3e12-84f6-fc527621ee6c>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8a492357-584f-33ad-a793-6fc0df8f319e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/60b66722-af86-3649-a21a-071935ca95e2> .

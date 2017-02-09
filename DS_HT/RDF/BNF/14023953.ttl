@@ -1,0 +1,43 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/ed8457c2-f5bd-3092-a606-b82749ee046d>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/opu> ;
+        ecrm:P102_has_title  "Les fiancés en galère" , "The lovers on the galley" , "Li zite 'n galera" ;
+        ecrm:P3_has_note     "Opéra bouffe en 3 actes" , "Livret de Bernardo Saddumene" , "Créé au Teatro dei Fiorentini à Naples le 3 janvier 1722" .
+
+<http://data.doremus.org/artist/d3adea71-390c-3fc5-aa39-15f94d7d7d29>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/a804f129-a348-3c84-b38e-fbd37c5956f6>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8df9a710-7afc-341e-89ea-d843601e9e4b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ed8457c2-f5bd-3092-a606-b82749ee046d> .
+
+<http://data.doremus.org/event/1b869f00-91b0-3bfc-9dd3-0c37f0577f23>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/a804f129-a348-3c84-b38e-fbd37c5956f6> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ed8457c2-f5bd-3092-a606-b82749ee046d> .
+
+<http://data.doremus.org/event/baef5837-9b8b-37d7-87d4-24f65fbd7ab6>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17220101/17221231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/d3adea71-390c-3fc5-aa39-15f94d7d7d29>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ed8457c2-f5bd-3092-a606-b82749ee046d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8df9a710-7afc-341e-89ea-d843601e9e4b> .
+
+<http://data.doremus.org/work/8df9a710-7afc-341e-89ea-d843601e9e4b>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ed8457c2-f5bd-3092-a606-b82749ee046d> .

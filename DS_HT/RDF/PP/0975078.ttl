@@ -1,0 +1,75 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/0b1777a5-33cb-3650-a9d9-527642974c51/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Piano à quatre mains" .
+
+<http://data.doremus.org/expression/0b1777a5-33cb-3650-a9d9-527642974c51>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/d> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/0b1777a5-33cb-3650-a9d9-527642974c51/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "381" ;
+                  ecrm:P3_has_note              "KV 381"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "K" ;
+                  mus:U41_has_catalogue_number  "381" ;
+                  ecrm:P3_has_note              "K 381"
+                ] ;
+        ecrm:P102_has_title  "Sonate pour piano à quatre mains" , "Sonata" ;
+        ecrm:P3_has_note     "Mozart destinait cette sonate à sa soeur Nannerl et à lui-même. Témoin de l'influence de la musique italienne sur Mozart, cette sonate est de loin la plus connue des productions pour quatre mains du jeune prodige. Comprend : 1- Allegro. 2- Andante. 3- Allegro molto. Durée dexécution : 15 minutes environ" , "Première édition : Vienne, 1783" .
+
+<http://data.doremus.org/performance/259886db-df84-3310-bf82-40efb19c6245>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première édition : Vienne, 1783" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/c4684cfa-c1e5-3ac5-bbf3-92527938f750> .
+
+<http://data.doremus.org/event/1681f189-27bd-39de-aa4c-c0c934ec4a89>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1772" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1772"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/0b1777a5-33cb-3650-a9d9-527642974c51> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d00692be-0b01-34c8-93e2-d0dc0466c67d> .
+
+<http://data.doremus.org/expression/c4684cfa-c1e5-3ac5-bbf3-92527938f750>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/0b1777a5-33cb-3650-a9d9-527642974c51> .
+
+<http://data.doremus.org/work/d00692be-0b01-34c8-93e2-d0dc0466c67d>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/259886db-df84-3310-bf82-40efb19c6245> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/0b1777a5-33cb-3650-a9d9-527642974c51> .
+
+<http://data.doremus.org/work/747f1b2c-fd2c-30cb-8592-deca21d867f0>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d00692be-0b01-34c8-93e2-d0dc0466c67d> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/0b1777a5-33cb-3650-a9d9-527642974c51> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/f00cea41-a5f4-3897-9259-ae1d0f5f30c5>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/747f1b2c-fd2c-30cb-8592-deca21d867f0> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/0b1777a5-33cb-3650-a9d9-527642974c51> .

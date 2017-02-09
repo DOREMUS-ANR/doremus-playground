@@ -1,0 +1,67 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/80c9bc6c-5895-31a7-a345-6d200707e5d4>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "5" ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/a> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/80c9bc6c-5895-31a7-a345-6d200707e5d4/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "18" ;
+                                      ecrm:P3_has_note         "Op. 18"
+                                    ] ;
+        ecrm:P102_has_title         "Quatuor à cordes no 5" , "Streichquartett" , "Quatuor à cordes" , "String quartet" ;
+        ecrm:P3_has_note            "Publié chez Mollo, à Vienne, en octobre 1801." , "Beethoven a écrit 16 quatuors à cordes qu'on a l'habitude de classer en trois groupes, correspondant à des moments caractéristiques de l'auteur. Le premier groupe (Opus 18) est composé de 6 quatuors tous dédiés au prince Lobkowitz. Ce quatuor, dans un premier temps destiné à son ami le pasteur Amenda, porte le numéro 5 mais est en fait le 4ème à avoir été composé. Comprend : 1- allegro. 2- menuetto. 3- andante cantabile. 4- allegro. Durée d'exécution : 28 mn environ" .
+
+<http://data.doremus.org/work/8a293b02-e4a7-34db-b25b-2dfe23a04ad3>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/bbe31a10-5c58-332c-a3d3-45965a062377> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/80c9bc6c-5895-31a7-a345-6d200707e5d4> .
+
+<http://data.doremus.org/expression/fedafd75-78b5-30e4-84b9-b044b5d4a63d>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/80c9bc6c-5895-31a7-a345-6d200707e5d4> .
+
+<http://data.doremus.org/event/9dba5299-e0b0-3748-b6cd-287d4f0fe887>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8a293b02-e4a7-34db-b25b-2dfe23a04ad3> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/80c9bc6c-5895-31a7-a345-6d200707e5d4> .
+
+<http://data.doremus.org/performance/70772f16-7a7c-313f-a1a3-a1077032efbd>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Publié chez Mollo, à Vienne, en octobre 1801." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/fedafd75-78b5-30e4-84b9-b044b5d4a63d> .
+
+<http://data.doremus.org/work/bbe31a10-5c58-332c-a3d3-45965a062377>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/70772f16-7a7c-313f-a1a3-a1077032efbd> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/80c9bc6c-5895-31a7-a345-6d200707e5d4> .
+
+<http://data.doremus.org/expression/80c9bc6c-5895-31a7-a345-6d200707e5d4/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 violons, alto, violoncelle" .
+
+<http://data.doremus.org/event/ce8466da-b42e-3073-8bad-35b4bc369e41>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1799" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1799"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/80c9bc6c-5895-31a7-a345-6d200707e5d4> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/bbe31a10-5c58-332c-a3d3-45965a062377> .
+
+<http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+        a       ecrm:E21_Person .

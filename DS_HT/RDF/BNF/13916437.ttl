@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/260e1f65-6443-374e-b63d-88ad9e3a87ec>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/727af1fd-3340-3fd4-9b1a-56f29d260db3> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/b547469f-fc47-3fc9-b722-64f2e7316e3d> .
+
+<http://data.doremus.org/event/4aa728b8-7261-3829-8bc4-c5df89f8748d>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1619/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/b547469f-fc47-3fc9-b722-64f2e7316e3d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/727af1fd-3340-3fd4-9b1a-56f29d260db3> .
+
+<http://data.doremus.org/work/727af1fd-3340-3fd4-9b1a-56f29d260db3>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/b547469f-fc47-3fc9-b722-64f2e7316e3d> .
+
+<http://data.doremus.org/expression/b547469f-fc47-3fc9-b722-64f2e7316e3d>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/md> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "118" ;
+                  ecrm:P3_has_note              "SV 118"
+                ] ;
+        ecrm:P102_has_title  "Non è di gentil core" ;
+        ecrm:P3_has_note     "Madrigal à 2 voix et basse continue extrait du livre 7" , "Texte de Degl'Atti" , "Éd. : 1619" .
+
+<http://data.doremus.org/event/b17f629a-c7ed-3d1a-a48a-246c78a1f5fc>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/260e1f65-6443-374e-b63d-88ad9e3a87ec> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/b547469f-fc47-3fc9-b722-64f2e7316e3d> .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

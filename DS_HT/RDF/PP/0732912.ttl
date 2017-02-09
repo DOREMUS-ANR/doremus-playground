@@ -1,0 +1,74 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/41682f6c-345f-38eb-8e00-25cb2c105cb8>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/9b4afe99-8250-375a-a32a-43f0b8efced4> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ebd4bc5e-ff5d-335d-9099-25ab16ee55af> .
+
+<http://data.doremus.org/performance/3d76431f-b77c-3a3c-a1fd-ca24e21aa10d>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Postdam, le 14 octobre 1843" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/83e3f47e-205e-3723-97db-7be51ce277fb> .
+
+<http://data.doremus.org/work/9b4afe99-8250-375a-a32a-43f0b8efced4>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/3d76431f-b77c-3a3c-a1fd-ca24e21aa10d> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ebd4bc5e-ff5d-335d-9099-25ab16ee55af> .
+
+<http://data.doremus.org/expression/ebd4bc5e-ff5d-335d-9099-25ab16ee55af/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Ouverture : les bois par 2, 2 cors, 2 trompettes et 1 tuba, timales et quintette à cordes. Musique de scène : pour deux sopranos, choeur féminin et orchestre ( les bois par 2, 2 cors, 3 trompettes, 3 trombones, 1 ophicléide ou tuba, timbales, petite batterie et quintette à cordes" .
+
+<http://data.doremus.org/event/bfa80d4a-f7e9-3089-900c-274b9afa74e7>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1842" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1842"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/29cfd554-738c-3e40-a19f-8683ad2682f8>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ebd4bc5e-ff5d-335d-9099-25ab16ee55af> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/9b4afe99-8250-375a-a32a-43f0b8efced4> .
+
+<http://data.doremus.org/artist/29cfd554-738c-3e40-a19f-8683ad2682f8>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/2d2ce2b5-91e6-3972-b82e-5d4cb7598900>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/41682f6c-345f-38eb-8e00-25cb2c105cb8> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ebd4bc5e-ff5d-335d-9099-25ab16ee55af> .
+
+<http://data.doremus.org/expression/83e3f47e-205e-3723-97db-7be51ce277fb>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ebd4bc5e-ff5d-335d-9099-25ab16ee55af> .
+
+<http://data.doremus.org/expression/ebd4bc5e-ff5d-335d-9099-25ab16ee55af>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "musique scénique"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/ebd4bc5e-ff5d-335d-9099-25ab16ee55af/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "MWV" ;
+                  mus:U41_has_catalogue_number  "M" ;
+                  ecrm:P3_has_note              "MWV M 13"
+                ] ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "61" ;
+                                      ecrm:P3_has_note         "Op. 61"
+                                    ] ;
+        ecrm:P102_has_title         "Sogno di una notte di mezza estate" , "Ein Sommernachtstraum von Shakespeare" , "A Midsummer nignt's dream by Shakespeare, Op. 61" , "marche nuptiale" , "Le Songe d'une nuit d'été" , "Le songe d'une nuit d'été" ;
+        ecrm:P3_has_note            "Créé à Postdam, le 14 octobre 1843" , "Musique de scène pour la pièce de Shakespeare \"Songe d'une nuit d'été\" ( A midsummer night's dream ). L 'ouverture a été écrite séparément et porte un numéro d'Opus différent (Op. 21). La musique de scène comprend : 1- scherzo, 2- intermezzo, 3- nocturne, 4- marche nuptiale, 5- finale. La marche nuptiale, détachée de la suite de concert, a été jouée dans le monde entier" .

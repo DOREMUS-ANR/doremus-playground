@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/faebb9b2-2943-3ff8-ae14-f1b18fc0115b>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/eb6090aa-6768-3201-8ad5-e05bee096806>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création : 31 octobre 1967, Toronto, sous la direction de Seiji Ozawa" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/ec0fe645-9037-34dd-8a5f-8a0faeba6426> .
+
+<http://data.doremus.org/expression/707aa24a-7b37-3624-9cc1-2d7cfd203571/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 flûtes, 2 clarinettes, 4 trompettes, 8 violons, 8 altos (groupe 1) ; 2 bassons, 6 cors, 16 violons (groupe 2) ; 2 hautbois, 2 bassons, 4 trombones, 8 violoncelles, 8 contrebasses (groupe 3)" .
+
+<http://data.doremus.org/expression/707aa24a-7b37-3624-9cc1-2d7cfd203571>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/707aa24a-7b37-3624-9cc1-2d7cfd203571/casting/1> ;
+        ecrm:P102_has_title  "Per Bastiana Tai-Yang Cheng (\"L'Oriente è rosso\")" , "Per Bastiana Tai-Yang Cheng" ;
+        ecrm:P3_has_note     "Dédicace : pour Bastiana, seconde fille du compositeur. Durée : environ 15 minutes" , "Création : 31 octobre 1967, Toronto, sous la direction de Seiji Ozawa" .
+
+<http://data.doremus.org/event/1f500e1d-f64c-3a19-9cc0-e15d40db0239>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/fffbfd95-2c84-3a9a-8198-12a2565de710> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/707aa24a-7b37-3624-9cc1-2d7cfd203571> .
+
+<http://data.doremus.org/work/398fdf06-8063-3e73-8fd7-4782fbb37b72>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/eb6090aa-6768-3201-8ad5-e05bee096806> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/707aa24a-7b37-3624-9cc1-2d7cfd203571> .
+
+<http://data.doremus.org/work/fffbfd95-2c84-3a9a-8198-12a2565de710>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/398fdf06-8063-3e73-8fd7-4782fbb37b72> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/707aa24a-7b37-3624-9cc1-2d7cfd203571> .
+
+<http://data.doremus.org/event/0defab92-0b44-306a-8469-49858e887859>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1967" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1967"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/faebb9b2-2943-3ff8-ae14-f1b18fc0115b>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/707aa24a-7b37-3624-9cc1-2d7cfd203571> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/398fdf06-8063-3e73-8fd7-4782fbb37b72> .
+
+<http://data.doremus.org/expression/ec0fe645-9037-34dd-8a5f-8a0faeba6426>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/707aa24a-7b37-3624-9cc1-2d7cfd203571> .

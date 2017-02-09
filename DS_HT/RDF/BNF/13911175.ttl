@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/cd3e2bd6-df2c-39be-b897-8e8323867df5>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18240101/18241231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d73a9eb4-4c45-35e2-ab42-ae8ae60492b6> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0c3ae778-c1bb-3306-a4da-48a2b2fef54b> .
+
+<http://data.doremus.org/expression/d73a9eb4-4c45-35e2-ab42-ae8ae60492b6>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/li> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "D" ;
+                  mus:U41_has_catalogue_number  "806" ;
+                  ecrm:P3_has_note              "D 806"
+                ] ;
+        ecrm:P102_has_title  "Abendstern" ;
+        ecrm:P3_has_note     "Lied sur un poème de Johann Mayrhofer" .
+
+<http://data.doremus.org/event/af51a1f9-1a54-3675-863f-caea1368c36d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/67051c49-e408-37bc-a4cf-e3e59305f501> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d73a9eb4-4c45-35e2-ab42-ae8ae60492b6> .
+
+<http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/0c3ae778-c1bb-3306-a4da-48a2b2fef54b>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d73a9eb4-4c45-35e2-ab42-ae8ae60492b6> .
+
+<http://data.doremus.org/work/67051c49-e408-37bc-a4cf-e3e59305f501>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0c3ae778-c1bb-3306-a4da-48a2b2fef54b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d73a9eb4-4c45-35e2-ab42-ae8ae60492b6> .

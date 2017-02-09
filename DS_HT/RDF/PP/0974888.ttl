@@ -1,0 +1,81 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/91cd8584-0bfe-3aa7-96f8-5efd58a2c4a0/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 hautbois, 2 clarinettes, 2 cors de basset, 2 bassons, 1 contrebasson, 4 cors." .
+
+<http://data.doremus.org/expression/91cd8584-0bfe-3aa7-96f8-5efd58a2c4a0>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "n°10" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/snd> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/91cd8584-0bfe-3aa7-96f8-5efd58a2c4a0/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "370a" ;
+                  ecrm:P3_has_note              "KV.370a"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "K" ;
+                  mus:U41_has_catalogue_number  "361" ;
+                  ecrm:P3_has_note              "K 361"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "361" ;
+                  ecrm:P3_has_note              "KV 361"
+                ] ;
+        ecrm:P102_has_title       "Sérénade no 10 \"Gran Partita\"" , "Serenades" , "Sérénade Gran partita" ;
+        ecrm:P3_has_note          "Première exécution connue au Burgtheater de Vienne, le 23 mars 1784, avec Anton Stadler à la première clarinette." , "Cette oeuvre a été composée à Vienne vers 1784. Comprend : 1- Largo / Allegro molto. 2- Menuetto I. 3- Adagio. 4- Menuetto II. 5- Romanze. 6- Thema mit Variationen. 7- Rondo. Durée d'exécution : 39 minutes environ" .
+
+<http://data.doremus.org/work/c0c6f20f-c92f-3c70-ad10-936441f0d7d7>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4d09de5d-353d-36ee-8995-4b3bca6ab391> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/91cd8584-0bfe-3aa7-96f8-5efd58a2c4a0> .
+
+<http://data.doremus.org/event/a5c78256-c81d-3d51-9c90-95c5c0742dc4>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c0c6f20f-c92f-3c70-ad10-936441f0d7d7> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/91cd8584-0bfe-3aa7-96f8-5efd58a2c4a0> .
+
+<http://data.doremus.org/performance/5b7df09c-4280-3334-9be8-ad08e0e17c55>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première exécution connue au Burgtheater de Vienne, le 23 mars 1784, avec Anton Stadler à la première clarinette." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/872e3cd8-5d58-3dbd-8ea1-2cd166062439> .
+
+<http://data.doremus.org/expression/872e3cd8-5d58-3dbd-8ea1-2cd166062439>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/91cd8584-0bfe-3aa7-96f8-5efd58a2c4a0> .
+
+<http://data.doremus.org/work/4d09de5d-353d-36ee-8995-4b3bca6ab391>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/5b7df09c-4280-3334-9be8-ad08e0e17c55> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/91cd8584-0bfe-3aa7-96f8-5efd58a2c4a0> .
+
+<http://data.doremus.org/event/f313f90e-eadd-3602-8790-0a3bd16991dc>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1784" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1783/1784"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/91cd8584-0bfe-3aa7-96f8-5efd58a2c4a0> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4d09de5d-353d-36ee-8995-4b3bca6ab391> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .

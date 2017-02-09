@@ -1,0 +1,64 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/3a0834cd-9159-3c51-9575-f7b3ea1c1085>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/fcbeb7df-dbc9-32a9-8a62-30114263d384> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630> .
+
+<http://data.doremus.org/event/87c52b87-6cf7-34fa-8e92-d15bb2323062>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1967" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1967"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3a0834cd-9159-3c51-9575-f7b3ea1c1085> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/b5979a24-c580-3782-a461-d50c7831b251>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/3a0834cd-9159-3c51-9575-f7b3ea1c1085> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630> .
+
+<http://data.doremus.org/event/f4aab8c2-f8b4-39c4-9d0d-e93e408f8aee>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b5979a24-c580-3782-a461-d50c7831b251> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630> .
+
+<http://data.doremus.org/performance/fcbeb7df-dbc9-32a9-8a62-30114263d384>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1967, New York, par Walter Traempler." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/ccd7c473-0597-3bfb-b56c-dab06037473d> .
+
+<http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630/casting/1> ;
+        ecrm:P102_has_title  "Sequenza VI pour alto" , "Sequenza VI" ;
+        ecrm:P3_has_note     "Dédiée à Serge Collot. Berio a qualifié cette Sequenza d'hommage aux Caprices de Paganini, elle est d'une tension physique extrême, avec un long tremolo intense, d'où sortira peu à peu la mélodie. Cette Sequenza est le point de départ de Chemin II pour alto et 9 instruments, et Chemin III, pour alto et orchestre." , "1967, New York, par Walter Traempler." .
+
+<http://data.doremus.org/expression/ccd7c473-0597-3bfb-b56c-dab06037473d>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630> .
+
+<http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Alto solo" .

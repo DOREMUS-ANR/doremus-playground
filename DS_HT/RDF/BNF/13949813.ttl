@@ -1,0 +1,43 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/6c68facc-a356-3e81-92e8-d7cf9eaece89>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "Chemin II" ;
+        ecrm:P3_has_note     "Orchestration de la Sequenza VI" .
+
+<http://data.doremus.org/event/05ce7dd5-b067-32dd-8b18-4ee37634bee4>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/405a07fb-8877-3e2f-941c-e0f8eda159e9> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6c68facc-a356-3e81-92e8-d7cf9eaece89> .
+
+<http://data.doremus.org/work/405a07fb-8877-3e2f-941c-e0f8eda159e9>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f767428d-203b-364f-b577-2e80ffcef3ab> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6c68facc-a356-3e81-92e8-d7cf9eaece89> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/8c9a8eff-1e1e-3af9-a56f-00259808c0f2>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1967/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6c68facc-a356-3e81-92e8-d7cf9eaece89> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f767428d-203b-364f-b577-2e80ffcef3ab> .
+
+<http://data.doremus.org/work/f767428d-203b-364f-b577-2e80ffcef3ab>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6c68facc-a356-3e81-92e8-d7cf9eaece89> .

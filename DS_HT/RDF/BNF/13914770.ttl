@@ -1,0 +1,47 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/6631e93c-c078-3e9c-839c-3a720878eac9>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2084b80f-285c-37ee-84a5-3e51013ad7f5> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ab457212-6495-333b-b0ec-b749efe581c5> .
+
+<http://data.doremus.org/expression/ab457212-6495-333b-b0ec-b749efe581c5>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "65" ;
+                                      ecrm:P3_has_note         "Op. 65"
+                                    ] ;
+        ecrm:P102_has_title         "Les heures persanes" ;
+        ecrm:P3_has_note            "Recueil de 16 pièces, d'après \"Vers Ispahan\" de Pierre Loti" , "Comprend : \"Sieste avant le départ\" (no 1) ; \"La caravane (un rêve pendant la sieste)\" (no 2) ; \"L'escalade obscure\" (no 3) ; \"Matin frais dans la haute vallée\" (no 4) ; \"En vue de la ville\" (no 5) ; \" À travers les rues\" (no 6) ; \"Chant du soir\" (no 7) ; \"Clair de lune sur les terrasses\" (no 8) ; \"Aubade\" (no 9) ; \"Roses au soleil de midi\" (no 10) ; \"A l'ombre, près de la fontaine de marbre\" (no 11) ; \"Arabesques\" (no 12) ; \"Les collines au coucher du soleil\" (no 13) ; \"Le conteur\" (no 14) ; \"La paix du soir au cimetière\" (no 15) ; \"Derviches dans la nuit\" (no 16)" , "Il existe une version avec orchestre, op. 65 bis (1921)" .
+
+<http://data.doremus.org/artist/d039a98d-44e4-3161-88a4-08a66c618230>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/2084b80f-285c-37ee-84a5-3e51013ad7f5>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/e379a070-e04d-3592-9817-68f8c312f1c3> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ab457212-6495-333b-b0ec-b749efe581c5> .
+
+<http://data.doremus.org/event/278f956e-ab05-3361-911b-9e394e592331>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19130101/19191231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/d039a98d-44e4-3161-88a4-08a66c618230>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ab457212-6495-333b-b0ec-b749efe581c5> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e379a070-e04d-3592-9817-68f8c312f1c3> .
+
+<http://data.doremus.org/work/e379a070-e04d-3592-9817-68f8c312f1c3>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ab457212-6495-333b-b0ec-b749efe581c5> .

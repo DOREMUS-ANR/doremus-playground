@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="14795062" format="InterXMarc_Complet" type="Authority">
+<leader>00827c0 au22000272  45  <Pos Code="0004">00827</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF147950626<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">14795062</Pos>
+<Pos Code="13">6</Pos>
+</controlfield>
+<controlfield tag="008">961209091020yy    uu        1982      1985                   1   <Pos Code="0001">96</Pos>
+<Pos Code="0203">12</Pos>
+<Pos Code="0405">09</Pos>
+<Pos Code="0607">09</Pos>
+<Pos Code="0809">10</Pos>
+<Pos Code="1011">20</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820">uu </Pos>
+<Pos Code="2831">1982</Pos>
+<Pos Code="3841">1985</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">wc01<Pos Code="0001" Sens="instruments à vent - clarinette">wc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">ec01<Pos Code="0001" Sens="musique électronique - ordinateur">ec</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13891735</subfield>
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Boulez</subfield>
+	<subfield code="m">Pierre</subfield>
+	<subfield code="d">1925-....</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Dialogue de l&apos;ombre double</subfield>
+	<subfield code="b">Clarinette</subfield>
+</datafield>
+<datafield tag="301" ind1="2" ind2=" ">
+	<subfield code="3">15609568</subfield>
+	<subfield code="a">Boulez</subfield>
+	<subfield code="m">Pierre</subfield>
+	<subfield code="d">1925-....</subfield>
+	<subfield code="t">[Dialogue de l&apos;ombre double. Saxophones]</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">D&apos;après la pièce pour clarinette &quot;Domaine&quot;</subfield>
+	<subfield code="a">Dates de composition : 1982-1985</subfield>
+	<subfield code="a">1re exécution : Florence, 28 octobre 1985, Alain Damiens</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Il existe une version pour basson (1995) et une adaptation pour saxophones par P. Boulez et Vincent David (2001)</subfield>
+</datafield>
+<datafield tag="608" ind1=" " ind2=" ">
+	<subfield code="a">clarinette en si bémol (re-recording)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove music online</subfield>
+	<subfield code="u">http://www.grovemusic.com</subfield>
+	<subfield code="d">2008-03-18</subfield>
+	<subfield code="a">Ircam</subfield>
+	<subfield code="u">http://brahms.ircam.fr</subfield>
+	<subfield code="d">2008-03-18</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100181230</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100694750</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">13938694</subfield>
+	<subfield code="d">20080319</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb14795062j</Attr>
+<Attr Nom="NumSource">OPD 100181230</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1389173515609568</Attr>
+<Attr Nom="DateCreation">09/12/ 1996</Attr>
+<Attr Nom="ResponsableCreation">MIGV3</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">09/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">09/12/ 1996</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV3</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource" Rep="1">OPC 100694750</Attr>
+<Attr Nom="NumSource" Rep="2">OPP 13938694</Attr>
+</record>

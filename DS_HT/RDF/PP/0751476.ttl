@@ -1,0 +1,50 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/bc7d9331-c16b-30fb-8cb2-0c5554b68262>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/eb9458ef-e2c6-3890-83d0-2b3c41b84d05> .
+
+<http://data.doremus.org/event/601426ef-e3e5-3725-9205-7114ab039b94>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/372d6d67-6111-3cd6-991b-b56947fe8764> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/eb9458ef-e2c6-3890-83d0-2b3c41b84d05> .
+
+<http://data.doremus.org/artist/c982245c-7d03-3cdf-94ac-a18f580f0b3a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/372d6d67-6111-3cd6-991b-b56947fe8764>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/bc7d9331-c16b-30fb-8cb2-0c5554b68262> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/eb9458ef-e2c6-3890-83d0-2b3c41b84d05> .
+
+<http://data.doremus.org/event/cb91f58b-1fbe-3c40-8e42-53bc07e7067f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1728" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1726/1728"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c982245c-7d03-3cdf-94ac-a18f580f0b3a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/eb9458ef-e2c6-3890-83d0-2b3c41b84d05> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/bc7d9331-c16b-30fb-8cb2-0c5554b68262> .
+
+<http://data.doremus.org/expression/eb9458ef-e2c6-3890-83d0-2b3c41b84d05>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/musique_de_chambre> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        ecrm:P102_has_title  "Sinfonia con violino obbligato" , "Symphonie avec violon obligé" ;
+        ecrm:P3_has_note     "Largo - Allegro - Largo - Allegro." .

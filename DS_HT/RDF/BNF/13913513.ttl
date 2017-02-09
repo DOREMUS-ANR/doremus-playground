@@ -1,0 +1,85 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/7e4c06d8-d32e-3c59-bc88-38224d82fee2>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "12" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/bb> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/ms> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/7e4c06d8-d32e-3c59-bc88-38224d82fee2/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Hob" ;
+                  mus:U41_has_catalogue_number  "XXII" ;
+                  ecrm:P3_has_note              "Hob XXII 12"
+                ] ;
+        ecrm:P102_has_title       "Theresienmesse" .
+
+<http://data.doremus.org/event/db4265c8-8f41-3465-96fc-5fd6e615aec8>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17990101/17991231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/7e4c06d8-d32e-3c59-bc88-38224d82fee2> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/59a0d872-82fc-3428-a72e-81c5e3799814> .
+
+<http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/7e4c06d8-d32e-3c59-bc88-38224d82fee2/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "voix (4)"@fr
+                                              ]
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "choeur (4 voix)"@fr
+                                              ]
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/oun>
+                                    ] ;
+        ecrm:P3_has_note            "Voix (4), choeur (4 voix), orchestre" .
+
+<http://data.doremus.org/expression/357b7084-fc45-32fc-a428-a9bc85ff8c31>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/7e4c06d8-d32e-3c59-bc88-38224d82fee2> .
+
+<http://data.doremus.org/event/f4806734-e28f-3ecf-a723-1194bd96d6d6>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/357b7084-fc45-32fc-a428-a9bc85ff8c31> .
+
+<http://data.doremus.org/performance/40cae096-2731-3100-ba48-42a2037214f2>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Eisenstadt, 8 septembre 1799" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/357b7084-fc45-32fc-a428-a9bc85ff8c31> .
+
+<http://data.doremus.org/work/e1ba5c7a-f3fa-3644-9f14-b2ae54a63902>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/59a0d872-82fc-3428-a72e-81c5e3799814> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/7e4c06d8-d32e-3c59-bc88-38224d82fee2> .
+
+<http://data.doremus.org/work/59a0d872-82fc-3428-a72e-81c5e3799814>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/40cae096-2731-3100-ba48-42a2037214f2> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/7e4c06d8-d32e-3c59-bc88-38224d82fee2> .
+
+<http://data.doremus.org/event/f4fb13ae-8cb0-3a43-8e38-5c6622c718f1>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e1ba5c7a-f3fa-3644-9f14-b2ae54a63902> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/7e4c06d8-d32e-3c59-bc88-38224d82fee2> .

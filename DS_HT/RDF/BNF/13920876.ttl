@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/7ba97606-56c2-321c-9703-9aa617bfe395>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        ecrm:P102_has_title  "L'opéra de quat'sous" , "The threepenny opera" , "Die Dreigroschenoper" ;
+        ecrm:P3_has_note     "Pièce avec musique en 3 actes" , "Livret de Bertolt Brecht et Elisabeth Hauptmann, d'après \"The beggar's opera\" de John Gay" , "Le compositeur en a tiré une suite pour instruments à vent intitulée \"Kleine Dreigroschenmusik\"" .
+
+<http://data.doremus.org/event/0da1b13d-9e73-3fec-b604-c30725e3b44f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19280101/19281231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/78728633-39ba-36ee-a442-b17a70873494>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/7ba97606-56c2-321c-9703-9aa617bfe395> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/ef2c844c-21ba-34b4-ba9d-057334f7269e> .
+
+<http://data.doremus.org/event/a50ef50f-09ea-35df-a396-6ea7acd51d95>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/9bdbfde6-a59d-3c95-ac01-9b0df9ab8001> .
+
+<http://data.doremus.org/performance/1d8c9f1c-50cb-3291-9628-3cee9966762a>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Berlin, Theater am Schiffbauerdamm, le 31 août 1928, avec Lotte Lenya (soprano)" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/9bdbfde6-a59d-3c95-ac01-9b0df9ab8001> .
+
+<http://data.doremus.org/expression/9bdbfde6-a59d-3c95-ac01-9b0df9ab8001>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/7ba97606-56c2-321c-9703-9aa617bfe395> .
+
+<http://data.doremus.org/work/26f92dea-9cd9-3593-a680-f12d88c7a1b3>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/ef2c844c-21ba-34b4-ba9d-057334f7269e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/7ba97606-56c2-321c-9703-9aa617bfe395> .
+
+<http://data.doremus.org/work/ef2c844c-21ba-34b4-ba9d-057334f7269e>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/1d8c9f1c-50cb-3291-9628-3cee9966762a> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/7ba97606-56c2-321c-9703-9aa617bfe395> .
+
+<http://data.doremus.org/event/a972d30d-ac50-3a11-8fe2-c5597ea61c1f>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/26f92dea-9cd9-3593-a680-f12d88c7a1b3> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/7ba97606-56c2-321c-9703-9aa617bfe395> .
+
+<http://data.doremus.org/artist/78728633-39ba-36ee-a442-b17a70873494>
+        a       ecrm:E21_Person .

@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/cfaf2b92-1314-399d-b0db-298d38e95964>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/or> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "BWV" ;
+                  mus:U41_has_catalogue_number  "248" ;
+                  ecrm:P3_has_note              "BWV 248"
+                ] ;
+        ecrm:P102_has_title  "Oratorio de Noël" , "Christmas-Oratorio" , "Oratorium tempore Nativitatis Christi" , "Weihnachts-Oratorium" ;
+        ecrm:P3_has_note     "6 cantates de Noël à l'Épiphanie" , "Les cantates 1 à 5 contiennent des adaptations des cantates profanes 213 et 215, et la cantate no 6 provient de la cantate religieuse perdue 248a" .
+
+<http://data.doremus.org/work/2f3a4970-ff3e-3a46-806e-aa037a004e3d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/c9c90c4d-292d-31e8-b003-129c62252539> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/cfaf2b92-1314-399d-b0db-298d38e95964> .
+
+<http://data.doremus.org/event/703ddbb8-a11c-3e53-a49f-1c9a9b0bbb79>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17340101/17351231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/cfaf2b92-1314-399d-b0db-298d38e95964> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c9c90c4d-292d-31e8-b003-129c62252539> .
+
+<http://data.doremus.org/work/c9c90c4d-292d-31e8-b003-129c62252539>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/cfaf2b92-1314-399d-b0db-298d38e95964> .
+
+<http://data.doremus.org/event/337996a0-4921-3d96-bf34-d2ac370e9856>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2f3a4970-ff3e-3a46-806e-aa037a004e3d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/cfaf2b92-1314-399d-b0db-298d38e95964> .

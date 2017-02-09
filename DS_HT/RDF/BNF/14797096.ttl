@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/82f68bd3-88f6-36d0-b521-eea1f2cdbf1a>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Vienne, Zum großen Zeisig, 24 novembre 1858" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/a769119a-93ae-38cf-90af-6de8ab039d67> .
+
+<http://data.doremus.org/work/ea5a7f67-db42-3f8b-8983-3a1d4722b906>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/a6c77354-fc79-389b-9024-5ad1a019dde2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/21133315-2c7f-3a3e-b976-b2d3428d4318> .
+
+<http://data.doremus.org/expression/21133315-2c7f-3a3e-b976-b2d3428d4318>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/df> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "RV" ;
+                  mus:U41_has_catalogue_number  "214" ;
+                  ecrm:P3_has_note              "RV 214"
+                ] ;
+        ecrm:P102_has_title  "Tritsch-Tratsch Polka" ;
+        ecrm:P3_has_note     "Polka rapide" , "Éd. : Vienne : C. Haslinger, 1859" .
+
+<http://data.doremus.org/event/c1bf5695-718b-39c6-b6dd-35940ed5d52c>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/a769119a-93ae-38cf-90af-6de8ab039d67> .
+
+<http://data.doremus.org/event/9d6a450e-e01c-30e3-a5e1-03b83f44dfba>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/ea5a7f67-db42-3f8b-8983-3a1d4722b906> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/21133315-2c7f-3a3e-b976-b2d3428d4318> .
+
+<http://data.doremus.org/expression/a769119a-93ae-38cf-90af-6de8ab039d67>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/21133315-2c7f-3a3e-b976-b2d3428d4318> .
+
+<http://data.doremus.org/work/a6c77354-fc79-389b-9024-5ad1a019dde2>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/82f68bd3-88f6-36d0-b521-eea1f2cdbf1a> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/21133315-2c7f-3a3e-b976-b2d3428d4318> .
+
+<http://data.doremus.org/artist/66758e02-7164-3fcd-9ee0-916316ffbcee>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/af73f761-b8c4-32dd-a101-a3c939637502>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18580101/18581231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/66758e02-7164-3fcd-9ee0-916316ffbcee>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/21133315-2c7f-3a3e-b976-b2d3428d4318> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a6c77354-fc79-389b-9024-5ad1a019dde2> .

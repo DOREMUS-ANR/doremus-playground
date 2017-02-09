@@ -1,0 +1,75 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/3278a676-908f-3aa9-a03a-1de06b29095a>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : sous la direction de Pierre Boulez" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/de9e1797-6f70-30f9-99ec-e5b1308b93da> .
+
+<http://data.doremus.org/expression/3baebfce-de0c-3c21-851f-9eebc5c7bcc5/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/wcl>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/oun>
+                                    ] ;
+        ecrm:P3_has_note            "Clarinette, orchestre" .
+
+<http://data.doremus.org/expression/3baebfce-de0c-3c21-851f-9eebc5c7bcc5/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à Alain Damiens et l'Ensemble Intercontemporain"@fr .
+
+<http://data.doremus.org/expression/3baebfce-de0c-3c21-851f-9eebc5c7bcc5>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/3baebfce-de0c-3c21-851f-9eebc5c7bcc5/casting/1> ;
+        ecrm:P3_has_note     "Comprend sept parties" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/3baebfce-de0c-3c21-851f-9eebc5c7bcc5/dedication> .
+
+<http://data.doremus.org/work/7bed2697-996b-3f74-ad83-0a185a1bb3ff>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/3278a676-908f-3aa9-a03a-1de06b29095a> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/3baebfce-de0c-3c21-851f-9eebc5c7bcc5> .
+
+<http://data.doremus.org/event/2406308f-0519-3eea-8a0f-34dc4fb2b140>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/de9e1797-6f70-30f9-99ec-e5b1308b93da> .
+
+<http://data.doremus.org/expression/de9e1797-6f70-30f9-99ec-e5b1308b93da>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/3baebfce-de0c-3c21-851f-9eebc5c7bcc5> .
+
+<http://data.doremus.org/event/4780cbb0-fca2-321a-b198-b5f5a332426a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1996/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6ec915f0-d52a-3314-8dc7-b65e738725ab>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/3baebfce-de0c-3c21-851f-9eebc5c7bcc5> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/7bed2697-996b-3f74-ad83-0a185a1bb3ff> .
+
+<http://data.doremus.org/artist/6ec915f0-d52a-3314-8dc7-b65e738725ab>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/05ad4c73-1f9e-3fca-8b41-e43b010101ca>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/1d6f887b-2dab-3bfa-b7ed-2feab8c0d5fc> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/3baebfce-de0c-3c21-851f-9eebc5c7bcc5> .
+
+<http://data.doremus.org/work/1d6f887b-2dab-3bfa-b7ed-2feab8c0d5fc>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/7bed2697-996b-3f74-ad83-0a185a1bb3ff> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/3baebfce-de0c-3c21-851f-9eebc5c7bcc5> .

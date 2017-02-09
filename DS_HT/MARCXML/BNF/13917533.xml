@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13917533" format="InterXMarc_Complet" type="Authority">
+<leader>01937c0 au22000272  45  <Pos Code="0004">01937</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139175335<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13917533</Pos>
+<Pos Code="13">5</Pos>
+</controlfield>
+<controlfield tag="008">890821110804yyita ops       1727                             010 <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">11</Pos>
+<Pos Code="0809">08</Pos>
+<Pos Code="1011">04</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="italien">ita</Pos>
+<Pos Code="1820" Sens="opera seria [dramma per musica => opera seria, melodramma tragico => opera seria]">ops</Pos>
+<Pos Code="2831">1727</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">va01<Pos Code="0001" Sens="voix - soprano">va</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">vb02<Pos Code="0001" Sens="voix - mezzo-soprano">vb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">vc01<Pos Code="0001" Sens="voix - alto">vc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">vd01<Pos Code="0001" Sens="voix - ténor">vd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">ve01<Pos Code="0001" Sens="voix - baryton">ve</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">vf01<Pos Code="0001" Sens="voix - basse">vf</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">cn01<Pos Code="0001" Sens="choeurs - non spécifié">cn</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">oa01<Pos Code="0001" Sens="orchestre - orchestre symphonique XIXe-XXe s.">oa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">zb01<Pos Code="0001" Sens="basse continue - instruments non spécifiés">zb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13900896</subfield>
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Vivaldi</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1678-1741</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Orlando furioso</subfield>
+	<subfield code="k">RV 728</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">16771104</subfield>
+	<subfield code="a">Vivaldi</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1678-1741</subfield>
+	<subfield code="t">[Orlando furioso. RV 728. Atto 1. Sol dà te mio dolce amore]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">16746937</subfield>
+	<subfield code="a">Vivaldi</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1678-1741</subfield>
+	<subfield code="t">[Orlando furioso. RV 728. Atto 1. Nel profondo cieco mondo]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">16736566</subfield>
+	<subfield code="a">Vivaldi</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1678-1741</subfield>
+	<subfield code="t">[Orlando furioso. RV 728. Atto 3. Anderò, chiamerò dal profondo]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">16736561</subfield>
+	<subfield code="a">Vivaldi</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1678-1741</subfield>
+	<subfield code="t">[Orlando furioso. RV 728. Atto 3. Vorrebe amado il cor]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">16736556</subfield>
+	<subfield code="a">Vivaldi</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1678-1741</subfield>
+	<subfield code="t">[Orlando furioso. RV 728. Atto 3. Io son ne&apos; lacci tuoi]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">16736551</subfield>
+	<subfield code="a">Vivaldi</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1678-1741</subfield>
+	<subfield code="t">[Orlando furioso. RV 728. Atto 3. Che dolce più che più giocondo stato]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">16736545</subfield>
+	<subfield code="a">Vivaldi</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1678-1741</subfield>
+	<subfield code="t">[Orlando furioso. RV 728. Atto 2. Quel candido fiore]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">16736540</subfield>
+	<subfield code="a">Vivaldi</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1678-1741</subfield>
+	<subfield code="t">[Orlando furioso. RV 728. Atto 2. Taci non ti lagnar]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">16736534</subfield>
+	<subfield code="a">Vivaldi</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1678-1741</subfield>
+	<subfield code="t">[Orlando furioso. RV 728. Atto 2. Vorresti amor dà me]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">16736529</subfield>
+	<subfield code="a">Vivaldi</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1678-1741</subfield>
+	<subfield code="t">[Orlando furioso. RV 728. Atto 1. Amorose à i rai del solle]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">16736472</subfield>
+	<subfield code="a">Vivaldi</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1678-1741</subfield>
+	<subfield code="t">[Orlando furioso. RV 728. Atto 1. Ascondero il mio sdegno]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">16736463</subfield>
+	<subfield code="a">Vivaldi</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1678-1741</subfield>
+	<subfield code="t">[Orlando furioso. RV 728. Atto 1. Alza in quegl&apos;occhi]</subfield>
+</datafield>
+<datafield tag="320" ind1=" " ind2=" ">
+	<subfield code="3">14461857</subfield>
+	<subfield code="9">145</subfield>
+	<subfield code="a">Braccioli</subfield>
+	<subfield code="m">Grazio</subfield>
+	<subfield code="d">1682-1752</subfield>
+	<subfield code="t">Orlando furioso</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Orlando furioso</subfield>
+	<subfield code="k">R 728</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Livret de G. Braccioli</subfield>
+	<subfield code="a">Créé à Venise, Teatro San Angelo, le 10 novembre 1727</subfield>
+</datafield>
+<datafield tag="608" ind1=" " ind2=" ">
+	<subfield code="b">Angelica (soprano)</subfield>
+	<subfield code="b">Orlando, Alcina (mezzo)</subfield>
+	<subfield code="b">Bradamante (alto)</subfield>
+	<subfield code="b">Medoro (ténor)</subfield>
+	<subfield code="b">Ruggiero (baryton)</subfield>
+	<subfield code="b">Astolfo (basse)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove Opera</subfield>
+</datafield>
+<datafield tag="624" ind1=" " ind2=" ">
+	<subfield code="a">780<Pos Code="0002" Sens="Musique">780</Pos>
+</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100472210</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">13872529</subfield>
+	<subfield code="d">20110804</subfield>
+</datafield>
+<Alter Ori="13900896">
+<datafield tag="031" ind1=" " ind2=" ">
+	<subfield code="a">0000000121299169</subfield>
+	<subfield code="2" Sens="ISNI chargé à partir de VIAF">VIAF</subfield>
+	<subfield code="d">20130731<Pos Code="0003">2013</Pos>
+<Pos Code="0407" Sens="31 juillet">0731</Pos>
+</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb13917533c</Attr>
+<Attr Nom="NumSource">OPC 100472210</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1390089614461857</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">04/08/ 2011</Attr>
+<Attr Nom="ResponsableDerniereValidation">SERRES CATHERINE</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">82</Attr>
+<Attr Nom="NumSource" Rep="1">OPP 13872529</Attr>
+</record>

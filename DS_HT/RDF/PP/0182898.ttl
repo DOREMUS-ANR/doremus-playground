@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/5ef1f08c-8f96-3163-aa88-d7782272d0d3>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0171a3f9-6aec-31d0-a280-2e7bbe2aeed7> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/50c11d0e-65e9-33bf-8937-5a41eef25d7b> .
+
+<http://data.doremus.org/expression/50c11d0e-65e9-33bf-8937-5a41eef25d7b/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Eva (soprano) ; Magdalen (mezzo) ; Walther von Stolzing, David , Kunz Vogelgesang, Balthasar, veilleur de nuit (barytons) ; hans Sachs (baryton basse) ; Veit Pogner, Konrad Nachtigall, Hermann Ortel, Hans Schwarz, Hans Foltz (basses) ; choeurs ; orchestre symphonique" .
+
+<http://data.doremus.org/artist/9d0c1b84-5209-39a2-84bb-71d688ca65e1>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/50c11d0e-65e9-33bf-8937-5a41eef25d7b>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/50c11d0e-65e9-33bf-8937-5a41eef25d7b/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "WWV" ;
+                  mus:U41_has_catalogue_number  "96" ;
+                  ecrm:P3_has_note              "WWV 96"
+                ] ;
+        ecrm:P102_has_title  "Les maîtres chanteurs de Nuremberg" , "Meistersinger von Nürnberg" ;
+        ecrm:P3_has_note     "Opéra en 3 actes. Livret du compositeur" , "Créé à Munich, Hoftheater, le 26 juin 1868" .
+
+<http://data.doremus.org/work/0171a3f9-6aec-31d0-a280-2e7bbe2aeed7>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/29052137-2f93-3dd2-940f-8a00c58a7b44> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/50c11d0e-65e9-33bf-8937-5a41eef25d7b> .
+
+<http://data.doremus.org/event/ad30c34a-d129-31d3-9373-26baba9e84a9>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1862-1867" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1862/1867"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9d0c1b84-5209-39a2-84bb-71d688ca65e1>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/50c11d0e-65e9-33bf-8937-5a41eef25d7b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0171a3f9-6aec-31d0-a280-2e7bbe2aeed7> .
+
+<http://data.doremus.org/expression/cdccb0ab-a1f4-3a43-9fc3-a4d4ada5e5f8>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/50c11d0e-65e9-33bf-8937-5a41eef25d7b> .
+
+<http://data.doremus.org/performance/29052137-2f93-3dd2-940f-8a00c58a7b44>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Munich, Hoftheater, le 26 juin 1868" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/cdccb0ab-a1f4-3a43-9fc3-a4d4ada5e5f8> .
+
+<http://data.doremus.org/event/16571578-6cf3-3030-9d3f-a3d3dd176e17>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/5ef1f08c-8f96-3163-aa88-d7782272d0d3> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/50c11d0e-65e9-33bf-8937-5a41eef25d7b> .

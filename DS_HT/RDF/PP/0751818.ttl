@@ -1,0 +1,76 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/f368fb80-b0e8-32be-80c1-ab2b38e39922>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/c> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/f368fb80-b0e8-32be-80c1-ab2b38e39922/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "356" ;
+                  ecrm:P3_has_note              "KV 356"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "K" ;
+                  mus:U41_has_catalogue_number  "356" ;
+                  ecrm:P3_has_note              "K 356"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "617a" ;
+                  ecrm:P3_has_note              "KV 617a"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "K" ;
+                  mus:U41_has_catalogue_number  "617" ;
+                  ecrm:P3_has_note              "K 617 a"
+                ] ;
+        ecrm:P102_has_title  "Adagio" , "Adagio en ut majeur pour harmonica de verre" , "Adagios" , "Adagio pour Glasharmonika" , "Adagio pour Glassharmonika" ;
+        ecrm:P3_has_note     "Existe sous les numéros KV 617a et KV 356. Le \"Glasharmonika\", qui était une amélioration technique des \"verres musicaux\", connut jusqu'aux années 1820 une grande popularité dans toute l'Europe. Cet instrument (...) exerça aussi une grande fascination sur Mozart, qui eut très jeune l'occasion de l'entendre. la venue à Vienne de Marianne Kirchgässner, jeune virtuose aveugle de vingt et un ans, alors en tournée en Europe, fut l'occasion tardive pour le compositeur d'écrire enfin pour cet instrument." .
+
+<http://data.doremus.org/work/9bf39746-f6c1-30dc-842f-2a52d6102810>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f368fb80-b0e8-32be-80c1-ab2b38e39922> .
+
+<http://data.doremus.org/expression/f368fb80-b0e8-32be-80c1-ab2b38e39922/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Glasharmonika" .
+
+<http://data.doremus.org/event/2d4f9e5e-ad61-3077-b448-134cc0ebe894>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1791" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1791"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f368fb80-b0e8-32be-80c1-ab2b38e39922> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/9bf39746-f6c1-30dc-842f-2a52d6102810> .
+
+<http://data.doremus.org/work/90e6b97e-b266-37eb-89ee-723cf6ca857d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/9bf39746-f6c1-30dc-842f-2a52d6102810> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f368fb80-b0e8-32be-80c1-ab2b38e39922> .
+
+<http://data.doremus.org/event/f2c0f119-540b-3fa9-b0a3-75c3b19cb811>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/90e6b97e-b266-37eb-89ee-723cf6ca857d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f368fb80-b0e8-32be-80c1-ab2b38e39922> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .

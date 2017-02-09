@@ -1,0 +1,66 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/e135e31d-9510-356d-9b9d-c158e2d656d9>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : London : printed for the author and sold by I. Playord and I. Carr, 1683" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/356e94ab-98e9-3424-b61c-1a20c1628aea> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/933ab387-42aa-3d43-87ee-e368fb861d5a> .
+
+<http://data.doremus.org/work/a5ca570c-0589-32db-a8b9-f8d91e7ed6cf>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0899e880-9035-30ef-9818-eb45f4cc8985> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/b05d7b7f-346b-39f1-862f-266a38b80da5> .
+
+<http://data.doremus.org/artist/1cd68120-6c81-3dbb-8225-4e04e6050193>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/b05d7b7f-346b-39f1-862f-266a38b80da5>
+        a                  efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key    <http://data.doremus.org/vocabulary/key/f> ;
+        mus:U12_has_genre  <http://data.doremus.org/vocabulary/iaml/genre/ts> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Z" ;
+                  mus:U41_has_catalogue_number  "793" ;
+                  ecrm:P3_has_note              "Z 793"
+                ] ;
+        ecrm:P3_has_note   "Extrait des [12] \"Sonnata's of III parts\"" .
+
+<http://data.doremus.org/work/0899e880-9035-30ef-9818-eb45f4cc8985>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/e135e31d-9510-356d-9b9d-c158e2d656d9> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/b05d7b7f-346b-39f1-862f-266a38b80da5> .
+
+<http://data.doremus.org/event/2338db86-8d8c-3b7d-a3d5-2eebaeeeb500>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/a5ca570c-0589-32db-a8b9-f8d91e7ed6cf> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/b05d7b7f-346b-39f1-862f-266a38b80da5> .
+
+<http://data.doremus.org/publication/933ab387-42aa-3d43-87ee-e368fb861d5a>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/b05d7b7f-346b-39f1-862f-266a38b80da5> .
+
+<http://data.doremus.org/event/13753df0-7bdf-3522-a2b5-9b7a19f75c1a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1680/1680"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1cd68120-6c81-3dbb-8225-4e04e6050193>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/b05d7b7f-346b-39f1-862f-266a38b80da5> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0899e880-9035-30ef-9818-eb45f4cc8985> .
+
+<http://data.doremus.org/work/356e94ab-98e9-3424-b61c-1a20c1628aea>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/933ab387-42aa-3d43-87ee-e368fb861d5a> .

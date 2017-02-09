@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/d729e2b3-d5de-3937-8d9b-7696caf6c5c7>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17270101/17271231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b7714656-e913-38b0-a84e-688f1b074921>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d1a38fac-f785-3b69-ad1d-c36e03bf0140> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/166422f1-9256-3cc4-a7cc-7b6333770df2> .
+
+<http://data.doremus.org/artist/b7714656-e913-38b0-a84e-688f1b074921>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/e0eb98e9-b0d6-3209-928b-b3b1e21deea1>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/166422f1-9256-3cc4-a7cc-7b6333770df2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d1a38fac-f785-3b69-ad1d-c36e03bf0140> .
+
+<http://data.doremus.org/event/a4a5b1b7-9858-3a61-81c4-91cdd83e4973>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e0eb98e9-b0d6-3209-928b-b3b1e21deea1> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d1a38fac-f785-3b69-ad1d-c36e03bf0140> .
+
+<http://data.doremus.org/expression/d1a38fac-f785-3b69-ad1d-c36e03bf0140>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/ops> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "RV" ;
+                  mus:U41_has_catalogue_number  "728" ;
+                  ecrm:P3_has_note              "RV 728"
+                ] ;
+        ecrm:P102_has_title  "Orlando furioso" ;
+        ecrm:P3_has_note     "Livret de G. Braccioli" , "Créé à Venise, Teatro San Angelo, le 10 novembre 1727" .
+
+<http://data.doremus.org/work/166422f1-9256-3cc4-a7cc-7b6333770df2>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d1a38fac-f785-3b69-ad1d-c36e03bf0140> .

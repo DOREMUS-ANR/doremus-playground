@@ -1,0 +1,74 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/182aa5e7-3f55-3280-a5ee-5ce669549809>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ede2ce69-3873-34ae-be6c-aa0d261ec2a5> .
+
+<http://data.doremus.org/work/ffe628e0-e6b1-3aa3-b646-7d2ff271a378>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/ccb065db-ccf1-3be7-9eb6-63324f3bbc00> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ede2ce69-3873-34ae-be6c-aa0d261ec2a5> .
+
+<http://data.doremus.org/event/6ce6a536-b083-3062-8356-e46383a212f0>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/ffe628e0-e6b1-3aa3-b646-7d2ff271a378> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ede2ce69-3873-34ae-be6c-aa0d261ec2a5> .
+
+<http://data.doremus.org/event/5e309f57-a213-3f9b-ae4b-ed25306581ba>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1782" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1782"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ede2ce69-3873-34ae-be6c-aa0d261ec2a5> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/ccb065db-ccf1-3be7-9eb6-63324f3bbc00> .
+
+<http://data.doremus.org/expression/ede2ce69-3873-34ae-be6c-aa0d261ec2a5/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Konstanze, Blondchen (sopranos) ; Belmonte, Pedrillo (ténors) ; Osmin (basse) ; Selim Pacha (rôle parlé)" .
+
+<http://data.doremus.org/work/ccb065db-ccf1-3be7-9eb6-63324f3bbc00>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/8312ac71-2131-3497-9390-c60aa6bd2dc8> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ede2ce69-3873-34ae-be6c-aa0d261ec2a5> .
+
+<http://data.doremus.org/performance/8312ac71-2131-3497-9390-c60aa6bd2dc8>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Crée à Vienne, Burgtheater, le 16 juillet 1782" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/182aa5e7-3f55-3280-a5ee-5ce669549809> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/ede2ce69-3873-34ae-be6c-aa0d261ec2a5>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/singspiel> , <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/ede2ce69-3873-34ae-be6c-aa0d261ec2a5/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "384" ;
+                  ecrm:P3_has_note              "KV 384"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "K" ;
+                  mus:U41_has_catalogue_number  "384" ;
+                  ecrm:P3_has_note              "K 384"
+                ] ;
+        ecrm:P102_has_title  "L'enlèvement au sérail" , "Die Entführung aus dem Serail" ;
+        ecrm:P3_has_note     "Singspiel en 3 actes. Livret de Gottlieb Stephanie le Jeune tiré de celui de Christoph F. Bretzner. Inspiré de la pièce \"Belmonte und Constanze\" de Bretzner." , "Crée à Vienne, Burgtheater, le 16 juillet 1782" .

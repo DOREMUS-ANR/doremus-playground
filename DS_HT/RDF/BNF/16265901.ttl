@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/2105a4da-8407-343b-a202-4b5e601bf058>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/bff331bf-ca1f-36ff-ba74-37ec44286967> .
+
+<http://data.doremus.org/event/8b5df714-475d-366a-8a7d-a0e436bf5df4>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "16190101/16191231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/bff331bf-ca1f-36ff-ba74-37ec44286967> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/2105a4da-8407-343b-a202-4b5e601bf058> .
+
+<http://data.doremus.org/work/33981ea5-7a97-3084-8d72-294e1404a87c>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/2105a4da-8407-343b-a202-4b5e601bf058> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/bff331bf-ca1f-36ff-ba74-37ec44286967> .
+
+<http://data.doremus.org/expression/bff331bf-ca1f-36ff-ba74-37ec44286967>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/md> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "126" ;
+                  ecrm:P3_has_note              "SV 126"
+                ] ;
+        ecrm:P102_has_title  "Non vedrò mai le stelle" ;
+        ecrm:P3_has_note     "Publié dans : \"Libro VII de madrigali\", Venise,  1619" .
+
+<http://data.doremus.org/event/f9566361-3a83-3870-9126-a29d368174a6>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/33981ea5-7a97-3084-8d72-294e1404a87c> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/bff331bf-ca1f-36ff-ba74-37ec44286967> .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

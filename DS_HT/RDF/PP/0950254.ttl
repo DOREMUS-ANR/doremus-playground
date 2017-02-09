@@ -1,0 +1,55 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/86544fa9-177f-369b-9646-6f3310f62c00>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4ca5b29f-e410-3207-b6d6-f3554d17d249> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/605f7e65-7fdd-30a7-88a0-8112f0611ec4> .
+
+<http://data.doremus.org/artist/d039a98d-44e4-3161-88a4-08a66c618230>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/605f7e65-7fdd-30a7-88a0-8112f0611ec4>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/605f7e65-7fdd-30a7-88a0-8112f0611ec4/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "65" ;
+                                      ecrm:P3_has_note         "Op. 65"
+                                    ] ;
+        ecrm:P102_has_title         "Les heures persanes" ;
+        ecrm:P3_has_note            "Ce recueil de 16 pièces a été composé entre 1913 et 1919, d'après \"Vers Ispahan\" de Pierre Loti. Comprend : 1- Sieste avant le départ. 2- La caravane (rêve pendant la sieste. 3- L'escalade obscure. 4- Matin frais dans la haute vallée. 5- En vue de la ville. 6- A travers les rues. 7- Chant du soir. 8- Clair de lune sur les terrasses. 9- Aubade. 10- Roses au soleil de midi. 11- A l'ombre près de la fontaine de marbre 12- Arabesques. 13- Les collines au coucher du soleil. 14- Le conteur. 15- La paix du soir au cimetière. 16- .Derviches dans la nuit. Il exsite une version avec orchestre, op. 65 bis (1921)" .
+
+<http://data.doremus.org/event/58ec5bf6-4e9d-3f51-a4a9-3015ec47b023>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/86544fa9-177f-369b-9646-6f3310f62c00> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/605f7e65-7fdd-30a7-88a0-8112f0611ec4> .
+
+<http://data.doremus.org/work/4ca5b29f-e410-3207-b6d6-f3554d17d249>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/605f7e65-7fdd-30a7-88a0-8112f0611ec4> .
+
+<http://data.doremus.org/expression/605f7e65-7fdd-30a7-88a0-8112f0611ec4/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/event/20a1d968-ab38-33b7-8aea-2f91681c5287>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "entre 1913 et 1919" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1913/1919"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/d039a98d-44e4-3161-88a4-08a66c618230>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/605f7e65-7fdd-30a7-88a0-8112f0611ec4> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4ca5b29f-e410-3207-b6d6-f3554d17d249> .

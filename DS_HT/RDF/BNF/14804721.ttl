@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/087d61c9-24a2-35ac-bb36-3ba35c5ac13c>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/75331d7f-6978-34d7-a427-2aabb777e3ec> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/feb0284b-6eac-3f59-a260-2388b13cd787> .
+
+<http://data.doremus.org/work/75331d7f-6978-34d7-a427-2aabb777e3ec>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/7f31b1b6-663a-317b-b7d3-edbeb87ed0ec> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/feb0284b-6eac-3f59-a260-2388b13cd787> .
+
+<http://data.doremus.org/artist/934784fa-64b0-348e-9764-862bf32a8b66>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/feb0284b-6eac-3f59-a260-2388b13cd787>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/feb0284b-6eac-3f59-a260-2388b13cd787/casting/1> ;
+        ecrm:P102_has_title  "Sei sonate a quattro" , "6 Sonates à quatre" .
+
+<http://data.doremus.org/work/7f31b1b6-663a-317b-b7d3-edbeb87ed0ec>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/feb0284b-6eac-3f59-a260-2388b13cd787> .
+
+<http://data.doremus.org/expression/feb0284b-6eac-3f59-a260-2388b13cd787/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "violons (2)"@fr
+                                              ]
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/wob>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/wba>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/mbs>
+                                    ] ;
+        ecrm:P3_has_note            "Violons (2), hautbois, basson, basse" .
+
+<http://data.doremus.org/event/55f8fba5-419b-3cc9-af1a-ba298cf5cb72>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1700/1799"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/934784fa-64b0-348e-9764-862bf32a8b66>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/feb0284b-6eac-3f59-a260-2388b13cd787> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/7f31b1b6-663a-317b-b7d3-edbeb87ed0ec> .

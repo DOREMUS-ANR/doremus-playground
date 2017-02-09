@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/eabb418d-6c7e-33d8-ab4c-cf5f21dd74c5>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/9f0dc14f-39ec-37df-a760-5caff6dd1be0> .
+
+<http://data.doremus.org/expression/9f0dc14f-39ec-37df-a760-5caff6dd1be0>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/md> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "136" ;
+                  ecrm:P3_has_note              "SV 136"
+                ] ;
+        ecrm:P102_has_title  "Parlo, misero, o taccio" ;
+        ecrm:P3_has_note     "Madrigal à 3 voix et basse continue extrait du livre 7" , "Texte de G. B. Guarini" , "Musique identique à Longe, mi Jesu" , "Éd. : 1619" .
+
+<http://data.doremus.org/event/05f33981-89dc-338a-995d-a2e6c4e0ac30>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "16190101/16191231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/9f0dc14f-39ec-37df-a760-5caff6dd1be0> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/eabb418d-6c7e-33d8-ab4c-cf5f21dd74c5> .
+
+<http://data.doremus.org/event/f9fd926f-721a-3a4e-9aca-5592d7644535>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/9f07b169-f05c-300b-9661-a8722ac8a0d5> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/9f0dc14f-39ec-37df-a760-5caff6dd1be0> .
+
+<http://data.doremus.org/work/9f07b169-f05c-300b-9661-a8722ac8a0d5>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/eabb418d-6c7e-33d8-ab4c-cf5f21dd74c5> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/9f0dc14f-39ec-37df-a760-5caff6dd1be0> .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

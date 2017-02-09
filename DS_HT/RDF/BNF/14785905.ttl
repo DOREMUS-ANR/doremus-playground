@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/781e0de7-9a1e-3b86-b100-6c6c59c7d716>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8fb5f014-cdaa-3908-9864-52b19f8db640> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6fc84b6c-a1eb-3a3d-9fb4-7a72d3146c8b> .
+
+<http://data.doremus.org/work/8fb5f014-cdaa-3908-9864-52b19f8db640>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/32f4aa39-706d-3a01-8009-6e98e43d0434> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6fc84b6c-a1eb-3a3d-9fb4-7a72d3146c8b> .
+
+<http://data.doremus.org/artist/94cb9203-13e8-3192-b208-3f3e792f5b58>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/6fc84b6c-a1eb-3a3d-9fb4-7a72d3146c8b>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/e> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/rd> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/6fc84b6c-a1eb-3a3d-9fb4-7a72d3146c8b/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "14" ;
+                                      ecrm:P3_has_note         "Op. 14"
+                                    ] ;
+        ecrm:P102_has_title         "Rondo capriccioso" ;
+        ecrm:P3_has_note            "Comprend : Andante ; Presto" .
+
+<http://data.doremus.org/work/32f4aa39-706d-3a01-8009-6e98e43d0434>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6fc84b6c-a1eb-3a3d-9fb4-7a72d3146c8b> .
+
+<http://data.doremus.org/event/71305f8e-e0a3-39f7-858c-80a4c403c5ad>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18300101/18301231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/94cb9203-13e8-3192-b208-3f3e792f5b58>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6fc84b6c-a1eb-3a3d-9fb4-7a72d3146c8b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/32f4aa39-706d-3a01-8009-6e98e43d0434> .
+
+<http://data.doremus.org/expression/6fc84b6c-a1eb-3a3d-9fb4-7a72d3146c8b/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/kpf>
+                                    ] ;
+        ecrm:P3_has_note            <http://data.doremus.org/vocabulary/itema3/mop/54> .

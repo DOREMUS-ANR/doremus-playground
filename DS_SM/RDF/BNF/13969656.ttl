@@ -1,0 +1,58 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/73b2feca-83bd-36d3-824b-f81cad85326d>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/f9655560-b40a-3842-9032-0c46b35238aa/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "cordes"@fr
+                                              ]
+                                    ] ;
+        ecrm:P3_has_note            "Cordes" .
+
+<http://data.doremus.org/expression/f9655560-b40a-3842-9032-0c46b35238aa>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "4" ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/qua> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/f9655560-b40a-3842-9032-0c46b35238aa/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "37" ;
+                                      ecrm:P3_has_note         "Op. 37"
+                                    ] ;
+        ecrm:P3_has_note            "Commande d'Elizabeth Sprague Coolidge" , "Dédié à Elizabeth Sprague Coolidge et aux membres du Kolisch Streichquartett, qui créèrent l'oeuvre à Los Angeles, Royce Hall (University of California) le 9 janvier 1937" , "Éd. : 1939" .
+
+<http://data.doremus.org/event/c43be1a6-5e91-3a61-af1f-c077e4afe324>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19360101/19361231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/73b2feca-83bd-36d3-824b-f81cad85326d>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f9655560-b40a-3842-9032-0c46b35238aa> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/bf2bd8ee-cacb-3e83-8215-99696731bf88> .
+
+<http://data.doremus.org/event/79ace3bb-9e2f-3ddd-8008-f1c84d75e64b>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/94786627-547c-3fed-ad16-0f34a1b9af8f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f9655560-b40a-3842-9032-0c46b35238aa> .
+
+<http://data.doremus.org/work/bf2bd8ee-cacb-3e83-8215-99696731bf88>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f9655560-b40a-3842-9032-0c46b35238aa> .
+
+<http://data.doremus.org/work/94786627-547c-3fed-ad16-0f34a1b9af8f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/bf2bd8ee-cacb-3e83-8215-99696731bf88> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f9655560-b40a-3842-9032-0c46b35238aa> .

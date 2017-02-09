@@ -1,0 +1,75 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/8c6cfea0-4601-310a-a94e-b5ef297371da>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/caa58853-17bc-3d87-9c71-e13db4e6e543> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/148cc214-0b74-3f21-9c8f-27a67e401166> .
+
+<http://data.doremus.org/performance/8e8f5864-bf95-37a5-b9b8-7ebb438d523d>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création : 31 mars 1794 au huitième \"Concert Salomon\" (Londres)" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/951d48ea-b6d7-39f2-b043-01580549a5b5> .
+
+<http://data.doremus.org/event/d0b51a3c-9349-3c24-8de8-1bb7266ee6e8>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8c6cfea0-4601-310a-a94e-b5ef297371da> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/148cc214-0b74-3f21-9c8f-27a67e401166> .
+
+<http://data.doremus.org/event/514da2ea-5bd4-3ff9-81cd-a0332b7f05ba>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1793-1794" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1793/1794"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/148cc214-0b74-3f21-9c8f-27a67e401166> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/caa58853-17bc-3d87-9c71-e13db4e6e543> .
+
+<http://data.doremus.org/expression/148cc214-0b74-3f21-9c8f-27a67e401166>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "N° 100" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/gb> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/148cc214-0b74-3f21-9c8f-27a67e401166/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Hob" ;
+                  mus:U41_has_catalogue_number  "I" ;
+                  ecrm:P3_has_note              "Hob I : 100"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                           mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name  "hob" ;
+                  ecrm:P3_has_note            "hob. I : 100"
+                ] ;
+        ecrm:P102_has_title       "Symphonie no 100 \"Militaire\"" , "Symphonie n°100" ;
+        ecrm:P3_has_note          "Création : 31 mars 1794 au huitième \"Concert Salomon\" (Londres)" , "Fait partie des symphonies \"londoniennes\". Porte le surnom de \"militaire\" à cause de l'importante percussion \"turque\" (triangle, cymbales, grosse caisse), utilisée dans le deuxième mouvement. Durée d'exécution : 25 minutes environ" .
+
+<http://data.doremus.org/expression/148cc214-0b74-3f21-9c8f-27a67e401166/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 flûtes, 2 hautbois, 2 clarinettes, 2 bassons, timblaes, triangle, cymbale, grosse caisse, corde" .
+
+<http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/951d48ea-b6d7-39f2-b043-01580549a5b5>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/148cc214-0b74-3f21-9c8f-27a67e401166> .
+
+<http://data.doremus.org/work/caa58853-17bc-3d87-9c71-e13db4e6e543>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/8e8f5864-bf95-37a5-b9b8-7ebb438d523d> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/148cc214-0b74-3f21-9c8f-27a67e401166> .

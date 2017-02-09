@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/98124c78-1849-3276-947a-e892f608b371>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/398b75f6-333b-33c3-9bce-b89ac4e03188> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e085b949-bd00-3f0b-a3ab-438f8380dc31> .
+
+<http://data.doremus.org/work/398b75f6-333b-33c3-9bce-b89ac4e03188>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/9ef1a388-8da6-344e-a0dd-19f9e10dae7a> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e085b949-bd00-3f0b-a3ab-438f8380dc31> .
+
+<http://data.doremus.org/event/c479b805-200c-3d04-8ec1-63a1878785f7>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1913-1914" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1914/1889"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/de52ba07-8bce-3c5d-90b8-4a5481c4421c>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e085b949-bd00-3f0b-a3ab-438f8380dc31> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/9ef1a388-8da6-344e-a0dd-19f9e10dae7a> .
+
+<http://data.doremus.org/work/9ef1a388-8da6-344e-a0dd-19f9e10dae7a>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/7223903d-ad64-3193-80aa-c6a42bbb27ad> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e085b949-bd00-3f0b-a3ab-438f8380dc31> .
+
+<http://data.doremus.org/performance/7223903d-ad64-3193-80aa-c6a42bbb27ad>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Premère édition : Paris, Ricordi, 1919" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/d092da86-35d5-3451-be16-ce1449c85ffa> .
+
+<http://data.doremus.org/artist/de52ba07-8bce-3c5d-90b8-4a5481c4421c>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/e085b949-bd00-3f0b-a3ab-438f8380dc31>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/mld> , <http://data.doremus.org/vocabulary/diabolo/genre/lied> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "mélodie française"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/e085b949-bd00-3f0b-a3ab-438f8380dc31/casting/1> ;
+        ecrm:P102_has_title  "Clairières dans le ciel" ;
+        ecrm:P3_has_note     "Cycle de 13 mélodies écrites sur des poèmes de Francis Jammes et dédiées à. Gabriel Fauré. Comprend : 1- Elle était descendue au bas de la prairie. 2- Elle est gravement gaie. 3- Parfois, je suis triste. 4- Un poète disait. 5- Au pied de mon lit. 6- Si tout ceci n'est qu'un pauvre rêve. 7- Nous nous aimerons tant. 8- Vous m'avez regardé avec toute votre âme. 9- Les lilas qui avaient fleuri. 10- Deux ancolies. 11- Par ce que j'ai souffert. 12- Je garde une médaille d'elle. 13- Demain fera un an. Il existe une version avec orchestre des no 1, 5, 6, 7, 10, 11, 12 et 13 composée en 1915-1916." , "Premère édition : Paris, Ricordi, 1919" .
+
+<http://data.doremus.org/expression/d092da86-35d5-3451-be16-ce1449c85ffa>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/e085b949-bd00-3f0b-a3ab-438f8380dc31> .
+
+<http://data.doremus.org/expression/e085b949-bd00-3f0b-a3ab-438f8380dc31/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Voix et piano" .

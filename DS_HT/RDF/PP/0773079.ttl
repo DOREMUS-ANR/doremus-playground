@@ -1,0 +1,66 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/c04578ff-40fb-3ddc-98d8-529583258862>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1954" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1954"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a35e280f-9148-3a6f-ab07-340977855cbf>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e257861c-9601-3aad-9849-f2505fc83b2d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4f698472-f20e-3bfa-8e5f-6afbdbf4dd02> .
+
+<http://data.doremus.org/expression/e257861c-9601-3aad-9849-f2505fc83b2d/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : la gouvernante, Miss Jessel, Mrs. Grose (sopranos) ; Flora, Miles (sopranos enfants) ; Quint, le narrateur (ténors) ; choeur d'enfants, orchestre de chambre" .
+
+<http://data.doremus.org/expression/e257861c-9601-3aad-9849-f2505fc83b2d>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/e257861c-9601-3aad-9849-f2505fc83b2d/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "54" ;
+                                      ecrm:P3_has_note         "Op. 54"
+                                    ] ;
+        ecrm:P102_has_title         "Le tour d'écrou" , "The turn of the screw" ;
+        ecrm:P3_has_note            "Opéra en un prologue et deux actes ; livret en anglais de Myfanwy Piper, d'après la nouvelle d'Henry James. Britten a remarquablement réussi, avec une orchestration réduite (18 instruments), à recréer l'atmosphère angoissante et ambigüe, la tension grandissante de l'oeuvre de James." , "Créé à Venise, Théâtre de la Fenice, le 14 septembre 1954, avec Peter Pears et sous la direction de B. Britten" .
+
+<http://data.doremus.org/event/fe555297-b3e8-3985-ba8b-d5abe11f71c9>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2bc82398-5144-3dd4-a0ca-ae026bf439b8> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e257861c-9601-3aad-9849-f2505fc83b2d> .
+
+<http://data.doremus.org/performance/ddc94c2e-cafb-3bdc-b5bd-96e80f20071e>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Venise, Théâtre de la Fenice, le 14 septembre 1954, avec Peter Pears et sous la direction de B. Britten" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/443ed2c8-6d41-382b-88a7-90e851835bff> .
+
+<http://data.doremus.org/artist/a35e280f-9148-3a6f-ab07-340977855cbf>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/443ed2c8-6d41-382b-88a7-90e851835bff>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/e257861c-9601-3aad-9849-f2505fc83b2d> .
+
+<http://data.doremus.org/work/4f698472-f20e-3bfa-8e5f-6afbdbf4dd02>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/ddc94c2e-cafb-3bdc-b5bd-96e80f20071e> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e257861c-9601-3aad-9849-f2505fc83b2d> .
+
+<http://data.doremus.org/work/2bc82398-5144-3dd4-a0ca-ae026bf439b8>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4f698472-f20e-3bfa-8e5f-6afbdbf4dd02> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e257861c-9601-3aad-9849-f2505fc83b2d> .

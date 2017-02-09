@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/d43649d9-cca9-39e1-95af-ec913139bd9a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/0e4b2259-7d07-3c00-86b3-187eeee93266>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/7e9529ee-d215-3443-8d1f-18d88061ddd3> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/2263baf9-9469-3d17-bc82-7dde9736c014> .
+
+<http://data.doremus.org/event/51c41699-2b18-3e03-8798-23850783d02a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18930101/18951231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/d43649d9-cca9-39e1-95af-ec913139bd9a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/2263baf9-9469-3d17-bc82-7dde9736c014> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0e4b2259-7d07-3c00-86b3-187eeee93266> .
+
+<http://data.doremus.org/expression/1eb21b69-067a-348d-97d5-dfe0733816f0>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/2263baf9-9469-3d17-bc82-7dde9736c014> .
+
+<http://data.doremus.org/expression/2263baf9-9469-3d17-bc82-7dde9736c014>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "22" ;
+                                      ecrm:P3_has_note         "Op. 22"
+                                    ] ;
+        ecrm:P102_has_title         "Lemminkäis-sarja" , "Lemminkäinen" ;
+        ecrm:P3_has_note            "Comprend 4 légendes : \"Lemminkäinen ja saaren neidot\", \"Lemminkäinen Tuonelassa\", \"Tuonelan joutsen\", \"Lemminkäinen palaa kotitienoille\"" , "Date de révision : 1897" , "1900 (rév., no 3-4)" , "1939 (rév., no 1-2)" .
+
+<http://data.doremus.org/performance/7e9529ee-d215-3443-8d1f-18d88061ddd3>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1896-13-04" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/1eb21b69-067a-348d-97d5-dfe0733816f0> .
+
+<http://data.doremus.org/work/da74f576-a90c-3716-b5c0-f783a6256ad5>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0e4b2259-7d07-3c00-86b3-187eeee93266> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/2263baf9-9469-3d17-bc82-7dde9736c014> .
+
+<http://data.doremus.org/event/de63557c-25d7-3fbe-ab7e-07a034118535>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/1eb21b69-067a-348d-97d5-dfe0733816f0> .
+
+<http://data.doremus.org/event/9e224dcd-1a62-3d78-aa18-49dd345e9490>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/da74f576-a90c-3716-b5c0-f783a6256ad5> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/2263baf9-9469-3d17-bc82-7dde9736c014> .

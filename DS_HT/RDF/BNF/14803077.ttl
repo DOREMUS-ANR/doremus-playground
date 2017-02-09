@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/e5e49d54-4a2a-354b-a6d1-3f9d2090ef64>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/22d2f5ad-666d-3a86-9e4e-9da4141c67cf>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/d7eb4412-eb52-3679-9460-73725b1acda3> .
+
+<http://data.doremus.org/expression/c5de2f8d-622a-302e-9848-a6ee43a9ab93>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "1/2" ;
+                                      ecrm:P3_has_note         "Op. 1/2"
+                                    ] ;
+        ecrm:P102_has_title         "Punkte" ;
+        ecrm:P3_has_note            "Date de révision : 1962" , "Nouvelles révisions : 1966 et 1993" .
+
+<http://data.doremus.org/work/5a5af9ff-684f-3be5-9d91-2bc9fe8ad81b>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/b5002786-cbdf-330b-8089-4d26f6b9f61e> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c5de2f8d-622a-302e-9848-a6ee43a9ab93> .
+
+<http://data.doremus.org/expression/d7eb4412-eb52-3679-9460-73725b1acda3>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c5de2f8d-622a-302e-9848-a6ee43a9ab93> .
+
+<http://data.doremus.org/work/a8120597-a855-32bc-b7c5-c2ad0db4c75f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/5a5af9ff-684f-3be5-9d91-2bc9fe8ad81b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c5de2f8d-622a-302e-9848-a6ee43a9ab93> .
+
+<http://data.doremus.org/event/13413800-da78-3a3e-8e15-5631faa71022>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19520101/19621231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/e5e49d54-4a2a-354b-a6d1-3f9d2090ef64>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c5de2f8d-622a-302e-9848-a6ee43a9ab93> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/5a5af9ff-684f-3be5-9d91-2bc9fe8ad81b> .
+
+<http://data.doremus.org/event/1bc791fb-3d71-34d5-bde4-caaed4980646>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/a8120597-a855-32bc-b7c5-c2ad0db4c75f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c5de2f8d-622a-302e-9848-a6ee43a9ab93> .
+
+<http://data.doremus.org/performance/b5002786-cbdf-330b-8089-4d26f6b9f61e>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Donaueschingen, 20 octobre 1963, Orchestre du SWF, sous la direction de Pierre Boulez" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/d7eb4412-eb52-3679-9460-73725b1acda3> .

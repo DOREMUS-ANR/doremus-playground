@@ -1,0 +1,70 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/438739a2-b2ef-3250-bb67-7805f41d3209/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "six voix solistes, choeur, instruments ad lib et basse continue" .
+
+<http://data.doremus.org/work/86d03fe9-fd47-32d5-bc3e-cca7a032451f>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/438739a2-b2ef-3250-bb67-7805f41d3209> .
+
+<http://data.doremus.org/expression/438739a2-b2ef-3250-bb67-7805f41d3209>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "requiem"@fr
+                                    ] ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "musique baroque"@fr
+                                    ] ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "musique sacrée"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/438739a2-b2ef-3250-bb67-7805f41d3209/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SW" ;
+                  mus:U41_has_catalogue_number  "279-281" ;
+                  ecrm:P3_has_note              "SW 279-281"
+                ] ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "7" ;
+                                      ecrm:P3_has_note         "Op. 7"
+                                    ] ;
+        ecrm:P102_has_title         "Musikalische Exequien" ;
+        ecrm:P3_has_note            "Le prince Heinrich Posthumus von Reuss demanda au compositeur d'écrire une musique en prévision de ses funérailles. Le mécène luthérien lui fournit le texte, celui là même qu'il fit graver en lettres d'or sur son cercueil. Il s'agit d'une compilation de versets empruntés à l'Ancien Testament, aux Evangiles et à des Chorals luthériens. Le prince eut l'occasion d'entendre l'oeuvre quelques mois avant son décès." .
+
+<http://data.doremus.org/event/175349ab-b67e-3b80-9bec-94e6f6a9514a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "17 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1635" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1635"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/d2b88753-69d8-3f40-99c8-1663b9404631>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/438739a2-b2ef-3250-bb67-7805f41d3209> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/86d03fe9-fd47-32d5-bc3e-cca7a032451f> .
+
+<http://data.doremus.org/event/25096a99-08f3-33e3-a441-031623040855>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2167400f-1e37-3aaa-bc2b-f4f5273eb8a6> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/438739a2-b2ef-3250-bb67-7805f41d3209> .
+
+<http://data.doremus.org/work/2167400f-1e37-3aaa-bc2b-f4f5273eb8a6>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/86d03fe9-fd47-32d5-bc3e-cca7a032451f> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/438739a2-b2ef-3250-bb67-7805f41d3209> .
+
+<http://data.doremus.org/artist/d2b88753-69d8-3f40-99c8-1663b9404631>
+        a       ecrm:E21_Person .

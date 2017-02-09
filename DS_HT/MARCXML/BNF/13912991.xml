@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13912991" format="InterXMarc_Complet" type="Authority">
+<leader>00946c0 au22000272  45  <Pos Code="0004">00946</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139129918<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13912991</Pos>
+<Pos Code="13">8</Pos>
+</controlfield>
+<controlfield tag="008">890821091103yyfre op        1693                             010 <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">09</Pos>
+<Pos Code="0809">11</Pos>
+<Pos Code="1011">03</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="français">fre</Pos>
+<Pos Code="1820">op </Pos>
+<Pos Code="2831">1693</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="b">va10<Pos Code="0001" Sens="voix - soprano">va</Pos>
+<Pos Code="02">1</Pos>
+<Pos Code="03">0</Pos>
+</subfield>
+	<subfield code="b">vg02<Pos Code="0001" Sens="voix - haute-contre">vg</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="b">vd03<Pos Code="0001" Sens="voix - ténor">vd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">3</Pos>
+</subfield>
+	<subfield code="b">vf04<Pos Code="0001" Sens="voix - basse">vf</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">4</Pos>
+</subfield>
+	<subfield code="a">ca01<Pos Code="0001" Sens="choeurs - mixte (4 voix SATB)">ca</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">oh01<Pos Code="0001" Sens="orchestre - orchestre XVIIe-XVIIIe s.">oh</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13892403</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Charpentier</subfield>
+	<subfield code="m">Marc Antoine</subfield>
+	<subfield code="d">1643-1704</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Médée</subfield>
+	<subfield code="k">H 491</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">16670257</subfield>
+	<subfield code="a">Charpentier</subfield>
+	<subfield code="m">Marc Antoine</subfield>
+	<subfield code="d">1643-1704</subfield>
+	<subfield code="t">[Médée. H 491. Acte 2, scène 7. Chi teme d&apos;amore]</subfield>
+</datafield>
+<datafield tag="322" ind1="6" ind2=" ">
+	<subfield code="3">11998611</subfield>
+	<subfield code="9">100</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Corneille</subfield>
+	<subfield code="m">Thomas</subfield>
+	<subfield code="d">1625-1709</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Tragédie en musique en 5 actes</subfield>
+	<subfield code="a">1re représentation : Paris, Académie royale de musique, 4 décembre 1693</subfield>
+</datafield>
+<datafield tag="608" ind1=" " ind2=" ">
+	<subfield code="b">Médée, Créuse, Nérine, la Victoire, la Gloire, l&apos;Amour, une Italienne, Cléone, fantôme 1, fantôme 2 (sopranos)</subfield>
+	<subfield code="b">un berger, un captif (haute-contres)</subfield>
+	<subfield code="b">Jason, Arcas, la Jalousie (ténors)</subfield>
+	<subfield code="b">Créon, Oronte, chef du peuple, la Vengeance (basses)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Hitchcock, Charpentier</subfield>
+</datafield>
+<datafield tag="624" ind1=" " ind2=" ">
+	<subfield code="a">780<Pos Code="0002" Sens="Musique">780</Pos>
+</subfield>
+</datafield>
+<datafield tag="907" ind1=" " ind2=" ">
+	<subfield code="o">GEA</subfield>
+	<subfield code="a">005569386</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPL</subfield>
+	<subfield code="a">010529048</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100420140</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100068390</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14785949</subfield>
+	<subfield code="d">20091103</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb13912991f</Attr>
+<Attr Nom="NumSource">GEA 005569386</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1389240311998611</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource" Rep="1">OPL 010529048</Attr>
+<Attr Nom="NumSource" Rep="2">OPC 100420140</Attr>
+<Attr Nom="NumSource" Rep="3">OPD 100068390</Attr>
+<Attr Nom="NumSource" Rep="4">OPP 14785949</Attr>
+</record>

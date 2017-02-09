@@ -1,0 +1,77 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/f37824be-2fe3-3457-b953-7fca18501d60/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "voix (5)"@fr
+                                              ]
+                                    ] ;
+        ecrm:P3_has_note            "Voix (5)" .
+
+<http://data.doremus.org/event/99161f0d-af8c-3611-8941-707a02b236ec>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. in \"Il sesto libro de madrigali a cinque voci\" : Venise : Gardano, 1614" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/7e5d5c53-9a4f-3e82-8b61-4b85b2b6b6f5> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/86cbc625-e0d9-375c-a6a9-411db6768a06> .
+
+<http://data.doremus.org/work/f86f631c-57d2-314b-8427-8b96c9a920f2>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/99161f0d-af8c-3611-8941-707a02b236ec> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f37824be-2fe3-3457-b953-7fca18501d60> .
+
+<http://data.doremus.org/expression/f37824be-2fe3-3457-b953-7fca18501d60>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/md> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/f37824be-2fe3-3457-b953-7fca18501d60/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "107" ;
+                  ecrm:P3_has_note              "SV 107"
+                ] ;
+        ecrm:P102_has_title  "Lasciatemi morire" , "Lamento d'Arianna" ;
+        ecrm:P3_has_note     "Texte d'Ottavio Rinuccini" , "Seule partie conservée de la tragédie en 1 acte \"Arianna\" (1608), transformée en madrigal à 5 voix" , "Comprend : \"Lasciatemi morire\" (no 1) ; \"O Teseo, Teseo mio\" (no 2) ; \"Dove, dov'e la fede\" (no 3) ; \"Ahi che non pur risponde\" (no 4)" , "Il existe aussi une version pour soprano et basse continue (SV 22)" .
+
+<http://data.doremus.org/event/f7a09a8e-1527-3b38-8758-b20cb7e66269>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "16140101/16141231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f37824be-2fe3-3457-b953-7fca18501d60> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f86f631c-57d2-314b-8427-8b96c9a920f2> .
+
+<http://data.doremus.org/work/7e5d5c53-9a4f-3e82-8b61-4b85b2b6b6f5>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/86cbc625-e0d9-375c-a6a9-411db6768a06> .
+
+<http://data.doremus.org/event/c5e6e272-866f-37a0-9cd0-937f2ebba66a>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/accb7fdf-7a4c-3d40-a3fe-bd51c6caf3f3> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f37824be-2fe3-3457-b953-7fca18501d60> .
+
+<http://data.doremus.org/publication/86cbc625-e0d9-375c-a6a9-411db6768a06>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f37824be-2fe3-3457-b953-7fca18501d60> .
+
+<http://data.doremus.org/work/accb7fdf-7a4c-3d40-a3fe-bd51c6caf3f3>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f86f631c-57d2-314b-8427-8b96c9a920f2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f37824be-2fe3-3457-b953-7fca18501d60> .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

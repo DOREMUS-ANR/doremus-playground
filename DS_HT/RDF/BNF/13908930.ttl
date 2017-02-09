@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/478479c8-4e33-37a6-bd2e-ba13d5448b1a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18610101/18641231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1ffec4f8-174a-38f4-8e22-ead9add71cf7>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/700c3d73-3e6d-3b29-b09b-73cadb5cd536> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e7108d6c-cef4-3a3c-ade7-760a0bb52b8f> .
+
+<http://data.doremus.org/work/02765035-1b20-39ae-b94e-59b4fde17703>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/e7108d6c-cef4-3a3c-ade7-760a0bb52b8f> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/700c3d73-3e6d-3b29-b09b-73cadb5cd536> .
+
+<http://data.doremus.org/artist/1ffec4f8-174a-38f4-8e22-ead9add71cf7>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/700c3d73-3e6d-3b29-b09b-73cadb5cd536>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/fm> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/qui> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/700c3d73-3e6d-3b29-b09b-73cadb5cd536/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "34" ;
+                                      ecrm:P3_has_note         "Op. 34"
+                                    ] ;
+        ecrm:P3_has_note            "Créé à Paris le 4 avril 1868" , "À l'origine pour quatuor à cordes" , "Dédié à Anna, Fürstin von Hesse" , "Il en existe une version pour 2 pianos" .
+
+<http://data.doremus.org/event/f8ab0d5b-6015-33d7-8148-31978b8a8db1>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/02765035-1b20-39ae-b94e-59b4fde17703> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/700c3d73-3e6d-3b29-b09b-73cadb5cd536> .
+
+<http://data.doremus.org/work/e7108d6c-cef4-3a3c-ade7-760a0bb52b8f>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/700c3d73-3e6d-3b29-b09b-73cadb5cd536> .
+
+<http://data.doremus.org/expression/700c3d73-3e6d-3b29-b09b-73cadb5cd536/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/kpf>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "cordes"@fr
+                                              ]
+                                    ] ;
+        ecrm:P3_has_note            "Piano, cordes" .

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13920196" format="InterXMarc_Complet" type="Authority">
+<leader>00700c0 au22000272  45  <Pos Code="0004">00700</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139201965<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13920196</Pos>
+<Pos Code="13">5</Pos>
+</controlfield>
+<controlfield tag="008">890821090327yy    zz        1936                             010 <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">09</Pos>
+<Pos Code="0809">03</Pos>
+<Pos Code="1011">27</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820">zz </Pos>
+<Pos Code="2831">1936</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">oc01<Pos Code="0001" Sens="orchestre - orchestre à cordes 4 parties">oc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">pn01<Pos Code="0001" Sens="percussion - non spécifié">pn</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">kf01<Pos Code="0001" Sens="clavier - célesta">kf</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13891198</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Bartók</subfield>
+	<subfield code="m">Béla</subfield>
+	<subfield code="d">1881-1945</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.ger.</subfield>
+	<subfield code="a">Musik für Saiteninstrumente, Schlagzeug und Celesta</subfield>
+	<subfield code="k">Sz 106</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.hun.</subfield>
+	<subfield code="a">Zene húros hangszerekre, ütökre éscelestára</subfield>
+	<subfield code="k">Sz 106</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.eng.</subfield>
+	<subfield code="a">Music for string instruments, percussion and celesta</subfield>
+	<subfield code="k">Sz 106</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Musique pour cordes, percussion et celesta</subfield>
+	<subfield code="k">Sz 106</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.eng.</subfield>
+	<subfield code="a">Music for strings, percussion and celesta</subfield>
+	<subfield code="k">Sz 106</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Créé à Bâle sous la direction de Paul Sacher le 21 janvier 1937</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove 6</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100501940</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14748519</subfield>
+	<subfield code="d">20090327</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb13920196p</Attr>
+<Attr Nom="NumSource">OPC 100501940</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13891198</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource" Rep="1">OPP 14748519</Attr>
+</record>

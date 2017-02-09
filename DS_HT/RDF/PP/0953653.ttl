@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/84d086ac-cd62-3643-9d26-6076c7e4be9d>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/c5ab29ed-d501-3601-a9be-7c30200af3a0>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/ab727a1d-6886-34fc-a69c-b99fe126471c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c7ab0e54-3dcf-331c-9231-cb04de0607cc> .
+
+<http://data.doremus.org/expression/c7ab0e54-3dcf-331c-9231-cb04de0607cc/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/expression/15261e92-59ef-3ddf-8135-5f64008ff206>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c7ab0e54-3dcf-331c-9231-cb04de0607cc> .
+
+<http://data.doremus.org/expression/c7ab0e54-3dcf-331c-9231-cb04de0607cc>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/c7ab0e54-3dcf-331c-9231-cb04de0607cc/casting/1> ;
+        ecrm:P102_has_title  "Goyescas" ;
+        ecrm:P3_has_note     "Inspiré des \"Caprichos\" de Goya, évoquant l'Espagne d'un XVIIIeme siècle galant, ce recueil constitue le sommet de la production pianistique de Granados, sur le plan de l'inspiration comme celui de l'écriture, très complexe, se rapprochant parfois de l'écriture pianistique d'un Albeniz. Granados écrivait au sujet de cette oeuvre : \"Je voudrais donner dans les \"Goyescas\" une note personnelle, un mélange d'amertume et de grâce (...) Le rythme, la couleur et la vie nettement espagnole, la note de sentiment aussi soudainement amoureuse et passionnée que dramatique et tragique, ainsi qu'elle apparaît dans toute l'oeuvre de Goya\". Granados tenait beaucoup a ses \"Goyescas\", au point d'en réaliser une version théatrale, qui sera créée en janvier 1916 à New-York, quelques semaines avant la mort du compositeur. Contient : 1- Los Requiebros ; 2- Coloquio en la reja ; 3- El fandango del candil ; 4- Quejas, o la maja y el ruiseñor ; 5- El Pelele ; 6- El amor y la muerte ; 7- Serenata del espectro." , "Première version créée par le compositeur (manque la pièce \"El pelele\", composée et intégrée au recueil ultérieurement) en mars 1911" .
+
+<http://data.doremus.org/event/a262e837-a271-3d44-8f3e-7d665f46acaa>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/75118a9f-4cc0-326b-89d3-0275991ac29d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c7ab0e54-3dcf-331c-9231-cb04de0607cc> .
+
+<http://data.doremus.org/performance/ab727a1d-6886-34fc-a69c-b99fe126471c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première version créée par le compositeur (manque la pièce \"El pelele\", composée et intégrée au recueil ultérieurement) en mars 1911" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/15261e92-59ef-3ddf-8135-5f64008ff206> .
+
+<http://data.doremus.org/event/da5dcbff-5714-32c4-be0e-c697d7cbb2f9>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1911" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1911"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/84d086ac-cd62-3643-9d26-6076c7e4be9d>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c7ab0e54-3dcf-331c-9231-cb04de0607cc> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c5ab29ed-d501-3601-a9be-7c30200af3a0> .
+
+<http://data.doremus.org/work/75118a9f-4cc0-326b-89d3-0275991ac29d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/c5ab29ed-d501-3601-a9be-7c30200af3a0> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c7ab0e54-3dcf-331c-9231-cb04de0607cc> .

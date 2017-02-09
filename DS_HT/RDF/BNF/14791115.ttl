@@ -1,0 +1,54 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/7b963f48-8c1d-3cd0-8b9b-20ecbeb4c677/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/kpf>
+                                    ] ;
+        ecrm:P3_has_note            <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/work/e42ac34c-9cc0-305e-b33a-da42dd867521>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0a682537-1433-3536-8b41-b1071aaa8464> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/7b963f48-8c1d-3cd0-8b9b-20ecbeb4c677> .
+
+<http://data.doremus.org/event/6492149b-293e-3063-bf83-48756f53666e>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e42ac34c-9cc0-305e-b33a-da42dd867521> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/7b963f48-8c1d-3cd0-8b9b-20ecbeb4c677> .
+
+<http://data.doremus.org/work/0a682537-1433-3536-8b41-b1071aaa8464>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/7b963f48-8c1d-3cd0-8b9b-20ecbeb4c677> .
+
+<http://data.doremus.org/event/3724d0ac-8857-35a1-86cb-4ccdf43b5ac2>
+        a                    efrbroo:F28_Expression_Creation ;
+        ecrm:P9_consists_of  [ a                             ecrm:E7_Activity ;
+                               mus:U31_had_function_of_type  "compositeur"@fr ;
+                               ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1e7a40a1-d3bf-3605-b92c-96d233b73055>
+                             ] ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/7b963f48-8c1d-3cd0-8b9b-20ecbeb4c677> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0a682537-1433-3536-8b41-b1071aaa8464> .
+
+<http://data.doremus.org/expression/7b963f48-8c1d-3cd0-8b9b-20ecbeb4c677>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/df> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/7b963f48-8c1d-3cd0-8b9b-20ecbeb4c677/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Sz" ;
+                  mus:U41_has_catalogue_number  "56" ;
+                  ecrm:P3_has_note              "Sz 56"
+                ] ;
+        ecrm:P102_has_title  "Danses populaires roumaines" , "Román népi táncok" .
+
+<http://data.doremus.org/artist/1e7a40a1-d3bf-3605-b92c-96d233b73055>
+        a       ecrm:E21_Person .

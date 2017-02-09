@@ -1,0 +1,60 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/84d086ac-cd62-3643-9d26-6076c7e4be9d>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/62412a3a-f019-3a2b-a251-eab7a417a2fc>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/5899d714-b34d-36a1-a9e6-836839429fe5> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/10c7e990-1e08-3e8a-ab17-38ef16186681> .
+
+<http://data.doremus.org/work/65675234-1718-3536-9d10-bf2aa149689d>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/e9c14f51-b09c-326d-8394-45be2b798812> .
+
+<http://data.doremus.org/publication/e9c14f51-b09c-326d-8394-45be2b798812>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/10c7e990-1e08-3e8a-ab17-38ef16186681> .
+
+<http://data.doremus.org/work/5899d714-b34d-36a1-a9e6-836839429fe5>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f5c2d0f5-4f72-37ed-90de-c06b75177b66> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/10c7e990-1e08-3e8a-ab17-38ef16186681> .
+
+<http://data.doremus.org/event/11372a42-c62e-3a35-a3df-32312aeff9b9>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Barcelone, 1912 (vol. 1, no 1-4) ; Barcelone, 1913 (vol. 2, no 5-6)" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/65675234-1718-3536-9d10-bf2aa149689d> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/e9c14f51-b09c-326d-8394-45be2b798812> .
+
+<http://data.doremus.org/event/381bd898-96aa-3004-bda9-e1ecedded3af>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19090101/19121231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/84d086ac-cd62-3643-9d26-6076c7e4be9d>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/10c7e990-1e08-3e8a-ab17-38ef16186681> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f5c2d0f5-4f72-37ed-90de-c06b75177b66> .
+
+<http://data.doremus.org/work/f5c2d0f5-4f72-37ed-90de-c06b75177b66>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/11372a42-c62e-3a35-a3df-32312aeff9b9> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/10c7e990-1e08-3e8a-ab17-38ef16186681> .
+
+<http://data.doremus.org/expression/10c7e990-1e08-3e8a-ab17-38ef16186681>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        ecrm:P102_has_title  "Goyescas o Los majos enamorados" , "Los majos enamorados" , "Goyescas" ;
+        ecrm:P3_has_note     "6 pièces en 2 volumes" , "Titre complet : \"Goyescas o Los majos enamorados\"" , "Comprend : \"Los requiebros\" (no 1) ; \"Coloquio en la reja, duo de amor\" (no 2) ; \"El fandango de Candil\" (no 3) ; \"Quejas o La maja y el ruiseñor\" (no 4) ; \"El amor y la muerte\" (no 5) ; \"Epílogo : serenata del espectro\" (no 6)" , "Réutilisé en partie dans l'opéra en 1 acte de même titre" .

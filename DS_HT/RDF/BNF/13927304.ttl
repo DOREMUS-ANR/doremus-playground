@@ -1,0 +1,67 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/c9a50a14-d20c-36f7-a414-8c750730dad7>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1925/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/0a5d1ae1-748f-303a-9791-762c60f65092>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/138cc4d0-8a67-341c-b572-98f2912abb85> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/446761a1-8a66-3280-b9ad-ad74fcae5d86> .
+
+<http://data.doremus.org/expression/138cc4d0-8a67-341c-b572-98f2912abb85>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/138cc4d0-8a67-341c-b572-98f2912abb85/casting/1> ;
+        ecrm:P102_has_title  "Concertinos" .
+
+<http://data.doremus.org/event/9f22678f-3d1f-306f-95cb-8ee184532b54>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/65ab00e6-0a66-3249-b01b-b9cec950b91f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/138cc4d0-8a67-341c-b572-98f2912abb85> .
+
+<http://data.doremus.org/work/65ab00e6-0a66-3249-b01b-b9cec950b91f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/446761a1-8a66-3280-b9ad-ad74fcae5d86> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/138cc4d0-8a67-341c-b572-98f2912abb85> .
+
+<http://data.doremus.org/work/446761a1-8a66-3280-b9ad-ad74fcae5d86>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/138cc4d0-8a67-341c-b572-98f2912abb85> .
+
+<http://data.doremus.org/artist/0a5d1ae1-748f-303a-9791-762c60f65092>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/138cc4d0-8a67-341c-b572-98f2912abb85/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/kpf>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "vents (3)"@fr
+                                              ]
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "violons (2)"@fr
+                                              ]
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/sva>
+                                    ] ;
+        ecrm:P3_has_note            "Piano, vents (3), violons (2), alto" .

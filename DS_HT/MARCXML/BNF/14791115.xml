@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="14791115" format="InterXMarc_Complet" type="Authority">
+<leader>00356c1 au22000272  45  <Pos Code="0004">00356</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF147911153<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">14791115</Pos>
+<Pos Code="13">3</Pos>
+</controlfield>
+<controlfield tag="008">960105960105yy    df                                         1   <Pos Code="0001">96</Pos>
+<Pos Code="0203">01</Pos>
+<Pos Code="0405">05</Pos>
+<Pos Code="0607">96</Pos>
+<Pos Code="0809">01</Pos>
+<Pos Code="1011">05</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820">df </Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">ka01<Pos Code="0001" Sens="clavier - piano">ka</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13891198</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Bartók</subfield>
+	<subfield code="m">Béla</subfield>
+	<subfield code="d">1881-1945</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Román népi táncok</subfield>
+	<subfield code="b">Piano</subfield>
+	<subfield code="k">Sz 56</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Danses populaires roumaines</subfield>
+	<subfield code="b">Piano</subfield>
+	<subfield code="k">Sz 56</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Bartók, sa vie et son oeuvre</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100137690</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb14791115b</Attr>
+<Attr Nom="NumSource">OPD 100137690</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13891198</Attr>
+<Attr Nom="DateCreation">05/01/ 1996</Attr>
+<Attr Nom="ResponsableCreation">MIGV3_BD</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">05/01/ 1996</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV3_BD</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource">OPP 13859844</Attr>
+</record>

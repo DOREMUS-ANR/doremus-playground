@@ -1,0 +1,66 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/1ffec4f8-174a-38f4-8e22-ead9add71cf7>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/f0bd1c9d-6dc4-32a8-8f93-bf76c328f976>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1862-1865" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1862/1865"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1ffec4f8-174a-38f4-8e22-ead9add71cf7>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/34ed7aa9-2380-39a5-87bc-5cd6d3eef392> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8945736f-5d8b-3f63-90dc-8cbc6ed38869> .
+
+<http://data.doremus.org/expression/3c5a4066-8f0e-3af2-b9e8-48f9b5e7e3d6>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/34ed7aa9-2380-39a5-87bc-5cd6d3eef392> .
+
+<http://data.doremus.org/performance/2bacb1f5-97a7-32f6-87e6-80edcf4022be>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première audition (privée) à Baden et première édition en 1865. Création à Leipzig le 22 juin 1866." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/3c5a4066-8f0e-3af2-b9e8-48f9b5e7e3d6> .
+
+<http://data.doremus.org/work/8945736f-5d8b-3f63-90dc-8cbc6ed38869>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/2bacb1f5-97a7-32f6-87e6-80edcf4022be> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/34ed7aa9-2380-39a5-87bc-5cd6d3eef392> .
+
+<http://data.doremus.org/expression/34ed7aa9-2380-39a5-87bc-5cd6d3eef392/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Piano, 2 violons, alto, violoncelle" .
+
+<http://data.doremus.org/work/7a7467f4-c83d-3faf-923c-6d81a8bd9770>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8945736f-5d8b-3f63-90dc-8cbc6ed38869> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/34ed7aa9-2380-39a5-87bc-5cd6d3eef392> .
+
+<http://data.doremus.org/event/1da00eff-ab45-3209-badc-9f80a898bf62>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/7a7467f4-c83d-3faf-923c-6d81a8bd9770> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/34ed7aa9-2380-39a5-87bc-5cd6d3eef392> .
+
+<http://data.doremus.org/expression/34ed7aa9-2380-39a5-87bc-5cd6d3eef392>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/fm> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/34ed7aa9-2380-39a5-87bc-5cd6d3eef392/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "34" ;
+                                      ecrm:P3_has_note         "Op. 34"
+                                    ] ;
+        ecrm:P102_has_title         "Quintette pour piano et cordes" , "Piano quintet" ;
+        ecrm:P3_has_note            "Comprend : 1- allegro, 2- andante, 3- scherzo (allegro), 4- finale (poco sostenuto, allegro non troppo, presto non troppo) ; durée : 42 mn environ. Dédié à la Princesse Anna de Hesse. Prévue à l'origine pour un quintette à cordes, cette partition fut de nombreuses fois remaniée par Brahms sur les conseils de Clara Schumann (il existe une version \"Sonate pour deux pianos\", Op. 34b, de 1864)." , "Première audition (privée) à Baden et première édition en 1865. Création à Leipzig le 22 juin 1866." .

@@ -1,0 +1,72 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/608faa87-b8cc-3f39-8891-fba8f566e9cf>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/54f3479e-9003-3f1f-9fb3-16a68b3a1e7d> .
+
+<http://data.doremus.org/work/b3536240-18f6-3e09-8bda-612c0bd6bec8>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/9f1fe543-3e73-307c-a0ba-c0728f32075c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/54f3479e-9003-3f1f-9fb3-16a68b3a1e7d> .
+
+<http://data.doremus.org/expression/54f3479e-9003-3f1f-9fb3-16a68b3a1e7d>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "Livre VII" , "Livre 7" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/diabolo/genre/madrigal> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique baroque"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/54f3479e-9003-3f1f-9fb3-16a68b3a1e7d/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "136" ;
+                  ecrm:P3_has_note              "SV 136"
+                ] ;
+        ecrm:P102_has_title       "Parlo, miser, o taccio?" , "Parlo, miser'o taccio ? (Madrigal Livre 7)" , "madrigaux" , "Parlo, misero, o taccio?" ;
+        ecrm:P3_has_note          "Première publication : Venise, 1619" , "Ce madrigal appartient au septième livre de madrigaux, publié sous le titre Concerto et accompagné d'une dédicace à la princesse Catherine de Médicis Gonzague, duchesse de Mantoue. Ce septième livre réunit 32 madrigaux de 1 à 6 voix, la plupart avec le soutien de la seule basse continue, mais quelques uns avec accompagnement d'instruments.Celui-ci a été composé sur un texte de G. B. Guarini. La musique est identique à Longe, mi Jesu. (\"Dois-je parler, malheureux, ou me taire ?\")" .
+
+<http://data.doremus.org/work/8c8e6f23-9b07-3697-9fb7-3c7275967b5c>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/b3536240-18f6-3e09-8bda-612c0bd6bec8> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/54f3479e-9003-3f1f-9fb3-16a68b3a1e7d> .
+
+<http://data.doremus.org/event/5fec4fd8-14fc-3473-804e-b8a135949948>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8c8e6f23-9b07-3697-9fb7-3c7275967b5c> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/54f3479e-9003-3f1f-9fb3-16a68b3a1e7d> .
+
+<http://data.doremus.org/event/7c502424-facc-3269-93ec-fc710e245935>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "17 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1619" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1614/1619"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/54f3479e-9003-3f1f-9fb3-16a68b3a1e7d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/b3536240-18f6-3e09-8bda-612c0bd6bec8> .
+
+<http://data.doremus.org/expression/54f3479e-9003-3f1f-9fb3-16a68b3a1e7d/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 sopranos, 1 basse et basse continue" .
+
+<http://data.doremus.org/performance/9f1fe543-3e73-307c-a0ba-c0728f32075c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première publication : Venise, 1619" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/608faa87-b8cc-3f39-8891-fba8f566e9cf> .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

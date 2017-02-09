@@ -1,0 +1,60 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/3ad273e3-9710-3fc3-8ae7-4eaa2964925c>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/5faf9e70-be00-3e3b-ab91-5d6f759bf469>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "copyright 1936, édition T. B. Harms." ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1936"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/3ad273e3-9710-3fc3-8ae7-4eaa2964925c>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/21ba1043-62a7-3635-915e-0eca3597632f> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a6afad26-baad-30da-b211-0f12ae026828> .
+
+<http://data.doremus.org/work/a6afad26-baad-30da-b211-0f12ae026828>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/c2398159-bd37-3588-8eac-474a7d00776b> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/21ba1043-62a7-3635-915e-0eca3597632f> .
+
+<http://data.doremus.org/expression/21ba1043-62a7-3635-915e-0eca3597632f>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      [ a                         mus:M4_Key ;
+                               ecrm:P1_is_identified_by  "Tonalité originale : Mi bémol majeur. Tonalité usuelle : Fa majeur"@fr
+                             ] ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/jazz> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "jazz standard"@fr
+                             ] ;
+        ecrm:P102_has_title  "The Way You Look Tonight" ;
+        ecrm:P3_has_note     "Paroles de Dorothy Fields. Style de jazz : swing, mainstream, moderne. Structure musicale : un seul thème 64 mesures AABA. Environ 355 enregistrements recensés." , "Créé par Fred Astaire dans le film \"Swing Time\" (1936), le morceau remporte l'Academy Award récompensant la meilleure chanson de film de 1936. Klaunstance (Charlie Parker, 1947) et Go (Fats Navarro/Don Lanphere, 1949) sont des improvisations sur la suite harmonique de The Way You Look Tonight. Premier enregistrement : probablement celui de Fred Astaire (1936). Premier enregistrement jazz : Bob Crosby (1936)." .
+
+<http://data.doremus.org/event/d346120d-904b-3ec3-8d6d-2428544ce0cd>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e8e1ac8a-529f-33af-acd4-4fbda0d7e7f3> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/21ba1043-62a7-3635-915e-0eca3597632f> .
+
+<http://data.doremus.org/expression/767f3432-eb3f-3196-b5e2-fc833421830e>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/21ba1043-62a7-3635-915e-0eca3597632f> .
+
+<http://data.doremus.org/work/e8e1ac8a-529f-33af-acd4-4fbda0d7e7f3>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/a6afad26-baad-30da-b211-0f12ae026828> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/21ba1043-62a7-3635-915e-0eca3597632f> .
+
+<http://data.doremus.org/performance/c2398159-bd37-3588-8eac-474a7d00776b>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé par Fred Astaire dans le film \"Swing Time\" (1936), le morceau remporte l'Academy Award récompensant la meilleure chanson de film de 1936. Klaunstance (Charlie Parker, 1947) et Go (Fats Navarro/Don Lanphere, 1949) sont des improvisations sur la suite harmonique de The Way You Look Tonight. Premier enregistrement : probablement celui de Fred Astaire (1936). Premier enregistrement jazz : Bob Crosby (1936)." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/767f3432-eb3f-3196-b5e2-fc833421830e> .

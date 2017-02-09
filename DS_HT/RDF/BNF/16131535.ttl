@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/c9486319-4c6e-389e-ad07-bf8e6c914699>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ba084682-0a10-3fde-b5c8-19195de72a4c> .
+
+<http://data.doremus.org/work/05ef8444-fcf9-3e7b-b8f4-10e9bd5270c3>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/bb2796d2-1854-3fc1-88f4-61942eadc04f> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ba084682-0a10-3fde-b5c8-19195de72a4c> .
+
+<http://data.doremus.org/work/b2bc70a2-6bdc-38c5-b286-9a3a60486861>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/05ef8444-fcf9-3e7b-b8f4-10e9bd5270c3> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ba084682-0a10-3fde-b5c8-19195de72a4c> .
+
+<http://data.doremus.org/artist/c1a9f789-fdab-39b0-b41c-395d311ad850>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/bb2796d2-1854-3fc1-88f4-61942eadc04f>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : La Havane, 27 Dec 1931" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/c9486319-4c6e-389e-ad07-bf8e6c914699> .
+
+<http://data.doremus.org/event/5449fb3e-a7e8-3f54-b0d6-5ec7cfc44d5e>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b2bc70a2-6bdc-38c5-b286-9a3a60486861> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ba084682-0a10-3fde-b5c8-19195de72a4c> .
+
+<http://data.doremus.org/event/35ce9cf5-2fe5-37fe-84a0-82a39b6e68d4>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19120101/19121231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c1a9f789-fdab-39b0-b41c-395d311ad850>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ba084682-0a10-3fde-b5c8-19195de72a4c> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/05ef8444-fcf9-3e7b-b8f4-10e9bd5270c3> .
+
+<http://data.doremus.org/event/27a814bd-3508-30f9-bbec-130752ed5c5f>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/c9486319-4c6e-389e-ad07-bf8e6c914699> .
+
+<http://data.doremus.org/expression/ba084682-0a10-3fde-b5c8-19195de72a4c>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "5" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Ki" ;
+                  mus:U41_has_catalogue_number  "V" ;
+                  ecrm:P3_has_note              "Ki V 31"
+                ] ;
+        ecrm:P102_has_title       "Decoration day" .

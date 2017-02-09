@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/43c2b106-4013-3138-b8fa-ded6d7aedbd7>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/5fc0ec8b-781f-3bc2-85c8-b04aee47b2db> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/9be811f7-1a05-38d8-b42e-c9c7a1cdf8c7> .
+
+<http://data.doremus.org/expression/8f3320a9-7147-3144-9ae1-1139efeaf760>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/9be811f7-1a05-38d8-b42e-c9c7a1cdf8c7> .
+
+<http://data.doremus.org/work/147e7b17-a174-33ef-aa32-c5990e8f150e>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/5899d53f-b937-34a2-a5b8-3a0b8e0f6a74> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/9be811f7-1a05-38d8-b42e-c9c7a1cdf8c7> .
+
+<http://data.doremus.org/expression/9be811f7-1a05-38d8-b42e-c9c7a1cdf8c7>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/mo> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SWV" ;
+                  mus:U41_has_catalogue_number  "279" ;
+                  ecrm:P3_has_note              "SWV 279 à 281"
+                ] ;
+        ecrm:P102_has_title  "Musikalische Exequien" , "Musicalische Exequien" ;
+        ecrm:P3_has_note     "Composé pour les funérailles de Heinrich Posthumus, prince de Reuss" , "Éd. : 1636" .
+
+<http://data.doremus.org/event/c1148afd-ea6a-388e-a065-839581fcce16>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/8f3320a9-7147-3144-9ae1-1139efeaf760> .
+
+<http://data.doremus.org/performance/5899d53f-b937-34a2-a5b8-3a0b8e0f6a74>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1636-02-04" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/8f3320a9-7147-3144-9ae1-1139efeaf760> .
+
+<http://data.doremus.org/artist/d2b88753-69d8-3f40-99c8-1663b9404631>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/3d2aa052-a72f-3f87-8661-56ddde5ac8fe>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "0000/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/d2b88753-69d8-3f40-99c8-1663b9404631>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/9be811f7-1a05-38d8-b42e-c9c7a1cdf8c7> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/147e7b17-a174-33ef-aa32-c5990e8f150e> .
+
+<http://data.doremus.org/work/5fc0ec8b-781f-3bc2-85c8-b04aee47b2db>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/147e7b17-a174-33ef-aa32-c5990e8f150e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/9be811f7-1a05-38d8-b42e-c9c7a1cdf8c7> .

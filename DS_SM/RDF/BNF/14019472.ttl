@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/3abebe89-b22f-3ee1-8cd4-41c3d2306f02>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1963" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/b94da636-aafa-3331-8c78-444f0ab44aac> .
+
+<http://data.doremus.org/expression/b94da636-aafa-3331-8c78-444f0ab44aac>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/82f14170-b16e-3918-8b11-60f3384f53b1> .
+
+<http://data.doremus.org/expression/82f14170-b16e-3918-8b11-60f3384f53b1>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "Sequenza II" ;
+        ecrm:P3_has_note     "Créé par Francis Pierreà Darmstadt" .
+
+<http://data.doremus.org/work/c337f8ba-d7db-35ff-bd0a-d6be74ce06c2>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/fc08d6b7-bd09-3db3-9e3d-f82c73ac1c9b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/82f14170-b16e-3918-8b11-60f3384f53b1> .
+
+<http://data.doremus.org/event/924649ec-e621-3b83-bc14-22667e34c524>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1963/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/82f14170-b16e-3918-8b11-60f3384f53b1> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/fc08d6b7-bd09-3db3-9e3d-f82c73ac1c9b> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/bfc3ae37-ac91-35f5-b9d8-a885232efdf0>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/b94da636-aafa-3331-8c78-444f0ab44aac> .
+
+<http://data.doremus.org/event/eb97e714-4f72-3e50-989c-10b384bee4a3>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c337f8ba-d7db-35ff-bd0a-d6be74ce06c2> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/82f14170-b16e-3918-8b11-60f3384f53b1> .
+
+<http://data.doremus.org/work/fc08d6b7-bd09-3db3-9e3d-f82c73ac1c9b>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/3abebe89-b22f-3ee1-8cd4-41c3d2306f02> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/82f14170-b16e-3918-8b11-60f3384f53b1> .

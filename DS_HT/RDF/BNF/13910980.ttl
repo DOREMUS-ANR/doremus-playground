@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/448fc821-d2d1-3e49-be8f-ae82d7c201b0>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c6d2500d-5ab9-3c65-b605-fa8a3584f344> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/7fec4ac2-55f6-3e2d-ba2a-2674c63a2356> .
+
+<http://data.doremus.org/expression/7fec4ac2-55f6-3e2d-ba2a-2674c63a2356>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/li> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "D" ;
+                  mus:U41_has_catalogue_number  "328" ;
+                  ecrm:P3_has_note              "D 328"
+                ] ;
+        ecrm:P102_has_title  "Le roi des aulnes" , "Erlkönig" , "Wer reitet so spät durch Nacht und Wind" ;
+        ecrm:P3_has_note     "Sur un poème de Johann Wolfgang von Goethe" , "Existe en 4 versions" .
+
+<http://data.doremus.org/work/c6d2500d-5ab9-3c65-b605-fa8a3584f344>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d5f78372-5eca-32cd-a8d2-6968e6209667> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/7fec4ac2-55f6-3e2d-ba2a-2674c63a2356> .
+
+<http://data.doremus.org/event/b2e6c205-f55c-3bd9-9ba3-25894a44b8e3>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18150101/18151231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/7fec4ac2-55f6-3e2d-ba2a-2674c63a2356> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d5f78372-5eca-32cd-a8d2-6968e6209667> .
+
+<http://data.doremus.org/work/d5f78372-5eca-32cd-a8d2-6968e6209667>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/7fec4ac2-55f6-3e2d-ba2a-2674c63a2356> .

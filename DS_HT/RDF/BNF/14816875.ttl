@@ -1,0 +1,84 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/9755aaa3-71d2-38e8-a0b2-17f3ec1c78c3>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/a0ece84c-654e-370f-ac3b-3fe9881ad3c4> .
+
+<http://data.doremus.org/expression/87c66602-8bd6-3de6-a278-0b35e7b63ee0/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace au cardinal-archiduc Rodolphe de Habsbourg, en l'honneur de sa nomination comme cardinal et archevêque d'Olomouc (24 avril et 4 juin 1819)"@fr .
+
+<http://data.doremus.org/expression/a0ece84c-654e-370f-ac3b-3fe9881ad3c4>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/87c66602-8bd6-3de6-a278-0b35e7b63ee0> .
+
+<http://data.doremus.org/event/131eb247-f7a1-3ce5-b89a-65e9753eae59>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/180f5539-4132-37e5-8fa3-b84d3a8a43c8> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/87c66602-8bd6-3de6-a278-0b35e7b63ee0> .
+
+<http://data.doremus.org/work/eaa876a8-1245-3bb0-b8b3-4c5f3672a9ca>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/9140057d-758a-31d8-8f4e-6e244ed46e71> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/ef0f33c8-6c65-3fcd-9f7a-adf644430ebe> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/87c66602-8bd6-3de6-a278-0b35e7b63ee0> .
+
+<http://data.doremus.org/work/180f5539-4132-37e5-8fa3-b84d3a8a43c8>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/eaa876a8-1245-3bb0-b8b3-4c5f3672a9ca> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/87c66602-8bd6-3de6-a278-0b35e7b63ee0> .
+
+<http://data.doremus.org/publication/f268e435-5dbb-30db-9a22-5e88c461e0b6>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/87c66602-8bd6-3de6-a278-0b35e7b63ee0> .
+
+<http://data.doremus.org/event/9a459565-14b8-3774-b18b-875729e5b278>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18190101/18231231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/87c66602-8bd6-3de6-a278-0b35e7b63ee0> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/eaa876a8-1245-3bb0-b8b3-4c5f3672a9ca> .
+
+<http://data.doremus.org/expression/87c66602-8bd6-3de6-a278-0b35e7b63ee0>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/d> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/ms> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "123" ;
+                                      ecrm:P3_has_note         "Op. 123"
+                                    ] ;
+        ecrm:P102_has_title         "Missa solemnis" ;
+        ecrm:P67_refers_to          <http://data.doremus.org/expression/87c66602-8bd6-3de6-a278-0b35e7b63ee0/dedication> .
+
+<http://data.doremus.org/performance/ef0f33c8-6c65-3fcd-9f7a-adf644430ebe>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Saint-Pétersbourg, 18 avril 1824" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/a0ece84c-654e-370f-ac3b-3fe9881ad3c4> .
+
+<http://data.doremus.org/work/71604c3b-a06e-3093-8a53-c9d8dab2e877>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/f268e435-5dbb-30db-9a22-5e88c461e0b6> .
+
+<http://data.doremus.org/event/9140057d-758a-31d8-8f4e-6e244ed46e71>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Mayence : Schott, 1827" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/71604c3b-a06e-3093-8a53-c9d8dab2e877> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/f268e435-5dbb-30db-9a22-5e88c461e0b6> .
+
+<http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+        a       ecrm:E21_Person .

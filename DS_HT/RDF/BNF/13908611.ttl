@@ -1,0 +1,81 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/publication/e4163e94-5948-32ae-8ff5-517eb7a146ca>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/827eb474-425e-31fc-871b-15049eb5c7e2> .
+
+<http://data.doremus.org/event/c5a2d38c-e140-3b91-b7f4-798be2f99a97>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18551029/18551130"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6f4de1a0-11ef-37f0-bec5-3b44ea148938>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/827eb474-425e-31fc-871b-15049eb5c7e2> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8a4287a5-f5c9-3809-9d76-45946978bc51> .
+
+<http://data.doremus.org/performance/59efc848-c9f6-3062-beb0-138debba460e>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Bâle, 26 février 1935, orchestre sous la direction de Felix Weingartner" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/4a5e2eab-2241-3f8c-acee-03ab6cd7de33> .
+
+<http://data.doremus.org/work/a74e5a41-dbc6-3552-a94f-35e32a1bf1a8>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8a4287a5-f5c9-3809-9d76-45946978bc51> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/827eb474-425e-31fc-871b-15049eb5c7e2> .
+
+<http://data.doremus.org/work/8a4287a5-f5c9-3809-9d76-45946978bc51>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/498dab11-11b8-3d9e-b27b-5c02fecf6f9e> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/59efc848-c9f6-3062-beb0-138debba460e> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/827eb474-425e-31fc-871b-15049eb5c7e2> .
+
+<http://data.doremus.org/expression/4a5e2eab-2241-3f8c-acee-03ab6cd7de33>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/827eb474-425e-31fc-871b-15049eb5c7e2> .
+
+<http://data.doremus.org/work/54c054ce-98ee-307a-9fdb-efe99e43c10c>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/e4163e94-5948-32ae-8ff5-517eb7a146ca> .
+
+<http://data.doremus.org/expression/827eb474-425e-31fc-871b-15049eb5c7e2>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "1" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/c> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "GB" ;
+                  mus:U41_has_catalogue_number  "115" ;
+                  ecrm:P3_has_note              "GB 115"
+                ] ;
+        ecrm:P3_has_note          "Comprend : \"Allegro vivo\" ; \"Andante (adagio)\" ; \"Scherzo (allegro vivace)\" ; \"Final (allegro vivavce)\"" .
+
+<http://data.doremus.org/event/049b0c43-1f0b-3600-9ca8-c5bb426292c6>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/a74e5a41-dbc6-3552-a94f-35e32a1bf1a8> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/827eb474-425e-31fc-871b-15049eb5c7e2> .
+
+<http://data.doremus.org/artist/6f4de1a0-11ef-37f0-bec5-3b44ea148938>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/3e030102-3116-34b9-98eb-5c4892839e47>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/4a5e2eab-2241-3f8c-acee-03ab6cd7de33> .
+
+<http://data.doremus.org/event/498dab11-11b8-3d9e-b27b-5c02fecf6f9e>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Vienne : Universal edition, 1935" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/54c054ce-98ee-307a-9fdb-efe99e43c10c> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/e4163e94-5948-32ae-8ff5-517eb7a146ca> .

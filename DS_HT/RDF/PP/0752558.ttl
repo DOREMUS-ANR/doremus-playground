@@ -1,0 +1,81 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/795a2a88-5ddc-3d17-9b26-3bf4a561adf0>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/bb436313-ae4d-3ff0-9d06-c1ea356fac2d> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/a10e4cd0-07e8-3e9b-aa68-e25a26a9ba8c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ca4b9e89-8ddf-33c2-b905-0285631329dc> .
+
+<http://data.doremus.org/work/f8f8105b-ee75-398e-9122-393ea64f5035>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/795a2a88-5ddc-3d17-9b26-3bf4a561adf0> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ca4b9e89-8ddf-33c2-b905-0285631329dc> .
+
+<http://data.doremus.org/event/bb436313-ae4d-3ff0-9d06-c1ea356fac2d>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Editeur : Breitkopf und Härtel." ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c121d16a-584c-307b-8e3b-7354f609dd2d> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/2bcc936a-75d6-3ad6-8d50-e04c175691f1> .
+
+<http://data.doremus.org/event/7f3edf52-a1f8-342d-b8d1-8cd34020c99f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1982-1984" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1982/1984"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/2d6f5e2b-34cd-3569-8274-899b9ba05583>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ca4b9e89-8ddf-33c2-b905-0285631329dc> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/795a2a88-5ddc-3d17-9b26-3bf4a561adf0> .
+
+<http://data.doremus.org/event/645614df-0dda-39f4-80d1-763ca624dcb5>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f8f8105b-ee75-398e-9122-393ea64f5035> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ca4b9e89-8ddf-33c2-b905-0285631329dc> .
+
+<http://data.doremus.org/expression/ca4b9e89-8ddf-33c2-b905-0285631329dc/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Flûte, deux flûtes piccolo, flûte en sol, deux clarinettes en si bémol, deux clarinettes basses, 2 trompettes en ut, 3 percussions, Klingelspiele, violon, 2 altos, 2 violoncelles, contrebasse à 5 cordes" .
+
+<http://data.doremus.org/artist/2d6f5e2b-34cd-3569-8274-899b9ba05583>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/ca4b9e89-8ddf-33c2-b905-0285631329dc>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/ca4b9e89-8ddf-33c2-b905-0285631329dc/casting/1> ;
+        ecrm:P102_has_title  "Mouvement (- vor der Erstarrung)" , "Vor der Erstarrung" , "Mouvement" ;
+        ecrm:P3_has_note     "La composition de son Mouvement (Vor der Erstarrung) s'inscrit dans la période où Lachenmann cherche un équilibre entre des hauteurs perceptibles et les sons énergétiques. Cette oeuvre est construite à l'aide de séries omni-intervalliques ; les silences y jouent un rôle essentiel. Elle est faite de passages de musique figée et de moments d'exubérance nous amenant tantôt à explorer des territoires inconnus, tantôt à nous laisser guider sur des chemins de facture plus classique. Commande de l'Ensemble Intercontemporain. Durée : environ 21 minutes." , "Créé le 12 novembre 1984 au Théâtre du Rond-Point, Paris, par l'Ensemble Intercontemporain sous la direction de Peter Eötvös. Editeur : Breitkopf und Härtel." .
+
+<http://data.doremus.org/work/c121d16a-584c-307b-8e3b-7354f609dd2d>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/2bcc936a-75d6-3ad6-8d50-e04c175691f1> .
+
+<http://data.doremus.org/performance/a10e4cd0-07e8-3e9b-aa68-e25a26a9ba8c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé le 12 novembre 1984 au Théâtre du Rond-Point, Paris, par l'Ensemble Intercontemporain sous la direction de Peter Eötvös." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/d7da29d4-19b2-3545-ba6e-83421b4dc5fc> .
+
+<http://data.doremus.org/publication/2bcc936a-75d6-3ad6-8d50-e04c175691f1>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ca4b9e89-8ddf-33c2-b905-0285631329dc> .
+
+<http://data.doremus.org/expression/d7da29d4-19b2-3545-ba6e-83421b4dc5fc>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ca4b9e89-8ddf-33c2-b905-0285631329dc> .

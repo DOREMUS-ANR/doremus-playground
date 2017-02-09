@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13912011" format="InterXMarc_Complet" type="Authority">
+<leader>00898c0 au22000272  45  <Pos Code="0004">00898</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139120118<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13912011</Pos>
+<Pos Code="13">8</Pos>
+</controlfield>
+<controlfield tag="008">890821100819yyfre mld       1921                             1   <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">10</Pos>
+<Pos Code="0809">08</Pos>
+<Pos Code="1011">19</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="français">fre</Pos>
+<Pos Code="1820" Sens="mélodie">mld</Pos>
+<Pos Code="2831">1921</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="b">vi01<Pos Code="0001" Sens="voix - voix moyenne">vi</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">ka01<Pos Code="0001" Sens="clavier - piano">ka</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">11902353</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Fauré</subfield>
+	<subfield code="m">Gabriel</subfield>
+	<subfield code="d">1845-1924</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a" Barre="2">L&apos;horizon chimérique</subfield>
+	<subfield code="p">Op. 118</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">14011305</subfield>
+	<subfield code="a">Fauré</subfield>
+	<subfield code="m">Gabriel</subfield>
+	<subfield code="d">1845-1924</subfield>
+	<subfield code="t">[Je me suis embarqué. Op. 118, no 2]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">14011306</subfield>
+	<subfield code="a">Fauré</subfield>
+	<subfield code="m">Gabriel</subfield>
+	<subfield code="d">1845-1924</subfield>
+	<subfield code="t">[Diane, Séléné. Op. 118, no 3]</subfield>
+</datafield>
+<datafield tag="322" ind1="8" ind2=" ">
+	<subfield code="3">11910336</subfield>
+	<subfield code="9">100</subfield>
+	<subfield code="w"> 0  b.....</subfield>
+	<subfield code="a">La Ville de Mirmont</subfield>
+	<subfield code="m">Jean de</subfield>
+	<subfield code="d">1886-1914</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Cycle de 4 mélodies</subfield>
+	<subfield code="a">Dédicace à Charles Panzéra</subfield>
+	<subfield code="a">Date de composition : 1921</subfield>
+	<subfield code="a">1re exécution : Paris, Société nationale de musique, 13 mai 1922</subfield>
+	<subfield code="a">1re éd. : Paris : Durand, 1922</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Comprend : &quot;La mer est infinie&quot; (no 1) ; &quot;Je me suis embarqué&quot; (no 2) ; &quot;Diane Séléné&quot; (no 3) ; &quot;Vaisseaux, nous vous aurons aimés&quot; (no 4)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Nectoux, Fauré</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100408790</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100491310</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14822343</subfield>
+	<subfield code="d">20070216</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb13912011g</Attr>
+<Attr Nom="NumSource">OPC 100408790</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">11902353140113051401130611910336</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource" Rep="1">OPD 100491310</Attr>
+<Attr Nom="NumSource" Rep="2">OPP 14822343</Attr>
+</record>

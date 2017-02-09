@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/d3072ca4-a011-3516-98ba-11bbcf15a844>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1770" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1770"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/75fd7b83-0164-3744-a202-ddb8b748007c>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/1f8bbcac-c5fa-38d5-bd5b-602dc76a1bda> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/010c3882-50ba-3243-aac7-eb433684f01a> .
+
+<http://data.doremus.org/expression/1f8bbcac-c5fa-38d5-bd5b-602dc76a1bda>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/1f8bbcac-c5fa-38d5-bd5b-602dc76a1bda/casting/1> ;
+        ecrm:P102_has_title  "Paris und Helena" , "Pâris et Hélène" , "Paride ed Elena" , "Paris and Helen" ;
+        ecrm:P3_has_note     "Créé à Vienne, Burgtheater, le 3 novembre 1770" , "Drame musical en 5 actes composé sur un livret de Raniero de Calzabigi" .
+
+<http://data.doremus.org/event/d9370f5d-8c53-365a-a26f-836d01912ed9>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b7e47d8b-21e3-3f7d-956e-b0899ef4b540> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/1f8bbcac-c5fa-38d5-bd5b-602dc76a1bda> .
+
+<http://data.doremus.org/expression/fd61f2a8-c4a0-3aac-a90d-bc8339110394>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/1f8bbcac-c5fa-38d5-bd5b-602dc76a1bda> .
+
+<http://data.doremus.org/performance/edee5b89-3970-31d1-b8d8-84c5ff1a19c2>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Vienne, Burgtheater, le 3 novembre 1770" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/fd61f2a8-c4a0-3aac-a90d-bc8339110394> .
+
+<http://data.doremus.org/work/010c3882-50ba-3243-aac7-eb433684f01a>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/edee5b89-3970-31d1-b8d8-84c5ff1a19c2> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/1f8bbcac-c5fa-38d5-bd5b-602dc76a1bda> .
+
+<http://data.doremus.org/work/b7e47d8b-21e3-3f7d-956e-b0899ef4b540>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/010c3882-50ba-3243-aac7-eb433684f01a> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/1f8bbcac-c5fa-38d5-bd5b-602dc76a1bda> .
+
+<http://data.doremus.org/expression/1f8bbcac-c5fa-38d5-bd5b-602dc76a1bda/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Hélène, Amour, Pallas Athena, un soprano solo (sopranos) ; Pâris, un ténor solo (ténors)" .
+
+<http://data.doremus.org/artist/75fd7b83-0164-3744-a202-ddb8b748007c>
+        a       ecrm:E21_Person .

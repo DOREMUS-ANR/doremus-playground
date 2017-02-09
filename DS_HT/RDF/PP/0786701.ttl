@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/d4481ba2-aa6d-338b-858a-1a335553f052>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/fffaf6a6-264e-31fd-ae1b-c23b0d8711cd> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/16c09b79-739e-3192-8df9-9e737f19b819> .
+
+<http://data.doremus.org/performance/5dbda5e6-1a65-31f1-9d30-e3577e4a3a27>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Vienne, Musikvereinsaal de Vienne, en 1865, sous la direction de Johann Herbeck" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/7b5d2708-45a1-33a8-8c06-dd85d4f08f57> .
+
+<http://data.doremus.org/expression/16c09b79-739e-3192-8df9-9e737f19b819>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "8" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/bm> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/sy> , <http://data.doremus.org/vocabulary/diabolo/genre/musique_symphonique> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique romantique"@fr
+                                  ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "D" ;
+                  mus:U41_has_catalogue_number  "759" ;
+                  ecrm:P3_has_note              "D 759"
+                ] ;
+        ecrm:P102_has_title       "Symphonie no 8 \"Inachevée\"" , "Symphony no 8 in B minor \"unfinished\"" , "Symphonie no 8 \"inachevée\"\"en si mineur" , "Sinfonie Nr.8 (B-Moll)" ;
+        ecrm:P3_has_note          "Créé à Vienne, Musikvereinsaal de Vienne, en 1865, sous la direction de Johann Herbeck" , "La plus illustre des compositions de Schubert. Ne comprend que les 2 premiers mouvements : 1- allegro moderato, 2- andante con moto. L'entracte en si mineur de Rosamunde a souvent été utilisé comme final" .
+
+<http://data.doremus.org/event/3ae7224d-f56a-31a7-a5d7-4343f0584ed2>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1822" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1822"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/16c09b79-739e-3192-8df9-9e737f19b819> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/fffaf6a6-264e-31fd-ae1b-c23b0d8711cd> .
+
+<http://data.doremus.org/expression/7b5d2708-45a1-33a8-8c06-dd85d4f08f57>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/16c09b79-739e-3192-8df9-9e737f19b819> .
+
+<http://data.doremus.org/work/fffaf6a6-264e-31fd-ae1b-c23b0d8711cd>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/5dbda5e6-1a65-31f1-9d30-e3577e4a3a27> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/16c09b79-739e-3192-8df9-9e737f19b819> .
+
+<http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/480138aa-176d-3c18-b970-75a5db7c6a2b>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/d4481ba2-aa6d-338b-858a-1a335553f052> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/16c09b79-739e-3192-8df9-9e737f19b819> .

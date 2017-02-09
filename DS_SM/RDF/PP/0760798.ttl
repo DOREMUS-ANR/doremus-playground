@@ -1,0 +1,82 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/0e13ec02-f9d2-3b92-b3f4-97b05bd9a636>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/f6b34726-c6cf-3a8a-938d-ec07621d8b68> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/c987316b-6110-3011-b876-e39426f77b09> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab> .
+
+<http://data.doremus.org/event/f6b34726-c6cf-3a8a-938d-ec07621d8b68>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Editeur : Universal Edition." ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/61d71f3c-9ad1-311b-b704-cdeeca9956e4> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/fb746254-c3a3-32b0-8920-de1c0935a1f3> .
+
+<http://data.doremus.org/performance/c987316b-6110-3011-b876-e39426f77b09>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "21 mars 1966 à New York pour la seconde partie ; juin 1966 à Londres pour l'intégrale, par Vinko Globokar." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/3361c898-ba89-3845-8b4a-1fd22da4e060> .
+
+<http://data.doremus.org/expression/3361c898-ba89-3845-8b4a-1fd22da4e060>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab> .
+
+<http://data.doremus.org/event/1f6922c7-30cc-3ee1-a71f-2be600544aa8>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/29eec8a3-a5ce-36e9-ae69-8337fc88fe6d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab> .
+
+<http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/musique_de_chambre> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab/casting/1> ;
+        ecrm:P102_has_title  "Sequenza V" , "Sequenza V pour trombone" , "Sequenza 5" , "Cinquième Sequenza" ;
+        ecrm:P3_has_note     "21 mars 1966 à New York pour la seconde partie ; juin 1966 à Londres pour l'intégrale, par Vinko Globokar. Editeur : Universal Edition." , "Faisant explicitement référence au célèbre clown Grock et à son métaphysique \"Warum ?\", cette Sequenza constituée de deux parties repose sur un processus de dissociation des comportements, au sens d'\"oeuvres que l'on peut écouter et voir comme des entités dramaturgiques\". Le compositeur y instaure un jeu entre la voix du soliste et son instrument utilisé avec la sourdine, d'où un renversement par la double tentative de \"vocalisation de l'instrument\" et d'\"instrumentalisation de la voix\". Les deux parties sont articulées autour du \"Why ?\" (qui ressemble à la sonorité de l'instrument) ; la partie A est plus un exposé alternant les jeux avec ou sans sourdine conduisant à l'identification du mot avec le jeu instrumental ; la partie B quant à elle correspond à un exposé plus dense mêlant Flatterzunge et glissandos jusqu'à la conjugaison finale du parlé et du joué. Dédiée à la mémoire du clown Grock (Adrien Wettach) et destinée à Stuart Dempster." .
+
+<http://data.doremus.org/event/5dc07051-fafc-3188-9756-4211569a0326>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1966" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1966"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0e13ec02-f9d2-3b92-b3f4-97b05bd9a636> .
+
+<http://data.doremus.org/work/61d71f3c-9ad1-311b-b704-cdeeca9956e4>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/fb746254-c3a3-32b0-8920-de1c0935a1f3> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/publication/fb746254-c3a3-32b0-8920-de1c0935a1f3>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab> .
+
+<http://data.doremus.org/work/29eec8a3-a5ce-36e9-ae69-8337fc88fe6d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0e13ec02-f9d2-3b92-b3f4-97b05bd9a636> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab> .
+
+<http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/71> .

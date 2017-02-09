@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="14802978" format="InterXMarc_Complet" type="Authority">
+<leader>00918c1 au22000272  45  <Pos Code="0004">00918</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF148029781<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">14802978</Pos>
+<Pos Code="13">1</Pos>
+</controlfield>
+<controlfield tag="008">980618060922yy    rmc       18491207  18491212               010 <Pos Code="0001">98</Pos>
+<Pos Code="0203">06</Pos>
+<Pos Code="0405">18</Pos>
+<Pos Code="0607">06</Pos>
+<Pos Code="0809">09</Pos>
+<Pos Code="1011">22</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820" Sens="romance instrumentale">rmc</Pos>
+<Pos Code="2831">1849</Pos>
+<Pos Code="3233">12</Pos>
+<Pos Code="3435">07</Pos>
+<Pos Code="3841">1849</Pos>
+<Pos Code="4243">12</Pos>
+<Pos Code="4445">12</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">wb01<Pos Code="0001" Sens="instruments à vent - hautbois">wb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">wc01<Pos Code="0001" Sens="instruments à vent - clarinette">wc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">sa01<Pos Code="0001" Sens="cordes frottées - violon">sa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">ka01<Pos Code="0001" Sens="clavier - piano">ka</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13899567</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Schumann</subfield>
+	<subfield code="m">Robert</subfield>
+	<subfield code="d">1810-1856</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a" Barre="2">3 romances</subfield>
+	<subfield code="b">Hautbois ou clarinette ou violon, piano</subfield>
+	<subfield code="p">Op. 94</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">13986285</subfield>
+	<subfield code="a">Schumann</subfield>
+	<subfield code="m">Robert</subfield>
+	<subfield code="d">1810-1856</subfield>
+	<subfield code="t">[Romances. Op. 94, no 1. La mineur]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">13919071</subfield>
+	<subfield code="a">Schumann</subfield>
+	<subfield code="m">Robert</subfield>
+	<subfield code="d">1810-1856</subfield>
+	<subfield code="t">[Romances. Op. 94, no 2. La majeur]</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a" Barre="2">3 romances</subfield>
+	<subfield code="b">Clarinette, piano</subfield>
+	<subfield code="p">Op. 94</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a" Barre="2">3 romances</subfield>
+	<subfield code="b">Violon, piano</subfield>
+	<subfield code="p">Op. 94</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Date de composition : Dresde, 7 au 12 décembre 1849</subfield>
+	<subfield code="a">1re éd. : Bonn : N. Simrock, 1851</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">McCorkle, Schumann</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100265260</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">101549880</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">101549860</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100489560</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">101549870</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14015145</subfield>
+	<subfield code="d">20060922</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14015143</subfield>
+	<subfield code="d">20060922</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">13919070</subfield>
+	<subfield code="d">20060922</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14015144</subfield>
+	<subfield code="d">20060922</subfield>
+</datafield>
+<Alter Ori="13899567">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Schumann</subfield>
+	<subfield code="m">Robert Alexander</subfield>
+	<subfield code="d">1810-1856</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb148029780</Attr>
+<Attr Nom="NumSource">OPD 100265260</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">138995671398628513919071</Attr>
+<Attr Nom="DateCreation">18/06/ 1998</Attr>
+<Attr Nom="ResponsableCreation">MIGV3_CC</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">09/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">18/06/ 1998</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV3_CC</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource" Rep="1">OPC 101549880</Attr>
+<Attr Nom="NumSource" Rep="2">OPC 101549860</Attr>
+<Attr Nom="NumSource" Rep="3">OPC 100489560</Attr>
+<Attr Nom="NumSource" Rep="4">OPC 101549870</Attr>
+<Attr Nom="NumSource" Rep="5">OPP 14015145</Attr>
+<Attr Nom="NumSource" Rep="6">OPP 14015143</Attr>
+<Attr Nom="NumSource" Rep="7">OPP 13919070</Attr>
+<Attr Nom="NumSource" Rep="8">OPP 14015144</Attr>
+</record>

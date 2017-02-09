@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13942188" format="InterXMarc_Complet" type="Authority">
+<leader>00590c0 au22000272  45  <Pos Code="0004">00590</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF13942188X<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13942188</Pos>
+<Pos Code="13">X</Pos>
+</controlfield>
+<controlfield tag="008">910917131025yy    sn                  192106                 1   <Pos Code="0001">91</Pos>
+<Pos Code="0203">09</Pos>
+<Pos Code="0405">17</Pos>
+<Pos Code="0607">13</Pos>
+<Pos Code="0809">10</Pos>
+<Pos Code="1011">25</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820" Sens="sonate [sonate d&apos;église => sonate]">sn </Pos>
+<Pos Code="3841">1921</Pos>
+<Pos Code="4243">06</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">wb01<Pos Code="0001" Sens="instruments à vent - hautbois">wb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">ka01<Pos Code="0001" Sens="clavier - piano">ka</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13899342</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Saint-Saëns</subfield>
+	<subfield code="m">Camille</subfield>
+	<subfield code="d">1835-1921</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Sonates</subfield>
+	<subfield code="b">Hautbois, piano</subfield>
+	<subfield code="k">R 146</subfield>
+	<subfield code="t">Ré majeur</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Sonates</subfield>
+	<subfield code="b">Hautbois, piano</subfield>
+	<subfield code="p">Op. 166</subfield>
+	<subfield code="t">Ré majeur</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Dédicace : &quot;À Monsieur Louis Bas, premier hautbois solo de la Société des concerts du Conservatoire et de l&apos;Opéra&quot;</subfield>
+	<subfield code="a">Date de fin de composition : juin 1921</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Ratner, Saint-Saëns</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100730320</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100513770</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14824460</subfield>
+	<subfield code="d">20061016</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb13942188z</Attr>
+<Attr Nom="NumSource">OPC 100730320</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13899342</Attr>
+<Attr Nom="DateCreation">17/09/ 1991</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">25/10/ 2013</Attr>
+<Attr Nom="ResponsableDerniereValidation">PUYRENIER FREDERIC</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">17/09/ 1991</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">82</Attr>
+<Attr Nom="NumSource" Rep="1">OPD 100513770</Attr>
+<Attr Nom="NumSource" Rep="2">OPP 14824460</Attr>
+</record>

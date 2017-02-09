@@ -1,0 +1,64 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/3feffab2-81ca-3c38-84e9-03eb3d454c2f>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/b527340a-aa25-3a31-9bed-639b42ee5d9c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/9e22589b-7d14-3c06-9e9f-844e6d229c0a> .
+
+<http://data.doremus.org/expression/5f1e6393-1192-312c-9937-e9a41e979ef0>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/9e22589b-7d14-3c06-9e9f-844e6d229c0a> .
+
+<http://data.doremus.org/performance/b527340a-aa25-3a31-9bed-639b42ee5d9c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1783-10-26" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/5f1e6393-1192-312c-9937-e9a41e979ef0> .
+
+<http://data.doremus.org/event/3b47b2a7-5332-39f1-a0c3-cbb408136f96>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/6ae05782-a3f9-3634-8a98-a31888389018> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/9e22589b-7d14-3c06-9e9f-844e6d229c0a> .
+
+<http://data.doremus.org/expression/9e22589b-7d14-3c06-9e9f-844e6d229c0a>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/cm> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/ms> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "417a" ;
+                  ecrm:P3_has_note              "KV 417a"
+                ] ;
+        ecrm:P102_has_title  "Grosse Messe" ;
+        ecrm:P3_has_note     "Comp. à Vienne" , "Le Credo et l'Agnus Dei sont inachevés" , "Musique réutilisée pour Davidde penitente, KV 469" .
+
+<http://data.doremus.org/event/01cdb8c9-a4a4-3a72-b12d-35e203023546>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/5f1e6393-1192-312c-9937-e9a41e979ef0> .
+
+<http://data.doremus.org/work/6ae05782-a3f9-3634-8a98-a31888389018>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/3feffab2-81ca-3c38-84e9-03eb3d454c2f> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/9e22589b-7d14-3c06-9e9f-844e6d229c0a> .
+
+<http://data.doremus.org/event/5d1fdf7c-973b-302b-a511-33fa5e0a0892>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17820101/17821231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/9e22589b-7d14-3c06-9e9f-844e6d229c0a> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3feffab2-81ca-3c38-84e9-03eb3d454c2f> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .

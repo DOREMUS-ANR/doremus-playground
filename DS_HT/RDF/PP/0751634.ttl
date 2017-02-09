@@ -1,0 +1,81 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/publication/819473dc-43ea-370e-8e6c-346ac1307a9d>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ce030dba-7867-3b2c-aff1-bd489cd521a4> .
+
+<http://data.doremus.org/expression/ce030dba-7867-3b2c-aff1-bd489cd521a4>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/ce030dba-7867-3b2c-aff1-bd489cd521a4/casting/1> ;
+        ecrm:P102_has_title  "Viola, viola" ;
+        ecrm:P3_has_note     "Commande du compositeur Toru Takemitsu pour l'inauguration de la salle de concert de l'Opéra de Tokyo, ce duo a été écrit pour Youri Bashmet et Nobuko Imaï, selon le voeux et l'idée de Takemitsu lui-même. Durée d'exécution : 9 minutes environ" , "Création : 16 septembre 1997 à Tokyo (Salle de concert de l'Opera), par Youri Basmet et Nobuko Imaï. Editeur : Faber" .
+
+<http://data.doremus.org/expression/84c9b68d-d049-39a3-a593-df2ce79c350d>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ce030dba-7867-3b2c-aff1-bd489cd521a4> .
+
+<http://data.doremus.org/work/d614a60f-2c78-338f-86b0-2404d7359f28>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/580122be-10c0-3b2a-81e5-6f6f51293a35> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/8cd6e31f-aa11-3b89-a1c4-a0bd14db915f> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ce030dba-7867-3b2c-aff1-bd489cd521a4> .
+
+<http://data.doremus.org/performance/8cd6e31f-aa11-3b89-a1c4-a0bd14db915f>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création : 16 septembre 1997 à Tokyo (Salle de concert de l'Opera), par Youri Basmet et Nobuko Imaï." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/84c9b68d-d049-39a3-a593-df2ce79c350d> .
+
+<http://data.doremus.org/artist/99e45af8-2104-308a-b8d3-9e649cec7abb>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/aa3621ff-5514-3d8f-9c94-dd0f4c2ab854>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/819473dc-43ea-370e-8e6c-346ac1307a9d> .
+
+<http://data.doremus.org/event/580122be-10c0-3b2a-81e5-6f6f51293a35>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Editeur : Faber" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/aa3621ff-5514-3d8f-9c94-dd0f4c2ab854> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/819473dc-43ea-370e-8e6c-346ac1307a9d> .
+
+<http://data.doremus.org/expression/ce030dba-7867-3b2c-aff1-bd489cd521a4/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 altos" .
+
+<http://data.doremus.org/event/01516f31-6c41-3c67-a908-7fec3543b7e0>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1997" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1997"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/99e45af8-2104-308a-b8d3-9e649cec7abb>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ce030dba-7867-3b2c-aff1-bd489cd521a4> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d614a60f-2c78-338f-86b0-2404d7359f28> .
+
+<http://data.doremus.org/event/e0f6489c-3b1e-35ca-aee6-20b3f956f299>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e8fd1ffd-7763-340d-8e03-1303ea39b776> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ce030dba-7867-3b2c-aff1-bd489cd521a4> .
+
+<http://data.doremus.org/work/e8fd1ffd-7763-340d-8e03-1303ea39b776>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d614a60f-2c78-338f-86b0-2404d7359f28> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ce030dba-7867-3b2c-aff1-bd489cd521a4> .

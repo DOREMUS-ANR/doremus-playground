@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13910398" format="InterXMarc_Complet" type="Authority">
+<leader>00854c0 au2200027   45  <Pos Code="0004">00854</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139103987<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13910398</Pos>
+<Pos Code="13">7</Pos>
+</controlfield>
+<controlfield tag="008">890821110420yy    rp        188301    188308                 1   <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">11</Pos>
+<Pos Code="0809">04</Pos>
+<Pos Code="1011">20</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820">rp </Pos>
+<Pos Code="2831">1883</Pos>
+<Pos Code="3233">01</Pos>
+<Pos Code="3841">1883</Pos>
+<Pos Code="4243">08</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">oa01<Pos Code="0001" Sens="orchestre - orchestre symphonique XIXe-XXe s.">oa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13892333</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Chabrier</subfield>
+	<subfield code="m">Emmanuel</subfield>
+	<subfield code="d">1841-1894</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.spa.</subfield>
+	<subfield code="a">España</subfield>
+	<subfield code="k">D 44</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Dédicace à Charles Lamoureux</subfield>
+	<subfield code="a">Dates de composition : janvier-août 1883</subfield>
+	<subfield code="a">1re exécution : Paris, Théâtre du Château-d&apos;Eau, 4 novembre 1883, par la Société des Nouveaux concerts, sous la direction du dédicataire</subfield>
+	<subfield code="a">1re éd. : Paris : Enoch et Costallat, 1884</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Il existe une transcription pour voix et piano sur un poème d&apos;Eugène Adenis, par le compositeur</subfield>
+	<subfield code="a">Il existe aussi de nombreux arrangements pour diverses distributions par d&apos;autres compositeurs</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Delage, Chabrier</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove music online</subfield>
+	<subfield code="u">http://www.oxfordmusiconline.com</subfield>
+	<subfield code="d">2011-04-20</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100390790</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100283510</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14804633</subfield>
+	<subfield code="d">20100902</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb13910398q</Attr>
+<Attr Nom="NumSource">OPC 100390790</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13892333</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">20/04/ 2011</Attr>
+<Attr Nom="ResponsableDerniereValidation">PUYRENIER FREDERIC</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">82</Attr>
+<Attr Nom="NumSource" Rep="1">OPD 100283510</Attr>
+<Attr Nom="NumSource" Rep="2">OPP 14804633</Attr>
+</record>

@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/8ad7cebd-4d53-3651-8aa8-0b51d31b7430>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/469925fa-d229-3bba-9421-15a79876c047> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/776fee4a-c0fe-3399-ae18-5fcc3aaf4b8b> .
+
+<http://data.doremus.org/event/2e0a964e-6cfe-3a36-82a9-fba70296bba0>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1795-1796" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1795/1796"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/776fee4a-c0fe-3399-ae18-5fcc3aaf4b8b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/469925fa-d229-3bba-9421-15a79876c047> .
+
+<http://data.doremus.org/expression/776fee4a-c0fe-3399-ae18-5fcc3aaf4b8b/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Piano et orchestre (1 flûte, 2 hautbois, 2 clarinettes, 2 bassons, 2 cors, 2 trompettes, timbales et cordes)" .
+
+<http://data.doremus.org/performance/407f4cf1-373d-30c8-a120-6273969b9b70>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Vraisemblablement créé à Vienne le 2 avril 1800 par l'auteur" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/a175e7e4-5514-3e45-86f0-33c445d52b5f> .
+
+<http://data.doremus.org/event/0e4b9413-6f85-346c-b872-45d555eb1407>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8ad7cebd-4d53-3651-8aa8-0b51d31b7430> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/776fee4a-c0fe-3399-ae18-5fcc3aaf4b8b> .
+
+<http://data.doremus.org/expression/776fee4a-c0fe-3399-ae18-5fcc3aaf4b8b>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "1" , "N° 1" ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/c> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/776fee4a-c0fe-3399-ae18-5fcc3aaf4b8b/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "15" ;
+                                      ecrm:P3_has_note         "Op. 15"
+                                    ] ;
+        ecrm:P102_has_title         "Klavierkonzert Nr.1 in C" , "Concerto pour piano et orchestre no 1" , "Concerto pour piano n°1 en ut majeur" ;
+        ecrm:P3_has_note            "Dédié à la princesse Odescalchi. Comprend : 1- allegro con brio, 2- largo, 3- rondo. Durée d'exécution : 32 minutes environ" , "Vraisemblablement créé à Vienne le 2 avril 1800 par l'auteur" .
+
+<http://data.doremus.org/work/469925fa-d229-3bba-9421-15a79876c047>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/407f4cf1-373d-30c8-a120-6273969b9b70> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/776fee4a-c0fe-3399-ae18-5fcc3aaf4b8b> .
+
+<http://data.doremus.org/expression/a175e7e4-5514-3e45-86f0-33c445d52b5f>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/776fee4a-c0fe-3399-ae18-5fcc3aaf4b8b> .
+
+<http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+        a       ecrm:E21_Person .

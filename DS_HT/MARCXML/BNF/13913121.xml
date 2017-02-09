@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13913121" format="InterXMarc_Complet" type="Authority">
+<leader>01114c0 au22000272  45  <Pos Code="0004">01114</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139131214<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13913121</Pos>
+<Pos Code="13">4</Pos>
+</controlfield>
+<controlfield tag="008">890821130327yyita op        1724                             010 <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">13</Pos>
+<Pos Code="0809">03</Pos>
+<Pos Code="1011">27</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="italien">ita</Pos>
+<Pos Code="1820">op </Pos>
+<Pos Code="2831">1724</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">va02<Pos Code="0001" Sens="voix - soprano">va</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">vb01<Pos Code="0001" Sens="voix - mezzo-soprano">vb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">vc03<Pos Code="0001" Sens="voix - alto">vc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">3</Pos>
+</subfield>
+	<subfield code="a">vf02<Pos Code="0001" Sens="voix - basse">vf</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">oa01<Pos Code="0001" Sens="orchestre - orchestre symphonique XIXe-XXe s.">oa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">zb01<Pos Code="0001" Sens="basse continue - instruments non spécifiés">zb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13987321</subfield>
+	<subfield code="w">.0..b.ger.</subfield>
+	<subfield code="a">Händel</subfield>
+	<subfield code="m">Georg Friedrich</subfield>
+	<subfield code="d">1685-1759</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.ita.</subfield>
+	<subfield code="a">Giulio Cesare in Egitto</subfield>
+	<subfield code="k">HWV 17</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">16199494</subfield>
+	<subfield code="a">Händel</subfield>
+	<subfield code="m">Georg Friedrich</subfield>
+	<subfield code="d">1685-1759</subfield>
+	<subfield code="t">[Giulio Cesare. HWV 17. 35. Piangerò la sorte mia]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">14717618</subfield>
+	<subfield code="a">Händel</subfield>
+	<subfield code="m">Georg Friedrich</subfield>
+	<subfield code="d">1685-1759</subfield>
+	<subfield code="t">[Giulio Cesare. HWV 17. No 15. Tu sei il cor di questo core]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">15532123</subfield>
+	<subfield code="a">Händel</subfield>
+	<subfield code="m">Georg Friedrich</subfield>
+	<subfield code="d">1685-1759</subfield>
+	<subfield code="t">[Giulio Cesare. HWV 17. Vani sono i la menti]</subfield>
+</datafield>
+<datafield tag="322" ind1="6" ind2=" ">
+	<subfield code="3">12511161</subfield>
+	<subfield code="9">100</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Haym</subfield>
+	<subfield code="m">Nicola Francesco</subfield>
+	<subfield code="d">1678-1729</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Jules César</subfield>
+	<subfield code="k">HWV 17</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.eng.</subfield>
+	<subfield code="a">Julius Caesar</subfield>
+	<subfield code="k">HWV 17</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Créé à Londres, King&apos;s Theatre, Hay market, le 20 février 1724</subfield>
+	<subfield code="a">Livret de Niccolò Francesco Haym d&apos;après Giacomo Francesco Bussani et &quot;La mort de Pompée&quot; de Corneille</subfield>
+</datafield>
+<datafield tag="608" ind1=" " ind2=" ">
+	<subfield code="b">Cleopatra (soprano)</subfield>
+	<subfield code="b">Jules César, Sesto (mezzos)</subfield>
+	<subfield code="b">Cornelia, Tolomeo, Nireno (altos)</subfield>
+	<subfield code="b">Achilla, Curio (basses)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Handel-Handbuch</subfield>
+</datafield>
+<datafield tag="624" ind1=" " ind2=" ">
+	<subfield code="a">780<Pos Code="0002" Sens="Musique">780</Pos>
+</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100421870</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">16303295</subfield>
+	<subfield code="d">20130327</subfield>
+</datafield>
+<Alter Ori="13987321">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Haendel</subfield>
+	<subfield code="m">Georg Friedrich</subfield>
+	<subfield code="d">1685-1759</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">....b.eng.</subfield>
+	<subfield code="a">Handel</subfield>
+	<subfield code="m">George Frideric</subfield>
+	<subfield code="d">1685-1759</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb139131219</Attr>
+<Attr Nom="NumSource">OPC 100421870</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1398732116199494147176181553212312511161</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">27/03/ 2013</Attr>
+<Attr Nom="ResponsableDerniereValidation">SERRES CATHERINE</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">82</Attr>
+<Attr Nom="NumSource" Rep="1">OPP 16303295</Attr>
+</record>

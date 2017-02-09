@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/f4926502-03b3-3a2b-8d40-6626838547e0/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/kpf>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "quatuor à cordes"@fr
+                                              ]
+                                    ] ;
+        ecrm:P3_has_note            "Piano, quatuor à cordes" .
+
+<http://data.doremus.org/work/2177246f-070f-31c7-afd6-b5f4c8b9dd27>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8b14a23f-0532-3155-a804-2544ed120d86> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f4926502-03b3-3a2b-8d40-6626838547e0> .
+
+<http://data.doremus.org/expression/f4926502-03b3-3a2b-8d40-6626838547e0>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/c> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/f4926502-03b3-3a2b-8d40-6626838547e0/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "387p" ;
+                  ecrm:P3_has_note              "KV 387p"
+                ] .
+
+<http://data.doremus.org/event/69d6687d-329c-3c08-bae4-29b3dc45a47a>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2177246f-070f-31c7-afd6-b5f4c8b9dd27> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f4926502-03b3-3a2b-8d40-6626838547e0> .
+
+<http://data.doremus.org/work/8b14a23f-0532-3155-a804-2544ed120d86>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f4926502-03b3-3a2b-8d40-6626838547e0> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/169a71bc-7cde-32e7-941d-3bd6682471b6>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17820101/17831231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f4926502-03b3-3a2b-8d40-6626838547e0> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8b14a23f-0532-3155-a804-2544ed120d86> .

@@ -1,0 +1,58 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/04c7ce62-30aa-37d3-945a-aa48eac9953d>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé dans la comédie musicale \"Very warm for May\" en 1939 par Hiram Sherman, Frances Mercer, Hollace Shaw et Ralph Stuart. N'eut pas de succès." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/86c999bd-a318-3a35-8a62-fc55c7615e01> .
+
+<http://data.doremus.org/event/2d717892-c9d2-324e-9589-ad938fd22a8c>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1939" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1939"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/3ad273e3-9710-3fc3-8ae7-4eaa2964925c>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/647ed842-7890-314e-85f7-294bb20c133f> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/fde1e04f-e3cf-32ff-a03a-b386a4874659> .
+
+<http://data.doremus.org/event/48a9634b-11bd-3735-8cd9-dd83b1b6cec2>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/6dceef0c-6a0e-34ad-b89d-6ee5a5f46efc> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/647ed842-7890-314e-85f7-294bb20c133f> .
+
+<http://data.doremus.org/work/fde1e04f-e3cf-32ff-a03a-b386a4874659>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/04c7ce62-30aa-37d3-945a-aa48eac9953d> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/647ed842-7890-314e-85f7-294bb20c133f> .
+
+<http://data.doremus.org/expression/86c999bd-a318-3a35-8a62-fc55c7615e01>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/647ed842-7890-314e-85f7-294bb20c133f> .
+
+<http://data.doremus.org/expression/647ed842-7890-314e-85f7-294bb20c133f>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/ab> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/jazz> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "jazz standard"@fr
+                             ] ;
+        ecrm:P102_has_title  "All the Things You Are" , "All the things you are" ;
+        ecrm:P3_has_note     "Paroles de Oscar Hammerstein. Ce morcceau fut composé par Kern pour lui-même car il pensait qu'il était trop sophistiqué pour devenir populaire. Les jazzmen le jouent souvent avec l'introduction composée par Dizzy Gillespie. Structure musicale : couplet 16 mesures, refrain 36 mesures AA'BA'. Une dizaine de thèmes de jazz sont bâtis sur les harmonies de All the things you are. Environ 920 enregistrements répertoriés." , "Créé dans la comédie musicale \"Very warm for May\" en 1939 par Hiram Sherman, Frances Mercer, Hollace Shaw et Ralph Stuart. N'eut pas de succès." .
+
+<http://data.doremus.org/work/6dceef0c-6a0e-34ad-b89d-6ee5a5f46efc>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/fde1e04f-e3cf-32ff-a03a-b386a4874659> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/647ed842-7890-314e-85f7-294bb20c133f> .
+
+<http://data.doremus.org/artist/3ad273e3-9710-3fc3-8ae7-4eaa2964925c>
+        a       ecrm:E21_Person .

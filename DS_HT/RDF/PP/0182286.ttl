@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/628fec8f-8e8e-3440-8681-a725e3c1815b>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Berlin, Theater am Schiffbauerdamm, le 31 août 1928, avec Lotte Lenya (soprano)" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/f5027587-4877-37f8-822c-2eddc3c65b53> .
+
+<http://data.doremus.org/expression/14a08fdf-13e8-38b9-9f12-b257b5401bf0/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Jenny, Lucy, Polly (sopranos) ; Frau Peachum (alto) ; Macheath (ténor) ; Brown, Jonathan Peachum, Moritätensänger (barytons)" .
+
+<http://data.doremus.org/expression/f5027587-4877-37f8-822c-2eddc3c65b53>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/14a08fdf-13e8-38b9-9f12-b257b5401bf0> .
+
+<http://data.doremus.org/expression/14a08fdf-13e8-38b9-9f12-b257b5401bf0>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sps> , <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/14a08fdf-13e8-38b9-9f12-b257b5401bf0/casting/1> ;
+        ecrm:P102_has_title  "L'Opéra de cuat'sous" , "The Threepenny Opera" , "L'opéra de quat'sous" , "L'Opéra de quat'sous" , "Die Dreigroschenoper" ;
+        ecrm:P3_has_note     "Opéra en 3 actes composé sur un livret de Bertolt Brecht et Elisabeth Hauptmann, d'après \"The beggar's opera\" de John Gay" , "Créé à Berlin, Theater am Schiffbauerdamm, le 31 août 1928, avec Lotte Lenya (soprano)" .
+
+<http://data.doremus.org/work/6d20703b-fda6-3f9c-bee1-44dd75903266>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/628fec8f-8e8e-3440-8681-a725e3c1815b> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/14a08fdf-13e8-38b9-9f12-b257b5401bf0> .
+
+<http://data.doremus.org/event/17b30bf2-e07a-36f9-aca6-757994591231>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1928" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1928"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/78728633-39ba-36ee-a442-b17a70873494>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/14a08fdf-13e8-38b9-9f12-b257b5401bf0> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/6d20703b-fda6-3f9c-bee1-44dd75903266> .
+
+<http://data.doremus.org/event/b87d8acc-3af0-397b-a5a1-e23934b98e97>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8f2e1f4c-5e6e-3aa0-a835-5d68c7997894> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/14a08fdf-13e8-38b9-9f12-b257b5401bf0> .
+
+<http://data.doremus.org/work/8f2e1f4c-5e6e-3aa0-a835-5d68c7997894>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/6d20703b-fda6-3f9c-bee1-44dd75903266> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/14a08fdf-13e8-38b9-9f12-b257b5401bf0> .
+
+<http://data.doremus.org/artist/78728633-39ba-36ee-a442-b17a70873494>
+        a       ecrm:E21_Person .

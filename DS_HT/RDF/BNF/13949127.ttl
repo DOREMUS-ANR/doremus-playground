@@ -1,0 +1,43 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/8fcd58e5-fd85-3566-9e9b-1fe6387f9be0>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/2ebcffd2-8b38-3ac9-ace5-b23920fc4f52> .
+
+<http://data.doremus.org/expression/2ebcffd2-8b38-3ac9-ace5-b23920fc4f52>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/df> ;
+        ecrm:P102_has_title  "The cascades" ;
+        ecrm:P3_has_note     "Ragtime" .
+
+<http://data.doremus.org/work/bc812f2d-0ffb-3007-bb61-fed6097686e6>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8fcd58e5-fd85-3566-9e9b-1fe6387f9be0> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/2ebcffd2-8b38-3ac9-ace5-b23920fc4f52> .
+
+<http://data.doremus.org/artist/1cfb1cad-a27b-3870-8fa9-319c98a9999c>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/5e893b29-3d49-359c-8844-0fea5de1f501>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/bc812f2d-0ffb-3007-bb61-fed6097686e6> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/2ebcffd2-8b38-3ac9-ace5-b23920fc4f52> .
+
+<http://data.doremus.org/event/c6c2a965-7c1c-353b-82eb-ffce6fa17337>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1904/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1cfb1cad-a27b-3870-8fa9-319c98a9999c>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/2ebcffd2-8b38-3ac9-ace5-b23920fc4f52> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8fcd58e5-fd85-3566-9e9b-1fe6387f9be0> .

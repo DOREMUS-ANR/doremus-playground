@@ -1,0 +1,42 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/712b6816-13d0-3513-90ab-f9b29b97d6f8>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19720101/19721231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6e00adc4-cbcf-3e57-a440-47f5d4474ff9>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c0c7c780-ae8a-3c88-9860-62c97001ef11> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f429f958-de63-3600-aa73-3c9a4e1fa465> .
+
+<http://data.doremus.org/work/f429f958-de63-3600-aa73-3c9a4e1fa465>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c0c7c780-ae8a-3c88-9860-62c97001ef11> .
+
+<http://data.doremus.org/event/82f3844d-e65f-32d4-9d52-d5a967a3958f>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8e5ea110-570b-30b1-8f68-22a792f83e12> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c0c7c780-ae8a-3c88-9860-62c97001ef11> .
+
+<http://data.doremus.org/expression/c0c7c780-ae8a-3c88-9860-62c97001ef11>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/tri> ;
+        ecrm:P102_has_title  "Paraphrase" .
+
+<http://data.doremus.org/work/8e5ea110-570b-30b1-8f68-22a792f83e12>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f429f958-de63-3600-aa73-3c9a4e1fa465> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c0c7c780-ae8a-3c88-9860-62c97001ef11> .
+
+<http://data.doremus.org/artist/6e00adc4-cbcf-3e57-a440-47f5d4474ff9>
+        a       ecrm:E21_Person .

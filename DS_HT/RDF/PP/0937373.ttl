@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/4e23ba19-9325-35f6-941f-0441029f080d>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1ère représentation : Saint-Pétersbourg, 21 février 1886. 1ère représentation en France (en langue russe) : Paris, Théâtre des champs-Elysées, 5 juin 1913. 1ère représentation à l'Opéra de Paris : 13 avril 1923 (en français)" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/01d4a1cd-d130-338a-a099-0c1d0ecac5b7> .
+
+<http://data.doremus.org/artist/6076e25d-4dca-3e7e-804e-188af003b83a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/00dc04d8-bc9a-3148-85a4-eb5714a7d18e>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/4e23ba19-9325-35f6-941f-0441029f080d> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/9d7fde70-0f51-382e-8642-c1d8a9bc2c49> .
+
+<http://data.doremus.org/event/f4d245c5-2b7a-3320-aeaa-9d52152b9ef5>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1873-1880" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1873/1880"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6076e25d-4dca-3e7e-804e-188af003b83a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/9d7fde70-0f51-382e-8642-c1d8a9bc2c49> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/00dc04d8-bc9a-3148-85a4-eb5714a7d18e> .
+
+<http://data.doremus.org/work/a26622e9-0bdd-3831-855c-aef0152ee4cd>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/00dc04d8-bc9a-3148-85a4-eb5714a7d18e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/9d7fde70-0f51-382e-8642-c1d8a9bc2c49> .
+
+<http://data.doremus.org/expression/9d7fde70-0f51-382e-8642-c1d8a9bc2c49/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Emma, Suzanna (sopranos), Marfa (mezzo-soprano), le Prince Andreï Khovanski, Strechnev, le 3e strelets (ténors), le Prince Golitsyne, le boïar Chaklovity, Kouzka (barytons), le Prince Ivan Khovanski, Dossifeï, Varsonofiev, 1er et 2e strelets (basses). Choeur mixte, orchestre symphonique" .
+
+<http://data.doremus.org/event/2c338ff5-a0d3-3085-8c7b-f0736caffda2>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/a26622e9-0bdd-3831-855c-aef0152ee4cd> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/9d7fde70-0f51-382e-8642-c1d8a9bc2c49> .
+
+<http://data.doremus.org/expression/9d7fde70-0f51-382e-8642-c1d8a9bc2c49>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/9d7fde70-0f51-382e-8642-c1d8a9bc2c49/casting/1> ;
+        ecrm:P102_has_title  "La Kovantchina" , "La Khovantchina" , "Khovantchina" , "Hovanscina" , "Khovanshchina" , "Kovantchina" , "Khovanchtchina" ;
+        ecrm:P3_has_note     "\"Drame musical populaire\" en cinq actes. Livret en russe de Moussorgski et Vladimir Stassov, basé sur la documentation historique préparée par Stassov. A la mort du compositeur, la partition chant-piano était presque achevée, à l'exception de la fin de l'acte II et de la scène finale de l'acte V. Seuls étaient orchestrés deux fragments de l'acte II. C'est Rimski-Korsakov qui acheva et orchestra l'oeuvre, en coupant dans la partition. En 1959, Chostakovitch réorchestra la partition, conservant à peu près intacte la musique de Moussorgski." , "1ère représentation : Saint-Pétersbourg, 21 février 1886. 1ère représentation en France (en langue russe) : Paris, Théâtre des champs-Elysées, 5 juin 1913. 1ère représentation à l'Opéra de Paris : 13 avril 1923 (en français)" .
+
+<http://data.doremus.org/expression/01d4a1cd-d130-338a-a099-0c1d0ecac5b7>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/9d7fde70-0f51-382e-8642-c1d8a9bc2c49> .

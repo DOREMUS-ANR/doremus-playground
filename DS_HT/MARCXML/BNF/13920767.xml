@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13920767" format="InterXMarc_Complet" type="Authority">
+<leader>01789c0 au22000272  45  <Pos Code="0004">01789</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139207676<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13920767</Pos>
+<Pos Code="13">6</Pos>
+</controlfield>
+<controlfield tag="008">890821130227yyger op        186204    186710                 010 <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">13</Pos>
+<Pos Code="0809">02</Pos>
+<Pos Code="1011">27</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="allemand">ger</Pos>
+<Pos Code="1820">op </Pos>
+<Pos Code="2831">1862</Pos>
+<Pos Code="3233">04</Pos>
+<Pos Code="3841">1867</Pos>
+<Pos Code="4243">10</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="b">va01<Pos Code="0001" Sens="voix - soprano">va</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="b">vb01<Pos Code="0001" Sens="voix - mezzo-soprano">vb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="b">vd06<Pos Code="0001" Sens="voix - ténor">vd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">6</Pos>
+</subfield>
+	<subfield code="b">ve04<Pos Code="0001" Sens="voix - baryton">ve</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">4</Pos>
+</subfield>
+	<subfield code="b">vf05<Pos Code="0001" Sens="voix - basse">vf</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">5</Pos>
+</subfield>
+	<subfield code="a">ca01<Pos Code="0001" Sens="choeurs - mixte (4 voix SATB)">ca</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">oa01<Pos Code="0001" Sens="orchestre - orchestre symphonique XIXe-XXe s.">oa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">14029873</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Wagner</subfield>
+	<subfield code="m">Richard</subfield>
+	<subfield code="d">1813-1883</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.ger.</subfield>
+	<subfield code="a" Barre="4">Die Meistersinger von Nürnberg</subfield>
+	<subfield code="k">WWV 96</subfield>
+</datafield>
+<datafield tag="301" ind1="2" ind2=" ">
+	<subfield code="3">15764905</subfield>
+	<subfield code="a">Liszt</subfield>
+	<subfield code="m">Franz</subfield>
+	<subfield code="d">1811-1886</subfield>
+	<subfield code="t">[Transcriptions. Wagner, Richard. Die Meistersinger von Nürnberg. WWV 96. Am stillen Herd. Piano. LW A254]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">13983169</subfield>
+	<subfield code="a">Wagner</subfield>
+	<subfield code="m">Richard</subfield>
+	<subfield code="d">1813-1883</subfield>
+	<subfield code="t" Barre="5">[Die Meistersinger von Nürnberg. WWV 96. Vorspiel]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">14013083</subfield>
+	<subfield code="a">Wagner</subfield>
+	<subfield code="m">Richard</subfield>
+	<subfield code="d">1813-1883</subfield>
+	<subfield code="t" Barre="5">[Die Meistersinger von Nürnberg. WWV 96. Versammlung der Meistersingerzunft]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">14012904</subfield>
+	<subfield code="a">Wagner</subfield>
+	<subfield code="m">Richard</subfield>
+	<subfield code="d">1813-1883</subfield>
+	<subfield code="t" Barre="5">[Die Meistersinger von Nürnberg. WWV 96. Tanz der Lehrbuben]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">13989672</subfield>
+	<subfield code="a">Wagner</subfield>
+	<subfield code="m">Richard</subfield>
+	<subfield code="d">1813-1883</subfield>
+	<subfield code="t" Barre="5">[Die Meistersinger von Nürnberg. WWV 96. 3. Aufzug. Vorspiel]</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a" Barre="4">Les maîtres chanteurs de Nuremberg</subfield>
+	<subfield code="k">WWV 96</subfield>
+</datafield>
+<datafield tag="502" ind1=" " ind2=" ">
+	<subfield code="3">12187919</subfield>
+	<subfield code="a">Wagner</subfield>
+	<subfield code="m">Richard</subfield>
+	<subfield code="d">1813-1883</subfield>
+	<subfield code="t">[Opéras]</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Opéra en 3 actes</subfield>
+	<subfield code="a">Sur un livret du compositeur</subfield>
+	<subfield code="a">Dates de composition : avril 1862 - avril 1864, janvier-mars 1866, mai 1866 - octobre 1867</subfield>
+	<subfield code="a">1re représentation : Munich, Königliches Hof- und National- Theater, 21 juin 1868</subfield>
+</datafield>
+<datafield tag="608" ind1=" " ind2=" ">
+	<subfield code="b">Eva (soprano)</subfield>
+	<subfield code="b">Magdalena (mezzo-soprano)</subfield>
+	<subfield code="b">Walther von Stolzing, David, Kunz Vogelgesang, Balthasar Zorn, Ulrich Eisslinger, Augustin Moser (ténors)</subfield>
+	<subfield code="b">Sixtus Beckmesser, Fritz Kothner, veilleur de nuit (barytons)</subfield>
+	<subfield code="b">Hans Sachs (baryton basse)</subfield>
+	<subfield code="b">Veit Pogner, Konrad Nachtigall, Hermann Ortel, Hans Schwarz, Hans Foltz (basses)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove opera</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Deathridge, Geck et Voss, Wagner</subfield>
+</datafield>
+<datafield tag="624" ind1=" " ind2=" ">
+	<subfield code="a">780<Pos Code="0002" Sens="Musique">780</Pos>
+</subfield>
+</datafield>
+<datafield tag="907" ind1=" " ind2=" ">
+	<subfield code="o">GEA</subfield>
+	<subfield code="a">006354340</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPL</subfield>
+	<subfield code="a">011754126</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100508950</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100214010</subfield>
+	<subfield code="b">AMA</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100289470</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14805208</subfield>
+	<subfield code="d">20070417</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">16302849</subfield>
+	<subfield code="d">20130227</subfield>
+</datafield>
+<Alter Ori="14029873">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">....b.cat.</subfield>
+	<subfield code="a">Wagner</subfield>
+	<subfield code="m">Ricart</subfield>
+	<subfield code="d">1813-1883</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">....b.ita.</subfield>
+	<subfield code="a">Wagner</subfield>
+	<subfield code="m">Riccardo</subfield>
+	<subfield code="d">1813-1883</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Wagner</subfield>
+	<subfield code="m">Wilhelm Richard</subfield>
+	<subfield code="d">1813-1883</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb13920767r</Attr>
+<Attr Nom="NumSource">GEA 006354340</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">14029873157649051398316914013083140129041398967212187919</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">27/02/ 2013</Attr>
+<Attr Nom="ResponsableDerniereValidation">SERRES CATHERINE</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">82</Attr>
+<Attr Nom="NumSource" Rep="1">OPL 011754126</Attr>
+<Attr Nom="NumSource" Rep="2">OPC 100508950</Attr>
+<Attr Nom="NumSource" Rep="3">OPD 100214010</Attr>
+<Attr Nom="NumSource" Rep="4">OPD 100289470</Attr>
+<Attr Nom="NumSource" Rep="5">OPP 14805208</Attr>
+<Attr Nom="NumSource" Rep="6">OPP 16302849</Attr>
+</record>

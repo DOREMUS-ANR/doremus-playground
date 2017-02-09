@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/b6eb52f5-ee87-36b0-99b6-d2c1901eb8e7>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e87fec9e-11b8-31e3-a537-d2bf33c326f6> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/14fcd710-2fab-3df6-bdac-d6846fd9b914> .
+
+<http://data.doremus.org/work/e87fec9e-11b8-31e3-a537-d2bf33c326f6>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/71f84ea5-2914-34df-881c-5d36f5ab7f51> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/14fcd710-2fab-3df6-bdac-d6846fd9b914> .
+
+<http://data.doremus.org/expression/14fcd710-2fab-3df6-bdac-d6846fd9b914>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/cli> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Emans" ;
+                  mus:U41_has_catalogue_number  "34" ;
+                  ecrm:P3_has_note              "Emans 34"
+                ] ;
+        ecrm:P102_has_title  "Aus tiefer Not schrei ich zu dir" ;
+        ecrm:P3_has_note     "Fugue sur le choral" .
+
+<http://data.doremus.org/event/277764da-dafc-3d4c-9f5d-06630bec81e5>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1703/1703"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/14fcd710-2fab-3df6-bdac-d6846fd9b914> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/71f84ea5-2914-34df-881c-5d36f5ab7f51> .
+
+<http://data.doremus.org/work/71f84ea5-2914-34df-881c-5d36f5ab7f51>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/14fcd710-2fab-3df6-bdac-d6846fd9b914> .

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13915599" format="InterXMarc_Complet" type="Authority">
+<leader>00483c1 au22000272  45  <Pos Code="0004">00483</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139155998<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13915599</Pos>
+<Pos Code="13">8</Pos>
+</controlfield>
+<controlfield tag="008">890821981224yy    qui       1953      ....                   1   <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">98</Pos>
+<Pos Code="0809">12</Pos>
+<Pos Code="1011">24</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820" Sens="quintette instrumental">qui</Pos>
+<Pos Code="2831">1953</Pos>
+<Pos Code="3841">....</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">wd01<Pos Code="0001" Sens="instruments à vent - basson">wd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">wc01<Pos Code="0001" Sens="instruments à vent - clarinette">wc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">ba01<Pos Code="0001" Sens="cuivres - cor">ba</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">wa01<Pos Code="0001" Sens="instruments à vent - flûte">wa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">wb01<Pos Code="0001" Sens="instruments à vent - hautbois">wb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13896652</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Ligeti</subfield>
+	<subfield code="m">György</subfield>
+	<subfield code="d">1923-2006</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a" Barre="2">6 bagatelles</subfield>
+	<subfield code="b">Quintette à vents</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Transcription de 6 des 11 pièces pour piano &quot;Musica ricercata&quot;</subfield>
+	<subfield code="a">Créé à Sodertalje, Suède</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Date de composition : 1953</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">1re exécution : 1969-10-06</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove 6</subfield>
+	<subfield code="a">Contemporary composers</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100449870</subfield>
+</datafield>
+<Alter Ori="13896652">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Ligeti</subfield>
+	<subfield code="m">György Sándor</subfield>
+	<subfield code="d">1923-2006</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb13915599t</Attr>
+<Attr Nom="NumSource">OPC 100449870</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13896652</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource">OPP 14850697</Attr>
+</record>

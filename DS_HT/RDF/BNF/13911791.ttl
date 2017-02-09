@@ -1,0 +1,60 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/7d2b78ea-0322-358e-8c3d-a7a669a7a6e1>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/eadd4000-ac71-3685-a34e-b8c8a24ebd2b/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/kor>
+                                    ] ;
+        ecrm:P3_has_note            <http://data.doremus.org/vocabulary/itema3/mop/50> .
+
+<http://data.doremus.org/work/10516e20-af5e-39d5-adac-debea73df844>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/09278ffc-28cb-3331-b477-74a62998c93c> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/eadd4000-ac71-3685-a34e-b8c8a24ebd2b> .
+
+<http://data.doremus.org/expression/eadd4000-ac71-3685-a34e-b8c8a24ebd2b/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à Charles Tournemire"@fr .
+
+<http://data.doremus.org/work/09278ffc-28cb-3331-b477-74a62998c93c>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/eadd4000-ac71-3685-a34e-b8c8a24ebd2b> .
+
+<http://data.doremus.org/event/ea293f51-8965-333b-a5a0-009d0869e2c2>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/10516e20-af5e-39d5-adac-debea73df844> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/eadd4000-ac71-3685-a34e-b8c8a24ebd2b> .
+
+<http://data.doremus.org/expression/eadd4000-ac71-3685-a34e-b8c8a24ebd2b>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/sch> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/eadd4000-ac71-3685-a34e-b8c8a24ebd2b/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "2" ;
+                                      ecrm:P3_has_note         "Op. 2"
+                                    ] ;
+        ecrm:P67_refers_to          <http://data.doremus.org/expression/eadd4000-ac71-3685-a34e-b8c8a24ebd2b/dedication> .
+
+<http://data.doremus.org/event/eb3f3a89-48e7-309a-9ded-e2e01c689619>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19240101/19241231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7d2b78ea-0322-358e-8c3d-a7a669a7a6e1>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/eadd4000-ac71-3685-a34e-b8c8a24ebd2b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/09278ffc-28cb-3331-b477-74a62998c93c> .

@@ -1,0 +1,56 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/76b93ecb-630a-3a50-a074-5b5c72b8cf2f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17000101/17171231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/8aa9bad5-8ffe-3f28-978c-34b824d24d1f>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/7f5e5fd2-27fa-3529-a859-9cd213df5991> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0d30f672-9e83-308d-9646-1b5078b75bfa> .
+
+<http://data.doremus.org/work/0d30f672-9e83-308d-9646-1b5078b75bfa>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/7f5e5fd2-27fa-3529-a859-9cd213df5991> .
+
+<http://data.doremus.org/artist/8aa9bad5-8ffe-3f28-978c-34b824d24d1f>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/7f5e5fd2-27fa-3529-a859-9cd213df5991/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/khp>
+                                    ] ;
+        ecrm:P3_has_note            <http://data.doremus.org/vocabulary/itema3/mop/17> .
+
+<http://data.doremus.org/event/262f4cac-1267-3a64-8435-d07df47224cf>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/696669d3-32a3-360a-b0c8-4fbd1ac447e1> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/7f5e5fd2-27fa-3529-a859-9cd213df5991> .
+
+<http://data.doremus.org/expression/7f5e5fd2-27fa-3529-a859-9cd213df5991>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "11" ;
+        mus:U11_has_key           [ a                         mus:M4_Key ;
+                                    ecrm:P1_is_identified_by  "Do mineur et majeur"@fr
+                                  ] ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/7f5e5fd2-27fa-3529-a859-9cd213df5991/casting/1> ;
+        ecrm:P102_has_title       "Ordres" ;
+        ecrm:P3_has_note          "Comprend : \"La Castelane\", \"L'étincelante ou la Bontems\", \"Les graces-naturéles\", \"La Zénobie\", \"Les fastes de la grande et anciénne Mxnxstrxndxsx\"" .
+
+<http://data.doremus.org/work/696669d3-32a3-360a-b0c8-4fbd1ac447e1>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0d30f672-9e83-308d-9646-1b5078b75bfa> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/7f5e5fd2-27fa-3529-a859-9cd213df5991> .

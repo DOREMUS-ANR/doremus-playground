@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/14737b31-7519-3a71-96ac-3ec90665b093>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/4e3e6e9c-3008-322e-896c-a6dcbb308a43> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/1ef1740e-7bec-39bf-a6f6-be6fb97bd5bf> .
+
+<http://data.doremus.org/event/253f3247-8e50-3c3e-a98f-84b0dc839076>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/4542eafe-c268-3642-a963-75ba910dd2c7> .
+
+<http://data.doremus.org/work/da299e32-988c-39bd-88fd-ec7641d8cec2>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/14737b31-7519-3a71-96ac-3ec90665b093> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/1ef1740e-7bec-39bf-a6f6-be6fb97bd5bf> .
+
+<http://data.doremus.org/expression/4542eafe-c268-3642-a963-75ba910dd2c7>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/1ef1740e-7bec-39bf-a6f6-be6fb97bd5bf> .
+
+<http://data.doremus.org/performance/4e3e6e9c-3008-322e-896c-a6dcbb308a43>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation : Venise, Teatro La Fenice, 14 septembre 1954, sous la direction du compositeur" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/4542eafe-c268-3642-a963-75ba910dd2c7> .
+
+<http://data.doremus.org/event/bc44cf19-d9e2-3389-b3ce-8e25dd22ee16>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/da299e32-988c-39bd-88fd-ec7641d8cec2> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/1ef1740e-7bec-39bf-a6f6-be6fb97bd5bf> .
+
+<http://data.doremus.org/artist/a35e280f-9148-3a6f-ab07-340977855cbf>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/90101a23-8375-3762-ae8a-568e2d8daff3>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19540330/19540930"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a35e280f-9148-3a6f-ab07-340977855cbf>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/1ef1740e-7bec-39bf-a6f6-be6fb97bd5bf> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/14737b31-7519-3a71-96ac-3ec90665b093> .
+
+<http://data.doremus.org/expression/1ef1740e-7bec-39bf-a6f6-be6fb97bd5bf>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/cho> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "54" ;
+                                      ecrm:P3_has_note         "Op. 54"
+                                    ] ;
+        ecrm:P102_has_title         "Le tour d'écrou" , "The turn of the screw" ;
+        ecrm:P3_has_note            "Opéra en 1 prologue et 2 actes" , "Livret de Myfanwy Piper d'après la nouvelle de même titre de Henry James" .

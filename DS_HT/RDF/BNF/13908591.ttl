@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/6f4de1a0-11ef-37f0-bec5-3b44ea148938>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/25e0c25f-ce56-3284-98eb-77917ff2a98d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/7d47d153-6456-31de-bd3e-8dd51ffe9715> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/534e2cc3-6f9f-31cd-86d7-68496631b17b> .
+
+<http://data.doremus.org/performance/e63d209a-8fa8-3321-adac-d6052f096d94>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation : Paris, Théâtre du Vaudeville, 1er octobre 1872" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/f3feb540-150b-3b26-aae9-42fb9936135a> .
+
+<http://data.doremus.org/event/a076fed8-c5dd-35d7-994d-f028d5063bff>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/25e0c25f-ce56-3284-98eb-77917ff2a98d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/534e2cc3-6f9f-31cd-86d7-68496631b17b> .
+
+<http://data.doremus.org/expression/534e2cc3-6f9f-31cd-86d7-68496631b17b>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/inm> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "GB" ;
+                  mus:U41_has_catalogue_number  "30" ;
+                  ecrm:P3_has_note              "GB 30"
+                ] ;
+        ecrm:P102_has_title  "L'Arlésienne" ;
+        ecrm:P3_has_note     "Musique de scène avec choeur pour le drame éponyme en 3 actes d'Alphonse Daudet" , "Il existe deux suites d'orchestre tirées de la musique de scène : une première par Bizet (1872), une seconde par Ernest Guiraud (1879)" .
+
+<http://data.doremus.org/event/a9729a08-5c77-352e-8dd4-40a68c1a1701>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18720701/18720831"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6f4de1a0-11ef-37f0-bec5-3b44ea148938>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/534e2cc3-6f9f-31cd-86d7-68496631b17b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/7d47d153-6456-31de-bd3e-8dd51ffe9715> .
+
+<http://data.doremus.org/expression/f3feb540-150b-3b26-aae9-42fb9936135a>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/534e2cc3-6f9f-31cd-86d7-68496631b17b> .
+
+<http://data.doremus.org/event/d122b938-48bd-30cb-a041-c4cccbde91bd>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/f3feb540-150b-3b26-aae9-42fb9936135a> .
+
+<http://data.doremus.org/work/7d47d153-6456-31de-bd3e-8dd51ffe9715>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/e63d209a-8fa8-3321-adac-d6052f096d94> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/534e2cc3-6f9f-31cd-86d7-68496631b17b> .

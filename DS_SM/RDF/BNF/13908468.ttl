@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/a46adeda-59ef-3a5e-9924-215dd3a74016>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/ba863465-eb0a-3c63-8819-ea2273d4ed67> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e92c2c6c-b852-3ce1-9b78-a4f4d7bfe5ef> .
+
+<http://data.doremus.org/event/4e674a21-775c-31de-9a38-449266558e72>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1976/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e92c2c6c-b852-3ce1-9b78-a4f4d7bfe5ef> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a46adeda-59ef-3a5e-9924-215dd3a74016> .
+
+<http://data.doremus.org/event/eb1908c3-d25a-3f82-94fd-ce01a90ef8e7>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/4efd833e-fb94-3d78-a947-b006432f5988> .
+
+<http://data.doremus.org/expression/e92c2c6c-b852-3ce1-9b78-a4f4d7bfe5ef>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "Sequenza VIII" ;
+        ecrm:P3_has_note     "Créé par Carlo Chiarappa à La Rochelle" .
+
+<http://data.doremus.org/expression/4efd833e-fb94-3d78-a947-b006432f5988>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/e92c2c6c-b852-3ce1-9b78-a4f4d7bfe5ef> .
+
+<http://data.doremus.org/performance/ba863465-eb0a-3c63-8819-ea2273d4ed67>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1977" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/4efd833e-fb94-3d78-a947-b006432f5988> .
+
+<http://data.doremus.org/work/b928f1cc-4017-399f-a467-0f1fd6891ead>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/a46adeda-59ef-3a5e-9924-215dd3a74016> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e92c2c6c-b852-3ce1-9b78-a4f4d7bfe5ef> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/33f760bc-3f6d-37f0-8c87-27816f27d9f7>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b928f1cc-4017-399f-a467-0f1fd6891ead> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e92c2c6c-b852-3ce1-9b78-a4f4d7bfe5ef> .

@@ -1,0 +1,70 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/17c49245-95b3-3b5c-ab8c-b8f6d2338cf0>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation : Fontainebleau, le 18 octobre 1752" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/12f8a65c-61c6-360f-9762-da607a7e60fc> .
+
+<http://data.doremus.org/event/2af93f6d-b3f9-3d4d-ac9f-f2b1d297088d>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/12f8a65c-61c6-360f-9762-da607a7e60fc> .
+
+<http://data.doremus.org/expression/ceb32ba5-9ea1-3b18-871e-541dfcbd2d15>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        ecrm:P102_has_title  "Le devin du village" ;
+        ecrm:P3_has_note     "Intermède en 1 acte" , "Sur un livret du compositeur" .
+
+<http://data.doremus.org/event/2419bf50-8d4a-3952-948b-21947645eb16>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/7a9194c8-8ad3-303b-be70-bb30806f347e> .
+
+<http://data.doremus.org/artist/e5b7cbeb-8548-372d-8111-21f9d2cdc8af>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/b32d1268-a7c1-3fb8-b2bc-0aa4fa8a571e>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/d494577d-234d-3740-bc8d-3c807efeeb51> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ceb32ba5-9ea1-3b18-871e-541dfcbd2d15> .
+
+<http://data.doremus.org/work/d494577d-234d-3740-bc8d-3c807efeeb51>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/021d61c5-fddf-3b5d-9d15-8fdd81a9eb6d> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ceb32ba5-9ea1-3b18-871e-541dfcbd2d15> .
+
+<http://data.doremus.org/expression/12f8a65c-61c6-360f-9762-da607a7e60fc>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ceb32ba5-9ea1-3b18-871e-541dfcbd2d15> .
+
+<http://data.doremus.org/event/a2245460-d311-3318-a7b5-8ac84b969d87>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17520101/17521231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/e5b7cbeb-8548-372d-8111-21f9d2cdc8af>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ceb32ba5-9ea1-3b18-871e-541dfcbd2d15> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/021d61c5-fddf-3b5d-9d15-8fdd81a9eb6d> .
+
+<http://data.doremus.org/work/021d61c5-fddf-3b5d-9d15-8fdd81a9eb6d>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/17c49245-95b3-3b5c-ab8c-b8f6d2338cf0> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ceb32ba5-9ea1-3b18-871e-541dfcbd2d15> .
+
+<http://data.doremus.org/expression/7a9194c8-8ad3-303b-be70-bb30806f347e>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ceb32ba5-9ea1-3b18-871e-541dfcbd2d15> .
+
+<http://data.doremus.org/performance/923b44cc-548f-377e-a7d2-d959dd4bf9fa>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation à l'Académie royale de musique : le 1er mars 1753" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/7a9194c8-8ad3-303b-be70-bb30806f347e> .

@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/7c1f5cef-7b78-3449-9a3e-0fb196fc75a5>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sg> ;
+        ecrm:P102_has_title  "My funny valentine" ;
+        ecrm:P3_has_note     "Fait partie de la comédie musicale \"Babes in arms\"" , "Lyrics de Lorenz Hart" .
+
+<http://data.doremus.org/performance/9c8240c2-855f-39e4-b527-b1a747cd93ed>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1397" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/7153e3c7-a21f-3eba-ac57-961d2ba75e9f> .
+
+<http://data.doremus.org/artist/f4782aaf-1eca-38d6-aec8-b3074754855f>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/4f8ff63c-d809-343c-8e92-99e7619a70cf>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "0000/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/f4782aaf-1eca-38d6-aec8-b3074754855f>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/7c1f5cef-7b78-3449-9a3e-0fb196fc75a5> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/fbdb6a74-e836-3368-a439-3053a18c5ccb> .
+
+<http://data.doremus.org/event/47b75cd3-149d-30d6-bdbb-ba7a9a9a95d3>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e15acb61-533c-37b9-b270-3c06edf29c1a> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/7c1f5cef-7b78-3449-9a3e-0fb196fc75a5> .
+
+<http://data.doremus.org/event/b4c35d70-ec0a-3190-a5a7-d2f2c633328b>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/7153e3c7-a21f-3eba-ac57-961d2ba75e9f> .
+
+<http://data.doremus.org/work/e15acb61-533c-37b9-b270-3c06edf29c1a>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/fbdb6a74-e836-3368-a439-3053a18c5ccb> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/7c1f5cef-7b78-3449-9a3e-0fb196fc75a5> .
+
+<http://data.doremus.org/work/fbdb6a74-e836-3368-a439-3053a18c5ccb>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/9c8240c2-855f-39e4-b527-b1a747cd93ed> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/7c1f5cef-7b78-3449-9a3e-0fb196fc75a5> .
+
+<http://data.doremus.org/expression/7153e3c7-a21f-3eba-ac57-961d2ba75e9f>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/7c1f5cef-7b78-3449-9a3e-0fb196fc75a5> .

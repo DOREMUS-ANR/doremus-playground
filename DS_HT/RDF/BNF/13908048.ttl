@@ -1,0 +1,47 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/2011cc39-347a-38f1-8d1b-38d8b32e6d3b>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/7519ae19-0cdd-39da-a2cf-ef3c2595aab3> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/102de0a4-a4a1-34d5-9bd7-e10f0eea122c> .
+
+<http://data.doremus.org/expression/102de0a4-a4a1-34d5-9bd7-e10f0eea122c>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/bt> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "28" ;
+                                      ecrm:P3_has_note         "Op. 28"
+                                    ] ;
+        ecrm:P102_has_title         "Souvenirs" ;
+        ecrm:P3_has_note            "Créé d'abord en version de concert à Chicago par l'Orchestre symphonique de Chicago dirigé par Fritz Reiner" , "Créé ensuite comme ballet à New York" , "19551115 (création du ballet)" , "Orchestration de la pièce pour piano à 4 mains de même titre en vue d'un ballet chorégraphié par Balanchine" , "1952 (orchestration)" , "19531113 (création de l'oeuvre en concert)" .
+
+<http://data.doremus.org/work/7519ae19-0cdd-39da-a2cf-ef3c2595aab3>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/102de0a4-a4a1-34d5-9bd7-e10f0eea122c> .
+
+<http://data.doremus.org/artist/ecb726fd-d0f6-3941-b140-3355d6f4c612>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/29cc55cf-19ac-3249-8ac0-b3e5a26de88b>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "0000/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/ecb726fd-d0f6-3941-b140-3355d6f4c612>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/102de0a4-a4a1-34d5-9bd7-e10f0eea122c> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/7519ae19-0cdd-39da-a2cf-ef3c2595aab3> .
+
+<http://data.doremus.org/event/de337c9c-857e-3f0c-a324-16b8e48a774f>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2011cc39-347a-38f1-8d1b-38d8b32e6d3b> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/102de0a4-a4a1-34d5-9bd7-e10f0eea122c> .

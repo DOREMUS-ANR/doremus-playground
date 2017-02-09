@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="14002698" format="InterXMarc_Complet" type="Authority">
+<leader>00551c0 au22000272  45  <Pos Code="0004">00551</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF140026986<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">14002698</Pos>
+<Pos Code="13">6</Pos>
+</controlfield>
+<controlfield tag="008">970625131125yy    zz        1955      1957                   010 <Pos Code="0001">97</Pos>
+<Pos Code="0203">06</Pos>
+<Pos Code="0405">25</Pos>
+<Pos Code="0607">13</Pos>
+<Pos Code="0809">11</Pos>
+<Pos Code="1011">25</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820">zz </Pos>
+<Pos Code="2831">1955</Pos>
+<Pos Code="3841">1957</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">oa03<Pos Code="0001" Sens="orchestre - orchestre symphonique XIXe-XXe s.">oa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">3</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13900080</subfield>
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Stockhausen</subfield>
+	<subfield code="m">Karlheinz</subfield>
+	<subfield code="d">1928-2007</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Gruppen</subfield>
+	<subfield code="p">Op. 6</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Date de composition : 1955-1957</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">1re exécution : 24 mars 1958, Allemagne, Cologne, par l&apos;Orchestre symphonique de la Radio de Cologne, direction : Pierre Boulez, Bruno Maderna et Karlheinz Stockhausen.</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">IRCAM</subfield>
+	<subfield code="u">http://brahms.ircam.fr</subfield>
+	<subfield code="d">2013-11-25</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Contemporary composers</subfield>
+</datafield>
+<datafield tag="624" ind1=" " ind2=" ">
+	<subfield code="a">780<Pos Code="0002" Sens="Musique">780</Pos>
+</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">101397970</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb14002698d</Attr>
+<Attr Nom="NumSource">OPC 101397970</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13900080</Attr>
+<Attr Nom="DateCreation">25/06/ 1997</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">25/11/ 2013</Attr>
+<Attr Nom="ResponsableDerniereValidation">SERRES CATHERINE</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">25/06/ 1997</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">82</Attr>
+<Attr Nom="NumSource">PNA 00070076</Attr>
+</record>

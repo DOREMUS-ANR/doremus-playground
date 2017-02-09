@@ -1,0 +1,56 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/2638b034-0021-3057-ad8d-0bd9e68bb0ee>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ffa310ff-850c-3098-91e7-b23ffbe354cd> .
+
+<http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/984ec804-347e-3e4c-b14d-0a4d1ecc0811>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1911-1913" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1911/1913"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ffa310ff-850c-3098-91e7-b23ffbe354cd> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/2638b034-0021-3057-ad8d-0bd9e68bb0ee> .
+
+<http://data.doremus.org/work/617b260a-74ad-3540-8f6f-40919b9fd622>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/2638b034-0021-3057-ad8d-0bd9e68bb0ee> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ffa310ff-850c-3098-91e7-b23ffbe354cd> .
+
+<http://data.doremus.org/expression/ffa310ff-850c-3098-91e7-b23ffbe354cd/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Voix et piano" .
+
+<http://data.doremus.org/event/43faf72d-da25-3510-851f-05193893e6e8>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/617b260a-74ad-3540-8f6f-40919b9fd622> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ffa310ff-850c-3098-91e7-b23ffbe354cd> .
+
+<http://data.doremus.org/expression/ffa310ff-850c-3098-91e7-b23ffbe354cd>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/diabolo/genre/lied> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/ffa310ff-850c-3098-91e7-b23ffbe354cd/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "9" ;
+                                      ecrm:P3_has_note         "Op. 9"
+                                    ] ;
+        ecrm:P102_has_title         "Einfache Lieder" ;
+        ecrm:P3_has_note            "Ce cycle de 6 Lieder composé par l'auteur dans sa jeunesse comprend : 1- Schneeglöckchen. 2- Nachtwandere (poème de Joseph von Eichendorff). 3- Das Ständchen (poème de Joseph von Eichendorff). 4- Liebesbriefchen (poème de Elisabeth Honold). 5- Das Heldengrab am Pruth. 6- Sommer" .

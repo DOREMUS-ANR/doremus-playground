@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/5cff1b36-8c19-389f-9588-6bb802fcb4aa>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1650/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9aa5009c-50d5-3498-988e-2aa1a6cf33bb>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e74bca6a-6fb7-31c1-807b-e3e1fe53ae30> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8f3b21d7-620c-3157-892e-9461113be74c> .
+
+<http://data.doremus.org/expression/e74bca6a-6fb7-31c1-807b-e3e1fe53ae30>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/gm> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/vr> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/e74bca6a-6fb7-31c1-807b-e3e1fe53ae30/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Gustafson" ;
+                  mus:U41_has_catalogue_number  "99" ;
+                  ecrm:P3_has_note              "Gustafson 99"
+                ] .
+
+<http://data.doremus.org/work/8f3b21d7-620c-3157-892e-9461113be74c>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e74bca6a-6fb7-31c1-807b-e3e1fe53ae30> .
+
+<http://data.doremus.org/artist/9aa5009c-50d5-3498-988e-2aa1a6cf33bb>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/e74bca6a-6fb7-31c1-807b-e3e1fe53ae30/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/khp>
+                                    ] ;
+        ecrm:P3_has_note            <http://data.doremus.org/vocabulary/itema3/mop/17> .
+
+<http://data.doremus.org/work/98fd6eb8-0ced-3cbd-91ce-c5c0b71ca265>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8f3b21d7-620c-3157-892e-9461113be74c> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e74bca6a-6fb7-31c1-807b-e3e1fe53ae30> .
+
+<http://data.doremus.org/event/e145259c-3c70-3444-a4b5-fa57d6db50a6>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/98fd6eb8-0ced-3cbd-91ce-c5c0b71ca265> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e74bca6a-6fb7-31c1-807b-e3e1fe53ae30> .

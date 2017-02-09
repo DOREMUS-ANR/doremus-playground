@@ -1,0 +1,95 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/e5bcbf23-62da-3c0b-81c9-7dbc12804312>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/ov> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/e5bcbf23-62da-3c0b-81c9-7dbc12804312/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "H" ;
+                  mus:U41_has_catalogue_number  "101B" ;
+                  ecrm:P3_has_note              "H 101B"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "H" ;
+                  mus:U41_has_catalogue_number  "101" ;
+                  ecrm:P3_has_note              "H 101"
+                ] ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "21" ;
+                                      ecrm:P3_has_note         "Op. 21"
+                                    ] ;
+        ecrm:P102_has_title         "Le corsaire" , "Ouverture du corsaire" ;
+        ecrm:P3_has_note            "D'après James Fenimore Cooper (\"The Red Rover\"). Dédicace à James William Davison. Existe dans une première version, intitulée successivement \"La Tour de Nice\" et \"Le Corsaire rouge\", composée d'août à novembre 1844 (H 101A). Durée d'exécution : 8 minutes 1/2 environ" , "Créée le 8 avril 1854 à Brunswick. Première édition : Paris, Richault, [1852]" .
+
+<http://data.doremus.org/work/6aef6ea8-4a58-3db5-a9ed-0bcecf0c5eb0>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/279452ea-6b60-333d-b0ee-95ff145661ca> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e5bcbf23-62da-3c0b-81c9-7dbc12804312> .
+
+<http://data.doremus.org/work/eb934b49-ad61-30d4-a88a-8e9ed6c9e47a>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/746f8612-1733-37ba-b851-ad78fe597b2c> .
+
+<http://data.doremus.org/artist/6403ae22-00e3-3c80-9ed9-37aa64b70aae>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/45dcbc4d-8955-39f4-87dc-4dd56cfd7dfc>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/6aef6ea8-4a58-3db5-a9ed-0bcecf0c5eb0> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e5bcbf23-62da-3c0b-81c9-7dbc12804312> .
+
+<http://data.doremus.org/event/773457b0-6e87-3dfc-860e-8265c8830d6a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1846-1851" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1846/1851"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6403ae22-00e3-3c80-9ed9-37aa64b70aae>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e5bcbf23-62da-3c0b-81c9-7dbc12804312> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/279452ea-6b60-333d-b0ee-95ff145661ca> .
+
+<http://data.doremus.org/performance/d81bd2b7-2158-3dfa-8643-20a041a98de0>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée le 8 avril 1854 à Brunswick. Première édition : Paris, Richault, [1852]" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/5e39f6ed-715a-3dcb-bf25-6b721ab2e3c4> .
+
+<http://data.doremus.org/event/099df4fb-34e8-3fe0-872a-e32ef3885358>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Première édition : Paris, Richault, [1852]" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/eb934b49-ad61-30d4-a88a-8e9ed6c9e47a> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/746f8612-1733-37ba-b851-ad78fe597b2c> .
+
+<http://data.doremus.org/work/279452ea-6b60-333d-b0ee-95ff145661ca>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/099df4fb-34e8-3fe0-872a-e32ef3885358> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/d81bd2b7-2158-3dfa-8643-20a041a98de0> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e5bcbf23-62da-3c0b-81c9-7dbc12804312> .
+
+<http://data.doremus.org/expression/5e39f6ed-715a-3dcb-bf25-6b721ab2e3c4>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/e5bcbf23-62da-3c0b-81c9-7dbc12804312> .
+
+<http://data.doremus.org/expression/e5bcbf23-62da-3c0b-81c9-7dbc12804312/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Orchestre symphonique" .
+
+<http://data.doremus.org/publication/746f8612-1733-37ba-b851-ad78fe597b2c>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/e5bcbf23-62da-3c0b-81c9-7dbc12804312> .

@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/2bc49a71-869e-3513-8c14-81ffab055d0f>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/2bc49a71-869e-3513-8c14-81ffab055d0f/casting/1> ;
+        ecrm:P102_has_title  "Vilanelle" , "Vivanelle" , "Villanelle" ;
+        ecrm:P3_has_note     "C'est en 1906 que Paul Dukas compose pour le concours de fin d'année de la classe de cor du Conservatoire de Paris une Vivanelle. Le morceau respecte le \"cahier des charges\" du genre : mettre à l'épreuve l'exécutant en le soumettant à toutes les difficultés possibles. Expressivité, vélocité, souffle, jeu avec ou sans pistons : en quelques pages, Dukas réussit à condenser la plupart des problèmes propres à l'instrument sans renoncer à écrire une musique de qualité. Succès assez rare qui permit à la Vivanelle de s'échapper des salles de concours du Conservatoire pour entrer dans le répertoire de concert des virtuoses du cor. Durée d'exécution : 7 minutes environ" , "Première édition : Durand, 1906" .
+
+<http://data.doremus.org/performance/c5c2939d-1281-322b-8cf2-2c9e63d99aac>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première édition : Durand, 1906" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/a9c0e4f4-6681-36ea-85a9-06ffbb570e48> .
+
+<http://data.doremus.org/work/59191857-0c47-3446-8318-1ef432d96791>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/85e8c212-dc21-30b8-94e0-cb69e30009b7> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/2bc49a71-869e-3513-8c14-81ffab055d0f> .
+
+<http://data.doremus.org/artist/5d66572d-a5b3-3ed3-a9f1-e510b46b56fb>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/85e8c212-dc21-30b8-94e0-cb69e30009b7>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/c5c2939d-1281-322b-8cf2-2c9e63d99aac> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/2bc49a71-869e-3513-8c14-81ffab055d0f> .
+
+<http://data.doremus.org/event/1125fd57-163a-3001-9abd-ad0b56d9a073>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1906" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1906"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/5d66572d-a5b3-3ed3-a9f1-e510b46b56fb>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/2bc49a71-869e-3513-8c14-81ffab055d0f> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/85e8c212-dc21-30b8-94e0-cb69e30009b7> .
+
+<http://data.doremus.org/expression/2bc49a71-869e-3513-8c14-81ffab055d0f/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Cor et piano" .
+
+<http://data.doremus.org/expression/a9c0e4f4-6681-36ea-85a9-06ffbb570e48>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/2bc49a71-869e-3513-8c14-81ffab055d0f> .
+
+<http://data.doremus.org/event/94b42a88-d425-33da-8601-60cc46518d21>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/59191857-0c47-3446-8318-1ef432d96791> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/2bc49a71-869e-3513-8c14-81ffab055d0f> .

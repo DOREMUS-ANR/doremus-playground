@@ -1,0 +1,53 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/f407863d-2034-3a38-9e2b-a493d74a1b82>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d5dd369d-603e-38dc-982a-c3bd3d05678c> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f64a0a9b-ad3d-3868-8d7a-2c3c1cddf327> .
+
+<http://data.doremus.org/work/d5dd369d-603e-38dc-982a-c3bd3d05678c>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f64a0a9b-ad3d-3868-8d7a-2c3c1cddf327> .
+
+<http://data.doremus.org/event/e0e214e7-5bda-38f8-977a-efbf814abc67>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f407863d-2034-3a38-9e2b-a493d74a1b82> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f64a0a9b-ad3d-3868-8d7a-2c3c1cddf327> .
+
+<http://data.doremus.org/event/a89c69fc-9b31-327d-a2c4-306eb9a36a17>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1784." ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1784"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a45641a3-dd94-3b57-a13b-141795f646fa>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f64a0a9b-ad3d-3868-8d7a-2c3c1cddf327> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d5dd369d-603e-38dc-982a-c3bd3d05678c> .
+
+<http://data.doremus.org/artist/a45641a3-dd94-3b57-a13b-141795f646fa>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/f64a0a9b-ad3d-3868-8d7a-2c3c1cddf327>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      [ a                         mus:M4_Key ;
+                               ecrm:P1_is_identified_by  "Sol majeur."@fr
+                             ] ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sy> , <http://data.doremus.org/vocabulary/diabolo/genre/musique_symphonique> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique classique"@fr
+                             ] ;
+        ecrm:P102_has_title  "Symphony in G major" , "Symphonie en sol majeur" , "Sinfonia in sol maggiore" , "Sinfonia in G-Dur" ;
+        ecrm:P3_has_note     "Rosetti s'inscrit dans le courant des compositeurs chez qui une sensibilité romantique commence clairement à se faire sentir : conclusions bouillonnantes, rythmes imprévisibles, parties intermédiaires foisonnantes, brusques modulations, silences éloquents. Cette oeuvre d'une grande intensité s'éloigne souvent des shémas traditionnels de la symphonie." .

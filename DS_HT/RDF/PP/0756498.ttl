@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/f5d9fa49-3594-30aa-be5a-056e289a98ee>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création : le 20 septembre 1981 à Cologne, WDR, par les Steve Reich Musicians, direction Georges Manahan." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/f31da74b-dca4-3949-a15d-5e61a2094f55> .
+
+<http://data.doremus.org/expression/6abdbd49-534c-3142-99a3-39bcdc503be9/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "3 sopranos, 1 contralto, piccolo, flute, hautbois, cor anglais, 2 clarinettes, 6 percussions, 2 orgues électriques manuels, deux violons, alto, violoncelle, contrebasse, régie son" .
+
+<http://data.doremus.org/expression/f31da74b-dca4-3949-a15d-5e61a2094f55>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/6abdbd49-534c-3142-99a3-39bcdc503be9> .
+
+<http://data.doremus.org/artist/43bdeb8e-0587-36ac-8255-d1de225c80f5>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/011a850b-fb9a-32e7-82b1-dac11766bbc2>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1981" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1981"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/43bdeb8e-0587-36ac-8255-d1de225c80f5>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6abdbd49-534c-3142-99a3-39bcdc503be9> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/b96af34f-80d2-3f75-a009-3d775799b55b> .
+
+<http://data.doremus.org/work/2773a754-0f8e-3df8-abb5-2039e3bceef7>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/b96af34f-80d2-3f75-a009-3d775799b55b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6abdbd49-534c-3142-99a3-39bcdc503be9> .
+
+<http://data.doremus.org/expression/6abdbd49-534c-3142-99a3-39bcdc503be9>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/6abdbd49-534c-3142-99a3-39bcdc503be9/casting/1> ;
+        ecrm:P102_has_title  "Tehillim" ;
+        ecrm:P3_has_note     "Commande SDR de Stuttgart, WDR de Cologne et Rothko Chapel de Houston. Note de l'auteur : \"Tehillim est une mise en musique des psaumes 10:2-5, 34:13-15, 18:26-27 et 150:4-6. Les petits tambourins sans sonnailles employés ici ressemblent peut-être à celui appelé \"tof\" en hébreu dans le psaume 150 et ailleurs dans le texte biblique. Battements de mains et crotales étaient aussi communément employés à l'époque biblique dans tout le Moyen-Orient, ainsi que les petites cymbales accordées. A part cela, Tehillim est vide de tout contenu musicologique. Le materiel mélodique ne comporte pas de thème juif. (...) Contrairement à la majorité de mon oeuvre antérieure, Tehillim n'est pas composé de motifs courts et répétitifs (...)ici, le rythme de la musique jaillit directement du rythme du texte hébraïque, et varie ainsi avec souplesse suivant les changements constants du mètre." , "Création : le 20 septembre 1981 à Cologne, WDR, par les Steve Reich Musicians, direction Georges Manahan." .
+
+<http://data.doremus.org/work/b96af34f-80d2-3f75-a009-3d775799b55b>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f5d9fa49-3594-30aa-be5a-056e289a98ee> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6abdbd49-534c-3142-99a3-39bcdc503be9> .
+
+<http://data.doremus.org/event/3cf47cf0-39f1-35a9-bbd2-cfdc900edcec>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2773a754-0f8e-3df8-abb5-2039e3bceef7> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6abdbd49-534c-3142-99a3-39bcdc503be9> .

@@ -1,0 +1,74 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/d08f513b-469d-3579-900b-603bff2a9677>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/4d933c4d-767f-3607-8bca-c14653191e62> .
+
+<http://data.doremus.org/event/339a26d1-9ac3-304f-9741-9ed6fa3942d7>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1723" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1723"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/4d933c4d-767f-3607-8bca-c14653191e62> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/fcc007df-ec51-314d-ba89-2dfdf0b3761c> .
+
+<http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/4d933c4d-767f-3607-8bca-c14653191e62/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "alto, ténor et basse solistes, choeur, 2 hautbois, 2 cors, cordes, continuo" .
+
+<http://data.doremus.org/performance/b1dcee33-7190-3c4d-b0a7-5248d3ce981d>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée à Leipzig, le 26 décembre 1723" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/d08f513b-469d-3579-900b-603bff2a9677> .
+
+<http://data.doremus.org/work/7118931b-fb96-3d9c-b4bd-82dc86a4bf46>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/fcc007df-ec51-314d-ba89-2dfdf0b3761c> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/4d933c4d-767f-3607-8bca-c14653191e62> .
+
+<http://data.doremus.org/event/67243c6f-928c-3483-a7bd-f38ad34dc789>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/7118931b-fb96-3d9c-b4bd-82dc86a4bf46> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/4d933c4d-767f-3607-8bca-c14653191e62> .
+
+<http://data.doremus.org/expression/4d933c4d-767f-3607-8bca-c14653191e62>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/cantate> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique sacrée"@fr
+                             ] ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/4d933c4d-767f-3607-8bca-c14653191e62/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "BWV" ;
+                  mus:U41_has_catalogue_number  "40" ;
+                  ecrm:P3_has_note              "BWV 40"
+                ] ;
+        ecrm:P102_has_title  "Cantata" , "Cantate" , "Dazu ist erschienen der Sohn Gottes" , "Darzu ist erschienen der Sohn Gottes" , "Kantat" , "cantates" ;
+        ecrm:P3_has_note     "Cantate pour le lendemain de Noël. Texte anonyme (\"C'est pour cela que le fils de Dieu est apparu\"). Comprend : choeur-récitatif-choeur (choral)-air-récitatif-choeur (choral)-air-choeur (choral)" , "Créée à Leipzig, le 26 décembre 1723" .
+
+<http://data.doremus.org/work/fcc007df-ec51-314d-ba89-2dfdf0b3761c>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/b1dcee33-7190-3c4d-b0a7-5248d3ce981d> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/4d933c4d-767f-3607-8bca-c14653191e62> .

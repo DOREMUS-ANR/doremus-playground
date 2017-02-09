@@ -1,0 +1,78 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/828311f3-fd1e-33cc-8d59-2dc7ca3a3f7b>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/1b7d9882-6936-3bc2-a20f-14e2003413a8> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6f612d3d-dcaf-387d-a01a-03ba4d8a300b> .
+
+<http://data.doremus.org/work/096082f6-63a0-3917-9757-38ee56169f88>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/7cd83481-08cf-3f64-b113-09ebe1af6958> .
+
+<http://data.doremus.org/work/86d7412f-b155-3574-9c42-5aa68ed114b3>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/828311f3-fd1e-33cc-8d59-2dc7ca3a3f7b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6f612d3d-dcaf-387d-a01a-03ba4d8a300b> .
+
+<http://data.doremus.org/event/a5892f7d-0878-3cb2-a723-cab42073d963>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/86d7412f-b155-3574-9c42-5aa68ed114b3> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6f612d3d-dcaf-387d-a01a-03ba4d8a300b> .
+
+<http://data.doremus.org/artist/1ffec4f8-174a-38f4-8e22-ead9add71cf7>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/1b7d9882-6936-3bc2-a20f-14e2003413a8>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Berlin : N. Simrock, 1892" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/096082f6-63a0-3917-9757-38ee56169f88> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/7cd83481-08cf-3f64-b113-09ebe1af6958> .
+
+<http://data.doremus.org/expression/6f612d3d-dcaf-387d-a01a-03ba4d8a300b>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/bm> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/qui> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/6f612d3d-dcaf-387d-a01a-03ba4d8a300b/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "115" ;
+                                      ecrm:P3_has_note         "Op. 115"
+                                    ] .
+
+<http://data.doremus.org/publication/7cd83481-08cf-3f64-b113-09ebe1af6958>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/6f612d3d-dcaf-387d-a01a-03ba4d8a300b> .
+
+<http://data.doremus.org/expression/6f612d3d-dcaf-387d-a01a-03ba4d8a300b/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/wcl>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "quatuor à cordes"@fr
+                                              ]
+                                    ] ;
+        ecrm:P3_has_note            "Clarinette, quatuor à cordes" .
+
+<http://data.doremus.org/event/e481ef47-5fcb-387e-8aeb-ff1f4ff73c78>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18910101/18911231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1ffec4f8-174a-38f4-8e22-ead9add71cf7>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6f612d3d-dcaf-387d-a01a-03ba4d8a300b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/828311f3-fd1e-33cc-8d59-2dc7ca3a3f7b> .

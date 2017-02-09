@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="14802747" format="InterXMarc_Complet" type="Authority">
+<leader>00349c1 au22000272  45  <Pos Code="0004">00349</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF148027474<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">14802747</Pos>
+<Pos Code="13">4</Pos>
+</controlfield>
+<controlfield tag="008">980609050830yyita co                                         1   <Pos Code="0001">98</Pos>
+<Pos Code="0203">06</Pos>
+<Pos Code="0405">09</Pos>
+<Pos Code="0607">05</Pos>
+<Pos Code="0809">08</Pos>
+<Pos Code="1011">30</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="italien">ita</Pos>
+<Pos Code="1820">co </Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13893530</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Durante</subfield>
+	<subfield code="m">Francesco</subfield>
+	<subfield code="d">1684-1755</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Concerto a quattro</subfield>
+	<subfield code="n">No 2</subfield>
+	<subfield code="t">Sol mineur</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Porte le no 2 dans l&apos;éd. de R. Blanchard (Paris : coll. &quot;Le Pupitre&quot;, Heugel, 1970)</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100262780</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb148027475</Attr>
+<Attr Nom="NumSource">OPD 100262780</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13893530</Attr>
+<Attr Nom="DateCreation">09/06/ 1998</Attr>
+<Attr Nom="ResponsableCreation">MIGV3_FP</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">09/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">09/06/ 1998</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV3_FP</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource">OPP 13927268</Attr>
+</record>

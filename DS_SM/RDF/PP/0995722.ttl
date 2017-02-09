@@ -1,0 +1,56 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/4e5adb54-7d5d-3e50-8903-40c9e1606e6d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/17197179-d088-3127-a706-026d20967fe3> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69> .
+
+<http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/17197179-d088-3127-a706-026d20967fe3>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4a029a27-1bdb-3b73-9867-d1c4490b0044> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69> .
+
+<http://data.doremus.org/event/78756468-2d3f-3ac9-abf2-3875ebc86250>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1928-1929" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1928/1929"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4a029a27-1bdb-3b73-9867-d1c4490b0044> .
+
+<http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Voix et piano" .
+
+<http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/diabolo/genre/lied> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "22" ;
+                                      ecrm:P3_has_note         "Op. 22"
+                                    ] ;
+        ecrm:P102_has_title         "Trois Lieder" , "3 Lieder" , "Drei Lieder" ;
+        ecrm:P3_has_note            "Comprend : 1- Was Du mir bist ? (poème de Eleonore van der Straten). 2- Mit Dir zu schweigen (poème de Karl Kobald). 3- Welt ist stille eingeschlafen (poème de Karl Kobald)" .
+
+<http://data.doremus.org/work/4a029a27-1bdb-3b73-9867-d1c4490b0044>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69> .

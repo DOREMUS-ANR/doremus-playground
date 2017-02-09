@@ -1,0 +1,73 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/43bdeb8e-0587-36ac-8255-d1de225c80f5>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/16cd6539-1f12-33da-be59-970e90be6f46>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f5758725-4d79-3de4-93aa-717bb87deae4> .
+
+<http://data.doremus.org/performance/a51501e7-e37b-3a68-a148-d515d127e58b>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Octobre 2004 à Los Angeles." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/16cd6539-1f12-33da-be59-970e90be6f46> .
+
+<http://data.doremus.org/event/434baf95-4726-33de-a54c-ccac63ed8ff4>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "21 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "2004" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "2004"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/43bdeb8e-0587-36ac-8255-d1de225c80f5>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f5758725-4d79-3de4-93aa-717bb87deae4> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4915877d-3bf1-37c0-b3f3-797e50d86f89> .
+
+<http://data.doremus.org/work/a105ed63-b754-3b78-a345-9bf47fbb7d69>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4915877d-3bf1-37c0-b3f3-797e50d86f89> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f5758725-4d79-3de4-93aa-717bb87deae4> .
+
+<http://data.doremus.org/expression/1f536ff3-e2ad-3d0f-a019-1c2ea11fd99a>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f5758725-4d79-3de4-93aa-717bb87deae4> .
+
+<http://data.doremus.org/event/168ca1c2-ce9a-3afe-bbb3-246d97b10a56>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/a105ed63-b754-3b78-a345-9bf47fbb7d69> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f5758725-4d79-3de4-93aa-717bb87deae4> .
+
+<http://data.doremus.org/work/4915877d-3bf1-37c0-b3f3-797e50d86f89>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/a51501e7-e37b-3a68-a148-d515d127e58b> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f5758725-4d79-3de4-93aa-717bb87deae4> .
+
+<http://data.doremus.org/expression/f5758725-4d79-3de4-93aa-717bb87deae4/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "3 sopranos, alto, 2 ténors. 2 flûtes, hautbois, cor anglais, 3 clarinettes en si bémol. 4 pianos, 2 marimbas, 2 vibraphones. cordes" .
+
+<http://data.doremus.org/expression/f5758725-4d79-3de4-93aa-717bb87deae4>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/f5758725-4d79-3de4-93aa-717bb87deae4/casting/1> ;
+        ecrm:P102_has_title  "You are : Variations" , "Cello counterpoint" , "You are (Variations)" ;
+        ecrm:P3_has_note     "You are (Variations) comporte quatre mouvements dont chacun correspond à la mise en musique d'un court texte. Les mouvements/textes en question sont : You are wherever your Thoughts are ; Shiviti Hashem L'negdi (\"Je sens la présence de l'Eternel devant moi\") ; Explanations come to an End somewhere ; Ehmor m'aht, v'ahsay harbay (\"Dis peu et fais beaucoup\"). Le premier texte est une traduction anglaise des paroles de Rabbi Nachman de Breslov, l'un des mystiques hassidiques les plus profonds et les plus magnétiques de la fin du XVIIIe siècle. La citation est extraite de son Likutey Moharan I : 21. Le deuxième texte provient du Psaume 16 dans sa vesrsion originale (en hébreu). Le troisième, traduit de l'allemand vers l'anglais, est emprunté aux Investigations philosophiques de Ludwig Wittgenstein. Le quatrième enfin est une citation du Pirke Avot, l'une des plus anciennes parties du Talmud et, de loin, son Traité le plus célèbre ; ce texte est attribué à Rabbi Shammai. Commande du Los Angeles Master Chorale, du Lincoln Center et de l'Ensemble Modern." , "Octobre 2004 à Los Angeles. Création française le 25 novembre 2006 à la Cité de la musique, Paris" .
+
+<http://data.doremus.org/performance/f0fcc28c-6591-31f8-833b-b7fce4fbb1bc>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création française le 25 novembre 2006 à la Cité de la musique, Paris" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/1f536ff3-e2ad-3d0f-a019-1c2ea11fd99a> .

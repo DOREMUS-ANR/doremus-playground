@@ -1,0 +1,74 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/c7dddaf0-d7ca-3447-9bff-19301c5d9cfc>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1870/1879"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7e1f2e0e-f2d7-3217-84e6-abdfd1b77a45>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/5168281c-9982-329d-af2f-120d96d6b6cc> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/dda3014c-76bd-35c1-98f2-45d7768293ca> .
+
+<http://data.doremus.org/publication/52b010e1-1727-366d-8cd4-9b651b89acb2>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/5168281c-9982-329d-af2f-120d96d6b6cc> .
+
+<http://data.doremus.org/performance/20428029-69fd-3a13-81dc-3b6df4ec0f08>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Paris, Société nationale de musique, 11 avril 1874" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/66ca9c00-92a3-3894-9f3b-f5a0e1b45045> .
+
+<http://data.doremus.org/work/dda3014c-76bd-35c1-98f2-45d7768293ca>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/307ebf4f-a9e2-33f7-a9f8-6fe2596bc11e> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/20428029-69fd-3a13-81dc-3b6df4ec0f08> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/5168281c-9982-329d-af2f-120d96d6b6cc> .
+
+<http://data.doremus.org/event/b5263faa-30dc-3f2c-830c-735754c87422>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c4814644-6620-3c12-8dc8-ceb013e548d2> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/5168281c-9982-329d-af2f-120d96d6b6cc> .
+
+<http://data.doremus.org/event/b5e5ad31-f043-346c-9764-d45597be19a1>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/66ca9c00-92a3-3894-9f3b-f5a0e1b45045> .
+
+<http://data.doremus.org/artist/7e1f2e0e-f2d7-3217-84e6-abdfd1b77a45>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/5168281c-9982-329d-af2f-120d96d6b6cc>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/nc> ;
+        ecrm:P102_has_title  "Aux étoiles" ;
+        ecrm:P3_has_note     "Seul extrait subsistant du \"Poème nocturne\" pour orchestre" , "Date de révision : 1910" , "Il existe une réduction pour piano à 4 mains par Gustave Samazeuilh (1911)" .
+
+<http://data.doremus.org/expression/66ca9c00-92a3-3894-9f3b-f5a0e1b45045>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/5168281c-9982-329d-af2f-120d96d6b6cc> .
+
+<http://data.doremus.org/work/c4814644-6620-3c12-8dc8-ceb013e548d2>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/dda3014c-76bd-35c1-98f2-45d7768293ca> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/5168281c-9982-329d-af2f-120d96d6b6cc> .
+
+<http://data.doremus.org/work/3dc532a2-f8db-360a-9a6d-4d9e877b2048>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/52b010e1-1727-366d-8cd4-9b651b89acb2> .
+
+<http://data.doremus.org/event/307ebf4f-a9e2-33f7-a9f8-6fe2596bc11e>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Paris : Rouart et Lerolle, 1911" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3dc532a2-f8db-360a-9a6d-4d9e877b2048> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/52b010e1-1727-366d-8cd4-9b651b89acb2> .

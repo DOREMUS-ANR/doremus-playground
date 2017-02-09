@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/51cbf519-6243-303f-91f6-f70fe55a92d8>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sp> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/51cbf519-6243-303f-91f6-f70fe55a92d8/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "FWV" ;
+                  mus:U41_has_catalogue_number  "44" ;
+                  ecrm:P3_has_note              "FWV 44"
+                ] ;
+        ecrm:P102_has_title  "Le chasseur maudit" ;
+        ecrm:P3_has_note     "Deuxième poème symphonique de Franck, inspiré d'une ballade de Bürger : un dimanche matin, un comte rhénan sonne du cor et d'élance à la chasse, tandis que sonnent les cloches et s'élèvent des chants religieux. La chevauchée du chasseur se précipite, soudain le conte est seul, son cheval refuse d'avancer et son cor est muet. Une voix d'outre-tombe s'élève et le maudit : \"Sacrilège ! Sois éternellement poursuivi par l'Enfer !\"Epouvanté le comte d'enfuit, toujours plus vite, harcelé par les démons, à travers les abîmes, les espaces...Quatre sections pour décrire ce récit : Andantino quasi allegretto (sol majeur), Allegro (sol mineur), Lento, Presto. Durée : 15 minutes environ" , "Créé à Paris, à la Société Nationale de Musique, le 31 mars 1883, sous la direction du compositeur." .
+
+<http://data.doremus.org/event/d70f5f34-02ca-31c6-9576-43b3f2e600d5>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8a9bc498-1c93-3f44-ab6c-43f95b09ea90> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/51cbf519-6243-303f-91f6-f70fe55a92d8> .
+
+<http://data.doremus.org/event/ac03c9e2-4f5b-3b86-a492-26098b21381e>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1884" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1884"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/2edd7117-03f6-3f5f-a89e-bfb6fbd34522>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/51cbf519-6243-303f-91f6-f70fe55a92d8> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/664f6a62-fce5-30cc-8c79-e935a254e566> .
+
+<http://data.doremus.org/expression/51cbf519-6243-303f-91f6-f70fe55a92d8/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "3 flûtes, 2 hautbois, 2 clarinettes, 4 bassons, 4 cors, 4 trompettes, 3 trombones, 1 tuba, timbales et batterie, cordes." .
+
+<http://data.doremus.org/work/664f6a62-fce5-30cc-8c79-e935a254e566>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f54c7054-3230-31b3-b6ac-8a1edfafbefb> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/51cbf519-6243-303f-91f6-f70fe55a92d8> .
+
+<http://data.doremus.org/expression/df9df1aa-fc28-3090-b5ad-61b2ed59b952>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/51cbf519-6243-303f-91f6-f70fe55a92d8> .
+
+<http://data.doremus.org/artist/2edd7117-03f6-3f5f-a89e-bfb6fbd34522>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/f54c7054-3230-31b3-b6ac-8a1edfafbefb>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Paris, à la Société Nationale de Musique, le 31 mars 1883, sous la direction du compositeur." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/df9df1aa-fc28-3090-b5ad-61b2ed59b952> .
+
+<http://data.doremus.org/work/8a9bc498-1c93-3f44-ab6c-43f95b09ea90>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/664f6a62-fce5-30cc-8c79-e935a254e566> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/51cbf519-6243-303f-91f6-f70fe55a92d8> .

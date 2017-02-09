@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/e5687504-a72f-39f4-b3bc-67228ec6dfc6>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1730/1730"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/dd4cd1d3-1511-3c20-b9de-daa04641edfc> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/eae33b78-d9fe-3975-b300-ac02bd962e6a> .
+
+<http://data.doremus.org/work/eae33b78-d9fe-3975-b300-ac02bd962e6a>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/dd4cd1d3-1511-3c20-b9de-daa04641edfc> .
+
+<http://data.doremus.org/work/520f7877-dad9-3e1d-8954-b43d934f9f65>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/eae33b78-d9fe-3975-b300-ac02bd962e6a> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/dd4cd1d3-1511-3c20-b9de-daa04641edfc> .
+
+<http://data.doremus.org/expression/dd4cd1d3-1511-3c20-b9de-daa04641edfc/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/svl>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "cordes"@fr
+                                              ]
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/mco>
+                                    ] ;
+        ecrm:P3_has_note            "Violon, cordes, basse continue" .
+
+<http://data.doremus.org/event/f7dd7f82-2f38-356e-84c6-58a3b8325359>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/520f7877-dad9-3e1d-8954-b43d934f9f65> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/dd4cd1d3-1511-3c20-b9de-daa04641edfc> .
+
+<http://data.doremus.org/expression/dd4cd1d3-1511-3c20-b9de-daa04641edfc>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/e> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/dd4cd1d3-1511-3c20-b9de-daa04641edfc/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "BWV" ;
+                  mus:U41_has_catalogue_number  "1042" ;
+                  ecrm:P3_has_note              "BWV 1042"
+                ] ;
+        ecrm:P3_has_note     "Créé à Köthen" , "Voir aussi BWV 1054 : transcription pour clavier en ré majeur" .

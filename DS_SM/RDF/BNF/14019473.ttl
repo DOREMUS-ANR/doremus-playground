@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/b7a33715-b244-31e8-b821-c4bb1d63d4f9>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/54d67920-2391-3b3a-aa92-d7350d4e7dca> .
+
+<http://data.doremus.org/event/5d1cb514-c967-3ab2-8446-f8e89a433b22>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1967/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/54d67920-2391-3b3a-aa92-d7350d4e7dca> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/231ac41b-aa4b-32cb-ab08-9beab98289fb> .
+
+<http://data.doremus.org/event/2acf8b2f-67bf-3329-94a4-fd896aa4f122>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/30f46d9b-d8de-31ea-a411-1e10ad26d8df> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/54d67920-2391-3b3a-aa92-d7350d4e7dca> .
+
+<http://data.doremus.org/expression/54d67920-2391-3b3a-aa92-d7350d4e7dca>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "Sequenza VI" ;
+        ecrm:P3_has_note     "Créé par Serge Collot à New York" , "Il existe une version révisée pour violoncelle" , "Date de révision : 1981" .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/7115800b-7a44-3170-af94-1f0ea790f565>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/b7a33715-b244-31e8-b821-c4bb1d63d4f9> .
+
+<http://data.doremus.org/work/30f46d9b-d8de-31ea-a411-1e10ad26d8df>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/231ac41b-aa4b-32cb-ab08-9beab98289fb> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/54d67920-2391-3b3a-aa92-d7350d4e7dca> .
+
+<http://data.doremus.org/work/231ac41b-aa4b-32cb-ab08-9beab98289fb>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/9af0ec8c-7170-300c-9f2f-72391aec63d1> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/54d67920-2391-3b3a-aa92-d7350d4e7dca> .
+
+<http://data.doremus.org/performance/9af0ec8c-7170-300c-9f2f-72391aec63d1>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1967" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/b7a33715-b244-31e8-b821-c4bb1d63d4f9> .

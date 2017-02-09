@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/6e7ad4f1-daba-3b11-a172-bb7f4dd9af60>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1762" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1762"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/75fd7b83-0164-3744-a202-ddb8b748007c>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/9fa7f54f-4f73-316f-a6ae-510ba9e3c6eb> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/596cff65-612d-38f5-b11f-f948a4955455> .
+
+<http://data.doremus.org/work/2e0b38c3-2069-3955-9a78-5aed1462e4fc>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/596cff65-612d-38f5-b11f-f948a4955455> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/9fa7f54f-4f73-316f-a6ae-510ba9e3c6eb> .
+
+<http://data.doremus.org/work/596cff65-612d-38f5-b11f-f948a4955455>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/d807aa26-d8e8-3241-a8a8-052018f91384> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/9fa7f54f-4f73-316f-a6ae-510ba9e3c6eb> .
+
+<http://data.doremus.org/performance/d807aa26-d8e8-3241-a8a8-052018f91384>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé dans sa première version en italien à Vienne, Burgtheater, le 5 octobre 1762. Créé dans sa deuxième version en français à: Paris, Académie royale de musique, le 2 août 1774." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/dd167ad2-debd-377a-ad4d-6e5ea1bcfc10> .
+
+<http://data.doremus.org/expression/dd167ad2-debd-377a-ad4d-6e5ea1bcfc10>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/9fa7f54f-4f73-316f-a6ae-510ba9e3c6eb> .
+
+<http://data.doremus.org/expression/9fa7f54f-4f73-316f-a6ae-510ba9e3c6eb/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : L' Amour, Eurydice (sopranos) ; Orphée (contralto ou haute-contre) ; choeurs ; orchestre" .
+
+<http://data.doremus.org/expression/9fa7f54f-4f73-316f-a6ae-510ba9e3c6eb>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/9fa7f54f-4f73-316f-a6ae-510ba9e3c6eb/casting/1> ;
+        ecrm:P102_has_title  "Orfeo et Euridice" , "Orphée et Eurydice" , "Orfeo ed Euridice" ;
+        ecrm:P3_has_note     "\"Azione teatrale per musica\" en 3 actes (première version en italien). Tragédie opéra en 3 actes (deuxième version en français). Livret de Raniero de Calzabigi ( première version en italien) d'après la légende d'Orphée , revu par Pierre-Louis Moline (deuxième version en français)." , "Créé dans sa première version en italien à Vienne, Burgtheater, le 5 octobre 1762. Créé dans sa deuxième version en français à: Paris, Académie royale de musique, le 2 août 1774." .
+
+<http://data.doremus.org/event/e5b4f753-ae29-3e37-a5c2-792f6872e009>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2e0b38c3-2069-3955-9a78-5aed1462e4fc> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/9fa7f54f-4f73-316f-a6ae-510ba9e3c6eb> .
+
+<http://data.doremus.org/artist/75fd7b83-0164-3744-a202-ddb8b748007c>
+        a       ecrm:E21_Person .

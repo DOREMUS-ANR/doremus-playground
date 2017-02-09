@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/440afacc-c60b-3a14-927b-1c88856325ae>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/43674e04-3a46-390c-92c1-dc603d9ad27b> .
+
+<http://data.doremus.org/performance/a02b72b5-498f-3814-9b5f-872252789a2a>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Brême, Radio, 1966, par Cathy Berberian" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/440afacc-c60b-3a14-927b-1c88856325ae> .
+
+<http://data.doremus.org/event/7e8c20ed-a22e-30eb-8970-123ba5cebc1d>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/440afacc-c60b-3a14-927b-1c88856325ae> .
+
+<http://data.doremus.org/work/f5855e40-2efe-3335-8f40-ee82f6e161a4>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0d9f67a8-6f3b-3015-9020-b5b3aeed43eb> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/43674e04-3a46-390c-92c1-dc603d9ad27b> .
+
+<http://data.doremus.org/event/3a5b249a-9fe1-3827-8154-8bac46e7b0a6>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19650101/19661231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/43674e04-3a46-390c-92c1-dc603d9ad27b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0d9f67a8-6f3b-3015-9020-b5b3aeed43eb> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/43674e04-3a46-390c-92c1-dc603d9ad27b>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "Sequenza III" ;
+        ecrm:P3_has_note     "Sur un texte de Markus Kutter" .
+
+<http://data.doremus.org/event/69ca427d-0411-32dd-afd3-672dd45bb444>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f5855e40-2efe-3335-8f40-ee82f6e161a4> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/43674e04-3a46-390c-92c1-dc603d9ad27b> .
+
+<http://data.doremus.org/work/0d9f67a8-6f3b-3015-9020-b5b3aeed43eb>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/a02b72b5-498f-3814-9b5f-872252789a2a> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/43674e04-3a46-390c-92c1-dc603d9ad27b> .

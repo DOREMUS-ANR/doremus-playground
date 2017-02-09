@@ -1,0 +1,74 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/6403ae22-00e3-3c80-9ed9-37aa64b70aae>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/e787bd29-6f48-3e0b-95a8-725b0c7a4202>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/29a762c5-a984-3636-95eb-80e1e315b463> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/69ec6f7d-ae29-334b-8991-6b3ccab7c672> .
+
+<http://data.doremus.org/performance/1378e41c-c431-333d-b268-0dcbe47da36b>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Paris, salle du Conservatoire, le 23 novembre 1834. Premiére édition : Paris : Brandus et Cie, 1848" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/2219c2b0-850f-3a57-afb1-cdda96468c4c> .
+
+<http://data.doremus.org/expression/2219c2b0-850f-3a57-afb1-cdda96468c4c>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/69ec6f7d-ae29-334b-8991-6b3ccab7c672> .
+
+<http://data.doremus.org/expression/69ec6f7d-ae29-334b-8991-6b3ccab7c672>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "pièce concertante"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/69ec6f7d-ae29-334b-8991-6b3ccab7c672/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "H" ;
+                  mus:U41_has_catalogue_number  "68" ;
+                  ecrm:P3_has_note              "H 68"
+                ] ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "16" ;
+                                      ecrm:P3_has_note         "Op. 16"
+                                    ] ;
+        ecrm:P102_has_title         "Harold en Italie" ;
+        ecrm:P3_has_note            "Ecrite à la demande de Paganini, l'oeuvre comprend 4 mouvements ou épisodes : 1-Harold aux montagnes, 2-Marche des pèlerins chantant la prière du soir, 3-Sérénade d'un montagnard des Abruzzes à sa maîtresse, 4-Orgie des brigands, finale. Durée d'éxécution : 40 minutes environ" , "Créé à Paris, salle du Conservatoire, le 23 novembre 1834. Premiére édition : Paris : Brandus et Cie, 1848" .
+
+<http://data.doremus.org/expression/69ec6f7d-ae29-334b-8991-6b3ccab7c672/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 flûtes, 2 clarinettes, 2 hautbois, 4 bassons, 4 cors, 2 trompettes, 2 cornets à pistons, 3 trombones, timbales, trinagle, 1 harpe, quintette à cordes et alto solo" .
+
+<http://data.doremus.org/event/9ccddf95-072e-3322-b06b-32256bc70a32>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "janvier-22 juin 1834" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1834"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6403ae22-00e3-3c80-9ed9-37aa64b70aae>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/69ec6f7d-ae29-334b-8991-6b3ccab7c672> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/29a762c5-a984-3636-95eb-80e1e315b463> .
+
+<http://data.doremus.org/work/29a762c5-a984-3636-95eb-80e1e315b463>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/1378e41c-c431-333d-b268-0dcbe47da36b> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/69ec6f7d-ae29-334b-8991-6b3ccab7c672> .
+
+<http://data.doremus.org/event/48cc4fe9-a0d3-354e-8c47-6bb41cbd086d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e787bd29-6f48-3e0b-95a8-725b0c7a4202> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/69ec6f7d-ae29-334b-8991-6b3ccab7c672> .

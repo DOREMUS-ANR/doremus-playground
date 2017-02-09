@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/70b9cb6c-db33-343b-9219-294ee433ec86/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "quintette à vents"@fr
+                                              ]
+                                    ] ;
+        ecrm:P3_has_note            "Quintette à vents" .
+
+<http://data.doremus.org/work/4603bd18-1f5a-3f69-8297-b6220aee2d76>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/83decfa0-b144-3622-bbcb-efc46b0dad85> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/70b9cb6c-db33-343b-9219-294ee433ec86> .
+
+<http://data.doremus.org/expression/a1987c08-0524-33a5-a5fc-ff45b43a986b>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/70b9cb6c-db33-343b-9219-294ee433ec86> .
+
+<http://data.doremus.org/work/83decfa0-b144-3622-bbcb-efc46b0dad85>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/178c0ff6-7414-372f-8b67-d6b07a3b1234> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/70b9cb6c-db33-343b-9219-294ee433ec86> .
+
+<http://data.doremus.org/event/bd632da5-652c-316e-8311-9597a3126698>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/4603bd18-1f5a-3f69-8297-b6220aee2d76> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/70b9cb6c-db33-343b-9219-294ee433ec86> .
+
+<http://data.doremus.org/performance/178c0ff6-7414-372f-8b67-d6b07a3b1234>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1969-10-06" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/a1987c08-0524-33a5-a5fc-ff45b43a986b> .
+
+<http://data.doremus.org/event/4cd0737b-4813-3afa-8634-40e0f41e8051>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/a1987c08-0524-33a5-a5fc-ff45b43a986b> .
+
+<http://data.doremus.org/event/66d01250-d3b8-3354-b46b-dd5fb7e9db44>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1953/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/4a7d5c3f-d6bf-34c9-a21c-44860c71ed1a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/70b9cb6c-db33-343b-9219-294ee433ec86> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/83decfa0-b144-3622-bbcb-efc46b0dad85> .
+
+<http://data.doremus.org/artist/4a7d5c3f-d6bf-34c9-a21c-44860c71ed1a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/70b9cb6c-db33-343b-9219-294ee433ec86>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/qui> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/70b9cb6c-db33-343b-9219-294ee433ec86/casting/1> ;
+        ecrm:P102_has_title  "6 bagatelles" ;
+        ecrm:P3_has_note     "Transcription de 6 des 11 pièces pour piano \"Musica ricercata\"" , "Créé à Sodertalje, Suède" .

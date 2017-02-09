@@ -1,0 +1,47 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/3e251993-c22e-31a0-a384-a5517c016b7b>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/bffdb804-4bb5-3e2d-b3f6-1012bd74dbc7> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/be8299b7-9edc-3774-a52e-f7701bca1c52> .
+
+<http://data.doremus.org/expression/be8299b7-9edc-3774-a52e-f7701bca1c52>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/mld> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "29" ;
+                                      ecrm:P3_has_note         "Op. 29"
+                                    ] ;
+        ecrm:P102_has_title         "Stances d'amour et de rêve" ;
+        ecrm:P3_has_note            "Sur des poèmes de Sully-Prudhomme" , "Éd. : Durand" , "Comprend : \"Les chaînes\" ; \"Chanson de mer\" ; \"À l'hirondelle\" ; \"Ressemblance\" ; \"Le galop\"" .
+
+<http://data.doremus.org/work/bffdb804-4bb5-3e2d-b3f6-1012bd74dbc7>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/5cfb9aa7-3aab-334d-bdaa-a12babdb75ef> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/be8299b7-9edc-3774-a52e-f7701bca1c52> .
+
+<http://data.doremus.org/artist/fb4cfe55-8d6e-3e0b-93a4-830e2271604b>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/c7e91934-ba70-3f7f-8bff-a5e1e7f12a20>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19120101/19121231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/fb4cfe55-8d6e-3e0b-93a4-830e2271604b>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/be8299b7-9edc-3774-a52e-f7701bca1c52> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/5cfb9aa7-3aab-334d-bdaa-a12babdb75ef> .
+
+<http://data.doremus.org/work/5cfb9aa7-3aab-334d-bdaa-a12babdb75ef>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/be8299b7-9edc-3774-a52e-f7701bca1c52> .

@@ -1,0 +1,58 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/c501b67c-021d-3e85-9e09-867b4b1873fd>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/5526f16f-b720-3201-9529-b7b8c46b7d8e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/7b00f387-525a-3abc-8401-4744af2ecbad> .
+
+<http://data.doremus.org/expression/7b00f387-525a-3abc-8401-4744af2ecbad>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/7b00f387-525a-3abc-8401-4744af2ecbad/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "W" ;
+                  mus:U41_has_catalogue_number  "45" ;
+                  ecrm:P3_has_note              "W 45"
+                ] ;
+        ecrm:P102_has_title  "Trois pièces pour clarinette seule" , "3 pièces" ;
+        ecrm:P3_has_note     "Créées par E. Allegra, Lausanne, Conservatoire, le 8 novembre 1919" , "Éd. : 1920" .
+
+<http://data.doremus.org/work/f7b8dfb1-311b-3667-a242-50394c18c339>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/7b00f387-525a-3abc-8401-4744af2ecbad> .
+
+<http://data.doremus.org/event/ae7a36b5-9733-3a0e-a18f-a90d9dbe4e90>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19190101/19191231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/66c12539-0668-30c5-93a0-6990cacaabe2>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/7b00f387-525a-3abc-8401-4744af2ecbad> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f7b8dfb1-311b-3667-a242-50394c18c339> .
+
+<http://data.doremus.org/work/5526f16f-b720-3201-9529-b7b8c46b7d8e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f7b8dfb1-311b-3667-a242-50394c18c339> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/7b00f387-525a-3abc-8401-4744af2ecbad> .
+
+<http://data.doremus.org/artist/66c12539-0668-30c5-93a0-6990cacaabe2>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/7b00f387-525a-3abc-8401-4744af2ecbad/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/wcl>
+                                    ] ;
+        ecrm:P3_has_note            <http://data.doremus.org/vocabulary/itema3/mop/14> .

@@ -1,0 +1,74 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/242cf75e-ba41-36b7-83ba-2bbedf8d9bd1>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/0827bbee-d450-3cad-a833-86de00e2472c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/0fd718f1-1ade-37d9-ad84-5c924c49b95b> .
+
+<http://data.doremus.org/performance/0827bbee-d450-3cad-a833-86de00e2472c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Exécuté à la Thomaskirche et à la Nicolaikirche de Leipzig pendant les fêtes de Noël 1734-35." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/463c5c54-d38e-378a-88b6-cdb36520c431> .
+
+<http://data.doremus.org/work/f101e7d7-c047-3807-99c3-bafba48b8db0>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/242cf75e-ba41-36b7-83ba-2bbedf8d9bd1> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/0fd718f1-1ade-37d9-ad84-5c924c49b95b> .
+
+<http://data.doremus.org/event/07f29619-1e97-3a1b-a674-8e7e6946373e>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1734" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1734"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/0fd718f1-1ade-37d9-ad84-5c924c49b95b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/242cf75e-ba41-36b7-83ba-2bbedf8d9bd1> .
+
+<http://data.doremus.org/event/3b2b5387-8fda-33fc-9fd3-0211049d2f7d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f101e7d7-c047-3807-99c3-bafba48b8db0> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/0fd718f1-1ade-37d9-ad84-5c924c49b95b> .
+
+<http://data.doremus.org/expression/463c5c54-d38e-378a-88b6-cdb36520c431>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/0fd718f1-1ade-37d9-ad84-5c924c49b95b> .
+
+<http://data.doremus.org/expression/0fd718f1-1ade-37d9-ad84-5c924c49b95b/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Soprano, alto, ténor et basse solistes, choeur mixte, orchestre et basse continue." .
+
+<http://data.doremus.org/expression/0fd718f1-1ade-37d9-ad84-5c924c49b95b>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/oratorio> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique sacrée"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/0fd718f1-1ade-37d9-ad84-5c924c49b95b/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "BWV" ;
+                  mus:U41_has_catalogue_number  "248" ;
+                  ecrm:P3_has_note              "BWV 248"
+                ] ;
+        ecrm:P102_has_title  "Weihnachts-Oratorium" , "Oratorium tempore Nativitatis Christi" , "Oratorio de Noël" , "Christmas-Oratorio" ;
+        ecrm:P3_has_note     "Ecrite pour les six jours de fête du temps de Noël, cette oeuvre n'est pas une juxtaposition de cantates, mais une seule et même histoire, de la naissance de Jésus à l'adoration des Rois mages. Les récitatifs de l'Evangéliste (ténor) jouent le rôle de fil conducteur. Six parties : \"Jauchzet, frohlocket, auf, preiset die Tage !\" pour le 25 décembre (28 min environ) ; \"Und es waren Hirten in derselben Gegend\", recensement de Bethléem et naissance de Jésus, 26 décembre (27 min environ) ; \"Herrscher des Himmels, erhöre das Lallen\", annonciation aux bergers, 27 décembre (25 min environ) ; \"Fallt mit Danken, fallt mit Loben\", Nouvel An, circoncision (25 min environ) ; \"Ehre sei dir, Gott, gesugen\", arrivée des Rois mages, 2 janvier (25 min environ) ; \"Herr, wenn die stolzen Feinde schauben\", Epiphanie, adoration des Rois mages, 6 janvier (26 min environ). Durée d'exécution de l'ensemble : 2h 35 min environ." , "Exécuté à la Thomaskirche et à la Nicolaikirche de Leipzig pendant les fêtes de Noël 1734-35." .

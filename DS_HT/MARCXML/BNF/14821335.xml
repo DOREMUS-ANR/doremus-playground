@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="14821335" format="InterXMarc_Complet" type="Authority">
+<leader>00480c1 au22000272  45  <Pos Code="0004">00480</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF148213354<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">14821335</Pos>
+<Pos Code="13">4</Pos>
+</controlfield>
+<controlfield tag="008">011129071019yy    qua       1798      1800                   1   <Pos Code="0001">01</Pos>
+<Pos Code="0203">11</Pos>
+<Pos Code="0405">29</Pos>
+<Pos Code="0607">07</Pos>
+<Pos Code="0809">10</Pos>
+<Pos Code="1011">19</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820" Sens="quatuor instrumental">qua</Pos>
+<Pos Code="2831">1798</Pos>
+<Pos Code="3841">1800</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">sa02<Pos Code="0001" Sens="cordes frottées - violon">sa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">sb01<Pos Code="0001" Sens="cordes frottées - alto">sb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">sc01<Pos Code="0001" Sens="cordes frottées - violoncelle">sc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13891295</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Beethoven</subfield>
+	<subfield code="m">Ludwig van</subfield>
+	<subfield code="d">1770-1827</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Quatuors</subfield>
+	<subfield code="b">Cordes</subfield>
+	<subfield code="p">Op. 18, no 5</subfield>
+	<subfield code="t">La majeur</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Quatuors</subfield>
+	<subfield code="b">Cordes</subfield>
+	<subfield code="n">No 5</subfield>
+	<subfield code="t">La majeur</subfield>
+</datafield>
+<datafield tag="502" ind1=" " ind2=" ">
+	<subfield code="3">13958298</subfield>
+	<subfield code="a">Beethoven</subfield>
+	<subfield code="m">Ludwig van</subfield>
+	<subfield code="d">1770-1827</subfield>
+	<subfield code="t">[Quatuors. Op. 18]</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Kinsky</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100480720</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100365870</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">13908173</subfield>
+	<subfield code="d">20071017</subfield>
+</datafield>
+<Alter Ori="13891295">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Beethoven</subfield>
+	<subfield code="m">Ludwig von</subfield>
+	<subfield code="d">1770-1827</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb148213357</Attr>
+<Attr Nom="NumSource">OPD 100480720</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1389129513958298</Attr>
+<Attr Nom="DateCreation">29/11/ 2001</Attr>
+<Attr Nom="ResponsableCreation">MIGV3</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">09/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">29/11/ 2001</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV3</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource" Rep="1">OPC 100365870</Attr>
+<Attr Nom="NumSource" Rep="2">OPP 13908173</Attr>
+</record>

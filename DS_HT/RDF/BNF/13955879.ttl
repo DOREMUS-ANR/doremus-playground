@@ -1,0 +1,92 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/24ac166b-c63f-3f08-88e7-ace7bc79cf95>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/gm> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/qui> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/24ac166b-c63f-3f08-88e7-ace7bc79cf95/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "39" ;
+                                      ecrm:P3_has_note         "Op. 39"
+                                    ] ;
+        ecrm:P3_has_note            "Musique pour le ballet \"Trapetsiya\" (\"Trapèze\") jouée également au concert" .
+
+<http://data.doremus.org/work/d0da7c50-9479-3c17-8a7a-9685a2d8c711>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/b0862e21-77aa-3f9a-ab8b-dc4f616bc881> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/24ac166b-c63f-3f08-88e7-ace7bc79cf95> .
+
+<http://data.doremus.org/expression/24ac166b-c63f-3f08-88e7-ace7bc79cf95/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/wcl>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/wob>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/svl>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/sva>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/sdb>
+                                    ] ;
+        ecrm:P3_has_note            "Clarinette, hautbois, violon, alto, contrebasse" .
+
+<http://data.doremus.org/event/0b13e08f-5e11-33a7-90dd-5d9041e429e1>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/29a9b68e-04cf-3dde-9a9a-edff89b04686> .
+
+<http://data.doremus.org/event/83560ec4-fdbc-38ba-bc37-b8336df68d65>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19240101/19241231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/94a56443-a4ef-35c5-a038-dac310adba2e>
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7d712efc-ad17-3dba-931a-78804eb18bce>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/24ac166b-c63f-3f08-88e7-ace7bc79cf95> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/b0862e21-77aa-3f9a-ab8b-dc4f616bc881> .
+
+<http://data.doremus.org/event/1afb18a3-9b36-37bd-bc6c-b6f4024b6c36>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/d0da7c50-9479-3c17-8a7a-9685a2d8c711> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/24ac166b-c63f-3f08-88e7-ace7bc79cf95> .
+
+<http://data.doremus.org/performance/e6f05d74-77c3-393f-bde0-5f6f7805e9dc>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution (comme musique de ballet) : Berlin, 1925" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/29a9b68e-04cf-3dde-9a9a-edff89b04686> .
+
+<http://data.doremus.org/expression/29a9b68e-04cf-3dde-9a9a-edff89b04686>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/24ac166b-c63f-3f08-88e7-ace7bc79cf95> .
+
+<http://data.doremus.org/artist/94a56443-a4ef-35c5-a038-dac310adba2e>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/b0862e21-77aa-3f9a-ab8b-dc4f616bc881>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/24ac166b-c63f-3f08-88e7-ace7bc79cf95> .
+
+<http://data.doremus.org/artist/7d712efc-ad17-3dba-931a-78804eb18bce>
+        a       ecrm:E21_Person .

@@ -1,0 +1,66 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/4d5dce02-3b0b-34e5-bb84-9e7faffa1e33>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/9d822de2-afb0-3ac6-9135-eab6cb3e7a10> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d> .
+
+<http://data.doremus.org/artist/7c090d69-93dc-397d-985f-a75268cbab51>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "3" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d/casting/1> ;
+        ecrm:P102_has_title       "Sonate pour piano no 3" , "Sonata" , "Troisième sonate pour piano" ;
+        ecrm:P3_has_note          "Créée à Darmstadt par le compositeur en 1957" , "Cette sonate est constituée de cinq \"formants\" : Antiphonie, Trope, Constellation, Strophe et Séquence. Seuls les 2e et 3e formants sont publiés. Le Formant 2 (Trope) est composé de quatre sections : Commentaire, Glose , Texte, Parenthèse, qui peuvent être jouées dans différents ordres. Cette oeuvre nécessite un piano à 3 pédales. - Durée d'exécution : 20 minutes environ" .
+
+<http://data.doremus.org/work/83320d92-deac-3351-83ff-7fe3a6f2f2a7>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/8b486679-a1cb-3966-aa1d-7b5b60c65d94> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d> .
+
+<http://data.doremus.org/work/9d822de2-afb0-3ac6-9135-eab6cb3e7a10>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/83320d92-deac-3351-83ff-7fe3a6f2f2a7> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d> .
+
+<http://data.doremus.org/event/f3e8099d-0dad-3dfe-8f09-e5f26673533a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1955-1957" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1955/1957"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7c090d69-93dc-397d-985f-a75268cbab51>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/83320d92-deac-3351-83ff-7fe3a6f2f2a7> .
+
+<http://data.doremus.org/performance/8b486679-a1cb-3966-aa1d-7b5b60c65d94>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée à Darmstadt par le compositeur en 1957" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/2acd4f4b-017f-37e5-b967-11d499468a40> .
+
+<http://data.doremus.org/expression/2acd4f4b-017f-37e5-b967-11d499468a40>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d> .

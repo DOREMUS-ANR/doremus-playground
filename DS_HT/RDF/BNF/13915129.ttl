@@ -1,0 +1,76 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/c5548a52-1da2-348d-9eb0-311293232d05>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/opc> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "384" ;
+                  ecrm:P3_has_note              "KV 384"
+                ] ;
+        ecrm:P102_has_title  "Die Entführung aus dem Serail" , "L'enlèvement au sérail" ;
+        ecrm:P3_has_note     "Singspiel en 3 actes" , "Livret de Gottlieb Stephanie" , "Inspiré de la pièce \"Belmonte und Constanze\" de Bretzner" .
+
+<http://data.doremus.org/performance/60941cf3-f857-3ee8-a939-22b5980d24c9>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation à l'Opéra de Paris : 1er décembre 1903" , "1re représentation en France (en allemand) :  Paris, Lycée des Arts, 26 septembre 1798" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/771f6073-aa8a-32ec-8785-943f321efdae> .
+
+<http://data.doremus.org/event/b7e23311-4acb-3c23-acc9-0aa806f7743c>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b1f11f22-666b-3694-8419-3a1ac5d34dd5> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c5548a52-1da2-348d-9eb0-311293232d05> .
+
+<http://data.doremus.org/event/e17bc3cc-bee4-3714-888c-f9ae75b888ec>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/ec7efccb-1012-3e7e-8407-852b48e116a3> .
+
+<http://data.doremus.org/work/0c5f84ad-5137-339d-8002-044856a926ed>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/33f9e2f9-9933-3225-84dc-96c93587a7f8> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c5548a52-1da2-348d-9eb0-311293232d05> .
+
+<http://data.doremus.org/performance/33f9e2f9-9933-3225-84dc-96c93587a7f8>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation : Vienne, Burgtheater, 16 juillet 1782" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/ec7efccb-1012-3e7e-8407-852b48e116a3> .
+
+<http://data.doremus.org/event/edd06f40-f412-30e8-a729-cb1032cc1a16>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/771f6073-aa8a-32ec-8785-943f321efdae> .
+
+<http://data.doremus.org/work/b1f11f22-666b-3694-8419-3a1ac5d34dd5>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0c5f84ad-5137-339d-8002-044856a926ed> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c5548a52-1da2-348d-9eb0-311293232d05> .
+
+<http://data.doremus.org/event/7b718646-71c3-3fb7-9072-8b21f912be68>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17820101/17821231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c5548a52-1da2-348d-9eb0-311293232d05> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0c5f84ad-5137-339d-8002-044856a926ed> .
+
+<http://data.doremus.org/expression/771f6073-aa8a-32ec-8785-943f321efdae>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c5548a52-1da2-348d-9eb0-311293232d05> .
+
+<http://data.doremus.org/expression/ec7efccb-1012-3e7e-8407-852b48e116a3>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c5548a52-1da2-348d-9eb0-311293232d05> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .

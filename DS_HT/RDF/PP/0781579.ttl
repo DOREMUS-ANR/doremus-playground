@@ -1,0 +1,85 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/f740b3c6-509b-352d-9654-3d22f2bc07bf>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/f74185a7-8b10-3384-b32e-a377f790ae04>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/dad35f18-8f41-3bf1-95e0-2b28c025b49f> .
+
+<http://data.doremus.org/expression/5aad564e-0b51-3209-ba1e-cd5eab7c26c4>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "8" ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/cm> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/5aad564e-0b51-3209-ba1e-cd5eab7c26c4/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "WAB 108" ;
+                                      ecrm:P3_has_note         "WAB 108"
+                                    ] ;
+        ecrm:P102_has_title         "Symphonie no 8 en do mineur" , "Symphony no 4 in c" , "Sinfonie no 8" , "Symphonie no 8" ;
+        ecrm:P3_has_note            "Créée à Londres en version complète le 2 septembre 1973. Version révisée créée à Vienne, le 18 décembre 1892 sous la direction de Hans Richter. Première édition : Berlin, 1892" , "C'est la symphonie la plus monumentale de l'auteur avec un effectif encore jamais atteint sauf chez Berlioz, et, pour la seule fois chez Bruckner des harpes. Comprend : 1- allegro moderato, 2- scherzo (allegro moderato), 3- adagio, 4- finale" .
+
+<http://data.doremus.org/event/26bf448f-0292-360a-8c04-7fb8089c7905>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Première édition : Berlin, 1892" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f74185a7-8b10-3384-b32e-a377f790ae04> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/dad35f18-8f41-3bf1-95e0-2b28c025b49f> .
+
+<http://data.doremus.org/expression/1f9b3700-4388-3795-85e6-6b9c3e70dcf0>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/5aad564e-0b51-3209-ba1e-cd5eab7c26c4> .
+
+<http://data.doremus.org/work/c10a9e46-7b1c-397b-94c6-86666093f90d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/06c495fc-a253-30b1-8f87-fc37c96d9126> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/5aad564e-0b51-3209-ba1e-cd5eab7c26c4> .
+
+<http://data.doremus.org/expression/5aad564e-0b51-3209-ba1e-cd5eab7c26c4/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Les bois par 3; 8 cors, 3 trompettes, 3 trombones, 1 tuba-contrebasse; timbales et batterie (cymbales); 3 harpes; cordes" .
+
+<http://data.doremus.org/event/31370380-0905-3f26-8de7-7d445036014b>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1884-1887" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1884/1887"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/f740b3c6-509b-352d-9654-3d22f2bc07bf>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/5aad564e-0b51-3209-ba1e-cd5eab7c26c4> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/06c495fc-a253-30b1-8f87-fc37c96d9126> .
+
+<http://data.doremus.org/work/06c495fc-a253-30b1-8f87-fc37c96d9126>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/26bf448f-0292-360a-8c04-7fb8089c7905> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/47629245-0dc5-330a-83ba-ebc3a5cc6234> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/5aad564e-0b51-3209-ba1e-cd5eab7c26c4> .
+
+<http://data.doremus.org/event/d64f1727-0d19-35d6-b5d6-0a23695e4846>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c10a9e46-7b1c-397b-94c6-86666093f90d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/5aad564e-0b51-3209-ba1e-cd5eab7c26c4> .
+
+<http://data.doremus.org/performance/47629245-0dc5-330a-83ba-ebc3a5cc6234>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée à Londres en version complète le 2 septembre 1973. Version révisée créée à Vienne, le 18 décembre 1892 sous la direction de Hans Richter." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/1f9b3700-4388-3795-85e6-6b9c3e70dcf0> .
+
+<http://data.doremus.org/publication/dad35f18-8f41-3bf1-95e0-2b28c025b49f>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/5aad564e-0b51-3209-ba1e-cd5eab7c26c4> .

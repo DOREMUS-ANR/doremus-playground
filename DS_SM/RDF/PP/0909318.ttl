@@ -1,0 +1,89 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/29c6123f-6445-386f-944c-94d32a4bdf77>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Première édition : Paris, Durand, 1922" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/5f194371-9811-335e-a112-7da6725723c6> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/8b02ed11-0dcc-3039-88bf-fce56d79a3a4> .
+
+<http://data.doremus.org/expression/ea27e80d-b908-3f43-9146-9b1252754fb8>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6> .
+
+<http://data.doremus.org/event/9e33d3fd-acba-3bac-83f6-138ff1532046>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8a592b13-f50f-3378-9b97-4a0459e7c54f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6> .
+
+<http://data.doremus.org/work/3360e0c1-7e7e-3fe9-ab81-b39dc04952f2>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/29c6123f-6445-386f-944c-94d32a4bdf77> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/bf736c52-4aeb-31cd-add9-71232ed896e3> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6> .
+
+<http://data.doremus.org/event/a60f62e3-57e2-3812-aa0f-6e92870dcb90>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1921" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1921"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/8f51a4f6-eb1a-3ad6-8071-f41aa77f0f52>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3360e0c1-7e7e-3fe9-ab81-b39dc04952f2> .
+
+<http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/mld> ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "cycle de mélodies"@fr
+                                    ] ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "mélodie française"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "118" ;
+                                      ecrm:P3_has_note         "Op. 118"
+                                    ] ;
+        ecrm:P102_has_title         "L'horizon chimérique : La mer est infinie. Je me suis embarqué. Diane Séléné. Vaisseaux, nous vous aurons aimés" , "L'horizon chimérique" ;
+        ecrm:P3_has_note            "Créé à Paris, Société nationale de musique, le 13 mai 1922. Première édition : Paris, Durand, 1922" , "Cycle de mélodies sur des poèmes de Jean de La Ville de Mirmont, dédicacé à Charles Panzéra. Comprend : 1- La mer est infinie. 2- Je me suis embarqué. 3- Diane Séléné. 4- Vaisseaux, nous vous aurons aimés" .
+
+<http://data.doremus.org/performance/bf736c52-4aeb-31cd-add9-71232ed896e3>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Paris, Société nationale de musique, le 13 mai 1922." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/ea27e80d-b908-3f43-9146-9b1252754fb8> .
+
+<http://data.doremus.org/publication/8b02ed11-0dcc-3039-88bf-fce56d79a3a4>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6> .
+
+<http://data.doremus.org/artist/8f51a4f6-eb1a-3ad6-8071-f41aa77f0f52>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/8a592b13-f50f-3378-9b97-4a0459e7c54f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/3360e0c1-7e7e-3fe9-ab81-b39dc04952f2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6> .
+
+<http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Chant et piano" .
+
+<http://data.doremus.org/work/5f194371-9811-335e-a112-7da6725723c6>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/8b02ed11-0dcc-3039-88bf-fce56d79a3a4> .

@@ -1,0 +1,56 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/2457c5ca-8e35-32b1-87bb-78d09cf4a824>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/d6687dee-2c88-3973-b7a7-24bb62a209fe>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/c759101e-89fc-33df-820f-3b2f37351e56> .
+
+<http://data.doremus.org/expression/c759101e-89fc-33df-820f-3b2f37351e56>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/065ddfe7-beb2-359d-a2c7-e5195bb9bc37> .
+
+<http://data.doremus.org/performance/5381bf5d-02fe-3325-b400-fe11bf6240db>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution de la version définitive : Paris, Théâtre des Italiens, 7 janvier 1842" , "1re exécution de la 1re version : Madrid, Cappella di San-Filippo-el-Real, vendredi saint, 1833" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/c759101e-89fc-33df-820f-3b2f37351e56> .
+
+<http://data.doremus.org/expression/065ddfe7-beb2-359d-a2c7-e5195bb9bc37>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/seq> ;
+        ecrm:P102_has_title  "Stabat Mater" ;
+        ecrm:P3_has_note     "Il existe deux versions : 1re version, inachevée, terminée par Giuseppe Tadolini (1832) ; 2e version, entièrement de la main de Rossini (1841)" .
+
+<http://data.doremus.org/event/62529505-e679-3801-ac6f-3d98f18c356a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18320101/18411231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/2457c5ca-8e35-32b1-87bb-78d09cf4a824>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/065ddfe7-beb2-359d-a2c7-e5195bb9bc37> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0a1d8881-5d85-3b4d-81d2-1e2cc26de2da> .
+
+<http://data.doremus.org/event/004cdd58-078b-3ae2-b4bf-1afc0f57b2cc>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c38dd08f-2f80-390e-ac99-4b3194129bf3> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/065ddfe7-beb2-359d-a2c7-e5195bb9bc37> .
+
+<http://data.doremus.org/work/0a1d8881-5d85-3b4d-81d2-1e2cc26de2da>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/065ddfe7-beb2-359d-a2c7-e5195bb9bc37> .
+
+<http://data.doremus.org/work/c38dd08f-2f80-390e-ac99-4b3194129bf3>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0a1d8881-5d85-3b4d-81d2-1e2cc26de2da> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/065ddfe7-beb2-359d-a2c7-e5195bb9bc37> .

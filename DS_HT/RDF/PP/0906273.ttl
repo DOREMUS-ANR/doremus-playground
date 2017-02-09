@@ -1,0 +1,69 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/872a9eb8-51f3-3fe0-9694-9e2042c1b667>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/872a9eb8-51f3-3fe0-9694-9e2042c1b667/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "7" ;
+                                      ecrm:P3_has_note         "Op.7"
+                                    ] ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "48" ;
+                                      ecrm:P3_has_note         "Op. 48"
+                                    ] ;
+        ecrm:P102_has_title         "Reflections on a song of Dowland" , "Lachrymae" ;
+        ecrm:P3_has_note            "Reflections on a Song of John Dowland. Version révisée en 1970. Britten en fera une version pour orchestre en 1976 sous le numéro d'Opus 48a. ." , "Créé à Aldeburgh, le 20 juin 1950 par W. Primrose et Britten. Création de la version pour orchestre à Recklinghausen, le 3 Mai 1977, avec R. Moog, Westphalian SO, sous la conduite de K.A. Rickenbacher." .
+
+<http://data.doremus.org/event/57eae4bb-eeb9-338d-a7b8-82055050621c>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/54f893ee-8357-315a-ad7c-6992b4f87a46> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/872a9eb8-51f3-3fe0-9694-9e2042c1b667> .
+
+<http://data.doremus.org/work/f17b2cef-0e59-3bdf-b792-5ad10abfa717>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/4e5cde65-5d36-3362-9648-e9c5b7f2e008> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/872a9eb8-51f3-3fe0-9694-9e2042c1b667> .
+
+<http://data.doremus.org/expression/872a9eb8-51f3-3fe0-9694-9e2042c1b667/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Alto et piano" .
+
+<http://data.doremus.org/work/54f893ee-8357-315a-ad7c-6992b4f87a46>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f17b2cef-0e59-3bdf-b792-5ad10abfa717> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/872a9eb8-51f3-3fe0-9694-9e2042c1b667> .
+
+<http://data.doremus.org/artist/a35e280f-9148-3a6f-ab07-340977855cbf>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/4e5cde65-5d36-3362-9648-e9c5b7f2e008>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Aldeburgh, le 20 juin 1950 par W. Primrose et Britten. Création de la version pour orchestre à Recklinghausen, le 3 Mai 1977, avec R. Moog, Westphalian SO, sous la conduite de K.A. Rickenbacher." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/13aad00f-c42f-3ee1-9b37-465a2358b329> .
+
+<http://data.doremus.org/expression/13aad00f-c42f-3ee1-9b37-465a2358b329>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/872a9eb8-51f3-3fe0-9694-9e2042c1b667> .
+
+<http://data.doremus.org/event/70710925-0901-3962-b83c-7d4310492732>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1950" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1950"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a35e280f-9148-3a6f-ab07-340977855cbf>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/872a9eb8-51f3-3fe0-9694-9e2042c1b667> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f17b2cef-0e59-3bdf-b792-5ad10abfa717> .

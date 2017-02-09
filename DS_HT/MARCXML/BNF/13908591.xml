@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13908591" format="InterXMarc_Complet" type="Authority">
+<leader>01440c0 au2200027   45  <Pos Code="0004">01440</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF13908591X<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13908591</Pos>
+<Pos Code="13">X</Pos>
+</controlfield>
+<controlfield tag="008">890821150204yyfre inm       187207    187208                 010 <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">15</Pos>
+<Pos Code="0809">02</Pos>
+<Pos Code="1011">04</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="français">fre</Pos>
+<Pos Code="1820" Sens="musique de scène">inm</Pos>
+<Pos Code="2831">1872</Pos>
+<Pos Code="3233">07</Pos>
+<Pos Code="3841">1872</Pos>
+<Pos Code="4243">08</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">ca01<Pos Code="0001" Sens="choeurs - mixte (4 voix SATB)">ca</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">oa01<Pos Code="0001" Sens="orchestre - orchestre symphonique XIXe-XXe s.">oa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13891543</subfield>
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Bizet</subfield>
+	<subfield code="m">Georges</subfield>
+	<subfield code="d">1838-1875</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a" Barre="2">L&apos;Arlésienne</subfield>
+	<subfield code="k">GB 30</subfield>
+</datafield>
+<datafield tag="301" ind1="2" ind2=" ">
+	<subfield code="3">14836414</subfield>
+	<subfield code="a">Bizet</subfield>
+	<subfield code="m">Georges</subfield>
+	<subfield code="d">1838-1875</subfield>
+	<subfield code="t">[Méditation]</subfield>
+</datafield>
+<datafield tag="301" ind1="2" ind2=" ">
+	<subfield code="3">13908592</subfield>
+	<subfield code="a">Bizet</subfield>
+	<subfield code="m">Georges</subfield>
+	<subfield code="d">1838-1875</subfield>
+	<subfield code="t" Barre="3">[L&apos;Arlésienne (Suites. No 1. GB 121)]</subfield>
+</datafield>
+<datafield tag="301" ind1="2" ind2=" ">
+	<subfield code="3">13908593</subfield>
+	<subfield code="a">Bizet</subfield>
+	<subfield code="m">Georges</subfield>
+	<subfield code="d">1838-1875</subfield>
+	<subfield code="t" Barre="3">[L&apos;Arlésienne (Suites. No 2)]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">13999297</subfield>
+	<subfield code="a">Bizet</subfield>
+	<subfield code="m">Georges</subfield>
+	<subfield code="d">1838-1875</subfield>
+	<subfield code="t" Barre="3">[L&apos;Arlésienne. GB 30. Acte 2. Intermezzo]</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">14827538</subfield>
+	<subfield code="a">Bizet</subfield>
+	<subfield code="m">Georges</subfield>
+	<subfield code="d">1838-1875</subfield>
+	<subfield code="t" Barre="3">[L&apos;Arlésienne. GB 30. Acte 3. Farandole]</subfield>
+</datafield>
+<datafield tag="320" ind1=" " ind2=" ">
+	<subfield code="3">13334623</subfield>
+	<subfield code="9">145</subfield>
+	<subfield code="a">Petit</subfield>
+	<subfield code="m">Roland</subfield>
+	<subfield code="e">1924-....</subfield>
+	<subfield code="t" Barre="2">L&apos;arlésienne</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Musique de scène avec choeur pour le drame éponyme en 3 actes d&apos;Alphonse Daudet</subfield>
+	<subfield code="a">Date de composition : juillet-août 1872</subfield>
+	<subfield code="a">1re représentation : Paris, Théâtre du Vaudeville, 1er octobre 1872</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Il existe deux suites d&apos;orchestre tirées de la musique de scène : une première par Bizet (1872), une seconde par Ernest Guiraud (1879)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Macdonald, Bizet</subfield>
+	<subfield code="u">http://digital.wustl.edu/bizet/</subfield>
+	<subfield code="d">2015-01-23</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Georges Bizet : naissance d&apos;une identité créatrice / Hervé Lacombe, 2000</subfield>
+	<subfield code="a">Dictionnaire des oeuvres de l&apos;art vocal</subfield>
+	<subfield code="a">Grove music online</subfield>
+	<subfield code="u">http://www.oxfordmusiconline.com</subfield>
+	<subfield code="d">2011-09-06</subfield>
+</datafield>
+<datafield tag="624" ind1=" " ind2=" ">
+	<subfield code="a">780<Pos Code="0002" Sens="Musique">780</Pos>
+</subfield>
+</datafield>
+<datafield tag="907" ind1=" " ind2=" ">
+	<subfield code="o">GEA</subfield>
+	<subfield code="a">008248300</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPL</subfield>
+	<subfield code="a">01414457X</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100370490</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100319770</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14808097</subfield>
+	<subfield code="d">20090619</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">16303703</subfield>
+	<subfield code="d">20130211</subfield>
+</datafield>
+<Alter Ori="13891543">
+<datafield tag="031" ind1=" " ind2=" ">
+	<subfield code="a">0000000121204254</subfield>
+	<subfield code="2" Sens="ISNI chargé à partir de VIAF">VIAF</subfield>
+	<subfield code="d">20130731<Pos Code="0003">2013</Pos>
+<Pos Code="0407" Sens="31 juillet">0731</Pos>
+</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb13908591k</Attr>
+<Attr Nom="NumSource">GEA 008248300</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">138915431390859213908593139992971482753813334623</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">04/02/ 2015</Attr>
+<Attr Nom="ResponsableDerniereValidation">PUYRENIER FREDERIC</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">82</Attr>
+<Attr Nom="NumSource" Rep="1">OPL 01414457X</Attr>
+<Attr Nom="NumSource" Rep="2">OPC 100370490</Attr>
+<Attr Nom="NumSource" Rep="3">OPD 100319770</Attr>
+<Attr Nom="NumSource" Rep="4">OPP 14808097</Attr>
+<Attr Nom="NumSource" Rep="5">OPP 16303703</Attr>
+</record>

@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/e38af9f9-bb1e-3ae2-bba5-7cc8276eda83>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1984/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/9b65708b-cf8b-3f41-9169-03857cd71022> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/9625d40a-1851-3f9e-85b7-41231ea1af39> .
+
+<http://data.doremus.org/event/593d69e1-453b-3910-b444-ab6f8a1b841f>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/09d80649-b99f-3a3a-ba2e-f3d9fb8d8262> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/9b65708b-cf8b-3f41-9169-03857cd71022> .
+
+<http://data.doremus.org/expression/484c8815-1d51-3bc8-a5f9-8cfc19f37084>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/9b65708b-cf8b-3f41-9169-03857cd71022> .
+
+<http://data.doremus.org/performance/1dbc121f-cd6b-38a7-bc93-0887e5dfdad8>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1984" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/484c8815-1d51-3bc8-a5f9-8cfc19f37084> .
+
+<http://data.doremus.org/event/619d5222-f2f4-37fc-b525-177ca7ed28e4>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/484c8815-1d51-3bc8-a5f9-8cfc19f37084> .
+
+<http://data.doremus.org/expression/9b65708b-cf8b-3f41-9169-03857cd71022>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "Sequenza X" ;
+        ecrm:P3_has_note     "Créé parThomas Stevens à Los Angeles" .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/9625d40a-1851-3f9e-85b7-41231ea1af39>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/1dbc121f-cd6b-38a7-bc93-0887e5dfdad8> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/9b65708b-cf8b-3f41-9169-03857cd71022> .
+
+<http://data.doremus.org/work/09d80649-b99f-3a3a-ba2e-f3d9fb8d8262>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/9625d40a-1851-3f9e-85b7-41231ea1af39> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/9b65708b-cf8b-3f41-9169-03857cd71022> .

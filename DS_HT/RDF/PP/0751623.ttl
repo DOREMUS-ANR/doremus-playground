@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/daa4624c-affa-374d-be27-7a219e8eaf55/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Colette (soprano) ; Colin (ténor) ; le Devin (baryton) ; orchestre" .
+
+<http://data.doremus.org/expression/fe84c259-82d7-3f60-84b6-ddf2bc7d5ac3>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/daa4624c-affa-374d-be27-7a219e8eaf55> .
+
+<http://data.doremus.org/performance/f8fb3a39-dccb-3385-afde-7a141797471c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Fontainebleau le 18 octobre 1752 avec Fel et Jelyotte. 1ère représentation à l'Académie royale de musique : Paris, 1er mars 1753." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/fe84c259-82d7-3f60-84b6-ddf2bc7d5ac3> .
+
+<http://data.doremus.org/artist/e5b7cbeb-8548-372d-8111-21f9d2cdc8af>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/47a0dbbb-eda6-367c-9349-6c557fea104b>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/e78bbecf-aecb-3ad4-8cf0-bab0a05be5e2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/daa4624c-affa-374d-be27-7a219e8eaf55> .
+
+<http://data.doremus.org/work/e78bbecf-aecb-3ad4-8cf0-bab0a05be5e2>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f8fb3a39-dccb-3385-afde-7a141797471c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/daa4624c-affa-374d-be27-7a219e8eaf55> .
+
+<http://data.doremus.org/expression/daa4624c-affa-374d-be27-7a219e8eaf55>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/daa4624c-affa-374d-be27-7a219e8eaf55/casting/1> ;
+        ecrm:P102_has_title  "Le devin du village" , "Le Devin du village" ;
+        ecrm:P3_has_note     "Intermède en un acte. Livret de Jean-Jacques Rousseau. Le livret a été repris de nombreuses fois, notamment en allemand pour \"Bastien et Bastienne\" de Mozart (1768). L'oeuvre est restée célèbre par la renommée de son auteur et parce qu'elle est liée aux joutes littéraires (connues sous le nom \"Querelle des Bouffons\") qui divisèrent les gens de Lettres (aristocrates, encyclopédistes, écrivains, musiciens) à partir de 1752," , "Créé à Fontainebleau le 18 octobre 1752 avec Fel et Jelyotte. 1ère représentation à l'Académie royale de musique : Paris, 1er mars 1753." .
+
+<http://data.doremus.org/event/fd23990d-f27b-3804-92ac-fffce68ee176>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/47a0dbbb-eda6-367c-9349-6c557fea104b> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/daa4624c-affa-374d-be27-7a219e8eaf55> .
+
+<http://data.doremus.org/event/2fe0b1cf-ece5-3356-a538-90572dd12349>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1753" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1753"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/e5b7cbeb-8548-372d-8111-21f9d2cdc8af>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/daa4624c-affa-374d-be27-7a219e8eaf55> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e78bbecf-aecb-3ad4-8cf0-bab0a05be5e2> .

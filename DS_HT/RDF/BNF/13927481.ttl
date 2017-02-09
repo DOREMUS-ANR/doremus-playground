@@ -1,0 +1,58 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/7fb2ad12-179e-3475-bed3-95bc9f7538f2>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/cda15b11-a642-38e7-a75b-979add53b82d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/918ccf44-d226-3169-920a-fb40317dfc84> .
+
+<http://data.doremus.org/artist/9aa5009c-50d5-3498-988e-2aa1a6cf33bb>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/adcaa1e7-8323-3988-a595-eea770e118f4>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1650/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9aa5009c-50d5-3498-988e-2aa1a6cf33bb>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/918ccf44-d226-3169-920a-fb40317dfc84> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/193ecaee-1f89-34e8-83db-fa5189ecdc7b> .
+
+<http://data.doremus.org/work/193ecaee-1f89-34e8-83db-fa5189ecdc7b>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/918ccf44-d226-3169-920a-fb40317dfc84> .
+
+<http://data.doremus.org/expression/918ccf44-d226-3169-920a-fb40317dfc84/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/khp>
+                                    ] ;
+        ecrm:P3_has_note            <http://data.doremus.org/vocabulary/itema3/mop/17> .
+
+<http://data.doremus.org/work/cda15b11-a642-38e7-a75b-979add53b82d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/193ecaee-1f89-34e8-83db-fa5189ecdc7b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/918ccf44-d226-3169-920a-fb40317dfc84> .
+
+<http://data.doremus.org/expression/918ccf44-d226-3169-920a-fb40317dfc84>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/fxm> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/pv> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/918ccf44-d226-3169-920a-fb40317dfc84/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "M" ;
+                  mus:U41_has_catalogue_number  "120" ;
+                  ecrm:P3_has_note              "M 120"
+                ] ;
+        ecrm:P102_has_title  "Pavanne" .

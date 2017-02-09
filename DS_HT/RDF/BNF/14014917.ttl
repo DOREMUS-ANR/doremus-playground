@@ -1,0 +1,85 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/f22d0044-6f77-3c85-b363-7d0cbd1e3601>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/d> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/f22d0044-6f77-3c85-b363-7d0cbd1e3601/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Z" ;
+                  mus:U41_has_catalogue_number  "811" ;
+                  ecrm:P3_has_note              "Z 811"
+                ] ;
+        ecrm:P3_has_note     "Éd. : 1697" .
+
+<http://data.doremus.org/work/e5f15bf1-10ef-387e-9629-ad6f7ccf39c9>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/a2c5023a-0c2a-3420-b247-7c8be19beb4a> .
+
+<http://data.doremus.org/work/958bd7e3-70c0-35cf-8747-52fbc88cf47d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/384a6c43-1abc-3b91-9417-ebcf1cc84b3d> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f22d0044-6f77-3c85-b363-7d0cbd1e3601> .
+
+<http://data.doremus.org/publication/a2c5023a-0c2a-3420-b247-7c8be19beb4a>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f22d0044-6f77-3c85-b363-7d0cbd1e3601> .
+
+<http://data.doremus.org/expression/f22d0044-6f77-3c85-b363-7d0cbd1e3601/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "violons (2)"@fr
+                                              ]
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/svg>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/mco>
+                                    ] ;
+        ecrm:P3_has_note            "Violons (2), viole de gambe, basse continue " .
+
+<http://data.doremus.org/work/384a6c43-1abc-3b91-9417-ebcf1cc84b3d>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/a54b6f84-3e8a-3894-b767-5eb950f75dc2> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f22d0044-6f77-3c85-b363-7d0cbd1e3601> .
+
+<http://data.doremus.org/artist/1cd68120-6c81-3dbb-8225-4e04e6050193>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/a54b6f84-3e8a-3894-b767-5eb950f75dc2>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Extrait des \"Ten sonata's in four parts\", éd. à Londres" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e5f15bf1-10ef-387e-9629-ad6f7ccf39c9> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/a2c5023a-0c2a-3420-b247-7c8be19beb4a> .
+
+<http://data.doremus.org/event/e6c1c9d8-0b85-3faa-88b6-ff388b691bd8>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/958bd7e3-70c0-35cf-8747-52fbc88cf47d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f22d0044-6f77-3c85-b363-7d0cbd1e3601> .
+
+<http://data.doremus.org/event/8fadf562-c4e9-3d28-b8a4-7cd18833b79a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1680/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1cd68120-6c81-3dbb-8225-4e04e6050193>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f22d0044-6f77-3c85-b363-7d0cbd1e3601> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/384a6c43-1abc-3b91-9417-ebcf1cc84b3d> .

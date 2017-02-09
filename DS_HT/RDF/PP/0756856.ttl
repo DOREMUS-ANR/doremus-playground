@@ -1,0 +1,58 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/e575406f-d31d-3651-b8ff-80f116cfd2f9>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/1d2ef0c7-7688-317c-a1ea-456cc7501326> .
+
+<http://data.doremus.org/work/312feff7-4bdf-3639-989e-1828162f0682>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/2dfede5b-75bb-34cc-8a45-a899b51d2f6a> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/1d2ef0c7-7688-317c-a1ea-456cc7501326> .
+
+<http://data.doremus.org/event/948c9240-627e-30ee-97a8-36c225987b99>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1924, première édition Harms" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1924"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/e0bda0cb-7317-3557-a79b-27a43232e0f6>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/1d2ef0c7-7688-317c-a1ea-456cc7501326> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/2dfede5b-75bb-34cc-8a45-a899b51d2f6a> .
+
+<http://data.doremus.org/performance/6e95bc42-1e39-3686-a579-8fb444744356>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Londres par Binnie Hale et Seymour Beard dans la comédie musicale \"No, No, Nanette\" en 1925. Premier enregistrement jazz en 1924 par le Varsity Eight." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/e575406f-d31d-3651-b8ff-80f116cfd2f9> .
+
+<http://data.doremus.org/event/6029cf96-6ee1-3cf3-8b81-ea76a8f4cfd2>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/312feff7-4bdf-3639-989e-1828162f0682> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/1d2ef0c7-7688-317c-a1ea-456cc7501326> .
+
+<http://data.doremus.org/artist/e0bda0cb-7317-3557-a79b-27a43232e0f6>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/2dfede5b-75bb-34cc-8a45-a899b51d2f6a>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/6e95bc42-1e39-3686-a579-8fb444744356> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/1d2ef0c7-7688-317c-a1ea-456cc7501326> .
+
+<http://data.doremus.org/expression/1d2ef0c7-7688-317c-a1ea-456cc7501326>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/ab> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/jazz> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "jazz standard"@fr
+                             ] ;
+        ecrm:P102_has_title  "Tea for Two" , "Tea for two" ;
+        ecrm:P3_has_note     "Paroles de Irving Caesar. Structure musicale : Couplet 16 mesures - refrain 32 mesures ABA'C. Environ 630 enregistrements recensés." , "Créé à Londres par Binnie Hale et Seymour Beard dans la comédie musicale \"No, No, Nanette\" en 1925. Premier enregistrement jazz en 1924 par le Varsity Eight." .

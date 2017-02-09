@@ -1,0 +1,67 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/d16d8b83-800c-3a99-bb27-b45440bd8fdc>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/85837916-7676-3a51-9693-10be53ca83b2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/de78ff40-ed02-39ca-8159-eaca07ce1df4> .
+
+<http://data.doremus.org/expression/de78ff40-ed02-39ca-8159-eaca07ce1df4>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/d> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/diabolo/genre/messe> ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "musique sacrée"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/de78ff40-ed02-39ca-8159-eaca07ce1df4/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "123" ;
+                                      ecrm:P3_has_note         "Op.123"
+                                    ] ;
+        ecrm:P102_has_title         "Mass" , "Missa solemnis" ;
+        ecrm:P3_has_note            "La \"Missa solemnis\" est, avec la Symphonie n°9, le projet musical le plus ambitieux de Beethoven qui y travailla pendant quatre années, avec interruptions. Elle était d'abord destinée à la cérémonie d'intronisation de l' Archiduc Rodolphe (dédicataire de cette oeuvre comme de nombreuses autres de Beethoven) en juin 1818. Beethoven ne put terminer sa messe à temps. Dans cette oeuvre, Beethoven cherche une expression musicale particulière pour chaque phrase, concept, voire chaque mot du texte. Il en résulte une mosaïque musicale très diversifiée, aux changements incessants de tempos, de timbres et de tonalités. En même temps, la \"missa solemnis\" est profondément ancrée dans la tradition musicale, s'inscrivant dans la continuité de la messe symphonique viennoise. Elle tire largement sa puissance d'un usage très complexe d'images et de formules traditionnelles de rhétorique musicale." , "1ère audition intégrale : 18 avril 1824 à Saint-Petersbourg. En Allemagne, seules trois parties furent exécutées, à Vienne le 7 mai 1824 (sous le titre \"trois hymnes\", regroupant le Kyrie, le Credo et l'Agnus Dei : la censure n'aurait pas autorisé l'exécution d'une messe ou de parties de messe dans une salle de concert) en même temps que la création de la 9ème symphonie." .
+
+<http://data.doremus.org/event/79eca06f-5963-3fe8-b2ba-299de860aece>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1819-1822" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1819/1822"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/de78ff40-ed02-39ca-8159-eaca07ce1df4> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/85837916-7676-3a51-9693-10be53ca83b2> .
+
+<http://data.doremus.org/expression/de78ff40-ed02-39ca-8159-eaca07ce1df4/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "soprano solo, contralto solo, ténor solo, basse solo, choeur et orchestre" .
+
+<http://data.doremus.org/performance/1693eab2-0df5-315e-9b9a-927f523fb458>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1ère audition intégrale : 18 avril 1824 à Saint-Petersbourg. En Allemagne, seules trois parties furent exécutées, à Vienne le 7 mai 1824 (sous le titre \"trois hymnes\", regroupant le Kyrie, le Credo et l'Agnus Dei : la censure n'aurait pas autorisé l'exécution d'une messe ou de parties de messe dans une salle de concert) en même temps que la création de la 9ème symphonie." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/5d699f7f-f235-3208-9845-22cd19a5a3c7> .
+
+<http://data.doremus.org/event/45b50dcb-b781-3b1c-81ff-66d0de255d7f>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/d16d8b83-800c-3a99-bb27-b45440bd8fdc> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/de78ff40-ed02-39ca-8159-eaca07ce1df4> .
+
+<http://data.doremus.org/work/85837916-7676-3a51-9693-10be53ca83b2>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/1693eab2-0df5-315e-9b9a-927f523fb458> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/de78ff40-ed02-39ca-8159-eaca07ce1df4> .
+
+<http://data.doremus.org/expression/5d699f7f-f235-3208-9845-22cd19a5a3c7>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/de78ff40-ed02-39ca-8159-eaca07ce1df4> .
+
+<http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+        a       ecrm:E21_Person .

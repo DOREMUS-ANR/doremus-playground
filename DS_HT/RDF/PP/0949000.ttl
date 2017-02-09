@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/8b43ff29-11af-33c4-aa71-48e6227f814e>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/70b2a38c-c802-3792-adbd-54faf58d3b23> .
+
+<http://data.doremus.org/work/34c0cc1c-b00b-390e-a6df-0d02751fad03>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/15883b6f-a672-3c62-94d0-d072a9a295b5> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/70b2a38c-c802-3792-adbd-54faf58d3b23> .
+
+<http://data.doremus.org/artist/68d6fa90-86ef-388d-8256-e94ae5e402fd>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/70b2a38c-c802-3792-adbd-54faf58d3b23/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Regina, Ursula (sopranos) ; comtesse Helfenstein (mezzo) ; Albrecht von Brandenburg, Wolfgang Capito, Hans Schwalb, Sylvester von Schaumberg, le sonneur (ténors) ; Mathis, Lorenz von Pommersfelden, Truchsess von Waldburg (barytons) ; Riedinger (basse). Choeur mixte, orchestre" .
+
+<http://data.doremus.org/work/15883b6f-a672-3c62-94d0-d072a9a295b5>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/c29d7f2e-1af1-3d23-a4dd-8839133cbfc1> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/70b2a38c-c802-3792-adbd-54faf58d3b23> .
+
+<http://data.doremus.org/performance/c29d7f2e-1af1-3d23-a4dd-8839133cbfc1>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé au Stadttheater de Zürich sous la direction de Robert Denzler le 28 mai 1938" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/8b43ff29-11af-33c4-aa71-48e6227f814e> .
+
+<http://data.doremus.org/expression/70b2a38c-c802-3792-adbd-54faf58d3b23>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/70b2a38c-c802-3792-adbd-54faf58d3b23/casting/1> ;
+        ecrm:P102_has_title  "Mathis le peintre" , "Mathis der Maler" ;
+        ecrm:P3_has_note     "Opéra en sept tableaux, sur un livret en allemand du compositeur, qui met en musique les questionnements artistiques et les doutes du peintre Matthias Grünewald à l'époque de la Guerre des Paysans en 1525" , "Créé au Stadttheater de Zürich sous la direction de Robert Denzler le 28 mai 1938" .
+
+<http://data.doremus.org/event/82e0b874-0272-31e4-8587-4e62f4bb5511>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "Renaissance"
+                               ] ;
+        ecrm:P3_has_note       "1934" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1934"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/68d6fa90-86ef-388d-8256-e94ae5e402fd>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/70b2a38c-c802-3792-adbd-54faf58d3b23> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/15883b6f-a672-3c62-94d0-d072a9a295b5> .
+
+<http://data.doremus.org/event/10c146d4-d161-3933-a668-ef5fe63e43b9>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/34c0cc1c-b00b-390e-a6df-0d02751fad03> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/70b2a38c-c802-3792-adbd-54faf58d3b23> .

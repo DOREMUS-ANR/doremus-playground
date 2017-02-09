@@ -1,0 +1,72 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/e9991bee-c4ea-3e8b-892e-7032952abab2/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "4 voix et basse continue" .
+
+<http://data.doremus.org/work/0e9ad86d-989e-3003-99a5-1a889b59e01a>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/e5a970b3-18b5-3b07-8e7d-dcdf2c2dcf2c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e9991bee-c4ea-3e8b-892e-7032952abab2> .
+
+<http://data.doremus.org/work/77387a48-6842-3baa-b1ae-997d3ac43210>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0e9ad86d-989e-3003-99a5-1a889b59e01a> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e9991bee-c4ea-3e8b-892e-7032952abab2> .
+
+<http://data.doremus.org/event/39c2d3d1-8b1a-3ccc-bb91-45544050536a>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/77387a48-6842-3baa-b1ae-997d3ac43210> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e9991bee-c4ea-3e8b-892e-7032952abab2> .
+
+<http://data.doremus.org/performance/e5a970b3-18b5-3b07-8e7d-dcdf2c2dcf2c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première publication : Venise, 1619" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/e6796b49-16c1-3494-8127-4e96ac511fdf> .
+
+<http://data.doremus.org/expression/e9991bee-c4ea-3e8b-892e-7032952abab2>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "Livre 7" , "Livre VII" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/diabolo/genre/madrigal> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique baroque"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/e9991bee-c4ea-3e8b-892e-7032952abab2/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "137" ;
+                  ecrm:P3_has_note              "SV 137"
+                ] ;
+        ecrm:P102_has_title       "Tu dormi, ah crudo core!" , "Tu dormi, ah crudo core! (Madrigal Livre 7)" , "madrigaux" ;
+        ecrm:P3_has_note          "Ce madrigal appartient au septième livre de madrigaux, publié sous le titre Concerto et accompagné d'une dédicace à la princesse Catherine de Médicis Gonzague, duchesse de Mantoue. Ce septième livre réunit 32 madrigaux de 1 à 6 voix, la plupart avec le soutien de la seule basse continue, mais quelques uns avec accompagnement d'instruments. (\"Tu dors, ah coeur cruel\")" , "Première publication : Venise, 1619" .
+
+<http://data.doremus.org/event/50ba106f-7de9-3c79-a417-f14490500ec2>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "17 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1619" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1614/1619"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e9991bee-c4ea-3e8b-892e-7032952abab2> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0e9ad86d-989e-3003-99a5-1a889b59e01a> .
+
+<http://data.doremus.org/expression/e6796b49-16c1-3494-8127-4e96ac511fdf>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/e9991bee-c4ea-3e8b-892e-7032952abab2> .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

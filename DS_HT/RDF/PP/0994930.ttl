@@ -1,0 +1,71 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/0401f061-9087-3f3c-8cda-ff9ff3160580>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1782-1784" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1782/1784"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/7b110121-ea62-3ffb-869c-a01822724f38> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/83f5de7b-9a32-3544-b583-51936d309fa2> .
+
+<http://data.doremus.org/work/83f5de7b-9a32-3544-b583-51936d309fa2>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/b6148e56-4251-3ff7-a27b-8bcdedcbd847> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/7b110121-ea62-3ffb-869c-a01822724f38> .
+
+<http://data.doremus.org/expression/7b110121-ea62-3ffb-869c-a01822724f38>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/oratorio> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique sacrée"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/7b110121-ea62-3ffb-869c-a01822724f38/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "469" ;
+                  ecrm:P3_has_note              "KV 469"
+                ] ;
+        ecrm:P102_has_title  "Davidde penitente" ;
+        ecrm:P3_has_note     "En juillet 1784, Mozart reçoit la commande, de la société des Concerts de Vienne, d'un oratorio qui serait exécuté pour le carême. Occupé par d'autres travaux, quatuors et concertos pour piano, il va ré-utiliser la musique de sa \"Messe en ut mineur\" (K 427), commençée en 1782, mais jamais achevée. Mozart complétera l'oeuvre avec deux arias. Le texte de cet oratorio est généralement attribué à Lorenzo da Ponte avec qui Mozart amorcera, l'année suivante (Les Noces de Figaro) une fructueuse collaboration." , "Vienne, Burgtheater, le 13 mars 1785 sous la direction du compositeur (lors d'un concert destiné au fonds de pension des veuves de musiciens)" .
+
+<http://data.doremus.org/expression/cd3c271d-da27-354a-beb0-a4f2d28ef358>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/7b110121-ea62-3ffb-869c-a01822724f38> .
+
+<http://data.doremus.org/performance/b6148e56-4251-3ff7-a27b-8bcdedcbd847>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Vienne, Burgtheater, le 13 mars 1785 sous la direction du compositeur (lors d'un concert destiné au fonds de pension des veuves de musiciens)" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/cd3c271d-da27-354a-beb0-a4f2d28ef358> .
+
+<http://data.doremus.org/expression/7b110121-ea62-3ffb-869c-a01822724f38/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Pour voix ( 2 sopranos, 1 ténor), choeur mixte, 2 flûtes, 2 hautbois, 2 clarinettes, 2 bassons, 2 cors, 2 trompettes, 3 trombones, timbales et cordes" .
+
+<http://data.doremus.org/event/a856a086-2565-37c7-a6fb-9e1cef2241a6>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/ec85cdc0-9f10-3d2a-92d9-5e8b7ae7b833> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/7b110121-ea62-3ffb-869c-a01822724f38> .
+
+<http://data.doremus.org/work/ec85cdc0-9f10-3d2a-92d9-5e8b7ae7b833>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/83f5de7b-9a32-3544-b583-51936d309fa2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/7b110121-ea62-3ffb-869c-a01822724f38> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .

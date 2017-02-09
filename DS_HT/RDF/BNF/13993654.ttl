@@ -1,0 +1,44 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/68cfbe4b-9cc0-3187-a085-d22e0b928e08>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/34e00452-4eed-30ec-a762-b9932a9b7708> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/188c380b-a37e-3170-ad9f-ebf52e7c6c5a> .
+
+<http://data.doremus.org/work/34e00452-4eed-30ec-a762-b9932a9b7708>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/936c34ad-ae8a-34e6-af8c-3735af9ec8e2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/188c380b-a37e-3170-ad9f-ebf52e7c6c5a> .
+
+<http://data.doremus.org/event/92c0e7ca-7969-34c3-a52f-b454a149cb4e>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1928/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/73b2feca-83bd-36d3-824b-f81cad85326d>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/188c380b-a37e-3170-ad9f-ebf52e7c6c5a> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/936c34ad-ae8a-34e6-af8c-3735af9ec8e2> .
+
+<http://data.doremus.org/artist/73b2feca-83bd-36d3-824b-f81cad85326d>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/188c380b-a37e-3170-ad9f-ebf52e7c6c5a>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/eb> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/pf> ;
+        ecrm:P102_has_title  "Orchestrations" , "Transcriptions" , "Präludium und Fuge BWV 552" ;
+        ecrm:P3_has_note     "Éd. : 1929" .
+
+<http://data.doremus.org/work/936c34ad-ae8a-34e6-af8c-3735af9ec8e2>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/188c380b-a37e-3170-ad9f-ebf52e7c6c5a> .

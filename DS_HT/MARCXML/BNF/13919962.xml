@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13919962" format="InterXMarc_Complet" type="Authority">
+<leader>00444c0 au22000272  45  <Pos Code="0004">00444</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139199628<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13919962</Pos>
+<Pos Code="13">8</Pos>
+</controlfield>
+<controlfield tag="008">890821120313yylat ms        1944      1948                   010 <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">12</Pos>
+<Pos Code="0809">03</Pos>
+<Pos Code="1011">13</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="latin">lat</Pos>
+<Pos Code="1820">ms </Pos>
+<Pos Code="2831">1944</Pos>
+<Pos Code="3841">1948</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">va01<Pos Code="0001" Sens="voix - soprano">va</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">vc01<Pos Code="0001" Sens="voix - alto">vc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">vd01<Pos Code="0001" Sens="voix - ténor">vd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">vf01<Pos Code="0001" Sens="voix - basse">vf</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">wb02<Pos Code="0001" Sens="instruments à vent - hautbois">wb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">ba01<Pos Code="0001" Sens="cuivres - cor">ba</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">wd02<Pos Code="0001" Sens="instruments à vent - basson">wd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">bd03<Pos Code="0001" Sens="cuivres - trombone">bd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">3</Pos>
+</subfield>
+	<subfield code="a">bb02<Pos Code="0001" Sens="cuivres - trompette">bb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">12405560</subfield>
+	<subfield code="w">.0..b.eng.</subfield>
+	<subfield code="a">Stravinsky</subfield>
+	<subfield code="m">Igor</subfield>
+	<subfield code="d">1882-1971</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Messe</subfield>
+	<subfield code="k">W 87</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Date de composition : 1944-1948</subfield>
+	<subfield code="a">Créée sous la direciton d&apos; Ansermet à  Milan le 27 octobre 1948</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove</subfield>
+</datafield>
+<datafield tag="624" ind1=" " ind2=" ">
+	<subfield code="a">780<Pos Code="0002" Sens="Musique">780</Pos>
+</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100499410</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">13871325</subfield>
+	<subfield code="d">20120216</subfield>
+</datafield>
+<Alter Ori="12405560">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">....barus.</subfield>
+	<subfield code="a">Stravinskij</subfield>
+	<subfield code="m">Igorʹ Fedorovič</subfield>
+	<subfield code="d">1882-1971</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">....c.rus.</subfield>
+	<subfield code="a">Стравинский</subfield>
+	<subfield code="m">Игорь Федорович</subfield>
+	<subfield code="d">1882-1971</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">    bxrus.</subfield>
+	<subfield code="a">Stravinski</subfield>
+	<subfield code="m">Igor Fedorovitch</subfield>
+	<subfield code="d">1882-1971</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">. . b.fre.</subfield>
+	<subfield code="a">Stravinski</subfield>
+	<subfield code="m">Igor</subfield>
+	<subfield code="d">1882-1971</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">. . b.fre.</subfield>
+	<subfield code="a">Strawinsky</subfield>
+	<subfield code="m">Igor</subfield>
+	<subfield code="d">1882-1971</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">....burus.</subfield>
+	<subfield code="a">Stravinskii</subfield>
+	<subfield code="m">Igor Fedorovitch</subfield>
+	<subfield code="d">1882-1971</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb13919962j</Attr>
+<Attr Nom="NumSource">OPC 100499410</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">12405560</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">13/03/ 2012</Attr>
+<Attr Nom="ResponsableDerniereValidation">SERRES CATHERINE</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">82</Attr>
+<Attr Nom="NumSource" Rep="1">OPP 13871325</Attr>
+</record>

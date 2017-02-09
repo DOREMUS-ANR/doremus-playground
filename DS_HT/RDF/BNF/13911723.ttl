@@ -1,0 +1,59 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/c1e64aa4-46cb-3edb-b444-bb598be7ea41>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19200101/19201231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/5d66572d-a5b3-3ed3-a9f1-e510b46b56fb>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/81c76715-9280-3fe7-8940-e44011edba7f> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0708c869-f283-3a34-a800-c570c25265ce> .
+
+<http://data.doremus.org/artist/5d66572d-a5b3-3ed3-a9f1-e510b46b56fb>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/81c76715-9280-3fe7-8940-e44011edba7f>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/uuu> ;
+        ecrm:P102_has_title  "La plainte, au loin, du faune" .
+
+<http://data.doremus.org/event/0c7cf3aa-2d31-3efc-b400-1c07d45f6d01>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. dans \"Tombeau de Claude Debussy\", Revue musicale, décembre 1920" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/86ea4bba-a9a0-38df-b3e1-05b21b4992b3> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/f51b3a2a-3841-3f95-94f2-5ddff661d402> .
+
+<http://data.doremus.org/work/0708c869-f283-3a34-a800-c570c25265ce>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/0c7cf3aa-2d31-3efc-b400-1c07d45f6d01> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/81c76715-9280-3fe7-8940-e44011edba7f> .
+
+<http://data.doremus.org/work/9fa98337-daa1-3320-92e8-b6fdb6161e95>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0708c869-f283-3a34-a800-c570c25265ce> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/81c76715-9280-3fe7-8940-e44011edba7f> .
+
+<http://data.doremus.org/publication/f51b3a2a-3841-3f95-94f2-5ddff661d402>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/81c76715-9280-3fe7-8940-e44011edba7f> .
+
+<http://data.doremus.org/work/86ea4bba-a9a0-38df-b3e1-05b21b4992b3>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/f51b3a2a-3841-3f95-94f2-5ddff661d402> .
+
+<http://data.doremus.org/event/45008d0b-2bff-30e0-926b-9a1852e909eb>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/9fa98337-daa1-3320-92e8-b6fdb6161e95> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/81c76715-9280-3fe7-8940-e44011edba7f> .

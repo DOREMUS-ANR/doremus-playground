@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/dd25b274-9ec1-3968-8852-cddd0817f7e4/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 violons, alto, violoncelle" .
+
+<http://data.doremus.org/work/4dbbcc1a-f03b-331c-81fe-d023f20f4951>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/dd25b274-9ec1-3968-8852-cddd0817f7e4> .
+
+<http://data.doremus.org/expression/dd25b274-9ec1-3968-8852-cddd0817f7e4>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "2" ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/dm> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/dd25b274-9ec1-3968-8852-cddd0817f7e4/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "15" ;
+                                      ecrm:P3_has_note         "Op. 15"
+                                    ] ;
+        ecrm:P102_has_title         "Quatuor à cordes" , "Streichquartett" , "String quartet" , "Quatuor à cordes no 2" ;
+        ecrm:P3_has_note            "Par sa structure, cette oeuvre s'apparente à la fois au quatuor (en quatre mouvements) et à la suite (thème et variations) ; durée : 39-42 mn" .
+
+<http://data.doremus.org/event/5097b822-5094-3ffe-89f2-85ad3ad8913f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1913-1915" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1913/1915"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/ca2af092-9ea0-378b-b0cc-12f4fdb59068>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/dd25b274-9ec1-3968-8852-cddd0817f7e4> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4dbbcc1a-f03b-331c-81fe-d023f20f4951> .
+
+<http://data.doremus.org/work/8f9f3d39-cf6a-3a4d-9440-b93cf877342f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4dbbcc1a-f03b-331c-81fe-d023f20f4951> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/dd25b274-9ec1-3968-8852-cddd0817f7e4> .
+
+<http://data.doremus.org/event/cd95d875-40ec-3618-906d-3fe704623ece>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8f9f3d39-cf6a-3a4d-9440-b93cf877342f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/dd25b274-9ec1-3968-8852-cddd0817f7e4> .
+
+<http://data.doremus.org/artist/ca2af092-9ea0-378b-b0cc-12f4fdb59068>
+        a       ecrm:E21_Person .

@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/bc233cd7-6683-3814-a103-d8e732bbb9d9>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/a5c55c72-67a0-3c36-af5c-e850529666f7> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ede0e741-82d6-37ab-94d6-1e8dc24da033> .
+
+<http://data.doremus.org/artist/913dcb07-ed9a-3cdb-922e-20791ca14f1e>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/ede0e741-82d6-37ab-94d6-1e8dc24da033>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/gm> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/ede0e741-82d6-37ab-94d6-1e8dc24da033/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Gustafson" ;
+                  mus:U41_has_catalogue_number  "99" ;
+                  ecrm:P3_has_note              "Gustafson 99"
+                ] ;
+        ecrm:P102_has_title  "Passacaille" .
+
+<http://data.doremus.org/expression/ede0e741-82d6-37ab-94d6-1e8dc24da033/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/17> .
+
+<http://data.doremus.org/work/a5c55c72-67a0-3c36-af5c-e850529666f7>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ede0e741-82d6-37ab-94d6-1e8dc24da033> .
+
+<http://data.doremus.org/event/566c3bac-ebe2-3b17-bb13-7d6790f97cd9>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1650" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1640/1660"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/913dcb07-ed9a-3cdb-922e-20791ca14f1e>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ede0e741-82d6-37ab-94d6-1e8dc24da033> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a5c55c72-67a0-3c36-af5c-e850529666f7> .
+
+<http://data.doremus.org/event/d48b5606-a633-3a42-a3ce-9176d54bbbbf>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/bc233cd7-6683-3814-a103-d8e732bbb9d9> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ede0e741-82d6-37ab-94d6-1e8dc24da033> .

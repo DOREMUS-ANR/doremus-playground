@@ -1,0 +1,86 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/6403ae22-00e3-3c80-9ed9-37aa64b70aae>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/929d2d74-6d03-3bfa-8e18-78f393d33119>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/84493071-4fc6-3222-98b1-ee4db0bc02d9> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/11139def-4ad1-3769-b6c4-8b1ca6d7fb8b> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/77caa733-60de-30b9-b615-8405293cfee1> .
+
+<http://data.doremus.org/publication/823b1fe0-107a-34cb-821a-dbb641b963ee>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/77caa733-60de-30b9-b615-8405293cfee1> .
+
+<http://data.doremus.org/work/7b4e3673-884f-3172-bdde-d51e93def514>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/929d2d74-6d03-3bfa-8e18-78f393d33119> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/77caa733-60de-30b9-b615-8405293cfee1> .
+
+<http://data.doremus.org/expression/77caa733-60de-30b9-b615-8405293cfee1>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "H" ;
+                  mus:U41_has_catalogue_number  "68" ;
+                  ecrm:P3_has_note              "H 68"
+                ] ;
+        ecrm:P102_has_title  "Harold en Italie" ;
+        ecrm:P3_has_note     "Symphonie en 4 parties avec alto principal, d'après George Gordon Byron (\"Childe Harold\")" , "Comprend : 1, \"Harold aux montagnes. Scènes de mélancolie, de bonheur, et de joie\" ; 2, \"Marche de pèlerins chantant la prière du soir\" ; 3, \"Sérénade d'un montagnard des Abruzzes à sa maîtresse\" ; 4, \"Orgie de brigands. Souvenirs des scènes précédentes\"" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/77caa733-60de-30b9-b615-8405293cfee1/dedication> .
+
+<http://data.doremus.org/expression/77caa733-60de-30b9-b615-8405293cfee1/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à Humbert Ferrand"@fr .
+
+<http://data.doremus.org/performance/11139def-4ad1-3769-b6c4-8b1ca6d7fb8b>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Paris, salle du Conservatoire, 23 novembre 1834" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/af7ea858-313a-3dae-ac8c-4b075d130024> .
+
+<http://data.doremus.org/event/75346a37-1d6a-35ca-aac4-e89df9f9854e>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/af7ea858-313a-3dae-ac8c-4b075d130024> .
+
+<http://data.doremus.org/work/055c98b5-343c-396a-9050-4aaac30a94d4>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/823b1fe0-107a-34cb-821a-dbb641b963ee> .
+
+<http://data.doremus.org/event/84493071-4fc6-3222-98b1-ee4db0bc02d9>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Paris : Brandus et Cie, [1848]" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/055c98b5-343c-396a-9050-4aaac30a94d4> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/823b1fe0-107a-34cb-821a-dbb641b963ee> .
+
+<http://data.doremus.org/event/bc05c068-26e6-3614-9299-f1f6b7d41928>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/7b4e3673-884f-3172-bdde-d51e93def514> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/77caa733-60de-30b9-b615-8405293cfee1> .
+
+<http://data.doremus.org/event/c407d9be-d36f-3008-98a5-21b01f379041>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18340101/18340622"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6403ae22-00e3-3c80-9ed9-37aa64b70aae>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/77caa733-60de-30b9-b615-8405293cfee1> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/929d2d74-6d03-3bfa-8e18-78f393d33119> .
+
+<http://data.doremus.org/expression/af7ea858-313a-3dae-ac8c-4b075d130024>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/77caa733-60de-30b9-b615-8405293cfee1> .

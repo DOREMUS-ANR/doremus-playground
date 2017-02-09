@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/db0f4b58-75ba-3593-9d2c-d1ebd4521e9c>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/2b728a1a-ac27-3af9-8707-37c7126365ac> .
+
+<http://data.doremus.org/expression/2b728a1a-ac27-3af9-8707-37c7126365ac>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      [ a                         mus:M4_Key ;
+                               ecrm:P1_is_identified_by  "no 1 en sol majeur. no 2 en la majeur. no 3 en do majeur. no 4 en si bémol majeur. no 5 en mi bémol majeur. no 6 en ré majeur."@fr
+                             ] ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/2b728a1a-ac27-3af9-8707-37c7126365ac/casting/1> ;
+        ecrm:P102_has_title  "Six sonates" , "6 sonate a quattro" , "6 sonates" , "Sei sonate a quattro" ;
+        ecrm:P3_has_note     "Ont été adaptées pour quatuor à vent par Friedrich Berr" , "1ère éd. Milan, 1825-1826" .
+
+<http://data.doremus.org/work/b81326c3-d9dc-3f03-985b-62b853fb2eff>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/bb3c258a-dd82-37ff-bf9e-eed6b8485411> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/2b728a1a-ac27-3af9-8707-37c7126365ac> .
+
+<http://data.doremus.org/event/50744177-553e-3f68-a592-1f00917f8fd7>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "ca 1804" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1803/1805"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6d773fc3-e90a-35cb-9c05-e01942564683>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/2b728a1a-ac27-3af9-8707-37c7126365ac> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/bb3c258a-dd82-37ff-bf9e-eed6b8485411> .
+
+<http://data.doremus.org/work/bb3c258a-dd82-37ff-bf9e-eed6b8485411>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/d91c2aee-c9a8-353b-b359-8f2d743d5b1f> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/2b728a1a-ac27-3af9-8707-37c7126365ac> .
+
+<http://data.doremus.org/performance/d91c2aee-c9a8-353b-b359-8f2d743d5b1f>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1ère éd. Milan, 1825-1826" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/db0f4b58-75ba-3593-9d2c-d1ebd4521e9c> .
+
+<http://data.doremus.org/event/dfecd2fd-1373-3a0d-b1d6-9a894ea88b3d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b81326c3-d9dc-3f03-985b-62b853fb2eff> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/2b728a1a-ac27-3af9-8707-37c7126365ac> .
+
+<http://data.doremus.org/artist/6d773fc3-e90a-35cb-9c05-e01942564683>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/2b728a1a-ac27-3af9-8707-37c7126365ac/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Violons (2), violoncelle, contrebasse" .

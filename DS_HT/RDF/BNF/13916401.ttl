@@ -1,0 +1,66 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/570179e2-a238-323c-a1b9-a735a65d77ab>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/698ff755-188b-3c99-bb0a-83c6bb70a789> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/9d88a5ac-5850-3f9c-8773-8a439fc30688> .
+
+<http://data.doremus.org/work/08954afa-771f-3d79-acef-3b93768e67da>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/570179e2-a238-323c-a1b9-a735a65d77ab> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/9d88a5ac-5850-3f9c-8773-8a439fc30688> .
+
+<http://data.doremus.org/event/28bc92df-060b-3b48-9096-87e60e99b029>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "16380101/16381231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/9d88a5ac-5850-3f9c-8773-8a439fc30688> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/570179e2-a238-323c-a1b9-a735a65d77ab> .
+
+<http://data.doremus.org/expression/9d88a5ac-5850-3f9c-8773-8a439fc30688>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/md> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "163" ;
+                  ecrm:P3_has_note              "SV 163"
+                ] ;
+        ecrm:P102_has_title  "Non havea Febo ancora" , "Lamento della ninfa" ;
+        ecrm:P3_has_note     "Poème d'Ottavio Rinuccini" , "Madrigal pour soliste, 3 voix et basse continue" , "Comprend 3 parties : Non havea Febo ancor ; Amor dov'è la fe ; Sì tra sdegnosi" .
+
+<http://data.doremus.org/work/344fdeb4-4b32-3add-9821-d70e38020a90>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/ab408450-4c8d-339d-920f-eb42d58b90ae> .
+
+<http://data.doremus.org/event/698ff755-188b-3c99-bb0a-83c6bb70a789>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re édition : 1638" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/344fdeb4-4b32-3add-9821-d70e38020a90> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/ab408450-4c8d-339d-920f-eb42d58b90ae> .
+
+<http://data.doremus.org/publication/ab408450-4c8d-339d-920f-eb42d58b90ae>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/9d88a5ac-5850-3f9c-8773-8a439fc30688> .
+
+<http://data.doremus.org/event/f5b5ad5d-9318-3667-aa6a-ba77b91ad2d2>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/08954afa-771f-3d79-acef-3b93768e67da> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/9d88a5ac-5850-3f9c-8773-8a439fc30688> .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

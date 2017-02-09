@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13925848" format="InterXMarc_Complet" type="Authority">
+<leader>00529c1 au22000272  45  <Pos Code="0004">00529</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139258489<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13925848</Pos>
+<Pos Code="13">9</Pos>
+</controlfield>
+<controlfield tag="008">900420980903yyrus ch        1913      ....                   1   <Pos Code="0001">90</Pos>
+<Pos Code="0203">04</Pos>
+<Pos Code="0405">20</Pos>
+<Pos Code="0607">98</Pos>
+<Pos Code="0809">09</Pos>
+<Pos Code="1011">03</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="russe">rus</Pos>
+<Pos Code="1820">ch </Pos>
+<Pos Code="2831">1913</Pos>
+<Pos Code="3841">....</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">va01<Pos Code="0001" Sens="voix - soprano">va</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">vd01<Pos Code="0001" Sens="voix - ténor">vd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">ve01<Pos Code="0001" Sens="voix - baryton">ve</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">cn01<Pos Code="0001" Sens="choeurs - non spécifié">cn</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">oa01<Pos Code="0001" Sens="orchestre - orchestre symphonique XIXe-XXe s.">oa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13898765</subfield>
+	<subfield code="w">.0 .barus.</subfield>
+	<subfield code="a">Rahmaninov</subfield>
+	<subfield code="m">Sergej Vasil&apos;evič</subfield>
+	<subfield code="d">1873-1943</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....barus.</subfield>
+	<subfield code="a">Kolokola</subfield>
+	<subfield code="p">Op. 35</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.eng.</subfield>
+	<subfield code="a" Barre="4">The bells</subfield>
+	<subfield code="p">Op. 35</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a" Barre="4">Les cloches</subfield>
+	<subfield code="p">Op. 35</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Poème de Bal&apos;mont d&apos;après Poe</subfield>
+	<subfield code="a">Créé à Saint-Petersbourg sous la dir. du comp.</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Date de composition : 1913</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">1re exécution : 1913-11-..</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove 6</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100562450</subfield>
+</datafield>
+<Alter Ori="13898765">
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="w"> 0  c     </subfield>
+	<subfield code="a">Рахманинов</subfield>
+	<subfield code="m">Сергей Васильевич</subfield>
+	<subfield code="d">1873-1943</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">.  .bx....</subfield>
+	<subfield code="a">Rakhmaninov</subfield>
+	<subfield code="m">Sergueï Vassilievitch</subfield>
+	<subfield code="d">1873-1943</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">.  .bx....</subfield>
+	<subfield code="a">Rachmaninoff</subfield>
+	<subfield code="m">Sergei Vasilyevich</subfield>
+	<subfield code="d">1873-1943</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">.  .b.....</subfield>
+	<subfield code="a">Rachmaninov</subfield>
+	<subfield code="m">Serge</subfield>
+	<subfield code="d">1873-1943</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">.  .b.....</subfield>
+	<subfield code="a">Rachmaninoff</subfield>
+	<subfield code="m">Serge</subfield>
+	<subfield code="d">1873-1943</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb13925848z</Attr>
+<Attr Nom="NumSource">OPC 100562450</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13898765</Attr>
+<Attr Nom="DateCreation">20/04/ 1990</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">20/04/ 1990</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource">OPP 14796170</Attr>
+</record>

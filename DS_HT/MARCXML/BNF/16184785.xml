@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="16184785" format="InterXMarc_Complet" type="Authority">
+<leader>00699c1 au22000272  45  <Pos Code="0004">00699</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF161847858<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">16184785</Pos>
+<Pos Code="13">8</Pos>
+</controlfield>
+<controlfield tag="008">100302100302yyger li        1933                             1   <Pos Code="0001">10</Pos>
+<Pos Code="0203">03</Pos>
+<Pos Code="0405">02</Pos>
+<Pos Code="0607">10</Pos>
+<Pos Code="0809">03</Pos>
+<Pos Code="1011">02</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="allemand">ger</Pos>
+<Pos Code="1820">li </Pos>
+<Pos Code="2831">1933</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">vz01<Pos Code="0001" Sens="voix - non spécifié">vz</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">ka01<Pos Code="0001" Sens="clavier - piano">ka</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13896112</subfield>
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Korngold</subfield>
+	<subfield code="m">Erich Wolfgang</subfield>
+	<subfield code="d">1897-1957</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.ger.</subfield>
+	<subfield code="a">Unvergänglichkeit</subfield>
+	<subfield code="p">Op. 27</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Cycle de mélodies</subfield>
+	<subfield code="a">Sur des poèmes de Eleonore van der Straaten</subfield>
+	<subfield code="a">Date de composition : 1933</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Comprend : Unvergänglichkeit ; Das eilende Bächlein ; Das schlafende Kind ; Stärker als der Tod ; Unvergänglichkeit</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Oxford music online</subfield>
+	<subfield code="u">http://www.oxfordmusiconline.com</subfield>
+	<subfield code="d">2010-03-01</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Sonnet für Wien [Enregistrement sonore] : songs of Erich Korngold / Sarah Connolly, MS ; William Dazeley, BAR ; Iain Burnside, p. Signum classics SIGCD160</subfield>
+</datafield>
+<Alter Ori="13896112">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">    b     </subfield>
+	<subfield code="a">Korngold</subfield>
+	<subfield code="m">Erich</subfield>
+	<subfield code="d">1897-1957</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb16184785x</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13896112</Attr>
+<Attr Nom="DateCreation">02/03/ 2010</Attr>
+<Attr Nom="ResponsableCreation">BOUDOUX D HAUTEFEUILLE MARIE-EDITH</Attr>
+<Attr Nom="StructCreation">71</Attr>
+<Attr Nom="DateDerniereValidation">09/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">71</Attr>
+<Attr Nom="DatePremiereValidation">02/03/ 2010</Attr>
+<Attr Nom="ResponsablePremiereValidation">BOUDOUX D HAUTEFEUILLE MARIE-EDITH</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+</record>

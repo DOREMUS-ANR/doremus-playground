@@ -1,0 +1,58 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/ff43b583-fdac-360b-8f0f-4bb72acdee17>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1943/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/248b1b61-a6b5-3d14-9013-678085e8fb21>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/65c85b7f-8a7e-38db-a41a-9c7715831c5e> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d56dd9ae-c306-31b6-a3ae-69c2cb4989bc> .
+
+<http://data.doremus.org/work/d56dd9ae-c306-31b6-a3ae-69c2cb4989bc>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/b17b796a-05bd-3a92-b578-3f0f98d615ed> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/65c85b7f-8a7e-38db-a41a-9c7715831c5e> .
+
+<http://data.doremus.org/expression/65c85b7f-8a7e-38db-a41a-9c7715831c5e>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "1" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        ecrm:P102_has_title       "Symphonie Jeremiah" , "Jeremiah" ;
+        ecrm:P3_has_note          "Texte tiré des Lamentations de Jérémie" , "Comprend : Prophecy ; Profanation ; Lamentation" .
+
+<http://data.doremus.org/expression/025604f9-8aa6-3cdd-9376-52300eb1fcb2>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/65c85b7f-8a7e-38db-a41a-9c7715831c5e> .
+
+<http://data.doremus.org/performance/b17b796a-05bd-3a92-b578-3f0f98d615ed>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1944-01-28" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/025604f9-8aa6-3cdd-9376-52300eb1fcb2> .
+
+<http://data.doremus.org/work/eacb72eb-f55e-3479-bda8-c8eaf6634ce2>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d56dd9ae-c306-31b6-a3ae-69c2cb4989bc> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/65c85b7f-8a7e-38db-a41a-9c7715831c5e> .
+
+<http://data.doremus.org/artist/248b1b61-a6b5-3d14-9013-678085e8fb21>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/661de8af-3a7b-3be7-9d71-a628953341f1>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/eacb72eb-f55e-3479-bda8-c8eaf6634ce2> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/65c85b7f-8a7e-38db-a41a-9c7715831c5e> .
+
+<http://data.doremus.org/event/aad52542-2ded-3cbd-807e-3cce51644563>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/025604f9-8aa6-3cdd-9376-52300eb1fcb2> .

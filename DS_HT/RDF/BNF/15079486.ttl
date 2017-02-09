@@ -1,0 +1,43 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/c05e1e19-e43f-322d-9ce4-b1e3fde001c7>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/e35ee5a1-287b-3cf8-868a-a04345186e10> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d0b2698f-d178-30fd-91cc-3c61a5cda9c1> .
+
+<http://data.doremus.org/artist/43bdeb8e-0587-36ac-8255-d1de225c80f5>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/b5237323-8b5b-3168-be1e-0a72c22ff49d>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "20040101/20041231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/43bdeb8e-0587-36ac-8255-d1de225c80f5>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d0b2698f-d178-30fd-91cc-3c61a5cda9c1> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e35ee5a1-287b-3cf8-868a-a04345186e10> .
+
+<http://data.doremus.org/event/28a5c7c0-8ecd-31bb-a349-ec2aa29b91b5>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c05e1e19-e43f-322d-9ce4-b1e3fde001c7> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d0b2698f-d178-30fd-91cc-3c61a5cda9c1> .
+
+<http://data.doremus.org/expression/d0b2698f-d178-30fd-91cc-3c61a5cda9c1>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/uuu> ;
+        ecrm:P102_has_title  "You are" ;
+        ecrm:P3_has_note     "Sous-titre : \"variations\"" , "Sur des textes de Rabbi Nahman de Bratslaw, du Psaume 16, de Ludwig Wittgenstein et de Pirke Avot" , "Commande de la Maîtrise de Los Angeles, du Lincoln center et des Amis de l'Ensemble Modern" , "Comprend : \"You are wherever your thoughts are\" ; \"Shiviti Hashem l'negdi\" ; \"Explanations come to an end somewhere\" ; \"Ehmor m'aht, v'ahsay harbay\"" .
+
+<http://data.doremus.org/work/e35ee5a1-287b-3cf8-868a-a04345186e10>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d0b2698f-d178-30fd-91cc-3c61a5cda9c1> .

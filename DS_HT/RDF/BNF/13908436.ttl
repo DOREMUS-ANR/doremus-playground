@@ -1,0 +1,47 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/8e02b441-b721-3571-b73e-7317154110ba>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/91ab8197-6d93-3e41-b5eb-7e085d44d787> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/cb398bee-82bc-30d0-9f77-ec8a379bd94b> .
+
+<http://data.doremus.org/work/91ab8197-6d93-3e41-b5eb-7e085d44d787>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/c441a561-9213-3f19-8db8-3945b9f11837> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/cb398bee-82bc-30d0-9f77-ec8a379bd94b> .
+
+<http://data.doremus.org/expression/cb398bee-82bc-30d0-9f77-ec8a379bd94b>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/li> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "4" ;
+                                      ecrm:P3_has_note         "Op. 4"
+                                    ] ;
+        ecrm:P102_has_title         "5 Orchesterlieder" , "Altenberg-Lieder" , "Fünf Orchesterlieder nach Ansichtskartentexten von Peter Altenberg" ;
+        ecrm:P3_has_note            "Réunit : \"Seele, wie bist du schöner\" ; \"Sahst du nach dem Gewitterregen\" ; \"Über die Grenzen des All\" ; \"Nichts ist gekommen\" ; \"Hier ist Friede\"" , "Cycle de Lieder sur des poèmes de Peter Altenberg" , "Création de l'intégrale à Rome sous la dir. de Jascha Horenstein le 24 janvier 1953" , "Deux Lieder avaient auparavant été créées à Vienne sous la dir. d'Arnold Schoenberg le 31 mars 1913" .
+
+<http://data.doremus.org/artist/97dd11a4-3d42-38fd-9714-f07e27e217ef>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/7adf2fdc-3aee-341f-8ec8-fa04e4864a3a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19120101/19121231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/97dd11a4-3d42-38fd-9714-f07e27e217ef>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/cb398bee-82bc-30d0-9f77-ec8a379bd94b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c441a561-9213-3f19-8db8-3945b9f11837> .
+
+<http://data.doremus.org/work/c441a561-9213-3f19-8db8-3945b9f11837>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/cb398bee-82bc-30d0-9f77-ec8a379bd94b> .

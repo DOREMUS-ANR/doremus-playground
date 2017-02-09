@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/6a819c4f-78bf-3a64-8a19-3715175f8447>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/d4f55817-9a9d-3ddc-8d10-452c98ccddb3>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17240101/17241231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6a819c4f-78bf-3a64-8a19-3715175f8447>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e326d2f4-afbb-3d9c-bb8a-d30d7476a2a6> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c84f1fa0-dd3b-35db-af02-b0234bd4c4f6> .
+
+<http://data.doremus.org/work/0a6fbd0e-c8e1-3eee-be57-773582a3b366>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/c84f1fa0-dd3b-35db-af02-b0234bd4c4f6> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e326d2f4-afbb-3d9c-bb8a-d30d7476a2a6> .
+
+<http://data.doremus.org/expression/e326d2f4-afbb-3d9c-bb8a-d30d7476a2a6>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "HWV" ;
+                  mus:U41_has_catalogue_number  "17" ;
+                  ecrm:P3_has_note              "HWV 17"
+                ] ;
+        ecrm:P102_has_title  "Jules César" , "Julius Caesar" , "Giulio Cesare in Egitto" ;
+        ecrm:P3_has_note     "Créé à Londres, King's Theatre, Hay market, le 20 février 1724" , "Livret de Niccolò Francesco Haym d'après Giacomo Francesco Bussani et \"La mort de Pompée\" de Corneille" .
+
+<http://data.doremus.org/work/c84f1fa0-dd3b-35db-af02-b0234bd4c4f6>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e326d2f4-afbb-3d9c-bb8a-d30d7476a2a6> .
+
+<http://data.doremus.org/event/31c623b9-4c88-3d16-bd77-ce04c12cbd5b>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/0a6fbd0e-c8e1-3eee-be57-773582a3b366> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e326d2f4-afbb-3d9c-bb8a-d30d7476a2a6> .

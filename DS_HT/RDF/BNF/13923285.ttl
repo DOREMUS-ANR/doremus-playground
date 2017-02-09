@@ -1,0 +1,72 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/publication/10795dbc-baa6-3b15-8a03-58109bca85fa>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/6ad8877c-da7c-3ac0-bbb8-c6a1b64a9357> .
+
+<http://data.doremus.org/event/39a0aa94-3750-30a1-a58c-6ad2d478dc69>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/7ac15608-e25f-33c2-b98b-8cc6662c2a9d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6ad8877c-da7c-3ac0-bbb8-c6a1b64a9357> .
+
+<http://data.doremus.org/event/dadb951b-bceb-3915-9615-43ae519a29c5>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Paris : M. Schlesinger, [1830]" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/6be7c878-5584-39e9-b46b-67f57a5da09f> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/10795dbc-baa6-3b15-8a03-58109bca85fa> .
+
+<http://data.doremus.org/expression/6ad8877c-da7c-3ac0-bbb8-c6a1b64a9357>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/nat> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "H" ;
+                  mus:U41_has_catalogue_number  "51A" ;
+                  ecrm:P3_has_note              "H 51A"
+                ] ;
+        ecrm:P102_has_title  "La Marseillaise" , "Hymne des Marseillais" ;
+        ecrm:P3_has_note     "Arrangement de l'hymne de Claude Joseph Rouget de Lisle" , "Existe dans une seconde version pour ténor, choeur et piano (H 51B)" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/6ad8877c-da7c-3ac0-bbb8-c6a1b64a9357/dedication> .
+
+<http://data.doremus.org/work/d78a6dfa-ee74-3afd-acbb-ef981f29097c>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/dadb951b-bceb-3915-9615-43ae519a29c5> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6ad8877c-da7c-3ac0-bbb8-c6a1b64a9357> .
+
+<http://data.doremus.org/event/0005f28d-5e71-371d-83e4-8a5966e98055>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1830/1830"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6403ae22-00e3-3c80-9ed9-37aa64b70aae>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6ad8877c-da7c-3ac0-bbb8-c6a1b64a9357> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d78a6dfa-ee74-3afd-acbb-ef981f29097c> .
+
+<http://data.doremus.org/expression/6ad8877c-da7c-3ac0-bbb8-c6a1b64a9357/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à Rouget de Lisle"@fr .
+
+<http://data.doremus.org/work/6be7c878-5584-39e9-b46b-67f57a5da09f>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/10795dbc-baa6-3b15-8a03-58109bca85fa> .
+
+<http://data.doremus.org/work/7ac15608-e25f-33c2-b98b-8cc6662c2a9d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d78a6dfa-ee74-3afd-acbb-ef981f29097c> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6ad8877c-da7c-3ac0-bbb8-c6a1b64a9357> .
+
+<http://data.doremus.org/artist/6403ae22-00e3-3c80-9ed9-37aa64b70aae>
+        a       ecrm:E21_Person .

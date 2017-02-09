@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/97ac9a9d-7795-30a8-918b-bbdec64a03f8>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/49cc018e-713f-31b9-99ed-3054ca336323> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c0d35e35-26d2-3eff-a0ae-bcac8da0dcae> .
+
+<http://data.doremus.org/work/daa50e00-c01b-39bf-b5df-1816aad0dca2>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/1d2e151b-4c79-36ad-b965-55b6737e7b2d> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c0d35e35-26d2-3eff-a0ae-bcac8da0dcae> .
+
+<http://data.doremus.org/expression/c0d35e35-26d2-3eff-a0ae-bcac8da0dcae>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      [ a                         mus:M4_Key ;
+                               ecrm:P1_is_identified_by  "No 1 en fa majeur. No 2 en sol majeur. No 3 en ré mineur. No 4 en si bémol majeur. No 5 en do majeur. No 6 en la mineur. No 7 en do mineur No 8 en fa majeur. No 9 en sol mineur. No 10 en ré mineur. No 11 en fa majeur. No 12 en do mineur."@fr
+                             ] ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/c0d35e35-26d2-3eff-a0ae-bcac8da0dcae/casting/1> ;
+        ecrm:P102_has_title  "Douze sonates" , "sonates de 1716" , "12 sonates" ;
+        ecrm:P3_has_note     "Manuscrit conservé à Dresde, Sächsiche Landesbibliothek, Mus.2413 R.12" , "Dédiées au Prince-électeur de Saxe" .
+
+<http://data.doremus.org/expression/918d0c14-8b89-3da5-8316-11d9f2d20285>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c0d35e35-26d2-3eff-a0ae-bcac8da0dcae> .
+
+<http://data.doremus.org/performance/1d2e151b-4c79-36ad-b965-55b6737e7b2d>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Manuscrit conservé à Dresde, Sächsiche Landesbibliothek, Mus.2413 R.12" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/918d0c14-8b89-3da5-8316-11d9f2d20285> .
+
+<http://data.doremus.org/event/777e8dc9-a73e-3784-b1e8-887f65fd6df0>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1716" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1716"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/4ef7a44f-30af-330b-b4a2-4ae4766f3e39>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c0d35e35-26d2-3eff-a0ae-bcac8da0dcae> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/daa50e00-c01b-39bf-b5df-1816aad0dca2> .
+
+<http://data.doremus.org/work/49cc018e-713f-31b9-99ed-3054ca336323>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/daa50e00-c01b-39bf-b5df-1816aad0dca2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c0d35e35-26d2-3eff-a0ae-bcac8da0dcae> .
+
+<http://data.doremus.org/expression/c0d35e35-26d2-3eff-a0ae-bcac8da0dcae/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Violon ou flûte à bec, basse continue" .
+
+<http://data.doremus.org/artist/4ef7a44f-30af-330b-b4a2-4ae4766f3e39>
+        a       ecrm:E21_Person .

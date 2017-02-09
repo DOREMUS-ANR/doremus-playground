@@ -1,0 +1,74 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/b02a0528-fd4b-3e02-83d1-aa57b08e95fd>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19060101/19061231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/5d66572d-a5b3-3ed3-a9f1-e510b46b56fb>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/35be40b0-fde5-34ff-92eb-e6ede772339f> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4b7c40b3-375a-3c20-aa53-a4dc86044271> .
+
+<http://data.doremus.org/work/c48ec01a-9c9d-3714-bcb7-01351d134e33>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/3bb862d8-d0b0-35be-bf87-8feca3aded54> .
+
+<http://data.doremus.org/artist/5d66572d-a5b3-3ed3-a9f1-e510b46b56fb>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/97a954bf-385e-35a3-9f17-fdf2f00f3b19>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4b7c40b3-375a-3c20-aa53-a4dc86044271> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/35be40b0-fde5-34ff-92eb-e6ede772339f> .
+
+<http://data.doremus.org/event/13206f6c-663e-3d12-9a57-1e0de376dc78>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Durand : 1906" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c48ec01a-9c9d-3714-bcb7-01351d134e33> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/3bb862d8-d0b0-35be-bf87-8feca3aded54> .
+
+<http://data.doremus.org/expression/35be40b0-fde5-34ff-92eb-e6ede772339f/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/bho>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "piano ou orchestre"@fr
+                                              ]
+                                    ] ;
+        ecrm:P3_has_note            "Cor, piano ou orchestre" .
+
+<http://data.doremus.org/publication/3bb862d8-d0b0-35be-bf87-8feca3aded54>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/35be40b0-fde5-34ff-92eb-e6ede772339f> .
+
+<http://data.doremus.org/event/7975f65c-c366-3a76-af4e-08a85f6e5183>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/97a954bf-385e-35a3-9f17-fdf2f00f3b19> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/35be40b0-fde5-34ff-92eb-e6ede772339f> .
+
+<http://data.doremus.org/expression/35be40b0-fde5-34ff-92eb-e6ede772339f>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/cow> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/35be40b0-fde5-34ff-92eb-e6ede772339f/casting/1> ;
+        ecrm:P102_has_title  "Villanelle" .
+
+<http://data.doremus.org/work/4b7c40b3-375a-3c20-aa53-a4dc86044271>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/13206f6c-663e-3d12-9a57-1e0de376dc78> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/35be40b0-fde5-34ff-92eb-e6ede772339f> .

@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/fd20ca15-c987-3f26-b498-8d3e69d225d1>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/43f8c5f7-df41-3285-b268-d5adbca75537>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1904" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1904"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/fd20ca15-c987-3f26-b498-8d3e69d225d1>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/9afb7c8e-f3b2-3ee7-b439-cdeec4f5ab93> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/990117fb-10fe-32e1-8541-49338969ed15> .
+
+<http://data.doremus.org/performance/c3cc5aa4-0259-38f3-8f41-0965a7393734>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1904. St-Louis World's Fair." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/c01f45f0-d8be-35ce-a93c-4b3f66f058b0> .
+
+<http://data.doremus.org/expression/9afb7c8e-f3b2-3ee7-b439-cdeec4f5ab93>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/jazz> , <http://data.doremus.org/vocabulary/diabolo/genre/ragtime> ;
+        ecrm:P102_has_title  "Les cascades" , "Les Cascades" ;
+        ecrm:P3_has_note     "Ecrit pour le \"St-Louis World's Fair\", grande foire commerciale et artistique, avec un énorme hall et un impressionnant parcours aquatique. Ce morceau fut joué dans le parc de cette foire. Très virtuose, sa fluidité et ses arpèges évoquent les cours d'eau : cascades, cataractes, lagons... Une partie reprend le thème d'un autre ragtime de Joplin : Maple Leaf rag." , "1904. St-Louis World's Fair." .
+
+<http://data.doremus.org/event/35bd9a86-d4fd-3bd1-a2b6-f1b2d46c3e13>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f0412674-cc5b-37cb-97dc-77a51705d566> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/9afb7c8e-f3b2-3ee7-b439-cdeec4f5ab93> .
+
+<http://data.doremus.org/work/990117fb-10fe-32e1-8541-49338969ed15>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/c3cc5aa4-0259-38f3-8f41-0965a7393734> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/9afb7c8e-f3b2-3ee7-b439-cdeec4f5ab93> .
+
+<http://data.doremus.org/work/f0412674-cc5b-37cb-97dc-77a51705d566>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/990117fb-10fe-32e1-8541-49338969ed15> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/9afb7c8e-f3b2-3ee7-b439-cdeec4f5ab93> .
+
+<http://data.doremus.org/expression/c01f45f0-d8be-35ce-a93c-4b3f66f058b0>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/9afb7c8e-f3b2-3ee7-b439-cdeec4f5ab93> .

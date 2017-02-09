@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/93c46612-9c54-3883-9481-b83e06c680b2>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/3f9575e4-aa6d-3eb8-b46d-177eded8a75c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/7f68cbf5-1896-3b68-9a3b-6a0148d6c2e6> .
+
+<http://data.doremus.org/artist/d2dd0cea-96dd-3358-bb8c-887c18a4dbd4>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/3f9575e4-aa6d-3eb8-b46d-177eded8a75c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Représenté à la cour en 1683" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/ef569ebd-8b23-3f95-8f1a-720d866108b8> .
+
+<http://data.doremus.org/work/e4b65368-7762-3fa8-a449-255a6a939358>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/93c46612-9c54-3883-9481-b83e06c680b2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/7f68cbf5-1896-3b68-9a3b-6a0148d6c2e6> .
+
+<http://data.doremus.org/expression/7f68cbf5-1896-3b68-9a3b-6a0148d6c2e6/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Cupidon, Cénus, bergère (sopranos); deux bergers, un chasseur (ténors); Adonis, trois bergers (basses); choeur, orchestre, basse continue." .
+
+<http://data.doremus.org/expression/ef569ebd-8b23-3f95-8f1a-720d866108b8>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/7f68cbf5-1896-3b68-9a3b-6a0148d6c2e6> .
+
+<http://data.doremus.org/event/0432b797-c6a7-38c7-89f5-4d15c4694f00>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "17 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1683" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1680/1683"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/d2dd0cea-96dd-3358-bb8c-887c18a4dbd4>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/7f68cbf5-1896-3b68-9a3b-6a0148d6c2e6> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/93c46612-9c54-3883-9481-b83e06c680b2> .
+
+<http://data.doremus.org/event/eee47879-a7d1-396d-813d-c144a4b53eed>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e4b65368-7762-3fa8-a449-255a6a939358> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/7f68cbf5-1896-3b68-9a3b-6a0148d6c2e6> .
+
+<http://data.doremus.org/expression/7f68cbf5-1896-3b68-9a3b-6a0148d6c2e6>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/7f68cbf5-1896-3b68-9a3b-6a0148d6c2e6/casting/1> ;
+        ecrm:P102_has_title  "Venus et Adonis" , "Venus and Adonis" ;
+        ecrm:P3_has_note     "Bien que le titre soit \"masque pour le divertissement du roi\", il s'agit en réalité d'un véritable opéra, entièrement chanté (et probablement le premier du genre en Angleterre). Le livret , anonyme, s'inspire d'un épisode des \"Métamorphoses d'Ovide\"." , "Représenté à la cour en 1683" .

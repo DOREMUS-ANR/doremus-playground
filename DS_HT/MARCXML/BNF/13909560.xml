@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13909560" format="InterXMarc_Complet" type="Authority">
+<leader>00886c0 au22000272  45  <Pos Code="0004">00886</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139095608<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13909560</Pos>
+<Pos Code="13">8</Pos>
+</controlfield>
+<controlfield tag="008">890821130316yyger or        1734      1735                   010 <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">13</Pos>
+<Pos Code="0809">03</Pos>
+<Pos Code="1011">16</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="allemand">ger</Pos>
+<Pos Code="1820">or </Pos>
+<Pos Code="2831">1734</Pos>
+<Pos Code="3841">1735</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">va01<Pos Code="0001" Sens="voix - soprano">va</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">vc01<Pos Code="0001" Sens="voix - alto">vc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">vd01<Pos Code="0001" Sens="voix - ténor">vd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">vf01<Pos Code="0001" Sens="voix - basse">vf</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">cn01<Pos Code="0001" Sens="choeurs - non spécifié">cn</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">oa01<Pos Code="0001" Sens="orchestre - orchestre symphonique XIXe-XXe s.">oa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">zb01<Pos Code="0001" Sens="basse continue - instruments non spécifiés">zb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">11889790</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Bach</subfield>
+	<subfield code="m">Johann Sebastian</subfield>
+	<subfield code="d">1685-1750</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.ger.</subfield>
+	<subfield code="a">Weihnachts-Oratorium</subfield>
+	<subfield code="k">BWV 248</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Oratorio de Noël</subfield>
+	<subfield code="k">BWV 248</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.eng.</subfield>
+	<subfield code="a">Christmas-Oratorio</subfield>
+	<subfield code="k">BWV 248</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.lat.</subfield>
+	<subfield code="a">Oratorium tempore Nativitatis Christi</subfield>
+	<subfield code="k">BWV 248</subfield>
+</datafield>
+<datafield tag="502" ind1=" " ind2=" ">
+	<subfield code="3">14033680</subfield>
+	<subfield code="a">Bach</subfield>
+	<subfield code="m">Johann Sebastian</subfield>
+	<subfield code="d">1685-1750</subfield>
+	<subfield code="t">[Oratorios]</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">6 cantates de Noël à l&apos;Épiphanie</subfield>
+	<subfield code="a">Les cantates 1 à 5 contiennent des adaptations des cantates profanes 213 et 215, et la cantate no 6 provient de la cantate religieuse perdue 248a</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove 6</subfield>
+	<subfield code="a">Schmieder</subfield>
+</datafield>
+<datafield tag="624" ind1=" " ind2=" ">
+	<subfield code="a">780<Pos Code="0002" Sens="Musique">780</Pos>
+</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPL</subfield>
+	<subfield code="a">014131700</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100381430</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100564640</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14829182</subfield>
+	<subfield code="d">20060526</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">16306178</subfield>
+	<subfield code="d">20130316</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">16306177</subfield>
+	<subfield code="d">20130316</subfield>
+</datafield>
+<Alter Ori="11889790">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">. . b.....</subfield>
+	<subfield code="a">Bach</subfield>
+	<subfield code="m">Jean Sébastien</subfield>
+	<subfield code="d">1685-1750</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb13909560j</Attr>
+<Attr Nom="NumSource">OPL 014131700</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1188979014033680</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">16/03/ 2013</Attr>
+<Attr Nom="ResponsableDerniereValidation">SERRES CATHERINE</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">82</Attr>
+<Attr Nom="NumSource" Rep="1">OPC 100381430</Attr>
+<Attr Nom="NumSource" Rep="2">OPD 100564640</Attr>
+<Attr Nom="NumSource" Rep="3">OPP 14829182</Attr>
+<Attr Nom="NumSource" Rep="4">OPP 16306178</Attr>
+<Attr Nom="NumSource" Rep="5">OPP 16306177</Attr>
+</record>

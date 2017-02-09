@@ -1,0 +1,43 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/2c7e1001-8656-3934-9b6d-37a5c620502d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/5fc6fa2b-7cf7-300c-945f-fe93a0bf1f2e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/63c3d884-247b-353f-8f3d-12c807966ebf> .
+
+<http://data.doremus.org/expression/63c3d884-247b-353f-8f3d-12c807966ebf>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "A este sol peregrino" ;
+        ecrm:P3_has_note     "Conservé dans un manuscrit du séminaire San Antonia Abad de Cuzco" .
+
+<http://data.doremus.org/event/9505b9db-53ab-3626-8e94-c38dbbf7a211>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1600/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/f094ad24-d9f4-31b8-ac60-06f6b5fbacf0>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/63c3d884-247b-353f-8f3d-12c807966ebf> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e82810f4-0b0d-3db6-829d-133696659fe2> .
+
+<http://data.doremus.org/artist/f094ad24-d9f4-31b8-ac60-06f6b5fbacf0>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/e82810f4-0b0d-3db6-829d-133696659fe2>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/63c3d884-247b-353f-8f3d-12c807966ebf> .
+
+<http://data.doremus.org/work/5fc6fa2b-7cf7-300c-945f-fe93a0bf1f2e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/e82810f4-0b0d-3db6-829d-133696659fe2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/63c3d884-247b-353f-8f3d-12c807966ebf> .

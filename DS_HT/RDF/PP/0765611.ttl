@@ -1,0 +1,71 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/f3f86db8-c284-3643-9b84-ee410c6c87f0>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/05405c91-13b1-3336-887c-0343a4612095> .
+
+<http://data.doremus.org/event/ddcfe81e-0018-3f85-83a7-e6361db18e7e>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1842" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1842"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/3bbeb439-01a3-3b23-8c04-1c5c80f0d66c>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/05405c91-13b1-3336-887c-0343a4612095> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a6c7629b-e389-3190-9bcd-69925d43433e> .
+
+<http://data.doremus.org/performance/540650dd-ecc4-301a-9bcd-80bb150d468e>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première édition : 1843" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/f3f86db8-c284-3643-9b84-ee410c6c87f0> .
+
+<http://data.doremus.org/event/376d3fe0-233a-3fc4-9069-06a553252164>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/deda294e-364f-3309-a485-81b1d0bc056e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/05405c91-13b1-3336-887c-0343a4612095> .
+
+<http://data.doremus.org/artist/3bbeb439-01a3-3b23-8c04-1c5c80f0d66c>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/05405c91-13b1-3336-887c-0343a4612095/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/work/deda294e-364f-3309-a485-81b1d0bc056e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/a6c7629b-e389-3190-9bcd-69925d43433e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/05405c91-13b1-3336-887c-0343a4612095> .
+
+<http://data.doremus.org/expression/05405c91-13b1-3336-887c-0343a4612095>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "4" ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/fm> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/bd> ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "musique romantique"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/05405c91-13b1-3336-887c-0343a4612095/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "52" ;
+                                      ecrm:P3_has_note         "Op. 52"
+                                    ] ;
+        ecrm:P102_has_title         "Ballade pour piano no 4" , "Ballade no 4" ;
+        ecrm:P3_has_note            "Première édition : 1843" , "Dédiée à la baronne Charlotte de Rotschild" .
+
+<http://data.doremus.org/work/a6c7629b-e389-3190-9bcd-69925d43433e>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/540650dd-ecc4-301a-9bcd-80bb150d468e> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/05405c91-13b1-3336-887c-0343a4612095> .

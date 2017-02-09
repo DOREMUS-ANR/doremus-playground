@@ -1,0 +1,77 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/4a6fd9eb-7b77-3298-a72c-d44b92ec1848>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/847164ba-6e2b-32b9-b44b-41e85febad13>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation à l'Opéra de Paris : 13 avril 1923" , "1re représentation en France (en langue russe) : Paris, Théâtre des champs-Elysées, 5 juin 1913" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/6fb34ce1-a0d1-3b58-b58a-8ada184c155e> .
+
+<http://data.doremus.org/event/470ef239-913a-38aa-81ba-019413d12d6a>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/8f5c66d2-cea0-394a-8b4c-d926b3e1d3f0> .
+
+<http://data.doremus.org/work/aec3a86e-ddd6-386c-8622-ec32391c4fbe>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/555f7a67-d1d5-35f6-8eb4-4a2967ff63f1> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/0215fcb7-c83f-3a23-bbea-d37589b33c6f> .
+
+<http://data.doremus.org/event/920cc7ed-bad9-3c76-8262-47fadbfc6d87>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/6fb34ce1-a0d1-3b58-b58a-8ada184c155e> .
+
+<http://data.doremus.org/performance/555f7a67-d1d5-35f6-8eb4-4a2967ff63f1>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation : Saint-Pétersbourg, 21 février 1886" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/8f5c66d2-cea0-394a-8b4c-d926b3e1d3f0> .
+
+<http://data.doremus.org/expression/6fb34ce1-a0d1-3b58-b58a-8ada184c155e>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/0215fcb7-c83f-3a23-bbea-d37589b33c6f> .
+
+<http://data.doremus.org/event/5a63c8df-6427-3f7b-b403-d564e99cdb2d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b641fc11-f777-3fc5-a5de-da74be606bad> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/0215fcb7-c83f-3a23-bbea-d37589b33c6f> .
+
+<http://data.doremus.org/work/b641fc11-f777-3fc5-a5de-da74be606bad>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/aec3a86e-ddd6-386c-8622-ec32391c4fbe> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/0215fcb7-c83f-3a23-bbea-d37589b33c6f> .
+
+<http://data.doremus.org/event/120ddcaf-5f53-394b-b4d7-ba65fb8acbea>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18720101/18801231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/4a6fd9eb-7b77-3298-a72c-d44b92ec1848>
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/eedc9e17-5137-3566-a815-d7eb3750878d>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/0215fcb7-c83f-3a23-bbea-d37589b33c6f> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/aec3a86e-ddd6-386c-8622-ec32391c4fbe> .
+
+<http://data.doremus.org/artist/eedc9e17-5137-3566-a815-d7eb3750878d>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/0215fcb7-c83f-3a23-bbea-d37589b33c6f>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        ecrm:P102_has_title  "Khovantchina" , "Khovanchtchina" , "Hovanscina" ;
+        ecrm:P3_has_note     "Drame musical populaire en 4 actes et 5 tableaux" , "Livret de Stassof" , "Terminé et orchestré par Rimsky-Korsakov" .
+
+<http://data.doremus.org/expression/8f5c66d2-cea0-394a-8b4c-d926b3e1d3f0>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/0215fcb7-c83f-3a23-bbea-d37589b33c6f> .

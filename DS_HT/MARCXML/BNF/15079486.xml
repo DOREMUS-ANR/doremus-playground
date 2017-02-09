@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="15079486" format="InterXMarc_Complet" type="Authority">
+<leader>00871c1 au22000272  45  <Pos Code="0004">00871</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF150794863<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">15079486</Pos>
+<Pos Code="13">3</Pos>
+</controlfield>
+<controlfield tag="008">060706130320yymmm uu        2004                             1   <Pos Code="0001">06</Pos>
+<Pos Code="0203">07</Pos>
+<Pos Code="0405">06</Pos>
+<Pos Code="0607">13</Pos>
+<Pos Code="0809">03</Pos>
+<Pos Code="1011">20</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="langues multiples [plusieurs textes en plusieurs langues => langues multiples]">mmm</Pos>
+<Pos Code="1820">uu </Pos>
+<Pos Code="2831">2004</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="041" ind1=" " ind2=" ">
+	<subfield code="a" Sens="anglais">eng</subfield>
+	<subfield code="a" Sens="hébreu [hébreu (ancien et moderne) => hébreu]">heb</subfield>
+</datafield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="b">va03<Pos Code="0001" Sens="voix - soprano">va</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">3</Pos>
+</subfield>
+	<subfield code="b">vc01<Pos Code="0001" Sens="voix - alto">vc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="b">vd02<Pos Code="0001" Sens="voix - ténor">vd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">ka04<Pos Code="0001" Sens="clavier - piano">ka</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">4</Pos>
+</subfield>
+	<subfield code="a">wc03<Pos Code="0001" Sens="instruments à vent - clarinette">wc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">3</Pos>
+</subfield>
+	<subfield code="a">wf01<Pos Code="0001" Sens="instruments à vent - cor anglais">wf</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">wa02<Pos Code="0001" Sens="instruments à vent - flûte">wa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">wb01<Pos Code="0001" Sens="instruments à vent - hautbois">wb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">pc02<Pos Code="0001" Sens="percussion - marimba">pc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">pz02<Pos Code="0001" Sens="percussion - autre">pz</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">oc01<Pos Code="0001" Sens="orchestre - orchestre à cordes 4 parties">oc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13898896</subfield>
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Reich</subfield>
+	<subfield code="m">Steve</subfield>
+	<subfield code="d">1936-....</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.eng.</subfield>
+	<subfield code="a">You are</subfield>
+</datafield>
+<datafield tag="322" ind1=" " ind2=" ">
+	<subfield code="3">11917362</subfield>
+	<subfield code="9">100</subfield>
+	<subfield code="w">.1..b.fre.</subfield>
+	<subfield code="a">Nahman de Bratslaw</subfield>
+	<subfield code="d">1772-1810</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Sous-titre : &quot;variations&quot;</subfield>
+	<subfield code="a">Sur des textes de Rabbi Nahman de Bratslaw, du Psaume 16, de Ludwig Wittgenstein et de Pirke Avot</subfield>
+	<subfield code="a">Commande de la Maîtrise de Los Angeles, du Lincoln center et des Amis de l&apos;Ensemble Modern</subfield>
+	<subfield code="a">Date de composition : 2004</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Comprend : &quot;You are wherever your thoughts are&quot; ; &quot;Shiviti Hashem l&apos;negdi&quot; ; &quot;Explanations come to an end somewhere&quot; ; &quot;Ehmor m&apos;aht, v&apos;ahsay harbay&quot;</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">You are [Enregistrement sonore] : variations / Steve Reich, comp. Nonesuch 7559-79891-2</subfield>
+</datafield>
+<datafield tag="611" ind1=" " ind2=" ">
+	<subfield code="a">SDC 12 206683</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb150794864</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1389889611917362</Attr>
+<Attr Nom="DateCreation">06/07/ 2006</Attr>
+<Attr Nom="ResponsableCreation">PERRODO ANNICK</Attr>
+<Attr Nom="StructCreation">72</Attr>
+<Attr Nom="DateDerniereValidation">20/03/ 2013</Attr>
+<Attr Nom="ResponsableDerniereValidation">LANCHEC YVES-GAEL</Attr>
+<Attr Nom="StructPremiereValidation">72</Attr>
+<Attr Nom="DatePremiereValidation">02/08/ 2006</Attr>
+<Attr Nom="ResponsablePremiereValidation">PERRODO ANNICK</Attr>
+<Attr Nom="StructDerniereValidation">82</Attr>
+<Attr Nom="NumSource">OPL 008321570</Attr>
+</record>

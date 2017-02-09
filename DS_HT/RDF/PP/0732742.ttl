@@ -1,0 +1,73 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/60a94e68-65db-31b3-b2bc-4e27517b03ca>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/52603517-e650-3068-b3c3-49b1e2f98501> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/fc619f4d-ddc8-3b1f-b501-17740ab76c00> .
+
+<http://data.doremus.org/expression/fc619f4d-ddc8-3b1f-b501-17740ab76c00/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Voix, piano" .
+
+<http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/f5865b61-2928-3d19-aa21-23a753168e1b>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/60a94e68-65db-31b3-b2bc-4e27517b03ca> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/fc619f4d-ddc8-3b1f-b501-17740ab76c00> .
+
+<http://data.doremus.org/work/52603517-e650-3068-b3c3-49b1e2f98501>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/c48b03b8-35c3-3878-8920-6d609f1aef8e> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/fc619f4d-ddc8-3b1f-b501-17740ab76c00> .
+
+<http://data.doremus.org/performance/c48b03b8-35c3-3878-8920-6d609f1aef8e>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première publication : 1823" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/495f5bbb-ed72-3549-8503-7b011a72fc69> .
+
+<http://data.doremus.org/expression/fc619f4d-ddc8-3b1f-b501-17740ab76c00>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/dm> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/diabolo/genre/lied> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/fc619f4d-ddc8-3b1f-b501-17740ab76c00/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "D" ;
+                  mus:U41_has_catalogue_number  "772" ;
+                  ecrm:P3_has_note              "D 772"
+                ] ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "22 N°2" ;
+                                      ecrm:P3_has_note         "Op. 22 N°2"
+                                    ] ;
+        ecrm:P102_has_title         "Wehmut" , "Mélancolie" ;
+        ecrm:P3_has_note            "Texte de Matthäus von Collin (\"Wenn ich durch Wald und Fluren geh'\")" , "Première publication : 1823" .
+
+<http://data.doremus.org/event/10d2aa82-525d-35a1-89c6-582f1be90537>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1822 ou 1823" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1822/1823"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/fc619f4d-ddc8-3b1f-b501-17740ab76c00> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/52603517-e650-3068-b3c3-49b1e2f98501> .
+
+<http://data.doremus.org/expression/495f5bbb-ed72-3549-8503-7b011a72fc69>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/fc619f4d-ddc8-3b1f-b501-17740ab76c00> .

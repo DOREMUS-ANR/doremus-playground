@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/ea2bf151-402a-3e02-92f0-c53e11eb270b>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/3a636c7e-5685-3e7c-a9f1-02b7481f7008> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d5f47b30-238a-3148-a671-42ee72939e5c> .
+
+<http://data.doremus.org/expression/d5f47b30-238a-3148-a671-42ee72939e5c/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace : \"À Monsieur Louis Bas, premier hautbois solo de la Société des concerts du Conservatoire et de l'Opéra\""@fr .
+
+<http://data.doremus.org/expression/d5f47b30-238a-3148-a671-42ee72939e5c>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/d> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/d5f47b30-238a-3148-a671-42ee72939e5c/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "R" ;
+                  mus:U41_has_catalogue_number  "146" ;
+                  ecrm:P3_has_note              "R 146"
+                ] ;
+        ecrm:P3_has_note     "Date de fin de composition : juin 1921" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/d5f47b30-238a-3148-a671-42ee72939e5c/dedication> .
+
+<http://data.doremus.org/artist/66a6a588-ba93-3f9f-bada-96c59ec02105>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/b21c1209-1d8c-3193-bc47-faeb52be7c19>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19000101/19210630"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/66a6a588-ba93-3f9f-bada-96c59ec02105>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d5f47b30-238a-3148-a671-42ee72939e5c> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/7452472a-6cfd-37d8-85f8-2420e71ccf3b> .
+
+<http://data.doremus.org/work/7452472a-6cfd-37d8-85f8-2420e71ccf3b>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d5f47b30-238a-3148-a671-42ee72939e5c> .
+
+<http://data.doremus.org/expression/d5f47b30-238a-3148-a671-42ee72939e5c/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/wob>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/kpf>
+                                    ] ;
+        ecrm:P3_has_note            "Hautbois, piano" .
+
+<http://data.doremus.org/work/3a636c7e-5685-3e7c-a9f1-02b7481f7008>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/7452472a-6cfd-37d8-85f8-2420e71ccf3b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d5f47b30-238a-3148-a671-42ee72939e5c> .

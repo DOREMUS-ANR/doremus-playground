@@ -1,0 +1,83 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/publication/c3584a2d-754a-3c22-b0f3-0dd9bd91a5ef>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/7b21072c-fbcb-3895-b12e-1f7b6d3880af> .
+
+<http://data.doremus.org/expression/7b21072c-fbcb-3895-b12e-1f7b6d3880af>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "1" ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/c> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/7b21072c-fbcb-3895-b12e-1f7b6d3880af/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "15" ;
+                                      ecrm:P3_has_note         "Op. 15"
+                                    ] ;
+        ecrm:P67_refers_to          <http://data.doremus.org/expression/7b21072c-fbcb-3895-b12e-1f7b6d3880af/dedication> .
+
+<http://data.doremus.org/work/0e9a9563-a5e9-37d4-8590-7f564f0e9b16>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/c3584a2d-754a-3c22-b0f3-0dd9bd91a5ef> .
+
+<http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/cd2d071c-5a07-3246-a2bc-b3b4f6beda8f>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b423f712-9856-385b-b766-cbcc5d7bc16b> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/7b21072c-fbcb-3895-b12e-1f7b6d3880af> .
+
+<http://data.doremus.org/work/b423f712-9856-385b-b766-cbcc5d7bc16b>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/3c2475c7-0442-359b-a3ce-d06735cf0198> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/7b21072c-fbcb-3895-b12e-1f7b6d3880af> .
+
+<http://data.doremus.org/work/3c2475c7-0442-359b-a3ce-d06735cf0198>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/b3a9f920-930e-35b9-88be-bef349ad902b> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/7b21072c-fbcb-3895-b12e-1f7b6d3880af> .
+
+<http://data.doremus.org/expression/7b21072c-fbcb-3895-b12e-1f7b6d3880af/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/kpf>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/oun>
+                                    ] ;
+        ecrm:P3_has_note            "Piano, orchestre" .
+
+<http://data.doremus.org/event/c09a7ebb-4f35-38fd-a528-895dd9c12643>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17950101/17981231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/7b21072c-fbcb-3895-b12e-1f7b6d3880af> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3c2475c7-0442-359b-a3ce-d06735cf0198> .
+
+<http://data.doremus.org/event/b3a9f920-930e-35b9-88be-bef349ad902b>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Vienne : T. Mollo, 1801" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0e9a9563-a5e9-37d4-8590-7f564f0e9b16> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/c3584a2d-754a-3c22-b0f3-0dd9bd91a5ef> .
+
+<http://data.doremus.org/expression/7b21072c-fbcb-3895-b12e-1f7b6d3880af/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à la princesse Barbara Odescalchi"@fr .

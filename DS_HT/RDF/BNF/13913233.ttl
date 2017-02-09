@@ -1,0 +1,43 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/b36027e1-ef12-3eca-be15-5e157d8798b0>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "0000/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/68d6fa90-86ef-388d-8256-e94ae5e402fd>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/00595d46-ddeb-3bee-b9a3-1cd8799e9812> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/ae7dd01f-71cf-3df6-b7de-59ea08ef08aa> .
+
+<http://data.doremus.org/work/cb6c6156-04e5-311b-b1ae-9a2b56b22771>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/ae7dd01f-71cf-3df6-b7de-59ea08ef08aa> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/00595d46-ddeb-3bee-b9a3-1cd8799e9812> .
+
+<http://data.doremus.org/artist/68d6fa90-86ef-388d-8256-e94ae5e402fd>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/ae7dd01f-71cf-3df6-b7de-59ea08ef08aa>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/00595d46-ddeb-3bee-b9a3-1cd8799e9812> .
+
+<http://data.doremus.org/expression/00595d46-ddeb-3bee-b9a3-1cd8799e9812>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        ecrm:P102_has_title  "Nobilissima visione" ;
+        ecrm:P3_has_note     "Suite tirée du ballet de même nom" , "Composition : 1938" , "Création : Venise, 13 septembre 1938" .
+
+<http://data.doremus.org/event/d1d216d8-afc6-3b6b-b73b-d0b9802e9199>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/cb6c6156-04e5-311b-b1ae-9a2b56b22771> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/00595d46-ddeb-3bee-b9a3-1cd8799e9812> .

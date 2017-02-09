@@ -1,0 +1,69 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/91c3654b-9d0b-3bd1-a482-c39d3f76dd5a>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/81b10201-68ff-31bc-afec-58510f051bf8> .
+
+<http://data.doremus.org/work/f260ca70-b96a-3f8d-9655-266ba32c3de7>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/9474abad-6145-3812-b5fb-86a64f07a111> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/81b10201-68ff-31bc-afec-58510f051bf8> .
+
+<http://data.doremus.org/work/a19b244b-7d44-35ea-be53-4858e9a02dc1>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f260ca70-b96a-3f8d-9655-266ba32c3de7> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/81b10201-68ff-31bc-afec-58510f051bf8> .
+
+<http://data.doremus.org/performance/9474abad-6145-3812-b5fb-86a64f07a111>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Léningrad, couvent de Smolny, 16 novembre 1990, par Marc Pontus (contre-ténor), Sylvie Moquet (viole de gambe) et l'Ensemble Musicatreize, sous la direction de Roland Hayrabedian" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/91c3654b-9d0b-3bd1-a482-c39d3f76dd5a> .
+
+<http://data.doremus.org/expression/81b10201-68ff-31bc-afec-58510f051bf8/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace : \"À mes amis de Musicatreize\""@fr .
+
+<http://data.doremus.org/event/843d8400-0859-3495-be88-5078bf949d36>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/a19b244b-7d44-35ea-be53-4858e9a02dc1> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/81b10201-68ff-31bc-afec-58510f051bf8> .
+
+<http://data.doremus.org/event/01bfedea-1a34-34ec-b08f-cd9dfbf266d0>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/91c3654b-9d0b-3bd1-a482-c39d3f76dd5a> .
+
+<http://data.doremus.org/event/15187467-457a-3a9f-a488-29f94aaaa6b2>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19901115/19901116"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/186d7471-5dbd-3f8d-b2b5-af34a1b26531>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/81b10201-68ff-31bc-afec-58510f051bf8> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f260ca70-b96a-3f8d-9655-266ba32c3de7> .
+
+<http://data.doremus.org/artist/186d7471-5dbd-3f8d-b2b5-af34a1b26531>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/81b10201-68ff-31bc-afec-58510f051bf8>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/uuu> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "MO" ;
+                  mus:U41_has_catalogue_number  "104" ;
+                  ecrm:P3_has_note              "MO 104"
+                ] ;
+        ecrm:P102_has_title  "Nuit de Pouchkine" ;
+        ecrm:P3_has_note     "Sur un extrait du poème d'Alexandre Pouchkine \"Le cavalier de bronze\" adapté par Maurice Ohana" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/81b10201-68ff-31bc-afec-58510f051bf8/dedication> .

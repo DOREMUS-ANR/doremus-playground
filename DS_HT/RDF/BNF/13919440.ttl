@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/1fbe9719-b574-3677-b3c0-470f7b302420>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/a895658f-8b5f-319d-ac01-924f2abf4d25> .
+
+<http://data.doremus.org/work/bad45b01-6c19-3276-b818-51985b146a61>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/6abbd35b-0f4d-31c3-a3a5-94ffb987a1bf> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/50c1b8e9-b7a1-3c38-9738-16437b6cd702> .
+
+<http://data.doremus.org/artist/d3a49656-4bc3-3faf-afb0-2d5cd9b7e9ea>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/50c1b8e9-b7a1-3c38-9738-16437b6cd702>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "1" ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/fm> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "10" ;
+                                      ecrm:P3_has_note         "Op. 10"
+                                    ] .
+
+<http://data.doremus.org/event/47c53f06-b000-3d88-b644-ba0b82fbdfb1>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/bad45b01-6c19-3276-b818-51985b146a61> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/50c1b8e9-b7a1-3c38-9738-16437b6cd702> .
+
+<http://data.doremus.org/event/7e1e778c-3e85-3d33-9204-006344955904>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19240101/19241231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/3ab0501f-b14a-3281-bc3c-5ce3e8a5450f>
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/d3a49656-4bc3-3faf-afb0-2d5cd9b7e9ea>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/50c1b8e9-b7a1-3c38-9738-16437b6cd702> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/6abbd35b-0f4d-31c3-a3a5-94ffb987a1bf> .
+
+<http://data.doremus.org/expression/a895658f-8b5f-319d-ac01-924f2abf4d25>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/50c1b8e9-b7a1-3c38-9738-16437b6cd702> .
+
+<http://data.doremus.org/artist/3ab0501f-b14a-3281-bc3c-5ce3e8a5450f>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/6abbd35b-0f4d-31c3-a3a5-94ffb987a1bf>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/9e49248d-a7e4-3a1c-9dbb-109b36861ea2> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/50c1b8e9-b7a1-3c38-9738-16437b6cd702> .
+
+<http://data.doremus.org/performance/9e49248d-a7e4-3a1c-9dbb-109b36861ea2>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Leningrad, Hall du Bolchoi Philharmonic, le 12 mai 1926, par l'orchestre philharmonique de Leningrad sous la direction de N. Malko" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/a895658f-8b5f-319d-ac01-924f2abf4d25> .

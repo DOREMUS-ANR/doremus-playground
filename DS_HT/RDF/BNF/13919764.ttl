@@ -1,0 +1,46 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/e37c84bb-af56-3ad6-985c-e97d27d250c1>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/1938efec-1bd1-3ce3-8890-5e044ee2b0aa> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6f9c4f48-3925-370a-8599-4ece14578148> .
+
+<http://data.doremus.org/event/8c902a82-029c-306e-a4a4-3aee5c3cf693>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1867/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/5f7f0a82-88da-3370-8070-c35a8626a332>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6f9c4f48-3925-370a-8599-4ece14578148> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/1938efec-1bd1-3ce3-8890-5e044ee2b0aa> .
+
+<http://data.doremus.org/expression/6f9c4f48-3925-370a-8599-4ece14578148>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/wz> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "212" ;
+                                      ecrm:P3_has_note         "Op. 212"
+                                    ] ;
+        ecrm:P102_has_title         "Délire" , "Valse-délire" , "Delirium" , "Delirien-Walzer" .
+
+<http://data.doremus.org/artist/5f7f0a82-88da-3370-8070-c35a8626a332>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/733cac18-38ce-32af-9a83-06fde4f1f426>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e37c84bb-af56-3ad6-985c-e97d27d250c1> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6f9c4f48-3925-370a-8599-4ece14578148> .
+
+<http://data.doremus.org/work/1938efec-1bd1-3ce3-8890-5e044ee2b0aa>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6f9c4f48-3925-370a-8599-4ece14578148> .

@@ -1,0 +1,53 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/505d908b-6cfa-3590-b9a4-2f784339452b>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e26f3e9f-0230-3fec-8a1d-abef58adc57d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/5cf3f03a-3f07-3b55-96d2-28207409ba7c> .
+
+<http://data.doremus.org/work/e26f3e9f-0230-3fec-8a1d-abef58adc57d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/53e9f495-eb34-3ec9-b0b9-774537211573> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/5cf3f03a-3f07-3b55-96d2-28207409ba7c> .
+
+<http://data.doremus.org/work/53e9f495-eb34-3ec9-b0b9-774537211573>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/5cf3f03a-3f07-3b55-96d2-28207409ba7c> .
+
+<http://data.doremus.org/artist/99e45af8-2104-308a-b8d3-9e649cec7abb>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/2119568d-00aa-3d1f-a2da-efdb13da526f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19970101/19971231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/99e45af8-2104-308a-b8d3-9e649cec7abb>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/5cf3f03a-3f07-3b55-96d2-28207409ba7c> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/53e9f495-eb34-3ec9-b0b9-774537211573> .
+
+<http://data.doremus.org/expression/5cf3f03a-3f07-3b55-96d2-28207409ba7c/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "altos (2)"@fr
+                                              ]
+                                    ] ;
+        ecrm:P3_has_note            "Altos (2)" .
+
+<http://data.doremus.org/expression/5cf3f03a-3f07-3b55-96d2-28207409ba7c>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/dui> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/5cf3f03a-3f07-3b55-96d2-28207409ba7c/casting/1> ;
+        ecrm:P102_has_title  "Viola, viola" .

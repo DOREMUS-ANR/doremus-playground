@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13908655" format="InterXMarc_Complet" type="Authority">
+<leader>00727c1 au22000272  45  <Pos Code="0004">00727</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139086559<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13908655</Pos>
+<Pos Code="13">9</Pos>
+</controlfield>
+<controlfield tag="008">890821090909yyeng op        1683    ?                        1   <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">09</Pos>
+<Pos Code="0809">09</Pos>
+<Pos Code="1011">09</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="anglais">eng</Pos>
+<Pos Code="1820">op </Pos>
+<Pos Code="2831">1683</Pos>
+<Pos Code="36" Sens="Date incertaine">?</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="b">va03<Pos Code="0001" Sens="voix - soprano">va</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">3</Pos>
+</subfield>
+	<subfield code="b">vd03<Pos Code="0001" Sens="voix - ténor">vd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">3</Pos>
+</subfield>
+	<subfield code="b">vf02<Pos Code="0001" Sens="voix - basse">vf</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">ca01<Pos Code="0001" Sens="choeurs - mixte (4 voix SATB)">ca</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">oh01<Pos Code="0001" Sens="orchestre - orchestre XVIIe-XVIIIe s.">oh</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">14803232</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Blow</subfield>
+	<subfield code="m">John</subfield>
+	<subfield code="d">1648?-1708</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.eng.</subfield>
+	<subfield code="a">Venus and Adonis</subfield>
+</datafield>
+<datafield tag="322" ind1="6" ind2=" ">
+	<subfield code="3">12161373</subfield>
+	<subfield code="9">100</subfield>
+	<subfield code="w">.0.1b.....</subfield>
+	<subfield code="a">Winchilsea</subfield>
+	<subfield code="m">Anne Finch</subfield>
+	<subfield code="d">1661-1720</subfield>
+	<subfield code="e">comtesse de</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">&quot;Masque for the entertainment of the king&quot;</subfield>
+	<subfield code="a">1re représentation : Londres, Whitehall, Hall Theatre, 19 février 1683 ou Windsor, été 1683 ?</subfield>
+</datafield>
+<datafield tag="608" ind1=" " ind2=" ">
+	<subfield code="b">Cupid, Venus, bergère (sopranos)</subfield>
+	<subfield code="b">berger 1, berger 2, chasseur (ténors)</subfield>
+	<subfield code="b">Adonis, berger 3 (basses)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Venus and Adonis [Musique imprimée] / John Blow ; edited under the supervision of the Purcell society by Bruce Wood, cop. 2008</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100371280</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb139086550</Attr>
+<Attr Nom="NumSource">OPC 100371280</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1480323212161373</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource">OPP 14820988</Attr>
+</record>

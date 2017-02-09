@@ -1,0 +1,56 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/d7ce4531-0649-35b0-acfb-53f8a4b85442>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8b1ce341-4896-3810-b710-5468f68194c1> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/497fea1d-7a99-3510-b8a4-80b673b55f33> .
+
+<http://data.doremus.org/event/08d71228-8ddf-3c00-a25e-a83f80666177>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/d7ce4531-0649-35b0-acfb-53f8a4b85442> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/497fea1d-7a99-3510-b8a4-80b673b55f33> .
+
+<http://data.doremus.org/artist/9adfe85f-a266-3ce5-a01e-9570b3c2565f>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/497fea1d-7a99-3510-b8a4-80b673b55f33/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/svl>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/och>
+                                    ] ;
+        ecrm:P3_has_note            "Violon, orchestre de chambre" .
+
+<http://data.doremus.org/event/31ac2778-ea4f-351d-9999-5386ca60a989>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1726/1728"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9adfe85f-a266-3ce5-a01e-9570b3c2565f>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/497fea1d-7a99-3510-b8a4-80b673b55f33> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8b1ce341-4896-3810-b710-5468f68194c1> .
+
+<http://data.doremus.org/expression/497fea1d-7a99-3510-b8a4-80b673b55f33>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/si> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/497fea1d-7a99-3510-b8a4-80b673b55f33/casting/1> ;
+        ecrm:P102_has_title  "Sinfoniae" ;
+        ecrm:P3_has_note     "Comprend : Largo spiccato ; Presto ; Lergo ; [Moderato]" .
+
+<http://data.doremus.org/work/8b1ce341-4896-3810-b710-5468f68194c1>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/497fea1d-7a99-3510-b8a4-80b673b55f33> .

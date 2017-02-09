@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/d4d94f57-3abf-3de3-956f-6bef762b193c>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c082229f-4143-32b5-aab2-8b665e9a28f1> .
+
+<http://data.doremus.org/expression/c082229f-4143-32b5-aab2-8b665e9a28f1>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "325" ;
+                  ecrm:P3_has_note              "SV 325"
+                ] ;
+        ecrm:P102_has_title  "Il ritorno d'Ulisse in patria" ;
+        ecrm:P3_has_note     "Opéra en un prologue et 3 actes créé à Venise, Teatro SS Giovanni e Paolo" , "Livret de Giacomo Badoaro d'après Homère" .
+
+<http://data.doremus.org/work/6fb6c6e4-83d5-3178-bb55-b49089627347>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d4d94f57-3abf-3de3-956f-6bef762b193c> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c082229f-4143-32b5-aab2-8b665e9a28f1> .
+
+<http://data.doremus.org/event/6c050c38-3069-3cda-8d24-bd126d0c637f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "16400101/16401231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c082229f-4143-32b5-aab2-8b665e9a28f1> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d4d94f57-3abf-3de3-956f-6bef762b193c> .
+
+<http://data.doremus.org/event/41dee8fa-082e-36cf-a61e-f924169b1e5e>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/6fb6c6e4-83d5-3178-bb55-b49089627347> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c082229f-4143-32b5-aab2-8b665e9a28f1> .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

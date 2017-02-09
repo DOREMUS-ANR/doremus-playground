@@ -1,0 +1,66 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/cf86dbdb-1bd1-38c1-812e-9c8465ef865a>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création : 5 février 1907 à Vienne par le quatuor Rosé" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/87befd84-60fd-30f1-9279-55be8c2b1ab6> .
+
+<http://data.doremus.org/work/4cc94449-7337-323e-a5a0-2c80ada0f5ac>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/cf86dbdb-1bd1-38c1-812e-9c8465ef865a> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6> .
+
+<http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 violons, alto, violoncelle" .
+
+<http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "1" ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "7" ;
+                                      ecrm:P3_has_note         "Op. 7"
+                                    ] ;
+        ecrm:P102_has_title         "Quatuor à cordes no 1" , "String quartet" , "Quatuor no 1" , "Streichquartett" ;
+        ecrm:P3_has_note            "Le premier quatuor de Schoenberg est représentatif des efforts du compositeur qui, dans sa première période, cherche à intégrer les techniques compositionnelles du passé (notamment concilier les influences de Wagner et Brahms) et dépasser ses propres influences. Dans les oeuvres de la même période (par exemple le poème symphonique \"Pelleas et Mélisande\", Opus 5, et la \"Symphonie de chambre\", Opus 9) Schoenberg travaille sur une forme en un seul tenant, fondant les mouvements traditionnels (allegro, adagio, scherzo, finale) en un long mouvement à la fois très diversifié dans ses parties successives et très unifié du point de vue thématique. Cette attention particulière donnée au \"motif\" se traduit surtout par une polyphonie complexe, où toutes les parties deviennent thématiques. Quant à l'univers harmonique, il devient, de part cette polyphonie, de plus en plus chromatique, conduisant Schoenberg vers la musique atonale qui apparaitra dans son quatuor suivant, trois ans plus tard." , "Création : 5 février 1907 à Vienne par le quatuor Rosé" .
+
+<http://data.doremus.org/event/0d3307bd-fe42-3d52-baaf-cfb8ffa22182>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/a60d9c12-c780-3763-9dda-dc1f600c079d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6> .
+
+<http://data.doremus.org/work/a60d9c12-c780-3763-9dda-dc1f600c079d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4cc94449-7337-323e-a5a0-2c80ada0f5ac> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6> .
+
+<http://data.doremus.org/expression/87befd84-60fd-30f1-9279-55be8c2b1ab6>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6> .
+
+<http://data.doremus.org/artist/1e92a419-4006-3cf7-bce2-cd9652fbb436>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/364b0e01-ee9b-3b22-a28d-2c6ee951cf7a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1904-1905" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1904/1905"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1e92a419-4006-3cf7-bce2-cd9652fbb436>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4cc94449-7337-323e-a5a0-2c80ada0f5ac> .

@@ -1,0 +1,82 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/a319f449-31a1-38ba-bfc7-2f0c9f4d5995>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8bd61d9f-c5b5-3990-97ec-3da81d21918c> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/af6a1a04-9195-3b82-84bb-e1dd3448e9bd> .
+
+<http://data.doremus.org/expression/af6a1a04-9195-3b82-84bb-e1dd3448e9bd/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "cordes"@fr
+                                              ]
+                                    ] ;
+        ecrm:P3_has_note            "Cordes" .
+
+<http://data.doremus.org/event/c1e037de-768a-35f7-aac3-4fdb1429e33c>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18250801/18260930"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/af6a1a04-9195-3b82-84bb-e1dd3448e9bd> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f00d5dc9-788e-3981-ba52-e4525a4aebc7> .
+
+<http://data.doremus.org/expression/af6a1a04-9195-3b82-84bb-e1dd3448e9bd/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace au prince Nikolaus von Galitzin (Nikolaj Golicyn)"@fr .
+
+<http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/publication/dee27db6-b9ac-3987-b75d-0ba410cf009d>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/af6a1a04-9195-3b82-84bb-e1dd3448e9bd> .
+
+<http://data.doremus.org/work/f00d5dc9-788e-3981-ba52-e4525a4aebc7>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/159ae554-f103-3e4a-9ebf-675a5c299271> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/af6a1a04-9195-3b82-84bb-e1dd3448e9bd> .
+
+<http://data.doremus.org/work/4f4afe03-f52d-3d80-b4c6-ff8d9f677abd>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/dee27db6-b9ac-3987-b75d-0ba410cf009d> .
+
+<http://data.doremus.org/work/8bd61d9f-c5b5-3990-97ec-3da81d21918c>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f00d5dc9-788e-3981-ba52-e4525a4aebc7> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/af6a1a04-9195-3b82-84bb-e1dd3448e9bd> .
+
+<http://data.doremus.org/expression/af6a1a04-9195-3b82-84bb-e1dd3448e9bd>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "13" ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/bb> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/qua> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/af6a1a04-9195-3b82-84bb-e1dd3448e9bd/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "130" ;
+                                      ecrm:P3_has_note         "Op. 130"
+                                    ] ;
+        ecrm:P3_has_note            "La \"Grosse Fuge\", composée comme final de ce quatuor, a été remplacée par un allegro et publiée séparément" ;
+        ecrm:P67_refers_to          <http://data.doremus.org/expression/af6a1a04-9195-3b82-84bb-e1dd3448e9bd/dedication> .
+
+<http://data.doremus.org/event/159ae554-f103-3e4a-9ebf-675a5c299271>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Vienne : Artaria, 1827" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4f4afe03-f52d-3d80-b4c6-ff8d9f677abd> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/dee27db6-b9ac-3987-b75d-0ba410cf009d> .

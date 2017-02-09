@@ -1,0 +1,72 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/b5fd1d39-b4e9-3568-b294-4cfdb37e9e08>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "Dates de composition : 1911-1912, 2ème version : 1916." ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1912/1916"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/220a7692-0cb9-3fff-9c2a-3ed91b15e47a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/7196fea3-3d4f-3e19-b8e3-7ccc7d0bda95> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/1c2f36d1-6595-35b2-9744-a8a483b1c057> .
+
+<http://data.doremus.org/work/8657da4a-7521-3200-a3ef-80edbaf5ad62>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/1c2f36d1-6595-35b2-9744-a8a483b1c057> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/7196fea3-3d4f-3e19-b8e3-7ccc7d0bda95> .
+
+<http://data.doremus.org/artist/220a7692-0cb9-3fff-9c2a-3ed91b15e47a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/2ba167c7-b374-370f-9dba-1d2e02a1958e>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8657da4a-7521-3200-a3ef-80edbaf5ad62> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/7196fea3-3d4f-3e19-b8e3-7ccc7d0bda95> .
+
+<http://data.doremus.org/performance/83421d52-dc9c-35cd-8cc1-efca3c8a4f93>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Vienne, Hofoper, le 4 octobre 1916" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/19a9aa0e-d026-304a-acd6-91cd5fb8a610> .
+
+<http://data.doremus.org/expression/7196fea3-3d4f-3e19-b8e3-7ccc7d0bda95>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/7196fea3-3d4f-3e19-b8e3-7ccc7d0bda95/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "TrV" ;
+                  mus:U41_has_catalogue_number  "228" ;
+                  ecrm:P3_has_note              "TrV 228"
+                ] ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "60" ;
+                                      ecrm:P3_has_note         "60"
+                                    ] ;
+        ecrm:P102_has_title         "Ariane à Naxos" , "Ariadne auf Naxos" ;
+        ecrm:P3_has_note            "Créé à Vienne, Hofoper, le 4 octobre 1916" , "Opéra en 1 acte et 1 prologue composé sur un livret de Hugo von Hofmannsthal. Il existe une version de 1912, sans le prologue. L'oeuvre a été révisée définitivement en 1916" .
+
+<http://data.doremus.org/expression/19a9aa0e-d026-304a-acd6-91cd5fb8a610>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/7196fea3-3d4f-3e19-b8e3-7ccc7d0bda95> .
+
+<http://data.doremus.org/expression/7196fea3-3d4f-3e19-b8e3-7ccc7d0bda95/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : La prima donna/Ariane, Zerbinette, une naïade, Écho (Sopranos) ; le compositeur (Mezzo-soprano) ; une dryade (Alto) ; le ténor/Bacchus, Scaramouche, Brighella, le maître de danse, un officier (Ténors) ; Arlequin, le maître de musique, le perruquier (Baryton) ; Truffaldino, le laquais (Basse) ; le majordome (rôle parlé)" .
+
+<http://data.doremus.org/work/1c2f36d1-6595-35b2-9744-a8a483b1c057>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/83421d52-dc9c-35cd-8cc1-efca3c8a4f93> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/7196fea3-3d4f-3e19-b8e3-7ccc7d0bda95> .

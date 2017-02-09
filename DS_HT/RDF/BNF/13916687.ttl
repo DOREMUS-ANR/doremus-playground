@@ -1,0 +1,42 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/faebb9b2-2943-3ff8-ae14-f1b18fc0115b>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/6495ae7a-b56d-3781-9914-5397f6dc545f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/aaffc67c-7571-3212-8169-93832c10faef> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/10695d6c-b511-317e-b960-618075a05af9> .
+
+<http://data.doremus.org/work/aaffc67c-7571-3212-8169-93832c10faef>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/10695d6c-b511-317e-b960-618075a05af9> .
+
+<http://data.doremus.org/event/a7e52339-55c7-3371-9ddb-6c349ad42b7c>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1967/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/faebb9b2-2943-3ff8-ae14-f1b18fc0115b>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/10695d6c-b511-317e-b960-618075a05af9> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/aaffc67c-7571-3212-8169-93832c10faef> .
+
+<http://data.doremus.org/expression/10695d6c-b511-317e-b960-618075a05af9>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "L'Oriente è rosso" , "Per Bastiana Tai-Yang Cheng" .
+
+<http://data.doremus.org/event/5be9de73-3910-3758-b07d-402864a1862b>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/6495ae7a-b56d-3781-9914-5397f6dc545f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/10695d6c-b511-317e-b960-618075a05af9> .

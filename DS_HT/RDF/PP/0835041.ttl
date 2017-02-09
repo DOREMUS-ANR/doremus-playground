@@ -1,0 +1,69 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/e67eddb6-047b-3c3e-b1ca-bc9d5a4243c9>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/38209f6f-21ed-366e-88ba-a24a39e9a4a6> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/015aad7c-1233-3ff6-85b6-e571ec0bc3d6> .
+
+<http://data.doremus.org/work/06802e39-caf8-30a9-acee-c36c2be49fea>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/185dc81c-3eba-3c70-9eb4-3cb7439a1115> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/015aad7c-1233-3ff6-85b6-e571ec0bc3d6> .
+
+<http://data.doremus.org/event/54c1eceb-4d28-39d7-a480-07a98c601cef>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1981-1982" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1981/1982"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/dc94bfd5-ef4b-36ba-a87a-f5bf042c94cf>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/015aad7c-1233-3ff6-85b6-e571ec0bc3d6> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/06802e39-caf8-30a9-acee-c36c2be49fea> .
+
+<http://data.doremus.org/expression/015aad7c-1233-3ff6-85b6-e571ec0bc3d6/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Mezzo-soprano, violon, contrebasse à 5 cordes, cymbalum" .
+
+<http://data.doremus.org/performance/185dc81c-3eba-3c70-9eb4-3cb7439a1115>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Budapest, le 1er octobre 1983, par Adrienne Csengery (soprano), András Keller (violon), Ferenc Csontos (contrebasse), Márta Fábián (cymbalum). Edité chez EMB" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/89c87b3d-a332-3773-8f9e-1291e029b04a> .
+
+<http://data.doremus.org/artist/dc94bfd5-ef4b-36ba-a87a-f5bf042c94cf>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/38209f6f-21ed-366e-88ba-a24a39e9a4a6>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/06802e39-caf8-30a9-acee-c36c2be49fea> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/015aad7c-1233-3ff6-85b6-e571ec0bc3d6> .
+
+<http://data.doremus.org/expression/89c87b3d-a332-3773-8f9e-1291e029b04a>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/015aad7c-1233-3ff6-85b6-e571ec0bc3d6> .
+
+<http://data.doremus.org/expression/015aad7c-1233-3ff6-85b6-e571ec0bc3d6>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/015aad7c-1233-3ff6-85b6-e571ec0bc3d6/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "19" ;
+                                      ecrm:P3_has_note         "Op. 19"
+                                    ] ;
+        ecrm:P102_has_title         "Scenes from a novel" , "Scènes d'un roman" ;
+        ecrm:P3_has_note            "Créé à Budapest, le 1er octobre 1983, par Adrienne Csengery (soprano), András Keller (violon), Ferenc Csontos (contrebasse), Márta Fábián (cymbalum). Edité chez EMB" , "Extrait du commentaire de Grégoire Tosser : \"Contemporaines des Messages de feu Demoiselle R. V. Troussova op. 17, qui mettent également en musique de très courts poèmes en russe de la poétesse Rimma Dalos, les Scènes d'un roman utilisent un effectif plus réduit rappelant les ensembles de musique tsigane. Le parcours des quinze poèmes trace une histoire amoureuse, souvent douloureuse, considérée du point de vue d'une narratrice à la première personne. Les quatre interprètes jouent souvent ensemble, à l'exception de certaines pièces-clés [...] L'oeuvre est caractéristique de l'écriture fragmentaire chère à Kurtág : concision issue de Webern ; écriture vocale très soignée et tendue constamment vers l'émotion, quel que soit le matériau (larges intervalles ou ambitus réduit) ; mise en musique très respectueuse du texte, conservant des topiques figuratives et madrigalistes.\" Dédié à Adrienne Csengery. Comprend : 1- Viens ; 2- De la rencontre à la séparation (pleur de désespoir) ; 3- Prière ; 4- Laisse-moi ; 5- Comptine ; 6- Rêve ; 7- Rondo ; 8- Nudité ; 9- Valse pour orgue de barbarie ; 10- Conte ; 11- De nouveau ; 12- La série infinie des dimanches (Perpetuum mobile) ; 13- Visite ; 14- Histoire vraie ; 15- Epilogue (pleur de mélancolie). Durée : environ 21 minutes." .

@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/45a402a7-86f7-3fcc-97e8-0e118362491f>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/1660b8a7-d6f4-354e-8551-472fc7f22a92> .
+
+<http://data.doremus.org/event/9ebe6bc2-91ed-3dc7-925a-edee24a8ca0c>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18280501/18280531"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/1660b8a7-d6f4-354e-8551-472fc7f22a92> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/45a402a7-86f7-3fcc-97e8-0e118362491f> .
+
+<http://data.doremus.org/expression/1660b8a7-d6f4-354e-8551-472fc7f22a92>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "D" ;
+                  mus:U41_has_catalogue_number  "946" ;
+                  ecrm:P3_has_note              "D 946"
+                ] ;
+        ecrm:P102_has_title  "3 pièces" , "3 Klavierstücke" , "Drei Klavierstücke" ;
+        ecrm:P3_has_note     "Tonalités : mi bémol mineur, mi bémol majeur, do majeur" .
+
+<http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/e4323f41-cb99-3958-a0e8-18a8448f5944>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/45a402a7-86f7-3fcc-97e8-0e118362491f> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/1660b8a7-d6f4-354e-8551-472fc7f22a92> .
+
+<http://data.doremus.org/event/9d35306b-66ed-3d6b-9ab3-859954918d05>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e4323f41-cb99-3958-a0e8-18a8448f5944> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/1660b8a7-d6f4-354e-8551-472fc7f22a92> .

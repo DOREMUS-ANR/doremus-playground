@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13917842" format="InterXMarc_Complet" type="Authority">
+<leader>00700c1 au22000272  45  <Pos Code="0004">00700</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139178420<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13917842</Pos>
+<Pos Code="13">0</Pos>
+</controlfield>
+<controlfield tag="008">890821980616yyheb zz        1981      ....                   1   <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">98</Pos>
+<Pos Code="0809">06</Pos>
+<Pos Code="1011">16</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="hébreu [hébreu (ancien et moderne) => hébreu]">heb</Pos>
+<Pos Code="1820">zz </Pos>
+<Pos Code="2831">1981</Pos>
+<Pos Code="3841">....</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">va03<Pos Code="0001" Sens="voix - soprano">va</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">3</Pos>
+</subfield>
+	<subfield code="a">sb01<Pos Code="0001" Sens="cordes frottées - alto">sb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">wa01<Pos Code="0001" Sens="instruments à vent - flûte">wa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">we01<Pos Code="0001" Sens="instruments à vent - piccolo">we</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">wb01<Pos Code="0001" Sens="instruments à vent - hautbois">wb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">wf01<Pos Code="0001" Sens="instruments à vent - cor anglais">wf</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">wc02<Pos Code="0001" Sens="instruments à vent - clarinette">wc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">wd01<Pos Code="0001" Sens="instruments à vent - basson">wd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">pn06<Pos Code="0001" Sens="percussion - non spécifié">pn</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">6</Pos>
+</subfield>
+	<subfield code="a">oc01<Pos Code="0001" Sens="orchestre - orchestre à cordes 4 parties">oc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13898896</subfield>
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Reich</subfield>
+	<subfield code="m">Steve</subfield>
+	<subfield code="d">1936-....</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Tehillim</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Textes des Psaumes 19, 34, 18, 150</subfield>
+	<subfield code="a">Créé à Stuttgart (les deux premières parties) et à New York (l&apos;oeuvre entière) avec le New York Philharmonic dir. par Zubin Mehta</subfield>
+	<subfield code="a">Tous les instruments sont amplifiés</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Date de composition : 1981</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">19810600 (création à Stuttgart)</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">19820916 (création à New York)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Contemporary composers</subfield>
+	<subfield code="a">Works / Steve Reich, comp. Nonesuch 794512</subfield>
+</datafield>
+<datafield tag="611" ind1=" " ind2=" ">
+	<subfield code="a">SDC 12 104165</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100475890</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb139178425</Attr>
+<Attr Nom="NumSource">OPC 100475890</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13898896</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource">OPP 14788125</Attr>
+</record>

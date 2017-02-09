@@ -1,0 +1,60 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/00e2639f-c817-3e6b-9af6-bdd6cc5cd7f2>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/284da7f9-8200-3e3e-b356-d445c4455b4e> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/19c9889a-6e43-3db5-a15c-d614e421fe81> .
+
+<http://data.doremus.org/expression/19c9889a-6e43-3db5-a15c-d614e421fe81>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sp> ;
+        ecrm:P102_has_title  "Lénore" ;
+        ecrm:P3_has_note     "D'après la ballade éponyme de Gottfried August Bürger" , "Il existe une réduction pour 2 pianos par Camille Saint-Säens (1876) et une pour piano à 4 mains par César Franck" .
+
+<http://data.doremus.org/event/284da7f9-8200-3e3e-b356-d445c4455b4e>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : ca 1894-4895" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f7697d34-a731-3632-8a95-598c909be968> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/185694e4-107b-3858-b372-5d56ee6283c1> .
+
+<http://data.doremus.org/artist/7e1f2e0e-f2d7-3217-84e6-abdfd1b77a45>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/publication/185694e4-107b-3858-b372-5d56ee6283c1>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/19c9889a-6e43-3db5-a15c-d614e421fe81> .
+
+<http://data.doremus.org/event/7493b3dd-0d7d-34d6-bac3-1c9822733ee3>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18750101/18751231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7e1f2e0e-f2d7-3217-84e6-abdfd1b77a45>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/19c9889a-6e43-3db5-a15c-d614e421fe81> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/00e2639f-c817-3e6b-9af6-bdd6cc5cd7f2> .
+
+<http://data.doremus.org/work/e1a69ad3-66fc-3b8b-b0c7-e1362714b88f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/00e2639f-c817-3e6b-9af6-bdd6cc5cd7f2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/19c9889a-6e43-3db5-a15c-d614e421fe81> .
+
+<http://data.doremus.org/event/e39b0c74-198f-3922-84c6-1c8d9fa389ac>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e1a69ad3-66fc-3b8b-b0c7-e1362714b88f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/19c9889a-6e43-3db5-a15c-d614e421fe81> .
+
+<http://data.doremus.org/work/f7697d34-a731-3632-8a95-598c909be968>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/185694e4-107b-3858-b372-5d56ee6283c1> .

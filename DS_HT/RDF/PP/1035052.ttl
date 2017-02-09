@@ -1,0 +1,35 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/15d3c0a6-1247-3788-b6ee-e2e6f4e0014a>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/aa71427b-09e0-31fa-8d77-e0ea296ee063> .
+
+<http://data.doremus.org/work/877b9952-491f-39f9-906a-6d5313eec54f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/15d3c0a6-1247-3788-b6ee-e2e6f4e0014a> .
+
+<http://data.doremus.org/event/c061b857-3837-301c-8889-0b1ffba55330>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/aa71427b-09e0-31fa-8d77-e0ea296ee063> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/15d3c0a6-1247-3788-b6ee-e2e6f4e0014a> .
+
+<http://data.doremus.org/expression/aa71427b-09e0-31fa-8d77-e0ea296ee063>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "BWV" ;
+                  mus:U41_has_catalogue_number  "687" ;
+                  ecrm:P3_has_note              "BWV 687"
+                ] ;
+        ecrm:P102_has_title  "Choralbearbeitungen" , "Clavierübung III" , "Aus tiefer Not schrei ich zu dir" .
+
+<http://data.doremus.org/event/41bddd58-f140-375a-afdf-c78812818e47>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/877b9952-491f-39f9-906a-6d5313eec54f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/aa71427b-09e0-31fa-8d77-e0ea296ee063> .

@@ -1,0 +1,47 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/4dbaf0bb-5583-33f2-911c-e9eec333225e>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/80a20425-de7d-31a2-a257-91c3b4d5c86e> .
+
+<http://data.doremus.org/work/290a3678-911f-3ad3-b39f-c329af058a60>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4dbaf0bb-5583-33f2-911c-e9eec333225e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/80a20425-de7d-31a2-a257-91c3b4d5c86e> .
+
+<http://data.doremus.org/expression/80a20425-de7d-31a2-a257-91c3b4d5c86e>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/li> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "22" ;
+                                      ecrm:P3_has_note         "Op. 22"
+                                    ] ;
+        ecrm:P102_has_title         "Drei Lieder" ;
+        ecrm:P3_has_note            "Comprend : Was Du mir bist ? (poème de Eleonore van der Straten) ; Mit Dir zu schweigen (poème de Karl Kobald) ; Welt ist stille eingeschlafen (poème de Karl Kobald)" .
+
+<http://data.doremus.org/event/4418ce05-a7ac-36d7-a069-2697a9ce1d1c>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1928/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/80a20425-de7d-31a2-a257-91c3b4d5c86e> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4dbaf0bb-5583-33f2-911c-e9eec333225e> .
+
+<http://data.doremus.org/event/e5699277-8714-333a-9850-4039670c9d9f>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/290a3678-911f-3ad3-b39f-c329af058a60> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/80a20425-de7d-31a2-a257-91c3b4d5c86e> .

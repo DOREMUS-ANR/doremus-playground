@@ -1,0 +1,55 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/6dd802c1-d8d5-32cc-91fa-494ec02e8c8b>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/cd1f741b-a74d-3d51-9bb8-1a3efe0398b9>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/fc3a3cf4-33a8-39c2-9aee-7cef224db7fd> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/5c8da245-6681-36b8-9822-2200fa43249d> .
+
+<http://data.doremus.org/work/fc3a3cf4-33a8-39c2-9aee-7cef224db7fd>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/5c8da245-6681-36b8-9822-2200fa43249d> .
+
+<http://data.doremus.org/event/ec060384-b4cf-3bb3-84df-69a1ba77ae6a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19930101/19931231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6dd802c1-d8d5-32cc-91fa-494ec02e8c8b>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/5c8da245-6681-36b8-9822-2200fa43249d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/fc3a3cf4-33a8-39c2-9aee-7cef224db7fd> .
+
+<http://data.doremus.org/expression/5c8da245-6681-36b8-9822-2200fa43249d/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/oie>
+                                    ] ;
+        ecrm:P3_has_note            "Ensemble instrumental" .
+
+<http://data.doremus.org/expression/5c8da245-6681-36b8-9822-2200fa43249d>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/uuu> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/5c8da245-6681-36b8-9822-2200fa43249d/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "9" ;
+                                      ecrm:P3_has_note         "Op. 9"
+                                    ] ;
+        ecrm:P102_has_title         "Living toys" .
+
+<http://data.doremus.org/event/59c3a3f4-67bb-3757-8552-5f5f8cf19e0b>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/cd1f741b-a74d-3d51-9bb8-1a3efe0398b9> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/5c8da245-6681-36b8-9822-2200fa43249d> .

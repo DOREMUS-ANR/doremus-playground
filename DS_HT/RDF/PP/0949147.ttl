@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/ecc9da64-422b-3a47-8b07-4bb3c2ff4f1e>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/ecc9da64-422b-3a47-8b07-4bb3c2ff4f1e/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "1/2" ;
+                                      ecrm:P3_has_note         "Op. 1/2"
+                                    ] ;
+        ecrm:P102_has_title         "Punkte" ;
+        ecrm:P3_has_note            "A propos de cette oeuvre, le compositeur parle d'une musique pointilliste, et il précise : \"... les points ne sont que rarement de simples points sonores : ils deviennent le centre de groupes, de colonnes, d'essaims, de masses vibrantes, le noyau d'organismes micro-musicaux [...] J'ai utilisé quatre types de figures : un point s'élargira en montant ou en descendant ; ou bien un mélange sonore diminuera en montant ou en descendant, jusqu'à ce que le tout se mêle en un point. Élargissements et resserrements ont des textures caractéristiques (sons continus, trémolo, trilles staccato, portato, legato, glissandi, mélodies chromatiques, etc.) ainsi que des couleurs, des intensités et des vitesses caractéristiques. Les intervalles et les tempi dans lesquels s'effectuent ces mouvements sont constants pour des périodes plus ou moins longues et forment ainsi de plus grandes structures.\" Révisions en 1966 et 1993. Durée : 27 minutes" , "Créé le 20 octobre 1963, Festival de Donaueschingen, Allemagne, par l'Orchestre symphonique du Südwestfunk Baden-Baden, direction Pierre Boulez. Edition : Universal" .
+
+<http://data.doremus.org/expression/3212c3da-a78c-3831-8bde-b856b8103796>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ecc9da64-422b-3a47-8b07-4bb3c2ff4f1e> .
+
+<http://data.doremus.org/event/8086628b-449b-3db3-b2cb-e6664440bcdb>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/4ab70e77-9197-3445-8684-11a782dc59e6> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ecc9da64-422b-3a47-8b07-4bb3c2ff4f1e> .
+
+<http://data.doremus.org/artist/e5e49d54-4a2a-354b-a6d1-3f9d2090ef64>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/4ab70e77-9197-3445-8684-11a782dc59e6>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/e843f839-50c8-3595-b43f-2702c5a92b12> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ecc9da64-422b-3a47-8b07-4bb3c2ff4f1e> .
+
+<http://data.doremus.org/work/e843f839-50c8-3595-b43f-2702c5a92b12>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/fde06fa8-2473-3a8b-a30b-5c0c097bb5d4> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ecc9da64-422b-3a47-8b07-4bb3c2ff4f1e> .
+
+<http://data.doremus.org/expression/ecc9da64-422b-3a47-8b07-4bb3c2ff4f1e/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "3 flûtes, 3 hautbois, 3 clarinettes, 3 bassons, 3 cors, 3 trompettes, 2 trombones, 1 tuba, 3 percussionnistes, 2 harpes, 2 pianos; cordes (toutes solistes) : 16 violons, 8 altos, 6 violoncelles, 4 contrebasses" .
+
+<http://data.doremus.org/event/6f7095c4-0f65-3f13-af63-820d8a44e1f6>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1952-1962" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1952/1962"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/e5e49d54-4a2a-354b-a6d1-3f9d2090ef64>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ecc9da64-422b-3a47-8b07-4bb3c2ff4f1e> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e843f839-50c8-3595-b43f-2702c5a92b12> .
+
+<http://data.doremus.org/performance/fde06fa8-2473-3a8b-a30b-5c0c097bb5d4>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé le 20 octobre 1963, Festival de Donaueschingen, Allemagne, par l'Orchestre symphonique du Südwestfunk Baden-Baden, direction Pierre Boulez. Edition : Universal" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/3212c3da-a78c-3831-8bde-b856b8103796> .

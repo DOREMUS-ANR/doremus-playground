@@ -1,0 +1,47 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/6ba08ed7-94cd-370b-8f32-c1a99785dc2d>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "4/V" ;
+                                      ecrm:P3_has_note         "Op. 4/V"
+                                    ] ;
+        ecrm:P102_has_title         "Klavierstück IX" ;
+        ecrm:P3_has_note            "Créé par Aloys Kontarsky le 21 mai 1962, Allemagne, Cologne" .
+
+<http://data.doremus.org/event/de955883-9721-3245-91dd-5ae3bd5eb5aa>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/6917f051-58cd-3ea9-a423-293a1814eb81> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6ba08ed7-94cd-370b-8f32-c1a99785dc2d> .
+
+<http://data.doremus.org/work/14c59373-069c-384a-bc07-1c80bd5c8feb>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6ba08ed7-94cd-370b-8f32-c1a99785dc2d> .
+
+<http://data.doremus.org/artist/e5e49d54-4a2a-354b-a6d1-3f9d2090ef64>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/75a8a6e5-6992-374e-aff0-a59f2e761da8>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19540101/19551231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/e5e49d54-4a2a-354b-a6d1-3f9d2090ef64>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6ba08ed7-94cd-370b-8f32-c1a99785dc2d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/14c59373-069c-384a-bc07-1c80bd5c8feb> .
+
+<http://data.doremus.org/work/6917f051-58cd-3ea9-a423-293a1814eb81>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/14c59373-069c-384a-bc07-1c80bd5c8feb> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6ba08ed7-94cd-370b-8f32-c1a99785dc2d> .

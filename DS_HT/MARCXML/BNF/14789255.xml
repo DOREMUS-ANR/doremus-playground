@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="14789255" format="InterXMarc_Complet" type="Authority">
+<leader>00326c0 au22000272  45  <Pos Code="0004">00326</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF147892557<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">14789255</Pos>
+<Pos Code="13">7</Pos>
+</controlfield>
+<controlfield tag="008">950419080327yy    dui       1992                             1   <Pos Code="0001">95</Pos>
+<Pos Code="0203">04</Pos>
+<Pos Code="0405">19</Pos>
+<Pos Code="0607">08</Pos>
+<Pos Code="0809">03</Pos>
+<Pos Code="1011">27</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820" Sens="duo instrumental">dui</Pos>
+<Pos Code="2831">1992</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">sa01<Pos Code="0001" Sens="cordes frottées - violon">sa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">sb01<Pos Code="0001" Sens="cordes frottées - alto">sb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13893539</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Dusapin</subfield>
+	<subfield code="m">Pascal</subfield>
+	<subfield code="d">1955-....</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Ohimé</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Hommage à Betsy Jolas</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="u">http://brahms.ircam.fr/</subfield>
+	<subfield code="d">2008-03-28</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100116320</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb14789255k</Attr>
+<Attr Nom="NumSource">OPD 100116320</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13893539</Attr>
+<Attr Nom="DateCreation">19/04/ 1995</Attr>
+<Attr Nom="ResponsableCreation">MIGV3_FG</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">19/04/ 1995</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV3_FG</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource">CRI CO000905070001P D</Attr>
+</record>

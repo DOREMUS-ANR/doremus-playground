@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/92163f78-7d4f-3e50-baa2-29e873db941c>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/476f364a-508c-3bf3-8d8d-b5091382b5f9> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/521daf03-c32e-3a72-9be8-cadb0a586ab4> .
+
+<http://data.doremus.org/work/279a86d1-6900-3321-9633-53bd80f8aa48>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/18e2416c-da02-3135-a030-8e709d0eb9e8> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/521daf03-c32e-3a72-9be8-cadb0a586ab4> .
+
+<http://data.doremus.org/performance/18e2416c-da02-3135-a030-8e709d0eb9e8>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Paris, 5 décembre 1926,sous la direction de Philippe Gaubert" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/7c67e6a6-1604-3320-bfbe-f53d7bb0c061> .
+
+<http://data.doremus.org/work/476f364a-508c-3bf3-8d8d-b5091382b5f9>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/279a86d1-6900-3321-9633-53bd80f8aa48> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/521daf03-c32e-3a72-9be8-cadb0a586ab4> .
+
+<http://data.doremus.org/event/8d445141-7599-3f1e-99b0-0a29154b4745>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/7c67e6a6-1604-3320-bfbe-f53d7bb0c061> .
+
+<http://data.doremus.org/event/676cdcf7-dce7-3a16-a86a-14af5f65e029>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19250101/19261231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a4064ce2-1e90-30f9-b01b-84f360564a61>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/521daf03-c32e-3a72-9be8-cadb0a586ab4> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/279a86d1-6900-3321-9633-53bd80f8aa48> .
+
+<http://data.doremus.org/artist/a4064ce2-1e90-30f9-b01b-84f360564a61>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/521daf03-c32e-3a72-9be8-cadb0a586ab4>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/sp> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "87" ;
+                                      ecrm:P3_has_note         "Op. 87"
+                                    ] ;
+        ecrm:P102_has_title         "Diptyque méditerranéen" ;
+        ecrm:P3_has_note            "Comprend : \"Soleil matinal\" ; \"Soleil vespéral\"" .
+
+<http://data.doremus.org/expression/7c67e6a6-1604-3320-bfbe-f53d7bb0c061>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/521daf03-c32e-3a72-9be8-cadb0a586ab4> .

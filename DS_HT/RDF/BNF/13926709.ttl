@@ -1,0 +1,47 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/937c53f9-9c24-3c33-a988-45661a609cfc>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/li> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "12" ;
+                                      ecrm:P3_has_note         "Op. 12"
+                                    ] ;
+        ecrm:P102_has_title         "2 Balladen" , "Zwei Balladen" ;
+        ecrm:P3_has_note            "Comprend : \"Jane Grey\" (poème de Heinrich Ammann) ; \"Der verlorene Haufen\" (poème de Viktor Klemperer)" .
+
+<http://data.doremus.org/artist/73b2feca-83bd-36d3-824b-f81cad85326d>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/2ef97573-2347-38f1-841b-e8141e0e1628>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8c65af7c-db52-39eb-a261-1076a71fe0f6> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/937c53f9-9c24-3c33-a988-45661a609cfc> .
+
+<http://data.doremus.org/event/cf51ccf8-4c86-31b0-9571-df7dc8a4df62>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19070101/19071231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/73b2feca-83bd-36d3-824b-f81cad85326d>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/937c53f9-9c24-3c33-a988-45661a609cfc> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4caa8cc5-5469-36ca-8d2b-15ac06a88011> .
+
+<http://data.doremus.org/work/4caa8cc5-5469-36ca-8d2b-15ac06a88011>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/937c53f9-9c24-3c33-a988-45661a609cfc> .
+
+<http://data.doremus.org/work/8c65af7c-db52-39eb-a261-1076a71fe0f6>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4caa8cc5-5469-36ca-8d2b-15ac06a88011> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/937c53f9-9c24-3c33-a988-45661a609cfc> .

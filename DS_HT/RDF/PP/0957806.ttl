@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/c2d3330b-c8bc-39d1-95b1-ac1ec0328262/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Choeur a capella" .
+
+<http://data.doremus.org/expression/c2d3330b-c8bc-39d1-95b1-ac1ec0328262>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "musique sacrée"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/c2d3330b-c8bc-39d1-95b1-ac1ec0328262/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "37" ;
+                                      ecrm:P3_has_note         "Op. 37"
+                                    ] ;
+        ecrm:P102_has_title         "All-night vigil" , "Vêpres" , "Vsenoshchnoye bdeniye" , "Vsenosnoe bdenie" ;
+        ecrm:P3_has_note            "Dans la liturgie orthodoxe, les textes des Vêpres (\"Les Vigiles nocturnes\" ou \"la Grande Louange du soir et du matin\" en traduction plus exacte) étaient à l'origine destinés a être chantés entre six heures du soir et neuf heures de matin au veilles des fêtes importantes de l'Eglise orthodoxe. Rachmaninoff, dans son oeuvre, prend les textes les plus importants, réduisant ainsi la durée à une heure (le service dure dans son intégralité trois heures). Il utilise essentiellement des mélodies tirées du chant \"znamenny\" (équivalent orthodoxe du chant grégorien ). Rachmaninoff en offre une harmonisation à la fois très personnelle et très influençée par ses études auprès de Stepan Smolenski, le dédicataire, remarquable par le respect de la modalité originale des chants, (un alliage de modernité et d'archaisme typique de l'auteur) loin des harmonisations tonales du 19eme siècle." , "Créées le 10 mars 1915, par le choeur du Synode de Moscou, sous la direction de Nikolaï Daniline" .
+
+<http://data.doremus.org/event/ce54e5e0-d5db-324c-a867-02a01a80f1bf>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/fb92bce6-bbe8-3baf-88b3-3268cbaa83e9> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c2d3330b-c8bc-39d1-95b1-ac1ec0328262> .
+
+<http://data.doremus.org/work/fb92bce6-bbe8-3baf-88b3-3268cbaa83e9>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/77d086c2-8312-370c-937d-efe4c9cea503> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c2d3330b-c8bc-39d1-95b1-ac1ec0328262> .
+
+<http://data.doremus.org/artist/a66d98b7-610e-37f5-b2ab-81ff7d788f36>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/77d086c2-8312-370c-937d-efe4c9cea503>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/ad8abb1a-b6cb-3a49-8e6d-7bcf2e2897f2> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c2d3330b-c8bc-39d1-95b1-ac1ec0328262> .
+
+<http://data.doremus.org/expression/ff1ff5e9-f658-3893-97dd-94ecc4f5df51>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c2d3330b-c8bc-39d1-95b1-ac1ec0328262> .
+
+<http://data.doremus.org/event/a3fdda3b-6579-35ba-a477-040738a21dde>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1915" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1915"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a66d98b7-610e-37f5-b2ab-81ff7d788f36>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c2d3330b-c8bc-39d1-95b1-ac1ec0328262> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/77d086c2-8312-370c-937d-efe4c9cea503> .
+
+<http://data.doremus.org/performance/ad8abb1a-b6cb-3a49-8e6d-7bcf2e2897f2>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créées le 10 mars 1915, par le choeur du Synode de Moscou, sous la direction de Nikolaï Daniline" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/ff1ff5e9-f658-3893-97dd-94ecc4f5df51> .

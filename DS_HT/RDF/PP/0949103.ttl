@@ -1,0 +1,79 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/f170cd50-8d93-356e-b15e-bb0983cef5de/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 flûtes, 2 hautbois, 2 clarinettes, 2 bassons, 4 cors, 2 trompettes, 3 trombones, 1 tuba basse, timbales, percussions,cordes" .
+
+<http://data.doremus.org/performance/a3c89bca-b668-3e7f-801b-de7dffd6ad19>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création : le 12 mars 1934 à Berlin par le Berliner Philharmoniker sous la direction de Wilhelm Furtwängler." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/a1db9a6d-ab2d-3e5c-9dc8-932c35ec5437> .
+
+<http://data.doremus.org/publication/7e4a01d4-3bd2-33dc-a1ec-3ae8c6d3fe35>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f170cd50-8d93-356e-b15e-bb0983cef5de> .
+
+<http://data.doremus.org/expression/f170cd50-8d93-356e-b15e-bb0983cef5de>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/f170cd50-8d93-356e-b15e-bb0983cef5de/casting/1> ;
+        ecrm:P102_has_title  "Mathis le peintre" , "Mathis der Maler" ;
+        ecrm:P3_has_note     "Trois scènes formant une symphonie, extraites de l'opéra composé en 1934-1935, qui mettait en scène Mathias Grünewald, l'auteur du célèbre retable d'Isenheim (musée de Colmar). L'oeuvre, interdite en Allemagne par le pouvoir nazi, procédait d'une réflexion sur les rapports entre l'artiste et la société moderne à la lumière des événements politiques : la montée des fascismes en Europe. Chaque mouvement porte un titre correspondant à l'un des principaux panneaux du retable : \"Concert des anges\", \"Mise au tombeau\" et \"Tentation de Sanit Antoine\". Commande de Wilhelm Furwängler. Durée : environ 25 minutes" , "Création : le 12 mars 1934 à Berlin par le Berliner Philharmoniker sous la direction de Wilhelm Furtwängler. Première édition : Schott, 1934" .
+
+<http://data.doremus.org/artist/68d6fa90-86ef-388d-8256-e94ae5e402fd>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/43cf5b5a-950a-324a-af49-318a2b555d32>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/dd36bd47-786f-32cb-bffd-54d62f420021> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f170cd50-8d93-356e-b15e-bb0983cef5de> .
+
+<http://data.doremus.org/event/4e795b3d-4b30-3b5a-bf6f-db4d570c4a56>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1933-1934" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1933/1934"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/68d6fa90-86ef-388d-8256-e94ae5e402fd>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f170cd50-8d93-356e-b15e-bb0983cef5de> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/76618b6a-ab76-310b-8b2c-65323ec90b6d> .
+
+<http://data.doremus.org/expression/a1db9a6d-ab2d-3e5c-9dc8-932c35ec5437>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f170cd50-8d93-356e-b15e-bb0983cef5de> .
+
+<http://data.doremus.org/work/dd36bd47-786f-32cb-bffd-54d62f420021>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/76618b6a-ab76-310b-8b2c-65323ec90b6d> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f170cd50-8d93-356e-b15e-bb0983cef5de> .
+
+<http://data.doremus.org/work/76618b6a-ab76-310b-8b2c-65323ec90b6d>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/c6b401a9-a77f-3cfc-948b-e25d95e7a603> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/a3c89bca-b668-3e7f-801b-de7dffd6ad19> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f170cd50-8d93-356e-b15e-bb0983cef5de> .
+
+<http://data.doremus.org/work/50c3bcbe-f88a-3fb4-9d5a-beb102378d8e>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/7e4a01d4-3bd2-33dc-a1ec-3ae8c6d3fe35> .
+
+<http://data.doremus.org/event/c6b401a9-a77f-3cfc-948b-e25d95e7a603>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Première édition : Schott, 1934" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/50c3bcbe-f88a-3fb4-9d5a-beb102378d8e> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/7e4a01d4-3bd2-33dc-a1ec-3ae8c6d3fe35> .

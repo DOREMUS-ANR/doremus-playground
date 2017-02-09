@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/d0e146c1-ea75-3d24-ad2d-2d4b20fb8884>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sp> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/d0e146c1-ea75-3d24-ad2d-2d4b20fb8884/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "FWV" ;
+                  mus:U41_has_catalogue_number  "43" ;
+                  ecrm:P3_has_note              "FWV 43"
+                ] ;
+        ecrm:P102_has_title  "Les Eolides" , "Les Éolides" ;
+        ecrm:P3_has_note     "Premier poème symphonique de Franck, inspiré par une poésie de Leconte de Lisle. L'oeuvre n'illustre pas le poème mais cherche à traduire musiclament l'atmosphère. Durée : 11 minutes environ" , "Créé à Paris, le 13 mai 1877 par Edourad Colonne, lors du 77e concert de la Société Nationale de Musique" .
+
+<http://data.doremus.org/performance/aefece78-9791-3022-a745-34434a72ded2>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Paris, le 13 mai 1877 par Edourad Colonne, lors du 77e concert de la Société Nationale de Musique" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/c62e033d-3377-3710-b047-e8dde0571640> .
+
+<http://data.doremus.org/work/b4764f41-d495-36b7-897f-370dbda28222>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/aefece78-9791-3022-a745-34434a72ded2> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d0e146c1-ea75-3d24-ad2d-2d4b20fb8884> .
+
+<http://data.doremus.org/event/f78ab079-64dc-3c78-bbf4-86d174960a6c>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/151a7032-14a2-381f-b9d9-824ba149b13b> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d0e146c1-ea75-3d24-ad2d-2d4b20fb8884> .
+
+<http://data.doremus.org/artist/2edd7117-03f6-3f5f-a89e-bfb6fbd34522>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/c62e033d-3377-3710-b047-e8dde0571640>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/d0e146c1-ea75-3d24-ad2d-2d4b20fb8884> .
+
+<http://data.doremus.org/event/1f0dbfe5-99e2-30bd-83b0-a5fe78ae09a8>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1875-1876" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1875/1876"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/2edd7117-03f6-3f5f-a89e-bfb6fbd34522>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d0e146c1-ea75-3d24-ad2d-2d4b20fb8884> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/b4764f41-d495-36b7-897f-370dbda28222> .
+
+<http://data.doremus.org/expression/d0e146c1-ea75-3d24-ad2d-2d4b20fb8884/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Bois par 2, 4 cors, 1 cornet, 1 trompette, timbales et batterie, harpe, cordes." .
+
+<http://data.doremus.org/work/151a7032-14a2-381f-b9d9-824ba149b13b>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/b4764f41-d495-36b7-897f-370dbda28222> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d0e146c1-ea75-3d24-ad2d-2d4b20fb8884> .

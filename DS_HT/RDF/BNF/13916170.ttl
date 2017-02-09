@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/22152416-0a59-32ab-bce9-c845cd83fbca>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Potsdam, 14 octobre 1843" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/784294b7-efe4-3e8f-8ae3-225605098824> .
+
+<http://data.doremus.org/work/d4122939-59a6-38dd-b856-cc9956e30475>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/dd894b94-2373-37fe-8b77-4836d81afa53> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/809fc85f-e58e-364b-80c1-18f0975f2907> .
+
+<http://data.doremus.org/expression/809fc85f-e58e-364b-80c1-18f0975f2907>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/inm> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "61" ;
+                                      ecrm:P3_has_note         "Op. 61"
+                                    ] ;
+        ecrm:P102_has_title         "A midsummer night's dream" , "A midsummer night's dream by Shakespeare" , "Ein Sommernachtstraum" , "Le songe d'une nuit d'été" ;
+        ecrm:P3_has_note            "Musique de scène pour la pièce de Shakespeare" , "Comprend aussi l'ouverture, écrite séparément (op. 21)" .
+
+<http://data.doremus.org/event/7f5d4249-0714-315d-905f-63ead796018e>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/d4122939-59a6-38dd-b856-cc9956e30475> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/809fc85f-e58e-364b-80c1-18f0975f2907> .
+
+<http://data.doremus.org/event/409a4946-d916-3fc8-a714-b4f6671fb767>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/784294b7-efe4-3e8f-8ae3-225605098824> .
+
+<http://data.doremus.org/expression/784294b7-efe4-3e8f-8ae3-225605098824>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/809fc85f-e58e-364b-80c1-18f0975f2907> .
+
+<http://data.doremus.org/event/d2e3264d-327d-36d3-820c-abf71bd11e84>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18420101/18421231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/94cb9203-13e8-3192-b208-3f3e792f5b58>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/809fc85f-e58e-364b-80c1-18f0975f2907> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/dd894b94-2373-37fe-8b77-4836d81afa53> .
+
+<http://data.doremus.org/artist/94cb9203-13e8-3192-b208-3f3e792f5b58>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/dd894b94-2373-37fe-8b77-4836d81afa53>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/22152416-0a59-32ab-bce9-c845cd83fbca> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/809fc85f-e58e-364b-80c1-18f0975f2907> .

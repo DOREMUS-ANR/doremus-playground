@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/4bed5ee8-ce1d-305b-849b-b10444751fcf/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 violons, hautbois, violoncelle, basson, basse continue" .
+
+<http://data.doremus.org/performance/cf47e450-fa1b-371a-af0e-3ed41233d969>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "première exécution supposée : Le Concert Spirituel, 1749." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/1d5cf5f4-210b-38c6-89a8-5505cb83be4a> .
+
+<http://data.doremus.org/expression/4bed5ee8-ce1d-305b-849b-b10444751fcf>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/4bed5ee8-ce1d-305b-849b-b10444751fcf/casting/1> ;
+        ecrm:P102_has_title  "Six sonates à quatre" , "6 sonates à 4" , "Sonate a quattro" , "Sei Sonate a quattro" ;
+        ecrm:P3_has_note     "Ces sonates sont un arrangement (non édité à l'époque, que l'on date traditionnellement en 1749), des \"Pièces pour clavecin en sonates, Op.3\". Cet Opus, pour clavecin et accompagnement de violon, avait connu un très grand retentissement lors de sa parution en 1734 (Rameau s'en inspirera dans ses \"Pièces de clavecin en concert\" de 1741). Cet arrangement de 1749 est vraisemblablement pensé pour un effectif \"orchestral\" (dans la mesure baroque du terme ) et non plus de musique de chambre à trois ou quatre instruments. Si l'écriture est celle d'une sonate en trio, les fréquentes doublures de hautbois ou de basson évoquent la notion de \"Symphonie\" plutôt que de \"Sonate\"." , "première exécution supposée : Le Concert Spirituel, 1749." .
+
+<http://data.doremus.org/event/083a034e-61fa-37bb-b811-35f633ad0406>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/406ccd36-d589-3acd-83ae-2290618d50f3> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/4bed5ee8-ce1d-305b-849b-b10444751fcf> .
+
+<http://data.doremus.org/work/665e3860-3e7a-3092-aa40-0b04b88fadcc>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/cf47e450-fa1b-371a-af0e-3ed41233d969> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/4bed5ee8-ce1d-305b-849b-b10444751fcf> .
+
+<http://data.doremus.org/work/406ccd36-d589-3acd-83ae-2290618d50f3>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/665e3860-3e7a-3092-aa40-0b04b88fadcc> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/4bed5ee8-ce1d-305b-849b-b10444751fcf> .
+
+<http://data.doremus.org/artist/934784fa-64b0-348e-9764-862bf32a8b66>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/1d5cf5f4-210b-38c6-89a8-5505cb83be4a>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/4bed5ee8-ce1d-305b-849b-b10444751fcf> .
+
+<http://data.doremus.org/event/ea342cbe-70c6-3fba-90b0-cc87cc71cc15>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1749" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1749"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/934784fa-64b0-348e-9764-862bf32a8b66>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/4bed5ee8-ce1d-305b-849b-b10444751fcf> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/665e3860-3e7a-3092-aa40-0b04b88fadcc> .

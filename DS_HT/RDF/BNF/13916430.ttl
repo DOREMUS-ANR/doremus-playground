@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/f7924a5b-a69b-3118-be18-56a9f76393e8>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/086bc6e9-3fba-3f5b-8f54-e3be4664b5d3> .
+
+<http://data.doremus.org/event/6b8af0fc-e2a1-34fa-a29f-da2313cdffd3>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/5bc388f8-3594-3951-8a9c-a7318747a6d6> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/086bc6e9-3fba-3f5b-8f54-e3be4664b5d3> .
+
+<http://data.doremus.org/work/5bc388f8-3594-3951-8a9c-a7318747a6d6>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f7924a5b-a69b-3118-be18-56a9f76393e8> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/086bc6e9-3fba-3f5b-8f54-e3be4664b5d3> .
+
+<http://data.doremus.org/event/7f028188-a156-3c9e-aa38-07e53b535059>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "0000/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/086bc6e9-3fba-3f5b-8f54-e3be4664b5d3> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f7924a5b-a69b-3118-be18-56a9f76393e8> .
+
+<http://data.doremus.org/expression/086bc6e9-3fba-3f5b-8f54-e3be4664b5d3>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/md> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "139" ;
+                  ecrm:P3_has_note              "SV 139"
+                ] ;
+        ecrm:P102_has_title  "Con che soavità, labbra odorate" ;
+        ecrm:P3_has_note     "Madrigal à 1 voix et instruments" , "Texte de Giovanni Battista Guarini" .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

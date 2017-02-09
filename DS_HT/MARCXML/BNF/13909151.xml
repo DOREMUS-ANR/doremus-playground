@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13909151" format="InterXMarc_Complet" type="Authority">
+<leader>01042c0 au22000272  45  <Pos Code="0004">01042</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139091517<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13909151</Pos>
+<Pos Code="13">7</Pos>
+</controlfield>
+<controlfield tag="008">890821130408yyeng cho       19540330  195409                 010 <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">13</Pos>
+<Pos Code="0809">04</Pos>
+<Pos Code="1011">08</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="anglais">eng</Pos>
+<Pos Code="1820" Sens="opéra de chambre">cho</Pos>
+<Pos Code="2831">1954</Pos>
+<Pos Code="3233">03</Pos>
+<Pos Code="3435">30</Pos>
+<Pos Code="3841">1954</Pos>
+<Pos Code="4243">09</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="b">va04<Pos Code="0001" Sens="voix - soprano">va</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">4</Pos>
+</subfield>
+	<subfield code="b">vz01<Pos Code="0001" Sens="voix - non spécifié">vz</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">vd02<Pos Code="0001" Sens="voix - ténor">vd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">ob01<Pos Code="0001" Sens="orchestre - orchestre de chambre">ob</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13891862</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Britten</subfield>
+	<subfield code="m">Benjamin</subfield>
+	<subfield code="d">1913-1976</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.eng.</subfield>
+	<subfield code="a" Barre="4">The turn of the screw</subfield>
+	<subfield code="p">Op. 54</subfield>
+</datafield>
+<datafield tag="322" ind1="6" ind2=" ">
+	<subfield code="3">14015945</subfield>
+	<subfield code="9">100</subfield>
+	<subfield code="w">.0.1b.....</subfield>
+	<subfield code="a">Piper</subfield>
+	<subfield code="m">Myfanwy</subfield>
+	<subfield code="d">1911-1997</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a" Barre="3">Le tour d&apos;écrou</subfield>
+	<subfield code="p">Op. 54</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Opéra en 1 prologue et 2 actes</subfield>
+	<subfield code="a">Livret de Myfanwy Piper d&apos;après la nouvelle de même titre de Henry James</subfield>
+	<subfield code="a">Dates de composition : 30 mars-septembre 1954</subfield>
+	<subfield code="a">1re représentation : Venise, Teatro La Fenice, 14 septembre 1954, sous la direction du compositeur</subfield>
+</datafield>
+<datafield tag="608" ind1=" " ind2=" ">
+	<subfield code="b">la Gouvernante, Flora, Miss Jessel, Mrs Grose (sopranos)</subfield>
+	<subfield code="b">Miles (sopranos enfants)</subfield>
+	<subfield code="b">Quint, le Narrateur (ténors)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Britten thematic catalogue, Britten-Pears Foundation</subfield>
+	<subfield code="u">http://www.brittenpears.org</subfield>
+	<subfield code="d">2013-04-08</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove opera</subfield>
+	<subfield code="u">http://www.oxfordmusiconline.com</subfield>
+	<subfield code="d">2013-04-08</subfield>
+	<subfield code="a">Mille et un opéras / Piotr Kaminski, 2004 : &quot;Le tour d&apos;écrou&quot;</subfield>
+</datafield>
+<datafield tag="624" ind1=" " ind2=" ">
+	<subfield code="a">780<Pos Code="0002" Sens="Musique">780</Pos>
+</subfield>
+</datafield>
+<datafield tag="907" ind1=" " ind2=" ">
+	<subfield code="o">GEA</subfield>
+	<subfield code="a">006466834</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPL</subfield>
+	<subfield code="a">011871599</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100376620</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb13909151g</Attr>
+<Attr Nom="NumSource">GEA 006466834</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1389186214015945</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/04/ 2013</Attr>
+<Attr Nom="ResponsableDerniereValidation">PUYRENIER FREDERIC</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">82</Attr>
+<Attr Nom="NumSource" Rep="1">OPL 011871599</Attr>
+<Attr Nom="NumSource" Rep="2">OPC 100376620</Attr>
+</record>

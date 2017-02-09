@@ -1,0 +1,54 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/ba57dc2b-c6f5-39de-b3b8-d9582568968f>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c78882f0-8787-3cdf-a9ba-a9e5807c8778> .
+
+<http://data.doremus.org/work/23b1afee-195a-3291-9c52-1645ee77f3ce>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/ba57dc2b-c6f5-39de-b3b8-d9582568968f> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c78882f0-8787-3cdf-a9ba-a9e5807c8778> .
+
+<http://data.doremus.org/event/bcba0b38-164f-32cf-820c-2d247cc47fd6>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/23b1afee-195a-3291-9c52-1645ee77f3ce> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c78882f0-8787-3cdf-a9ba-a9e5807c8778> .
+
+<http://data.doremus.org/expression/c78882f0-8787-3cdf-a9ba-a9e5807c8778/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "petit orchestre"@fr
+                                              ]
+                                    ] ;
+        ecrm:P3_has_note            "Petit orchestre" .
+
+<http://data.doremus.org/artist/66c12539-0668-30c5-93a0-6990cacaabe2>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/c78882f0-8787-3cdf-a9ba-a9e5807c8778>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "1" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/c78882f0-8787-3cdf-a9ba-a9e5807c8778/casting/1> ;
+        ecrm:P102_has_title       "Suite for small orchestra" .
+
+<http://data.doremus.org/event/a40f78dc-6cea-3181-b299-25ef65e8b0ee>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1917/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/66c12539-0668-30c5-93a0-6990cacaabe2>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c78882f0-8787-3cdf-a9ba-a9e5807c8778> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/ba57dc2b-c6f5-39de-b3b8-d9582568968f> .

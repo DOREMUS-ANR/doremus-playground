@@ -1,0 +1,75 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/d33614ce-551e-3fb7-ac54-000ffe0ab437>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/dui> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/d33614ce-551e-3fb7-ac54-000ffe0ab437/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "73" ;
+                                      ecrm:P3_has_note         "Op. 73"
+                                    ] ;
+        ecrm:P102_has_title         "Drei Fantasiestücke" , "Phantasiestücke" , "Soiréestücke" , "Fantasiestücke" .
+
+<http://data.doremus.org/work/e84a9710-3dfa-3a3a-aac0-a8d996f43d81>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/2065e072-c6ce-3127-9ca3-2bdc1808510c> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d33614ce-551e-3fb7-ac54-000ffe0ab437> .
+
+<http://data.doremus.org/event/92178cb5-648c-3346-82fd-d3486ef5336b>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1849/1849"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/026e4cc2-62b3-3c43-807c-d159857ede90>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d33614ce-551e-3fb7-ac54-000ffe0ab437> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/2065e072-c6ce-3127-9ca3-2bdc1808510c> .
+
+<http://data.doremus.org/performance/d2d46b27-3a4a-3f1e-af24-a308d0e3e184>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Leipzig, 14 janvier 1850" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/f9ce0bfd-5f9a-3181-97d1-5e66c686bf72> .
+
+<http://data.doremus.org/event/80738438-23a4-3e9b-b21a-c52104ba07e6>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e84a9710-3dfa-3a3a-aac0-a8d996f43d81> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d33614ce-551e-3fb7-ac54-000ffe0ab437> .
+
+<http://data.doremus.org/expression/f9ce0bfd-5f9a-3181-97d1-5e66c686bf72>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/d33614ce-551e-3fb7-ac54-000ffe0ab437> .
+
+<http://data.doremus.org/event/91235cd2-0e37-3301-85cb-6432258f97c0>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/f9ce0bfd-5f9a-3181-97d1-5e66c686bf72> .
+
+<http://data.doremus.org/work/2065e072-c6ce-3127-9ca3-2bdc1808510c>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/d2d46b27-3a4a-3f1e-af24-a308d0e3e184> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d33614ce-551e-3fb7-ac54-000ffe0ab437> .
+
+<http://data.doremus.org/expression/d33614ce-551e-3fb7-ac54-000ffe0ab437/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "clarinette ou violon ou violoncelle"@fr
+                                              ]
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/kpf>
+                                    ] ;
+        ecrm:P3_has_note            "Clarinette ou violon ou violoncelle, piano" .
+
+<http://data.doremus.org/artist/026e4cc2-62b3-3c43-807c-d159857ede90>
+        a       ecrm:E21_Person .

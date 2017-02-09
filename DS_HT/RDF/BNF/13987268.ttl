@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/9a67ea21-7d92-33c9-8dc9-29b3a67b2565>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1982/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/452c94a5-79b5-3c93-92ff-30ebf60cdae5>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/82329170-54e8-3118-bae7-00432ec0e120> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/182d83a1-4e50-33a0-9b2f-60f187509924> .
+
+<http://data.doremus.org/expression/82329170-54e8-3118-bae7-00432ec0e120>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        ecrm:P102_has_title  "The photographer" ;
+        ecrm:P3_has_note     "Créé à Amsterdam, Netherlands Opera" , "Music-theatre work in three acts" , "L'acte I a la forme d'une pièce de théâtre avec 3 intermèdes musicaux, l'acte II a la forme d'un concerto pour violon, l'acte III celle d'un ballet" .
+
+<http://data.doremus.org/artist/452c94a5-79b5-3c93-92ff-30ebf60cdae5>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/182d83a1-4e50-33a0-9b2f-60f187509924>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/3c374610-b39e-3bf7-8048-00a2d4512c7f> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/82329170-54e8-3118-bae7-00432ec0e120> .
+
+<http://data.doremus.org/performance/3c374610-b39e-3bf7-8048-00a2d4512c7f>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1982-05-30" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/23c6452e-8835-3f6e-a60a-42de331b1d86> .
+
+<http://data.doremus.org/work/c99887ae-77e5-362a-973e-e78c3db7f797>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/182d83a1-4e50-33a0-9b2f-60f187509924> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/82329170-54e8-3118-bae7-00432ec0e120> .
+
+<http://data.doremus.org/event/67394370-bac2-343a-86e9-31d2dbaa6bae>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/23c6452e-8835-3f6e-a60a-42de331b1d86> .
+
+<http://data.doremus.org/event/3f635a10-ad90-3c7f-897b-6925b17cee6f>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c99887ae-77e5-362a-973e-e78c3db7f797> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/82329170-54e8-3118-bae7-00432ec0e120> .
+
+<http://data.doremus.org/expression/23c6452e-8835-3f6e-a60a-42de331b1d86>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/82329170-54e8-3118-bae7-00432ec0e120> .

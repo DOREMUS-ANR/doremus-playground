@@ -1,0 +1,43 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/383f70e1-e90b-3cd4-bfab-e4bf684ed5ea>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1954/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/248b1b61-a6b5-3d14-9013-678085e8fb21>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f0fc5ea4-4b3e-38c5-a627-5267a387ce8a> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3cdb2a2e-2308-3fce-9a76-4581883df516> .
+
+<http://data.doremus.org/event/194dbf0c-4536-3aa0-be53-0ded409df630>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/82e642b5-5cb9-3cc9-a9b7-8dff984806cc> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f0fc5ea4-4b3e-38c5-a627-5267a387ce8a> .
+
+<http://data.doremus.org/work/82e642b5-5cb9-3cc9-a9b7-8dff984806cc>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/3cdb2a2e-2308-3fce-9a76-4581883df516> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f0fc5ea4-4b3e-38c5-a627-5267a387ce8a> .
+
+<http://data.doremus.org/expression/f0fc5ea4-4b3e-38c5-a627-5267a387ce8a>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/dv> ;
+        ecrm:P102_has_title  "Serenade" ;
+        ecrm:P3_has_note     "D'après le Symposium de Platon" .
+
+<http://data.doremus.org/work/3cdb2a2e-2308-3fce-9a76-4581883df516>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f0fc5ea4-4b3e-38c5-a627-5267a387ce8a> .
+
+<http://data.doremus.org/artist/248b1b61-a6b5-3d14-9013-678085e8fb21>
+        a       ecrm:E21_Person .

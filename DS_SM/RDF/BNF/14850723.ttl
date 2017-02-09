@@ -1,0 +1,51 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/cac83f0f-f812-3724-a182-45560c730ab2>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/45a6a160-2c25-3b90-acc2-0719061ac423> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/8d4933fb-409e-30c7-b9f5-3ca3056833f3> .
+
+<http://data.doremus.org/work/1f3dda35-c9b8-3028-ac7b-f07a47ffd7b6>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/8d4933fb-409e-30c7-b9f5-3ca3056833f3> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/41e1d42f-3884-3c15-82ea-b42ef744cf49>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19880101/19881231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/8d4933fb-409e-30c7-b9f5-3ca3056833f3> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/1f3dda35-c9b8-3028-ac7b-f07a47ffd7b6> .
+
+<http://data.doremus.org/work/45a6a160-2c25-3b90-acc2-0719061ac423>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/1f3dda35-c9b8-3028-ac7b-f07a47ffd7b6> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/8d4933fb-409e-30c7-b9f5-3ca3056833f3> .
+
+<http://data.doremus.org/expression/8d4933fb-409e-30c7-b9f5-3ca3056833f3/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/tgu>
+                                    ] ;
+        ecrm:P3_has_note            <http://data.doremus.org/vocabulary/itema3/mop/36> .
+
+<http://data.doremus.org/expression/8d4933fb-409e-30c7-b9f5-3ca3056833f3>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/uuu> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/8d4933fb-409e-30c7-b9f5-3ca3056833f3/casting/1> ;
+        ecrm:P102_has_title  "Sequenza XI" .

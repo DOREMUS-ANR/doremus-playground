@@ -1,0 +1,72 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/32dfb8e7-41a8-34f2-889c-0b7c0cbc1aea>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/285826a4-52e2-312e-9437-ad6beec989f7> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/2a725277-596e-34b6-baa7-b38f80225a39> .
+
+<http://data.doremus.org/expression/2a725277-596e-34b6-baa7-b38f80225a39>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "Livre 7" , "Livre VII" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/diabolo/genre/madrigal> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique baroque"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/2a725277-596e-34b6-baa7-b38f80225a39/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "119" ;
+                  ecrm:P3_has_note              "SV 119"
+                ] ;
+        ecrm:P102_has_title       "A quest'olmo, a quest'ombre et a quest'onde" , "madrigaux" , "A quest'olmo, a quest'ombre (Madrigal Livre 7)" ;
+        ecrm:P3_has_note          "Première publication : Venise, 1619" , "Ce madrigal appartient au septième livre de madrigaux, publié sous le titre Concerto et accompagné d'une dédicace à la princesse Catherine de Médicis Gonzague, duchesse de Mantoue. Ce septième livre réunit 32 madrigaux de 1 à 6 voix, la plupart avec le soutien de la seule basse continue, mais quelques uns avec accompagnement d'instruments. Composé sur un sonnet de Marino" .
+
+<http://data.doremus.org/work/285826a4-52e2-312e-9437-ad6beec989f7>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/04718d07-5c76-34ee-b897-7c3ee20c84f9> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/2a725277-596e-34b6-baa7-b38f80225a39> .
+
+<http://data.doremus.org/expression/2a725277-596e-34b6-baa7-b38f80225a39/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "6 voix, 2 violons, 2 bois et basse continue" .
+
+<http://data.doremus.org/expression/6179b2e9-f293-37e6-88e0-863bc05cb4af>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/2a725277-596e-34b6-baa7-b38f80225a39> .
+
+<http://data.doremus.org/performance/8bb8d9f9-c9b5-3efa-82be-ba82e530d218>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première publication : Venise, 1619" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/6179b2e9-f293-37e6-88e0-863bc05cb4af> .
+
+<http://data.doremus.org/event/29d612a7-9d03-3d8b-a5eb-02cf9e7d8914>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "17 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1619" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1614/1619"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/2a725277-596e-34b6-baa7-b38f80225a39> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/04718d07-5c76-34ee-b897-7c3ee20c84f9> .
+
+<http://data.doremus.org/work/04718d07-5c76-34ee-b897-7c3ee20c84f9>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/8bb8d9f9-c9b5-3efa-82be-ba82e530d218> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/2a725277-596e-34b6-baa7-b38f80225a39> .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

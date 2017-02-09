@@ -1,0 +1,43 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/71216dd0-2eda-35d6-9ab9-9e18cb91d998>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/uuu> ;
+        ecrm:P102_has_title  "Maya" ;
+        ecrm:P3_has_note     "Pour flûte basse" , "Dédié à Pierre-Yves Artaud" , "Créé par le dédicataire" .
+
+<http://data.doremus.org/event/540b4fc2-5f8f-3d24-8b7a-c0932b0839fe>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/cb331602-c471-3df7-9f46-7dac16dc5899> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/71216dd0-2eda-35d6-9ab9-9e18cb91d998> .
+
+<http://data.doremus.org/work/b3abdf11-a889-3ff5-bb16-207580809fe4>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/71216dd0-2eda-35d6-9ab9-9e18cb91d998> .
+
+<http://data.doremus.org/artist/9feb3cf2-4600-32ae-928f-c1b4f8f13cca>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/906b88da-7edd-3fa5-9052-1d4bae20a734>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19720101/19721231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9feb3cf2-4600-32ae-928f-c1b4f8f13cca>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/71216dd0-2eda-35d6-9ab9-9e18cb91d998> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/b3abdf11-a889-3ff5-bb16-207580809fe4> .
+
+<http://data.doremus.org/work/cb331602-c471-3df7-9f46-7dac16dc5899>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/b3abdf11-a889-3ff5-bb16-207580809fe4> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/71216dd0-2eda-35d6-9ab9-9e18cb91d998> .

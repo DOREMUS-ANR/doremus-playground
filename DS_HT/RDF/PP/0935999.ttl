@@ -1,0 +1,43 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/16389e26-6e0c-333d-b739-2ba202d79238>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "15 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "15e siècle" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1400/1495"^^dcterms:W3CDTF
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/188c2f41-a7d6-3e18-a2dd-a7e0dbbfdea8> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/16c50e92-13a6-339f-9cf9-e5c95c677bff> .
+
+<http://data.doremus.org/work/16c50e92-13a6-339f-9cf9-e5c95c677bff>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/188c2f41-a7d6-3e18-a2dd-a7e0dbbfdea8> .
+
+<http://data.doremus.org/expression/188c2f41-a7d6-3e18-a2dd-a7e0dbbfdea8>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/musique_ancienne> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique médiévale"@fr
+                             ] ;
+        ecrm:P102_has_title  "Dum pater familias" ;
+        ecrm:P3_has_note     "Chanson de pèlerin. Durée : 3 minutes environ" .
+
+<http://data.doremus.org/work/6d29493a-b755-35c8-9c6c-e2a0bf6b9a73>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/16c50e92-13a6-339f-9cf9-e5c95c677bff> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/188c2f41-a7d6-3e18-a2dd-a7e0dbbfdea8> .
+
+<http://data.doremus.org/event/b4018b77-453c-3aff-8f22-a01d69695cfc>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/6d29493a-b755-35c8-9c6c-e2a0bf6b9a73> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/188c2f41-a7d6-3e18-a2dd-a7e0dbbfdea8> .

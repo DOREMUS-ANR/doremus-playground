@@ -1,0 +1,66 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/5494c05a-bcdf-325d-b33e-f54ba7431e94>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f86c2f57-1129-321e-9e33-0fb64abf9184> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194> .
+
+<http://data.doremus.org/work/a74b8671-30a9-3684-b03f-1af5e23bd3f1>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/c760a152-08f7-3240-8a0d-f7cfe70d42e8> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194> .
+
+<http://data.doremus.org/artist/1e92a419-4006-3cf7-bce2-cd9652fbb436>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/85d0e72b-33bb-3057-978c-5e40e396db49>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194> .
+
+<http://data.doremus.org/performance/c760a152-08f7-3240-8a0d-f7cfe70d42e8>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création : 9 janvier 1937 à Los Angeles par le quatuor Kolisch" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/85d0e72b-33bb-3057-978c-5e40e396db49> .
+
+<http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 violons, alto, violoncelle" .
+
+<http://data.doremus.org/event/fd5cf05a-ea6d-30a7-86d9-bb46bc04f6b3>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1936" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1936"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1e92a419-4006-3cf7-bce2-cd9652fbb436>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a74b8671-30a9-3684-b03f-1af5e23bd3f1> .
+
+<http://data.doremus.org/work/f86c2f57-1129-321e-9e33-0fb64abf9184>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/a74b8671-30a9-3684-b03f-1af5e23bd3f1> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194> .
+
+<http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "4" ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "37" ;
+                                      ecrm:P3_has_note         "Op. 37"
+                                    ] ;
+        ecrm:P102_has_title         "Quatuor à cordes no 4" , "Streichquartett" , "Quatuor no 4" , "String quartet" ;
+        ecrm:P3_has_note            "Création : 9 janvier 1937 à Los Angeles par le quatuor Kolisch" , "Commande d' Elizabeth Sprague-Coolidge. Ce quatuor, d'écriture sérielle, est divisé en quatre mouvements classiques : Allegro molto, energico ; Commodo ; Largo ; Allegro. Chacun de ces mouvements adopte les formes traditionnelles de sonate pour le premier, rondo pour le dernier, structure binaire pour le \"Largo\". Ce classiscisme est d'autant plus accentué que la série choisie favorise une thématique très clairement discernable, au sein d'un écriture particulièrement aérée." .

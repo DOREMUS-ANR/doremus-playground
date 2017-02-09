@@ -1,0 +1,75 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/d491da9a-7ad0-3cbf-8b86-2b4170783844>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b32f4c7e-8177-3e56-b5e1-186fc4cc7edc> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/258c750b-b430-3b1e-b2ae-3b2a3eb3e169> .
+
+<http://data.doremus.org/expression/258c750b-b430-3b1e-b2ae-3b2a3eb3e169/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 ensembles : petit groupe de solistes avec 2 violons, 1 alto, 1 contrebasse ; grand groupe avec violons I et II , altos, violoncelles et timbales." .
+
+<http://data.doremus.org/event/5d0ec705-5de9-3f33-be2d-7b6351a3a1ed>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1776" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1776"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/258c750b-b430-3b1e-b2ae-3b2a3eb3e169> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/58169ce1-0090-3957-960c-ea283d867c65> .
+
+<http://data.doremus.org/work/58169ce1-0090-3957-960c-ea283d867c65>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/d1d8be83-5d9b-3ee9-9afc-ad111bc8f7d1> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/258c750b-b430-3b1e-b2ae-3b2a3eb3e169> .
+
+<http://data.doremus.org/expression/258c750b-b430-3b1e-b2ae-3b2a3eb3e169>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "6" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/snd> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/258c750b-b430-3b1e-b2ae-3b2a3eb3e169/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "K" ;
+                  mus:U41_has_catalogue_number  "239" ;
+                  ecrm:P3_has_note              "K 239"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "239" ;
+                  ecrm:P3_has_note              "KV 239"
+                ] ;
+        ecrm:P102_has_title       "Sérénade \"Serenata notturna\"" , "Sérénade no 6 \"serenata notturna\"" , "Sérénade nocturne" ;
+        ecrm:P3_has_note          "Créée à Salzburg en 1776" , "Cette sérénade a été composée à Salzbourg en 1776. Comprend : 1- Marcia. maestoso. 2- Menuetto. Trio. 3- Rondo. Allegretto. Durée d'exécution : 14 minutes environ." .
+
+<http://data.doremus.org/work/b32f4c7e-8177-3e56-b5e1-186fc4cc7edc>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/58169ce1-0090-3957-960c-ea283d867c65> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/258c750b-b430-3b1e-b2ae-3b2a3eb3e169> .
+
+<http://data.doremus.org/expression/4ac574d2-42d0-32f3-a0dc-b7d6a7cbbc0e>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/258c750b-b430-3b1e-b2ae-3b2a3eb3e169> .
+
+<http://data.doremus.org/performance/d1d8be83-5d9b-3ee9-9afc-ad111bc8f7d1>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée à Salzburg en 1776" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/4ac574d2-42d0-32f3-a0dc-b7d6a7cbbc0e> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .

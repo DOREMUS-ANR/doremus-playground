@@ -1,0 +1,71 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/madrigal> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "107" ;
+                  ecrm:P3_has_note              "SV 107"
+                ] ;
+        ecrm:P102_has_title  "Lamento d'Arianna" , "Lasciatemi morire" , "Madrigal" , "Lamento d'Arianna (Madrigal Livre 6)" ;
+        ecrm:P3_has_note     "Première publication : Venise, 1614" , "Le lamento d'Arianna est un ensemble de 4 madrigaux. Il appartient au sixième livre de madrigaux , publié à Venise où Monteverdi vient de s'installer en 1613. Il a été composé à partir de l'opéra Arianna écrit par l'auteur et disparu. Texte d'Ottavio Rinuccini. Une autre version existe, écrite en 1623, pour soprano et basse continue. Comprend : 1- Lasciatemi morire (\"Laissez-moi mourir\"), 2- O Teseo, teseo mio (\"O Thésée, ô mon Thésée\"), 3- Dove, dov'e la fede (\"Où est, où est la foi ?\"), 4- Ahi che non pur risponde (\"Hélas, tu ne réponds pas\")" .
+
+<http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "5 voix" .
+
+<http://data.doremus.org/performance/f8da3675-81f1-3868-92e0-1d71a4321de1>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première publication : Venise, 1614" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/24297b73-d743-35b9-aab0-be7134e44aae> .
+
+<http://data.doremus.org/event/046db256-db57-37c8-8cb5-9c889d473360>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8349ae5a-f7fb-34e5-80e6-63994dd37c1e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd> .
+
+<http://data.doremus.org/expression/24297b73-d743-35b9-aab0-be7134e44aae>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd> .
+
+<http://data.doremus.org/work/8349ae5a-f7fb-34e5-80e6-63994dd37c1e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/6d692eb4-29ae-3f2a-baa3-866213d6f31a> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd> .
+
+<http://data.doremus.org/work/6d692eb4-29ae-3f2a-baa3-866213d6f31a>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f8da3675-81f1-3868-92e0-1d71a4321de1> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd> .
+
+<http://data.doremus.org/event/f0fae644-e820-3d7c-9e77-cab05cba298b>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "17 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1610" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1605/1614"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/6d692eb4-29ae-3f2a-baa3-866213d6f31a> .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

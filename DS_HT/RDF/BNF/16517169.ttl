@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/dda57737-a553-33d4-912d-bd2c21394d9c>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18110101/18111231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ef2b7376-ab03-353b-95d7-52ea04e3633f> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/7462ccbe-19e5-3a1b-9f9e-4dff2e6cd877> .
+
+<http://data.doremus.org/publication/1c2f57cb-241d-3a3e-9580-90141f8340b6>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ef2b7376-ab03-353b-95d7-52ea04e3633f> .
+
+<http://data.doremus.org/event/af5c6507-7d08-3dad-bccc-885cc1c95e52>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Vienne : S. A. Steiner, 1826" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/ff81caff-efe9-3eb4-8ada-745786b8e08e> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/1c2f57cb-241d-3a3e-9580-90141f8340b6> .
+
+<http://data.doremus.org/work/47b520a7-cdba-327b-9baa-78d2af57fed5>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/7462ccbe-19e5-3a1b-9f9e-4dff2e6cd877> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ef2b7376-ab03-353b-95d7-52ea04e3633f> .
+
+<http://data.doremus.org/work/7462ccbe-19e5-3a1b-9f9e-4dff2e6cd877>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/af5c6507-7d08-3dad-bccc-885cc1c95e52> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ef2b7376-ab03-353b-95d7-52ea04e3633f> .
+
+<http://data.doremus.org/work/ff81caff-efe9-3eb4-8ada-745786b8e08e>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/1c2f57cb-241d-3a3e-9580-90141f8340b6> .
+
+<http://data.doremus.org/event/78900c93-dde5-3cf7-b2ff-4d861b3af845>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/47b520a7-cdba-327b-9baa-78d2af57fed5> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ef2b7376-ab03-353b-95d7-52ea04e3633f> .
+
+<http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/ef2b7376-ab03-353b-95d7-52ea04e3633f>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/inm> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "117" ;
+                                      ecrm:P3_has_note         "Op. 117"
+                                    ] ;
+        ecrm:P102_has_title         "König StephanNo 7Ihr edlen Ungarn" .

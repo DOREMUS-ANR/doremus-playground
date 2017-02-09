@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/7309aa59-44a0-330d-96c2-308837b08031>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "musique scénique"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/7309aa59-44a0-330d-96c2-308837b08031/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "84" ;
+                                      ecrm:P3_has_note         "Op. 84"
+                                    ] ;
+        ecrm:P102_has_title         "Egmont" , "Musik zu Johann Wolfgang von Goethes Trauerspiel Egmont" ;
+        ecrm:P3_has_note            "Musique de scène pour la tragédie de Johann Wolfgang von Goethe. Comprend : Ouverture ; Die Trommel gerühret (Lied) ; Entr'actes I et II ; Freudvoll und leidvoll (Lied) ; Entr'actes III et IV ; Clärchen's Death ; Melodrama ; Siegessymphonie." , "Créé le 15 juin 1810" .
+
+<http://data.doremus.org/work/f7a71597-06de-3eaf-8985-b1bcdc77c4bd>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/457e678e-0046-3e8c-a647-7b1ca26e17b9> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/7309aa59-44a0-330d-96c2-308837b08031> .
+
+<http://data.doremus.org/performance/457e678e-0046-3e8c-a647-7b1ca26e17b9>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé le 15 juin 1810" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/6a4e8e28-cb3d-3334-bc8c-0edc7baa6c5e> .
+
+<http://data.doremus.org/expression/7309aa59-44a0-330d-96c2-308837b08031/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Soprano, voix parlée, orchestre symphonique" .
+
+<http://data.doremus.org/event/8592c40d-fa9c-3612-b6b0-ae8ef32ed579>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/0cb7ab7c-36cb-394e-bf10-99250bfb48a2> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/7309aa59-44a0-330d-96c2-308837b08031> .
+
+<http://data.doremus.org/event/d724a373-a7d2-3897-ad69-3fa24a431769>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1809-1810" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1809/1810"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/7309aa59-44a0-330d-96c2-308837b08031> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f7a71597-06de-3eaf-8985-b1bcdc77c4bd> .
+
+<http://data.doremus.org/work/0cb7ab7c-36cb-394e-bf10-99250bfb48a2>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f7a71597-06de-3eaf-8985-b1bcdc77c4bd> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/7309aa59-44a0-330d-96c2-308837b08031> .
+
+<http://data.doremus.org/expression/6a4e8e28-cb3d-3334-bc8c-0edc7baa6c5e>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/7309aa59-44a0-330d-96c2-308837b08031> .
+
+<http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+        a       ecrm:E21_Person .

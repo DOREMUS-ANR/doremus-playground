@@ -1,0 +1,71 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/d43649d9-cca9-39e1-95af-ec913139bd9a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/b6f2296c-dfd1-3774-b1fa-00404269de76>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/37430246-df00-3767-9389-c5295a4ba536> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d741e577-7592-3867-bebd-880d89fd8b59> .
+
+<http://data.doremus.org/expression/d741e577-7592-3867-bebd-880d89fd8b59>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/sp> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/d741e577-7592-3867-bebd-880d89fd8b59/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                           mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name  "Op" ;
+                  ecrm:P3_has_note            "Op. 22"
+                ] ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "22" ;
+                                      ecrm:P3_has_note         "Op. 22"
+                                    ] ;
+        ecrm:P102_has_title         "Lemminkäinen" , "Lemminkäis-sarja" ;
+        ecrm:P3_has_note            "Ce poème symphonique comprend 4 légendes : Lemminkäinen ja saaren neidot, Lemminkäinen Tuonelassa, Tuonelan joutsen, Lemminkäinen palaa kotitienoille. Version révisée en 1897, puis en 1900 pour les nos 3 et 4." , "Créé à Helsinki le 13 avril 1896 sous la direction du compositeur." .
+
+<http://data.doremus.org/work/8bb2c5e1-1dcb-3369-b913-33b5f8f22c7f>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/64c701cf-2f42-3393-b02d-34cb08be2109> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d741e577-7592-3867-bebd-880d89fd8b59> .
+
+<http://data.doremus.org/performance/64c701cf-2f42-3393-b02d-34cb08be2109>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Helsinki le 13 avril 1896 sous la direction du compositeur." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/1326d579-4add-35c9-8e90-89577f01d6b8> .
+
+<http://data.doremus.org/expression/1326d579-4add-35c9-8e90-89577f01d6b8>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/d741e577-7592-3867-bebd-880d89fd8b59> .
+
+<http://data.doremus.org/event/11ce3ced-1b8a-3fa6-80ef-88f1190d08d7>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1893" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1893/1895"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/d43649d9-cca9-39e1-95af-ec913139bd9a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d741e577-7592-3867-bebd-880d89fd8b59> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8bb2c5e1-1dcb-3369-b913-33b5f8f22c7f> .
+
+<http://data.doremus.org/expression/d741e577-7592-3867-bebd-880d89fd8b59/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Orchestre : les bois par 3, 4 cors, 4 trompettes, 3 trombones, 1 tuba, timbales, harpe et cordes" .
+
+<http://data.doremus.org/work/37430246-df00-3767-9389-c5295a4ba536>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8bb2c5e1-1dcb-3369-b913-33b5f8f22c7f> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d741e577-7592-3867-bebd-880d89fd8b59> .

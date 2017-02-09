@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/1d8b94b2-ea89-305b-a046-21bc39cb8a92>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "le 5 décembre 1926 à la Société des concerts du Conservatoire, sous la direction de Philippe Gaubert" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/74cc6a28-f591-3000-8051-76557fdcedb3> .
+
+<http://data.doremus.org/expression/8d3487d7-f223-3600-88dd-20c51133d5f3>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/diabolo/genre/musique_symphonique> , <http://data.doremus.org/vocabulary/iaml/genre/sp> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "op. 87" ;
+                                      ecrm:P3_has_note         "op. 87"
+                                    ] ;
+        ecrm:P102_has_title         "II. Soleil vespéral" , "Diptyque méditerranéen" , "I. Soleil matinal" ;
+        ecrm:P3_has_note            "le 5 décembre 1926 à la Société des concerts du Conservatoire, sous la direction de Philippe Gaubert" , "Cette partition d'orchestre est teintée d'un \"classicisme\" pleinement assumé et contrôlé. Dédié à monsieur et madame René de Castéra" .
+
+<http://data.doremus.org/work/75f8152c-ee92-32fd-9280-445f1940b443>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/1d8b94b2-ea89-305b-a046-21bc39cb8a92> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/8d3487d7-f223-3600-88dd-20c51133d5f3> .
+
+<http://data.doremus.org/event/1d5b5b87-7c3f-3c45-adf1-fe2e8685a957>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/be2f0dcd-efa8-39c9-9bf3-3899801032ea> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/8d3487d7-f223-3600-88dd-20c51133d5f3> .
+
+<http://data.doremus.org/artist/a4064ce2-1e90-30f9-b01b-84f360564a61>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/74cc6a28-f591-3000-8051-76557fdcedb3>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/8d3487d7-f223-3600-88dd-20c51133d5f3> .
+
+<http://data.doremus.org/event/1904a366-0774-347c-9c5c-622f8577a7ae>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1925-1926" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1925/1926"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a4064ce2-1e90-30f9-b01b-84f360564a61>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/8d3487d7-f223-3600-88dd-20c51133d5f3> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/75f8152c-ee92-32fd-9280-445f1940b443> .
+
+<http://data.doremus.org/work/be2f0dcd-efa8-39c9-9bf3-3899801032ea>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/75f8152c-ee92-32fd-9280-445f1940b443> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/8d3487d7-f223-3600-88dd-20c51133d5f3> .

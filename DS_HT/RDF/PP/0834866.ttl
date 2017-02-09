@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/61ae3224-8a72-3595-ab98-3800f45eb387>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8355f0ab-b2da-3294-9418-38f194bd542f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/05564c4f-b925-31e0-87b7-487f12b49e38> .
+
+<http://data.doremus.org/work/7a38a1fb-64b3-32a1-9d2d-79658a7fb684>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/a17e7a30-0cd6-3261-9638-7843b9fc0d2d> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/05564c4f-b925-31e0-87b7-487f12b49e38> .
+
+<http://data.doremus.org/expression/c8a0d5d9-8b5c-3cc4-aefc-28a5f3271b0d>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/05564c4f-b925-31e0-87b7-487f12b49e38> .
+
+<http://data.doremus.org/artist/7a376e92-8986-3455-98ce-0c892f26c7db>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/0aab3fb0-30c7-3fb2-baf7-a2ab2fc013c2>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1930 - 1961" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1961"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7a376e92-8986-3455-98ce-0c892f26c7db>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/05564c4f-b925-31e0-87b7-487f12b49e38> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/7a38a1fb-64b3-32a1-9d2d-79658a7fb684> .
+
+<http://data.doremus.org/expression/05564c4f-b925-31e0-87b7-487f12b49e38/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Orchestre symphonique" .
+
+<http://data.doremus.org/performance/a17e7a30-0cd6-3261-9638-7843b9fc0d2d>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée à Lucerne, le 16 août 1961, par l'orchestre du Festival, sous la direction de Ferenc Fricsay" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/c8a0d5d9-8b5c-3cc4-aefc-28a5f3271b0d> .
+
+<http://data.doremus.org/work/8355f0ab-b2da-3294-9418-38f194bd542f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/7a38a1fb-64b3-32a1-9d2d-79658a7fb684> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/05564c4f-b925-31e0-87b7-487f12b49e38> .
+
+<http://data.doremus.org/expression/05564c4f-b925-31e0-87b7-487f12b49e38>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/c> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/05564c4f-b925-31e0-87b7-487f12b49e38/casting/1> ;
+        ecrm:P102_has_title  "Symphony" , "Symphonie" ;
+        ecrm:P3_has_note     "Oeuvre commencée dans les années 30, et achevée en 1961 à la demande du Festival de Lucerne. Dédiée à la mémoire de Toscanini. Comprend : allegro, andante moderato, vivo. Durée : 30 minutes environ" , "Créée à Lucerne, le 16 août 1961, par l'orchestre du Festival, sous la direction de Ferenc Fricsay" .

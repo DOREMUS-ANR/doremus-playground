@@ -1,0 +1,64 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/0f51dd86-b1f9-3a7d-b4f0-4131cc6d2c45>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/0f51dd86-b1f9-3a7d-b4f0-4131cc6d2c45/casting/1> ;
+        ecrm:P102_has_title  "A-Ronne" ;
+        ecrm:P3_has_note     "Oeuvre composée sur un poème d'Edoardo Sanguineti. Selon Berio, \"A-Ronne a pour sujet la vocalisation élémentaire d'un texte\". Durée : 32 minutes environ" , "Créé le 1er janvier 1975 à Liège, RTB, par les Swingle II. Edition : Universal" .
+
+<http://data.doremus.org/event/9deda8fd-2bbc-3572-90bf-677b29335333>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/656a3493-dfd9-3ad3-8971-ab4d1656d841> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/0f51dd86-b1f9-3a7d-b4f0-4131cc6d2c45> .
+
+<http://data.doremus.org/work/656a3493-dfd9-3ad3-8971-ab4d1656d841>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/9ae9ef69-188f-30af-bb44-97f7c3afae6d> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/0f51dd86-b1f9-3a7d-b4f0-4131cc6d2c45> .
+
+<http://data.doremus.org/performance/d3f27fbf-626a-3b5a-a249-2ca950b7bedd>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé le 1er janvier 1975 à Liège, RTB, par les Swingle II. Edition : Universal" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/9225e916-9936-3f69-aed1-337dcc92a177> .
+
+<http://data.doremus.org/work/9ae9ef69-188f-30af-bb44-97f7c3afae6d>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/d3f27fbf-626a-3b5a-a249-2ca950b7bedd> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/0f51dd86-b1f9-3a7d-b4f0-4131cc6d2c45> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/0f51dd86-b1f9-3a7d-b4f0-4131cc6d2c45/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 sopranos, 2 contraltos, 2 ténors, 2 basses" .
+
+<http://data.doremus.org/expression/9225e916-9936-3f69-aed1-337dcc92a177>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/0f51dd86-b1f9-3a7d-b4f0-4131cc6d2c45> .
+
+<http://data.doremus.org/event/4b9cae8c-243a-331b-8261-ea72bc0c8ea6>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1974-75" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1974/1975"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/0f51dd86-b1f9-3a7d-b4f0-4131cc6d2c45> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/9ae9ef69-188f-30af-bb44-97f7c3afae6d> .

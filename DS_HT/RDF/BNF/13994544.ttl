@@ -1,0 +1,74 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/18114af3-e4aa-3cd3-89ec-f88abdf83784>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 11 janvier 1895 avec alto" , "1re exécution : 7 janvier 1895" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/7b001fa0-245f-377c-8f1a-4076f1e33a17> .
+
+<http://data.doremus.org/expression/7b001fa0-245f-377c-8f1a-4076f1e33a17>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/a68ee0b5-7e33-3981-8443-0c204ce8cceb> .
+
+<http://data.doremus.org/artist/1ffec4f8-174a-38f4-8e22-ead9add71cf7>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/3936ef4e-6f1a-3382-87f4-cb3fae1ea110>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/18114af3-e4aa-3cd3-89ec-f88abdf83784> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/a68ee0b5-7e33-3981-8443-0c204ce8cceb> .
+
+<http://data.doremus.org/event/23985c1f-0201-3ad7-b45a-01f598360bed>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18940101/18941231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1ffec4f8-174a-38f4-8e22-ead9add71cf7>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/a68ee0b5-7e33-3981-8443-0c204ce8cceb> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3936ef4e-6f1a-3382-87f4-cb3fae1ea110> .
+
+<http://data.doremus.org/expression/a68ee0b5-7e33-3981-8443-0c204ce8cceb>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/fm> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/a68ee0b5-7e33-3981-8443-0c204ce8cceb/casting/1> ;
+        mus:U17_has_opus_statement  [ a                           mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number     "120" ;
+                                      mus:U43_has_opus_subnumber  "1" ;
+                                      ecrm:P3_has_note            "Op. 120, no 1"
+                                    ] .
+
+<http://data.doremus.org/work/52ee81f2-8584-39c0-8e3e-b34faefd7cce>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/3936ef4e-6f1a-3382-87f4-cb3fae1ea110> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/a68ee0b5-7e33-3981-8443-0c204ce8cceb> .
+
+<http://data.doremus.org/expression/a68ee0b5-7e33-3981-8443-0c204ce8cceb/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/wcl>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/kpf>
+                                    ] ;
+        ecrm:P3_has_note            "Clarinette, piano" .
+
+<http://data.doremus.org/event/81882092-6d53-34cd-8dda-4745b0919659>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/7b001fa0-245f-377c-8f1a-4076f1e33a17> .
+
+<http://data.doremus.org/event/90f3ca27-6340-3184-827c-334d55c60c3c>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/52ee81f2-8584-39c0-8e3e-b34faefd7cce> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/a68ee0b5-7e33-3981-8443-0c204ce8cceb> .

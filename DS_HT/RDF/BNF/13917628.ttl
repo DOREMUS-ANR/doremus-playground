@@ -1,0 +1,54 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/33382bbe-3a12-3b62-bf2e-07841bdd1051>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/lit> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "37" ;
+                                      ecrm:P3_has_note         "Op. 37"
+                                    ] ;
+        ecrm:P102_has_title         "Vsenoshchnoye bdeniye" , "Vêpres" , "All-night vigil" , "Vsenoŝnoe bdenie" ;
+        ecrm:P3_has_note            "Comprend : Priidite poklonimsya ; Blagoslovi, dushe moya ; Blazhen muzh ; Svete tikhii ; Nyne otpushchaeshi ; Bogoroditse Devo [Rejoice, O Virgin] ; Shestopsalmie. Slava v vyshnikh Bogu ; Khvalite imya Gospodne ; Blagosloven esi, Gospodi ; Voskresenie Khristovo videvshe ; Velichit dusha moya Gospoda ; Slavoslovie velikoe. Slava v vyshnikh Bogu ; Tropar. Dnes spasenie miru byst ; Tropar. Voskres iz groba ; Vzbrannoy voevode" .
+
+<http://data.doremus.org/artist/412ee2f5-2999-3b6d-a778-3c3401226aba>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/99724955-edf3-3a4e-aad7-84833b2c90d9>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19150101/19151231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/412ee2f5-2999-3b6d-a778-3c3401226aba>
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/fe19c161-a183-3038-ae85-ad9dff215ff3>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/33382bbe-3a12-3b62-bf2e-07841bdd1051> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/01a8515d-ee09-3e89-b849-c1923aba9504> .
+
+<http://data.doremus.org/work/01a8515d-ee09-3e89-b849-c1923aba9504>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/33382bbe-3a12-3b62-bf2e-07841bdd1051> .
+
+<http://data.doremus.org/artist/fe19c161-a183-3038-ae85-ad9dff215ff3>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/2bf3b448-5fa6-393a-b5c3-0b505e39671b>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/01a8515d-ee09-3e89-b849-c1923aba9504> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/33382bbe-3a12-3b62-bf2e-07841bdd1051> .
+
+<http://data.doremus.org/event/4f59d418-155b-3131-a37c-e66c4998fb21>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2bf3b448-5fa6-393a-b5c3-0b505e39671b> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/33382bbe-3a12-3b62-bf2e-07841bdd1051> .

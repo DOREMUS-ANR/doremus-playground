@@ -1,0 +1,46 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/6dd802c1-d8d5-32cc-91fa-494ec02e8c8b>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/dd0724dd-699d-3cd7-8bb5-ee3a23f676cf>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/qua> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "4" ;
+                                      ecrm:P3_has_note         "Op. 4"
+                                    ] ;
+        ecrm:P102_has_title         "Catch" .
+
+<http://data.doremus.org/work/447fe1b6-ca99-3dd4-b2f8-366e57dd9770>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/ccde87ab-413a-38bb-b8bd-1b2e01bd992f> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/dd0724dd-699d-3cd7-8bb5-ee3a23f676cf> .
+
+<http://data.doremus.org/event/05c5c997-9a08-3882-b552-8ae538664b6b>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/447fe1b6-ca99-3dd4-b2f8-366e57dd9770> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/dd0724dd-699d-3cd7-8bb5-ee3a23f676cf> .
+
+<http://data.doremus.org/work/ccde87ab-413a-38bb-b8bd-1b2e01bd992f>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/dd0724dd-699d-3cd7-8bb5-ee3a23f676cf> .
+
+<http://data.doremus.org/event/9509fb41-aad1-3fc8-9048-e770968c5968>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19910101/19911231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6dd802c1-d8d5-32cc-91fa-494ec02e8c8b>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/dd0724dd-699d-3cd7-8bb5-ee3a23f676cf> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/ccde87ab-413a-38bb-b8bd-1b2e01bd992f> .

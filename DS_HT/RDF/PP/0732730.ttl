@@ -1,0 +1,59 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/9a997260-6093-379d-8747-9ef6fd857ee1>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/09c064e4-b793-3947-b2cc-1f9b867d9473> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e18895dc-f27d-389a-a350-aba750cd4efa> .
+
+<http://data.doremus.org/expression/e18895dc-f27d-389a-a350-aba750cd4efa>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "\"N°0\"" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/eb> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/diabolo/genre/musique_de_chambre> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/e18895dc-f27d-389a-a350-aba750cd4efa/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                           mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name  "Hob" ;
+                  ecrm:P3_has_note            "Hob. II.6"
+                ] ;
+        ecrm:P102_has_title       "Streichquartett" , "String Quartet" , "Quatuor à cordes" , "Quatuor à cordes no 5" ;
+        ecrm:P3_has_note          "Fait partie des dix \"Quatuors à Fürnberg\", composés entre 1757 et 1760 ; l'ensemble comprend l'Op. 1 n°1-4 et 6, l'Op. 2 n°1-2, 4 et 6 et le \"n°0\" (Hob.III.1-4, 6-8, 10 et 12, et Hob.II.6) ; ces oeuvres, par leur structure en 5 mouvements, s'apparentent plutôt à des divertimentos pour cordes." .
+
+<http://data.doremus.org/event/8d723399-a459-3330-bdb3-767cd2e89df5>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/9a997260-6093-379d-8747-9ef6fd857ee1> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e18895dc-f27d-389a-a350-aba750cd4efa> .
+
+<http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/e18895dc-f27d-389a-a350-aba750cd4efa/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 violons, alto, violoncelle" .
+
+<http://data.doremus.org/work/09c064e4-b793-3947-b2cc-1f9b867d9473>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e18895dc-f27d-389a-a350-aba750cd4efa> .
+
+<http://data.doremus.org/event/afcc1349-7653-37f2-8e48-607046bea464>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1757-1760" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1757/1760"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e18895dc-f27d-389a-a350-aba750cd4efa> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/09c064e4-b793-3947-b2cc-1f9b867d9473> .

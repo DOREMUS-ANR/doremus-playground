@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/f8353902-c34f-39b2-ae89-052e40463223>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/948ed43c-1645-3b71-b9bd-189dfbbcaedb> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d3240ef9-ab2f-367a-b2db-bd0e75c5ed82> .
+
+<http://data.doremus.org/expression/6b4b8844-f0d5-30e3-8032-57b6d821400f>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/d3240ef9-ab2f-367a-b2db-bd0e75c5ed82> .
+
+<http://data.doremus.org/performance/8e931ddd-3804-37f5-a4f1-99ab7710340b>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée à Vienne, auberge \"Zum grossen Zeisig\", le 24 novembre 1858, sous la direction du compositeur" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/6b4b8844-f0d5-30e3-8032-57b6d821400f> .
+
+<http://data.doremus.org/event/c5f5fb24-135b-3a70-a078-27603cac29dd>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1858" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1858"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/66758e02-7164-3fcd-9ee0-916316ffbcee>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d3240ef9-ab2f-367a-b2db-bd0e75c5ed82> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/948ed43c-1645-3b71-b9bd-189dfbbcaedb> .
+
+<http://data.doremus.org/work/948ed43c-1645-3b71-b9bd-189dfbbcaedb>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/8e931ddd-3804-37f5-a4f1-99ab7710340b> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d3240ef9-ab2f-367a-b2db-bd0e75c5ed82> .
+
+<http://data.doremus.org/expression/d3240ef9-ab2f-367a-b2db-bd0e75c5ed82>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/d3240ef9-ab2f-367a-b2db-bd0e75c5ed82/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "214" ;
+                                      ecrm:P3_has_note         "Op.214"
+                                    ] ;
+        ecrm:P102_has_title         "Tritsch-Tratsch Polka" ;
+        ecrm:P3_has_note            "Après la valse, la \"polka schnell\" avait la part belle au sein du répertoire des bals. Cette variante rapide de la polka, qui s'était développée à Vienne dans les années 1850, était souvent l'occasion d'effets descriptifs. La Tritsch-Tratsch Polka porte le titre de l'hebdomadaire humoristique et satirique Der Tritsch-Tratsch, lui-même nommé d'après une pièce très populaire de Johann Nestroy qui vante le plaisir tiré à commérer. En 1858, le magazine avait publié une rumeur inquiète de ce que les succès de Strauss à l'étranger lui fassent négliger son public viennois. De retour de tournées, le compositeur crée une polka schnell parodique, abondant en effets de mime des commérages." , "Créée à Vienne, auberge \"Zum grossen Zeisig\", le 24 novembre 1858, sous la direction du compositeur" .
+
+<http://data.doremus.org/artist/66758e02-7164-3fcd-9ee0-916316ffbcee>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/d3240ef9-ab2f-367a-b2db-bd0e75c5ed82/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/genre/20> .
+
+<http://data.doremus.org/event/9abadbfe-ad7e-34ef-9522-5121f4f57a06>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f8353902-c34f-39b2-ae89-052e40463223> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d3240ef9-ab2f-367a-b2db-bd0e75c5ed82> .

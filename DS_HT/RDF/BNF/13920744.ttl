@@ -1,0 +1,64 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/6b3c9883-85a1-3ca3-924e-5fa257228193>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/8e42001e-7dc8-3102-9932-f44197095ce5> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/b40ca052-64a9-3b2d-aeb4-f1a8510693f2> .
+
+<http://data.doremus.org/event/c821b49a-c2e3-3e17-a8bc-7efb9db4eb79>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18670101/18681231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/f740b3c6-509b-352d-9654-3d22f2bc07bf>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/b40ca052-64a9-3b2d-aeb4-f1a8510693f2> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/6b3c9883-85a1-3ca3-924e-5fa257228193> .
+
+<http://data.doremus.org/event/bbb6c450-b792-3c42-85c4-f28e725c9d65>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/c357ce3d-7495-36e1-854a-0a61d439b02f> .
+
+<http://data.doremus.org/expression/b40ca052-64a9-3b2d-aeb4-f1a8510693f2>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "3" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/fm> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/ms> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "WAB" ;
+                  mus:U41_has_catalogue_number  "28" ;
+                  ecrm:P3_has_note              "WAB 28"
+                ] ;
+        ecrm:P3_has_note          "Date de révision : 1876" , "Date de révision : 1881" , "Éd. : 1893" .
+
+<http://data.doremus.org/artist/f740b3c6-509b-352d-9654-3d22f2bc07bf>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/8e42001e-7dc8-3102-9932-f44197095ce5>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Vienne, 1872-06-16" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/c357ce3d-7495-36e1-854a-0a61d439b02f> .
+
+<http://data.doremus.org/event/938236e9-8b73-34db-bfd6-e929524de314>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/37efe395-d5b6-3756-b9a8-7ec6006c7952> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/b40ca052-64a9-3b2d-aeb4-f1a8510693f2> .
+
+<http://data.doremus.org/work/37efe395-d5b6-3756-b9a8-7ec6006c7952>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/6b3c9883-85a1-3ca3-924e-5fa257228193> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/b40ca052-64a9-3b2d-aeb4-f1a8510693f2> .
+
+<http://data.doremus.org/expression/c357ce3d-7495-36e1-854a-0a61d439b02f>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/b40ca052-64a9-3b2d-aeb4-f1a8510693f2> .

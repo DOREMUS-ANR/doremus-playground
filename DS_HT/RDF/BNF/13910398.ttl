@@ -1,0 +1,86 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/b3e2c46e-94db-3043-889d-86c6e2c2d823>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/64ef45ae-c9f9-322b-a05f-1b2dbc33faee> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/16515dda-a401-3064-a19c-464f549c8126> .
+
+<http://data.doremus.org/work/64ef45ae-c9f9-322b-a05f-1b2dbc33faee>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/ec506b48-5734-31b8-8918-a6efb5da9db5> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/16515dda-a401-3064-a19c-464f549c8126> .
+
+<http://data.doremus.org/expression/16515dda-a401-3064-a19c-464f549c8126>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/rp> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "D" ;
+                  mus:U41_has_catalogue_number  "44" ;
+                  ecrm:P3_has_note              "D 44"
+                ] ;
+        ecrm:P102_has_title  "España" ;
+        ecrm:P3_has_note     "Il existe une transcription pour voix et piano sur un poème d'Eugène Adenis, par le compositeur" , "Il existe aussi de nombreux arrangements pour diverses distributions par d'autres compositeurs" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/16515dda-a401-3064-a19c-464f549c8126/dedication> .
+
+<http://data.doremus.org/expression/16515dda-a401-3064-a19c-464f549c8126/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à Charles Lamoureux"@fr .
+
+<http://data.doremus.org/work/1a42f766-a05a-3e64-b9c8-e62cf856d7ea>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/030239d6-72e6-36de-b2b3-311706904563> .
+
+<http://data.doremus.org/event/62661c91-33ca-3acd-803f-419183ca87d6>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18830101/18830831"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b9ec7921-2f4a-35da-90ce-6f906f80c77f>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/16515dda-a401-3064-a19c-464f549c8126> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/ec506b48-5734-31b8-8918-a6efb5da9db5> .
+
+<http://data.doremus.org/expression/511aa8a4-9438-387a-83e1-599a5582b104>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/16515dda-a401-3064-a19c-464f549c8126> .
+
+<http://data.doremus.org/event/56e162e5-ef68-31ac-a59c-12f192ad6469>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/511aa8a4-9438-387a-83e1-599a5582b104> .
+
+<http://data.doremus.org/publication/030239d6-72e6-36de-b2b3-311706904563>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/16515dda-a401-3064-a19c-464f549c8126> .
+
+<http://data.doremus.org/artist/b9ec7921-2f4a-35da-90ce-6f906f80c77f>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/f34cf57a-9e5a-3322-b858-a258e0444aeb>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Paris : Enoch et Costallat, 1884" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/1a42f766-a05a-3e64-b9c8-e62cf856d7ea> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/030239d6-72e6-36de-b2b3-311706904563> .
+
+<http://data.doremus.org/performance/cd6ff13a-7bb3-3d83-9589-931a56b013ca>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Paris, Théâtre du Château-d'Eau, 4 novembre 1883, par la Société des Nouveaux concerts, sous la direction du dédicataire" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/511aa8a4-9438-387a-83e1-599a5582b104> .
+
+<http://data.doremus.org/work/ec506b48-5734-31b8-8918-a6efb5da9db5>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/f34cf57a-9e5a-3322-b858-a258e0444aeb> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/cd6ff13a-7bb3-3d83-9589-931a56b013ca> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/16515dda-a401-3064-a19c-464f549c8126> .

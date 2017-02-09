@@ -1,0 +1,42 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/93bb56fa-1987-3e8d-8358-8ae288353106>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/a890a986-a86b-39b1-ae82-685a9c71a8b3> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/bf7ef5a4-5677-34da-8448-fcc23d58a14d> .
+
+<http://data.doremus.org/expression/bf7ef5a4-5677-34da-8448-fcc23d58a14d>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sg> ;
+        ecrm:P102_has_title  "Tea for two" , "Thé pour deux" , "No, no, NanetteTea for two" .
+
+<http://data.doremus.org/event/3ff405fb-1d0b-34ad-8b44-d9a9d28b0aa9>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19250101/19251231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/e0bda0cb-7317-3557-a79b-27a43232e0f6>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/bf7ef5a4-5677-34da-8448-fcc23d58a14d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/5e42a587-7911-3f10-9d71-a8fcbf219288> .
+
+<http://data.doremus.org/work/5e42a587-7911-3f10-9d71-a8fcbf219288>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/bf7ef5a4-5677-34da-8448-fcc23d58a14d> .
+
+<http://data.doremus.org/artist/e0bda0cb-7317-3557-a79b-27a43232e0f6>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/a890a986-a86b-39b1-ae82-685a9c71a8b3>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/5e42a587-7911-3f10-9d71-a8fcbf219288> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/bf7ef5a4-5677-34da-8448-fcc23d58a14d> .

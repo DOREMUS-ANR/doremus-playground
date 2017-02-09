@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/135bfb9c-4113-3286-b31e-cb0c373e6b61/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 violons, alto, violoncelle" .
+
+<http://data.doremus.org/event/6ead5c7c-0c1b-3ec5-bd40-98fdf94485d4>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/3cad88a5-40be-3876-807f-4d42b930c85e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/135bfb9c-4113-3286-b31e-cb0c373e6b61> .
+
+<http://data.doremus.org/expression/135bfb9c-4113-3286-b31e-cb0c373e6b61>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "N° 1" ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/gb> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/diabolo/genre/musique_de_chambre> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/135bfb9c-4113-3286-b31e-cb0c373e6b61/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                           mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name  "Hob" ;
+                  ecrm:P3_has_note            "Hob. III.75"
+                ] ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "76" ;
+                                      ecrm:P3_has_note         "Op. 76"
+                                    ] ;
+        ecrm:P102_has_title         "String Quartet" , "Quatuor à cordes" , "Streichquartett" , "Quatuor à cordes no 60" ;
+        ecrm:P3_has_note            "Fait partie d'un groupe de six quatuors, composés en même temps que \"La Création\" et dédiés au comte Joseph Erdödy, dont on a perdu les autographes. Cet ensemble, caractérisé par la perfection, l'assurance et l'innovation, constitue, avec l'op.20, la plus prestigieuse série des quatuors de Haydn." .
+
+<http://data.doremus.org/work/8cc6ac29-bf7e-3c7e-8cc4-11e5408326f9>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/135bfb9c-4113-3286-b31e-cb0c373e6b61> .
+
+<http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/519369d5-7884-30bf-8b9f-34375013f206>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1797" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1797"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/135bfb9c-4113-3286-b31e-cb0c373e6b61> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8cc6ac29-bf7e-3c7e-8cc4-11e5408326f9> .
+
+<http://data.doremus.org/work/3cad88a5-40be-3876-807f-4d42b930c85e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8cc6ac29-bf7e-3c7e-8cc4-11e5408326f9> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/135bfb9c-4113-3286-b31e-cb0c373e6b61> .

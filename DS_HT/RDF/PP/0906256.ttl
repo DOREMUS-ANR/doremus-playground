@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/34c774e7-d3ed-3ec1-abce-4caf2ecc3c91>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/5a485f4e-99ed-36e2-aa38-eb38ffd15b1e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/2c622e00-5ad4-3698-a642-a2f2db06e19a> .
+
+<http://data.doremus.org/expression/2c622e00-5ad4-3698-a642-a2f2db06e19a>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "N° 12" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/bb> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/diabolo/genre/messe> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique classique"@fr
+                                  ] ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique sacrée"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/2c622e00-5ad4-3698-a642-a2f2db06e19a/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                           mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name  "Hob" ;
+                  ecrm:P3_has_note            "Hob. XXII 12"
+                ] ;
+        ecrm:P102_has_title       "Theresienmesse en si bémol majeur" , "Messe no 12 \"Theresienmesse\"" ;
+        ecrm:P3_has_note          "C'est la douzième des 14 messes composées par Haydn, en l'honneur de l'Impératrice Marie-Thérèse. Comprend : 1- Kyrie. 2- Gloria. 3- Credo. 4- Sanctus. 5- Agnus dei. Durée d'exécution : 45 minutes environ" .
+
+<http://data.doremus.org/work/5a485f4e-99ed-36e2-aa38-eb38ffd15b1e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/c2e9975f-db34-35e4-bda6-d3cfe72f94dd> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/2c622e00-5ad4-3698-a642-a2f2db06e19a> .
+
+<http://data.doremus.org/event/56c0db43-1cd3-34ed-b322-12833fff4f8f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1799" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1799"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/2c622e00-5ad4-3698-a642-a2f2db06e19a> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c2e9975f-db34-35e4-bda6-d3cfe72f94dd> .
+
+<http://data.doremus.org/work/c2e9975f-db34-35e4-bda6-d3cfe72f94dd>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/2c622e00-5ad4-3698-a642-a2f2db06e19a> .
+
+<http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/2c622e00-5ad4-3698-a642-a2f2db06e19a/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "quatuor vocal (SATB), choeur et orchestre : 2 clarinettes, 2 trompettes, timbales, cordes et orgue" .

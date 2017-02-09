@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/a81c018c-557e-32e1-9b38-104f77d41f15>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/ffe6486f-335d-302e-8b2e-1edafe0e99f6> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/0214a217-0f89-3bb0-a629-9247085d32a4> .
+
+<http://data.doremus.org/event/ae3734d5-4938-30de-a2f8-2e5d2e14049d>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18230101/18231231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/0214a217-0f89-3bb0-a629-9247085d32a4> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/be67e59c-cb99-3065-ac68-3fda56955c6b> .
+
+<http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/ffe6486f-335d-302e-8b2e-1edafe0e99f6>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/be67e59c-cb99-3065-ac68-3fda56955c6b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/0214a217-0f89-3bb0-a629-9247085d32a4> .
+
+<http://data.doremus.org/expression/0214a217-0f89-3bb0-a629-9247085d32a4>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/li> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "D" ;
+                  mus:U41_has_catalogue_number  "776" ;
+                  ecrm:P3_has_note              "D 776"
+                ] ;
+        ecrm:P102_has_title  "Du bist die Ruh" ;
+        ecrm:P3_has_note     "Lied sur un poème de Friedrich Rückert" .
+
+<http://data.doremus.org/work/be67e59c-cb99-3065-ac68-3fda56955c6b>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/0214a217-0f89-3bb0-a629-9247085d32a4> .

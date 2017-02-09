@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13926709" format="InterXMarc_Complet" type="Authority">
+<leader>00552c0 au22000272  45  <Pos Code="0004">00552</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF13926709X<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13926709</Pos>
+<Pos Code="13">X</Pos>
+</controlfield>
+<controlfield tag="008">900529140319yyger li        1907                             010 <Pos Code="0001">90</Pos>
+<Pos Code="0203">05</Pos>
+<Pos Code="0405">29</Pos>
+<Pos Code="0607">14</Pos>
+<Pos Code="0809">03</Pos>
+<Pos Code="1011">19</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="allemand">ger</Pos>
+<Pos Code="1820" Sens="Lied">li </Pos>
+<Pos Code="2831">1907</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">vz01<Pos Code="0001" Sens="voix - non spécifié">vz</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">ka01<Pos Code="0001" Sens="clavier - piano">ka</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13899526</subfield>
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Schoenberg</subfield>
+	<subfield code="m">Arnold</subfield>
+	<subfield code="d">1874-1951</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.ger.</subfield>
+	<subfield code="a">Zwei Balladen</subfield>
+	<subfield code="p">Op. 12</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">13939125</subfield>
+	<subfield code="a">Schoenberg</subfield>
+	<subfield code="m">Arnold</subfield>
+	<subfield code="d">1874-1951</subfield>
+	<subfield code="t" Barre="5">[Der verlorene Haufen. Op. 12,  no° 2]</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.ger.</subfield>
+	<subfield code="a" Barre="2">2 Balladen</subfield>
+	<subfield code="p">Op. 12</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Comprend : &quot;Jane Grey&quot; (poème de Heinrich Ammann) ; &quot;Der verlorene Haufen&quot; (poème de Viktor Klemperer)</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Date de composition : 1907</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove 6</subfield>
+</datafield>
+<datafield tag="624" ind1=" " ind2=" ">
+	<subfield code="a">780<Pos Code="0002" Sens="Musique">780</Pos>
+</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100571500</subfield>
+</datafield>
+<Alter Ori="13899526">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">    b     </subfield>
+	<subfield code="a">Schönberg</subfield>
+	<subfield code="m">Arnold</subfield>
+	<subfield code="d">1874-1951</subfield>
+</datafield>
+<datafield tag="031" ind1=" " ind2=" ">
+	<subfield code="a">000000012095618X</subfield>
+	<subfield code="2" Sens="ISNI chargé à partir de la base ISNI">ISNI</subfield>
+	<subfield code="d">20131217<Pos Code="0003">2013</Pos>
+<Pos Code="0407" Sens="17 décembre">1217</Pos>
+</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb139267091</Attr>
+<Attr Nom="NumSource">OPC 100571500</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1389952613939125</Attr>
+<Attr Nom="DateCreation">29/05/ 1990</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">19/03/ 2014</Attr>
+<Attr Nom="ResponsableDerniereValidation">SERRES CATHERINE</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">29/05/ 1990</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">82</Attr>
+<Attr Nom="NumSource">OPL 001524408</Attr>
+</record>

@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/58efc6b8-78c5-3006-bf43-19e0f31d27d1>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/ac1eb60c-32d7-30f3-8e8c-40c366091409>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/ac1eb60c-32d7-30f3-8e8c-40c366091409/casting/1> ;
+        ecrm:P102_has_title  "The force of destiny" , "La force du destin" , "The power of fate" , "La forza del destino" ;
+        ecrm:P3_has_note     "Opéra en quatre actes. Le livret de Francesco Maria Piave est basé sur le mélodrame d'Angel de Saavedra, duc de Rivas, \"Don Alvaro o la fuerza del sino\" (1835), avec ajout d'une scène du \"Camp de Wallenstein\" de Schiller ; cet opéra est une commande du ténor Enrico Tamberlik pour le théâtre impérial de Saint-Petersbourg. Verdi révisera la partition en 1868, avec l'aide d'Antonio Ghislanzoni pour le livret." , "Créé à Saint-Petersbourg, Théâtre impérial, le 29 octobre 1862 ; version révisée créée à la Scala de Milan le 27 février 1869" .
+
+<http://data.doremus.org/work/753c388a-9a62-353f-b500-12132b2a8682>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/c04657de-e69d-352a-acbb-b84e83aa1640> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ac1eb60c-32d7-30f3-8e8c-40c366091409> .
+
+<http://data.doremus.org/event/c6e932e3-dedf-31e9-8402-03fb7866c235>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/77902c92-3c6e-3d51-8e35-2e883dfe311d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ac1eb60c-32d7-30f3-8e8c-40c366091409> .
+
+<http://data.doremus.org/expression/2e4ecaf6-1afd-3690-bfa0-783c8004b036>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ac1eb60c-32d7-30f3-8e8c-40c366091409> .
+
+<http://data.doremus.org/work/77902c92-3c6e-3d51-8e35-2e883dfe311d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/753c388a-9a62-353f-b500-12132b2a8682> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ac1eb60c-32d7-30f3-8e8c-40c366091409> .
+
+<http://data.doremus.org/performance/c04657de-e69d-352a-acbb-b84e83aa1640>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Saint-Petersbourg, Théâtre impérial, le 29 octobre 1862 ; version révisée créée à la Scala de Milan le 27 février 1869" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/2e4ecaf6-1afd-3690-bfa0-783c8004b036> .
+
+<http://data.doremus.org/expression/ac1eb60c-32d7-30f3-8e8c-40c366091409/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Leonora di Vargas (soprano) ; Preziosilla, Curra (mezzos) ; Alvaro, Trabuco, 2 soldats (ténors) ; Don Carlo di Vargas, Fra Melitone, l'alcade, le médecin (barytons) ; le marquis de Calatrava, Padre Guardiano, 2 soldats (basses) ; muletiers, paysans espagnols et italiens, soldats, vivandières, ordonnances, frères franciscains... (choeur)" .
+
+<http://data.doremus.org/event/11cc3992-cac4-37b9-ae9b-2e5f013ae50c>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1862-1868" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1862/1868"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/58efc6b8-78c5-3006-bf43-19e0f31d27d1>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ac1eb60c-32d7-30f3-8e8c-40c366091409> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/753c388a-9a62-353f-b500-12132b2a8682> .

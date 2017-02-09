@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/54a3369c-8aaa-3eec-a854-7ffc4bff361f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/553d244f-6c82-3e88-88ea-9e27ebbdfda3> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/af797ee7-4409-3b2b-b558-cad210d62c3a> .
+
+<http://data.doremus.org/artist/452c94a5-79b5-3c93-92ff-30ebf60cdae5>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/cba78f16-c5e9-31b4-ab73-5f66990e8f02>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/54a3369c-8aaa-3eec-a854-7ffc4bff361f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/af797ee7-4409-3b2b-b558-cad210d62c3a> .
+
+<http://data.doremus.org/expression/af797ee7-4409-3b2b-b558-cad210d62c3a/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "1 violon soliste , 1 choeurs, 1 orchestre réduit" .
+
+<http://data.doremus.org/performance/a7c3ba82-d6d3-3a36-9f75-61d58712223f>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Amsterdam, Netherlands Opera, le 30 mai1982." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/fd6a0a92-8f8c-3979-aa05-edb4667885cf> .
+
+<http://data.doremus.org/expression/fd6a0a92-8f8c-3979-aa05-edb4667885cf>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/af797ee7-4409-3b2b-b558-cad210d62c3a> .
+
+<http://data.doremus.org/event/580a1af4-eb3d-3a9f-a358-cfc61babc027>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1982" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1982"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/452c94a5-79b5-3c93-92ff-30ebf60cdae5>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/af797ee7-4409-3b2b-b558-cad210d62c3a> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/553d244f-6c82-3e88-88ea-9e27ebbdfda3> .
+
+<http://data.doremus.org/expression/af797ee7-4409-3b2b-b558-cad210d62c3a>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/co> , <http://data.doremus.org/vocabulary/iaml/genre/bt> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/af797ee7-4409-3b2b-b558-cad210d62c3a/casting/1> ;
+        ecrm:P102_has_title  "The photographer" ;
+        ecrm:P3_has_note     "Oeuvre de média mixte, The photographer est une commande du Festival de Hollande d'après un livret de Rob Malasch et des paroles de David Byrne. L+oeuvre sera remanié par Philip Glass à la suite de sa création en 1982 à Amsterdam. Elle s+inspire de la vie du photographe Eadweard Muybridge. Elle comprend trois parties : \"L'acte I a la forme d'une pièce de théâtre avec 3 intermèdes musicaux, l'acte II a la forme d'un concerto pour violon, l'acte III celle d'un ballet\" (Catalogue BNF)." , "Créé à Amsterdam, Netherlands Opera, le 30 mai1982." .
+
+<http://data.doremus.org/work/553d244f-6c82-3e88-88ea-9e27ebbdfda3>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/a7c3ba82-d6d3-3a36-9f75-61d58712223f> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/af797ee7-4409-3b2b-b558-cad210d62c3a> .

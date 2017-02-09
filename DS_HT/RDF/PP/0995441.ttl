@@ -1,0 +1,56 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/8b232612-e615-3c42-8b7d-81598faa66f4>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1907" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1907"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1e92a419-4006-3cf7-bce2-cd9652fbb436>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e99df21e-e1d1-3647-9546-7d7a1155385c> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/191e69bf-2ff6-392f-9796-76fb0683b9d9> .
+
+<http://data.doremus.org/work/191e69bf-2ff6-392f-9796-76fb0683b9d9>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e99df21e-e1d1-3647-9546-7d7a1155385c> .
+
+<http://data.doremus.org/event/4cc84782-19d3-30aa-8d5b-16890c50b93b>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/4db50eb6-e566-384e-8f3a-8e98ae17d2fe> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e99df21e-e1d1-3647-9546-7d7a1155385c> .
+
+<http://data.doremus.org/artist/1e92a419-4006-3cf7-bce2-cd9652fbb436>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/4db50eb6-e566-384e-8f3a-8e98ae17d2fe>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/191e69bf-2ff6-392f-9796-76fb0683b9d9> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e99df21e-e1d1-3647-9546-7d7a1155385c> .
+
+<http://data.doremus.org/expression/e99df21e-e1d1-3647-9546-7d7a1155385c>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/diabolo/genre/lied> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/e99df21e-e1d1-3647-9546-7d7a1155385c/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "12" ;
+                                      ecrm:P3_has_note         "Op. 12"
+                                    ] ;
+        ecrm:P102_has_title         "Deux ballades" , "2 ballades" , "Zwei Balladen" ;
+        ecrm:P3_has_note            "Ce recueil de deux ballades a été écrit en 1907 pour un concours à la demande d'un éditeur berlinois, qui sollicita également Zemlinsky, ami de longue date de Schönberg. La première conte la mort de Jane Grey, qui fut exécutée par Marie Tudor en 1554, dans un langage encore tonal. Comprend : 1- Jane Grey (poème de Heinrich Ammann). 2- Der verlorene Haufen (poème de Viktor Klemperer)" .
+
+<http://data.doremus.org/expression/e99df21e-e1d1-3647-9546-7d7a1155385c/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Voix et piano" .

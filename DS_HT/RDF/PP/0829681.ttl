@@ -1,0 +1,73 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/1679d710-4e97-3e72-b4e7-df295236cce2/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Solistes (soprano, alto, ténor, basse), choeur mixte et orchestre (les bois par 2, 4 cors, 2 trompettes, 3 trombones, 3 timbales et cordes) et orgue" .
+
+<http://data.doremus.org/work/27899682-bab9-3205-aba6-3549418d8a95>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/8c1e794d-233d-32fe-8a97-9df0eccc2a85> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/1679d710-4e97-3e72-b4e7-df295236cce2> .
+
+<http://data.doremus.org/performance/8c1e794d-233d-32fe-8a97-9df0eccc2a85>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Vienne, dans l'église impériale de Saint-Augustin, le 27 juin 1872, sous la direction du compositeur" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/7bf3fbda-bdbf-38e6-9476-77824bd13b77> .
+
+<http://data.doremus.org/artist/f740b3c6-509b-352d-9654-3d22f2bc07bf>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/1679d710-4e97-3e72-b4e7-df295236cce2>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "N° 3" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/fm> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/diabolo/genre/messe> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique sacrée"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/1679d710-4e97-3e72-b4e7-df295236cce2/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "WAB" ;
+                  mus:U41_has_catalogue_number  "28" ;
+                  ecrm:P3_has_note              "WAB 28"
+                ] ;
+        ecrm:P102_has_title       "Messe n°3 en Fa mineur" , "Mass No. 3 in F minor" , "Messe no 3" ;
+        ecrm:P3_has_note          "Cette troisième messe \"majeure\" de Bruckner est sans doute la plus théâtrale, voire mélodramatique. Versions révisées en 1872, 1876, 1881, 1883, et 1890. Comprend : 1- Kyrie. 2- Gloria; 3- Credo. 4- Sanctus. 5- Agnus dei. Durée d'exécution : 65 minutes environ" , "Créé à Vienne, dans l'église impériale de Saint-Augustin, le 27 juin 1872, sous la direction du compositeur" .
+
+<http://data.doremus.org/event/76965a4e-d2f7-37ea-9c48-8f53f8f8d10d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/7e1d159b-a857-3804-a25f-09bbc11fd30a> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/1679d710-4e97-3e72-b4e7-df295236cce2> .
+
+<http://data.doremus.org/event/77d4890f-62c6-3c87-9c36-aee6bc35b49f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1867-1868" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1867/1868"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/f740b3c6-509b-352d-9654-3d22f2bc07bf>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/1679d710-4e97-3e72-b4e7-df295236cce2> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/27899682-bab9-3205-aba6-3549418d8a95> .
+
+<http://data.doremus.org/expression/7bf3fbda-bdbf-38e6-9476-77824bd13b77>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/1679d710-4e97-3e72-b4e7-df295236cce2> .
+
+<http://data.doremus.org/work/7e1d159b-a857-3804-a25f-09bbc11fd30a>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/27899682-bab9-3205-aba6-3549418d8a95> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/1679d710-4e97-3e72-b4e7-df295236cce2> .

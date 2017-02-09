@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13962025" format="InterXMarc_Complet" type="Authority">
+<leader>00582c0 au22000272  45  <Pos Code="0004">00582</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139620251<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13962025</Pos>
+<Pos Code="13">1</Pos>
+</controlfield>
+<controlfield tag="008">940224100511yy    uu        1924      1925                   1   <Pos Code="0001">94</Pos>
+<Pos Code="0203">02</Pos>
+<Pos Code="0405">24</Pos>
+<Pos Code="0607">10</Pos>
+<Pos Code="0809">05</Pos>
+<Pos Code="1011">11</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820">uu </Pos>
+<Pos Code="2831">1924</Pos>
+<Pos Code="3841">1925</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">wz11<Pos Code="0001" Sens="instruments à vent - autre">wz</Pos>
+<Pos Code="02">1</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">pn04<Pos Code="0001" Sens="percussion - non spécifié">pn</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">4</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13900757</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Varèse</subfield>
+	<subfield code="m">Edgard</subfield>
+	<subfield code="d">1883-1965</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Intégrales</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Dédicace à Mrs Juliana Force</subfield>
+	<subfield code="a">Dates de composition : 1924-1925</subfield>
+	<subfield code="a">1re exécution : New York, Aeolian Hall, le 1er mars 1925, sous la direction de Leopold Stokowski</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove music online</subfield>
+	<subfield code="u">http://www.oxfordmusiconline.com</subfield>
+	<subfield code="d">2010-05-11</subfield>
+	<subfield code="a">Ircam</subfield>
+	<subfield code="u">http://brahms.ircam.fr</subfield>
+	<subfield code="d">2010-05-11</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100931910</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100574770</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14830113</subfield>
+	<subfield code="d">20080208</subfield>
+</datafield>
+<Alter Ori="13900757">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Varèse</subfield>
+	<subfield code="m">Edgar</subfield>
+	<subfield code="d">1883-1965</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb139620256</Attr>
+<Attr Nom="NumSource">OPC 100931910</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13900757</Attr>
+<Attr Nom="DateCreation">24/02/ 1994</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">24/02/ 1994</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource" Rep="1">OPD 100574770</Attr>
+<Attr Nom="NumSource" Rep="2">OPP 14830113</Attr>
+</record>

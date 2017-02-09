@@ -1,0 +1,72 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/d4f2ebc6-18fd-32ed-b10e-5ec81879f98c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première publication : Londres, 1697" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/dcefd770-14fe-3813-9d17-18c23861b75e> .
+
+<http://data.doremus.org/work/0211e343-3b39-3de7-a65f-3bb85fb641d5>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/d4f2ebc6-18fd-32ed-b10e-5ec81879f98c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/5678e812-1041-3259-a8bc-fae5e9cc5721> .
+
+<http://data.doremus.org/expression/5678e812-1041-3259-a8bc-fae5e9cc5721>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/bm> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/musique_de_chambre> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/5678e812-1041-3259-a8bc-fae5e9cc5721/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Z" ;
+                  mus:U41_has_catalogue_number  "802" ;
+                  ecrm:P3_has_note              "Z 802"
+                ] ;
+        ecrm:P102_has_title  "Dix Sonates à quatre parties" , "10 Sonates en 4 parties" , "Ten Sonatas in four parts" , "Sonate en trio à quatre parties no 1" , "Sonata No 1 in b" , "Sonate en trio no 1 en si mineur" ;
+        ecrm:P3_has_note     "Dans ses sonates pour violon, notamment les Ten Sonatas in four parts dont est extraite cette sonate, Purcell rompt avec la tradition pour se tourner vers le nouveau style importé d'Italie ; le violon prend alors le pas sur la viole. La veuve de Purcell fait paraître en 1697 ces dix sonates à quatre parties et les dédie à Lady Rhodia Cavendish, ancienne élève de son mari." , "Première publication : Londres, 1697" .
+
+<http://data.doremus.org/artist/1cd68120-6c81-3dbb-8225-4e04e6050193>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/e00dd496-39ae-373e-ae14-0ebaf95052fc>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "17 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1680." ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1678/1683"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1cd68120-6c81-3dbb-8225-4e04e6050193>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/5678e812-1041-3259-a8bc-fae5e9cc5721> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0211e343-3b39-3de7-a65f-3bb85fb641d5> .
+
+<http://data.doremus.org/event/5f6a6460-9a14-366d-83d5-2af1695aa7eb>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c7424b6f-5948-33be-87a6-8dd97b972347> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/5678e812-1041-3259-a8bc-fae5e9cc5721> .
+
+<http://data.doremus.org/expression/dcefd770-14fe-3813-9d17-18c23861b75e>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/5678e812-1041-3259-a8bc-fae5e9cc5721> .
+
+<http://data.doremus.org/work/c7424b6f-5948-33be-87a6-8dd97b972347>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0211e343-3b39-3de7-a65f-3bb85fb641d5> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/5678e812-1041-3259-a8bc-fae5e9cc5721> .
+
+<http://data.doremus.org/expression/5678e812-1041-3259-a8bc-fae5e9cc5721/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 violons, basse de viole et basse continue." .

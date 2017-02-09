@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/a9018ddf-2206-34ed-9f71-073a94661d14>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/2c35ed3e-d6c4-3346-a109-eab3b5567f93>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/cb4dfb00-142a-3bcf-9e98-e1e08202149d> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/545b7476-a5e0-35fb-8096-7476de477f9a> .
+
+<http://data.doremus.org/event/882b8d4d-863b-3ef5-92db-99b64aacf1c2>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2c35ed3e-d6c4-3346-a109-eab3b5567f93> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/545b7476-a5e0-35fb-8096-7476de477f9a> .
+
+<http://data.doremus.org/work/cb4dfb00-142a-3bcf-9e98-e1e08202149d>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/545b7476-a5e0-35fb-8096-7476de477f9a> .
+
+<http://data.doremus.org/expression/545b7476-a5e0-35fb-8096-7476de477f9a>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/uuu> ;
+        ecrm:P102_has_title  "Un sourire" ;
+        ecrm:P3_has_note     "Éd. : Paris : Leduc" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/545b7476-a5e0-35fb-8096-7476de477f9a/dedication> .
+
+<http://data.doremus.org/expression/545b7476-a5e0-35fb-8096-7476de477f9a/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à Marek Janowski"@fr .
+
+<http://data.doremus.org/event/44ee9fa4-1e64-35e3-81ef-043ce52e955a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19890101/19891231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a9018ddf-2206-34ed-9f71-073a94661d14>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/545b7476-a5e0-35fb-8096-7476de477f9a> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/cb4dfb00-142a-3bcf-9e98-e1e08202149d> .

@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/853d1041-7d4f-35ed-a93c-15146932c904>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6c57e045-551e-3e64-bc1f-97540db7b3f4> .
+
+<http://data.doremus.org/event/d2fa06c7-14ef-35d4-b3e4-805f4507f7e8>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e9fb0093-a4bf-3541-b8b1-6edae0e95a1f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6c57e045-551e-3e64-bc1f-97540db7b3f4> .
+
+<http://data.doremus.org/event/a05cbd75-6238-3c6c-8683-f8c7aa5202a1>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1970/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/4a7d5c3f-d6bf-34c9-a21c-44860c71ed1a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6c57e045-551e-3e64-bc1f-97540db7b3f4> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/853d1041-7d4f-35ed-a93c-15146932c904> .
+
+<http://data.doremus.org/expression/6c57e045-551e-3e64-bc1f-97540db7b3f4>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        ecrm:P102_has_title  "Concerto de chambre" , "Chamber concerto" , "Kammerkonzert" ;
+        ecrm:P3_has_note     "Pour 13 instrumentistes" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/6c57e045-551e-3e64-bc1f-97540db7b3f4/dedication> .
+
+<http://data.doremus.org/expression/6c57e045-551e-3e64-bc1f-97540db7b3f4/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à l'ensemble die Reihe et son chef Friedrich Cerha"@fr .
+
+<http://data.doremus.org/work/e9fb0093-a4bf-3541-b8b1-6edae0e95a1f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/853d1041-7d4f-35ed-a93c-15146932c904> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6c57e045-551e-3e64-bc1f-97540db7b3f4> .
+
+<http://data.doremus.org/artist/4a7d5c3f-d6bf-34c9-a21c-44860c71ed1a>
+        a       ecrm:E21_Person .

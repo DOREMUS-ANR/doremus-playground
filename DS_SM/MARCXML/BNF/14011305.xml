@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="14011305" format="InterXMarc_Complet" type="Authority">
+<leader>00499c0 au22000272  45  <Pos Code="0004">00499</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF14011305X<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">14011305</Pos>
+<Pos Code="13">X</Pos>
+</controlfield>
+<controlfield tag="008">980608100819yyfre mld       1921                             1   <Pos Code="0001">98</Pos>
+<Pos Code="0203">06</Pos>
+<Pos Code="0405">08</Pos>
+<Pos Code="0607">10</Pos>
+<Pos Code="0809">08</Pos>
+<Pos Code="1011">19</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="français">fre</Pos>
+<Pos Code="1820" Sens="mélodie">mld</Pos>
+<Pos Code="2831">1921</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="b">vi01<Pos Code="0001" Sens="voix - voix moyenne">vi</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">ka01<Pos Code="0001" Sens="clavier - piano">ka</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">11902353</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Fauré</subfield>
+	<subfield code="m">Gabriel</subfield>
+	<subfield code="d">1845-1924</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Je me suis embarqué</subfield>
+	<subfield code="p">Op. 118, no 2</subfield>
+</datafield>
+<datafield tag="502" ind1=" " ind2=" ">
+	<subfield code="3">13912011</subfield>
+	<subfield code="a">Fauré</subfield>
+	<subfield code="m">Gabriel</subfield>
+	<subfield code="d">1845-1924</subfield>
+	<subfield code="t" Barre="3">[L&apos;horizon chimérique. Op. 118]</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Mélodie sur un poème de Jean de La Ville de Mirmont</subfield>
+	<subfield code="a">Date de composition : 1921</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Tonalité : ré bémol majeur</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Nectoux, Fauré</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove 6</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">101506440</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb14011305q</Attr>
+<Attr Nom="NumSource">OPC 101506440</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1190235313912011</Attr>
+<Attr Nom="DateCreation">08/06/ 1998</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">08/06/ 1998</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource">OPP 13977081</Attr>
+</record>

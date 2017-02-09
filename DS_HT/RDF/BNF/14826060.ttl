@@ -1,0 +1,52 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/d7d1b65e-f82a-3b01-b399-d4439c8fd65d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/63f10bbc-dea3-3985-b1b1-5bc7cf1ce5bd> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/1cb1272d-448f-3e1c-a445-a3ad71201e14> .
+
+<http://data.doremus.org/artist/af814ab2-812a-3ace-8541-5997f6fa6598>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/63f10bbc-dea3-3985-b1b1-5bc7cf1ce5bd>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/1cb1272d-448f-3e1c-a445-a3ad71201e14> .
+
+<http://data.doremus.org/event/ffe0d460-6845-3ba6-b222-c65690386483>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/d7d1b65e-f82a-3b01-b399-d4439c8fd65d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/1cb1272d-448f-3e1c-a445-a3ad71201e14> .
+
+<http://data.doremus.org/event/c60e7a17-f9c5-36da-9c48-656ca592500b>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19910101/19911231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/af814ab2-812a-3ace-8541-5997f6fa6598>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/1cb1272d-448f-3e1c-a445-a3ad71201e14> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/63f10bbc-dea3-3985-b1b1-5bc7cf1ce5bd> .
+
+<http://data.doremus.org/expression/1cb1272d-448f-3e1c-a445-a3ad71201e14>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/uuu> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/1cb1272d-448f-3e1c-a445-a3ad71201e14/casting/1> ;
+        ecrm:P102_has_title  "Feuillages" ;
+        ecrm:P3_has_note     "Pour orchestre de chambre et projection audio-numérique (facultatif)" .
+
+<http://data.doremus.org/expression/1cb1272d-448f-3e1c-a445-a3ad71201e14/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/och>
+                                    ] ;
+        ecrm:P3_has_note            "Orchestre de chambre" .

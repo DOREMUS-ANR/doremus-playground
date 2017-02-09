@@ -1,0 +1,74 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/566220ee-6732-3039-94d4-0b1823afb20b>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/c57f8324-f126-31ad-ba24-93433fe44be6> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ff6fafff-8c3e-3fec-bbbe-fd4ff700fe03> .
+
+<http://data.doremus.org/expression/ff6fafff-8c3e-3fec-bbbe-fd4ff700fe03>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/ff6fafff-8c3e-3fec-bbbe-fd4ff700fe03/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Ki" ;
+                  mus:U41_has_catalogue_number  "Z" ;
+                  ecrm:P3_has_note              "Ki Z 125"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Ki" ;
+                  mus:U41_has_catalogue_number  "V" ;
+                  ecrm:P3_has_note              "Ki V 31"
+                ] ;
+        ecrm:P102_has_title  "Decoration day" , "Holidays Symphony" ;
+        ecrm:P3_has_note     "Holidays Symphony a été créée dans son intégralité en 1953, un an avant la mort du compositeur" , "C'est la deuxième pièce de l'ensemble Holidays Symphony. Elle a été composée en 1912 et célèbre la fin de la Guuerre de Sécession" .
+
+<http://data.doremus.org/event/52ac8602-06be-35a0-8785-b0baa25739c2>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1912" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1912"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c1a9f789-fdab-39b0-b41c-395d311ad850>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ff6fafff-8c3e-3fec-bbbe-fd4ff700fe03> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/566220ee-6732-3039-94d4-0b1823afb20b> .
+
+<http://data.doremus.org/artist/c1a9f789-fdab-39b0-b41c-395d311ad850>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/c57f8324-f126-31ad-ba24-93433fe44be6>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Holidays Symphony a été créée dans son intégralité en 1953, un an avant la mort du compositeur" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/d4fb7ce4-469f-3dbf-b90a-986194fa36d0> .
+
+<http://data.doremus.org/expression/ff6fafff-8c3e-3fec-bbbe-fd4ff700fe03/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/genre/20> .
+
+<http://data.doremus.org/work/945cacde-ee20-3af1-ab47-7bec225ece6e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/566220ee-6732-3039-94d4-0b1823afb20b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ff6fafff-8c3e-3fec-bbbe-fd4ff700fe03> .
+
+<http://data.doremus.org/expression/d4fb7ce4-469f-3dbf-b90a-986194fa36d0>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ff6fafff-8c3e-3fec-bbbe-fd4ff700fe03> .
+
+<http://data.doremus.org/event/2410a596-d00f-37c7-8944-834624aaf075>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/945cacde-ee20-3af1-ab47-7bec225ece6e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ff6fafff-8c3e-3fec-bbbe-fd4ff700fe03> .

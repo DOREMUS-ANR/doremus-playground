@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/ba8020be-9434-3bf3-9c14-5aa282a0379e>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/bec8a4c1-3f1c-390e-bac4-936623c67932/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à Mrs Juliana Force"@fr .
+
+<http://data.doremus.org/event/597ad110-9f25-305f-bc9a-6b62997957c4>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/1075555a-258d-3fcd-abb8-09abfce5db08> .
+
+<http://data.doremus.org/event/dc488aa3-f899-3fba-8a61-799b104f742b>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/6b1ea866-d5b4-366a-9431-f3c1d8932c5a> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/bec8a4c1-3f1c-390e-bac4-936623c67932> .
+
+<http://data.doremus.org/performance/28fa6717-f792-3597-a340-3e9929e58eab>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : New York, Aeolian Hall, le 1er mars 1925, sous la direction de Leopold Stokowski" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/1075555a-258d-3fcd-abb8-09abfce5db08> .
+
+<http://data.doremus.org/work/1062f029-f004-3629-b55b-99b3c74059c0>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/28fa6717-f792-3597-a340-3e9929e58eab> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/bec8a4c1-3f1c-390e-bac4-936623c67932> .
+
+<http://data.doremus.org/event/8b64553c-1b11-3b28-a573-0f2fe96992af>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19240101/19251231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/ba8020be-9434-3bf3-9c14-5aa282a0379e>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/bec8a4c1-3f1c-390e-bac4-936623c67932> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/1062f029-f004-3629-b55b-99b3c74059c0> .
+
+<http://data.doremus.org/expression/1075555a-258d-3fcd-abb8-09abfce5db08>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/bec8a4c1-3f1c-390e-bac4-936623c67932> .
+
+<http://data.doremus.org/expression/bec8a4c1-3f1c-390e-bac4-936623c67932>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/uuu> ;
+        ecrm:P102_has_title  "Intégrales" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/bec8a4c1-3f1c-390e-bac4-936623c67932/dedication> .
+
+<http://data.doremus.org/work/6b1ea866-d5b4-366a-9431-f3c1d8932c5a>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/1062f029-f004-3629-b55b-99b3c74059c0> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/bec8a4c1-3f1c-390e-bac4-936623c67932> .

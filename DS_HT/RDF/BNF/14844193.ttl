@@ -1,0 +1,66 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/8105caf9-31f5-3cd1-8911-c1657b4ac4f2>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/91a801fb-57d9-37e1-850f-64f7b9003391> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d1b2c067-9f0c-3015-b7c8-58c0f83eed66> .
+
+<http://data.doremus.org/work/3163b2c9-bc9c-3362-9e63-e08f6d1a94b0>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8105caf9-31f5-3cd1-8911-c1657b4ac4f2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d1b2c067-9f0c-3015-b7c8-58c0f83eed66> .
+
+<http://data.doremus.org/event/aefc172c-1a34-3d71-9ee6-9948201a7358>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19130101/19141231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/de52ba07-8bce-3c5d-90b8-4a5481c4421c>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d1b2c067-9f0c-3015-b7c8-58c0f83eed66> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8105caf9-31f5-3cd1-8911-c1657b4ac4f2> .
+
+<http://data.doremus.org/event/91a801fb-57d9-37e1-850f-64f7b9003391>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : [Paris] : Ricordi, 1919" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d2682825-7a49-3f14-946e-d36fecded2cc> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/88112095-56be-3b2e-a079-959b734fbd06> .
+
+<http://data.doremus.org/work/d2682825-7a49-3f14-946e-d36fecded2cc>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/88112095-56be-3b2e-a079-959b734fbd06> .
+
+<http://data.doremus.org/artist/de52ba07-8bce-3c5d-90b8-4a5481c4421c>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/026d3ecf-2282-35f7-921c-f5be3269d499>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/3163b2c9-bc9c-3362-9e63-e08f6d1a94b0> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d1b2c067-9f0c-3015-b7c8-58c0f83eed66> .
+
+<http://data.doremus.org/expression/d1b2c067-9f0c-3015-b7c8-58c0f83eed66/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à Gabriel Fauré"@fr .
+
+<http://data.doremus.org/publication/88112095-56be-3b2e-a079-959b734fbd06>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/d1b2c067-9f0c-3015-b7c8-58c0f83eed66> .
+
+<http://data.doremus.org/expression/d1b2c067-9f0c-3015-b7c8-58c0f83eed66>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/mld> ;
+        ecrm:P102_has_title  "Clairières dans le ciel" ;
+        ecrm:P3_has_note     "Cycle de 13 mélodies" , "Sur des poèmes de Francis Jammes" , "Comprend : \"Elle était descendue au bas de la prairie\" (no 1) ; \"Elle est gravement gaie\" (no 2) ; \"Parfois, je suis triste\" (no 3) ; \"Un poète disait\" (no 4) ; \"Au pied de mon lit\" (no 5) ; \"Si tout ceci n'est qu'un pauvre rêve\" (no 6) ; \"Nous nous aimerons tant\" (no 7) ; \"Vous m'avez regardé avec toute votre âme\" (no 8) ; \"Les lilas qui avaient fleuri\" (no 9) ; \"Deux ancolies\" (no 10) ; \"Par ce que j'ai souffert\" (no 11) ; \"Je garde une médaille d'elle\" (no 12) ; \"Demain fera un an\" (no 13)" , "Il existe une version avec orchestre des no 1, 5-7, 10-13 (1915-1916)" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/d1b2c067-9f0c-3015-b7c8-58c0f83eed66/dedication> .

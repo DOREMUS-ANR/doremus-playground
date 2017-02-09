@@ -1,0 +1,66 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/5356f52c-0e26-3775-ab38-aa86122f54f6>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/md> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "119" ;
+                  ecrm:P3_has_note              "SV 119"
+                ] ;
+        ecrm:P102_has_title  "A quest'olmo, a quest'ombre" ;
+        ecrm:P3_has_note     "Madrigal à 6 voix et instruments extrait du livre 7" , "Texte de Giambattista Marini" .
+
+<http://data.doremus.org/event/4d6cccac-9fca-375e-b1d0-31eb06743489>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "16190101/16191231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/5356f52c-0e26-3775-ab38-aa86122f54f6> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/782f7ab1-c934-3ccc-a058-c99eb2de4874> .
+
+<http://data.doremus.org/publication/3fa4d7e3-f90c-3a50-acb3-79208695a395>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/5356f52c-0e26-3775-ab38-aa86122f54f6> .
+
+<http://data.doremus.org/work/9c76dbcc-e181-3e09-a69c-86b63987b6ac>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/3fa4d7e3-f90c-3a50-acb3-79208695a395> .
+
+<http://data.doremus.org/event/f7b16c71-8c1a-3d65-9b9a-20185d07b8b1>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re édition : 1619" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/9c76dbcc-e181-3e09-a69c-86b63987b6ac> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/3fa4d7e3-f90c-3a50-acb3-79208695a395> .
+
+<http://data.doremus.org/work/782f7ab1-c934-3ccc-a058-c99eb2de4874>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/f7b16c71-8c1a-3d65-9b9a-20185d07b8b1> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/5356f52c-0e26-3775-ab38-aa86122f54f6> .
+
+<http://data.doremus.org/event/95a7e44e-a179-3267-b67e-f7159dc63bb7>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/89445f96-7538-3cfc-b5a9-9e2e7220582e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/5356f52c-0e26-3775-ab38-aa86122f54f6> .
+
+<http://data.doremus.org/work/89445f96-7538-3cfc-b5a9-9e2e7220582e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/782f7ab1-c934-3ccc-a058-c99eb2de4874> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/5356f52c-0e26-3775-ab38-aa86122f54f6> .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

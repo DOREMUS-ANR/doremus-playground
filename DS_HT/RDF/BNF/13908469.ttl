@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/b5906e92-dd56-3cbf-83e2-6f111acb8bf1>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/175c3f8b-f618-3ae6-b1df-5110fd982ff6> .
+
+<http://data.doremus.org/event/b3f50046-9791-3cf6-9e9e-df3e3051ff95>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/b5906e92-dd56-3cbf-83e2-6f111acb8bf1> .
+
+<http://data.doremus.org/performance/7ea68eaa-b280-359a-86ea-0f3fd8718bde>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1980" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/b5906e92-dd56-3cbf-83e2-6f111acb8bf1> .
+
+<http://data.doremus.org/work/37a4c7ef-7acf-3d0e-9da9-6a45defcd4ee>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/7ea68eaa-b280-359a-86ea-0f3fd8718bde> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/175c3f8b-f618-3ae6-b1df-5110fd982ff6> .
+
+<http://data.doremus.org/event/6381072e-fe1d-38c0-949c-66f08d79242f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1980/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/175c3f8b-f618-3ae6-b1df-5110fd982ff6> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/37a4c7ef-7acf-3d0e-9da9-6a45defcd4ee> .
+
+<http://data.doremus.org/expression/175c3f8b-f618-3ae6-b1df-5110fd982ff6>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "Sequenza IX" ;
+        ecrm:P3_has_note     "Créé par Michel Arrignon" .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/64d3335b-4401-3267-b665-9ed885dcb038>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/6d5da4e0-e1cc-3057-a096-d5cdd4ae6212> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/175c3f8b-f618-3ae6-b1df-5110fd982ff6> .
+
+<http://data.doremus.org/work/6d5da4e0-e1cc-3057-a096-d5cdd4ae6212>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/37a4c7ef-7acf-3d0e-9da9-6a45defcd4ee> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/175c3f8b-f618-3ae6-b1df-5110fd982ff6> .

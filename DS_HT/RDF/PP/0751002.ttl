@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/8a05667b-3a3d-3d90-99a1-367d72a827cd>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1784" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1784"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/4c80b1c8-1df8-3c55-b397-fab7f1ee8db3>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/0e2f868b-957a-3967-be7b-3c01fac771b8> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/5d1d0529-3f07-3716-96cb-4336fe23c836> .
+
+<http://data.doremus.org/work/5d1d0529-3f07-3716-96cb-4336fe23c836>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/4d98edae-069f-3798-82f8-034e3e090504> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/0e2f868b-957a-3967-be7b-3c01fac771b8> .
+
+<http://data.doremus.org/artist/4c80b1c8-1df8-3c55-b397-fab7f1ee8db3>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/0e2f868b-957a-3967-be7b-3c01fac771b8>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/opc> , <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/0e2f868b-957a-3967-be7b-3c01fac771b8/casting/1> ;
+        ecrm:P102_has_title  "Richard Coeur de Lion" , "Richard Coeur-de-Lion" ;
+        ecrm:P3_has_note     "Créé à Paris, Comédie - Italienne, le 21 octobre 1784 avec Louise Dugazon, Rosalie, Colombe, Philippe, Clairval." , "Opéra comique en 3 actes. Livret de Sedaine d'après Sainte-Palaye." .
+
+<http://data.doremus.org/expression/59b6896a-a6bb-3919-a06a-78e5b11e2cd8>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/0e2f868b-957a-3967-be7b-3c01fac771b8> .
+
+<http://data.doremus.org/performance/4d98edae-069f-3798-82f8-034e3e090504>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Paris, Comédie - Italienne, le 21 octobre 1784 avec Louise Dugazon, Rosalie, Colombe, Philippe, Clairval." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/59b6896a-a6bb-3919-a06a-78e5b11e2cd8> .
+
+<http://data.doremus.org/event/af56a79a-4e05-3c3e-ac2f-fc6d952a7fc9>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/95a9f67b-7650-3619-bdd6-6ecad95739d9> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/0e2f868b-957a-3967-be7b-3c01fac771b8> .
+
+<http://data.doremus.org/work/95a9f67b-7650-3619-bdd6-6ecad95739d9>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/5d1d0529-3f07-3716-96cb-4336fe23c836> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/0e2f868b-957a-3967-be7b-3c01fac771b8> .
+
+<http://data.doremus.org/expression/0e2f868b-957a-3967-be7b-3c01fac771b8/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Laurette, Marguerite de Flandres, Antonio (sopranos) ; Richard (ténor) ; Blondel, Florestan (barytons) ; Williams (basse) ; choeur, orchestre symphonique." .

@@ -1,0 +1,71 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/bc0fab07-3021-3d48-a8f1-98f8feb2be11>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1623" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1623"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/db483334-ebfa-315e-99d1-366f97df3b05> .
+
+<http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/madrigal> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "arioso"@fr
+                             ] ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "22" ;
+                  ecrm:P3_has_note              "SV 22"
+                ] ;
+        ecrm:P102_has_title  "Piano della Madona" , "Lamento d'Arianna : Lasciatemi morire" , "Lamento d'Arianna" ;
+        ecrm:P3_has_note     "Création de l'opéra : 28 mai 1608 à la cour de Mantoue." , "Extrait de la sixième scène de l'opéra \"Arianna\" sur un livret d'Ottavio Rinuccini ( la partition, à part le \"lamento\", a été perdue), le \"Lamento\" a connu dès sa création un immense succès, largement imité par la suite et devenant un genre musical à part entière. Composée suivant les principes du \"nouveau style\", cette oeuvre est une des premières manifestations d'un sentiment subjectif et personnel appliqué à la musique. Pour suivre les inflexions poétiques du texte et exprimer les émotions du personnage, Monteverdi use de nombreux effets vocaux, rythmiques et harmoniques, répertoriés en \"affects\". Il existe deux autres versions : polyphonique en forme de madrigal à cinq voix en quatre parties ( Sesto libro de madrigali, 1614) ; religieuse avec un nouveau texte : \"Lamento della Madonna sopra il lamento dell' Arianna\" (nr.40 de la \"Selva Morale e Spirituale\", Venise, 1641)." .
+
+<http://data.doremus.org/work/db483334-ebfa-315e-99d1-366f97df3b05>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/033acb02-baae-3ff6-ba87-0a8be584afee> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451> .
+
+<http://data.doremus.org/expression/0348e290-532a-3ea4-b5d7-fcb6d1b3996a>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451> .
+
+<http://data.doremus.org/performance/033acb02-baae-3ff6-ba87-0a8be584afee>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création de l'opéra : 28 mai 1608 à la cour de Mantoue." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/0348e290-532a-3ea4-b5d7-fcb6d1b3996a> .
+
+<http://data.doremus.org/work/1a5c2100-a7b5-3257-8e43-41a490b2c9ac>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/db483334-ebfa-315e-99d1-366f97df3b05> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451> .
+
+<http://data.doremus.org/event/be72d533-69c2-3196-9a97-687785468716>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/1a5c2100-a7b5-3257-8e43-41a490b2c9ac> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451> .
+
+<http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "voix, basse continue" .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

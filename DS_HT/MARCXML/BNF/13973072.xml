@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13973072" format="InterXMarc_Complet" type="Authority">
+<leader>00869c0 au22000272  45  <Pos Code="0004">00869</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF13973072X<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13973072</Pos>
+<Pos Code="13">X</Pos>
+</controlfield>
+<controlfield tag="008">950220091019yy    uu        1991                             1   <Pos Code="0001">95</Pos>
+<Pos Code="0203">02</Pos>
+<Pos Code="0405">20</Pos>
+<Pos Code="0607">09</Pos>
+<Pos Code="0809">10</Pos>
+<Pos Code="1011">19</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820">uu </Pos>
+<Pos Code="2831">1991</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">sa01<Pos Code="0001" Sens="cordes frottées - violon">sa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13891735</subfield>
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Boulez</subfield>
+	<subfield code="m">Pierre</subfield>
+	<subfield code="d">1925-....</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Anthèmes</subfield>
+</datafield>
+<datafield tag="301" ind1="2" ind2=" ">
+	<subfield code="3">14036847</subfield>
+	<subfield code="a">Boulez</subfield>
+	<subfield code="m">Pierre</subfield>
+	<subfield code="d">1925-....</subfield>
+	<subfield code="t">[Anthèmes II]</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Issu d&apos;un fragment de la partie de violon de &quot;Explosante-fixe...&quot;</subfield>
+	<subfield code="a">Commande du Concours international de violon Yehudi Menuhin</subfield>
+	<subfield code="a">Date de composition : 1991</subfield>
+	<subfield code="a">1re exécution : Vienne, 18 novembre 1991, par Irvine Arditti</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Il existe une version pour violon et électronique sous le titre &quot;Anthèmes II&quot; (1997)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove music online</subfield>
+	<subfield code="u">http://www.oxfordmusiconline.com</subfield>
+	<subfield code="d">2009-10-19</subfield>
+	<subfield code="a">Ircam</subfield>
+	<subfield code="u">http://brahms.ircam.fr/</subfield>
+	<subfield code="d">2009-10-19</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">From Vienna [Enregistrement sonore] / Arditti string quartet. Montaigne MO782027</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">101044950</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100181930</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14795130</subfield>
+	<subfield code="d">20080306</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb139730725</Attr>
+<Attr Nom="NumSource">OPC 101044950</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1389173514036847</Attr>
+<Attr Nom="DateCreation">20/02/ 1995</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">20/02/ 1995</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource" Rep="1">OPD 100181930</Attr>
+<Attr Nom="NumSource" Rep="2">OPP 14795130</Attr>
+</record>

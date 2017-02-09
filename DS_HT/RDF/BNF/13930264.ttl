@@ -1,0 +1,77 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/676342f3-648d-30d6-ad39-92bfe94fdac0>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/47e4671c-b4c1-3e87-9a6a-1ba1cbff1c7c> .
+
+<http://data.doremus.org/event/d59ee41c-7bf0-3ac6-be78-46c6a6693507>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17910101/17911231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/47e4671c-b4c1-3e87-9a6a-1ba1cbff1c7c> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/676342f3-648d-30d6-ad39-92bfe94fdac0> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/65576f0a-b61e-3ba6-b9c1-12ab8b73d24e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/676342f3-648d-30d6-ad39-92bfe94fdac0> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/47e4671c-b4c1-3e87-9a6a-1ba1cbff1c7c> .
+
+<http://data.doremus.org/expression/47e4671c-b4c1-3e87-9a6a-1ba1cbff1c7c/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "harmonica de verres"@fr
+                                              ]
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/wfl>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/wob>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/sva>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/svc>
+                                    ] ;
+        ecrm:P3_has_note            "Harmonica de verres, flûte, hautbois, alto, violoncelle" .
+
+<http://data.doremus.org/event/8831ea99-857f-33dc-b449-8bb617e3e61d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/65576f0a-b61e-3ba6-b9c1-12ab8b73d24e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/47e4671c-b4c1-3e87-9a6a-1ba1cbff1c7c> .
+
+<http://data.doremus.org/expression/47e4671c-b4c1-3e87-9a6a-1ba1cbff1c7c>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/cm> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/qui> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/47e4671c-b4c1-3e87-9a6a-1ba1cbff1c7c/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "617" ;
+                  ecrm:P3_has_note              "KV 617"
+                ] ;
+        ecrm:P102_has_title  "Adagio und Rondo" ;
+        ecrm:P3_has_note     "Écrit pour Marianne Kirchgassner, virtuose aveugle de l'harmonica de verre" .

@@ -1,0 +1,78 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/0266b8ec-387e-34f3-ad6a-e877e627adea>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/84efa549-2f0b-3a82-8c02-8fe98c34feb3> .
+
+<http://data.doremus.org/work/c5ca5c0f-2312-3a5d-b460-44326b4bcfea>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/703e1fb5-b885-3fb8-9a82-e2859f5edc4e> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/95c5b3e5-c94f-3a64-86a1-ddeef5954edf> .
+
+<http://data.doremus.org/expression/95c5b3e5-c94f-3a64-86a1-ddeef5954edf/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace : \"Aux amis inconnus du printemps de 1921\""@fr .
+
+<http://data.doremus.org/publication/84efa549-2f0b-3a82-8c02-8fe98c34feb3>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/95c5b3e5-c94f-3a64-86a1-ddeef5954edf> .
+
+<http://data.doremus.org/artist/ba8020be-9434-3bf3-9c14-5aa282a0379e>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/bd6cdd24-1caf-308b-98f8-f67cc23c5cc5>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1918/1921"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/ba8020be-9434-3bf3-9c14-5aa282a0379e>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/95c5b3e5-c94f-3a64-86a1-ddeef5954edf> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c5ca5c0f-2312-3a5d-b460-44326b4bcfea> .
+
+<http://data.doremus.org/expression/1171bdc6-dd87-3ecc-b094-5c8d68ddbf3b>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/95c5b3e5-c94f-3a64-86a1-ddeef5954edf> .
+
+<http://data.doremus.org/event/1b90563d-e63e-39a6-92d4-cf5c06abfdfb>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/430367fd-4649-3844-8d92-50ab402b8bd7> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/95c5b3e5-c94f-3a64-86a1-ddeef5954edf> .
+
+<http://data.doremus.org/event/5ce5043e-8770-3019-afd3-61d9121d8fd2>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/1171bdc6-dd87-3ecc-b094-5c8d68ddbf3b> .
+
+<http://data.doremus.org/performance/f84e9de2-b144-312c-b739-439c2e24d66c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution (version de 1929) : Paris, Salle Gaveau, le 30 mai 1929, par l'Orchestre des Concerts Poulet, sous la direciton de Gaston Poulet" , "1re exécution (version de 1921) : Philadelphie (Pa.), Academy of music, 9 avril 1926, par le Philadelphia Orchestra, sous la direction de Leopold Stokowski" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/1171bdc6-dd87-3ecc-b094-5c8d68ddbf3b> .
+
+<http://data.doremus.org/work/430367fd-4649-3844-8d92-50ab402b8bd7>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/c5ca5c0f-2312-3a5d-b460-44326b4bcfea> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/95c5b3e5-c94f-3a64-86a1-ddeef5954edf> .
+
+<http://data.doremus.org/expression/95c5b3e5-c94f-3a64-86a1-ddeef5954edf>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/uuu> ;
+        ecrm:P102_has_title  "Amériques" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/95c5b3e5-c94f-3a64-86a1-ddeef5954edf/dedication> .
+
+<http://data.doremus.org/event/703e1fb5-b885-3fb8-9a82-e2859f5edc4e>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Dates de révision : 1927-1929 ; 1973 (édition de Chou Wen-chung)" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0266b8ec-387e-34f3-ad6a-e877e627adea> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/84efa549-2f0b-3a82-8c02-8fe98c34feb3> .

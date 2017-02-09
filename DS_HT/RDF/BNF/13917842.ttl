@@ -1,0 +1,43 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/97b6a0d6-2d27-31d4-923a-8469c087314f>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "Tehillim" ;
+        ecrm:P3_has_note     "Textes des Psaumes 19, 34, 18, 150" , "Créé à Stuttgart (les deux premières parties) et à New York (l'oeuvre entière) avec le New York Philharmonic dir. par Zubin Mehta" , "Tous les instruments sont amplifiés" , "19810600 (création à Stuttgart)" , "19820916 (création à New York)" .
+
+<http://data.doremus.org/work/4b7340fb-6f68-35b7-95e4-c526366379ff>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/63dba007-54a6-3bb8-9013-3c5261c4e735> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/97b6a0d6-2d27-31d4-923a-8469c087314f> .
+
+<http://data.doremus.org/work/63dba007-54a6-3bb8-9013-3c5261c4e735>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/97b6a0d6-2d27-31d4-923a-8469c087314f> .
+
+<http://data.doremus.org/artist/43bdeb8e-0587-36ac-8255-d1de225c80f5>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/6a4d4a96-46d8-3795-aa80-295b27a7d07e>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/4b7340fb-6f68-35b7-95e4-c526366379ff> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/97b6a0d6-2d27-31d4-923a-8469c087314f> .
+
+<http://data.doremus.org/event/b83c620c-e8d3-3a46-83a0-d729232b6320>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1981/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/43bdeb8e-0587-36ac-8255-d1de225c80f5>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/97b6a0d6-2d27-31d4-923a-8469c087314f> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/63dba007-54a6-3bb8-9013-3c5261c4e735> .

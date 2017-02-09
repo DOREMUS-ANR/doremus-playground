@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/1e7a40a1-d3bf-3605-b92c-96d233b73055>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/08c8df71-86c4-318f-a21c-89f092564c4d>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/08c8df71-86c4-318f-a21c-89f092564c4d/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Sz" ;
+                  mus:U41_has_catalogue_number  "56" ;
+                  ecrm:P3_has_note              "Sz 56"
+                ] ;
+        ecrm:P102_has_title  "Danses populaires roumaines" , "Román népi táncok" ;
+        ecrm:P3_has_note     "Cette oeuvre est dédicacée à Ioan Busitia. Il en existe une version orchestrée (SZ 68) et une version pour violon et piano dans un arrangement de Székely. Comprend : 1- Danse au bâton. 2- Danse où l'on se tient par la taille. 3- Sur place. 4- Danse de la corne de berger. 5- \"Polka\" roumaine. 6- Danse rapide. Durée d'exécution : 6 minutes environ" , "Première édition : Vienne, Universal Edition, 1918." .
+
+<http://data.doremus.org/expression/34696117-bc94-337b-b24f-f88016460b68>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/08c8df71-86c4-318f-a21c-89f092564c4d> .
+
+<http://data.doremus.org/event/f39c8270-0ebd-3579-9d01-7f2fe6ad132f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1915" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1915"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1e7a40a1-d3bf-3605-b92c-96d233b73055>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/08c8df71-86c4-318f-a21c-89f092564c4d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/b269c569-bdb5-3953-9ea3-5ca21493cb7b> .
+
+<http://data.doremus.org/work/ff7c7c6b-6e7c-3c2b-aec1-015f7968e696>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/b269c569-bdb5-3953-9ea3-5ca21493cb7b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/08c8df71-86c4-318f-a21c-89f092564c4d> .
+
+<http://data.doremus.org/event/0b9ca0e0-e288-32aa-807f-827eac631e08>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/ff7c7c6b-6e7c-3c2b-aec1-015f7968e696> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/08c8df71-86c4-318f-a21c-89f092564c4d> .
+
+<http://data.doremus.org/work/b269c569-bdb5-3953-9ea3-5ca21493cb7b>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/a7d7c36c-2016-38f0-a93d-4d98e6aab868> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/08c8df71-86c4-318f-a21c-89f092564c4d> .
+
+<http://data.doremus.org/expression/08c8df71-86c4-318f-a21c-89f092564c4d/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/performance/a7d7c36c-2016-38f0-a93d-4d98e6aab868>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première édition : Vienne, Universal Edition, 1918." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/34696117-bc94-337b-b24f-f88016460b68> .

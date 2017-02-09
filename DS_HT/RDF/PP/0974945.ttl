@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/007834fc-3ebc-3f2d-a6f4-8a167d814e3d/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Violoncelle et piano" .
+
+<http://data.doremus.org/event/f7d61805-bafe-3bd6-bb99-2d623749765a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1899" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1899"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/45555885-a129-3c9f-8477-4ff4d9f2eec9>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/007834fc-3ebc-3f2d-a6f4-8a167d814e3d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/631825ec-a00a-3c02-871d-4c276ea458fc> .
+
+<http://data.doremus.org/work/1a3e5840-7ec3-3866-8631-d1472d65c4c3>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/631825ec-a00a-3c02-871d-4c276ea458fc> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/007834fc-3ebc-3f2d-a6f4-8a167d814e3d> .
+
+<http://data.doremus.org/work/631825ec-a00a-3c02-871d-4c276ea458fc>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/54641eb5-f672-33f8-b317-bd096bf06086> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/007834fc-3ebc-3f2d-a6f4-8a167d814e3d> .
+
+<http://data.doremus.org/performance/54641eb5-f672-33f8-b317-bd096bf06086>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créées à Cleveland (USA), le 3 juin 1970, par Gregor Piatigorsky (violoncelle). Première publication : Carl Fischer, 1975" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/c98ba26f-e6ab-3485-9b3a-d0f005d401db> .
+
+<http://data.doremus.org/event/adf2760a-90a6-38b4-9165-78d9c99b908d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/1a3e5840-7ec3-3866-8631-d1472d65c4c3> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/007834fc-3ebc-3f2d-a6f4-8a167d814e3d> .
+
+<http://data.doremus.org/artist/45555885-a129-3c9f-8477-4ff4d9f2eec9>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/007834fc-3ebc-3f2d-a6f4-8a167d814e3d>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/007834fc-3ebc-3f2d-a6f4-8a167d814e3d/casting/1> ;
+        ecrm:P102_has_title  "Deux pièces" , "2 pièces" , "Zwei Stücke" ;
+        ecrm:P3_has_note     "Ces deux pièces ont été composées l'été 1899, à Preglhof en Carinthie. Elles font partie (avec quelques lieder) des toutes premières pièces connues du jeune Webern, qui n'est pas encore l'élève de Schönberg. Durée d'exécution : 5 minutes environ." , "Créées à Cleveland (USA), le 3 juin 1970, par Gregor Piatigorsky (violoncelle). Première publication : Carl Fischer, 1975" .
+
+<http://data.doremus.org/expression/c98ba26f-e6ab-3485-9b3a-d0f005d401db>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/007834fc-3ebc-3f2d-a6f4-8a167d814e3d> .

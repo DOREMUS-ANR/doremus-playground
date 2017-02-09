@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13947804" format="InterXMarc_Complet" type="Authority">
+<leader>00971c1 au22000272  45  <Pos Code="0004">00971</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139478040<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13947804</Pos>
+<Pos Code="13">0</Pos>
+</controlfield>
+<controlfield tag="008">920721130211yyfre op        1686                             010 <Pos Code="0001">92</Pos>
+<Pos Code="0203">07</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">13</Pos>
+<Pos Code="0809">02</Pos>
+<Pos Code="1011">11</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="français">fre</Pos>
+<Pos Code="1820">op </Pos>
+<Pos Code="2831">1686</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="b">va09<Pos Code="0001" Sens="voix - soprano">va</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">9</Pos>
+</subfield>
+	<subfield code="b">vg03<Pos Code="0001" Sens="voix - haute-contre">vg</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">3</Pos>
+</subfield>
+	<subfield code="b">vd02<Pos Code="0001" Sens="voix - ténor">vd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="b">ve01<Pos Code="0001" Sens="voix - baryton">ve</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="b">vf02<Pos Code="0001" Sens="voix - basse">vf</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">ck01<Pos Code="0001" Sens="choeurs - mixte (5 voix français)">ck</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">oh01<Pos Code="0001" Sens="orchestre - orchestre XVIIe-XVIIIe s.">oh</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13896861</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Lully</subfield>
+	<subfield code="m">Jean-Baptiste</subfield>
+	<subfield code="d">1632-1687</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Armide</subfield>
+	<subfield code="k">LWV 71</subfield>
+</datafield>
+<datafield tag="301" ind1=" " ind2=" ">
+	<subfield code="3">13962663</subfield>
+	<subfield code="a">Anglebert</subfield>
+	<subfield code="m">Jean-Henri d&apos;</subfield>
+	<subfield code="d">1628-1691</subfield>
+	<subfield code="t">[Transcriptions. Lully, Jean-Baptiste. Armide. Passacaille. Clavecin. Sol mineur]</subfield>
+</datafield>
+<datafield tag="322" ind1="6" ind2=" ">
+	<subfield code="3">12006897</subfield>
+	<subfield code="9">100</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Quinault</subfield>
+	<subfield code="m">Philippe</subfield>
+	<subfield code="d">1635-1688</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Tragédie lyrique en 5 actes et 1 prologue</subfield>
+	<subfield code="a">Livret de Philippe Quinault</subfield>
+	<subfield code="a">1re représentation : Paris, Académie royale de musique, 15 février 1686</subfield>
+</datafield>
+<datafield tag="608" ind1=" " ind2=" ">
+	<subfield code="b">La Gloire, La Sagesse, Phénice, Sidonie, Armide, Une nymphe des eaux, Une bergère héroïque, Lucinde, Mélisse (sopranos)</subfield>
+	<subfield code="b">Renaud, Le chevalier danois, Un amant fortuné (hautes-contres)</subfield>
+	<subfield code="b">Artémidore, La Haine (ténors)</subfield>
+	<subfield code="b">Aronte (baryton)</subfield>
+	<subfield code="b">Hidraot, Ubalde (basses)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove 6</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100787940</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100062680</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">16302282</subfield>
+	<subfield code="d">20130211</subfield>
+</datafield>
+<Alter Ori="13896861">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">. . b.....</subfield>
+	<subfield code="a">Lulli</subfield>
+	<subfield code="m">Jean-Baptiste</subfield>
+	<subfield code="d">1632-1687</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">. .2b.....</subfield>
+	<subfield code="a">Chiacheron</subfield>
+	<subfield code="d">1632-1687</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb139478047</Attr>
+<Attr Nom="NumSource">OPC 100787940</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">138968611396266312006897</Attr>
+<Attr Nom="DateCreation">21/07/ 1992</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">11/02/ 2013</Attr>
+<Attr Nom="ResponsableDerniereValidation">GOY FRANCOIS</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/07/ 1992</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">37</Attr>
+<Attr Nom="NumSource" Rep="1">OPD 100062680</Attr>
+<Attr Nom="NumSource" Rep="2">OPP 16302282</Attr>
+</record>

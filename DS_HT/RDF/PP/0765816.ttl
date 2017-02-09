@@ -1,0 +1,78 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/a2d27019-eaa5-3678-b286-0efe47b6a1d4/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Pour voix ( 2 sopranos, 1 ténor, 1 basse), choeur, orgue et orchestre" .
+
+<http://data.doremus.org/event/f68bd6a1-e8af-38cd-a776-c05b26d4fd3c>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/199b90dc-bb44-3306-a9c6-5fdaf3e1da3b> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/a2d27019-eaa5-3678-b286-0efe47b6a1d4> .
+
+<http://data.doremus.org/expression/31d8ef98-40a3-32e6-b184-91cd8e3f4214>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/a2d27019-eaa5-3678-b286-0efe47b6a1d4> .
+
+<http://data.doremus.org/performance/85133678-c24f-3aca-9597-c44a77b01508>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée le 26 octobre 1783" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/31d8ef98-40a3-32e6-b184-91cd8e3f4214> .
+
+<http://data.doremus.org/event/529d8dee-eaae-397f-853c-f9763e884544>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1782-1783" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1782/1783"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/a2d27019-eaa5-3678-b286-0efe47b6a1d4> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e3c29672-08bd-32a2-98c3-4a1ff14070c7> .
+
+<http://data.doremus.org/work/199b90dc-bb44-3306-a9c6-5fdaf3e1da3b>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/e3c29672-08bd-32a2-98c3-4a1ff14070c7> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/a2d27019-eaa5-3678-b286-0efe47b6a1d4> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/e3c29672-08bd-32a2-98c3-4a1ff14070c7>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/85133678-c24f-3aca-9597-c44a77b01508> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/a2d27019-eaa5-3678-b286-0efe47b6a1d4> .
+
+<http://data.doremus.org/expression/a2d27019-eaa5-3678-b286-0efe47b6a1d4>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/cm> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/messe> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique sacrée"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/a2d27019-eaa5-3678-b286-0efe47b6a1d4/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "427" ;
+                  ecrm:P3_has_note              "KV 427"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "K" ;
+                  mus:U41_has_catalogue_number  "427" ;
+                  ecrm:P3_has_note              "K 427"
+                ] ;
+        ecrm:P102_has_title  "Messe en do mineur" , "Grande messe en ut mineur \"inachevée\"" ;
+        ecrm:P3_has_note     "Composée à Vienne. Musique réutilisée pour Davidde penitente, KV 469. Le Credo et l'Agnus Dei sont inachevés. Existe aussi sous le numéro de catalogue KV 417a. Comprend : 1- Kyrie, 2- Gloria, 3- Credo, 4- Sanctus, 5- Benedictus" , "Créée le 26 octobre 1783" .

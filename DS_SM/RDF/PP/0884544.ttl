@@ -1,0 +1,83 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/4806c9a8-a85c-3aeb-9806-22998ad86f3e>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/26bc2531-be03-3828-b198-da7901e4f07a> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/7579bb66-e297-3148-b016-dc8e6a62d2dc> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2> .
+
+<http://data.doremus.org/artist/7c090d69-93dc-397d-985f-a75268cbab51>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/2f03a55d-8cc9-3460-9dea-23189acaf408>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2> .
+
+<http://data.doremus.org/work/c891fe6c-d6f3-3e66-8ce5-f7953ad51677>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/a44f9013-c7d3-3b9d-bea3-b23cee0f5b1e> .
+
+<http://data.doremus.org/event/26bc2531-be03-3828-b198-da7901e4f07a>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Première édition : 1951" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c891fe6c-d6f3-3e66-8ce5-f7953ad51677> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/a44f9013-c7d3-3b9d-bea3-b23cee0f5b1e> .
+
+<http://data.doremus.org/performance/7579bb66-e297-3148-b016-dc8e6a62d2dc>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée à Paris, RTF, 1946, par Yvette Grimaud." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/2f03a55d-8cc9-3460-9dea-23189acaf408> .
+
+<http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/event/04b597da-c5fc-3c38-90ce-153508b3f931>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f61e7d07-7083-323f-a43d-48e9e45c9569> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2> .
+
+<http://data.doremus.org/work/f61e7d07-7083-323f-a43d-48e9e45c9569>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4806c9a8-a85c-3aeb-9806-22998ad86f3e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2> .
+
+<http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "1" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2/casting/1> ;
+        ecrm:P102_has_title       "Sonate pour piano no 1" , "Première sonate pour piano" , "Sonata" ;
+        ecrm:P3_has_note          "Sonate en deux mouvements. Durée d'exécution : 10 minutes environ" , "Créée à Paris, RTF, 1946, par Yvette Grimaud. Première édition : 1951" .
+
+<http://data.doremus.org/event/0210234e-6496-3646-85e6-7ddbb4c5552c>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1946" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1946"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7c090d69-93dc-397d-985f-a75268cbab51>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4806c9a8-a85c-3aeb-9806-22998ad86f3e> .
+
+<http://data.doremus.org/publication/a44f9013-c7d3-3b9d-bea3-b23cee0f5b1e>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2> .

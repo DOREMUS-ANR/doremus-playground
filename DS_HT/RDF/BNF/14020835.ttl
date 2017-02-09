@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/5a11173d-1ea0-37ec-9b2f-ed5b4a6cadfd>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/ffa1adfa-9e04-3399-a37f-9e32ca366948> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d4176405-36f8-3a01-a676-1b8fa75796c6> .
+
+<http://data.doremus.org/expression/2480a6dc-656c-3385-8367-e7b5d91e1ad9>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/d4176405-36f8-3a01-a676-1b8fa75796c6> .
+
+<http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/59c5834a-013d-374d-a945-12761e5ca6c3>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19200101/19211231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d4176405-36f8-3a01-a676-1b8fa75796c6> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/5a11173d-1ea0-37ec-9b2f-ed5b4a6cadfd> .
+
+<http://data.doremus.org/event/9ada158e-8801-356e-8355-2e7d3f407b51>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/2480a6dc-656c-3385-8367-e7b5d91e1ad9> .
+
+<http://data.doremus.org/event/464803c7-0044-39d9-992e-7fb64dad79f0>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/d5cb8990-5346-34e5-ab47-4be37cd84f3f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d4176405-36f8-3a01-a676-1b8fa75796c6> .
+
+<http://data.doremus.org/work/d5cb8990-5346-34e5-ab47-4be37cd84f3f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/5a11173d-1ea0-37ec-9b2f-ed5b4a6cadfd> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d4176405-36f8-3a01-a676-1b8fa75796c6> .
+
+<http://data.doremus.org/expression/d4176405-36f8-3a01-a676-1b8fa75796c6>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/li> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "14" ;
+                                      ecrm:P3_has_note         "Op. 14"
+                                    ] ;
+        ecrm:P102_has_title         "Lieder des Abschieds" , "Abschiedslieder" ;
+        ecrm:P3_has_note            "Comprend : \"Sterbelied\"  (poème de Christina G. Rossetti trad. par Alfred Kerr) ; \"Dies eine kann mein Sehnen nimmer fassen\" (poème de Edith Ronsperger) ; \"Mond, so gehst du wieder auf\" (poème de Ernst Lothar) ; \"Gefasster Abschied\" (poème de Ernst Lothar)" , "Dédié à Franz Schalk" , "Il existe une version orchestrée" .
+
+<http://data.doremus.org/performance/ffa1adfa-9e04-3399-a37f-9e32ca366948>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1920-11-05" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/2480a6dc-656c-3385-8367-e7b5d91e1ad9> .

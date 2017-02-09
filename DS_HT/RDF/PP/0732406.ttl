@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/a76b7c6b-01fa-3645-8ade-514fb0e11168>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/a76b7c6b-01fa-3645-8ade-514fb0e11168/casting/1> ;
+        ecrm:P102_has_title  "Le retour d'Ulysse dans sa patrie" , "Il ritorno d'Ulisse in patria" ;
+        ecrm:P3_has_note     "Genre musical : opéra, tragédie lyrique, drame musical. Opéra en un prologue et 3 actes. Livret de Giacomo Badoaro inspiré du dernier chant de l'Odyssée d'Homère. Prologue allégorique (la Fragilité humaine, leTemps, le Destin, l'Amour)." , "Créé à Venise, Teatro SS Giovanni e Paolo. Copie trouvée à Vienne en 1881 et publiée en 1923" .
+
+<http://data.doremus.org/work/c0b190fb-570f-3870-9710-49606d31cf80>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/1cee4dd0-d187-3fed-a3a7-fe7bf814975a> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/a76b7c6b-01fa-3645-8ade-514fb0e11168> .
+
+<http://data.doremus.org/work/1cee4dd0-d187-3fed-a3a7-fe7bf814975a>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f9204b58-4921-34a2-9d4d-dabb600c64f7> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/a76b7c6b-01fa-3645-8ade-514fb0e11168> .
+
+<http://data.doremus.org/event/5f8fe3ac-8375-3410-8b81-de2b4c3c789d>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "17 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1640" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1640"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/a76b7c6b-01fa-3645-8ade-514fb0e11168> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/1cee4dd0-d187-3fed-a3a7-fe7bf814975a> .
+
+<http://data.doremus.org/event/ca768d0d-e996-36c9-b15e-6842ccf8948e>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c0b190fb-570f-3870-9710-49606d31cf80> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/a76b7c6b-01fa-3645-8ade-514fb0e11168> .
+
+<http://data.doremus.org/expression/a76b7c6b-01fa-3645-8ade-514fb0e11168/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Pénélope, Melanto, Minerva, Giunone, La Fragilité humaine, la Fortune, l'Amour (sopranos) ; Ericlea (mezzo) ; Anfinomo (alto) ; Ulisse, Eurimaco, Eumete, Iro, Telemaco, Pisandro, Giove (ténors) ; Antinoo, Nettuno, le Temps (basses)" .
+
+<http://data.doremus.org/expression/7e1dacb7-913a-38ca-b0b7-39c97232db7a>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/a76b7c6b-01fa-3645-8ade-514fb0e11168> .
+
+<http://data.doremus.org/performance/f9204b58-4921-34a2-9d4d-dabb600c64f7>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Venise, Teatro SS Giovanni e Paolo. Copie trouvée à Vienne en 1881 et publiée en 1923" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/7e1dacb7-913a-38ca-b0b7-39c97232db7a> .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

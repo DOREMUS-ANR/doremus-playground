@@ -1,0 +1,74 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/b4ae1ee3-9674-36eb-9524-ffa74dcd003d>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé le 7 avril 1724 à Leipzig" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/bbf66274-b5b2-3684-a7e6-9430a3e26a1d> .
+
+<http://data.doremus.org/event/28a698df-f0aa-3b0e-97d0-49bb3603d761>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1723" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1723"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f3cafc39-0024-3a32-85e9-a7a8b1d9c333> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/726dda0e-1493-3e3a-9f07-b1ae5a697bd9> .
+
+<http://data.doremus.org/expression/f3cafc39-0024-3a32-85e9-a7a8b1d9c333>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/passion> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique sacrée"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/f3cafc39-0024-3a32-85e9-a7a8b1d9c333/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "BWV" ;
+                  mus:U41_has_catalogue_number  "245" ;
+                  ecrm:P3_has_note              "BWV 245"
+                ] ;
+        ecrm:P102_has_title  "Johannespassion" , "Passion selon Saint-Jean" , "Johannes Passion" , "Johannes-Passion" , "St John passion" , "La Passion selon saint Jean" ;
+        ecrm:P3_has_note     "Composées par Bach pour célébrer la Semaine Sainte à Leipzig, les Passions sont écrites sur le texte des Evangiles. Il y eut quatre versions de la \"Passion selon Saint-Jean\", et une seule partition complète - mais pas entièrement autographe - nous est parvenue. Le texte, en allemand, suit le récit de Jean, et quelques passages poétiques proviennent d'une passion de Barthold Heinrich Brockes. L'oeuvre, en deux parties, comprend soixante-huit numéros." , "Créé le 7 avril 1724 à Leipzig" .
+
+<http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/f3cafc39-0024-3a32-85e9-a7a8b1d9c333/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Soprano, alto, ténor, basse, choeur mixte SATB, orchestre, basse continue" .
+
+<http://data.doremus.org/expression/bbf66274-b5b2-3684-a7e6-9430a3e26a1d>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f3cafc39-0024-3a32-85e9-a7a8b1d9c333> .
+
+<http://data.doremus.org/work/0c0a3d4b-cdcd-384b-a303-c81f0b991be5>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/726dda0e-1493-3e3a-9f07-b1ae5a697bd9> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f3cafc39-0024-3a32-85e9-a7a8b1d9c333> .
+
+<http://data.doremus.org/work/726dda0e-1493-3e3a-9f07-b1ae5a697bd9>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/b4ae1ee3-9674-36eb-9524-ffa74dcd003d> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f3cafc39-0024-3a32-85e9-a7a8b1d9c333> .
+
+<http://data.doremus.org/event/e674fabc-e975-3096-bc87-b3a57a064910>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/0c0a3d4b-cdcd-384b-a303-c81f0b991be5> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f3cafc39-0024-3a32-85e9-a7a8b1d9c333> .

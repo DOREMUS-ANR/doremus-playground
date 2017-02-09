@@ -1,0 +1,47 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/5198886f-a8e3-3a9c-b4ef-0fbce43e192d>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/li> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "27" ;
+                                      ecrm:P3_has_note         "Op. 27"
+                                    ] ;
+        ecrm:P102_has_title         "Unvergänglichkeit" ;
+        ecrm:P3_has_note            "Cycle de mélodies" , "Sur des poèmes de Eleonore van der Straaten" , "Comprend : Unvergänglichkeit ; Das eilende Bächlein ; Das schlafende Kind ; Stärker als der Tod ; Unvergänglichkeit" .
+
+<http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/bc81e874-6582-3d43-b096-2f31f652aaec>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/5198886f-a8e3-3a9c-b4ef-0fbce43e192d> .
+
+<http://data.doremus.org/event/3d78390e-8587-3880-b333-5f769e828131>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19330101/19331231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/5198886f-a8e3-3a9c-b4ef-0fbce43e192d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/bc81e874-6582-3d43-b096-2f31f652aaec> .
+
+<http://data.doremus.org/event/f13a98cc-785e-3a1d-8aad-3d993b3ad714>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/abbef8f4-19c9-3edd-a006-86b4644d72b2> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/5198886f-a8e3-3a9c-b4ef-0fbce43e192d> .
+
+<http://data.doremus.org/work/abbef8f4-19c9-3edd-a006-86b4644d72b2>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/bc81e874-6582-3d43-b096-2f31f652aaec> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/5198886f-a8e3-3a9c-b4ef-0fbce43e192d> .

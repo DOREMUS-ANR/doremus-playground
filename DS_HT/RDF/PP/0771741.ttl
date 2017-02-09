@@ -1,0 +1,35 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/638a5ad0-da4a-3e30-b621-51d91f0bc39c>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e3e3127e-4049-3c26-8057-7ff1cd947942> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/077b71ff-ccfa-3f0a-8ca8-bcf2144cbbd9> .
+
+<http://data.doremus.org/expression/077b71ff-ccfa-3f0a-8ca8-bcf2144cbbd9>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "BWV" ;
+                  mus:U41_has_catalogue_number  "662" ;
+                  ecrm:P3_has_note              "BWV 662"
+                ] ;
+        ecrm:P102_has_title  "Choral de Leipzig" , "Chorals de Leipzig" , "Choralbearbeitungen verschiedener Art" , "Allein Gott in der Höh sei Ehr" .
+
+<http://data.doremus.org/work/945e43fd-7bd0-3b4d-9753-787b1519cca2>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/077b71ff-ccfa-3f0a-8ca8-bcf2144cbbd9> .
+
+<http://data.doremus.org/event/29b4fd45-0ae1-39c8-97ef-e0c1c865dbbb>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/077b71ff-ccfa-3f0a-8ca8-bcf2144cbbd9> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/945e43fd-7bd0-3b4d-9753-787b1519cca2> .
+
+<http://data.doremus.org/work/e3e3127e-4049-3c26-8057-7ff1cd947942>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/945e43fd-7bd0-3b4d-9753-787b1519cca2> .

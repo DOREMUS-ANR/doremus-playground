@@ -1,0 +1,42 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/65a5a05e-b52d-304f-808d-2036e6a6f654>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/53743da3-330b-3334-bb30-c6e36b683e90> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/30ed6938-e4c1-3fd6-a124-be0dbb7e9e9b> .
+
+<http://data.doremus.org/artist/a1b3bf5f-5728-39ea-be6a-04919919031c>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/ab07e439-4f49-3b44-9edc-8aa1dbf19c8d>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/30ed6938-e4c1-3fd6-a124-be0dbb7e9e9b> .
+
+<http://data.doremus.org/expression/30ed6938-e4c1-3fd6-a124-be0dbb7e9e9b>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/tri> ;
+        ecrm:P102_has_title  "Schattenblätter" .
+
+<http://data.doremus.org/event/b1701a0b-3b2a-3c2e-8d1f-73454bf8e7a2>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1975/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a1b3bf5f-5728-39ea-be6a-04919919031c>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/30ed6938-e4c1-3fd6-a124-be0dbb7e9e9b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/ab07e439-4f49-3b44-9edc-8aa1dbf19c8d> .
+
+<http://data.doremus.org/work/53743da3-330b-3334-bb30-c6e36b683e90>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/ab07e439-4f49-3b44-9edc-8aa1dbf19c8d> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/30ed6938-e4c1-3fd6-a124-be0dbb7e9e9b> .

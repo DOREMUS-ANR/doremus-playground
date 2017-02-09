@@ -1,0 +1,64 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/708c2fcf-46b3-30dc-ab5f-a8326532c6ed>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ccf58331-066e-358b-abe7-932a440974e9> .
+
+<http://data.doremus.org/performance/34868ef2-ac75-3281-8e3c-4bf52df07862>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création à Bonne, en 1978 par L'Itinéraire sous la direction de Peter Eötvös. Édition : Jobert." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/708c2fcf-46b3-30dc-ab5f-a8326532c6ed> .
+
+<http://data.doremus.org/event/e280a626-c60f-3dbb-9f98-79aa8c0c5f2c>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/5ba13518-ae49-3c3a-9617-0d6d053da204> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ccf58331-066e-358b-abe7-932a440974e9> .
+
+<http://data.doremus.org/event/ae9a9597-7f02-39fb-8652-c525e4749216>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1978" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1978"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/8e8e52a8-926d-3cd7-a8fd-19be259bb44a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ccf58331-066e-358b-abe7-932a440974e9> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/08fb2faa-9c26-30fa-a922-5847872cd952> .
+
+<http://data.doremus.org/expression/ccf58331-066e-358b-abe7-932a440974e9/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Cor anglais, clarinette basse, trombone, alto, violoncelle." .
+
+<http://data.doremus.org/work/5ba13518-ae49-3c3a-9617-0d6d053da204>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/08fb2faa-9c26-30fa-a922-5847872cd952> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ccf58331-066e-358b-abe7-932a440974e9> .
+
+<http://data.doremus.org/expression/ccf58331-066e-358b-abe7-932a440974e9>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/ccf58331-066e-358b-abe7-932a440974e9/casting/1> ;
+        ecrm:P102_has_title  "Nachtmusik 1" , "Nachtmusik I" ;
+        ecrm:P3_has_note     "Cette oeuvre est une commande du ministère de la Culture français. Durée d'exécution : 32 minutes environ" , "Création à Bonne, en 1978 par L'Itinéraire sous la direction de Peter Eötvös. Édition : Jobert." .
+
+<http://data.doremus.org/artist/8e8e52a8-926d-3cd7-a8fd-19be259bb44a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/08fb2faa-9c26-30fa-a922-5847872cd952>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/34868ef2-ac75-3281-8e3c-4bf52df07862> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ccf58331-066e-358b-abe7-932a440974e9> .

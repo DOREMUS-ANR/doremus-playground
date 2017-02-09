@@ -1,0 +1,53 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/ac45a4c2-ac7b-33dc-bca9-9ae490525788>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/2d5a12dc-e061-3b68-8b17-ba112f23c46c> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70> .
+
+<http://data.doremus.org/artist/c543bf3a-8b26-38c1-bd6b-b2b68dccbb17>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/2d5a12dc-e061-3b68-8b17-ba112f23c46c>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70> .
+
+<http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "1" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70/casting/1> ;
+        ecrm:P102_has_title       "Suite pour petit orchestre no 1" , "Suite pour petit orchestre" , "Suite for small orchestra" ;
+        ecrm:P3_has_note          "\"La Suite no 1 résulte de l'orchestration de quatre des cinq \"Pièces faciles pour piano à quatre mains\" composées en 1916-1917 et dédiées \"à Madame Eugenia Errazuriz - hommage très respectueux\" (Anne Grange). Comprend : 1- Andante. 2- Napolitana. 3- Espanola. 4- Balalaïka" .
+
+<http://data.doremus.org/event/d4d7d64f-f2ef-308f-b9d0-c4f0f6f9be0e>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1917-1925" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1917/1925"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c543bf3a-8b26-38c1-bd6b-b2b68dccbb17>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/2d5a12dc-e061-3b68-8b17-ba112f23c46c> .
+
+<http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/genre/20> .
+
+<http://data.doremus.org/event/ae63e15e-ccb4-363b-a07b-ceae11cce017>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/ac45a4c2-ac7b-33dc-bca9-9ae490525788> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70> .

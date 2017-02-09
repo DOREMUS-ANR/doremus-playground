@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/29bc7b29-d759-3ed3-97bd-73a22b8225c7>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/29bc7b29-d759-3ed3-97bd-73a22b8225c7/casting/1> ;
+        ecrm:P102_has_title  "Intégrales" ;
+        ecrm:P3_has_note     "Composée dans l'atelier de Fernand Leger, où Varèse habitait à ce moment, Intégrales contient des recherches du compositeur sur des correspondances entre peinture et musique. Il écrira plus tard : \"J'ai conçu \"Intégrales\" pour la projection spatiale du son, susceptible d'être obtenue avec des médias acoustiques qui n'existaient pas alors\". Trois mouvements : Andantino, Allegro, Lento. Durée : 11 minutes environ." , "Oeuvre créée le 1er mars 1925 à New York, au Carneggie Hall, sous la direction de Leopold Stokowski." .
+
+<http://data.doremus.org/work/3636cf35-a94d-3b52-82ab-ed9e6a911459>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/e6edfbbe-d529-3ec0-8238-a129a3c16dcb> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/29bc7b29-d759-3ed3-97bd-73a22b8225c7> .
+
+<http://data.doremus.org/artist/ba8020be-9434-3bf3-9c14-5aa282a0379e>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/29bc7b29-d759-3ed3-97bd-73a22b8225c7/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 flûtes piccolo, hautbois, clarinette en mi bémol, clarinette en si bémol, cor en fa, trompette en ré, trompette en ut, trombone ténor-basse, trombone contrebasse et 17 instruments à percussion joués par 4 instrumentistes" .
+
+<http://data.doremus.org/expression/0b015a17-fff6-31e3-9c3f-b302c7e53dcf>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/29bc7b29-d759-3ed3-97bd-73a22b8225c7> .
+
+<http://data.doremus.org/event/220a96ea-7023-33d2-8e9b-8fab17e91a86>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b9aa922a-5401-34b3-bb08-b5f4cd8a32e9> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/29bc7b29-d759-3ed3-97bd-73a22b8225c7> .
+
+<http://data.doremus.org/work/b9aa922a-5401-34b3-bb08-b5f4cd8a32e9>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/3636cf35-a94d-3b52-82ab-ed9e6a911459> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/29bc7b29-d759-3ed3-97bd-73a22b8225c7> .
+
+<http://data.doremus.org/performance/e6edfbbe-d529-3ec0-8238-a129a3c16dcb>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Oeuvre créée le 1er mars 1925 à New York, au Carneggie Hall, sous la direction de Leopold Stokowski." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/0b015a17-fff6-31e3-9c3f-b302c7e53dcf> .
+
+<http://data.doremus.org/event/e2f092c4-0063-31b7-a49a-f855483fdf5a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1924-1925" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1924/1925"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/ba8020be-9434-3bf3-9c14-5aa282a0379e>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/29bc7b29-d759-3ed3-97bd-73a22b8225c7> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3636cf35-a94d-3b52-82ab-ed9e6a911459> .

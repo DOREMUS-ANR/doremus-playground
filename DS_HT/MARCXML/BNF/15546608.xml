@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="15546608" format="InterXMarc_Complet" type="Authority">
+<leader>00344c1 au22000272  45  <Pos Code="0004">00344</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF155466087<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">15546608</Pos>
+<Pos Code="13">7</Pos>
+</controlfield>
+<controlfield tag="008">070709070709yy    sy        178103                           1   <Pos Code="0001">07</Pos>
+<Pos Code="0203">07</Pos>
+<Pos Code="0405">09</Pos>
+<Pos Code="0607">07</Pos>
+<Pos Code="0809">07</Pos>
+<Pos Code="1011">09</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820">sy </Pos>
+<Pos Code="2831">1781</Pos>
+<Pos Code="3233">03</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">sa02<Pos Code="0001" Sens="cordes frottées - violon">sa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">sb02<Pos Code="0001" Sens="cordes frottées - alto">sb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">sc01<Pos Code="0001" Sens="cordes frottées - violoncelle">sc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">sd01<Pos Code="0001" Sens="cordes frottées - contrebasse">sd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">wa01<Pos Code="0001" Sens="instruments à vent - flûte">wa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">wb02<Pos Code="0001" Sens="instruments à vent - hautbois">wb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="a">wd01<Pos Code="0001" Sens="instruments à vent - basson">wd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">ba02<Pos Code="0001" Sens="cuivres - cor">ba</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13899180</subfield>
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Rosetti</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1750?-1792</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a">Symphonies</subfield>
+	<subfield code="k">M A39</subfield>
+	<subfield code="t">Sol majeur</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Date de composition : mars 1781</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Murray, Rosetti, 1996</subfield>
+</datafield>
+<Alter Ori="13899180">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">    b     </subfield>
+	<subfield code="a">Rösler</subfield>
+	<subfield code="m">Anton</subfield>
+	<subfield code="d">1750?-1792</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">    b     </subfield>
+	<subfield code="a">Roesler</subfield>
+	<subfield code="m">Anton</subfield>
+	<subfield code="d">1750?-1792</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">    b     </subfield>
+	<subfield code="a">Rösler</subfield>
+	<subfield code="m">Frantisek Antonin</subfield>
+	<subfield code="d">1750?-1792</subfield>
+</datafield>
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">    b     </subfield>
+	<subfield code="a">Rosetti</subfield>
+	<subfield code="m">Francesco Antonio</subfield>
+	<subfield code="d">1750?-1792</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb15546608d</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13899180</Attr>
+<Attr Nom="DateCreation">09/07/ 2007</Attr>
+<Attr Nom="ResponsableCreation">FANTOLA FABIENNE</Attr>
+<Attr Nom="StructCreation">37</Attr>
+<Attr Nom="DateDerniereValidation">09/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">37</Attr>
+<Attr Nom="DatePremiereValidation">09/07/ 2007</Attr>
+<Attr Nom="ResponsablePremiereValidation">FANTOLA FABIENNE</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+</record>

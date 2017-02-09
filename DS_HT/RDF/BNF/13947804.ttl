@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/4228cb3d-0d13-3072-b2ef-67311fc25ae5>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/5ae22b6b-30a2-3811-8e2d-a794da385faf> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d4fb6436-1a74-3a56-bdb2-1c9cde550f6e> .
+
+<http://data.doremus.org/work/2ecb4d6a-4323-3cf4-8270-e354dad7978e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4228cb3d-0d13-3072-b2ef-67311fc25ae5> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d4fb6436-1a74-3a56-bdb2-1c9cde550f6e> .
+
+<http://data.doremus.org/expression/0c19f37d-6265-30da-a4f4-63fae6927d6a>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/d4fb6436-1a74-3a56-bdb2-1c9cde550f6e> .
+
+<http://data.doremus.org/event/2592fcc1-cfa8-392a-b432-cbc4f3ee49ad>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/0c19f37d-6265-30da-a4f4-63fae6927d6a> .
+
+<http://data.doremus.org/event/116150a5-7d8c-37b1-81f6-bb53a4d7c101>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "16860101/16861231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9f7776ad-5283-340a-84a4-833c7838b2cb>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d4fb6436-1a74-3a56-bdb2-1c9cde550f6e> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4228cb3d-0d13-3072-b2ef-67311fc25ae5> .
+
+<http://data.doremus.org/event/d6f9d7d0-b54e-38f3-9bfc-5db31cb7253d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2ecb4d6a-4323-3cf4-8270-e354dad7978e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d4fb6436-1a74-3a56-bdb2-1c9cde550f6e> .
+
+<http://data.doremus.org/artist/9f7776ad-5283-340a-84a4-833c7838b2cb>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/d4fb6436-1a74-3a56-bdb2-1c9cde550f6e>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "LWV" ;
+                  mus:U41_has_catalogue_number  "71" ;
+                  ecrm:P3_has_note              "LWV 71"
+                ] ;
+        ecrm:P102_has_title  "Armide" ;
+        ecrm:P3_has_note     "Tragédie lyrique en 5 actes et 1 prologue" , "Livret de Philippe Quinault" .
+
+<http://data.doremus.org/performance/5ae22b6b-30a2-3811-8e2d-a794da385faf>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation : Paris, Académie royale de musique, 15 février 1686" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/0c19f37d-6265-30da-a4f4-63fae6927d6a> .

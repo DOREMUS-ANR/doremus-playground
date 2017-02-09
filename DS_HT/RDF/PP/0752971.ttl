@@ -1,0 +1,78 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/6b141fcf-6b4c-3707-9757-0c636c59b2d0>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "17 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1693" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1693"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/4c313f3d-364c-3422-a1af-ca8a2bc4008f>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ef269cdc-f81d-3293-9b3d-3aaf5aaaade7> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/7b66a96a-2049-3820-90c8-7a878bab30e9> .
+
+<http://data.doremus.org/event/972fc5fc-66a2-3342-a525-775d95a988d8>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/bd8caff3-4dfb-3958-8aae-65f82ab14d49> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ef269cdc-f81d-3293-9b3d-3aaf5aaaade7> .
+
+<http://data.doremus.org/expression/7af990b5-6475-334f-a84f-1e93af62e454>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ef269cdc-f81d-3293-9b3d-3aaf5aaaade7> .
+
+<http://data.doremus.org/performance/3bd9695a-f073-3eae-a2a6-b3c9edfa97d2>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée à l'Opéra de Paris (avant Académie royale de musqiue), le 4 décembre 1693" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/7af990b5-6475-334f-a84f-1e93af62e454> .
+
+<http://data.doremus.org/work/7b66a96a-2049-3820-90c8-7a878bab30e9>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/3bd9695a-f073-3eae-a2a6-b3c9edfa97d2> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ef269cdc-f81d-3293-9b3d-3aaf5aaaade7> .
+
+<http://data.doremus.org/artist/4c313f3d-364c-3422-a1af-ca8a2bc4008f>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/ef269cdc-f81d-3293-9b3d-3aaf5aaaade7>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "N° 491" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/trl> , <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique baroque"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/ef269cdc-f81d-3293-9b3d-3aaf5aaaade7/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "H" ;
+                  mus:U41_has_catalogue_number  "491" ;
+                  ecrm:P3_has_note              "H 491"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "HC" ;
+                  mus:U41_has_catalogue_number  "491" ;
+                  ecrm:P3_has_note              "HC 491"
+                ] ;
+        ecrm:P102_has_title       "Médea" , "Médée" ;
+        ecrm:P3_has_note          "Créée à l'Opéra de Paris (avant Académie royale de musqiue), le 4 décembre 1693" , "Tragédie mise en musique , en un prologue et 5 actes. Livret de Thomas Corneille, d'après Pierre Corneille et la légende." .
+
+<http://data.doremus.org/expression/ef269cdc-f81d-3293-9b3d-3aaf5aaaade7/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Médée, Créuse, Nérine, Victoire, Gloire, Amour, une italienne, Cléone, fantôme 1, fantôme 2 (sopranos) ; un berger, un captif (haute-contre) ; Jason, Arcas, jalousie (ténors) ; Créon, Oronte, chef du peuple, Vengeance (basses), choeur, orchestre" .
+
+<http://data.doremus.org/work/bd8caff3-4dfb-3958-8aae-65f82ab14d49>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/7b66a96a-2049-3820-90c8-7a878bab30e9> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ef269cdc-f81d-3293-9b3d-3aaf5aaaade7> .

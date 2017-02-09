@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/25b089f2-a489-35d3-ac54-061c5695e7d5>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "16930101/16931231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67c702e4-39ce-3cf1-9bb5-b7bb03de3407>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/90636dd3-b090-38d8-bbca-7abd4331de54> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d7e86eae-9fdd-3943-bfa3-3995f9ee4da0> .
+
+<http://data.doremus.org/performance/ddafbbeb-dba7-371e-8a88-b05faacf6cea>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation : Paris, Académie royale de musique, 4 décembre 1693" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/a00f8e51-8036-3c6b-bf31-b6d21e877079> .
+
+<http://data.doremus.org/event/4154b2ce-cd41-3bab-aafd-d33f0d131afd>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/a00f8e51-8036-3c6b-bf31-b6d21e877079> .
+
+<http://data.doremus.org/event/a6c9da30-974b-3262-8680-4951af244d8f>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/d6167917-d3fc-3259-872c-a30f04f67078> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/90636dd3-b090-38d8-bbca-7abd4331de54> .
+
+<http://data.doremus.org/expression/90636dd3-b090-38d8-bbca-7abd4331de54>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "H" ;
+                  mus:U41_has_catalogue_number  "491" ;
+                  ecrm:P3_has_note              "H 491"
+                ] ;
+        ecrm:P102_has_title  "Médée" ;
+        ecrm:P3_has_note     "Tragédie en musique en 5 actes" .
+
+<http://data.doremus.org/expression/a00f8e51-8036-3c6b-bf31-b6d21e877079>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/90636dd3-b090-38d8-bbca-7abd4331de54> .
+
+<http://data.doremus.org/work/d7e86eae-9fdd-3943-bfa3-3995f9ee4da0>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/ddafbbeb-dba7-371e-8a88-b05faacf6cea> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/90636dd3-b090-38d8-bbca-7abd4331de54> .
+
+<http://data.doremus.org/work/d6167917-d3fc-3259-872c-a30f04f67078>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d7e86eae-9fdd-3943-bfa3-3995f9ee4da0> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/90636dd3-b090-38d8-bbca-7abd4331de54> .
+
+<http://data.doremus.org/artist/67c702e4-39ce-3cf1-9bb5-b7bb03de3407>
+        a       ecrm:E21_Person .

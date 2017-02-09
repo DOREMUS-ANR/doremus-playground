@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/d00d314a-81bc-3fb8-8526-7723f0867366>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/21727ec1-08af-3adf-9a3f-bcb4444579a6> .
+
+<http://data.doremus.org/event/aa315905-3333-3a16-a8d3-e40437dbdef0>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/7b74b3a2-d31d-387e-a0dc-ef98991c16d9> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/21727ec1-08af-3adf-9a3f-bcb4444579a6> .
+
+<http://data.doremus.org/expression/21727ec1-08af-3adf-9a3f-bcb4444579a6/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Violon, cordes et basse continue" .
+
+<http://data.doremus.org/event/b2082885-788a-3682-8d06-3415c553c016>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1730" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1730"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/21727ec1-08af-3adf-9a3f-bcb4444579a6> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d00d314a-81bc-3fb8-8526-7723f0867366> .
+
+<http://data.doremus.org/expression/21727ec1-08af-3adf-9a3f-bcb4444579a6>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "2" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/e> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique baroque"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/21727ec1-08af-3adf-9a3f-bcb4444579a6/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "BWV" ;
+                  mus:U41_has_catalogue_number  "1042" ;
+                  ecrm:P3_has_note              "BWV 1042"
+                ] ;
+        ecrm:P102_has_title       "Violin concerto no.2 in E major" , "Concerto pour violon et cordes no 2" , "Concerto no 2 pour violon en mi majeur" ;
+        ecrm:P3_has_note          "Composé à Coethen, comme les deux autres concerti BWV 1014 et 1043, et probablement destiné au premier violon de l'orchestre, Joseph Spiess. Ce concerto adopte la forme en trois mouvements (vif, lent vif) emprunté au concerto italien (notamment Vivaldi). Ce concerto fut transcrit par Bach lui-même en concerto pour clavecin (mi mineur, BWV 1054). Comprend : 1- allegro. 2- adagio. 3- allegretto assai. Durée d'exécution : 14-16 minutes environ" .
+
+<http://data.doremus.org/work/7b74b3a2-d31d-387e-a0dc-ef98991c16d9>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d00d314a-81bc-3fb8-8526-7723f0867366> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/21727ec1-08af-3adf-9a3f-bcb4444579a6> .

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="14036847" format="InterXMarc_Complet" type="Authority">
+<leader>00841c0 au22000272  45  <Pos Code="0004">00841</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF140368477<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">14036847</Pos>
+<Pos Code="13">7</Pos>
+</controlfield>
+<controlfield tag="008">010110091019yy    elm       1997                             1   <Pos Code="0001">01</Pos>
+<Pos Code="0203">01</Pos>
+<Pos Code="0405">10</Pos>
+<Pos Code="0607">09</Pos>
+<Pos Code="0809">10</Pos>
+<Pos Code="1011">19</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820" Sens="musique par ordinateur => musique électroacoustique.">elm</Pos>
+<Pos Code="2831">1997</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">sa01<Pos Code="0001" Sens="cordes frottées - violon">sa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">ec01<Pos Code="0001" Sens="musique électronique - ordinateur">ec</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13891735</subfield>
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Boulez</subfield>
+	<subfield code="m">Pierre</subfield>
+	<subfield code="d">1925-....</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Anthèmes II</subfield>
+</datafield>
+<datafield tag="301" ind1="1" ind2=" ">
+	<subfield code="3">13973072</subfield>
+	<subfield code="a">Boulez</subfield>
+	<subfield code="m">Pierre</subfield>
+	<subfield code="d">1925-....</subfield>
+	<subfield code="t">[Anthèmes]</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Anthèmes 2</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Arrangement avec accompagnement électronique de &quot;Anthèmes&quot; pour violon solo</subfield>
+	<subfield code="a">Date de l&apos;arrangement : 1997</subfield>
+	<subfield code="a">Dispositif électronique réalisé par les studios de l&apos;IRCAM</subfield>
+	<subfield code="a">1re exécution : Donaueschingen, 19 octobre 1997, par Hae Sun Kang (violon)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove music online</subfield>
+	<subfield code="u">http://www.oxfordmusiconline.com</subfield>
+	<subfield code="d">2009-10-19</subfield>
+	<subfield code="a">Ircam</subfield>
+	<subfield code="u">http://brahms.ircam.fr/</subfield>
+	<subfield code="d">2009-10-19</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Sur Incises... [Enregistrement sonore] / Pierre Boulez. Deutsche Grammophon 4634752</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">101821620</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100752320</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14845497</subfield>
+	<subfield code="d">20080306</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb14036847n</Attr>
+<Attr Nom="NumSource">OPC 101821620</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1389173513973072</Attr>
+<Attr Nom="DateCreation">10/01/ 2001</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">10/01/ 2001</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource" Rep="1">OPD 100752320</Attr>
+<Attr Nom="NumSource" Rep="2">OPP 14845497</Attr>
+</record>

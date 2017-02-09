@@ -1,0 +1,34 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/b99043f6-edf1-3949-9c77-60a00e131c8c>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/04896b5b-5320-30b2-a2ff-532cd5123da8> .
+
+<http://data.doremus.org/expression/a1e86c44-2227-323f-9a7b-11250b3c408b>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U17_has_opus_statement  [ a                           mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number     "118" ;
+                                      mus:U43_has_opus_subnumber  "2" ;
+                                      ecrm:P3_has_note            "Op. 118 no 2"
+                                    ] ;
+        ecrm:P102_has_title         "L'horizon chimérique" , "Je me suis embarqué" .
+
+<http://data.doremus.org/work/04896b5b-5320-30b2-a2ff-532cd5123da8>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/a1e86c44-2227-323f-9a7b-11250b3c408b> .
+
+<http://data.doremus.org/event/44a239f2-1d24-3832-9135-d0c83637ec95>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b99043f6-edf1-3949-9c77-60a00e131c8c> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/a1e86c44-2227-323f-9a7b-11250b3c408b> .
+
+<http://data.doremus.org/event/9a44d978-0e4c-347f-88dd-c8ae23deb5ad>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/a1e86c44-2227-323f-9a7b-11250b3c408b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/04896b5b-5320-30b2-a2ff-532cd5123da8> .

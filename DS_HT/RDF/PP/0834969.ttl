@@ -1,0 +1,52 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/3697e60d-48a3-3801-903b-8f1d434193a7>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d3048b29-701c-384a-af18-b0b387cea366> .
+
+<http://data.doremus.org/artist/7e1f2e0e-f2d7-3217-84e6-abdfd1b77a45>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/4609736e-d4b5-36ec-8035-026f46ec0cd8>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1874" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1874"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7e1f2e0e-f2d7-3217-84e6-abdfd1b77a45>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d3048b29-701c-384a-af18-b0b387cea366> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3697e60d-48a3-3801-903b-8f1d434193a7> .
+
+<http://data.doremus.org/event/e569e930-08fd-3ead-bd38-b1d256986030>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/0a931a54-05a9-37e5-94ad-974bb41bb6b2> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d3048b29-701c-384a-af18-b0b387cea366> .
+
+<http://data.doremus.org/work/0a931a54-05a9-37e5-94ad-974bb41bb6b2>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/3697e60d-48a3-3801-903b-8f1d434193a7> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d3048b29-701c-384a-af18-b0b387cea366> .
+
+<http://data.doremus.org/expression/d3048b29-701c-384a-af18-b0b387cea366/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Bois par 2, 2 cors, cordes" .
+
+<http://data.doremus.org/expression/d3048b29-701c-384a-af18-b0b387cea366>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/musique_symphonique> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/d3048b29-701c-384a-af18-b0b387cea366/casting/1> ;
+        ecrm:P102_has_title  "Aux étoiles" ;
+        ecrm:P3_has_note     "Fragment symphonique conservé par Duparc du drame lyrique inachevé \"Roussalka\". \"Aux étoiles\", composé en 1874 et remanié en 1911, en constituait un bref entracte. Durée : 6 minutes environ" .

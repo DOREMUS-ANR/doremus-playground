@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/8646c287-e1fd-3cc2-887c-94d0ce7198d4>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé le 3 décembre 1925 à New York, Carnegie Hall. Lors de la création George Gershwin lui-même est au piano." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/f41f6d30-951c-3755-a7a6-99f4f208944c> .
+
+<http://data.doremus.org/event/29a9259b-1f27-3e40-9ec1-74d51b692619>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1925" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1925"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/15a2bc6f-a30e-3287-8cde-dfed1c05aa96>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/4f8f6095-6393-3421-a108-ec30e4381ab0> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3717c6e8-9083-3972-af48-e591fe3f644e> .
+
+<http://data.doremus.org/expression/4f8f6095-6393-3421-a108-ec30e4381ab0>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      [ a                         mus:M4_Key ;
+                               ecrm:P1_is_identified_by  "Fa majeur."@fr
+                             ] ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/musique_symphonique> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/4f8f6095-6393-3421-a108-ec30e4381ab0/casting/1> ;
+        ecrm:P102_has_title  "New York Concerto" , "Concerto en Fa" , "Piano concerto in F major" ;
+        ecrm:P3_has_note     "En juillet 1925, Gershwin s'attelle à la conception d'un New York Concerto pour piano, qui deviendra le Concerto en fa. Terminé le 10 novembre suivant, l'oeuvre est créée le 3 décembre au Carnegie Hall. A la différence de la Rhapsody In Blue créée l'annéeprécédente dans une formule pour jazz-band et piano, le Concerto est conçu pour piano et orchestre symphonique. Souvent mal comprise d'un point de vue classique\", la partition se révèle plutôt bien conçue sur le plan formel, notamment dans l'utilisation de bribes de thèmes dans les transitions. Comprend : 1- allegro. 2- andante. 3- allegro. Durée d'exécution : 31 minutes environ" , "Créé le 3 décembre 1925 à New York, Carnegie Hall. Lors de la création George Gershwin lui-même est au piano." .
+
+<http://data.doremus.org/artist/15a2bc6f-a30e-3287-8cde-dfed1c05aa96>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/edc19de7-4b9f-3781-8219-986466ea84d8>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/d042ad4f-78d7-3dd1-92f9-bb316ac1cf70> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/4f8f6095-6393-3421-a108-ec30e4381ab0> .
+
+<http://data.doremus.org/expression/f41f6d30-951c-3755-a7a6-99f4f208944c>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/4f8f6095-6393-3421-a108-ec30e4381ab0> .
+
+<http://data.doremus.org/work/d042ad4f-78d7-3dd1-92f9-bb316ac1cf70>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/3717c6e8-9083-3972-af48-e591fe3f644e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/4f8f6095-6393-3421-a108-ec30e4381ab0> .
+
+<http://data.doremus.org/expression/4f8f6095-6393-3421-a108-ec30e4381ab0/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Piano et orchestre" .
+
+<http://data.doremus.org/work/3717c6e8-9083-3972-af48-e591fe3f644e>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/8646c287-e1fd-3cc2-887c-94d0ce7198d4> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/4f8f6095-6393-3421-a108-ec30e4381ab0> .

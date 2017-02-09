@@ -1,0 +1,64 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/1c5ebd90-b233-3242-9b49-94e08f1a52db>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c4adbba5-f21c-3d49-8065-ba39ce6a3559> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/28170bac-00b0-33a3-90c5-b56cbe071511> .
+
+<http://data.doremus.org/event/12f8a183-6e53-3d76-b114-fa00f36e67d5>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1832" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1832"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/6d773fc3-e90a-35cb-9c05-e01942564683>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/28170bac-00b0-33a3-90c5-b56cbe071511> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0728ae1f-c2cf-3339-b982-86199dd58700> .
+
+<http://data.doremus.org/work/0728ae1f-c2cf-3339-b982-86199dd58700>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/055237eb-25bc-3697-b047-082c428d5433> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/28170bac-00b0-33a3-90c5-b56cbe071511> .
+
+<http://data.doremus.org/expression/26f31307-2ebd-3c2a-a7ec-7f5432445cc4>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/28170bac-00b0-33a3-90c5-b56cbe071511> .
+
+<http://data.doremus.org/work/c4adbba5-f21c-3d49-8065-ba39ce6a3559>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0728ae1f-c2cf-3339-b982-86199dd58700> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/28170bac-00b0-33a3-90c5-b56cbe071511> .
+
+<http://data.doremus.org/performance/055237eb-25bc-3697-b047-082c428d5433>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Madrid, Cappella di San Filippo El Real, 1833 (première version), et à Paris, Théâtre des Italiens, le 7 janvier 1842" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/26f31307-2ebd-3c2a-a7ec-7f5432445cc4> .
+
+<http://data.doremus.org/expression/28170bac-00b0-33a3-90c5-b56cbe071511/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "voix : soprano (2), ténor (1), basse (1), choeur et orchestre" .
+
+<http://data.doremus.org/expression/28170bac-00b0-33a3-90c5-b56cbe071511>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique sacrée"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/28170bac-00b0-33a3-90c5-b56cbe071511/casting/1> ;
+        ecrm:P102_has_title  "Stabat Mater" , "Stabat mater" ;
+        ecrm:P3_has_note     "Première version composé en 1832. Deuxième version révisée en 1841" , "Créé à Madrid, Cappella di San Filippo El Real, 1833 (première version), et à Paris, Théâtre des Italiens, le 7 janvier 1842" .
+
+<http://data.doremus.org/artist/6d773fc3-e90a-35cb-9c05-e01942564683>
+        a       ecrm:E21_Person .

@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/e762f261-d9de-3cc5-bd88-d056c43b138e>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/cde4cf82-d24b-391e-ba16-726519494410> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/de15f478-333e-30e1-be14-110604795526> .
+
+<http://data.doremus.org/performance/cde4cf82-d24b-391e-ba16-726519494410>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation : Munich, Königliches Hof- und National- Theater, 21 juin 1868" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/19f218b7-7930-3f11-ae9e-c7cd8b8609d1> .
+
+<http://data.doremus.org/event/f02ceddf-df29-30ed-abb2-50cf3b9f0364>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/128f7f23-0ada-316d-99fb-81119e71b549> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/de15f478-333e-30e1-be14-110604795526> .
+
+<http://data.doremus.org/expression/19f218b7-7930-3f11-ae9e-c7cd8b8609d1>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/de15f478-333e-30e1-be14-110604795526> .
+
+<http://data.doremus.org/expression/de15f478-333e-30e1-be14-110604795526>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "WWV" ;
+                  mus:U41_has_catalogue_number  "96" ;
+                  ecrm:P3_has_note              "WWV 96"
+                ] ;
+        ecrm:P102_has_title  "Les maîtres chanteurs de Nuremberg" , "Die Meistersinger von Nürnberg" ;
+        ecrm:P3_has_note     "Opéra en 3 actes" , "Sur un livret du compositeur" .
+
+<http://data.doremus.org/event/bfaeff1a-c86a-3c1a-94fa-9915db57019d>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18620401/18671031"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9d0c1b84-5209-39a2-84bb-71d688ca65e1>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/de15f478-333e-30e1-be14-110604795526> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e762f261-d9de-3cc5-bd88-d056c43b138e> .
+
+<http://data.doremus.org/artist/9d0c1b84-5209-39a2-84bb-71d688ca65e1>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/128f7f23-0ada-316d-99fb-81119e71b549>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/e762f261-d9de-3cc5-bd88-d056c43b138e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/de15f478-333e-30e1-be14-110604795526> .
+
+<http://data.doremus.org/event/e7fcbba3-8b30-3bc2-90e2-52658b5fdf22>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/19f218b7-7930-3f11-ae9e-c7cd8b8609d1> .

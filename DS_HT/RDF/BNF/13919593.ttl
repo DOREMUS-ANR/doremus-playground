@@ -1,0 +1,67 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/e5e49d54-4a2a-354b-a6d1-3f9d2090ef64>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/5695f374-a496-34f1-b7d8-e4453725982d/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace : à Aloys Kontarsky"@fr .
+
+<http://data.doremus.org/event/f476ec05-e086-3f42-aadf-8566bede6df5>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/fcbf9cee-902a-39cd-a72a-2fdf8b01f4b6> .
+
+<http://data.doremus.org/work/eaa5eb71-ec3e-3f2a-8837-d05368b42125>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/26d06af8-30f2-3a60-a567-6215d0ab820e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/5695f374-a496-34f1-b7d8-e4453725982d> .
+
+<http://data.doremus.org/event/5e82ff5e-6d27-3c5a-83c4-3e8a53876256>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19540101/19611231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/e5e49d54-4a2a-354b-a6d1-3f9d2090ef64>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/5695f374-a496-34f1-b7d8-e4453725982d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/26d06af8-30f2-3a60-a567-6215d0ab820e> .
+
+<http://data.doremus.org/event/ae039d89-ba12-3529-b35e-de149f8d6e76>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/eaa5eb71-ec3e-3f2a-8837-d05368b42125> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/5695f374-a496-34f1-b7d8-e4453725982d> .
+
+<http://data.doremus.org/performance/a921e995-f5c8-3605-9c51-7c5729d66447>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1962-10-10 Italie, Palerme, par Frederic Rzewski" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/fcbf9cee-902a-39cd-a72a-2fdf8b01f4b6> .
+
+<http://data.doremus.org/work/26d06af8-30f2-3a60-a567-6215d0ab820e>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/a921e995-f5c8-3605-9c51-7c5729d66447> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/5695f374-a496-34f1-b7d8-e4453725982d> .
+
+<http://data.doremus.org/expression/5695f374-a496-34f1-b7d8-e4453725982d>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "4/VI" ;
+                                      ecrm:P3_has_note         "Op. 4/VI"
+                                    ] ;
+        ecrm:P102_has_title         "Klavierstück X" ;
+        ecrm:P3_has_note            "Date de révision : 19610000" ;
+        ecrm:P67_refers_to          <http://data.doremus.org/expression/5695f374-a496-34f1-b7d8-e4453725982d/dedication> .
+
+<http://data.doremus.org/expression/fcbf9cee-902a-39cd-a72a-2fdf8b01f4b6>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/5695f374-a496-34f1-b7d8-e4453725982d> .

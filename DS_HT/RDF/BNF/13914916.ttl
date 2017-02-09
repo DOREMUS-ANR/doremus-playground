@@ -1,0 +1,76 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/560ee01f-f35d-380d-ae55-851a08def5a0>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1772/1772"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/8157299f-9e29-35e1-8762-5a321328131c> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0844ad17-7e84-338f-9993-1adedb2f846d> .
+
+<http://data.doremus.org/expression/8157299f-9e29-35e1-8762-5a321328131c/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "piano (4 mains)"@fr
+                                              ]
+                                    ] ;
+        ecrm:P3_has_note            "Piano (4 mains)" .
+
+<http://data.doremus.org/publication/664db5a4-ef79-329f-988c-050b0fb14da2>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/8157299f-9e29-35e1-8762-5a321328131c> .
+
+<http://data.doremus.org/work/831b65da-47a6-3c21-9c25-f10bf9c78e91>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/664db5a4-ef79-329f-988c-050b0fb14da2> .
+
+<http://data.doremus.org/event/d71c52e4-23a3-379f-9ac4-3e04c7be45b7>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f525c7cd-0ada-369f-b8ff-068519d78458> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/8157299f-9e29-35e1-8762-5a321328131c> .
+
+<http://data.doremus.org/work/0844ad17-7e84-338f-9993-1adedb2f846d>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/06842f44-6fea-31ba-a6b2-d895fb047e0d> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/8157299f-9e29-35e1-8762-5a321328131c> .
+
+<http://data.doremus.org/work/f525c7cd-0ada-369f-b8ff-068519d78458>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0844ad17-7e84-338f-9993-1adedb2f846d> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/8157299f-9e29-35e1-8762-5a321328131c> .
+
+<http://data.doremus.org/event/06842f44-6fea-31ba-a6b2-d895fb047e0d>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Vienne : Artaria, 1783" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/831b65da-47a6-3c21-9c25-f10bf9c78e91> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/664db5a4-ef79-329f-988c-050b0fb14da2> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/8157299f-9e29-35e1-8762-5a321328131c>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/d> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/8157299f-9e29-35e1-8762-5a321328131c/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "123a" ;
+                  ecrm:P3_has_note              "KV 123a"
+                ] .

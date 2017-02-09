@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13912233" format="InterXMarc_Complet" type="Authority">
+<leader>00859c0 au2200027   45  <Pos Code="0004">00859</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139122336<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13912233</Pos>
+<Pos Code="13">6</Pos>
+</controlfield>
+<controlfield tag="008">890821110128yy    sp        1881      18821031               1   <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">11</Pos>
+<Pos Code="0809">01</Pos>
+<Pos Code="1011">28</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820">sp </Pos>
+<Pos Code="2831">1881</Pos>
+<Pos Code="3841">1882</Pos>
+<Pos Code="4243">10</Pos>
+<Pos Code="4445">31</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">oa01<Pos Code="0001" Sens="orchestre - orchestre symphonique XIXe-XXe s.">oa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13894116</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Franck</subfield>
+	<subfield code="m">César</subfield>
+	<subfield code="d">1822-1890</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a" Barre="3">Le chasseur maudit</subfield>
+	<subfield code="k">CFF 128</subfield>
+</datafield>
+<datafield tag="301" ind1="2" ind2=" ">
+	<subfield code="3">14003876</subfield>
+	<subfield code="a">Franck</subfield>
+	<subfield code="m">César</subfield>
+	<subfield code="d">1822-1890</subfield>
+	<subfield code="t" Barre="4">[La chasse fantastique. CFF 128a]</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a" Barre="3">Le chasseur maudit</subfield>
+	<subfield code="k">FWV 44</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">D&apos;après une ballade de Gottfried August Bürger</subfield>
+	<subfield code="a">Dédicace à Charles Lamoureux</subfield>
+	<subfield code="a">Dates de composition : été 1881-31 octobre 1882</subfield>
+	<subfield code="a">1re exécution : Paris, Société nationale de musique, Salle Érard, 31 mars 1883, orchestre sous la direction d&apos;Édouard Colonne</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Il existe un arrangement pour piano à 4 mains par le compositeur, sous le titre &quot;La chasse fantastique&quot;</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Fauquet, Franck</subfield>
+	<subfield code="a">Mohr, C. Franck</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove music online</subfield>
+	<subfield code="u">http://www.oxfordmusiconline.com</subfield>
+	<subfield code="d">2010-12-07</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100411250</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb13912233b</Attr>
+<Attr Nom="NumSource">OPC 100411250</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1389411614003876</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">28/01/ 2011</Attr>
+<Attr Nom="ResponsableDerniereValidation">PUYRENIER FREDERIC</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">82</Attr>
+</record>

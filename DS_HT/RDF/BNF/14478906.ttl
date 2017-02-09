@@ -1,0 +1,43 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/864fe56f-36a7-32d7-ba12-fc69b98b4989>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/17c53184-5dbe-381f-8418-c94d262b95b8> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/740c24f1-65b4-3770-9ffb-9d9d0911b8ba> .
+
+<http://data.doremus.org/event/53325975-aea9-3435-95a7-d3d79507df11>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19820101/19841231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/2d6f5e2b-34cd-3569-8274-899b9ba05583>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/740c24f1-65b4-3770-9ffb-9d9d0911b8ba> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/7def2573-9127-37da-9246-274fcd27e9c7> .
+
+<http://data.doremus.org/work/7def2573-9127-37da-9246-274fcd27e9c7>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/740c24f1-65b4-3770-9ffb-9d9d0911b8ba> .
+
+<http://data.doremus.org/artist/2d6f5e2b-34cd-3569-8274-899b9ba05583>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/740c24f1-65b4-3770-9ffb-9d9d0911b8ba>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "Vor der Erstarrung" , "Mouvement" ;
+        ecrm:P3_has_note     "Pièce pour 15 instruments" .
+
+<http://data.doremus.org/work/17c53184-5dbe-381f-8418-c94d262b95b8>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/7def2573-9127-37da-9246-274fcd27e9c7> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/740c24f1-65b4-3770-9ffb-9d9d0911b8ba> .

@@ -1,0 +1,66 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/28150633-916c-3cb4-a3de-5fda68060b65>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/ca60d535-8410-3fc0-bff2-597e3e75208b> .
+
+<http://data.doremus.org/event/4d168363-e4a1-3c71-9eda-9242bde76ab9>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1811" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1811"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/ca60d535-8410-3fc0-bff2-597e3e75208b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/71d1ff45-a27f-3452-aa0b-af70c4d646dd> .
+
+<http://data.doremus.org/work/71d1ff45-a27f-3452-aa0b-af70c4d646dd>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/5d2766e3-87b2-30ad-a35d-37cc1d1a69f6> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/ca60d535-8410-3fc0-bff2-597e3e75208b> .
+
+<http://data.doremus.org/performance/5d2766e3-87b2-30ad-a35d-37cc1d1a69f6>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Pest, le 9 février 1812" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/28150633-916c-3cb4-a3de-5fda68060b65> .
+
+<http://data.doremus.org/event/7eae5c4a-9c40-3265-8dbf-781c18dcf0b0>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f5d4f3cf-55e4-3510-b68f-c9f88a9d0add> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/ca60d535-8410-3fc0-bff2-597e3e75208b> .
+
+<http://data.doremus.org/work/f5d4f3cf-55e4-3510-b68f-c9f88a9d0add>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/71d1ff45-a27f-3452-aa0b-af70c4d646dd> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/ca60d535-8410-3fc0-bff2-597e3e75208b> .
+
+<http://data.doremus.org/expression/ca60d535-8410-3fc0-bff2-597e3e75208b>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/ca60d535-8410-3fc0-bff2-597e3e75208b/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "117" ;
+                                      ecrm:P3_has_note         "Op.117"
+                                    ] ;
+        ecrm:P102_has_title         "König Stephan" , "Le Roi Etienne" , "Le roi Etienne" ;
+        ecrm:P3_has_note            "Musique de scène pour une pièce d'August von Kotzebue. Comprend l'ouverture et 9 numéros" , "Créé à Pest, le 9 février 1812" .
+
+<http://data.doremus.org/expression/ca60d535-8410-3fc0-bff2-597e3e75208b/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Effectif : flûtes, hautbois, clarinettes et bassons par deux, contrebasson, 4 cors, 2 trompettes, timbales et cordes." .
+
+<http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+        a       ecrm:E21_Person .

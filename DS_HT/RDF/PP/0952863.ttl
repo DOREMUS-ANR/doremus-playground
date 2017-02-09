@@ -1,0 +1,55 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/c720b916-9aa9-3f10-bdb8-3c54ca572993>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/686b55f1-9d55-31b9-a5ac-090f972b3b79/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "4 voix (2 sopranos, alto, ténor), basse continue" .
+
+<http://data.doremus.org/work/879eff58-989c-34eb-a1e2-af66aba59687>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/08d182e1-c428-36dd-ac31-a100cf92e199> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/686b55f1-9d55-31b9-a5ac-090f972b3b79> .
+
+<http://data.doremus.org/work/08d182e1-c428-36dd-ac31-a100cf92e199>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/686b55f1-9d55-31b9-a5ac-090f972b3b79> .
+
+<http://data.doremus.org/event/86cc21e3-77f3-31ab-91eb-7bfaf3058479>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/879eff58-989c-34eb-a1e2-af66aba59687> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/686b55f1-9d55-31b9-a5ac-090f972b3b79> .
+
+<http://data.doremus.org/expression/686b55f1-9d55-31b9-a5ac-090f972b3b79>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/villancico> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/686b55f1-9d55-31b9-a5ac-090f972b3b79/casting/1> ;
+        ecrm:P102_has_title  "A este sol peregrino" ;
+        ecrm:P3_has_note     "Ce villancico, composé en l'honneur de Saint Pierre, est l'un des très nombreux \"villancicos\" du compositeur. Le manuscrit est conservé au couvent de Cuzco-Peru." .
+
+<http://data.doremus.org/event/cb9441e5-ebc2-3a5b-a5f3-556d02f1bef0>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "Début du 18ème siècle" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1700/1728"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c720b916-9aa9-3f10-bdb8-3c54ca572993>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/686b55f1-9d55-31b9-a5ac-090f972b3b79> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/08d182e1-c428-36dd-ac31-a100cf92e199> .

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="14019473" format="InterXMarc_Complet" type="Authority">
+<leader>00556c1 au22000272  45  <Pos Code="0004">00556</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF140194731<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">14019473</Pos>
+<Pos Code="13">1</Pos>
+</controlfield>
+<controlfield tag="008">990222990222yy    zz        1967      ....                   1   <Pos Code="0001">99</Pos>
+<Pos Code="0203">02</Pos>
+<Pos Code="0405">22</Pos>
+<Pos Code="0607">99</Pos>
+<Pos Code="0809">02</Pos>
+<Pos Code="1011">22</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820">zz </Pos>
+<Pos Code="2831">1967</Pos>
+<Pos Code="3841">....</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">sb01<Pos Code="0001" Sens="cordes frottées - alto">sb</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13891404</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Berio</subfield>
+	<subfield code="m">Luciano</subfield>
+	<subfield code="d">1925-2003</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.....</subfield>
+	<subfield code="a">Sequenza VI</subfield>
+</datafield>
+<datafield tag="502" ind1=" " ind2=" ">
+	<subfield code="3">15801164</subfield>
+	<subfield code="a">Berio</subfield>
+	<subfield code="m">Luciano</subfield>
+	<subfield code="d">1925-2003</subfield>
+	<subfield code="t">[Sequenzas]</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Créé par Serge Collot à New York</subfield>
+	<subfield code="a">Il existe une version révisée pour violoncelle</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Date de composition : 1967</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">1re exécution : 1967</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Date de révision : 1981</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Contemporary composers</subfield>
+	<subfield code="a">Sequenzas / Berio. DGG. 4570382</subfield>
+</datafield>
+<datafield tag="611" ind1=" " ind2=" ">
+	<subfield code="a">SDC 12 117007</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">101601750</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb14019473d</Attr>
+<Attr Nom="NumSource">OPC 101601750</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">1389140415801164</Attr>
+<Attr Nom="DateCreation">22/02/ 1999</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">08/11/ 2010</Attr>
+<Attr Nom="ResponsableDerniereValidation">MIGV4</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">22/02/ 1999</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">1</Attr>
+<Attr Nom="NumSource">OPC 101575300</Attr>
+</record>

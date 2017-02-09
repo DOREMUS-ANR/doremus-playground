@@ -1,0 +1,70 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/dc32394e-5395-3466-914e-e91c1e67ff69>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/90a8ef1d-c118-35ad-b9a8-72b8c48886f2> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/fff342e8-32ff-31bf-a258-ba0db7b078e5> .
+
+<http://data.doremus.org/expression/fff342e8-32ff-31bf-a258-ba0db7b078e5>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/opu> ;
+        ecrm:P102_has_title  "Don Pasquale" ;
+        ecrm:P3_has_note     "Dramma buffo en 3 actes" , "Livret du compositeur et de Giovanni Ruffini d'après le livret d'Angelo Anelli pour l'opéra de Stefano Pavesi \"Ser Marcantonio\" (1810)" .
+
+<http://data.doremus.org/expression/6ffa596f-3ae6-39ff-8e27-38bd8e9e3939>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/fff342e8-32ff-31bf-a258-ba0db7b078e5> .
+
+<http://data.doremus.org/expression/473ba77f-756a-39a5-a1f0-9c359427f689>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/fff342e8-32ff-31bf-a258-ba0db7b078e5> .
+
+<http://data.doremus.org/work/90a8ef1d-c118-35ad-b9a8-72b8c48886f2>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/b3e15de4-5fb5-32c9-b0a3-dec9233258b0> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/fff342e8-32ff-31bf-a258-ba0db7b078e5> .
+
+<http://data.doremus.org/event/8f649079-9f0b-3304-be14-fbc2580c4d03>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/473ba77f-756a-39a5-a1f0-9c359427f689> .
+
+<http://data.doremus.org/performance/fa0a78e4-e6cb-336f-8dca-3589dd76fca8>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation : Paris, Théâtre-Italien, 3 janvier 1843" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/473ba77f-756a-39a5-a1f0-9c359427f689> .
+
+<http://data.doremus.org/event/d37fe532-d527-308f-b965-dfeb43f66b17>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18420901/18421130"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/f8141387-55b2-378e-a7d1-d83a27c80308>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/fff342e8-32ff-31bf-a258-ba0db7b078e5> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/b3e15de4-5fb5-32c9-b0a3-dec9233258b0> .
+
+<http://data.doremus.org/artist/f8141387-55b2-378e-a7d1-d83a27c80308>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/8d6ddc5d-5125-338d-83d0-1a747dc17634>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/6ffa596f-3ae6-39ff-8e27-38bd8e9e3939> .
+
+<http://data.doremus.org/performance/7c11505e-765a-31cf-a13d-4b8bba36e9b8>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation à l'Opéra de Paris (1er acte seul) : 5 février 1916" , "1re représentation en français : Bruxelles, Théâtre de la Monnaie, 4 août 1843" , "1re représentation en Italie : Milan, La Scala, 17 avril 1843" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/6ffa596f-3ae6-39ff-8e27-38bd8e9e3939> .
+
+<http://data.doremus.org/work/b3e15de4-5fb5-32c9-b0a3-dec9233258b0>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/fa0a78e4-e6cb-336f-8dca-3589dd76fca8> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/fff342e8-32ff-31bf-a258-ba0db7b078e5> .

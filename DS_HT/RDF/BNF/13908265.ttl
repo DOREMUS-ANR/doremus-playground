@@ -1,0 +1,78 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/e4257240-c61f-304b-b41b-c9581131dc1a>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/a315b376-0218-3204-8448-f12262e30a46> .
+
+<http://data.doremus.org/performance/56f328f1-1c38-3031-83d4-b14e2fb8f7a1>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation : Vienne, Hofburgtheater, 15 juin 1810" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/b5a9f3bb-3be5-397f-8ac9-a17f94f4b359> .
+
+<http://data.doremus.org/expression/b5a9f3bb-3be5-397f-8ac9-a17f94f4b359>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/e914cc88-e41e-38b3-a7a5-c3bdea6f5205> .
+
+<http://data.doremus.org/work/f10d65bd-3c21-3fde-9423-391a4cb5545a>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0f3ff2d7-fc62-3773-ab30-88ae1cb6f427> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e914cc88-e41e-38b3-a7a5-c3bdea6f5205> .
+
+<http://data.doremus.org/event/de47b21d-c063-3159-9b81-06e874722ed1>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/b5a9f3bb-3be5-397f-8ac9-a17f94f4b359> .
+
+<http://data.doremus.org/event/c79de7aa-4953-358a-ab24-e16766e49b1d>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Leipzig : Breitkopf & Härtel, 1810 (ouverture), 1812 (lieder et entractes)" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e4257240-c61f-304b-b41b-c9581131dc1a> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/a315b376-0218-3204-8448-f12262e30a46> .
+
+<http://data.doremus.org/event/de8794b2-493b-3eac-b68c-07f9bbbf06ef>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18091001/18100630"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e914cc88-e41e-38b3-a7a5-c3bdea6f5205> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0f3ff2d7-fc62-3773-ab30-88ae1cb6f427> .
+
+<http://data.doremus.org/work/0f3ff2d7-fc62-3773-ab30-88ae1cb6f427>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/c79de7aa-4953-358a-ab24-e16766e49b1d> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/56f328f1-1c38-3031-83d4-b14e2fb8f7a1> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e914cc88-e41e-38b3-a7a5-c3bdea6f5205> .
+
+<http://data.doremus.org/event/9a9cafd6-0dde-365e-8ec6-fe7a3c62b511>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f10d65bd-3c21-3fde-9423-391a4cb5545a> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e914cc88-e41e-38b3-a7a5-c3bdea6f5205> .
+
+<http://data.doremus.org/expression/e914cc88-e41e-38b3-a7a5-c3bdea6f5205>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/inm> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "84" ;
+                                      ecrm:P3_has_note         "Op. 84"
+                                    ] ;
+        ecrm:P102_has_title         "Musik zu Johann Wolfgang von Goethes Trauerspiel Egmont" , "Egmont" ;
+        ecrm:P3_has_note            "Musique de scène pour la tragédie de Johann Wolfgang von Goethe" , "Comprend : Ouverture ; Lied (Die Trommel gerühret) ; Zwischenakt I ; Zwischenakt II ; Lied (Freudvoll und leidvoll) ; Zwischenakt III ; Zwischenakt IV ; Musik, Clärchens Tod bezeichnend ; Melodram ; Siegessymphonie" .
+
+<http://data.doremus.org/publication/a315b376-0218-3204-8448-f12262e30a46>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/e914cc88-e41e-38b3-a7a5-c3bdea6f5205> .
+
+<http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+        a       ecrm:E21_Person .

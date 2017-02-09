@@ -1,0 +1,60 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/f42297e3-4e96-34e9-9ed2-65914500a3bc>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/628fea02-2450-3bd0-ae08-e16f361991c4> .
+
+<http://data.doremus.org/expression/628fea02-2450-3bd0-ae08-e16f361991c4>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      [ a                         mus:M4_Key ;
+                               ecrm:P1_is_identified_by  "Mi bémol majeur et Do mineur"@fr
+                             ] ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/jazz> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "jazz standard"@fr
+                             ] ;
+        ecrm:P102_has_title  "My Funny Valentine" , "My funny Valentine" ;
+        ecrm:P3_has_note     "Paroles de Lorenz Hart. Cette somptueuse ballade ne devint un standard de jazz qu'une quinzaine d'année après son copyright, grâce à la version du quartette de Gerry Mulligan, avec Chet Baker. Ce dernier en fit son cheval de bataille, avant Miles Davis. Style de jazz : mainstream, cool, moderne. Structure musicale : couplet 16 mesures - refrain 36 mesures. AA'BA''. Environ 860 enregistrements recensés." , "Créée par Mitzi Green dans la comédie musicale \"Babes in Armes\" en 1937, Valentine ne figure pas dans l'adaptation filmée de cette comédie en 1939. Michelle Pfeiffer chante ce morceau pendant le générique de fin du film \"The Fabulous Baker Boys\" (1989). Premier enregistrement jazz : Hal McIntyre." .
+
+<http://data.doremus.org/work/dc7bfb9a-b9c6-379b-93e2-a22efd418d91>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f2d3434a-8dd8-35bc-b491-70f8d55809f8> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/628fea02-2450-3bd0-ae08-e16f361991c4> .
+
+<http://data.doremus.org/artist/f4782aaf-1eca-38d6-aec8-b3074754855f>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/7558d460-08bc-3d36-ba00-927c937ddaff>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1937" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1937"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/f4782aaf-1eca-38d6-aec8-b3074754855f>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/628fea02-2450-3bd0-ae08-e16f361991c4> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/dc7bfb9a-b9c6-379b-93e2-a22efd418d91> .
+
+<http://data.doremus.org/event/55c8ca83-6dc2-3d13-803e-beb46ea34540>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/dd367fbc-907c-3fce-887a-d0bcc784f814> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/628fea02-2450-3bd0-ae08-e16f361991c4> .
+
+<http://data.doremus.org/work/dd367fbc-907c-3fce-887a-d0bcc784f814>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/dc7bfb9a-b9c6-379b-93e2-a22efd418d91> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/628fea02-2450-3bd0-ae08-e16f361991c4> .
+
+<http://data.doremus.org/performance/f2d3434a-8dd8-35bc-b491-70f8d55809f8>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée par Mitzi Green dans la comédie musicale \"Babes in Armes\" en 1937, Valentine ne figure pas dans l'adaptation filmée de cette comédie en 1939. Michelle Pfeiffer chante ce morceau pendant le générique de fin du film \"The Fabulous Baker Boys\" (1989). Premier enregistrement jazz : Hal McIntyre." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/f42297e3-4e96-34e9-9ed2-65914500a3bc> .

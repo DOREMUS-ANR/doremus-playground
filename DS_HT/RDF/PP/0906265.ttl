@@ -1,0 +1,64 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/2c09fab1-6801-3757-b362-f7f5e712df45>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/aee1b40f-87ea-33ef-8059-fcf851376c13> .
+
+<http://data.doremus.org/expression/aee1b40f-87ea-33ef-8059-fcf851376c13>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/c> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/messe> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique classique"@fr
+                             ] ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique sacrée"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/aee1b40f-87ea-33ef-8059-fcf851376c13/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                           mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name  "Hob" ;
+                  ecrm:P3_has_note            "Hob. XXIIIc 2"
+                ] ;
+        ecrm:P102_has_title  "Te Deum" , "Te deum en ut majeur" ;
+        ecrm:P3_has_note     "Ce Te Deum a été composé pour Marie-Thérèse, épouse de l'empereur François II. Comprend 3 parties. Durée d'exécution : 10 minutes environ" .
+
+<http://data.doremus.org/work/9756d861-61d2-36d3-a12c-7e7bce10ad28>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/2c09fab1-6801-3757-b362-f7f5e712df45> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/aee1b40f-87ea-33ef-8059-fcf851376c13> .
+
+<http://data.doremus.org/event/97513b00-2998-3f6d-8049-866a1a88e62f>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/9756d861-61d2-36d3-a12c-7e7bce10ad28> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/aee1b40f-87ea-33ef-8059-fcf851376c13> .
+
+<http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/488a34cd-fceb-3b1a-b4bb-b1c92524341b>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1799-1800" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1799/1800"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/aee1b40f-87ea-33ef-8059-fcf851376c13> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/2c09fab1-6801-3757-b362-f7f5e712df45> .
+
+<http://data.doremus.org/expression/aee1b40f-87ea-33ef-8059-fcf851376c13/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Quatuor de solistes (soprano, alto, ténor, basse), choeur à quatre voix et orchestre" .

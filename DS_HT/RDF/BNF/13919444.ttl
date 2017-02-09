@@ -1,0 +1,87 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/e08ee26a-3d21-37d8-ac70-cec3ffac9293/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à Mstislav Rostropovič"@fr .
+
+<http://data.doremus.org/event/d408c0ea-8962-38a2-85d1-c1e7af27d518>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/d4a25214-4f7d-3e30-af16-c74ca66e18b0> .
+
+<http://data.doremus.org/artist/3ab0501f-b14a-3281-bc3c-5ce3e8a5450f>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/acef292a-7576-3647-a6de-f7730c0c1521>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Leningrad, grande salle de la Philharmonie, 21 septembre 1959, par M. Rostropovič et l'Orchestre philharmonique de Leningrad, sous la direction de Evgenij Mravinskij" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/d4a25214-4f7d-3e30-af16-c74ca66e18b0> .
+
+<http://data.doremus.org/expression/e08ee26a-3d21-37d8-ac70-cec3ffac9293/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/svc>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/oun>
+                                    ] ;
+        ecrm:P3_has_note            "Violoncelle, orchestre" .
+
+<http://data.doremus.org/work/32ccf912-4b7b-3eda-b14a-1b00862c6e30>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/acef292a-7576-3647-a6de-f7730c0c1521> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/e08ee26a-3d21-37d8-ac70-cec3ffac9293> .
+
+<http://data.doremus.org/event/1a491f9a-1a25-341b-a21e-dd6d8a8bd191>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19590101/19591231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/3ab0501f-b14a-3281-bc3c-5ce3e8a5450f>
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/d3a49656-4bc3-3faf-afb0-2d5cd9b7e9ea>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/e08ee26a-3d21-37d8-ac70-cec3ffac9293> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/32ccf912-4b7b-3eda-b14a-1b00862c6e30> .
+
+<http://data.doremus.org/expression/d4a25214-4f7d-3e30-af16-c74ca66e18b0>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/e08ee26a-3d21-37d8-ac70-cec3ffac9293> .
+
+<http://data.doremus.org/artist/d3a49656-4bc3-3faf-afb0-2d5cd9b7e9ea>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/26de6b0f-33c8-3281-8e80-b0659eef3796>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/60b88d73-866b-3e35-b2bc-e9fc0a9c13b9> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/e08ee26a-3d21-37d8-ac70-cec3ffac9293> .
+
+<http://data.doremus.org/work/60b88d73-866b-3e35-b2bc-e9fc0a9c13b9>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/32ccf912-4b7b-3eda-b14a-1b00862c6e30> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/e08ee26a-3d21-37d8-ac70-cec3ffac9293> .
+
+<http://data.doremus.org/expression/e08ee26a-3d21-37d8-ac70-cec3ffac9293>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "1" ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/eb> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/e08ee26a-3d21-37d8-ac70-cec3ffac9293/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "107" ;
+                                      ecrm:P3_has_note         "Op. 107"
+                                    ] ;
+        ecrm:P67_refers_to          <http://data.doremus.org/expression/e08ee26a-3d21-37d8-ac70-cec3ffac9293/dedication> .

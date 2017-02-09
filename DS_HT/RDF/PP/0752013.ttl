@@ -1,0 +1,78 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/97cf6427-fe20-3a61-bc64-28e3fea6d5d7>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Editeur : Boosey & Hawkes." ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/016754e5-1c37-3b7d-9c27-1482ad21fabd> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/c6da699e-d5b5-38fe-b540-259ce36efe37> .
+
+<http://data.doremus.org/expression/dc7e0b98-a6b0-3644-a757-911054c2b445/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "piano solo" .
+
+<http://data.doremus.org/performance/689c0555-d6f4-3ddf-a3d6-de2bdac651c1>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à New York le 22 juillet 1966 dans le cadre d'un festival consacré à Stravinsky et présenté par le New York Philarmonic. Interprété par Caren Glasser alors âgée de 9 ans." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/cc56df23-9740-37f5-a84b-2870246fa656> .
+
+<http://data.doremus.org/work/016754e5-1c37-3b7d-9c27-1482ad21fabd>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/c6da699e-d5b5-38fe-b540-259ce36efe37> .
+
+<http://data.doremus.org/publication/c6da699e-d5b5-38fe-b540-259ce36efe37>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/dc7e0b98-a6b0-3644-a757-911054c2b445> .
+
+<http://data.doremus.org/event/273e12d2-6429-39bc-9aa1-bcc75a9dba93>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/7fec90c3-40d4-3563-a550-4a380a24f76f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/dc7e0b98-a6b0-3644-a757-911054c2b445> .
+
+<http://data.doremus.org/work/7fec90c3-40d4-3563-a550-4a380a24f76f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f900d328-0f37-3ac7-853f-3ead357b7928> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/dc7e0b98-a6b0-3644-a757-911054c2b445> .
+
+<http://data.doremus.org/expression/cc56df23-9740-37f5-a84b-2870246fa656>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/dc7e0b98-a6b0-3644-a757-911054c2b445> .
+
+<http://data.doremus.org/expression/dc7e0b98-a6b0-3644-a757-911054c2b445>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/dc7e0b98-a6b0-3644-a757-911054c2b445/casting/1> ;
+        ecrm:P102_has_title  "Kinderstück" ;
+        ecrm:P3_has_note     "Webern composa cette pièce pour enfants l'année où il mit en pratique la théorie des douze sons de Schönberg. L'oeuvre est basée sur l'élégante série mib, mi, do4, si, sib3, do#, ré4, la, sol#, sol, fa#, fa3. Excepté quand deux sons ou plus sont joués simultanément, ils sont toujours présentés dans leur ordre de départ et peuvent être repérés horizontalement ou verticalement tout au long du morceau. Webern souhaitait au départ composer un cycle entier de morceaux pour de jeunes musiciens mais ne composa finalement que celui-ci." , "Créé à New York le 22 juillet 1966 dans le cadre d'un festival consacré à Stravinsky et présenté par le New York Philarmonic. Interprété par Caren Glasser alors âgée de 9 ans. Editeur : Boosey & Hawkes." .
+
+<http://data.doremus.org/artist/45555885-a129-3c9f-8477-4ff4d9f2eec9>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/893af0f4-3eec-30c0-afc0-4b0a6532027e>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1924" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1924"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/45555885-a129-3c9f-8477-4ff4d9f2eec9>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/dc7e0b98-a6b0-3644-a757-911054c2b445> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f900d328-0f37-3ac7-853f-3ead357b7928> .
+
+<http://data.doremus.org/work/f900d328-0f37-3ac7-853f-3ead357b7928>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/97cf6427-fe20-3a61-bc64-28e3fea6d5d7> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/689c0555-d6f4-3ddf-a3d6-de2bdac651c1> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/dc7e0b98-a6b0-3644-a757-911054c2b445> .

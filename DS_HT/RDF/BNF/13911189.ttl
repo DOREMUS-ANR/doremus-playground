@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/27827342-e016-377f-8e2f-6f7ac874fa1d>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1823/1823"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/2218309c-2a8d-3890-8263-54b91e229d3b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f47d76d2-05b1-3796-85b8-6257a3a4fbf2> .
+
+<http://data.doremus.org/work/f47d76d2-05b1-3796-85b8-6257a3a4fbf2>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/2218309c-2a8d-3890-8263-54b91e229d3b> .
+
+<http://data.doremus.org/event/b61e9729-d916-3f77-a98a-59d8fbcc9936>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/84186d72-6d23-37b9-9eba-ec61091677df> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/2218309c-2a8d-3890-8263-54b91e229d3b> .
+
+<http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/2218309c-2a8d-3890-8263-54b91e229d3b>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/li> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "D" ;
+                  mus:U41_has_catalogue_number  "827" ;
+                  ecrm:P3_has_note              "D 827"
+                ] ;
+        ecrm:P102_has_title  "Nacht und Träume" , "Heil'ge Nacht, du sinkest nieder !" ;
+        ecrm:P3_has_note     "Sur un poème de Matthäus von Collin" , "Existe en deux versions" .
+
+<http://data.doremus.org/work/84186d72-6d23-37b9-9eba-ec61091677df>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f47d76d2-05b1-3796-85b8-6257a3a4fbf2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/2218309c-2a8d-3890-8263-54b91e229d3b> .

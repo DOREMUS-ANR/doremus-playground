@@ -1,0 +1,66 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/4e3c5525-f4c0-3b47-8afe-083bae864ef9>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/9c87feca-c7ec-31d5-b40f-74463e7190bc> .
+
+<http://data.doremus.org/event/1f002c12-010a-346d-8db2-d7d04124f04a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1936" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1936"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/ca2af092-9ea0-378b-b0cc-12f4fdb59068>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/9c87feca-c7ec-31d5-b40f-74463e7190bc> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/9c167e06-d769-3710-bb83-c931b2c79561> .
+
+<http://data.doremus.org/performance/79f99440-cc47-3f4a-b18f-8a06ab897619>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création à Vienne le 21 avril 1967 (premières édition et audition posthumes)" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/4e3c5525-f4c0-3b47-8afe-083bae864ef9> .
+
+<http://data.doremus.org/event/9310be1b-4960-367e-a1e0-c2325500f903>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/98b72296-be58-3af3-bcbe-85586b4a15e7> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/9c87feca-c7ec-31d5-b40f-74463e7190bc> .
+
+<http://data.doremus.org/work/9c167e06-d769-3710-bb83-c931b2c79561>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/79f99440-cc47-3f4a-b18f-8a06ab897619> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/9c87feca-c7ec-31d5-b40f-74463e7190bc> .
+
+<http://data.doremus.org/expression/9c87feca-c7ec-31d5-b40f-74463e7190bc>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "4" ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/9c87feca-c7ec-31d5-b40f-74463e7190bc/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "25" ;
+                                      ecrm:P3_has_note         "Op. 25"
+                                    ] ;
+        ecrm:P102_has_title         "Quatuor à cordes no 4 \"Suite\"" , "String quartet" , "Quatuor à cordes" , "Streichquartett" ;
+        ecrm:P3_has_note            "Hommage direct à la \"Suite lyrique\" d'Alban Berg (mort l'année précédente), l'oeuvre est une suite pour quatuor à cordes en 6 parties. Durée : 25 mn environ" , "Création à Vienne le 21 avril 1967 (premières édition et audition posthumes)" .
+
+<http://data.doremus.org/work/98b72296-be58-3af3-bcbe-85586b4a15e7>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/9c167e06-d769-3710-bb83-c931b2c79561> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/9c87feca-c7ec-31d5-b40f-74463e7190bc> .
+
+<http://data.doremus.org/expression/9c87feca-c7ec-31d5-b40f-74463e7190bc/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 violons, alto, violoncelle" .
+
+<http://data.doremus.org/artist/ca2af092-9ea0-378b-b0cc-12f4fdb59068>
+        a       ecrm:E21_Person .

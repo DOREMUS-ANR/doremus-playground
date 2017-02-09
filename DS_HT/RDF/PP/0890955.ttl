@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/c864e96f-c491-3dc4-882e-2e611849578d>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/4b736a1b-3ece-354a-9c03-e85688e6cdce> .
+
+<http://data.doremus.org/artist/cc89409a-c019-314b-b5f2-d886847f197b>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/4b736a1b-3ece-354a-9c03-e85688e6cdce/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Kunigunde, une sorcière, Sycorax (sopranos) ; Röschen (mezzo-soprano) ; Wohlhaldt, Wagner, Franz, le comte Hugo (ténors) ; Faust, Kaylinger (barytons) ; Mephistophélès, Moor, Messire Gulf (basses). Choeur mixte, orchestre" .
+
+<http://data.doremus.org/expression/4b736a1b-3ece-354a-9c03-e85688e6cdce>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/4b736a1b-3ece-354a-9c03-e85688e6cdce/casting/1> ;
+        ecrm:P102_has_title  "Faust" ;
+        ecrm:P3_has_note     "Opéra romantique (\"Romantische Oper\") en deux actes, sur un livret en allemand de Joseph Karl Bernard. Le librettiste se servit d'oeuvres de Shakespeare et de Kleist, ainsi que des variantes de Faust dans la littérature. L'oeuvre, soutenue par Carl Maria von Weber, eput être qualifiée de premier opéra romantique allemand. En 1852, Spohr révisa la partition à la demande de la reine Victoria, pour qu'elle put être jouée comme \"grand opéra\" au Covent Garden (dialogues raccourcis, passage de 2 à 3 actes séparés par des intermèdes musicaux." , "Créé le 1er septembre 1816 à Prague, Théâtre Estates. Création de la version révisée en 3 actes à Londres, Covent Garden. Edité en 1822 à Leipzig" .
+
+<http://data.doremus.org/work/4989a1b5-6bc5-3787-97ba-eb85a24af823>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/a9ebc3d4-6466-3958-b428-f5cc1f621474> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/4b736a1b-3ece-354a-9c03-e85688e6cdce> .
+
+<http://data.doremus.org/event/c4bd9292-01c5-346d-9881-8638bd06d183>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/4989a1b5-6bc5-3787-97ba-eb85a24af823> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/4b736a1b-3ece-354a-9c03-e85688e6cdce> .
+
+<http://data.doremus.org/work/a9ebc3d4-6466-3958-b428-f5cc1f621474>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/e0549525-9ba5-3beb-b22e-9da04c3441f4> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/4b736a1b-3ece-354a-9c03-e85688e6cdce> .
+
+<http://data.doremus.org/performance/e0549525-9ba5-3beb-b22e-9da04c3441f4>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé le 1er septembre 1816 à Prague, Théâtre Estates. Création de la version révisée en 3 actes à Londres, Covent Garden. Edité en 1822 à Leipzig" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/c864e96f-c491-3dc4-882e-2e611849578d> .
+
+<http://data.doremus.org/event/a46cc086-d747-33fe-8e58-b6365832bf29>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1813 - version révisée : 1852" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1813"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/cc89409a-c019-314b-b5f2-d886847f197b>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/4b736a1b-3ece-354a-9c03-e85688e6cdce> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a9ebc3d4-6466-3958-b428-f5cc1f621474> .

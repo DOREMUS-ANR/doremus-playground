@@ -1,0 +1,54 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/6b7c6fde-3573-3545-99de-21437c56f7a0>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/95d42c6d-649e-3177-8bc6-8132f9793191> .
+
+<http://data.doremus.org/expression/95d42c6d-649e-3177-8bc6-8132f9793191/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Violon, deux altos et basse continue" .
+
+<http://data.doremus.org/artist/386b3237-3cdd-36ac-9c67-32cd2687893b>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/4bdce472-435b-33b7-a584-88c782098027>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/6b7c6fde-3573-3545-99de-21437c56f7a0> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/95d42c6d-649e-3177-8bc6-8132f9793191> .
+
+<http://data.doremus.org/expression/95d42c6d-649e-3177-8bc6-8132f9793191>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/bb> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/95d42c6d-649e-3177-8bc6-8132f9793191/casting/1> ;
+        ecrm:P102_has_title  "Lamento" , "lamentos" .
+
+<http://data.doremus.org/event/3b71bc13-3278-3466-949d-c4a91c5315fa>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "17 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "18e siècle" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1700/1799"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/386b3237-3cdd-36ac-9c67-32cd2687893b>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/95d42c6d-649e-3177-8bc6-8132f9793191> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/6b7c6fde-3573-3545-99de-21437c56f7a0> .
+
+<http://data.doremus.org/event/654894e4-039e-3c68-bb2e-aa555288f4a1>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/4bdce472-435b-33b7-a584-88c782098027> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/95d42c6d-649e-3177-8bc6-8132f9793191> .

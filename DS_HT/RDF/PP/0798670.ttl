@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/927c28b2-df75-3851-9a1d-26c11b83d0bc>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/3e4ed395-17dc-3ef1-86ae-bb08350d59a8> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/9e6b9e45-77af-3802-8265-b117ded833be> .
+
+<http://data.doremus.org/event/58e32bda-2ea5-3fee-a5e3-27471a3f2cbf>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/927c28b2-df75-3851-9a1d-26c11b83d0bc> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/9e6b9e45-77af-3802-8265-b117ded833be> .
+
+<http://data.doremus.org/event/141347ee-be63-3fe2-8e59-441f690ea8ee>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1843" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1843"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/f8141387-55b2-378e-a7d1-d83a27c80308>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/9e6b9e45-77af-3802-8265-b117ded833be> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3e4ed395-17dc-3ef1-86ae-bb08350d59a8> .
+
+<http://data.doremus.org/expression/3b394a86-2ff8-3cc8-8ce1-79933cd2b2e3>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/9e6b9e45-77af-3802-8265-b117ded833be> .
+
+<http://data.doremus.org/performance/ff424122-39d9-34be-834a-b8a40bfb9949>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1ère représentation française : Paris, Théâtre des Italiens, 3 janvier 1843, avec Giulia Grisi (Norina), Luigi Lablache (Don Pasquale), Giovanni Matteo Mario (Ernesto) et Antonio Tamburini (Malatesta)" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/3b394a86-2ff8-3cc8-8ce1-79933cd2b2e3> .
+
+<http://data.doremus.org/artist/f8141387-55b2-378e-a7d1-d83a27c80308>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/3e4ed395-17dc-3ef1-86ae-bb08350d59a8>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/ff424122-39d9-34be-834a-b8a40bfb9949> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/9e6b9e45-77af-3802-8265-b117ded833be> .
+
+<http://data.doremus.org/expression/9e6b9e45-77af-3802-8265-b117ded833be/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Norina (soprano) ; Ernesto (ténor) ; Dr Malatesta (baryton) ; Don Pasquale, le notaire (basses). Choeur mixte, orchestre" .
+
+<http://data.doremus.org/expression/9e6b9e45-77af-3802-8265-b117ded833be>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "opera bouffe"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/9e6b9e45-77af-3802-8265-b117ded833be/casting/1> ;
+        ecrm:P102_has_title  "Don Pasquale" ;
+        ecrm:P3_has_note     "Opéra-bouffe (\"dramma buffo\") en 3 actes, sur un livret de G. Ruffini et Donizetti d'après celui de \"Ser Marcantonio\" de Stefano Pavesi (1810). L'oeuvre fut, dès sa création par un quatuor de \"stars\" du chant, un immense succès : le caractère \"mozartien\" des personnages, l'originalité de l'écriture, le mélange d'humour, de virtuosité et de tendresse qui caractérisent l'oeuvre en font un des opéras bouffes les plus réussis du répertoire romantique." , "1ère représentation française : Paris, Théâtre des Italiens, 3 janvier 1843, avec Giulia Grisi (Norina), Luigi Lablache (Don Pasquale), Giovanni Matteo Mario (Ernesto) et Antonio Tamburini (Malatesta)" .

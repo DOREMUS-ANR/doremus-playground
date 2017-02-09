@@ -1,0 +1,64 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/60a62d99-51fd-3b0b-ac92-a6c617f5d68b>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/60a62d99-51fd-3b0b-ac92-a6c617f5d68b/casting/1> ;
+        ecrm:P102_has_title  "Dark Side" ;
+        ecrm:P3_has_note     "Commande de l'Ensemble Intercontemporain. Note de l'auteur : \"Il s'agit d'une hallucination au présent, comme si Clytemnestre, vieille de trois mille ans, ressassait encore, d'une façon désordonnée, son désir amoureux partagé, son attente interminable, sa volonté de vengeance, le meurtre de son mari : l'ambivalence entre l'amour et la haine. (...) C'est la construction musicale qui m'a dicté la dramaturgie de cette sorte de cauchemar.\" Les textes sont extraits de l\"Orestie\" d'Eschyle traduits et adaptés par François Regnault." , "créée le 15 mars 2004 à Athènes, Magaron, par Marianne Pousseur, mezzo-soprano et l'Ensemble Intercontemporain sous la direction de Jonathan Nott." .
+
+<http://data.doremus.org/performance/bc57f249-0165-3a18-95ad-13607e2980c6>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "créée le 15 mars 2004 à Athènes, Magaron, par Marianne Pousseur, mezzo-soprano et l'Ensemble Intercontemporain sous la direction de Jonathan Nott." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/4ae5acca-b67b-3fcb-ac88-e52200590f3a> .
+
+<http://data.doremus.org/work/9af122d4-9ba9-3fce-9010-a0f4b6064832>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/a0ded8f0-2264-3a61-93b2-2cdf6191c55d> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/60a62d99-51fd-3b0b-ac92-a6c617f5d68b> .
+
+<http://data.doremus.org/work/a0ded8f0-2264-3a61-93b2-2cdf6191c55d>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/bc57f249-0165-3a18-95ad-13607e2980c6> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/60a62d99-51fd-3b0b-ac92-a6c617f5d68b> .
+
+<http://data.doremus.org/expression/60a62d99-51fd-3b0b-ac92-a6c617f5d68b/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Mezzo-soprano solo, 2 flutes/2 piccolos, 2 cors anglais/2 hautbois, 2 clarinettes, 2 bassons, 2 cors, trompette, tuba, 3 percussions, piano, 3 violons, 2 altos, 2 violoncelles, contrebasse" .
+
+<http://data.doremus.org/event/9b0cb786-6a63-31a0-82d1-8d8d42b4c3b4>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/9af122d4-9ba9-3fce-9010-a0f4b6064832> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/60a62d99-51fd-3b0b-ac92-a6c617f5d68b> .
+
+<http://data.doremus.org/artist/b592baeb-f5d3-3f23-bc96-bac2a8940ce7>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/4ae5acca-b67b-3fcb-ac88-e52200590f3a>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/60a62d99-51fd-3b0b-ac92-a6c617f5d68b> .
+
+<http://data.doremus.org/event/b7787a1b-8b2a-31aa-a996-676119a2fe35>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "21 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "2004" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "2004"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b592baeb-f5d3-3f23-bc96-bac2a8940ce7>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/60a62d99-51fd-3b0b-ac92-a6c617f5d68b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a0ded8f0-2264-3a61-93b2-2cdf6191c55d> .

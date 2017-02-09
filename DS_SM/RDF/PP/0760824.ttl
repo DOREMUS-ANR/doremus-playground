@@ -1,0 +1,82 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/fa01d7ad-7e28-332d-93be-d684cda5dce0>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Editeur : Universal Edition." ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a5520972-ffd1-3414-9198-8e4705ce239f> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/2a64bcaf-dab8-3a2a-8d4c-8e91ee141491> .
+
+<http://data.doremus.org/performance/f3a06148-dfe8-3a65-b4f2-5da5fd0a9cf0>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "28 avril 2002 à Witten par le dédicataire, Rohan de Saram." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/b6fe7126-9063-384a-bf66-f75f604469ed> .
+
+<http://data.doremus.org/publication/2a64bcaf-dab8-3a2a-8d4c-8e91ee141491>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447> .
+
+<http://data.doremus.org/event/30d2f809-5151-3ab1-8775-a3bab50071d4>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c6ae4b41-d893-3497-8999-7bfbb6409f04> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/a5520972-ffd1-3414-9198-8e4705ce239f>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/2a64bcaf-dab8-3a2a-8d4c-8e91ee141491> .
+
+<http://data.doremus.org/work/32435cab-6018-35f8-ba1b-c4d05ba531a1>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/fa01d7ad-7e28-332d-93be-d684cda5dce0> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f3a06148-dfe8-3a65-b4f2-5da5fd0a9cf0> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447> .
+
+<http://data.doremus.org/work/c6ae4b41-d893-3497-8999-7bfbb6409f04>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/32435cab-6018-35f8-ba1b-c4d05ba531a1> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447> .
+
+<http://data.doremus.org/event/7722a3a0-73be-3355-a4a3-c8efce3c38e7>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "21 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "2002." ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "2002"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/32435cab-6018-35f8-ba1b-c4d05ba531a1> .
+
+<http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/musique_de_chambre> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447/casting/1> ;
+        ecrm:P102_has_title  "Sequenza XIV" , "Sequenza XIV pour violoncelle" , "Sequenza 14" , "Quatorzième Sequenza" ;
+        ecrm:P3_has_note     "28 avril 2002 à Witten par le dédicataire, Rohan de Saram. Editeur : Universal Edition." , "La Sequenza XIV fut en partie inspirée à Berio par l'intérêt qu'il portait aux rythmes des percussions de Kandy, l'ancienne capitale de l'actuel Sri Lanka, notamment le tambour de Kandy ayant pour particularité de produire quatre sons différents, deux par face. Dans cette Sequenza Berio utilise, de manière assez libre, un rythme à douze temps, ajoutant ou retranchant un temps selon l'épisode. Les parties rythmiques de la pièce développent leur cadence avec un motif toujours renouvelé au moyen de frappes, en général simultanées, des doigts de la main gauche sur les cordes et de la main droite sur la caisse du violoncelle, sans utilisation de l'archet. Commande du WDR Cologne, Fondation Calouste Gulbenkian Lisbonne, Societa del Quartetto di Milano. Dédiée à Rohan de Saram. Une adaptation pour contrebasse de la Sequenza XIV a été créée par Stefanio Scodanibbio en 2004 sous le nom de Sequenza XIVb. Cette dernière fut jouée pour la première fois le 15 juin 2004 à Stuttgart par Stefanio Scodanibbio. Elle est éditée chez Universal Edition et dure environ 13 minutes." .
+
+<http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/diabolo/mop/violoncelle> .
+
+<http://data.doremus.org/expression/b6fe7126-9063-384a-bf66-f75f604469ed>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447> .

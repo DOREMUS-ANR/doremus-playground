@@ -1,0 +1,61 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/ba8020be-9434-3bf3-9c14-5aa282a0379e>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/67c19825-557b-3425-9a38-bb15c3d32f5e>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée le 9 avril 1926 à Philadelphie, sous la direction de Stokowski, avec 142 exécutants, la version définitive réduite en temps et en effectif, pour grand orchestre symphonique, sera présentée à Paris en 1929, sous la direction de Gaston Poulet." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/5d231eb1-08f4-326a-b1d0-908e72ea72e2> .
+
+<http://data.doremus.org/event/f4507f7f-6087-3ef6-bc0b-5bf0ca84ec24>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1918-1921, puis version définitive en 1927-1929" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1918/1921"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/ba8020be-9434-3bf3-9c14-5aa282a0379e>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/328b9d20-7c0b-3664-b192-61e001d3243e> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/6f58ee11-2505-395e-ac77-c880ce9130e3> .
+
+<http://data.doremus.org/expression/5d231eb1-08f4-326a-b1d0-908e72ea72e2>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/328b9d20-7c0b-3664-b192-61e001d3243e> .
+
+<http://data.doremus.org/event/4b7f746a-9c50-3b6d-a705-1186df98f046>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b9acc05f-7b32-3195-898b-36ff9b080f3e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/328b9d20-7c0b-3664-b192-61e001d3243e> .
+
+<http://data.doremus.org/expression/328b9d20-7c0b-3664-b192-61e001d3243e>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/328b9d20-7c0b-3664-b192-61e001d3243e/casting/1> ;
+        ecrm:P102_has_title  "Amériques" , "Ameriques" ;
+        ecrm:P3_has_note     "Première oeuvre conservée par le compositeur, Amériques est aussi son oeuvre de la plus vaste envergure, avec de violentes explosions orchestrales, hormis un passage central presque impressionniste (trace de l'inflence de Debussy sur le jeune compositeur). Varèse a écrit sur cette oeuvre : \"Des arrêts subits, des intensités brusquement coupées, des crescendos et diminuendos extrêmement rapides...\" mais ceci ne veut pas illustrer les bruits du monde moderne, comme l'ont noté des critiques. Varèse s'explique : \"Je ne considérais pas le titre 'Amériques' comme purement géographique mais comme symbolique des découvertes de nouveaux mondes sur la terre, dans l'espace ou encore dans l'esprit des hommes [...] Le thème est une méditation, c'est l'impression d'un étranger qui s'interroge sur les possibilités extraordinaires de notre nouvelle civilisation.\" Dédicace : \"Aux amis inconnus du printemps de 1921\"" , "Créée le 9 avril 1926 à Philadelphie, sous la direction de Stokowski, avec 142 exécutants, la version définitive réduite en temps et en effectif, pour grand orchestre symphonique, sera présentée à Paris en 1929, sous la direction de Gaston Poulet." .
+
+<http://data.doremus.org/work/6f58ee11-2505-395e-ac77-c880ce9130e3>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/67c19825-557b-3425-9a38-bb15c3d32f5e> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/328b9d20-7c0b-3664-b192-61e001d3243e> .
+
+<http://data.doremus.org/work/b9acc05f-7b32-3195-898b-36ff9b080f3e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/6f58ee11-2505-395e-ac77-c880ce9130e3> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/328b9d20-7c0b-3664-b192-61e001d3243e> .
+
+<http://data.doremus.org/expression/328b9d20-7c0b-3664-b192-61e001d3243e/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Grand orchestre symphonique : les bois par 5, 8 cors, 6 trpttes, 5 trb, 2 tubas, 2 harpes, le quintette à cordes, très abondantes percussions (9 exécutants), 1 sirène." .

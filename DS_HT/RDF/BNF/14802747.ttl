@@ -1,0 +1,58 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/936b1d58-9488-3754-89ee-b5f687d63ad4>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/533b2dca-e78c-39aa-b6ef-62321ce1bc58>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/0c63c9ff-a93f-3f9a-a8a3-43faefa7a2d4> .
+
+<http://data.doremus.org/work/99df3f32-07f1-3b35-81d6-a7bb362e845e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/1f037a85-6d97-30e9-a268-3edc5207c6a4> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f01ca101-8f9f-39f3-a8b9-1eb2c2e881a5> .
+
+<http://data.doremus.org/event/c5adf42f-98dd-3e52-8639-e7ce3d8acac6>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/99df3f32-07f1-3b35-81d6-a7bb362e845e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f01ca101-8f9f-39f3-a8b9-1eb2c2e881a5> .
+
+<http://data.doremus.org/work/1f037a85-6d97-30e9-a268-3edc5207c6a4>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/fa7838cc-8347-3626-9846-d2fdc3f134a2> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f01ca101-8f9f-39f3-a8b9-1eb2c2e881a5> .
+
+<http://data.doremus.org/event/fa7838cc-8347-3626-9846-d2fdc3f134a2>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Porte le no 2 dans l'éd. de R. Blanchard (Paris : coll. \"Le Pupitre\", Heugel, 1970)" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/533b2dca-e78c-39aa-b6ef-62321ce1bc58> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/0c63c9ff-a93f-3f9a-a8a3-43faefa7a2d4> .
+
+<http://data.doremus.org/publication/0c63c9ff-a93f-3f9a-a8a3-43faefa7a2d4>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f01ca101-8f9f-39f3-a8b9-1eb2c2e881a5> .
+
+<http://data.doremus.org/event/f3ecf7a3-658c-3479-af88-4e3410545d75>
+        a                    efrbroo:F28_Expression_Creation ;
+        ecrm:P9_consists_of  [ a                             ecrm:E7_Activity ;
+                               mus:U31_had_function_of_type  "compositeur"@fr ;
+                               ecrm:P14_carried_out_by       <http://data.doremus.org/artist/936b1d58-9488-3754-89ee-b5f687d63ad4>
+                             ] ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/f01ca101-8f9f-39f3-a8b9-1eb2c2e881a5> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/1f037a85-6d97-30e9-a268-3edc5207c6a4> .
+
+<http://data.doremus.org/expression/f01ca101-8f9f-39f3-a8b9-1eb2c2e881a5>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "2" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/gm> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        ecrm:P102_has_title       "Concerto a quattro" .

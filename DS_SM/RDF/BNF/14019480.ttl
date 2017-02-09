@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/19a4d015-5458-3a89-8a8f-6fd092c13ad0>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/83a29bbb-9709-3899-9f97-f39eab38253a> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/181114be-6867-3ff5-b9ab-e3fe0ec239c1> .
+
+<http://data.doremus.org/performance/83a29bbb-9709-3899-9f97-f39eab38253a>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1995" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/a78cf86a-a532-36e8-9889-027c29c659c9> .
+
+<http://data.doremus.org/work/fb7928e2-b7df-3db9-97d7-8f3b9f2a6d81>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/19a4d015-5458-3a89-8a8f-6fd092c13ad0> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/181114be-6867-3ff5-b9ab-e3fe0ec239c1> .
+
+<http://data.doremus.org/event/f3d27ec4-b180-3666-99ac-34c0dcdc5213>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/fb7928e2-b7df-3db9-97d7-8f3b9f2a6d81> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/181114be-6867-3ff5-b9ab-e3fe0ec239c1> .
+
+<http://data.doremus.org/event/4f7f818a-4234-31b1-9e54-d9b931bf6454>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/a78cf86a-a532-36e8-9889-027c29c659c9> .
+
+<http://data.doremus.org/expression/181114be-6867-3ff5-b9ab-e3fe0ec239c1>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "Sequenza XIII" ;
+        ecrm:P3_has_note     "Créé par Teodoro Anzelotti" .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/1cd168a9-2543-3340-a7ca-c629437eae14>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1995/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/181114be-6867-3ff5-b9ab-e3fe0ec239c1> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/19a4d015-5458-3a89-8a8f-6fd092c13ad0> .
+
+<http://data.doremus.org/expression/a78cf86a-a532-36e8-9889-027c29c659c9>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/181114be-6867-3ff5-b9ab-e3fe0ec239c1> .

@@ -1,0 +1,68 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/5d768c60-22dd-3c97-bd1b-c48f984709bd>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/41a53899-040e-388c-82df-93c039d51de0> .
+
+<http://data.doremus.org/event/453ab2ac-887d-30a4-86d1-87f05134fbfe>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1913/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/e5fe318d-d963-3bcf-8de8-5b155924dd71>
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/fe19c161-a183-3038-ae85-ad9dff215ff3>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/41a53899-040e-388c-82df-93c039d51de0> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/654ad0f8-cfc3-3609-abbb-6c3d7d30e43b> .
+
+<http://data.doremus.org/event/7af10b7f-23fb-372d-b714-db961a0aaaf2>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/d6693ce5-ca00-3c5b-b3d8-8f333050eff9> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/41a53899-040e-388c-82df-93c039d51de0> .
+
+<http://data.doremus.org/artist/fe19c161-a183-3038-ae85-ad9dff215ff3>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/d6693ce5-ca00-3c5b-b3d8-8f333050eff9>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/654ad0f8-cfc3-3609-abbb-6c3d7d30e43b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/41a53899-040e-388c-82df-93c039d51de0> .
+
+<http://data.doremus.org/work/654ad0f8-cfc3-3609-abbb-6c3d7d30e43b>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/4e8810f5-4d7b-30e8-9b07-29884e06b9c5> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/41a53899-040e-388c-82df-93c039d51de0> .
+
+<http://data.doremus.org/expression/41a53899-040e-388c-82df-93c039d51de0>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/ch> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "35" ;
+                                      ecrm:P3_has_note         "Op. 35"
+                                    ] ;
+        ecrm:P102_has_title         "The bells" , "Les cloches" , "Kolokola" ;
+        ecrm:P3_has_note            "Poème de Bal'mont d'après Poe" .
+
+<http://data.doremus.org/performance/4e8810f5-4d7b-30e8-9b07-29884e06b9c5>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1913-11-.." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/5d768c60-22dd-3c97-bd1b-c48f984709bd> .
+
+<http://data.doremus.org/event/7b2867fc-1774-377c-879e-6de75ebc4f0a>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/5d768c60-22dd-3c97-bd1b-c48f984709bd> .
+
+<http://data.doremus.org/artist/e5fe318d-d963-3bcf-8de8-5b155924dd71>
+        a       ecrm:E21_Person .

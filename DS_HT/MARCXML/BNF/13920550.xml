@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="13920550" format="InterXMarc_Complet" type="Authority">
+<leader>01261c0 au22000272  45  <Pos Code="0004">01261</Pos>
+<Pos Code="05" Sens="notice modifiée">c</Pos>
+<Pos Code="06" Sens="notice validée par les services d&apos;autorité">0</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="17" Sens="autres cas">2</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF139205508<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">13920550</Pos>
+<Pos Code="13">8</Pos>
+</controlfield>
+<controlfield tag="008">890821131007yyita op        1859                             010 <Pos Code="0001">89</Pos>
+<Pos Code="0203">08</Pos>
+<Pos Code="0405">21</Pos>
+<Pos Code="0607">13</Pos>
+<Pos Code="0809">10</Pos>
+<Pos Code="1011">07</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1416" Sens="italien">ita</Pos>
+<Pos Code="1820" Sens="opéra [drame lyrique => opéra, melodramma => opéra]">op </Pos>
+<Pos Code="2831">1859</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique pour les accès signalétiques et/ou pour l&apos;accès matière RAMEAU">0</Pos>
+<Pos Code="62" Sens="La vedette ne peut s&apos;employer qu&apos;en tête de vedette">1</Pos>
+<Pos Code="63" Sens="La vedette n&apos;admet pas de subdivision géographique">0</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="b">va02<Pos Code="0001" Sens="voix - soprano">va</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="b">vc01<Pos Code="0001" Sens="voix - alto">vc</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="b">vd02<Pos Code="0001" Sens="voix - ténor">vd</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">2</Pos>
+</subfield>
+	<subfield code="b">ve01<Pos Code="0001" Sens="voix - baryton">ve</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="b">vf03<Pos Code="0001" Sens="voix - basse">vf</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">3</Pos>
+</subfield>
+	<subfield code="a">ca01<Pos Code="0001" Sens="choeurs - mixte (4 voix SATB)">ca</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+	<subfield code="a">oa01<Pos Code="0001" Sens="orchestre - orchestre symphonique XIXe-XXe s.">oa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13900805</subfield>
+	<subfield code="w"> 0  b     </subfield>
+	<subfield code="a">Verdi</subfield>
+	<subfield code="m">Giuseppe</subfield>
+	<subfield code="d">1813-1901</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.ita.</subfield>
+	<subfield code="a" Barre="3">Un ballo in maschera</subfield>
+</datafield>
+<datafield tag="302" ind1=" " ind2=" ">
+	<subfield code="3">14014215</subfield>
+	<subfield code="a">Verdi</subfield>
+	<subfield code="m">Giuseppe</subfield>
+	<subfield code="d">1813-1901</subfield>
+	<subfield code="t" Barre="4">[Un ballo in maschera. Ouverture]</subfield>
+</datafield>
+<datafield tag="322" ind1="6" ind2=" ">
+	<subfield code="3">13335597</subfield>
+	<subfield code="9">100</subfield>
+	<subfield code="w">.0 .b.....</subfield>
+	<subfield code="a">Somma</subfield>
+	<subfield code="m">Antonio</subfield>
+	<subfield code="d">1809-1865</subfield>
+</datafield>
+<datafield tag="444" ind1="1" ind2=" ">
+	<subfield code="w">....b.fre.</subfield>
+	<subfield code="a" Barre="3">Un bal masqué</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Melodramma en 3 actes</subfield>
+	<subfield code="a">Livret d&apos;Antonio Somma, inspiré du livret d&apos;Eugène Scribe &quot;Gustave III ou Le bal masqué&quot; écrit pour Auber</subfield>
+	<subfield code="a">Titre d&apos;origine : &quot;La vendetta in domino&quot;</subfield>
+	<subfield code="a">1re représentation : Rome, Teatro Apollo, 17 février 1859</subfield>
+	<subfield code="a">1re représentation en France : Paris, Théâtre-Italien, 13 janvier 1861</subfield>
+</datafield>
+<datafield tag="608" ind1=" " ind2=" ">
+	<subfield code="b">Amelia, Oscar (sopranos)</subfield>
+	<subfield code="b">Ulrica (alto)</subfield>
+	<subfield code="b">Riccardo = Gustave III, le juge (ténors)</subfield>
+	<subfield code="b">Renato = Anckarström (baryton)</subfield>
+	<subfield code="b">Samuel = comte Ribbing, Tom = comte Horn, Silvano = Christian (basses)</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove opera</subfield>
+	<subfield code="u">http://www.oxfordmusiconline.com</subfield>
+	<subfield code="d">2011-10-27</subfield>
+	<subfield code="a">Dictionnaire des oeuvres de l&apos;art vocal</subfield>
+</datafield>
+<datafield tag="624" ind1=" " ind2=" ">
+	<subfield code="a">780<Pos Code="0002" Sens="Musique">780</Pos>
+</subfield>
+</datafield>
+<datafield tag="907" ind1=" " ind2=" ">
+	<subfield code="o">GEA</subfield>
+	<subfield code="a">007899945</subfield>
+</datafield>
+<datafield tag="909" ind1=" " ind2=" ">
+	<subfield code="a">Numérotation Hopkinson non conservée (H 59)</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPL</subfield>
+	<subfield code="a">013735733</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPC</subfield>
+	<subfield code="a">100506020</subfield>
+</datafield>
+<datafield tag="917" ind1=" " ind2=" ">
+	<subfield code="o">OPD</subfield>
+	<subfield code="a">100148340</subfield>
+	<subfield code="b">ATUM</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">14792052</subfield>
+	<subfield code="d">20111027</subfield>
+</datafield>
+<datafield tag="996" ind1=" " ind2=" ">
+	<subfield code="o">OPP</subfield>
+	<subfield code="a">16306023</subfield>
+	<subfield code="d">20131007</subfield>
+</datafield>
+<Alter Ori="13900805">
+<datafield tag="400" ind1=" " ind2=" ">
+	<subfield code="w">    b     </subfield>
+	<subfield code="a">Verdi</subfield>
+	<subfield code="m">J.</subfield>
+	<subfield code="d">1813-1901</subfield>
+</datafield>
+</Alter>
+<Attr Nom="IDPerenne">ark:/12148/cb13920550g</Attr>
+<Attr Nom="NumSource">GEA 007899945</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">139008051401421513335597</Attr>
+<Attr Nom="DateCreation">21/08/ 1989</Attr>
+<Attr Nom="ResponsableCreation">MIGV2</Attr>
+<Attr Nom="StructCreation">1</Attr>
+<Attr Nom="DateDerniereValidation">07/10/ 2013</Attr>
+<Attr Nom="ResponsableDerniereValidation">SERRES CATHERINE</Attr>
+<Attr Nom="StructPremiereValidation">1</Attr>
+<Attr Nom="DatePremiereValidation">21/08/ 1989</Attr>
+<Attr Nom="ResponsablePremiereValidation">MIGV2</Attr>
+<Attr Nom="StructDerniereValidation">82</Attr>
+<Attr Nom="NumSource" Rep="1">OPL 013735733</Attr>
+<Attr Nom="NumSource" Rep="2">OPC 100506020</Attr>
+<Attr Nom="NumSource" Rep="3">OPD 100148340</Attr>
+<Attr Nom="NumSource" Rep="4">OPP 14792052</Attr>
+<Attr Nom="NumSource" Rep="5">OPP 16306023</Attr>
+</record>

@@ -1,0 +1,59 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/ddc55346-93f8-3725-a949-a2b48a4dd623>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/78a9dd20-2f59-32b3-bf72-6f9e82394a8c> .
+
+<http://data.doremus.org/event/860e28dd-8277-339e-8154-357db0f0ddd9>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1828" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1828"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/29cfd554-738c-3e40-a19f-8683ad2682f8>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/78a9dd20-2f59-32b3-bf72-6f9e82394a8c> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/ddc55346-93f8-3725-a949-a2b48a4dd623> .
+
+<http://data.doremus.org/expression/78a9dd20-2f59-32b3-bf72-6f9e82394a8c/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/expression/78a9dd20-2f59-32b3-bf72-6f9e82394a8c>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/e> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/78a9dd20-2f59-32b3-bf72-6f9e82394a8c/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "MWV" ;
+                  mus:U41_has_catalogue_number  "U" ;
+                  ecrm:P3_has_note              "MWV U 67"
+                ] ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "14" ;
+                                      ecrm:P3_has_note         "Op.14"
+                                    ] ;
+        ecrm:P102_has_title         "Rondo capriccioso" ;
+        ecrm:P3_has_note            "Cette pièce célèbre reflète la virtuosité pianistique de l'auteur" .
+
+<http://data.doremus.org/event/9d6b70fa-642c-314c-9a85-42ac01a24274>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/7f692cc2-a615-379a-b333-52a289600feb> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/78a9dd20-2f59-32b3-bf72-6f9e82394a8c> .
+
+<http://data.doremus.org/work/7f692cc2-a615-379a-b333-52a289600feb>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/ddc55346-93f8-3725-a949-a2b48a4dd623> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/78a9dd20-2f59-32b3-bf72-6f9e82394a8c> .
+
+<http://data.doremus.org/artist/29cfd554-738c-3e40-a19f-8683ad2682f8>
+        a       ecrm:E21_Person .

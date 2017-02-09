@@ -1,0 +1,71 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/bc3353d6-7a66-3ea8-a081-f9a6ba38f312>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/cantate_profane> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/bc3353d6-7a66-3ea8-a081-f9a6ba38f312/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "HWV" ;
+                  mus:U41_has_catalogue_number  "72" ;
+                  ecrm:P3_has_note              "HWV 72"
+                ] ;
+        ecrm:P102_has_title  "Acis, Galatée et Polyphème" , "Aci, Galatea e Polifemo" ;
+        ecrm:P3_has_note     "Probablement créé à Naples le 16 juin 1708, pour le mariage du duc d'Alvito" , "Cantate sur un livret en italien de Nicola Giuvo, inspiré des \"Métamorphoses\" d'Ovide. Cette oeuvre de grandes dimensions, très virtuose, et composée dix ans avant le masque \"Acis et Galatée\" en anglais, en diffère entièrement. Durée : environ 1 h 30" .
+
+<http://data.doremus.org/work/b08cf8ad-515b-3241-97f6-132498f7192b>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/1818c4ef-9edf-3364-8a8c-e663cecb738f> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/bc3353d6-7a66-3ea8-a081-f9a6ba38f312> .
+
+<http://data.doremus.org/artist/00daf19d-1bc9-3e29-874a-7fa88eac1f33>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/9a97ad88-9751-30dc-8d0e-83e0362f2665>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/bc3353d6-7a66-3ea8-a081-f9a6ba38f312> .
+
+<http://data.doremus.org/work/4f47a0e7-ffcd-3d8b-9325-e185a27c7f1f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/b08cf8ad-515b-3241-97f6-132498f7192b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/bc3353d6-7a66-3ea8-a081-f9a6ba38f312> .
+
+<http://data.doremus.org/event/1c25aabc-eedb-3b14-9580-2dc41dec703a>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/4f47a0e7-ffcd-3d8b-9325-e185a27c7f1f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/bc3353d6-7a66-3ea8-a081-f9a6ba38f312> .
+
+<http://data.doremus.org/event/e796dfe1-ff7b-315d-93c0-876cb24da636>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1708" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1708"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/00daf19d-1bc9-3e29-874a-7fa88eac1f33>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/bc3353d6-7a66-3ea8-a081-f9a6ba38f312> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/b08cf8ad-515b-3241-97f6-132498f7192b> .
+
+<http://data.doremus.org/performance/1818c4ef-9edf-3364-8a8c-e663cecb738f>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Probablement créé à Naples le 16 juin 1708, pour le mariage du duc d'Alvito" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/9a97ad88-9751-30dc-8d0e-83e0362f2665> .
+
+<http://data.doremus.org/expression/bc3353d6-7a66-3ea8-a081-f9a6ba38f312/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Acis (soprano), Galatée (contralto), Polyphème (baryton). Orchestre" .

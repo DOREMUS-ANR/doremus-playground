@@ -1,0 +1,47 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/13db7cc6-cac3-3582-88a9-6b7a343f69e0>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/0e24302a-3b2b-312b-83e7-afda5fbcd920> .
+
+<http://data.doremus.org/expression/0e24302a-3b2b-312b-83e7-afda5fbcd920>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/mld> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "19" ;
+                                      ecrm:P3_has_note         "Op. 19"
+                                    ] ;
+        ecrm:P102_has_title         "Scènes d'un roman" , "Sceny iz romana" ;
+        ecrm:P3_has_note            "15 chants d'après des poèmes de Rimma Dalos" , "1981-82 (comp)" .
+
+<http://data.doremus.org/event/0c4a7e0c-feac-3734-91b9-c85741c8e235>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/3d76af6e-ecf1-3fcd-b440-7d436e5e1fe6> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/0e24302a-3b2b-312b-83e7-afda5fbcd920> .
+
+<http://data.doremus.org/artist/7a383592-abe4-3618-93e1-75ffc18d5e3e>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/3d76af6e-ecf1-3fcd-b440-7d436e5e1fe6>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/13db7cc6-cac3-3582-88a9-6b7a343f69e0> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/0e24302a-3b2b-312b-83e7-afda5fbcd920> .
+
+<http://data.doremus.org/event/5507399a-8548-3a36-a327-b2dfe9e7a31a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "0000/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7a383592-abe4-3618-93e1-75ffc18d5e3e>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/0e24302a-3b2b-312b-83e7-afda5fbcd920> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/13db7cc6-cac3-3582-88a9-6b7a343f69e0> .

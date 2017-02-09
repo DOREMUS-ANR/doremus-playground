@@ -1,0 +1,84 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/f827686c-c3ae-3972-b314-cf6e7fb49dd8>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/ov> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "62" ;
+                                      ecrm:P3_has_note         "Op. 62"
+                                    ] ;
+        ecrm:P102_has_title         "Ouverture zu Coriolan" , "Ouverture de Coriolan" , "Coriolan" ;
+        ecrm:P3_has_note            "Ouverture composée pour la tragédie \"Coriolan\" de Heinrich Joseph von Collin" ;
+        ecrm:P67_refers_to          <http://data.doremus.org/expression/f827686c-c3ae-3972-b314-cf6e7fb49dd8/dedication> .
+
+<http://data.doremus.org/publication/fb06e281-0f35-364c-8576-37b7bfa91684>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f827686c-c3ae-3972-b314-cf6e7fb49dd8> .
+
+<http://data.doremus.org/expression/f827686c-c3ae-3972-b314-cf6e7fb49dd8/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace au poète"@fr .
+
+<http://data.doremus.org/event/1af774db-bb3c-30c1-81d0-995f7a18a545>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/ab6075ba-f3d9-311d-a295-9b3aa081bb8b> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f827686c-c3ae-3972-b314-cf6e7fb49dd8> .
+
+<http://data.doremus.org/event/798057e5-b210-3384-bc87-d890b8d4c395>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/df308b59-7f14-35b0-a7a7-fc01621695ab> .
+
+<http://data.doremus.org/work/ab6075ba-f3d9-311d-a295-9b3aa081bb8b>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/76c04a58-345b-3124-a584-766a13f25e74> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f827686c-c3ae-3972-b314-cf6e7fb49dd8> .
+
+<http://data.doremus.org/expression/df308b59-7f14-35b0-a7a7-fc01621695ab>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f827686c-c3ae-3972-b314-cf6e7fb49dd8> .
+
+<http://data.doremus.org/event/a2874b1e-3b7a-32e4-a25d-5984063678fe>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18070101/18071231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f827686c-c3ae-3972-b314-cf6e7fb49dd8> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/76c04a58-345b-3124-a584-766a13f25e74> .
+
+<http://data.doremus.org/event/a6f77ada-09b5-3d16-b7b5-31962e9a473a>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. : Vienne : Bureau des arts et d'industrie, 1808" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/be82dd77-2e0d-31ba-99b1-6a1a06ebc0dd> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/fb06e281-0f35-364c-8576-37b7bfa91684> .
+
+<http://data.doremus.org/work/be82dd77-2e0d-31ba-99b1-6a1a06ebc0dd>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/fb06e281-0f35-364c-8576-37b7bfa91684> .
+
+<http://data.doremus.org/work/76c04a58-345b-3124-a584-766a13f25e74>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/a6f77ada-09b5-3d16-b7b5-31962e9a473a> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/e6faf4c7-9898-3709-be8a-356c3d0d4362> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f827686c-c3ae-3972-b314-cf6e7fb49dd8> .
+
+<http://data.doremus.org/performance/e6faf4c7-9898-3709-be8a-356c3d0d4362>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Vienne, palais du prince Lobkowitz, mars 1807" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/df308b59-7f14-35b0-a7a7-fc01621695ab> .
+
+<http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+        a       ecrm:E21_Person .

@@ -1,0 +1,91 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/1fbd5a1a-2826-3007-9865-86cd2caf6f1b>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/575ee93b-4612-3524-821c-0c0294e4caae> .
+
+<http://data.doremus.org/expression/acbbbe1b-c388-385d-862a-98cfe2498cd6>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/a1847165-2596-312f-bda6-8ca3cf1032b3> .
+
+<http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/publication/575ee93b-4612-3524-821c-0c0294e4caae>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/a1847165-2596-312f-bda6-8ca3cf1032b3> .
+
+<http://data.doremus.org/performance/b9ba8fe5-01bc-3163-819b-b71ea494ce32>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée à Eisenstadt le 13 septembre 1807, avec l+orchestre et le choeur du Prince Nicolas II Esterházy dirigés par le compositeur." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/acbbbe1b-c388-385d-862a-98cfe2498cd6> .
+
+<http://data.doremus.org/expression/a1847165-2596-312f-bda6-8ca3cf1032b3>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/c> ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/diabolo/genre/messe> ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "musique sacrée"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/a1847165-2596-312f-bda6-8ca3cf1032b3/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "86" ;
+                                      ecrm:P3_has_note         "Op.86"
+                                    ] ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "86" ;
+                                      ecrm:P3_has_note         "Op. 86"
+                                    ] ;
+        ecrm:P102_has_title         "Messe en do majeur" , "Mass" , "Messe en ut majeur" , "Messe" ;
+        ecrm:P3_has_note            "Créée à Eisenstadt le 13 septembre 1807, avec l+orchestre et le choeur du Prince Nicolas II Esterházy dirigés par le compositeur. Première édition : Leipzig : Breitkopf & Härtel, 1812" , "Cette oeuvre est une commande du prince Nikolaus Esterházy. Dédicace au prince Ferdinand Kinsky. Comprend : Kyrie, Gloria, Credo, Sanctus - Benedictus, Agnus Dei. Durée d'exécution : 42 minutes environ." .
+
+<http://data.doremus.org/event/0d94927a-639f-3d98-b693-d69d11b3c673>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Première édition : Leipzig : Breitkopf & Härtel, 1812" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/1fbd5a1a-2826-3007-9865-86cd2caf6f1b> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/575ee93b-4612-3524-821c-0c0294e4caae> .
+
+<http://data.doremus.org/event/dad64e4a-2ae1-3746-846d-cc16b4eb5322>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/025067e7-9ede-31ba-b49d-fbd123d6a96e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/a1847165-2596-312f-bda6-8ca3cf1032b3> .
+
+<http://data.doremus.org/work/025067e7-9ede-31ba-b49d-fbd123d6a96e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/a0d340af-434c-346b-88eb-aa4f0e134bae> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/a1847165-2596-312f-bda6-8ca3cf1032b3> .
+
+<http://data.doremus.org/work/a0d340af-434c-346b-88eb-aa4f0e134bae>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/0d94927a-639f-3d98-b693-d69d11b3c673> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/b9ba8fe5-01bc-3163-819b-b71ea494ce32> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/a1847165-2596-312f-bda6-8ca3cf1032b3> .
+
+<http://data.doremus.org/expression/a1847165-2596-312f-bda6-8ca3cf1032b3/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Flûtes, hautbois, clarinettes et bassons par deux ; cors et trompettes par deux ; timbales ; cordes ; choeur mixte ; soprano, alto, ténor et basse soli." .
+
+<http://data.doremus.org/event/ff7a7338-edb0-32ed-8ce4-3cc1c359eb78>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1806-1807" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1806/1807"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/67b70c3c-88be-35a5-a8fb-dae1413e2754>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/a1847165-2596-312f-bda6-8ca3cf1032b3> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a0d340af-434c-346b-88eb-aa4f0e134bae> .

@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/4c2b3dfb-7de8-333f-a073-cc21fabea30c>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/fe7c7928-d7d8-3c2e-ad9c-728e2776f5e4> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c9e59cb2-e638-32a8-9cdc-4cf24e27c0df> .
+
+<http://data.doremus.org/performance/fe7c7928-d7d8-3c2e-ad9c-728e2776f5e4>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1961-08-16" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/401d842b-7cd0-3bc4-96db-6f01a26b483e> .
+
+<http://data.doremus.org/expression/c9e59cb2-e638-32a8-9cdc-4cf24e27c0df>
+        a                  efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key    <http://data.doremus.org/vocabulary/key/c> ;
+        mus:U12_has_genre  <http://data.doremus.org/vocabulary/iaml/genre/sy> ;
+        ecrm:P3_has_note   "Commande de l'Orchestre du Festival de Lucerne" , "1930-61 (comp)" .
+
+<http://data.doremus.org/work/2c11f2d0-96fb-301d-8074-d50ba2bfc524>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4c2b3dfb-7de8-333f-a073-cc21fabea30c> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c9e59cb2-e638-32a8-9cdc-4cf24e27c0df> .
+
+<http://data.doremus.org/artist/0fa60ece-c8ba-3eaf-b56a-95791d24917c>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/8808ef56-983e-38d0-8493-b566d9849e20>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2c11f2d0-96fb-301d-8074-d50ba2bfc524> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c9e59cb2-e638-32a8-9cdc-4cf24e27c0df> .
+
+<http://data.doremus.org/expression/401d842b-7cd0-3bc4-96db-6f01a26b483e>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c9e59cb2-e638-32a8-9cdc-4cf24e27c0df> .
+
+<http://data.doremus.org/event/859485b0-4c69-35de-9551-d83c3886be24>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "0000/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/0fa60ece-c8ba-3eaf-b56a-95791d24917c>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c9e59cb2-e638-32a8-9cdc-4cf24e27c0df> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4c2b3dfb-7de8-333f-a073-cc21fabea30c> .
+
+<http://data.doremus.org/event/aec376b6-e7b7-32f6-8cf6-89e02feb0c6a>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/401d842b-7cd0-3bc4-96db-6f01a26b483e> .

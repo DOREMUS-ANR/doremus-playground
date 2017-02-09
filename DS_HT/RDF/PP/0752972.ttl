@@ -1,0 +1,80 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/8b0cbb21-a0a8-3139-98e4-b03262d1afe3>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/b5538672-31a0-342a-8b4b-a421bef03124> .
+
+<http://data.doremus.org/performance/561b81d6-8454-33c5-a191-bc23636262da>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Venise, Teatro San Angelo, le 10 novembre 1727" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/8b0cbb21-a0a8-3139-98e4-b03262d1afe3> .
+
+<http://data.doremus.org/artist/b7714656-e913-38b0-a84e-688f1b074921>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/b5538672-31a0-342a-8b4b-a421bef03124>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "opera seria"@fr
+                             ] ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/b5538672-31a0-342a-8b4b-a421bef03124/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "RV" ;
+                  mus:U41_has_catalogue_number  "728" ;
+                  ecrm:P3_has_note              "RV 728"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "R" ;
+                  mus:U41_has_catalogue_number  "728" ;
+                  ecrm:P3_has_note              "R 728"
+                ] ;
+        ecrm:P102_has_title  "Orlando" , "Orlando furioso" ;
+        ecrm:P3_has_note     "Créé à Venise, Teatro San Angelo, le 10 novembre 1727" , "Cet opéra en 3 actes a été composé sur un livret de Grazio Braccioli." .
+
+<http://data.doremus.org/work/56914bea-f516-3c0f-8207-8c734a054781>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/561b81d6-8454-33c5-a191-bc23636262da> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/b5538672-31a0-342a-8b4b-a421bef03124> .
+
+<http://data.doremus.org/expression/b5538672-31a0-342a-8b4b-a421bef03124/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Rôles : Angelica (soprano) ; Orlando, Alcina (mezzos) ; Bradamante (alto) ; Medoro (ténor) ; Ruggiero (baryton) ; Astolfo (basse) ; choeur ; orchestre" .
+
+<http://data.doremus.org/event/fee9ddeb-4cb4-3ca3-9dbe-020157d077e5>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1727" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1727"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b7714656-e913-38b0-a84e-688f1b074921>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/b5538672-31a0-342a-8b4b-a421bef03124> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/56914bea-f516-3c0f-8207-8c734a054781> .
+
+<http://data.doremus.org/event/31119f5c-d60d-3a17-9a4a-f75669bc2df7>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/ffc4c6d4-f3a1-3845-a244-b63c405d0eab> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/b5538672-31a0-342a-8b4b-a421bef03124> .
+
+<http://data.doremus.org/work/ffc4c6d4-f3a1-3845-a244-b63c405d0eab>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/56914bea-f516-3c0f-8207-8c734a054781> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/b5538672-31a0-342a-8b4b-a421bef03124> .

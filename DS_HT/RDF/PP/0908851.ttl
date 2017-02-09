@@ -1,0 +1,76 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/93d0226f-0457-3f42-bb84-f793950ce7da>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/ba37f2d0-501e-39bd-b273-3f7ef7ca99b1> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/9c7c8cf1-cdf7-306e-b2ec-d2d6670dda83> .
+
+<http://data.doremus.org/event/48187876-ff4e-38cd-8c70-7a5f42ef7b51>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1833" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1833"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/5a953aa0-6b9c-333e-9ba9-ad001b927380>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/9c7c8cf1-cdf7-306e-b2ec-d2d6670dda83> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8cbf13f6-28a8-38f1-87d4-405fa82cc552> .
+
+<http://data.doremus.org/expression/9c7c8cf1-cdf7-306e-b2ec-d2d6670dda83>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique romantique"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/9c7c8cf1-cdf7-306e-b2ec-d2d6670dda83/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "S" ;
+                  mus:U41_has_catalogue_number  "470" ;
+                  ecrm:P3_has_note              "S 470"
+                ] ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "R" ;
+                  mus:U41_has_catalogue_number  "134" ;
+                  ecrm:P3_has_note              "R 134"
+                ] ;
+        ecrm:P102_has_title  "Episode de la vie d'un artiste" , "Transcriptions" , "Transcription pour piano de la Symphonie fantastique d'Hector Berlioz" , "Symphonie fantastique" ;
+        ecrm:P3_has_note     "Cette transcription d'abord appelée \"Symphonie fantastique\" a été publiée sous le titre \"Episode de la vie d'un artiste, Grande symphonie fantastique par Hector Berlioz\" en 1834. Version révisée en 1876." , "Première publication : Paris, Schlesinger, 1834" .
+
+<http://data.doremus.org/work/8cbf13f6-28a8-38f1-87d4-405fa82cc552>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/2a161461-1171-33f4-8c29-a49f628a4741> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/9c7c8cf1-cdf7-306e-b2ec-d2d6670dda83> .
+
+<http://data.doremus.org/expression/9c7c8cf1-cdf7-306e-b2ec-d2d6670dda83/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/artist/5a953aa0-6b9c-333e-9ba9-ad001b927380>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/ba37f2d0-501e-39bd-b273-3f7ef7ca99b1>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8cbf13f6-28a8-38f1-87d4-405fa82cc552> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/9c7c8cf1-cdf7-306e-b2ec-d2d6670dda83> .
+
+<http://data.doremus.org/expression/c686fcc3-d301-3a26-bed4-fd74753ca32a>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/9c7c8cf1-cdf7-306e-b2ec-d2d6670dda83> .
+
+<http://data.doremus.org/performance/2a161461-1171-33f4-8c29-a49f628a4741>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première publication : Paris, Schlesinger, 1834" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/c686fcc3-d301-3a26-bed4-fd74753ca32a> .

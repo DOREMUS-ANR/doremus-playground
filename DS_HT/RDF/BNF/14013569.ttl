@@ -1,0 +1,62 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/7c090d69-93dc-397d-985f-a75268cbab51>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/630b47d5-5491-30b2-9071-8a13529db4fb>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/99cc0cca-e78f-3230-af80-362ee44851b2> .
+
+<http://data.doremus.org/work/66b72b48-2594-3ee8-8497-388aec23ffd6>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/dc7708cb-c418-39da-bd48-3613d5006a16> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/99cc0cca-e78f-3230-af80-362ee44851b2> .
+
+<http://data.doremus.org/event/181f6d3d-5f64-3e69-97cd-8b1f5231bfa8>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/66b72b48-2594-3ee8-8497-388aec23ffd6> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/99cc0cca-e78f-3230-af80-362ee44851b2> .
+
+<http://data.doremus.org/event/462c5794-6346-3b1c-869d-a7b9057c73b8>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/630b47d5-5491-30b2-9071-8a13529db4fb> .
+
+<http://data.doremus.org/performance/bbfe3088-06f9-38a1-b629-3fbbddeb2930>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution (version révisée de 1984) : Turin, 22 Septembre 1984" , "1re exécution (version révisée de 1982) : Londres, 6 septembre 1982" , "1re exécution (version originale de 1981) : Donaueschingen (Allemagne), 18 Octobre 1981, par Vincent Bauer, Daniel Ciampolini (percussions), Michel Cerutti (cymbalum), Pierre-Laurent Aimard, Alain Neveux (pianos), Marie-Claire Jamet (harpe), Ensemble intercontemporain, sous la direction de Pierre Boulez" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/630b47d5-5491-30b2-9071-8a13529db4fb> .
+
+<http://data.doremus.org/expression/99cc0cca-e78f-3230-af80-362ee44851b2>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        ecrm:P102_has_title  "Répons" ;
+        ecrm:P3_has_note     "Sous-titre : \"pour six solistes, ensemble de chambre, sons électroniques et électronique en direct\"" , "Dates de révision : 1982 et 1984" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/99cc0cca-e78f-3230-af80-362ee44851b2/dedication> .
+
+<http://data.doremus.org/work/dc7708cb-c418-39da-bd48-3613d5006a16>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/99cc0cca-e78f-3230-af80-362ee44851b2> .
+
+<http://data.doremus.org/expression/99cc0cca-e78f-3230-af80-362ee44851b2/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace : \"À Alfred Schlee, pour son 80e anniversaire\""@fr .
+
+<http://data.doremus.org/event/eae99eac-0ee2-3e28-98d2-6f07bc9d6e17>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19810101/19841231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7c090d69-93dc-397d-985f-a75268cbab51>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/99cc0cca-e78f-3230-af80-362ee44851b2> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/dc7708cb-c418-39da-bd48-3613d5006a16> .

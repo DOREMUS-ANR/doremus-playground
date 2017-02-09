@@ -1,0 +1,73 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/0cb086c5-fd2f-316a-81ae-1b8e2e56d447>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f68e51d0-a30c-3d3f-a32b-4fa23dc5b815> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6d79ae31-1167-397a-840a-1f2840c82baf> .
+
+<http://data.doremus.org/work/f68e51d0-a30c-3d3f-a32b-4fa23dc5b815>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/e616e262-cbd7-3a83-ab50-a747bf030947> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6d79ae31-1167-397a-840a-1f2840c82baf> .
+
+<http://data.doremus.org/expression/6d79ae31-1167-397a-840a-1f2840c82baf/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 violons, basse de viole et basse continue." .
+
+<http://data.doremus.org/artist/1cd68120-6c81-3dbb-8225-4e04e6050193>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/15bd2499-7e34-3cbd-bed3-ab4f129ab00a>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première édition : Londres \"printed for the author and sold by I. Playford and I. Carr\", 1683" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/d190a537-0b56-3eb4-84b5-d1f29c71f4fe> .
+
+<http://data.doremus.org/work/e616e262-cbd7-3a83-ab50-a747bf030947>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/15bd2499-7e34-3cbd-bed3-ab4f129ab00a> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6d79ae31-1167-397a-840a-1f2840c82baf> .
+
+<http://data.doremus.org/event/41e961d0-451a-31de-bacd-13ea501e41ec>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "17 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1680." ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1678/1683"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1cd68120-6c81-3dbb-8225-4e04e6050193>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6d79ae31-1167-397a-840a-1f2840c82baf> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e616e262-cbd7-3a83-ab50-a747bf030947> .
+
+<http://data.doremus.org/expression/6d79ae31-1167-397a-840a-1f2840c82baf>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "3" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/dm> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/diabolo/genre/musique_de_chambre> , <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique baroque"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/6d79ae31-1167-397a-840a-1f2840c82baf/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Z" ;
+                  mus:U41_has_catalogue_number  "792" ;
+                  ecrm:P3_has_note              "Z 792"
+                ] ;
+        ecrm:P102_has_title       "Sonate en trio à trois parties no 3" , "Sonata no 3 in e" , "Douze Sonates en 3 parties" , "Sonatas in three parts" , "12 Sonates à 3 parties" , "Sonate en trio à trois parties no 3 en ré mineur" ;
+        ecrm:P3_has_note          "Première édition : Londres \"printed for the author and sold by I. Playford and I. Carr\", 1683" , "Cette sonate en trio appartient au recueil de douze sonates à trois parties publié à Londres en 1683, qui se succèdent par paires (mineur / majeur), dans l'ordre voulu par l'auteur lui-même." .
+
+<http://data.doremus.org/expression/d190a537-0b56-3eb4-84b5-d1f29c71f4fe>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/6d79ae31-1167-397a-840a-1f2840c82baf> .

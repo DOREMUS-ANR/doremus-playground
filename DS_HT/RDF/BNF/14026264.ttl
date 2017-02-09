@@ -1,0 +1,43 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/f061d70b-028d-33c6-b1f9-e9f386127abf>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/vr> ;
+        ecrm:P102_has_title  "Quattro versioni originali della Ritirata notturna di Madrid di L. Boccherini sovrapposte e trascritte per orchestra" ;
+        ecrm:P3_has_note     "Transcriptions pour orchestre des 4 transcriptions pour différentes combinaisons d'instruments du Ritirata notturna di Madrid pour quintette à cordes de Boccherini auxquelles s'ajoute une court pièce d'ouverture de concert commandée à Berio pour l'orchestre du Teatro alla Scala" .
+
+<http://data.doremus.org/work/6f8e4c1d-7c4a-3044-ba5c-bb705ff61514>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f061d70b-028d-33c6-b1f9-e9f386127abf> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/e7388d81-414c-317e-aed2-d12aa6f3f912>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/6f8e4c1d-7c4a-3044-ba5c-bb705ff61514> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f061d70b-028d-33c6-b1f9-e9f386127abf> .
+
+<http://data.doremus.org/event/2b2c59b8-9cc9-3c7b-9e55-509a21f893f0>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1975/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f061d70b-028d-33c6-b1f9-e9f386127abf> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/6f8e4c1d-7c4a-3044-ba5c-bb705ff61514> .
+
+<http://data.doremus.org/event/9368fb5d-f940-33a7-988d-a801138e7015>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e7388d81-414c-317e-aed2-d12aa6f3f912> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f061d70b-028d-33c6-b1f9-e9f386127abf> .

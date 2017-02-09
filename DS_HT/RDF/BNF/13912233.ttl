@@ -1,0 +1,69 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/b955ab1a-2ec5-3a64-8a8f-10bd552369fd>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/28bf091d-85e9-3dda-85e4-9d66e8f43dd6> .
+
+<http://data.doremus.org/event/6ee67eaa-0bd5-36df-809f-842a33f382a2>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18810101/18821031"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/2edd7117-03f6-3f5f-a89e-bfb6fbd34522>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/8c75ca1f-894a-399e-b7a6-be70f5cd8937> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d95bc0eb-d4ff-3354-aef8-f6af42dd01d5> .
+
+<http://data.doremus.org/performance/f89f8c16-437e-3289-bfb4-ee42193bc1e0>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : Paris, Société nationale de musique, Salle Érard, 31 mars 1883, orchestre sous la direction d'Édouard Colonne" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/28bf091d-85e9-3dda-85e4-9d66e8f43dd6> .
+
+<http://data.doremus.org/expression/28bf091d-85e9-3dda-85e4-9d66e8f43dd6>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/8c75ca1f-894a-399e-b7a6-be70f5cd8937> .
+
+<http://data.doremus.org/event/99cad6c3-e2a5-3858-be50-ff23cb596f3a>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/fa33915a-18f0-3f96-afb2-6379df1c2d99> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/8c75ca1f-894a-399e-b7a6-be70f5cd8937> .
+
+<http://data.doremus.org/expression/8c75ca1f-894a-399e-b7a6-be70f5cd8937>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sp> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "CFF" ;
+                  mus:U41_has_catalogue_number  "128" ;
+                  ecrm:P3_has_note              "CFF 128"
+                ] ;
+        ecrm:P102_has_title  "Le chasseur maudit" ;
+        ecrm:P3_has_note     "D'après une ballade de Gottfried August Bürger" , "Il existe un arrangement pour piano à 4 mains par le compositeur, sous le titre \"La chasse fantastique\"" ;
+        ecrm:P67_refers_to   <http://data.doremus.org/expression/8c75ca1f-894a-399e-b7a6-be70f5cd8937/dedication> .
+
+<http://data.doremus.org/work/d95bc0eb-d4ff-3354-aef8-f6af42dd01d5>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f89f8c16-437e-3289-bfb4-ee42193bc1e0> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/8c75ca1f-894a-399e-b7a6-be70f5cd8937> .
+
+<http://data.doremus.org/artist/2edd7117-03f6-3f5f-a89e-bfb6fbd34522>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/8c75ca1f-894a-399e-b7a6-be70f5cd8937/dedication>
+        a       mus:M15_Dedication ;
+        mus:U44_has_dedication_statement
+                "Dédicace à Charles Lamoureux"@fr .
+
+<http://data.doremus.org/work/fa33915a-18f0-3f96-afb2-6379df1c2d99>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d95bc0eb-d4ff-3354-aef8-f6af42dd01d5> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/8c75ca1f-894a-399e-b7a6-be70f5cd8937> .

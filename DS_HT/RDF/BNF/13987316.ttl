@@ -1,0 +1,47 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/a0817a8c-acd3-3d2e-8cbb-21cc0b312c73>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/bb> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/lam> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "VdGS" ;
+                  mus:U41_has_catalogue_number  "Schmelzer" ;
+                  ecrm:P3_has_note              "VdGS Schmelzer 19"
+                ] ;
+        ecrm:P102_has_title  "Lamento a tre con basso continuo" , "Lamenta a tre" , "Lamento" , "Sonata lamentevole" ;
+        ecrm:P3_has_note     "Sources : F-Pn Rés. Vm7 673, no 48 ; CZ-KRa A 514" .
+
+<http://data.doremus.org/work/ad3693b7-0ce0-3e74-b33e-900cd0010776>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d33cbeb0-d9b0-3458-9fd4-e2ddccdb2bc9> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/a0817a8c-acd3-3d2e-8cbb-21cc0b312c73> .
+
+<http://data.doremus.org/work/d33cbeb0-d9b0-3458-9fd4-e2ddccdb2bc9>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/a0817a8c-acd3-3d2e-8cbb-21cc0b312c73> .
+
+<http://data.doremus.org/event/13dd66ce-145e-34a8-ae72-1476f2ba4596>
+        a                    efrbroo:F28_Expression_Creation ;
+        ecrm:P9_consists_of  [ a                             ecrm:E7_Activity ;
+                               mus:U31_had_function_of_type  "compositeur"@fr ;
+                               ecrm:P14_carried_out_by       <http://data.doremus.org/artist/e202511f-1e7f-358e-99a9-2d3ee94a1479>
+                             ] ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/a0817a8c-acd3-3d2e-8cbb-21cc0b312c73> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d33cbeb0-d9b0-3458-9fd4-e2ddccdb2bc9> .
+
+<http://data.doremus.org/artist/e202511f-1e7f-358e-99a9-2d3ee94a1479>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/bb44a844-deb7-3826-9421-fa7194f481a2>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/ad3693b7-0ce0-3e74-b33e-900cd0010776> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/a0817a8c-acd3-3d2e-8cbb-21cc0b312c73> .

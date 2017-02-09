@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/1e7a40a1-d3bf-3605-b92c-96d233b73055>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/0804deef-11a5-3a90-98b9-877061c2391d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/a3cd4ae7-51eb-3e9d-b50a-b2a8c72a1e07> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f247cfa4-804c-345a-8154-a435d5017f76> .
+
+<http://data.doremus.org/work/4a32fd16-e693-3b24-a38d-15d5c121612b>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f247cfa4-804c-345a-8154-a435d5017f76> .
+
+<http://data.doremus.org/work/a3cd4ae7-51eb-3e9d-b50a-b2a8c72a1e07>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4a32fd16-e693-3b24-a38d-15d5c121612b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f247cfa4-804c-345a-8154-a435d5017f76> .
+
+<http://data.doremus.org/expression/f247cfa4-804c-345a-8154-a435d5017f76>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Sz" ;
+                  mus:U41_has_catalogue_number  "106" ;
+                  ecrm:P3_has_note              "Sz 106"
+                ] ;
+        ecrm:P102_has_title  "Zene húros hangszerekre, ütökre éscelestára" , "Music for string instruments, percussion and celesta" , "Musique pour cordes, percussion et celesta" , "Music for strings, percussion and celesta" , "Musik für Saiteninstrumente, Schlagzeug und Celesta" ;
+        ecrm:P3_has_note     "Créé à Bâle sous la direction de Paul Sacher le 21 janvier 1937" .
+
+<http://data.doremus.org/event/53864f69-cd60-3bc9-9d85-70d7218b8d95>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19360101/19361231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1e7a40a1-d3bf-3605-b92c-96d233b73055>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f247cfa4-804c-345a-8154-a435d5017f76> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4a32fd16-e693-3b24-a38d-15d5c121612b> .

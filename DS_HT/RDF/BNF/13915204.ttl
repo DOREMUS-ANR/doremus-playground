@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/a2852127-2092-3011-8d98-0fe45dfb9f56>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/1465f9bd-202a-336a-a7dd-a974168d84d6> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/a2e6b03e-74d7-3328-8806-150045b19789> .
+
+<http://data.doremus.org/work/1465f9bd-202a-336a-a7dd-a974168d84d6>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/734a821b-1c52-33f9-9fa8-7b3c90fd775a> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/a2e6b03e-74d7-3328-8806-150045b19789> .
+
+<http://data.doremus.org/expression/a2e6b03e-74d7-3328-8806-150045b19789>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/or> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "KV" ;
+                  mus:U41_has_catalogue_number  "469" ;
+                  ecrm:P3_has_note              "KV 469"
+                ] ;
+        ecrm:P102_has_title  "Davidde penitente" ;
+        ecrm:P3_has_note     "Oratorio en 2 parties" , "Livret attribué à Lorenzo Da Ponte" .
+
+<http://data.doremus.org/work/734a821b-1c52-33f9-9fa8-7b3c90fd775a>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/a2e6b03e-74d7-3328-8806-150045b19789> .
+
+<http://data.doremus.org/event/0da42252-b39f-3941-b608-162ea2d587d7>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17820101/17821231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/a2e6b03e-74d7-3328-8806-150045b19789> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/734a821b-1c52-33f9-9fa8-7b3c90fd775a> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .

@@ -1,0 +1,69 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/7433be84-00e5-31d3-b009-5fed6fa65777>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/7dd85629-f690-3d2e-b4cc-e9fb7831aa92> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/1fe5e42d-ce7b-368e-83a4-90994d68c8c1> .
+
+<http://data.doremus.org/expression/93c77c8b-dad0-32bb-8731-d9b2e90a0178>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/1fe5e42d-ce7b-368e-83a4-90994d68c8c1> .
+
+<http://data.doremus.org/performance/04ea846d-3250-3941-948e-4a5a062ab68e>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première publication : 1842" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/93c77c8b-dad0-32bb-8731-d9b2e90a0178> .
+
+<http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/1fe5e42d-ce7b-368e-83a4-90994d68c8c1>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/gb> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/lied> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/1fe5e42d-ce7b-368e-83a4-90994d68c8c1/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "D" ;
+                  mus:U41_has_catalogue_number  "807" ;
+                  ecrm:P3_has_note              "D.807"
+                ] ;
+        ecrm:P102_has_title  "Dissolution" , "Auflösung" ;
+        ecrm:P3_has_note     "Texte de Johann Mayrhofer (\"Verbirg dich, Sonne \")" , "Première publication : 1842" .
+
+<http://data.doremus.org/expression/1fe5e42d-ce7b-368e-83a4-90994d68c8c1/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Voix, piano" .
+
+<http://data.doremus.org/event/d2fcfe17-b5d9-3b18-9c59-600a4efa78e1>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1824" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1824"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a5a52abd-ce7f-343b-a449-00edc6aa9692>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/1fe5e42d-ce7b-368e-83a4-90994d68c8c1> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/7dd85629-f690-3d2e-b4cc-e9fb7831aa92> .
+
+<http://data.doremus.org/work/7dd85629-f690-3d2e-b4cc-e9fb7831aa92>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/04ea846d-3250-3941-948e-4a5a062ab68e> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/1fe5e42d-ce7b-368e-83a4-90994d68c8c1> .
+
+<http://data.doremus.org/event/9b35d0a6-0427-38d0-94c3-ff7a2a85edc2>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/7433be84-00e5-31d3-b009-5fed6fa65777> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/1fe5e42d-ce7b-368e-83a4-90994d68c8c1> .

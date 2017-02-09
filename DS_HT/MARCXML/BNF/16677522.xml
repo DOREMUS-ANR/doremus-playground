@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<record Numero="16677522" format="InterXMarc_Complet" type="Authority">
+<leader>00500n1 au2200027   45  <Pos Code="0004">00500</Pos>
+<Pos Code="05" Sens="notice nouvelle">n</Pos>
+<Pos Code="06" Sens="notice validée en catalogage courant">1</Pos>
+<Pos Code="08" Sens="notice d&apos;autorité">a</Pos>
+<Pos Code="09" Sens="titre uniforme musical (TUM)">u</Pos>
+<Pos Code="10">2</Pos>
+<Pos Code="11">2</Pos>
+<Pos Code="1216">00027</Pos>
+<Pos Code="20">4</Pos>
+<Pos Code="21">5</Pos>
+</leader>
+<controlfield tag="001">FRBNF166775220<Pos Code="0001">FR</Pos>
+<Pos Code="0204">BNF</Pos>
+<Pos Code="0512">16677522</Pos>
+<Pos Code="13">0</Pos>
+</controlfield>
+<controlfield tag="008">130417      yy    bt        194701    194704                 1   <Pos Code="0001">13</Pos>
+<Pos Code="0203">04</Pos>
+<Pos Code="0405">17</Pos>
+<Pos Code="1213" Sens="ne s&apos;applique pas">yy</Pos>
+<Pos Code="1820">bt </Pos>
+<Pos Code="2831">1947</Pos>
+<Pos Code="3233">01</Pos>
+<Pos Code="3841">1947</Pos>
+<Pos Code="4243">04</Pos>
+<Pos Code="61" Sens="La vedette peut être liée à une notice bibliographique sauf pour l&apos;accès matière RAMEAU">1</Pos>
+</controlfield>
+<datafield tag="048" ind1=" " ind2=" ">
+	<subfield code="a">oa01<Pos Code="0001" Sens="orchestre - orchestre symphonique XIXe-XXe s.">oa</Pos>
+<Pos Code="02">0</Pos>
+<Pos Code="03">1</Pos>
+</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+	<subfield code="3">13892063</subfield>
+	<subfield code="w">.0..b.....</subfield>
+	<subfield code="a">Cage</subfield>
+	<subfield code="m">John</subfield>
+	<subfield code="d">1912-1992</subfield>
+</datafield>
+<datafield tag="144" ind1="1" ind2=" ">
+	<subfield code="w">....b.eng.</subfield>
+	<subfield code="a" Barre="4">The seasons</subfield>
+	<subfield code="b">Orchestre</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Ballet en un acte</subfield>
+	<subfield code="a">Dédicace à Lincoln Kirnstein</subfield>
+	<subfield code="a">Date de composition : 1947</subfield>
+</datafield>
+<datafield tag="600" ind1=" " ind2=" ">
+	<subfield code="a">Il existe aussi une version pour piano</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">Grove music online</subfield>
+	<subfield code="u">http://www.oxfordmusiconline.com</subfield>
+	<subfield code="d">2013-04-17</subfield>
+</datafield>
+<datafield tag="610" ind1=" " ind2=" ">
+	<subfield code="a">The seasons [Musique imprimée] : ballet in one act / John Cage, [2013]</subfield>
+</datafield>
+<Attr Nom="IDPerenne">ark:/12148/cb16677522v</Attr>
+<Attr Nom="Source" Sens="BnF catalogue général (depuis 1999)">A</Attr>
+<Attr Nom="NumAutoriteLiee">13892063</Attr>
+<Attr Nom="DateCreation">17/04/ 2013</Attr>
+<Attr Nom="ResponsableCreation">SABLONNIERE MARGUERITE</Attr>
+<Attr Nom="StructCreation">37</Attr>
+<Attr Nom="DateDerniereValidation">17/04/ 2013</Attr>
+<Attr Nom="ResponsableDerniereValidation">SABLONNIERE MARGUERITE</Attr>
+<Attr Nom="StructPremiereValidation">37</Attr>
+<Attr Nom="DatePremiereValidation">17/04/ 2013</Attr>
+<Attr Nom="ResponsablePremiereValidation">SABLONNIERE MARGUERITE</Attr>
+<Attr Nom="StructDerniereValidation">37</Attr>
+<Attr Nom="NumSource">OPP 15463197</Attr>
+</record>

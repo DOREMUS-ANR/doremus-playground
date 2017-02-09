@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/0ae67ce9-9b4d-31fc-92c5-3ff5d004e823>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/d020d50f-17f8-34d0-a60f-06b9a88c7194> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/edb35e9f-5d3f-3755-9fa7-e2ce852a2758> .
+
+<http://data.doremus.org/work/acccef57-15b6-305a-88ec-f3dc524ba164>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/edb35e9f-5d3f-3755-9fa7-e2ce852a2758> .
+
+<http://data.doremus.org/artist/1cd68120-6c81-3dbb-8225-4e04e6050193>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/edb35e9f-5d3f-3755-9fa7-e2ce852a2758>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Z" ;
+                  mus:U41_has_catalogue_number  "630" ;
+                  ecrm:P3_has_note              "Z 630"
+                ] ;
+        ecrm:P102_has_title  "The Indian Queen" ;
+        ecrm:P3_has_note     "Semi-opéra en 5 actes" , "Livret de John Dryden et Robert Howard" , "Créé à Londres, Drury Lane, en 1695" , "Contient un Masque (\"additional act\") de Daniel Purcell" .
+
+<http://data.doremus.org/work/d020d50f-17f8-34d0-a60f-06b9a88c7194>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/acccef57-15b6-305a-88ec-f3dc524ba164> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/edb35e9f-5d3f-3755-9fa7-e2ce852a2758> .
+
+<http://data.doremus.org/event/0d94f50e-f1a6-355e-a497-6c1ee8c8fe36>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "16950101/16951231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1cd68120-6c81-3dbb-8225-4e04e6050193>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/edb35e9f-5d3f-3755-9fa7-e2ce852a2758> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/acccef57-15b6-305a-88ec-f3dc524ba164> .

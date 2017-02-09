@@ -1,0 +1,59 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/504ac3b3-37cc-3ec8-93b0-ad5f93c2bb47>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/a169da30-0f38-3ad3-8e53-b5a07f2f6267> .
+
+<http://data.doremus.org/expression/a169da30-0f38-3ad3-8e53-b5a07f2f6267/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Piano et violon" .
+
+<http://data.doremus.org/event/25c5b7f2-8d44-31b4-9832-2a6eb1c0463c>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/464bad27-f3d3-3a6a-a75f-88a245eec98c> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/a169da30-0f38-3ad3-8e53-b5a07f2f6267> .
+
+<http://data.doremus.org/event/4092761e-bbbe-3aff-ba7c-e8c1ceed7049>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1779-1780" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1779/1780"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/a169da30-0f38-3ad3-8e53-b5a07f2f6267> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/504ac3b3-37cc-3ec8-93b0-ad5f93c2bb47> .
+
+<http://data.doremus.org/work/464bad27-f3d3-3a6a-a75f-88a245eec98c>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/504ac3b3-37cc-3ec8-93b0-ad5f93c2bb47> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/a169da30-0f38-3ad3-8e53-b5a07f2f6267> .
+
+<http://data.doremus.org/artist/b27619a8-4e03-3de2-a389-a748ecedf28a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/a169da30-0f38-3ad3-8e53-b5a07f2f6267>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/bb> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/a169da30-0f38-3ad3-8e53-b5a07f2f6267/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "K" ;
+                  mus:U41_has_catalogue_number  "378" ;
+                  ecrm:P3_has_note              "K 378"
+                ] ;
+        ecrm:P102_has_title  "Sonata in Bb major K 378" , "Sonate en si bémol majeur KV 378" , "Sonate pour violon et piano en si bémol majeur" ;
+        ecrm:P3_has_note     "Datée des années 1779-1780, cette sonate fut probablement l'une des dernières oeuvres écrites par Mozart à Salzbourg, juste avant son arrivée à Vienne. Comprend : 1- Allegro moderato. 2- Andantino sostenuto e cantabile. 3- Rondo. Allegro. Durée d'exécution : 17 minutes environ" .

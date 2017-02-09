@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/5cd76deb-f0d4-3ad4-b7aa-1285765afebd>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1921" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1921"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c543bf3a-8b26-38c1-bd6b-b2b68dccbb17>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8e8eb819-8454-3b05-ba30-db69c95a2eb6> .
+
+<http://data.doremus.org/work/5e0a77c6-14c9-3271-90fe-51c275a4b1b1>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8e8eb819-8454-3b05-ba30-db69c95a2eb6> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a> .
+
+<http://data.doremus.org/artist/c543bf3a-8b26-38c1-bd6b-b2b68dccbb17>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/415cd53b-c3fe-371a-b9e7-0909b946746f>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/5e0a77c6-14c9-3271-90fe-51c275a4b1b1> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a> .
+
+<http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "2" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a/casting/1> ;
+        ecrm:P102_has_title       "Suite pour petit orchestre no 2" , "Suite pour petit orchestre" , "Suite for small orchestra" ;
+        ecrm:P3_has_note          "Commande d'un music-hall parisien. Stravinski \"réunit dans sa Suite no 2 la dernière des cinq \"Pièces faciles\" pour piano à quatre mains composées en 1916-1917, dédiées \"à Madame Eugenia Errazuriz - hommage très respectueux\", et les trois \"Pièces faciles\" composées pour ses enfants en 1914-1915. Il sélectionne quatre danses de salon formant une suite d'études parodiques et burlesques\"(Anne Grange). Comprend : 1- Marche (version pour piano dédiée à Alfredo Casella). 2- Valse (version pour piano dédiée à Erik Satie). 3- Polka (version pour piano dédiée à Serge Diaghilev). 4- Galop" , "Edition : Chester" .
+
+<http://data.doremus.org/performance/1f71e2f6-5d68-309d-9c4c-90b073db1c52>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Edition : Chester" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/cdaed442-59c4-37dc-b735-49927756f1ba> .
+
+<http://data.doremus.org/expression/cdaed442-59c4-37dc-b735-49927756f1ba>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a> .
+
+<http://data.doremus.org/work/8e8eb819-8454-3b05-ba30-db69c95a2eb6>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/1f71e2f6-5d68-309d-9c4c-90b073db1c52> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a> .
+
+<http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Flûte, flûte / flûte piccolo, hautbois, 2 clarinettes en sib / clarinettes en la, 2 bassons, cor, 2 trompettes, trombone, tuba, 2 percussions, piano, 4 violons, 2 altos, 2 violoncelles, contrebasse" .

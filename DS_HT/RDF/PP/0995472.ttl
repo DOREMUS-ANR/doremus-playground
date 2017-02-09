@@ -1,0 +1,66 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/deb35121-a933-3e06-becc-531e10d4aea0>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Vienne le 5 novembre 1920, par Maria Olszewka et le compositeur" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/5121a520-7f97-39c5-a11d-f4cc92f52d3e> .
+
+<http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/7ebe5bf5-18f5-3b26-b003-f72a8bef7176>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e9662ec5-e43c-32f1-ac5a-b6f964e46668> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e> .
+
+<http://data.doremus.org/work/d4a24107-b2fe-3013-b712-4776420be2de>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/deb35121-a933-3e06-becc-531e10d4aea0> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e> .
+
+<http://data.doremus.org/expression/5121a520-7f97-39c5-a11d-f4cc92f52d3e>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e> .
+
+<http://data.doremus.org/work/e9662ec5-e43c-32f1-ac5a-b6f964e46668>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d4a24107-b2fe-3013-b712-4776420be2de> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e> .
+
+<http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Voix et piano" .
+
+<http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/diabolo/genre/lied> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "14" ;
+                                      ecrm:P3_has_note         "Op. 14"
+                                    ] ;
+        ecrm:P102_has_title         "Lieder des Abschieds" , "Abschiedslieder" ;
+        ecrm:P3_has_note            "Ce cycle de Lieder est dédié à Franz Schalk. Il existe une version orchestrée. Comprend : 1- Sterbelied (poème de Christina G. Rossetti traduit par Alfred Kerr). 2- Dies eine kann mein Sehnen nimmer fassen (poème de Edith Ronsperger). 3- Mond, so gehst du wieder auf (poème de Ernst Lothar). 4- Gefasster Abschied (poème de Ernst Lothar). - Dédié à Franz Schalk. -" , "Créé à Vienne le 5 novembre 1920, par Maria Olszewka et le compositeur" .
+
+<http://data.doremus.org/event/da223ddb-9efa-36e4-8f91-2c152bd12b72>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1915" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1915"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d4a24107-b2fe-3013-b712-4776420be2de> .

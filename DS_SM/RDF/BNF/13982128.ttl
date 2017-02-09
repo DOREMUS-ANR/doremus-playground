@@ -1,0 +1,54 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/a3c2f49c-9d52-30a9-91eb-326d43eefd78>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e29fddef-f1cd-3883-9911-06f4aabaa2ef> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/8edcbcd3-2fb5-30e7-8797-ff7935fd9175> .
+
+<http://data.doremus.org/work/6ac5cb92-0ff1-3f60-ae8b-1eb815855cbc>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/8edcbcd3-2fb5-30e7-8797-ff7935fd9175> .
+
+<http://data.doremus.org/expression/8edcbcd3-2fb5-30e7-8797-ff7935fd9175/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/khp>
+                                    ] ;
+        ecrm:P3_has_note            <http://data.doremus.org/vocabulary/itema3/mop/17> .
+
+<http://data.doremus.org/work/e29fddef-f1cd-3883-9911-06f4aabaa2ef>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/6ac5cb92-0ff1-3f60-ae8b-1eb815855cbc> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/8edcbcd3-2fb5-30e7-8797-ff7935fd9175> .
+
+<http://data.doremus.org/event/a1ff3f60-b1c8-3721-8bf2-295cff2d6776>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17000101/17221231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/8aa9bad5-8ffe-3f28-978c-34b824d24d1f>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/8edcbcd3-2fb5-30e7-8797-ff7935fd9175> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/6ac5cb92-0ff1-3f60-ae8b-1eb815855cbc> .
+
+<http://data.doremus.org/artist/8aa9bad5-8ffe-3f28-978c-34b824d24d1f>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/8edcbcd3-2fb5-30e7-8797-ff7935fd9175>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "13" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/bm> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/8edcbcd3-2fb5-30e7-8797-ff7935fd9175/casting/1> ;
+        ecrm:P102_has_title       "Ordres" ;
+        ecrm:P3_has_note          "Comprend : \"Les lis naissans\", \"Les rozeaux\", \"L'engageante\", \"Les folies françoises ou Les dominos\", \"L'âme-en-peine\"" .

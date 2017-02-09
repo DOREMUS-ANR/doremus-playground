@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/c1fab2bd-16e0-3749-be93-352d179f6312>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/4ee31db0-372c-3895-b80a-06a2351dfa1a> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/0d404069-e238-3af7-952f-3b7c79503d38> .
+
+<http://data.doremus.org/event/e2809f86-a737-3734-b597-85dc878b9ac6>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "16190101/16191231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/0d404069-e238-3af7-952f-3b7c79503d38> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/338474e3-9bdd-3a1b-8e5a-dfa0888aec26> .
+
+<http://data.doremus.org/work/4ee31db0-372c-3895-b80a-06a2351dfa1a>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/338474e3-9bdd-3a1b-8e5a-dfa0888aec26> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/0d404069-e238-3af7-952f-3b7c79503d38> .
+
+<http://data.doremus.org/work/338474e3-9bdd-3a1b-8e5a-dfa0888aec26>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/0d404069-e238-3af7-952f-3b7c79503d38> .
+
+<http://data.doremus.org/expression/0d404069-e238-3af7-952f-3b7c79503d38>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/md> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "138" ;
+                  ecrm:P3_has_note              "SV 138"
+                ] ;
+        ecrm:P102_has_title  "Al lume delle stelle" ;
+        ecrm:P3_has_note     "Poème du Tasse" , "Musique identique à \"O rex supreme\"" .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .

@@ -1,0 +1,50 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/b208019b-66a5-32f7-b97a-9fc4fdc90e4d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/dea12c99-172c-398a-ad8f-0498bfa65510> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/96ba15fb-8696-3978-bd9c-318faddfb43d> .
+
+<http://data.doremus.org/expression/96ba15fb-8696-3978-bd9c-318faddfb43d>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      <http://data.doremus.org/vocabulary/key/c> ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/hy> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Hob" ;
+                  mus:U41_has_catalogue_number  "XXIIIc" ;
+                  ecrm:P3_has_note              "Hob XXIIIc 2"
+                ] ;
+        ecrm:P102_has_title  "Te Deum" ;
+        ecrm:P3_has_note     "Composé pour l'Impératrice Marie-Thérèse entre 1780 et 1800" .
+
+<http://data.doremus.org/work/dea12c99-172c-398a-ad8f-0498bfa65510>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/96ba15fb-8696-3978-bd9c-318faddfb43d> .
+
+<http://data.doremus.org/event/8974cbdf-dadf-3dbf-9dcb-4a06d1bb8dab>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1780/1799"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/96ba15fb-8696-3978-bd9c-318faddfb43d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/dea12c99-172c-398a-ad8f-0498bfa65510> .
+
+<http://data.doremus.org/artist/9f97d360-1b6e-32db-8892-42b39dc84bab>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/85b61fa4-f543-37c6-ba35-f055ff30bc57>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b208019b-66a5-32f7-b97a-9fc4fdc90e4d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/96ba15fb-8696-3978-bd9c-318faddfb43d> .

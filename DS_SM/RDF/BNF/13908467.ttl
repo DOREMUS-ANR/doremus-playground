@@ -1,0 +1,57 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/c3f20d62-ca51-377f-b592-2d42e073cc34>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re exécution : 1966" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/11541c50-449c-3f21-bfe9-13b09783aa61> .
+
+<http://data.doremus.org/event/b533a3e3-e5fc-3536-a7bd-d68f5741df5f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1966/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/0051d299-eed5-3d4f-8185-aca4c45fa754> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/ed1cb1e0-e677-3ff1-a68a-4b524d9289ab> .
+
+<http://data.doremus.org/expression/0051d299-eed5-3d4f-8185-aca4c45fa754>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/zz> ;
+        ecrm:P102_has_title  "Sequenza V" ;
+        ecrm:P3_has_note     "Créé par Stuart Dempster à San Francisco" .
+
+<http://data.doremus.org/expression/11541c50-449c-3f21-bfe9-13b09783aa61>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/0051d299-eed5-3d4f-8185-aca4c45fa754> .
+
+<http://data.doremus.org/work/ed1cb1e0-e677-3ff1-a68a-4b524d9289ab>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/c3f20d62-ca51-377f-b592-2d42e073cc34> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/0051d299-eed5-3d4f-8185-aca4c45fa754> .
+
+<http://data.doremus.org/event/18fd82cd-c048-379b-a8ef-16e965ceffff>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/3794e83b-b11f-3204-b65c-0fa3dbcd3b92> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/0051d299-eed5-3d4f-8185-aca4c45fa754> .
+
+<http://data.doremus.org/work/3794e83b-b11f-3204-b65c-0fa3dbcd3b92>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/ed1cb1e0-e677-3ff1-a68a-4b524d9289ab> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/0051d299-eed5-3d4f-8185-aca4c45fa754> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/cbdc8616-2091-3f95-a9e5-c6f6d93e5cc4>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/11541c50-449c-3f21-bfe9-13b09783aa61> .

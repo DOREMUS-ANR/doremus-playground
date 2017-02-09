@@ -1,0 +1,60 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/459828c5-6422-3b9c-ab79-69e9593fb7a1>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U11_has_key      [ a                         mus:M4_Key ;
+                               ecrm:P1_is_identified_by  "Tonalité originale : Do majeur (couplet) et Fa majeur (refrain)"@fr
+                             ] ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/jazz> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "jazz standard"@fr
+                             ] ;
+        ecrm:P102_has_title  "Alexander's Ragtime Band" , "Alexander's Ragtime band" ;
+        ecrm:P3_has_note     "Paroles et musique de Irving Berlin. Popularisé par Emma Carus à Chicago, puis par Al Jolson, Sophie Tucker. Malgré son titre, ce morceau n'a aucune des caractéristiques musicales du ragtime, même s'il a pu aider commercialement au développement de cette musique. Mais Alexander symbolise parfaitement la musique populaire de la première moitié des années 1910. Le refrain contient une citation mélodique de Swanee River de Stephen Foster, l'un des compositeurs favoris de Berlin. Le morceau est tombé dans le domaine public du vivant d' Irving Berlin (décédé à l'âge de 101 ans). Style de jazz : classique, mainstream.Structure musicale : couplet 16 mesures - refrain 32 mesures ABAC. Environ 390 enregistrements recensés." , "Premier enregistrement : Arthur Collins / Byron G. Harlan (June 7, 1911). Premier enregistrement jazz : Miff Mole (1927). Edition Ted Snyder" .
+
+<http://data.doremus.org/work/edab1131-701f-3bed-b73d-7603c8be75c3>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f1d1f8ad-47ca-3cc7-94dc-045eb7a0accb> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/459828c5-6422-3b9c-ab79-69e9593fb7a1> .
+
+<http://data.doremus.org/performance/6cc28345-aca2-3dd0-aa5c-a21f4cced380>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Premier enregistrement : Arthur Collins / Byron G. Harlan (June 7, 1911). Premier enregistrement jazz : Miff Mole (1927). Edition Ted Snyder" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/c6a75a63-c5e7-373c-b2ae-d819d95739f6> .
+
+<http://data.doremus.org/expression/c6a75a63-c5e7-373c-b2ae-d819d95739f6>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/459828c5-6422-3b9c-ab79-69e9593fb7a1> .
+
+<http://data.doremus.org/event/c96fdfd8-a3a4-343f-ae05-42153a71f379>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "copyright 1911, édition Ted Snyder" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1911"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/f5c0bd3b-c60d-35e4-a950-75e77caf12e5>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/459828c5-6422-3b9c-ab79-69e9593fb7a1> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f1d1f8ad-47ca-3cc7-94dc-045eb7a0accb> .
+
+<http://data.doremus.org/artist/f5c0bd3b-c60d-35e4-a950-75e77caf12e5>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/f1d1f8ad-47ca-3cc7-94dc-045eb7a0accb>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/6cc28345-aca2-3dd0-aa5c-a21f4cced380> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/459828c5-6422-3b9c-ab79-69e9593fb7a1> .
+
+<http://data.doremus.org/event/a889d50d-2c6d-3fe6-94c9-2aca9b3b2e47>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/edab1131-701f-3bed-b73d-7603c8be75c3> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/459828c5-6422-3b9c-ab79-69e9593fb7a1> .

@@ -1,0 +1,78 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/publication/e20a1ef6-3e7c-3f14-ba9c-7d368ea20e2d>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd> .
+
+<http://data.doremus.org/work/3f539bc4-9100-30c4-b8f3-b4ba3cf64164>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/1971940a-a9b2-33e5-908b-2c905749bf60> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd> .
+
+<http://data.doremus.org/event/472d1048-c297-3b54-aa1a-e011c3d9c2da>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Editeur : Universal Editions, Londres" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/894d688b-e2a9-3fa7-887e-8be3cb205a6f> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/e20a1ef6-3e7c-3f14-ba9c-7d368ea20e2d> .
+
+<http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "voix de femme soliste" .
+
+<http://data.doremus.org/performance/e25fb544-4ddb-38f5-b69b-d8aa42ec6a86>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Brême, 1966, par Cathy Berberian." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/b88e99b6-151c-3b7a-82b4-84c968b77a33> .
+
+<http://data.doremus.org/work/1971940a-a9b2-33e5-908b-2c905749bf60>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/472d1048-c297-3b54-aa1a-e011c3d9c2da> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/e25fb544-4ddb-38f5-b69b-d8aa42ec6a86> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd> .
+
+<http://data.doremus.org/expression/b88e99b6-151c-3b7a-82b4-84c968b77a33>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd> .
+
+<http://data.doremus.org/work/894d688b-e2a9-3fa7-887e-8be3cb205a6f>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/e20a1ef6-3e7c-3f14-ba9c-7d368ea20e2d> .
+
+<http://data.doremus.org/event/2ac7c989-6adb-3cdf-a72d-a4ef1c7f5e6e>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/3f539bc4-9100-30c4-b8f3-b4ba3cf64164> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd> .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/b095895c-3187-3ce7-b069-8ee840c18011>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1966" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1966"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/1971940a-a9b2-33e5-908b-2c905749bf60> .
+
+<http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd/casting/1> ;
+        ecrm:P102_has_title  "Troisième Sequenza" , "Sequenza III pour voix de femme" , "Sequenza III" ;
+        ecrm:P3_has_note     "Cette oeuvre a été composée en 1966 pour Cathy Berberian, sur un texte de Markus Kutter. Elle se référe à la voix dans sa manifestation quotidienne la plus importante pour Berio, à savoir le rire. Durée d'exécution : 8 minutes environ" , "Brême, 1966, par Cathy Berberian. Editeur : Universal Editions, Londres" .

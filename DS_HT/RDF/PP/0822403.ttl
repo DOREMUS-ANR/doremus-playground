@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/45c9d939-5d50-3513-8bcc-c5f45e9b56d0>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/9ac6be02-3f92-3dba-9a5b-e6fa8b1ff410> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/fbf25147-54a3-39ba-a1ca-baf9c9ded9c0> .
+
+<http://data.doremus.org/work/aacfc0be-7f4b-3016-8ee5-cea212fed290>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/45c9d939-5d50-3513-8bcc-c5f45e9b56d0> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/fbf25147-54a3-39ba-a1ca-baf9c9ded9c0> .
+
+<http://data.doremus.org/performance/9ac6be02-3f92-3dba-9a5b-e6fa8b1ff410>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création le 5 décembre 1991 à Paris, Théâtre du Châtelet, par l'Orchestre Philharmonique de Radio France, sous la direction de Marek Janowski. Edité chez Leduc" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/374a82d3-882a-363c-9c01-9671eee0f8e2> .
+
+<http://data.doremus.org/artist/a9018ddf-2206-34ed-9f71-073a94661d14>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/374a82d3-882a-363c-9c01-9671eee0f8e2>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/fbf25147-54a3-39ba-a1ca-baf9c9ded9c0> .
+
+<http://data.doremus.org/event/989b644d-6d8a-308c-8535-662d0026e1f7>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1989" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1989"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a9018ddf-2206-34ed-9f71-073a94661d14>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/fbf25147-54a3-39ba-a1ca-baf9c9ded9c0> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/45c9d939-5d50-3513-8bcc-c5f45e9b56d0> .
+
+<http://data.doremus.org/expression/fbf25147-54a3-39ba-a1ca-baf9c9ded9c0>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/musique_symphonique> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/fbf25147-54a3-39ba-a1ca-baf9c9ded9c0/casting/1> ;
+        ecrm:P102_has_title  "Un sourire" ;
+        ecrm:P3_has_note     "Commande de Marek Janowski à l'occasion du bicentenaire de la mort de Mozart; Durée : 10 minutes environ" , "Création le 5 décembre 1991 à Paris, Théâtre du Châtelet, par l'Orchestre Philharmonique de Radio France, sous la direction de Marek Janowski. Edité chez Leduc" .
+
+<http://data.doremus.org/expression/fbf25147-54a3-39ba-a1ca-baf9c9ded9c0/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Orchestre symphonique" .
+
+<http://data.doremus.org/event/3b89c965-1a31-3a05-b0e9-b9feafbe88d1>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/aacfc0be-7f4b-3016-8ee5-cea212fed290> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/fbf25147-54a3-39ba-a1ca-baf9c9ded9c0> .

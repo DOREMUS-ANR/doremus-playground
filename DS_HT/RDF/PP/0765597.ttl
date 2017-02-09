@@ -1,0 +1,67 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/f85966c2-42ac-3081-b11f-21c3c39e5572>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/a55d0831-3496-3723-9fb6-d2de35bf919a> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/4fc5c513-9f43-389f-80b8-fae086cd1709> .
+
+<http://data.doremus.org/event/faf636f3-747b-3fba-a099-8e0e3b024400>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "19 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "1896" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1896"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/ca2af092-9ea0-378b-b0cc-12f4fdb59068>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/4fc5c513-9f43-389f-80b8-fae086cd1709> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/7f0fbdad-9e64-3ab5-932d-da95d26fa695> .
+
+<http://data.doremus.org/work/a55d0831-3496-3723-9fb6-d2de35bf919a>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/7f0fbdad-9e64-3ab5-932d-da95d26fa695> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/4fc5c513-9f43-389f-80b8-fae086cd1709> .
+
+<http://data.doremus.org/work/7f0fbdad-9e64-3ab5-932d-da95d26fa695>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/ccb7da59-fa92-3e7f-aa5d-8143cbcad8f7> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/4fc5c513-9f43-389f-80b8-fae086cd1709> .
+
+<http://data.doremus.org/performance/ccb7da59-fa92-3e7f-aa5d-8143cbcad8f7>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création à Vienne, le 2 décembre 1896" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/3f009cbf-4e73-32e1-8e70-cb4d9214973a> .
+
+<http://data.doremus.org/expression/3f009cbf-4e73-32e1-8e70-cb4d9214973a>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/4fc5c513-9f43-389f-80b8-fae086cd1709> .
+
+<http://data.doremus.org/expression/4fc5c513-9f43-389f-80b8-fae086cd1709/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 violons, alto, violoncelle" .
+
+<http://data.doremus.org/expression/4fc5c513-9f43-389f-80b8-fae086cd1709>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "1" ;
+        mus:U11_has_key             <http://data.doremus.org/vocabulary/key/a> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/4fc5c513-9f43-389f-80b8-fae086cd1709/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "4" ;
+                                      ecrm:P3_has_note         "Op. 4"
+                                    ] ;
+        ecrm:P102_has_title         "Streichquartett" , "Quatuor à cordes" , "String quartet" , "Quatuor à cordes no 1" ;
+        ecrm:P3_has_note            "Création à Vienne, le 2 décembre 1896" , "Oeuvre de structure classique, comprenant : 1- allegro confuoco, 2- allegretto, 3- breit und kräftig, 4- vivace e con fuoco ; durée : 26 mn environ" .
+
+<http://data.doremus.org/artist/ca2af092-9ea0-378b-b0cc-12f4fdb59068>
+        a       ecrm:E21_Person .

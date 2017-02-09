@@ -1,0 +1,56 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/0ecaaa14-f13a-3c6b-a5f9-33dfa5059b0e>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c15700ff-0caf-3f46-8b5a-cfe4f07f5371> .
+
+<http://data.doremus.org/event/2247f966-9c77-330c-ad90-36d74f840205>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/3b19f99f-0da3-371f-b03e-d88763a93d92> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c15700ff-0caf-3f46-8b5a-cfe4f07f5371> .
+
+<http://data.doremus.org/expression/c15700ff-0caf-3f46-8b5a-cfe4f07f5371>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "25" ;
+        mus:U11_has_key           [ a                         mus:M4_Key ;
+                                    ecrm:P1_is_identified_by  "Mi bémol majeur, do majeur et mineur"@fr
+                                  ] ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/c15700ff-0caf-3f46-8b5a-cfe4f07f5371/casting/1> ;
+        ecrm:P102_has_title       "Ordres" ;
+        ecrm:P3_has_note          "Comprend : \"La visionaire\", \"La mistérieuse\", \"La Monflambert\", \"La muse victorieuse\", \"Les ombres errantes\"" .
+
+<http://data.doremus.org/work/3b19f99f-0da3-371f-b03e-d88763a93d92>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0ecaaa14-f13a-3c6b-a5f9-33dfa5059b0e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c15700ff-0caf-3f46-8b5a-cfe4f07f5371> .
+
+<http://data.doremus.org/event/e120b20c-c8a6-3983-9af6-323fe9d54b9f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "17000101/17301231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/8aa9bad5-8ffe-3f28-978c-34b824d24d1f>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c15700ff-0caf-3f46-8b5a-cfe4f07f5371> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0ecaaa14-f13a-3c6b-a5f9-33dfa5059b0e> .
+
+<http://data.doremus.org/expression/c15700ff-0caf-3f46-8b5a-cfe4f07f5371/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/khp>
+                                    ] ;
+        ecrm:P3_has_note            <http://data.doremus.org/vocabulary/itema3/mop/17> .
+
+<http://data.doremus.org/artist/8aa9bad5-8ffe-3f28-978c-34b824d24d1f>
+        a       ecrm:E21_Person .

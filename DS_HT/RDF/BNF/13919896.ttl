@@ -1,0 +1,63 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/cedc6283-562a-386a-b210-211202913994>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b1507e5f-e076-3a8c-9abb-04dbc5e92d76> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/61d77d31-0d62-3427-b3f2-246d84481153> .
+
+<http://data.doremus.org/work/b1507e5f-e076-3a8c-9abb-04dbc5e92d76>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/48d9668d-6444-341f-9495-60d3081d4891> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/61d77d31-0d62-3427-b3f2-246d84481153> .
+
+<http://data.doremus.org/expression/9b2a0aa7-6cfd-34cc-aee6-eba340369f49>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/61d77d31-0d62-3427-b3f2-246d84481153> .
+
+<http://data.doremus.org/performance/710efa99-f5b7-3c2b-b165-53dc37dcea10>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation : Vienne, Hofoper, le 4 octobre 1916" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/9b2a0aa7-6cfd-34cc-aee6-eba340369f49> .
+
+<http://data.doremus.org/event/c3e34058-1de5-3701-ae66-47e06126ff1b>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19160101/19161231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/220a7692-0cb9-3fff-9c2a-3ed91b15e47a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/61d77d31-0d62-3427-b3f2-246d84481153> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/48d9668d-6444-341f-9495-60d3081d4891> .
+
+<http://data.doremus.org/artist/220a7692-0cb9-3fff-9c2a-3ed91b15e47a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/48d9668d-6444-341f-9495-60d3081d4891>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/710efa99-f5b7-3c2b-b165-53dc37dcea10> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/61d77d31-0d62-3427-b3f2-246d84481153> .
+
+<http://data.doremus.org/event/9acca1a0-22ca-3c74-bcfe-ee88bc88b1ec>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/9b2a0aa7-6cfd-34cc-aee6-eba340369f49> .
+
+<http://data.doremus.org/expression/61d77d31-0d62-3427-b3f2-246d84481153>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "TrV" ;
+                  mus:U41_has_catalogue_number  "228a" ;
+                  ecrm:P3_has_note              "TrV 228a"
+                ] ;
+        ecrm:P102_has_title  "Ariadne auf Naxos" , "Ariane à Naxos" ;
+        ecrm:P3_has_note     "Opéra en 1 acte et 1 prologue" , "Livret de Hugo von Hofmannsthal" , "Il existe une version de 1912, sans le prologue" .

@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/8bb5890e-ca9a-36aa-bed1-8a7bac7f2f01>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/a5e9eaae-550c-3323-8fc7-53005b3e6f60> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/f714b52e-a048-3058-80e0-c283cae1c46f> .
+
+<http://data.doremus.org/expression/f714b52e-a048-3058-80e0-c283cae1c46f/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Choeur a capella" .
+
+<http://data.doremus.org/work/81c4eb32-f38d-3d33-8088-b70f62dbb71c>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8bb5890e-ca9a-36aa-bed1-8a7bac7f2f01> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/f714b52e-a048-3058-80e0-c283cae1c46f> .
+
+<http://data.doremus.org/expression/f714b52e-a048-3058-80e0-c283cae1c46f>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "musique sacrée"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/f714b52e-a048-3058-80e0-c283cae1c46f/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "31" ;
+                                      ecrm:P3_has_note         "Op. 31"
+                                    ] ;
+        ecrm:P102_has_title         "Liturgie de saint Jean Chrysostome" , "Liturgy of saint John Chrysostom" , "Liturgia svatogo Ioanna Zlatousta" ;
+        ecrm:P3_has_note            "Dans sa \"Liturgie de saint Jean Chrysostome\", Rachmaninoff suit les traces de son mentor Tchaikovsky (op.41, 1878). Les conseils recueillis auprès d'Alexandre Kastalski, ethnomusicologue, professeur puis directeur de l'Institut synodal de Moscou, viennent enrichir une partition beaucoup plus proche des modalités du chant traditionnel de l'église orthodoxe, et, partant, plus \"moderne\" que les harmonisations très occidentales de son ainé. Toutes les mélodies seront cependant originales, colorées de tournures modales, archaisantes (degrés conjoints, notes répétées, psalmodies)." , "Créée le novembre 1910, par le choeur du Synode de Moscou, sous la direction de Nikolaï Daniline" .
+
+<http://data.doremus.org/performance/a5e9eaae-550c-3323-8fc7-53005b3e6f60>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée le novembre 1910, par le choeur du Synode de Moscou, sous la direction de Nikolaï Daniline" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/34423b9f-dac0-31a0-813c-4222fecf8249> .
+
+<http://data.doremus.org/event/08dc337f-2568-3fe2-8839-1b0e55c941b1>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1909" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1909"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/a66d98b7-610e-37f5-b2ab-81ff7d788f36>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/f714b52e-a048-3058-80e0-c283cae1c46f> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8bb5890e-ca9a-36aa-bed1-8a7bac7f2f01> .
+
+<http://data.doremus.org/artist/a66d98b7-610e-37f5-b2ab-81ff7d788f36>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/34423b9f-dac0-31a0-813c-4222fecf8249>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/f714b52e-a048-3058-80e0-c283cae1c46f> .
+
+<http://data.doremus.org/event/b70926a6-7b23-3fc9-8c9d-2325128a55cf>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/81c4eb32-f38d-3d33-8088-b70f62dbb71c> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/f714b52e-a048-3058-80e0-c283cae1c46f> .

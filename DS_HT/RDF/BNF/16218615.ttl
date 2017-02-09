@@ -1,0 +1,46 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/7cb79c59-6efb-348b-8b76-6df3ec319797>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/033b70ec-f788-381d-9448-f0e87e99b50b> .
+
+<http://data.doremus.org/work/60b2ed27-f735-3166-a38d-c67792c10825>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/7cb79c59-6efb-348b-8b76-6df3ec319797> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/033b70ec-f788-381d-9448-f0e87e99b50b> .
+
+<http://data.doremus.org/expression/033b70ec-f788-381d-9448-f0e87e99b50b>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/cli> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "Emans" ;
+                  mus:U41_has_catalogue_number  "25" ;
+                  ecrm:P3_has_note              "Emans 25"
+                ] ;
+        ecrm:P102_has_title  "Allein Gott in der Höh sei Ehr" ;
+        ecrm:P3_has_note     "Authenticité douteuse" .
+
+<http://data.doremus.org/event/ca79aebc-7e56-38c3-bf19-978063b1f804>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/60b2ed27-f735-3166-a38d-c67792c10825> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/033b70ec-f788-381d-9448-f0e87e99b50b> .
+
+<http://data.doremus.org/event/d494ef56-2aa0-3425-828f-d385ed534a8f>
+        a                    efrbroo:F28_Expression_Creation ;
+        ecrm:P9_consists_of  [ a                             ecrm:E7_Activity ;
+                               mus:U31_had_function_of_type  "compositeur"@fr ;
+                               ecrm:P14_carried_out_by       <http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+                             ] ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/033b70ec-f788-381d-9448-f0e87e99b50b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/7cb79c59-6efb-348b-8b76-6df3ec319797> .

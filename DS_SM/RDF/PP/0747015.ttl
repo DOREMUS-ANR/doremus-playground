@@ -1,0 +1,65 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/expression/28e67d53-5bd8-3349-90b0-2a1a42317a94>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b> .
+
+<http://data.doremus.org/performance/747d0671-34d7-3aba-b330-3d106df07b7e>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "19 avril 1967 à Berlin par Siegfried Palm, violoncelle (dédicataire de l'oeuvre), orchestre de la Radio de Berlin sous la direction de Henrick Czyz." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/28e67d53-5bd8-3349-90b0-2a1a42317a94> .
+
+<http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b/casting/1> ;
+        ecrm:P102_has_title  "Concerto pour violoncelle et orchestre" ;
+        ecrm:P3_has_note     "Le Concerto pour violoncelle s+organise en deux volets de durée égale, semblables par leurs dernières mesures, à la façon d+un distique librement rimé. La cadence du soliste qui clôt le second volet « cadence chuchotée », elle se situe au plus loin du pathos des concertos traditionnels [...] (Peter Szendy)" , "19 avril 1967 à Berlin par Siegfried Palm, violoncelle (dédicataire de l'oeuvre), orchestre de la Radio de Berlin sous la direction de Henrick Czyz." .
+
+<http://data.doremus.org/artist/4a7d5c3f-d6bf-34c9-a21c-44860c71ed1a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/63248c66-e2f8-334f-b994-a9a624c2bdc9>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/747d0671-34d7-3aba-b330-3d106df07b7e> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b> .
+
+<http://data.doremus.org/work/534ffe93-23ac-357e-8bfe-6fa14964dd49>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/63248c66-e2f8-334f-b994-a9a624c2bdc9> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b> .
+
+<http://data.doremus.org/event/b59940ac-6be2-3dc2-b0d8-0797f1d13e43>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/534ffe93-23ac-357e-8bfe-6fa14964dd49> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b> .
+
+<http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Violoncelle solo, 1 flûte/piccolo, 1 hautbois/cor anglais, 2 clarinette/clarinette basse, basson, cor, trompette en ré/en ut, trombone ténor/basse, harpe, violons I, violon II, alto, violoncelle, contrebasse." .
+
+<http://data.doremus.org/event/e21e15b5-e25b-31e0-a147-0e458298ad67>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1966" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1966"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/4a7d5c3f-d6bf-34c9-a21c-44860c71ed1a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/63248c66-e2f8-334f-b994-a9a624c2bdc9> .

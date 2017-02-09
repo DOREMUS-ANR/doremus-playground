@@ -1,0 +1,70 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/71ac442d-d892-3ae1-baf4-d827dc914001>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation : Rome, Teatro Apollo, 17 février 1859" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/e26c8b19-5258-3b72-b7df-5d54c5e0e7d0> .
+
+<http://data.doremus.org/event/ce0ed47d-47d9-39d9-a8c8-029a5f1f18b2>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/641cd206-d325-3b46-9df4-ae452ddd31d2> .
+
+<http://data.doremus.org/event/6e006063-c0f2-3ad5-86af-a9377b757f81>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c99d97b2-3b88-306d-a23c-13c31867966c> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/782ad7d5-82ff-35ea-ad7d-fa9ba2f78e33> .
+
+<http://data.doremus.org/work/c99d97b2-3b88-306d-a23c-13c31867966c>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/9c0aea9d-4e17-3989-b04d-be6f1f7fe6ac> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/782ad7d5-82ff-35ea-ad7d-fa9ba2f78e33> .
+
+<http://data.doremus.org/expression/782ad7d5-82ff-35ea-ad7d-fa9ba2f78e33>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/op> ;
+        ecrm:P102_has_title  "Un bal masqué" , "Un ballo in maschera" ;
+        ecrm:P3_has_note     "Melodramma en 3 actes" , "Livret d'Antonio Somma, inspiré du livret d'Eugène Scribe \"Gustave III ou Le bal masqué\" écrit pour Auber" , "Titre d'origine : \"La vendetta in domino\"" .
+
+<http://data.doremus.org/performance/27e05ddf-05bd-3cd3-ab84-ae477c9a9be2>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1re représentation en France : Paris, Théâtre-Italien, 13 janvier 1861" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/641cd206-d325-3b46-9df4-ae452ddd31d2> .
+
+<http://data.doremus.org/expression/641cd206-d325-3b46-9df4-ae452ddd31d2>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/782ad7d5-82ff-35ea-ad7d-fa9ba2f78e33> .
+
+<http://data.doremus.org/event/91e88f3e-03b4-3148-85c5-e5bdad46d225>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/e26c8b19-5258-3b72-b7df-5d54c5e0e7d0> .
+
+<http://data.doremus.org/work/9c0aea9d-4e17-3989-b04d-be6f1f7fe6ac>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/71ac442d-d892-3ae1-baf4-d827dc914001> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/782ad7d5-82ff-35ea-ad7d-fa9ba2f78e33> .
+
+<http://data.doremus.org/event/55535af5-2454-3ad8-989f-cf770a4ecf9d>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "18590101/18591231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/58efc6b8-78c5-3006-bf43-19e0f31d27d1>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/782ad7d5-82ff-35ea-ad7d-fa9ba2f78e33> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/9c0aea9d-4e17-3989-b04d-be6f1f7fe6ac> .
+
+<http://data.doremus.org/expression/e26c8b19-5258-3b72-b7df-5d54c5e0e7d0>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/782ad7d5-82ff-35ea-ad7d-fa9ba2f78e33> .
+
+<http://data.doremus.org/artist/58efc6b8-78c5-3006-bf43-19e0f31d27d1>
+        a       ecrm:E21_Person .

@@ -1,0 +1,42 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/9a95e228-8404-3611-87e3-0df38866acf5>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/bff9b837-f1ad-3fe7-9cab-72c96663be04> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d7325d64-79c2-36b5-b543-4f5d5a552e78> .
+
+<http://data.doremus.org/expression/d7325d64-79c2-36b5-b543-4f5d5a552e78>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/sg> ;
+        ecrm:P102_has_title  "Alexander's ragtime band" .
+
+<http://data.doremus.org/work/bff9b837-f1ad-3fe7-9cab-72c96663be04>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/776afe35-136b-34b1-be7b-5c89817f1e82> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d7325d64-79c2-36b5-b543-4f5d5a552e78> .
+
+<http://data.doremus.org/artist/f5c0bd3b-c60d-35e4-a950-75e77caf12e5>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/776afe35-136b-34b1-be7b-5c89817f1e82>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d7325d64-79c2-36b5-b543-4f5d5a552e78> .
+
+<http://data.doremus.org/event/77996059-3bd4-3a60-881b-12b444187794>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19110101/19111231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/f5c0bd3b-c60d-35e4-a950-75e77caf12e5>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d7325d64-79c2-36b5-b543-4f5d5a552e78> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/776afe35-136b-34b1-be7b-5c89817f1e82> .

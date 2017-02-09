@@ -1,0 +1,64 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/f9bb13f6-f750-35ec-b2f5-dd9e0da772e5>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6f3ce9d8-bf2e-3fa7-816a-103d8e933862> .
+
+<http://data.doremus.org/expression/6f3ce9d8-bf2e-3fa7-816a-103d8e933862/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              [ a                         mus:M14_Medium_Of_Performance ;
+                                                ecrm:P1_is_identified_by  "pianos (2)"@fr
+                                              ]
+                                    ] ;
+        ecrm:P3_has_note            "Pianos (2)" .
+
+<http://data.doremus.org/expression/6f3ce9d8-bf2e-3fa7-816a-103d8e933862>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/dui> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/6f3ce9d8-bf2e-3fa7-816a-103d8e933862/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "94" ;
+                                      ecrm:P3_has_note         "Op. 94"
+                                    ] ;
+        ecrm:P102_has_title         "Concertinos" .
+
+<http://data.doremus.org/event/5a424fcf-764c-37be-95f8-d8222ad9fa09>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/fcca08e2-78d4-3968-85e8-786592e12b11> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6f3ce9d8-bf2e-3fa7-816a-103d8e933862> .
+
+<http://data.doremus.org/artist/d3a49656-4bc3-3faf-afb0-2d5cd9b7e9ea>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/artist/3ab0501f-b14a-3281-bc3c-5ce3e8a5450f>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/fcca08e2-78d4-3968-85e8-786592e12b11>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/f9bb13f6-f750-35ec-b2f5-dd9e0da772e5> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6f3ce9d8-bf2e-3fa7-816a-103d8e933862> .
+
+<http://data.doremus.org/event/0aeb61c2-2646-3df8-81cc-6e2fda4178c7>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19530101/19531231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/3ab0501f-b14a-3281-bc3c-5ce3e8a5450f>
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/d3a49656-4bc3-3faf-afb0-2d5cd9b7e9ea>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6f3ce9d8-bf2e-3fa7-816a-103d8e933862> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/f9bb13f6-f750-35ec-b2f5-dd9e0da772e5> .

@@ -1,0 +1,49 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/d913af0d-15e6-3fe1-a8d3-11239a93c53b>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/27e7d254-ae3c-3787-8a43-bd7e3e67d331> .
+
+<http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/455bd5e9-fe1b-3165-8998-0cee85906e31>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d913af0d-15e6-3fe1-a8d3-11239a93c53b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/27e7d254-ae3c-3787-8a43-bd7e3e67d331> .
+
+<http://data.doremus.org/expression/27e7d254-ae3c-3787-8a43-bd7e3e67d331>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "249" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/or> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "BWV" ;
+                  mus:U41_has_catalogue_number  "249" ;
+                  ecrm:P3_has_note              "BWV 249"
+                ] ;
+        ecrm:P102_has_title       "Kantate zum Osterfest" , "Kommt, eilet und laufet" , "Oratorio de Pâques" , "Oster-Oratorium" .
+
+<http://data.doremus.org/event/a9a7fecf-13d4-33e1-9520-b8b4e1e51d5b>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                            ecrm:E52_Time-Span ;
+                                 ecrm:P81_ongoing_throughout  "1736/9999"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/89968c38-e58b-3eac-a085-8f075b5646da>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/27e7d254-ae3c-3787-8a43-bd7e3e67d331> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d913af0d-15e6-3fe1-a8d3-11239a93c53b> .
+
+<http://data.doremus.org/event/948362b0-b03e-3a40-a4de-820f7544dfbb>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/455bd5e9-fe1b-3165-8998-0cee85906e31> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/27e7d254-ae3c-3787-8a43-bd7e3e67d331> .

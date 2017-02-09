@@ -1,0 +1,48 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/dc0cf6cb-d000-343d-b3dd-54550f722ecd>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/0d1d7fb3-176d-3c53-b001-5c6aca144744> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/27867fb0-4219-3fd5-9874-f48bb065a5ed> .
+
+<http://data.doremus.org/expression/27867fb0-4219-3fd5-9874-f48bb065a5ed>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "3" ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/qua> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "18" ;
+                                      ecrm:P3_has_note         "Op. 18"
+                                    ] ;
+        ecrm:P102_has_title         "Esquisses pour un tombeau" ;
+        ecrm:P3_has_note            "Réunit : \"Stèle\" - \"Déploration\" - \"Méditation\"" , "Dédié à  Frédérick Martin" , "\"In memoriam Alexandre Zemlinsky\"" , "Révisé en 1989" , "Première audition, Amphithéâtre Richelieu (Sorbonne), Paris, 25 février 1992 par le Quatuor Arpeggione" .
+
+<http://data.doremus.org/work/0d1d7fb3-176d-3c53-b001-5c6aca144744>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/b1336329-c9de-354a-b867-9026f9383259> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/27867fb0-4219-3fd5-9874-f48bb065a5ed> .
+
+<http://data.doremus.org/work/b1336329-c9de-354a-b867-9026f9383259>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/27867fb0-4219-3fd5-9874-f48bb065a5ed> .
+
+<http://data.doremus.org/artist/8ac76f03-4f5d-3542-b957-244e7ba041e9>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/0baf7e53-0872-3207-a447-0ac3dc12da43>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "19850101/19881231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/8ac76f03-4f5d-3542-b957-244e7ba041e9>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/27867fb0-4219-3fd5-9874-f48bb065a5ed> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/b1336329-c9de-354a-b867-9026f9383259> .

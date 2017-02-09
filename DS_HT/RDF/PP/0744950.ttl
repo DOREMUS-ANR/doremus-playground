@@ -1,0 +1,82 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/performance/f142867f-288e-3054-9254-83baeaececc8>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé au Festival de Berlin, le 1er octobre 1970, par l'Ensemble Die Reihe sous la direction de Friedrich Cerha." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/9089cd1c-f0f1-3435-9bca-a4529e8b8170> .
+
+<http://data.doremus.org/publication/901f32bd-cec3-3827-8b8b-63d0ee4a3d49>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/046dc1dc-b416-3b5d-83b8-9d628dfc6004> .
+
+<http://data.doremus.org/expression/046dc1dc-b416-3b5d-83b8-9d628dfc6004/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Flûte / flûte piccolo, hautbois / hautbois d'amour / cor anglais, clarinette / clarinette basse, cor, trombone, piano/célesta, clavecin / orgue Hammond (ou harmonium), 2 violons, alto, violoncelle, contrebasse" .
+
+<http://data.doremus.org/expression/9089cd1c-f0f1-3435-9bca-a4529e8b8170>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/046dc1dc-b416-3b5d-83b8-9d628dfc6004> .
+
+<http://data.doremus.org/work/58b1452d-abc8-36bb-833c-1d8b1b07aff9>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/2368978c-73d1-3155-b886-1e69ffc58e3c> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/046dc1dc-b416-3b5d-83b8-9d628dfc6004> .
+
+<http://data.doremus.org/event/6d681022-ca72-3656-9d73-521968144f1f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1969-1970" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1969/1970"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/4a7d5c3f-d6bf-34c9-a21c-44860c71ed1a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/046dc1dc-b416-3b5d-83b8-9d628dfc6004> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/2368978c-73d1-3155-b886-1e69ffc58e3c> .
+
+<http://data.doremus.org/work/aa8eda3a-d476-3ea8-a10a-c2b3bf91bf36>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/901f32bd-cec3-3827-8b8b-63d0ee4a3d49> .
+
+<http://data.doremus.org/expression/046dc1dc-b416-3b5d-83b8-9d628dfc6004>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/046dc1dc-b416-3b5d-83b8-9d628dfc6004/casting/1> ;
+        ecrm:P102_has_title  "Concerto de chambre" , "Kammerkonzert" ;
+        ecrm:P3_has_note     "Cette oeuvre est une commande pour le Berliner Festwochen1970 (Festival de Berlin) pour le IVe mouvement. Comprend : I- corrente (dédicacé à Maedi Wood). II- calmo, sostenuto (dédicacé à Traude Cerha). III- movimento preciso e meccanico (dédicacé à Friedrich Cerha). IV- presto (dédicacé à Walther Schmieding). Durée d'exécution : 17 minutes environ" , "Créé au Festival de Berlin, le 1er octobre 1970, par l'Ensemble Die Reihe sous la direction de Friedrich Cerha. Editeur : Schot" .
+
+<http://data.doremus.org/artist/4a7d5c3f-d6bf-34c9-a21c-44860c71ed1a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/03a84c41-b18a-3866-a912-15ec39538a23>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/58b1452d-abc8-36bb-833c-1d8b1b07aff9> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/046dc1dc-b416-3b5d-83b8-9d628dfc6004> .
+
+<http://data.doremus.org/event/bda52caa-80f4-335d-971a-e1627a7f0066>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Editeur : Schot" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/aa8eda3a-d476-3ea8-a10a-c2b3bf91bf36> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/901f32bd-cec3-3827-8b8b-63d0ee4a3d49> .
+
+<http://data.doremus.org/work/2368978c-73d1-3155-b886-1e69ffc58e3c>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/bda52caa-80f4-335d-971a-e1627a7f0066> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f142867f-288e-3054-9254-83baeaececc8> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/046dc1dc-b416-3b5d-83b8-9d628dfc6004> .

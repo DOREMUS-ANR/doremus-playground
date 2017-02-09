@@ -1,0 +1,79 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/work/92a78df0-c209-3aee-b1bf-aaa48d17e671>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/9d938479-fac2-3156-978e-1e1359bb3c61> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/9583f934-6aab-3a69-8d65-8052a7e1529d> .
+
+<http://data.doremus.org/expression/9583f934-6aab-3a69-8d65-8052a7e1529d/casting/1>
+        a                           mus:M6_Casting ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/vso>
+                                    ] ;
+        mus:U23_has_casting_detail  [ a       mus:M23_Casting_Detail ;
+                                      mus:U2_foresees_use_of_medium_of_performance_of_type
+                                              <http://data.doremus.org/vocabulary/iaml/mop/mco>
+                                    ] ;
+        ecrm:P3_has_note            "Soprano, basse continue" .
+
+<http://data.doremus.org/expression/9583f934-6aab-3a69-8d65-8052a7e1529d>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/ar> ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/9583f934-6aab-3a69-8d65-8052a7e1529d/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "22" ;
+                  ecrm:P3_has_note              "SV 22"
+                ] ;
+        ecrm:P102_has_title  "Lasciatemi morire" , "Lamento d'Arianna" ;
+        ecrm:P3_has_note     "Texte d'Ottavio Rinuccini" , "Comprend : \"Lasciatemi morire\" ; \"O Teseo, Teseo mio\" ; \"Dove, dov'e la fede\" ; \"Ahi che non pur risponde\"" , "Seule partie conservée de la tragédie en 1 acte \"Arianna\" (1608)" , "Il existe une version pour 5 voix a cappella (SV 107)" .
+
+<http://data.doremus.org/work/c7ffe586-a835-30c7-b194-38c9e24c5e7a>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/5cd3b9c2-f9e0-3b7d-9e68-180d5b483585> .
+
+<http://data.doremus.org/event/d98627c1-e329-3635-8f2f-485c399a92bb>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://isni.org/isni/0000000121751303> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/232f6a46-858a-30c0-9866-684b901f6975> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/9583f934-6aab-3a69-8d65-8052a7e1529d> .
+
+<http://data.doremus.org/event/9d938479-fac2-3156-978e-1e1359bb3c61>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "1re éd. (version pour voix seule et basse continue) : 1623" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c7ffe586-a835-30c7-b194-38c9e24c5e7a> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/5cd3b9c2-f9e0-3b7d-9e68-180d5b483585> .
+
+<http://data.doremus.org/publication/5cd3b9c2-f9e0-3b7d-9e68-180d5b483585>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/9583f934-6aab-3a69-8d65-8052a7e1529d> .
+
+<http://data.doremus.org/event/724ee833-7acc-3c7f-8871-477af855d223>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "16230101/16231231"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/9583f934-6aab-3a69-8d65-8052a7e1529d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/92a78df0-c209-3aee-b1bf-aaa48d17e671> .
+
+<http://data.doremus.org/work/232f6a46-858a-30c0-9866-684b901f6975>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/92a78df0-c209-3aee-b1bf-aaa48d17e671> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/9583f934-6aab-3a69-8d65-8052a7e1529d> .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .
