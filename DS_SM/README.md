@@ -1,0 +1,2 @@
+# DS <SUB> SM </SUB>
+Consists of a pair of datasets containing each 33 musical works which are very similar in their description. The aim here is to challenge the linking tools capacity to avoid the generation of false positives and match correctly instances in the presence of highly similar but still distinct candidates.

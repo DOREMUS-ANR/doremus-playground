@@ -1,0 +1,2 @@
+# DS <SUB> HT </SUB>
+Consists of a pair of datasets containing each 238 musical works which are heteregeneous in their description : multilingualism, differences in catalogs, differences in spelling, etc. The aim here is to determine if the interlinking tools are able to cope with these heterogeneities.
