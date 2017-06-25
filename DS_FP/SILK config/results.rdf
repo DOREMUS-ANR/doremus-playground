@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+    xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+    xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+    xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'>
+<Alignment>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a"/>
+          <entity2 rdf:resource="http://data.doremus.org/expression/9339ce35-2286-3860-8b2b-0c1aba6ea29c"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e"/>
+          <entity2 rdf:resource="http://data.doremus.org/expression/7f5e5fd2-27fa-3529-a859-9cd213df5991"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194"/>
+          <entity2 rdf:resource="http://data.doremus.org/expression/f9655560-b40a-3842-9032-0c46b35238aa"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d"/>
+          <entity2 rdf:resource="http://data.doremus.org/expression/56a2dc02-6506-3de5-9142-53d17d629c9d"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70"/>
+          <entity2 rdf:resource="http://data.doremus.org/expression/4a5bc432-e945-35c3-9c05-7e04204beeab"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6"/>
+          <entity2 rdf:resource="http://data.doremus.org/expression/4a5bc432-e945-35c3-9c05-7e04204beeab"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.doremus.org/expression/53534a2b-1034-3380-b891-521328fd619f"/>
+          <entity2 rdf:resource="http://data.doremus.org/expression/8edcbcd3-2fb5-30e7-8797-ff7935fd9175"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2"/>
+          <entity2 rdf:resource="http://data.doremus.org/expression/4a5bc432-e945-35c3-9c05-7e04204beeab"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.doremus.org/expression/4da1aed9-2a8d-3828-8a02-d8f7177a5c47"/>
+          <entity2 rdf:resource="http://data.doremus.org/expression/c15700ff-0caf-3f46-8b5a-cfe4f07f5371"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.doremus.org/expression/6abaa561-fdab-3e17-a96f-ed7a10259138"/>
+          <entity2 rdf:resource="http://data.doremus.org/expression/9339ce35-2286-3860-8b2b-0c1aba6ea29c"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+</Alignment>
+</rdf:RDF>

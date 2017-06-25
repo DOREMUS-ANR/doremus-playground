@@ -1,0 +1,1954 @@
+@prefix ecrm:  <http://erlangen-crm.org/current/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix mus:   <http://data.doremus.org/ontology#> .
+
+<http://data.doremus.org/event/415cd53b-c3fe-371a-b9e7-0909b946746f>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/5e0a77c6-14c9-3271-90fe-51c275a4b1b1> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a> .
+
+<http://data.doremus.org/expression/9ec30f3f-c70d-3331-b54a-6bd847c343bd/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/1550> .
+
+<http://data.doremus.org/work/51656781-78ae-3fa0-b3d2-ab264e3aaa18>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/577a6da6-d69b-3d2f-8e56-00d45ab9abba> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/25189f7e-ebcb-34fe-a935-91afcd8089bf> .
+
+<http://data.doremus.org/event/0d5023a4-b108-36d4-a12f-c7e273c49c04>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1948" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1948"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7c090d69-93dc-397d-985f-a75268cbab51>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6abaa561-fdab-3e17-a96f-ed7a10259138> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/5971933b-4d17-3b5b-b22d-530b97cf056b> .
+
+<http://data.doremus.org/event/f0fae644-e820-3d7c-9e77-cab05cba298b>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "17 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1610" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1605/1614"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/6d692eb4-29ae-3f2a-baa3-866213d6f31a> .
+
+<http://data.doremus.org/work/a74b8671-30a9-3684-b03f-1af5e23bd3f1>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/c760a152-08f7-3240-8a0d-f7cfe70d42e8> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194> .
+
+<http://data.doremus.org/work/32435cab-6018-35f8-ba1b-c4d05ba531a1>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/fa01d7ad-7e28-332d-93be-d684cda5dce0> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f3a06148-dfe8-3a65-b4f2-5da5fd0a9cf0> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447> .
+
+<http://data.doremus.org/event/bc0fab07-3021-3d48-a8f1-98f8feb2be11>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1623" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1623"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/db483334-ebfa-315e-99d1-366f97df3b05> .
+
+<http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "1" ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "7" ;
+                                      ecrm:P3_has_note         "Op. 7"
+                                    ] ;
+        ecrm:P102_has_title         "Quatuor à cordes no 1" , "String quartet" , "Quatuor no 1" , "Streichquartett" ;
+        ecrm:P3_has_note            "Le premier quatuor de Schoenberg est représentatif des efforts du compositeur qui, dans sa première période, cherche à intégrer les techniques compositionnelles du passé (notamment concilier les influences de Wagner et Brahms) et dépasser ses propres influences. Dans les oeuvres de la même période (par exemple le poème symphonique \"Pelleas et Mélisande\", Opus 5, et la \"Symphonie de chambre\", Opus 9) Schoenberg travaille sur une forme en un seul tenant, fondant les mouvements traditionnels (allegro, adagio, scherzo, finale) en un long mouvement à la fois très diversifié dans ses parties successives et très unifié du point de vue thématique. Cette attention particulière donnée au \"motif\" se traduit surtout par une polyphonie complexe, où toutes les parties deviennent thématiques. Quant à l'univers harmonique, il devient, de part cette polyphonie, de plus en plus chromatique, conduisant Schoenberg vers la musique atonale qui apparaitra dans son quatuor suivant, trois ans plus tard." , "Création : 5 février 1907 à Vienne par le quatuor Rosé" .
+
+<http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Voix et piano" .
+
+<http://data.doremus.org/expression/7697d03e-8be3-37da-8dce-056b098cc711/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/36> .
+
+<http://data.doremus.org/event/108c1319-4285-3788-8d5b-5c192704c115>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1958" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1958"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/94085b38-d5da-3b12-82e4-7a824e2ad2f1> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/922f02ca-4472-3faf-ba46-fa273b411914> .
+
+<http://data.doremus.org/event/fcbe2d1b-59f8-39b9-81a2-8b3136d85425>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/008c0bc4-dff2-3b04-93d1-310f7ea9e064> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591> .
+
+<http://data.doremus.org/event/345a76da-0440-3ef1-8582-b53d4a5c172d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/272b9fe3-6dbe-337f-8ee8-98973a0defc2> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/4da1aed9-2a8d-3828-8a02-d8f7177a5c47> .
+
+<http://data.doremus.org/work/2d5a12dc-e061-3b68-8b17-ba112f23c46c>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70> .
+
+<http://data.doremus.org/expression/bfff5d94-05ba-3c43-8841-1839111ec2f8>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/bfff5d94-05ba-3c43-8841-1839111ec2f8/casting/1> ;
+        ecrm:P102_has_title  "Sequenza II pour harpe" , "Sequenza 2" , "Deuxième sequenza" , "Sequenza II" ;
+        ecrm:P3_has_note     "Note de l'auteur : \"Dans mes Sequenze, j'ai essayé de commenter le rapport entre le virtuose et son instrument et j'ai souvent exploré certains aspects techniques spécifiques afin de défier, comme dans la \"Sequenza II\" pour harpe, la notion conventionnelle de l'instrument. (...) la harpe possède également unautre visage, plus dur, fort et agressif. Dans la Sequenza II, j'ai voulu mettre en lumière plusieurs visages de l'instrument, les faisant parfois apparaître simultanément : à certains moments, la harpe doit rendre le son d'une forêt traversée par le vent\". Dédiée à Francis Pierre." , "Créée en 1963 à Paris par Francis Pierre" .
+
+<http://data.doremus.org/expression/b5c564d4-7b33-315b-ad04-4064ac4d04e3>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/9ec30f3f-c70d-3331-b54a-6bd847c343bd> .
+
+<http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "3" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d/casting/1> ;
+        ecrm:P102_has_title       "Sonate pour piano no 3" , "Sonata" , "Troisième sonate pour piano" ;
+        ecrm:P3_has_note          "Créée à Darmstadt par le compositeur en 1957" , "Cette sonate est constituée de cinq \"formants\" : Antiphonie, Trope, Constellation, Strophe et Séquence. Seuls les 2e et 3e formants sont publiés. Le Formant 2 (Trope) est composé de quatre sections : Commentaire, Glose , Texte, Parenthèse, qui peuvent être jouées dans différents ordres. Cette oeuvre nécessite un piano à 3 pédales. - Durée d'exécution : 20 minutes environ" .
+
+<http://data.doremus.org/expression/6b3509a3-668e-36c4-b095-8a88e13e2757>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/a896127b-9658-3ee0-a714-44fa8247db64> .
+
+<http://data.doremus.org/expression/b6fe7126-9063-384a-bf66-f75f604469ed>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447> .
+
+<http://data.doremus.org/work/04896b5b-5320-30b2-a2ff-532cd5123da8>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/a1e86c44-2227-323f-9a7b-11250b3c408b> .
+
+<http://data.doremus.org/performance/c760a152-08f7-3240-8a0d-f7cfe70d42e8>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création : 9 janvier 1937 à Los Angeles par le quatuor Kolisch" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/85d0e72b-33bb-3057-978c-5e40e396db49> .
+
+<http://data.doremus.org/work/d4a24107-b2fe-3013-b712-4776420be2de>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/deb35121-a933-3e06-becc-531e10d4aea0> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e> .
+
+<http://data.doremus.org/event/9691b131-c01a-3659-9bfb-2fd4bb8e22af>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1933" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1933"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/fa92b8bb-86c2-30f6-b2d3-a9bf9b4fd7e9> .
+
+<http://data.doremus.org/work/3a0834cd-9159-3c51-9575-f7b3ea1c1085>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/fcbeb7df-dbc9-32a9-8a62-30114263d384> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630> .
+
+<http://data.doremus.org/work/a60d9c12-c780-3763-9dda-dc1f600c079d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4cc94449-7337-323e-a5a0-2c80ada0f5ac> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6> .
+
+<http://data.doremus.org/expression/3040539d-19db-39dc-8268-f5246fcff3d3>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/7697d03e-8be3-37da-8dce-056b098cc711> .
+
+<http://data.doremus.org/event/050f79b1-c940-3528-8eea-a0b7f2dc7e9c>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1995" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1995"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/25189f7e-ebcb-34fe-a935-91afcd8089bf> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/577a6da6-d69b-3d2f-8e56-00d45ab9abba> .
+
+<http://data.doremus.org/work/2dd4aea2-8669-3c2e-a499-196f99aebcef>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/a4fe1877-b88a-341b-831f-e8514640976e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/fd8cf241-f9d5-3a24-93e7-10c54c6839c7> .
+
+<http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/madrigal> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "107" ;
+                  ecrm:P3_has_note              "SV 107"
+                ] ;
+        ecrm:P102_has_title  "Lamento d'Arianna" , "Lasciatemi morire" , "Madrigal" , "Lamento d'Arianna (Madrigal Livre 6)" ;
+        ecrm:P3_has_note     "Première publication : Venise, 1614" , "Le lamento d'Arianna est un ensemble de 4 madrigaux. Il appartient au sixième livre de madrigaux , publié à Venise où Monteverdi vient de s'installer en 1613. Il a été composé à partir de l'opéra Arianna écrit par l'auteur et disparu. Texte d'Ottavio Rinuccini. Une autre version existe, écrite en 1623, pour soprano et basse continue. Comprend : 1- Lasciatemi morire (\"Laissez-moi mourir\"), 2- O Teseo, teseo mio (\"O Thésée, ô mon Thésée\"), 3- Dove, dov'e la fede (\"Où est, où est la foi ?\"), 4- Ahi che non pur risponde (\"Hélas, tu ne réponds pas\")" .
+
+<http://data.doremus.org/work/291b163d-3b3d-3000-86ad-03e49e801581>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/3ef509b5-29bd-336f-83b7-96cad8c6678c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/bfff5d94-05ba-3c43-8841-1839111ec2f8> .
+
+<http://data.doremus.org/event/364b0e01-ee9b-3b22-a28d-2c6ee951cf7a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1904-1905" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1904/1905"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1e92a419-4006-3cf7-bce2-cd9652fbb436>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4cc94449-7337-323e-a5a0-2c80ada0f5ac> .
+
+<http://data.doremus.org/event/5dc07051-fafc-3188-9756-4211569a0326>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1966" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1966"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0e13ec02-f9d2-3b92-b3f4-97b05bd9a636> .
+
+<http://data.doremus.org/work/cd8ec84c-f0da-3ff5-9b76-26b4b0cdcf39>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0f22bb0f-95cc-3b97-968a-ddbbced997dc> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/32ae01e0-3543-3c0c-b20a-703fd4b0e997> .
+
+<http://data.doremus.org/publication/a44f9013-c7d3-3b9d-bea3-b23cee0f5b1e>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2> .
+
+<http://data.doremus.org/work/577a6da6-d69b-3d2f-8e56-00d45ab9abba>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/a12aab4a-0263-391f-b120-025ae1744e25> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/7b2e72e1-f8ab-3f9a-9d2f-ef63d909b28d> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/25189f7e-ebcb-34fe-a935-91afcd8089bf> .
+
+<http://data.doremus.org/work/3f6c747c-f0a1-3baf-8d72-c75fefe42273>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/922f02ca-4472-3faf-ba46-fa273b411914> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/94085b38-d5da-3b12-82e4-7a824e2ad2f1> .
+
+<http://data.doremus.org/event/2ac7c989-6adb-3cdf-a72d-a4ef1c7f5e6e>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/3f539bc4-9100-30c4-b8f3-b4ba3cf64164> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd> .
+
+<http://data.doremus.org/work/534ffe93-23ac-357e-8bfe-6fa14964dd49>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/63248c66-e2f8-334f-b994-a9a624c2bdc9> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b> .
+
+<http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/b5979a24-c580-3782-a461-d50c7831b251>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/3a0834cd-9159-3c51-9575-f7b3ea1c1085> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630> .
+
+<http://data.doremus.org/expression/97673365-8b3b-324a-a04b-7f87a56982c3>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/6abaa561-fdab-3e17-a96f-ed7a10259138> .
+
+<http://data.doremus.org/work/f86c2f57-1129-321e-9e33-0fb64abf9184>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/a74b8671-30a9-3684-b03f-1af5e23bd3f1> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194> .
+
+<http://data.doremus.org/work/e9662ec5-e43c-32f1-ac5a-b6f964e46668>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d4a24107-b2fe-3013-b712-4776420be2de> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e> .
+
+<http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b/casting/1> ;
+        ecrm:P102_has_title  "Concerto pour violoncelle et orchestre" ;
+        ecrm:P3_has_note     "Le Concerto pour violoncelle s+organise en deux volets de durée égale, semblables par leurs dernières mesures, à la façon d+un distique librement rimé. La cadence du soliste qui clôt le second volet « cadence chuchotée », elle se situe au plus loin du pathos des concertos traditionnels [...] (Peter Szendy)" , "19 avril 1967 à Berlin par Siegfried Palm, violoncelle (dédicataire de l'oeuvre), orchestre de la Radio de Berlin sous la direction de Henrick Czyz." .
+
+<http://data.doremus.org/expression/85d0e72b-33bb-3057-978c-5e40e396db49>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194> .
+
+<http://data.doremus.org/expression/28e67d53-5bd8-3349-90b0-2a1a42317a94>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b> .
+
+<http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "1" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70/casting/1> ;
+        ecrm:P102_has_title       "Suite pour petit orchestre no 1" , "Suite pour petit orchestre" , "Suite for small orchestra" ;
+        ecrm:P3_has_note          "\"La Suite no 1 résulte de l'orchestration de quatre des cinq \"Pièces faciles pour piano à quatre mains\" composées en 1916-1917 et dédiées \"à Madame Eugenia Errazuriz - hommage très respectueux\" (Anne Grange). Comprend : 1- Andante. 2- Napolitana. 3- Espanola. 4- Balalaïka" .
+
+<http://data.doremus.org/event/5cae492a-f46b-3fc8-b6d5-c91e1ce728d0>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1984" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1984"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/fd8cf241-f9d5-3a24-93e7-10c54c6839c7> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a4fe1877-b88a-341b-831f-e8514640976e> .
+
+<http://data.doremus.org/work/d637722e-34e3-3ecf-ae2f-ffd2588fe64b>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/d7590ccd-dca9-375e-b2a5-10156416b642> .
+
+<http://data.doremus.org/event/87c52b87-6cf7-34fa-8e92-d15bb2323062>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1967" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1967"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3a0834cd-9159-3c51-9575-f7b3ea1c1085> .
+
+<http://data.doremus.org/publication/d7590ccd-dca9-375e-b2a5-10156416b642>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/25189f7e-ebcb-34fe-a935-91afcd8089bf> .
+
+<http://data.doremus.org/work/17197179-d088-3127-a706-026d20967fe3>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4a029a27-1bdb-3b73-9867-d1c4490b0044> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69> .
+
+<http://data.doremus.org/artist/1e92a419-4006-3cf7-bce2-cd9652fbb436>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/4d5dce02-3b0b-34e5-bb84-9e7faffa1e33>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/9d822de2-afb0-3ac6-9135-eab6cb3e7a10> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d> .
+
+<http://data.doremus.org/event/0336b2e8-d7f5-35ad-b56b-9a4a018fa90b>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2dd4aea2-8669-3c2e-a499-196f99aebcef> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/fd8cf241-f9d5-3a24-93e7-10c54c6839c7> .
+
+<http://data.doremus.org/expression/a896127b-9658-3ee0-a714-44fa8247db64/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/43> .
+
+<http://data.doremus.org/work/272b9fe3-6dbe-337f-8ee8-98973a0defc2>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/d5f4c506-1a81-324c-9237-b27b070be953> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/4da1aed9-2a8d-3828-8a02-d8f7177a5c47> .
+
+<http://data.doremus.org/event/f6b34726-c6cf-3a8a-938d-ec07621d8b68>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Editeur : Universal Edition." ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/61d71f3c-9ad1-311b-b704-cdeeca9956e4> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/fb746254-c3a3-32b0-8920-de1c0935a1f3> .
+
+<http://data.doremus.org/performance/4018179b-936b-32d7-99bc-47c32ab6bc70>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création : le 20 avril 1988 au théâtre Zandonai de Rovereto. Edité chez Universal" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/3040539d-19db-39dc-8268-f5246fcff3d3> .
+
+<http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/event/fd5cf05a-ea6d-30a7-86d9-bb46bc04f6b3>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1936" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1936"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/1e92a419-4006-3cf7-bce2-cd9652fbb436>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a74b8671-30a9-3684-b03f-1af5e23bd3f1> .
+
+<http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/work/5ef3fd01-bc62-38a2-a9c8-731efac531d4>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/1e8f4cad-d701-3ace-b817-fdecaac65939> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e> .
+
+<http://data.doremus.org/event/9a44d978-0e4c-347f-88dd-c8ae23deb5ad>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/a1e86c44-2227-323f-9a7b-11250b3c408b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/04896b5b-5320-30b2-a2ff-532cd5123da8> .
+
+<http://data.doremus.org/work/fad44803-0f4d-3003-bdcf-a2bb086ed47d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/94a470ca-8531-300f-a8d6-6ed8a067a340> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/a896127b-9658-3ee0-a714-44fa8247db64> .
+
+<http://data.doremus.org/artist/4a7d5c3f-d6bf-34c9-a21c-44860c71ed1a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/c987316b-6110-3011-b876-e39426f77b09>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "21 mars 1966 à New York pour la seconde partie ; juin 1966 à Londres pour l'intégrale, par Vinko Globokar." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/3361c898-ba89-3845-8b4a-1fd22da4e060> .
+
+<http://data.doremus.org/event/603160bc-4218-3404-85a4-8841cf3c323a>
+        a                    efrbroo:F28_Expression_Creation ;
+        efrbroo:R17_created  <http://data.doremus.org/expression/c9e52b81-d42f-3da2-9efc-87e15b2f48a3> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/753bc729-c992-35db-96c6-7e6287b8535c> .
+
+<http://data.doremus.org/expression/702bae3d-ab5a-322e-8433-226cdcb80eb9>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/25189f7e-ebcb-34fe-a935-91afcd8089bf> .
+
+<http://data.doremus.org/event/27243c88-cd57-3fc1-b3a0-842426dfe5b8>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/61349b1f-c8ca-36b8-aa3f-dc6f133a193e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6abaa561-fdab-3e17-a96f-ed7a10259138> .
+
+<http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 violons, alto, violoncelle" .
+
+<http://data.doremus.org/work/4806c9a8-a85c-3aeb-9806-22998ad86f3e>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/26bc2531-be03-3828-b198-da7901e4f07a> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/7579bb66-e297-3148-b016-dc8e6a62d2dc> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2> .
+
+<http://data.doremus.org/event/7722a3a0-73be-3355-a4a3-c8efce3c38e7>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "21 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "2002." ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "2002"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/32435cab-6018-35f8-ba1b-c4d05ba531a1> .
+
+<http://data.doremus.org/publication/fb746254-c3a3-32b0-8920-de1c0935a1f3>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab> .
+
+<http://data.doremus.org/work/1896bd4e-fb8b-3451-bf27-d40c2f93d058>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/fae4c1b6-bd5a-370e-a930-b75c204f3cf7> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/9ec30f3f-c70d-3331-b54a-6bd847c343bd> .
+
+<http://data.doremus.org/work/1e8f4cad-d701-3ace-b817-fdecaac65939>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e> .
+
+<http://data.doremus.org/work/a5520972-ffd1-3414-9198-8e4705ce239f>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/2a64bcaf-dab8-3a2a-8d4c-8e91ee141491> .
+
+<http://data.doremus.org/expression/6abaa561-fdab-3e17-a96f-ed7a10259138/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/expression/32e2086a-1bd3-39f4-a685-65ac18839c57>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/bfff5d94-05ba-3c43-8841-1839111ec2f8> .
+
+<http://data.doremus.org/performance/fae4c1b6-bd5a-370e-a930-b75c204f3cf7>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée par Teodoro Anzellotti, son commanditaire, en novembre 1995 à Rotterdam" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/b5c564d4-7b33-315b-ad04-4064ac4d04e3> .
+
+<http://data.doremus.org/work/94a470ca-8531-300f-a8d6-6ed8a067a340>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/610f9454-d051-3e16-ae93-7799ded4f3a9> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/a896127b-9658-3ee0-a714-44fa8247db64> .
+
+<http://data.doremus.org/event/cfad9c8e-b3d5-3cf4-a58f-6380e1acc897>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/9ddf1be1-d706-34db-81f0-9b6c2e55d39c> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c9e52b81-d42f-3da2-9efc-87e15b2f48a3> .
+
+<http://data.doremus.org/expression/53534a2b-1034-3380-b891-521328fd619f/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/17> .
+
+<http://data.doremus.org/publication/fe91db80-9302-390c-b876-3280c410ca6b>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/6abaa561-fdab-3e17-a96f-ed7a10259138> .
+
+<http://data.doremus.org/performance/033acb02-baae-3ff6-ba87-0a8be584afee>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création de l'opéra : 28 mai 1608 à la cour de Mantoue." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/0348e290-532a-3ea4-b5d7-fcb6d1b3996a> .
+
+<http://data.doremus.org/expression/25189f7e-ebcb-34fe-a935-91afcd8089bf>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/musique_de_chambre> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/25189f7e-ebcb-34fe-a935-91afcd8089bf/casting/1> ;
+        ecrm:P102_has_title  "Sequenza XII pour basson" , "Douzième Sequenza" , "Sequenza XII" , "Sequenza 12" ;
+        ecrm:P3_has_note     "La Sequenza XII est une exploration des différentes facettes de la personnalité du basson, qu'il s'agisse de ses diverses morphologies, de ses possibilités d'articulation ou encore de ses caractéristiques de timbre et de dynamique. Cette oeuvre a une structure circulaire, navigant glissando entre les registres extrêmes de l'instrument, dans un constant renouvellement des registres et des tempos. Commande de l'Ensemble Intercontemporain. Dédiée à Pascal Gallois." , "15 juin 1995 au Théâtre du Châtelet, Paris, par Pascal Gallois, le dédicataire de l'oeuvre. Editeur : Universal Edition." .
+
+<http://data.doremus.org/expression/ccd7c473-0597-3bfb-b56c-dab06037473d>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630> .
+
+<http://data.doremus.org/work/5f194371-9811-335e-a112-7da6725723c6>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/8b02ed11-0dcc-3039-88bf-fce56d79a3a4> .
+
+<http://data.doremus.org/expression/6abaa561-fdab-3e17-a96f-ed7a10259138>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "2" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/6abaa561-fdab-3e17-a96f-ed7a10259138/casting/1> ;
+        ecrm:P102_has_title       "Sonata" , "Deuxième sonate pour piano" , "Sonate pour piano no 2" ;
+        ecrm:P3_has_note          "Sonate en quatre mouvements : 1- Extrêmement rapide. 2- Lent. 3- Modéré, presque vif. 4- Très librement. Durée d'exécution : 30 minutes environ" , "Créée à Paris, Ecole normale de musique, concert des éditeurs, par Yvette Grimaud, le 29 avril 1950. Première édition : 1950" .
+
+<http://data.doremus.org/performance/8b486679-a1cb-3966-aa1d-7b5b60c65d94>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée à Darmstadt par le compositeur en 1957" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/2acd4f4b-017f-37e5-b967-11d499468a40> .
+
+<http://data.doremus.org/event/472d1048-c297-3b54-aa1a-e011c3d9c2da>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Editeur : Universal Editions, Londres" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/894d688b-e2a9-3fa7-887e-8be3cb205a6f> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/e20a1ef6-3e7c-3f14-ba9c-7d368ea20e2d> .
+
+<http://data.doremus.org/work/4cc94449-7337-323e-a5a0-2c80ada0f5ac>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/cf86dbdb-1bd1-38c1-812e-9c8465ef865a> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6> .
+
+<http://data.doremus.org/performance/7579bb66-e297-3148-b016-dc8e6a62d2dc>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée à Paris, RTF, 1946, par Yvette Grimaud." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/2f03a55d-8cc9-3460-9dea-23189acaf408> .
+
+<http://data.doremus.org/expression/4da1aed9-2a8d-3828-8a02-d8f7177a5c47/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/17> .
+
+<http://data.doremus.org/publication/8b02ed11-0dcc-3039-88bf-fce56d79a3a4>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6> .
+
+<http://data.doremus.org/artist/8f51a4f6-eb1a-3ad6-8071-f41aa77f0f52>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/3360e0c1-7e7e-3fe9-ab81-b39dc04952f2>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/29c6123f-6445-386f-944c-94d32a4bdf77> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/bf736c52-4aeb-31cd-add9-71232ed896e3> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6> .
+
+<http://data.doremus.org/work/9d822de2-afb0-3ac6-9135-eab6cb3e7a10>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/83320d92-deac-3351-83ff-7fe3a6f2f2a7> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d> .
+
+<http://data.doremus.org/work/c891fe6c-d6f3-3e66-8ce5-f7953ad51677>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/a44f9013-c7d3-3b9d-bea3-b23cee0f5b1e> .
+
+<http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Chant et piano" .
+
+<http://data.doremus.org/performance/1f71e2f6-5d68-309d-9c4c-90b073db1c52>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Edition : Chester" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/cdaed442-59c4-37dc-b735-49927756f1ba> .
+
+<http://data.doremus.org/expression/24297b73-d743-35b9-aab0-be7134e44aae>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd> .
+
+<http://data.doremus.org/expression/a896127b-9658-3ee0-a714-44fa8247db64>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/a896127b-9658-3ee0-a714-44fa8247db64/casting/1> ;
+        ecrm:P102_has_title  "Sequenza VII pour hautbois" , "Sequenza 7" , "Septième sequenza" , "Sequenza VII" ;
+        ecrm:P3_has_note     "Note de l'auteur : \"La Sequenza VII est habitée d'une sorte de conflit permanent - à mon avis très expressif et parfois dramatique - entre l'extrême vélocité du phrasé instrumental et la lenteur des procédés musicaux qui déterminent le parcours : on notera par exemple une certaine immobilité des registres, l'absence prolongée de certaines notes et l'envahissement très progressif de certains intervalles (de la quinte juste, notamment, qui se souvient du cor anglais du troisième acte de \"Tristanet Isolde\"). Avec la \"Sequenza VII\" (comme avec les Sequenze pour flûte, trombone, clarinette, trompette et basson), je poursuis la recherche d'une polyphonie virtuelle. Ici, la partie soliste est mise en perspective, elle est pour ainsi dire \"analysée\" à travers la présence constante d'une \"tonique\", un si bécarre qui peut être joué pianissimo par n'importe quel autre instrument en coulisse.\"Dédié à Heinz Holliger." , "Créée en 1969 à Bâle par Heinz Holliger" .
+
+<http://data.doremus.org/artist/8aa9bad5-8ffe-3f28-978c-34b824d24d1f>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Alto solo" .
+
+<http://data.doremus.org/event/ff8da615-edbc-38c4-a665-f13cce37cc64>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/2ce1f698-b685-3639-86ad-ed14e35bc11c> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/53534a2b-1034-3380-b891-521328fd619f> .
+
+<http://data.doremus.org/expression/9ec30f3f-c70d-3331-b54a-6bd847c343bd>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/9ec30f3f-c70d-3331-b54a-6bd847c343bd/casting/1> ;
+        ecrm:P102_has_title  "Sequenza XIII pour accordéon \"Chanson\"" , "Sequenza XIII pour accordéon" , "Sequenza 13" , "Treizième Sequenza" , "Sequenza XIII" ;
+        ecrm:P3_has_note     "Durée d'exécution : 12 minutes" , "Créée par Teodoro Anzellotti, son commanditaire, en novembre 1995 à Rotterdam" .
+
+<http://data.doremus.org/event/c94417d4-7b11-37eb-9869-4530926fc606>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1717" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1717"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/8aa9bad5-8ffe-3f28-978c-34b824d24d1f>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/1e8f4cad-d701-3ace-b817-fdecaac65939> .
+
+<http://data.doremus.org/expression/b88e99b6-151c-3b7a-82b4-84c968b77a33>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd> .
+
+<http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/iaml/genre/co> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591/casting/1> ;
+        ecrm:P102_has_title  "Concerto pour violon et orchestre" ;
+        ecrm:P3_has_note     "Cette oeuvre est une commande du violoniste Saschko Gawriloff, qui en est le dédicataire, et du Westdeutscher (WDR) de Cologne. Comprend : 1- Praeludium : Vivacissimo luminoso ; 2- Aria - Hoquetus - Choral : Andante con moto ; 3- Intermezzo : Presto fluido ; 4- Passacaglia : Lento intenso ; 5- Appassionato : Agitato molto. Durée d'exécution : 25 minutes environ" , "1ère version en 3 mouvements : 29 novembre 1990, Paris. Version définitive en 5 mouvements : 8 octobre 1992, Cologne. Saschko Gawriloff, violon, Ensemble Modern sous la direction de Peter Eötvös." .
+
+<http://data.doremus.org/expression/b2f051d5-c50a-3f54-b024-b8a9216e219d>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/b2f051d5-c50a-3f54-b024-b8a9216e219d/casting/1> ;
+        ecrm:P102_has_title  "Sequenza VIII pour violon" , "Sequenza 8" , "Huitième Sequenza" , "Sequenza VIII" ;
+        ecrm:P3_has_note     "Composé à la demande de Serena de Bellis. Note de l'auteur : \"Composer cette Sequenza a été pour moi comme payer une dette personnelle au violon, que je considère comme l'un des instruments les plus permanents et les plus complexes qui soient. Si presque toutes les autres Sequenze développent de façon extrême un choix très restreint de possibilités instrumentales et de comportements du soliste, la \"Sequenza VIII\" présente une image plus vaste et plushistorique de l'instrument. Elle s'appuie constamment sur deux notes (la et si) qui, comme dans une chaconne, servent de boussole dans le parcours plutôt diversifié et élaboré du morceau où la polyphonie n'est plus virtuelle, comme dans d'autres Sequenze, mais réelle. C'est pourquoi cette Sequenza se révèle, inévitablement, un hommage à ce sommet musical qu'est la \"chaconne\" de la \"Partita en ré mineur\" de Johann Sebastian Bach, dans laquelle coexistent des techniques instrumentales passées, présentes et futures.\" Dédié à Carlo Chiarappa." , "Créée en 1976 aux Etats-Unis par E. Granat." .
+
+<http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/musique_de_chambre> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab/casting/1> ;
+        ecrm:P102_has_title  "Sequenza V" , "Sequenza V pour trombone" , "Sequenza 5" , "Cinquième Sequenza" ;
+        ecrm:P3_has_note     "21 mars 1966 à New York pour la seconde partie ; juin 1966 à Londres pour l'intégrale, par Vinko Globokar. Editeur : Universal Edition." , "Faisant explicitement référence au célèbre clown Grock et à son métaphysique \"Warum ?\", cette Sequenza constituée de deux parties repose sur un processus de dissociation des comportements, au sens d'\"oeuvres que l'on peut écouter et voir comme des entités dramaturgiques\". Le compositeur y instaure un jeu entre la voix du soliste et son instrument utilisé avec la sourdine, d'où un renversement par la double tentative de \"vocalisation de l'instrument\" et d'\"instrumentalisation de la voix\". Les deux parties sont articulées autour du \"Why ?\" (qui ressemble à la sonorité de l'instrument) ; la partie A est plus un exposé alternant les jeux avec ou sans sourdine conduisant à l'identification du mot avec le jeu instrumental ; la partie B quant à elle correspond à un exposé plus dense mêlant Flatterzunge et glissandos jusqu'à la conjugaison finale du parlé et du joué. Dédiée à la mémoire du clown Grock (Adrien Wettach) et destinée à Stuart Dempster." .
+
+<http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/musique_de_chambre> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447/casting/1> ;
+        ecrm:P102_has_title  "Sequenza XIV" , "Sequenza XIV pour violoncelle" , "Sequenza 14" , "Quatorzième Sequenza" ;
+        ecrm:P3_has_note     "28 avril 2002 à Witten par le dédicataire, Rohan de Saram. Editeur : Universal Edition." , "La Sequenza XIV fut en partie inspirée à Berio par l'intérêt qu'il portait aux rythmes des percussions de Kandy, l'ancienne capitale de l'actuel Sri Lanka, notamment le tambour de Kandy ayant pour particularité de produire quatre sons différents, deux par face. Dans cette Sequenza Berio utilise, de manière assez libre, un rythme à douze temps, ajoutant ou retranchant un temps selon l'épisode. Les parties rythmiques de la pièce développent leur cadence avec un motif toujours renouvelé au moyen de frappes, en général simultanées, des doigts de la main gauche sur les cordes et de la main droite sur la caisse du violoncelle, sans utilisation de l'archet. Commande du WDR Cologne, Fondation Calouste Gulbenkian Lisbonne, Societa del Quartetto di Milano. Dédiée à Rohan de Saram. Une adaptation pour contrebasse de la Sequenza XIV a été créée par Stefanio Scodanibbio en 2004 sous le nom de Sequenza XIVb. Cette dernière fut jouée pour la première fois le 15 juin 2004 à Stuttgart par Stefanio Scodanibbio. Elle est éditée chez Universal Edition et dure environ 13 minutes." .
+
+<http://data.doremus.org/work/b99043f6-edf1-3949-9c77-60a00e131c8c>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/04896b5b-5320-30b2-a2ff-532cd5123da8> .
+
+<http://data.doremus.org/work/b93f2ec8-cddc-35e1-b1cc-85af765871be>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/3daee9fa-7245-336f-bdf2-9d5743c74bcf> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591> .
+
+<http://data.doremus.org/work/1971940a-a9b2-33e5-908b-2c905749bf60>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/472d1048-c297-3b54-aa1a-e011c3d9c2da> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/e25fb544-4ddb-38f5-b69b-d8aa42ec6a86> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd> .
+
+<http://data.doremus.org/event/368b80bc-38a2-3abf-b9ee-8b876ce89cc0>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/51656781-78ae-3fa0-b3d2-ab264e3aaa18> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/25189f7e-ebcb-34fe-a935-91afcd8089bf> .
+
+<http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "voix de femme soliste" .
+
+<http://data.doremus.org/work/61d71f3c-9ad1-311b-b704-cdeeca9956e4>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/fb746254-c3a3-32b0-8920-de1c0935a1f3> .
+
+<http://data.doremus.org/performance/3daee9fa-7245-336f-bdf2-9d5743c74bcf>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1ère version en 3 mouvements : 29 novembre 1990, Paris. Version définitive en 5 mouvements : 8 octobre 1992, Cologne. Saschko Gawriloff, violon, Ensemble Modern sous la direction de Peter Eötvös." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/37a086ee-aa6f-3dde-a760-b778fca313f9> .
+
+<http://data.doremus.org/expression/ea27e80d-b908-3f43-9146-9b1252754fb8>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6> .
+
+<http://data.doremus.org/publication/2a64bcaf-dab8-3a2a-8d4c-8e91ee141491>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447> .
+
+<http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Violoncelle solo, 1 flûte/piccolo, 1 hautbois/cor anglais, 2 clarinette/clarinette basse, basson, cor, trompette en ré/en ut, trombone ténor/basse, harpe, violons I, violon II, alto, violoncelle, contrebasse." .
+
+<http://data.doremus.org/work/e0f86caf-3408-3588-bce5-c118955cb187>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/4018179b-936b-32d7-99bc-47c32ab6bc70> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/7697d03e-8be3-37da-8dce-056b098cc711> .
+
+<http://data.doremus.org/event/d205d239-d1d1-38a4-945e-313d2f164da4>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c186ab21-5ddb-39a7-927c-265ee3929ec8> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/bfff5d94-05ba-3c43-8841-1839111ec2f8> .
+
+<http://data.doremus.org/performance/f8da3675-81f1-3868-92e0-1d71a4321de1>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Première publication : Venise, 1614" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/24297b73-d743-35b9-aab0-be7134e44aae> .
+
+<http://data.doremus.org/event/ae63e15e-ccb4-363b-a07b-ceae11cce017>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/ac45a4c2-ac7b-33dc-bca9-9ae490525788> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70> .
+
+<http://data.doremus.org/work/8a592b13-f50f-3378-9b97-4a0459e7c54f>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/3360e0c1-7e7e-3fe9-ab81-b39dc04952f2> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6> .
+
+<http://data.doremus.org/expression/4da1aed9-2a8d-3828-8a02-d8f7177a5c47>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "25" ;
+        mus:U11_has_key           [ a                         mus:M4_Key ;
+                                    ecrm:P1_is_identified_by  "Mi bémol majeur, Do majeur et mineur"@fr
+                                  ] ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique baroque"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/4da1aed9-2a8d-3828-8a02-d8f7177a5c47/casting/1> ;
+        ecrm:P102_has_title       "Vingt cinquième ordre" , "La visionnaire" , "Les ombres errantes" , "Ordres" , "La muse victorieuse" , "Ordre no 25" , "La mistérieuse" , "Pièces de clavecin. Livre 4. Ordre 25" , "La Monflambert" ;
+        ecrm:P3_has_note          "Appartient au quatrième et dernier livre , publié en 1730, trois ans avant sa mort . Couperin publie en dix-sept ans quatre livres (1713, 1717, 1722 et 1730) rassemblant deux-cent-trente-trois pièces, groupées en vingt-sept \"Ordres\". Le quatrième livre est celui de Couperin vieillissant et souffrant et renferme les pièces les plus intérieures. Le 25ème ordre aborde les ultimes pages consacrées par le compositeur au clavecin. Le ton y est grave. Il délaisse désormais \"ce qui surprend\" pour ne s'intéresser plus qu'à \"ce qui touche\". L'ordre comprend : La Visionnaire (qui au XVIIème siècle ne renvoie pas à la notion de mystique mais plutôt de bizarre, extravagant) ; La Mistérieuse ; La Monflambert, La Muse victorieuse, Les Ombres errantes" .
+
+<http://data.doremus.org/expression/bfff5d94-05ba-3c43-8841-1839111ec2f8/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/42> .
+
+<http://data.doremus.org/event/1f6922c7-30cc-3ee1-a71f-2be600544aa8>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/29eec8a3-a5ce-36e9-ae69-8337fc88fe6d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab> .
+
+<http://data.doremus.org/work/a4fe1877-b88a-341b-831f-e8514640976e>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/15330b86-9318-3ca8-87e1-b21d5705ac0a> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/fd8cf241-f9d5-3a24-93e7-10c54c6839c7> .
+
+<http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/17> .
+
+<http://data.doremus.org/event/5494c05a-bcdf-325d-b33e-f54ba7431e94>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f86c2f57-1129-321e-9e33-0fb64abf9184> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194> .
+
+<http://data.doremus.org/work/008c0bc4-dff2-3b04-93d1-310f7ea9e064>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/b93f2ec8-cddc-35e1-b1cc-85af765871be> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591> .
+
+<http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/genre/20> .
+
+<http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd/casting/1> ;
+        ecrm:P102_has_title  "Troisième Sequenza" , "Sequenza III pour voix de femme" , "Sequenza III" ;
+        ecrm:P3_has_note     "Cette oeuvre a été composée en 1966 pour Cathy Berberian, sur un texte de Markus Kutter. Elle se référe à la voix dans sa manifestation quotidienne la plus importante pour Berio, à savoir le rire. Durée d'exécution : 8 minutes environ" , "Brême, 1966, par Cathy Berberian. Editeur : Universal Editions, Londres" .
+
+<http://data.doremus.org/performance/bf736c52-4aeb-31cd-add9-71232ed896e3>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Paris, Société nationale de musique, le 13 mai 1922." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/ea27e80d-b908-3f43-9146-9b1252754fb8> .
+
+<http://data.doremus.org/event/046db256-db57-37c8-8cb5-9c889d473360>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8349ae5a-f7fb-34e5-80e6-63994dd37c1e> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd> .
+
+<http://data.doremus.org/work/db483334-ebfa-315e-99d1-366f97df3b05>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/033acb02-baae-3ff6-ba87-0a8be584afee> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451> .
+
+<http://data.doremus.org/expression/94085b38-d5da-3b12-82e4-7a824e2ad2f1/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/34> .
+
+<http://data.doremus.org/event/18662492-c88c-3b39-a450-13b67cbfdb39>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/64f9f271-8ada-3647-a163-e805207bcd42> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971> .
+
+<http://data.doremus.org/work/5971933b-4d17-3b5b-b22d-530b97cf056b>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/ff7c9e56-ae20-3daf-bd5e-a1227bef36f9> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/be045def-f674-3f7d-87f3-061c1be59360> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/6abaa561-fdab-3e17-a96f-ed7a10259138> .
+
+<http://data.doremus.org/performance/fcbeb7df-dbc9-32a9-8a62-30114263d384>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "1967, New York, par Walter Traempler." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/ccd7c473-0597-3bfb-b56c-dab06037473d> .
+
+<http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "5 voix" .
+
+<http://data.doremus.org/work/fcbc4c84-cc77-36f5-a492-cdaaa24652b9>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/19d58667-1703-3047-a9e8-16d6c944ce48> .
+
+<http://data.doremus.org/event/a00a117a-1464-3327-ab2c-9d51193a11ee>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/cd8ec84c-f0da-3ff5-9b76-26b4b0cdcf39> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/32ae01e0-3543-3c0c-b20a-703fd4b0e997> .
+
+<http://data.doremus.org/event/7e845d2e-6883-32e8-bed4-2abb10f14c53>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1963" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1963"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/bfff5d94-05ba-3c43-8841-1839111ec2f8> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/291b163d-3b3d-3000-86ad-03e49e801581> .
+
+<http://data.doremus.org/event/30d2f809-5151-3ab1-8775-a3bab50071d4>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/c6ae4b41-d893-3497-8999-7bfbb6409f04> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447> .
+
+<http://data.doremus.org/event/9f094fe7-6f12-3f37-8fe9-a88ee2c3bfef>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Editeur : Universal Edition." ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/fcbc4c84-cc77-36f5-a492-cdaaa24652b9> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/19d58667-1703-3047-a9e8-16d6c944ce48> .
+
+<http://data.doremus.org/expression/a1e86c44-2227-323f-9a7b-11250b3c408b>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U17_has_opus_statement  [ a                           mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number     "118" ;
+                                      mus:U43_has_opus_subnumber  "2" ;
+                                      ecrm:P3_has_note            "Op. 118 no 2"
+                                    ] ;
+        ecrm:P102_has_title         "L'horizon chimérique" , "Je me suis embarqué" .
+
+<http://data.doremus.org/work/63248c66-e2f8-334f-b994-a9a624c2bdc9>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/747d0671-34d7-3aba-b330-3d106df07b7e> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b> .
+
+<http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Flûte, flûte / flûte piccolo, hautbois, 2 clarinettes en sib / clarinettes en la, 2 bassons, cor, 2 trompettes, trombone, tuba, 2 percussions, piano, 4 violons, 2 altos, 2 violoncelles, contrebasse" .
+
+<http://data.doremus.org/performance/e3369dcb-e89e-3e72-a8e6-b019de778952>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée en 1976 aux Etats-Unis par E. Granat." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/cba06047-e9f8-3be2-91d4-7e04952ce4c9> .
+
+<http://data.doremus.org/event/5cd76deb-f0d4-3ad4-b7aa-1285765afebd>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1921" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1921"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c543bf3a-8b26-38c1-bd6b-b2b68dccbb17>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/8e8eb819-8454-3b05-ba30-db69c95a2eb6> .
+
+<http://data.doremus.org/event/da223ddb-9efa-36e4-8f91-2c152bd12b72>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1915" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1915"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d4a24107-b2fe-3013-b712-4776420be2de> .
+
+<http://data.doremus.org/event/cca7431b-f8c9-3aca-ba5e-800aab9bde9f>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1988" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1988"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/7697d03e-8be3-37da-8dce-056b098cc711> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/e0f86caf-3408-3588-bce5-c118955cb187> .
+
+<http://data.doremus.org/expression/e9759004-27ec-30d4-8e30-cc6e519de14f>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/fd8cf241-f9d5-3a24-93e7-10c54c6839c7> .
+
+<http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/diabolo/genre/lied> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "14" ;
+                                      ecrm:P3_has_note         "Op. 14"
+                                    ] ;
+        ecrm:P102_has_title         "Lieder des Abschieds" , "Abschiedslieder" ;
+        ecrm:P3_has_note            "Ce cycle de Lieder est dédié à Franz Schalk. Il existe une version orchestrée. Comprend : 1- Sterbelied (poème de Christina G. Rossetti traduit par Alfred Kerr). 2- Dies eine kann mein Sehnen nimmer fassen (poème de Edith Ronsperger). 3- Mond, so gehst du wieder auf (poème de Ernst Lothar). 4- Gefasster Abschied (poème de Ernst Lothar). - Dédié à Franz Schalk. -" , "Créé à Vienne le 5 novembre 1920, par Maria Olszewka et le compositeur" .
+
+<http://data.doremus.org/event/d4d7d64f-f2ef-308f-b9d0-c4f0f6f9be0e>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1917-1925" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1917/1925"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c543bf3a-8b26-38c1-bd6b-b2b68dccbb17>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/2d5a12dc-e061-3b68-8b17-ba112f23c46c> .
+
+<http://data.doremus.org/performance/be045def-f674-3f7d-87f3-061c1be59360>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée à Paris, Ecole normale de musique, concert des éditeurs, par Yvette Grimaud, le 29 avril 1950." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/97673365-8b3b-324a-a04b-7f87a56982c3> .
+
+<http://data.doremus.org/work/c6ae4b41-d893-3497-8999-7bfbb6409f04>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/32435cab-6018-35f8-ba1b-c4d05ba531a1> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447> .
+
+<http://data.doremus.org/artist/7c090d69-93dc-397d-985f-a75268cbab51>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630/casting/1> ;
+        ecrm:P102_has_title  "Sequenza VI pour alto" , "Sequenza VI" ;
+        ecrm:P3_has_note     "Dédiée à Serge Collot. Berio a qualifié cette Sequenza d'hommage aux Caprices de Paganini, elle est d'une tension physique extrême, avec un long tremolo intense, d'où sortira peu à peu la mélodie. Cette Sequenza est le point de départ de Chemin II pour alto et 9 instruments, et Chemin III, pour alto et orchestre." , "1967, New York, par Walter Traempler." .
+
+<http://data.doremus.org/work/65208eee-56ce-3747-b61c-0a221ee2744b>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/e0f86caf-3408-3588-bce5-c118955cb187> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/7697d03e-8be3-37da-8dce-056b098cc711> .
+
+<http://data.doremus.org/event/0f06dc97-a9e6-33e8-b6ab-da9cd679c8e0>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1722" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1722"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/8aa9bad5-8ffe-3f28-978c-34b824d24d1f>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/53534a2b-1034-3380-b891-521328fd619f> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/dfe9ef0f-a60b-32d4-b80b-4b4ea2e6fb26> .
+
+<http://data.doremus.org/expression/a4caedd0-3907-31d3-bd91-b1d77e311447/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/diabolo/mop/violoncelle> .
+
+<http://data.doremus.org/work/894d688b-e2a9-3fa7-887e-8be3cb205a6f>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/e20a1ef6-3e7c-3f14-ba9c-7d368ea20e2d> .
+
+<http://data.doremus.org/expression/cba06047-e9f8-3be2-91d4-7e04952ce4c9>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/b2f051d5-c50a-3f54-b024-b8a9216e219d> .
+
+<http://data.doremus.org/work/922f02ca-4472-3faf-ba46-fa273b411914>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/9f094fe7-6f12-3f37-8fe9-a88ee2c3bfef> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/a2d11d2a-e970-3575-9957-98b30492104c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/94085b38-d5da-3b12-82e4-7a824e2ad2f1> .
+
+<http://data.doremus.org/event/cdc7c234-71f9-3623-8992-08bd0e50071a>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/5ef3fd01-bc62-38a2-a9c8-731efac531d4> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e> .
+
+<http://data.doremus.org/event/26bc2531-be03-3828-b198-da7901e4f07a>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Première édition : 1951" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/c891fe6c-d6f3-3e66-8ce5-f7953ad51677> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/a44f9013-c7d3-3b9d-bea3-b23cee0f5b1e> .
+
+<http://data.doremus.org/event/3994b222-32f0-3864-9cf7-843e296acd5e>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/3a7fb9fb-1ca8-306e-bd43-12f0e2322141> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/b2f051d5-c50a-3f54-b024-b8a9216e219d> .
+
+<http://data.doremus.org/work/9ddf1be1-d706-34db-81f0-9b6c2e55d39c>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/753bc729-c992-35db-96c6-7e6287b8535c> .
+
+<http://data.doremus.org/work/64f9f271-8ada-3647-a163-e805207bcd42>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/fa92b8bb-86c2-30f6-b2d3-a9bf9b4fd7e9> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971> .
+
+<http://data.doremus.org/expression/5121a520-7f97-39c5-a11d-f4cc92f52d3e>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e> .
+
+<http://data.doremus.org/event/b095895c-3187-3ce7-b069-8ee840c18011>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P3_has_note       "1966" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1966"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/1971940a-a9b2-33e5-908b-2c905749bf60> .
+
+<http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Violon soliste et quatuor de bois : 2 flûtes/piccolo/flûte alto/flûte à bec soprano, hautbois/ocarina en ut, clarinette/clarinette en mi bémol." .
+
+<http://data.doremus.org/work/753bc729-c992-35db-96c6-7e6287b8535c>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c9e52b81-d42f-3da2-9efc-87e15b2f48a3> .
+
+<http://data.doremus.org/event/e21e15b5-e25b-31e0-a147-0e458298ad67>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1966" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1966"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/4a7d5c3f-d6bf-34c9-a21c-44860c71ed1a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/63248c66-e2f8-334f-b994-a9a624c2bdc9> .
+
+<http://data.doremus.org/expression/94085b38-d5da-3b12-82e4-7a824e2ad2f1>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/musique_de_chambre> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/94085b38-d5da-3b12-82e4-7a824e2ad2f1/casting/1> ;
+        ecrm:P102_has_title  "Sequenza I pour flûte" , "Sequenza I" , "Première Sequenza" , "Sequenza 1" ;
+        ecrm:P3_has_note     "Septembre 1958 au festival de Darmstadt par Severino Gazzelloni. Editeur : Universal Edition." , "Cette Sequenza reflète l'intérêt que porte Berio à la flûte à cette époque et s'inscrit dans le mouvement de l'\"oeuvre ouverte\" décrit par Umberto Eco. Ce mouvement, qui concerne de nombreux compositeurs dans les années 50, vise à accorder à l'interprète plus de responsabilité. Dans cette optique Berio introduit dans sa partition un degré de flexibilité en ayant recours à une notation proportionnelle : chaque \"barre de mesure\" correspondant à une pulsation métronimique, les valeurs rythmiques sont à jouer plus souplement à l'intérieur de ces subsivisions. D'où une plus grande fluidité du discours. Mais cette partition innove également au niveau instrumental : la Sequenza exploitant les trémolos, premiers exemples de doubles sons franchissant un pas vers une polyphonie plus réelle, bruits de clés en tant qu'approche maximale du bruit. Dédiée à Severino Gazzelloni." .
+
+<http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    <http://data.doremus.org/vocabulary/diabolo/genre/madrigal> ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "arioso"@fr
+                             ] ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique baroque"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451/casting/1> ;
+        mus:U16_has_catalogue_statement
+                [ a                             mus:M1_Catalogue_Statement ;
+                  mus:U40_has_catalogue_name    "SV" ;
+                  mus:U41_has_catalogue_number  "22" ;
+                  ecrm:P3_has_note              "SV 22"
+                ] ;
+        ecrm:P102_has_title  "Piano della Madona" , "Lamento d'Arianna : Lasciatemi morire" , "Lamento d'Arianna" ;
+        ecrm:P3_has_note     "Création de l'opéra : 28 mai 1608 à la cour de Mantoue." , "Extrait de la sixième scène de l'opéra \"Arianna\" sur un livret d'Ottavio Rinuccini ( la partition, à part le \"lamento\", a été perdue), le \"Lamento\" a connu dès sa création un immense succès, largement imité par la suite et devenant un genre musical à part entière. Composée suivant les principes du \"nouveau style\", cette oeuvre est une des premières manifestations d'un sentiment subjectif et personnel appliqué à la musique. Pour suivre les inflexions poétiques du texte et exprimer les émotions du personnage, Monteverdi use de nombreux effets vocaux, rythmiques et harmoniques, répertoriés en \"affects\". Il existe deux autres versions : polyphonique en forme de madrigal à cinq voix en quatre parties ( Sesto libro de madrigali, 1614) ; religieuse avec un nouveau texte : \"Lamento della Madonna sopra il lamento dell' Arianna\" (nr.40 de la \"Selva Morale e Spirituale\", Venise, 1641)." .
+
+<http://data.doremus.org/work/8349ae5a-f7fb-34e5-80e6-63994dd37c1e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/6d692eb4-29ae-3f2a-baa3-866213d6f31a> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd> .
+
+<http://data.doremus.org/expression/4fd4c2a2-ea2f-3606-8d96-8156f9bcbfba>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/94085b38-d5da-3b12-82e4-7a824e2ad2f1> .
+
+<http://data.doremus.org/performance/3ef509b5-29bd-336f-83b7-96cad8c6678c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée en 1963 à Paris par Francis Pierre" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/32e2086a-1bd3-39f4-a685-65ac18839c57> .
+
+<http://data.doremus.org/expression/b2f051d5-c50a-3f54-b024-b8a9216e219d/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/79> .
+
+<http://data.doremus.org/event/4e5adb54-7d5d-3e50-8903-40c9e1606e6d>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/17197179-d088-3127-a706-026d20967fe3> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69> .
+
+<http://data.doremus.org/event/b59940ac-6be2-3dc2-b0d8-0797f1d13e43>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/534ffe93-23ac-357e-8bfe-6fa14964dd49> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/0759843a-eb24-3294-a1bc-3a31ca26c07b> .
+
+<http://data.doremus.org/work/29eec8a3-a5ce-36e9-ae69-8337fc88fe6d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/0e13ec02-f9d2-3b92-b3f4-97b05bd9a636> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab> .
+
+<http://data.doremus.org/work/1a5c2100-a7b5-3257-8e43-41a490b2c9ac>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/db483334-ebfa-315e-99d1-366f97df3b05> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451> .
+
+<http://data.doremus.org/event/ff7c9e56-ae20-3daf-bd5e-a1227bef36f9>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Première édition : 1950" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/06ad4ef8-ea18-3917-84b3-510f79216aeb> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/fe91db80-9302-390c-b876-3280c410ca6b> .
+
+<http://data.doremus.org/work/f61e7d07-7083-323f-a43d-48e9e45c9569>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/4806c9a8-a85c-3aeb-9806-22998ad86f3e> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2> .
+
+<http://data.doremus.org/event/0210234e-6496-3646-85e6-7ddbb4c5552c>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1946" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1946"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7c090d69-93dc-397d-985f-a75268cbab51>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4806c9a8-a85c-3aeb-9806-22998ad86f3e> .
+
+<http://data.doremus.org/event/78756468-2d3f-3ac9-abf2-3875ebc86250>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1928-1929" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1928/1929"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/0be593df-203d-34c8-8d9c-69a6be3e12f2>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/4a029a27-1bdb-3b73-9867-d1c4490b0044> .
+
+<http://data.doremus.org/performance/610f9454-d051-3e16-ae93-7799ded4f3a9>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée en 1969 à Bâle par Heinz Holliger" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/6b3509a3-668e-36c4-b095-8a88e13e2757> .
+
+<http://data.doremus.org/work/06ad4ef8-ea18-3917-84b3-510f79216aeb>
+        a                          efrbroo:F19_Publication_Work ;
+        efrbroo:R3_is_realised_in  <http://data.doremus.org/publication/fe91db80-9302-390c-b876-3280c410ca6b> .
+
+<http://data.doremus.org/publication/e20a1ef6-3e7c-3f14-ba9c-7d368ea20e2d>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd> .
+
+<http://data.doremus.org/event/cad6fda7-0ee1-3ae1-9142-d6d1debd8f59>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/fad44803-0f4d-3003-bdcf-a2bb086ed47d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/a896127b-9658-3ee0-a714-44fa8247db64> .
+
+<http://data.doremus.org/work/c186ab21-5ddb-39a7-927c-265ee3929ec8>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/291b163d-3b3d-3000-86ad-03e49e801581> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/bfff5d94-05ba-3c43-8841-1839111ec2f8> .
+
+<http://data.doremus.org/event/7b533e77-4a4b-3450-9019-ea4339dd768a>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/65208eee-56ce-3747-b61c-0a221ee2744b> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/7697d03e-8be3-37da-8dce-056b098cc711> .
+
+<http://data.doremus.org/performance/a2d11d2a-e970-3575-9957-98b30492104c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Septembre 1958 au festival de Darmstadt par Severino Gazzelloni." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/4fd4c2a2-ea2f-3606-8d96-8156f9bcbfba> .
+
+<http://data.doremus.org/event/aa3bb8f0-aab2-36cc-8064-fdec50c4694a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1995" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1995"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/9ec30f3f-c70d-3331-b54a-6bd847c343bd> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/1896bd4e-fb8b-3451-bf27-d40c2f93d058> .
+
+<http://data.doremus.org/publication/19d58667-1703-3047-a9e8-16d6c944ce48>
+        a                       efrbroo:F24_Publication_Expression ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/94085b38-d5da-3b12-82e4-7a824e2ad2f1> .
+
+<http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "2" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a/casting/1> ;
+        ecrm:P102_has_title       "Suite pour petit orchestre no 2" , "Suite pour petit orchestre" , "Suite for small orchestra" ;
+        ecrm:P3_has_note          "Commande d'un music-hall parisien. Stravinski \"réunit dans sa Suite no 2 la dernière des cinq \"Pièces faciles\" pour piano à quatre mains composées en 1916-1917, dédiées \"à Madame Eugenia Errazuriz - hommage très respectueux\", et les trois \"Pièces faciles\" composées pour ses enfants en 1914-1915. Il sélectionne quatre danses de salon formant une suite d'études parodiques et burlesques\"(Anne Grange). Comprend : 1- Marche (version pour piano dédiée à Alfredo Casella). 2- Valse (version pour piano dédiée à Erik Satie). 3- Polka (version pour piano dédiée à Serge Diaghilev). 4- Galop" , "Edition : Chester" .
+
+<http://data.doremus.org/event/7ebe5bf5-18f5-3b26-b003-f72a8bef7176>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/e9662ec5-e43c-32f1-ac5a-b6f964e46668> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e> .
+
+<http://data.doremus.org/work/83320d92-deac-3351-83ff-7fe3a6f2f2a7>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/8b486679-a1cb-3966-aa1d-7b5b60c65d94> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d> .
+
+<http://data.doremus.org/event/fa01d7ad-7e28-332d-93be-d684cda5dce0>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Editeur : Universal Edition." ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/a5520972-ffd1-3414-9198-8e4705ce239f> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/2a64bcaf-dab8-3a2a-8d4c-8e91ee141491> .
+
+<http://data.doremus.org/work/5e0a77c6-14c9-3271-90fe-51c275a4b1b1>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/8e8eb819-8454-3b05-ba30-db69c95a2eb6> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a> .
+
+<http://data.doremus.org/performance/e25fb544-4ddb-38f5-b69b-d8aa42ec6a86>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Brême, 1966, par Cathy Berberian." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/b88e99b6-151c-3b7a-82b4-84c968b77a33> .
+
+<http://data.doremus.org/work/0f22bb0f-95cc-3b97-968a-ddbbced997dc>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/ac91f086-2605-3f89-a5a8-d3fb636b102c> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/32ae01e0-3543-3c0c-b20a-703fd4b0e997> .
+
+<http://data.doremus.org/expression/32ae01e0-3543-3c0c-b20a-703fd4b0e997>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/32ae01e0-3543-3c0c-b20a-703fd4b0e997/casting/1> ;
+        ecrm:P102_has_title  "Sequenza IV pour piano" , "Sequenza 4" , "Quatrième sequenza" , "Sequenza IV" ;
+        ecrm:P3_has_note     "Note de l'auteur : \"La Sequenza IV pour piano peut être considérée comme un voyage d'exploration à travers divers types d'articulation et comme un dialogue entre un développement en accords et un développement linéaire du même matériau. Deux séquences harmoniques indépendantes évoluent simultanément et de temps en temps interfèrent l'une avec l'autre : l'une, réelle, est confiée au clavier, l'autre, pour ainsi dire virtuelle, est confiée à la pédale tonale.\" Dédié à Jocy de Corvalho." , "Créée en 1966 à Saint Louis, Missouri (Etats-Unis) par Jocy de Corvalho." .
+
+<http://data.doremus.org/event/f95f6a6f-3112-3ead-a392-f05419408c4d>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1976" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1976"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/b2f051d5-c50a-3f54-b024-b8a9216e219d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/beffc42f-2677-34e6-8a71-62952522d8d4> .
+
+<http://data.doremus.org/work/3a7fb9fb-1ca8-306e-bd43-12f0e2322141>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/beffc42f-2677-34e6-8a71-62952522d8d4> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/b2f051d5-c50a-3f54-b024-b8a9216e219d> .
+
+<http://data.doremus.org/event/f4aab8c2-f8b4-39c4-9d0d-e93e408f8aee>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b5979a24-c580-3782-a461-d50c7831b251> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630> .
+
+<http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "2 violons, alto, violoncelle" .
+
+<http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/iaml/genre/mld> ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "cycle de mélodies"@fr
+                                    ] ;
+        mus:U12_has_genre           [ a                         mus:M5_Genre ;
+                                      ecrm:P1_is_identified_by  "mélodie française"@fr
+                                    ] ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "118" ;
+                                      ecrm:P3_has_note         "Op. 118"
+                                    ] ;
+        ecrm:P102_has_title         "L'horizon chimérique : La mer est infinie. Je me suis embarqué. Diane Séléné. Vaisseaux, nous vous aurons aimés" , "L'horizon chimérique" ;
+        ecrm:P3_has_note            "Créé à Paris, Société nationale de musique, le 13 mai 1922. Première édition : Paris, Durand, 1922" , "Cycle de mélodies sur des poèmes de Jean de La Ville de Mirmont, dédicacé à Charles Panzéra. Comprend : 1- La mer est infinie. 2- Je me suis embarqué. 3- Diane Séléné. 4- Vaisseaux, nous vous aurons aimés" .
+
+<http://data.doremus.org/artist/81d5f89e-033f-3143-aa6e-77633ea4ff57>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/performance/747d0671-34d7-3aba-b330-3d106df07b7e>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "19 avril 1967 à Berlin par Siegfried Palm, violoncelle (dédicataire de l'oeuvre), orchestre de la Radio de Berlin sous la direction de Henrick Czyz." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/28e67d53-5bd8-3349-90b0-2a1a42317a94> .
+
+<http://data.doremus.org/event/29c6123f-6445-386f-944c-94d32a4bdf77>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Première édition : Paris, Durand, 1922" ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/5f194371-9811-335e-a112-7da6725723c6> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/8b02ed11-0dcc-3039-88bf-fce56d79a3a4> .
+
+<http://data.doremus.org/event/9e33d3fd-acba-3bac-83f6-138ff1532046>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/8a592b13-f50f-3378-9b97-4a0459e7c54f> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6> .
+
+<http://data.doremus.org/work/ac45a4c2-ac7b-33dc-bca9-9ae490525788>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/2d5a12dc-e061-3b68-8b17-ba112f23c46c> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70> .
+
+<http://data.doremus.org/work/d5f4c506-1a81-324c-9237-b27b070be953>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/4da1aed9-2a8d-3828-8a02-d8f7177a5c47> .
+
+<http://data.doremus.org/expression/2f03a55d-8cc9-3460-9dea-23189acaf408>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2> .
+
+<http://data.doremus.org/expression/0348e290-532a-3ea4-b5d7-fcb6d1b3996a>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451> .
+
+<http://data.doremus.org/event/44a239f2-1d24-3832-9135-d0c83637ec95>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/b99043f6-edf1-3949-9c77-60a00e131c8c> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/a1e86c44-2227-323f-9a7b-11250b3c408b> .
+
+<http://data.doremus.org/work/fa92b8bb-86c2-30f6-b2d3-a9bf9b4fd7e9>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971> .
+
+<http://data.doremus.org/expression/2acd4f4b-017f-37e5-b967-11d499468a40>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d> .
+
+<http://data.doremus.org/performance/f3a06148-dfe8-3a65-b4f2-5da5fd0a9cf0>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "28 avril 2002 à Witten par le dédicataire, Rohan de Saram." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/b6fe7126-9063-384a-bf66-f75f604469ed> .
+
+<http://data.doremus.org/work/f2bc6455-7518-346b-b069-cb122f14725d>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/1896bd4e-fb8b-3451-bf27-d40c2f93d058> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/9ec30f3f-c70d-3331-b54a-6bd847c343bd> .
+
+<http://data.doremus.org/event/be72d533-69c2-3196-9a97-687785468716>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/1a5c2100-a7b5-3257-8e43-41a490b2c9ac> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451> .
+
+<http://data.doremus.org/work/2ce1f698-b685-3639-86ad-ed14e35bc11c>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/dfe9ef0f-a60b-32d4-b80b-4b4ea2e6fb26> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/53534a2b-1034-3380-b891-521328fd619f> .
+
+<http://data.doremus.org/expression/fd8cf241-f9d5-3a24-93e7-10c54c6839c7>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/fd8cf241-f9d5-3a24-93e7-10c54c6839c7/casting/1> ;
+        ecrm:P102_has_title  "Sequenza X pour trompette" , "Sequenza 10" , "Dixième Sequenza" , "Sequenza X" ;
+        ecrm:P3_has_note     "Note de l'auteur : \"Le processus d'assimilation, de transformation et de dépassement des aspects instrumentaux (ou vocaux) traditionnels fait parfois partie intégrante du développement musical des \"Sequenze\" précédentes. En revanche, dans la \"Sequenza X\", pour trompette et résonance de piano, ce processus est pratiquement absent (si l'on excepte un passage fugace où il est fait référence à l'hymne israélien, l' \"Ha Tiqwa\", l' \"Espérance\"). Il n'y a pas non plus ici de transformations du timbre ni d' \" embellissements\". La trompette est utilisée de maniére naturelle et directe, et c'est peut-être précisément cette nudité qui fait de la \"Sequenza X\" la plus difficile de toutes les \"Sequenze\". Dédiée à Thomas Stevens." , "Créée en 1984 à Los Angeles Par David Stevens." .
+
+<http://data.doremus.org/expression/be4a07c5-097c-3342-9699-069618c4f114>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/32ae01e0-3543-3c0c-b20a-703fd4b0e997> .
+
+<http://data.doremus.org/event/04b597da-c5fc-3c38-90ce-153508b3f931>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f61e7d07-7083-323f-a43d-48e9e45c9569> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2> .
+
+<http://data.doremus.org/event/a60f62e3-57e2-3812-aa0f-6e92870dcb90>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 1 ère moitié"
+                               ] ;
+        ecrm:P3_has_note       "1921" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1921"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/8f51a4f6-eb1a-3ad6-8071-f41aa77f0f52>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/550b9764-3423-3233-a617-2a04d34575a6> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/3360e0c1-7e7e-3fe9-ab81-b39dc04952f2> .
+
+<http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Voix et piano" .
+
+<http://data.doremus.org/event/f8441ac8-28cb-3026-aa11-0822dac8b0d7>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "18 ème siècle"
+                               ] ;
+        ecrm:P3_has_note       "vers 1730" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1730"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/8aa9bad5-8ffe-3f28-978c-34b824d24d1f>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/4da1aed9-2a8d-3828-8a02-d8f7177a5c47> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d5f4c506-1a81-324c-9237-b27b070be953> .
+
+<http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/71> .
+
+<http://data.doremus.org/event/44894b0c-5bec-3831-93f9-3954437401e2>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1990, révisé en 1992." ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1990/1992"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/4a7d5c3f-d6bf-34c9-a21c-44860c71ed1a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/b93f2ec8-cddc-35e1-b1cc-85af765871be> .
+
+<http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Voix et piano" .
+
+<http://data.doremus.org/expression/32ae01e0-3543-3c0c-b20a-703fd4b0e997/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/itema3/mop/54> .
+
+<http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "voix, basse continue" .
+
+<http://data.doremus.org/work/4a029a27-1bdb-3b73-9867-d1c4490b0044>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69> .
+
+<http://data.doremus.org/expression/cdaed442-59c4-37dc-b735-49927756f1ba>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a> .
+
+<http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "1" ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/sn> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/0ca9a5b2-0558-3559-ba98-b8448e6a6dd2/casting/1> ;
+        ecrm:P102_has_title       "Sonate pour piano no 1" , "Première sonate pour piano" , "Sonata" ;
+        ecrm:P3_has_note          "Sonate en deux mouvements. Durée d'exécution : 10 minutes environ" , "Créée à Paris, RTF, 1946, par Yvette Grimaud. Première édition : 1951" .
+
+<http://data.doremus.org/expression/fd8cf241-f9d5-3a24-93e7-10c54c6839c7/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  "Trompette et résonnance de piano" .
+
+<http://data.doremus.org/work/0e13ec02-f9d2-3b92-b3f4-97b05bd9a636>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U4_had_princeps_publication
+                <http://data.doremus.org/event/f6b34726-c6cf-3a8a-938d-ec07621d8b68> ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/c987316b-6110-3011-b876-e39426f77b09> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab> .
+
+<http://data.doremus.org/performance/ac91f086-2605-3f89-a5a8-d3fb636b102c>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée en 1966 à Saint Louis, Missouri (Etats-Unis) par Jocy de Corvalho." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/be4a07c5-097c-3342-9699-069618c4f114> .
+
+<http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/diabolo/genre/lied> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "27" ;
+                                      ecrm:P3_has_note         "Op. 27"
+                                    ] ;
+        ecrm:P102_has_title         "Unvergänglichkeit" ;
+        ecrm:P3_has_note            "Ce cycle de mélodies a été composé en 1933 sur des poèmes de Eleonore van der Straaten. Comprend : 1- Unvergänglichkeit. 2- Das eilende Bächlein. 3- Das schlafende Kind. 4- Stärker als der Tod. 5- Unvergänglichkeit" .
+
+<http://data.doremus.org/event/24ce1d3c-9d2d-3e10-ad6d-790c715b89a9>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/f2bc6455-7518-346b-b069-cb122f14725d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/9ec30f3f-c70d-3331-b54a-6bd847c343bd> .
+
+<http://data.doremus.org/expression/3361c898-ba89-3845-8b4a-1fd22da4e060>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/2c346fb7-5c7e-3c31-84e0-f2fe2454c0ab> .
+
+<http://data.doremus.org/expression/53534a2b-1034-3380-b891-521328fd619f>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "13" ;
+        mus:U11_has_key           <http://data.doremus.org/vocabulary/key/bm> ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique baroque"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/53534a2b-1034-3380-b891-521328fd619f/casting/1> ;
+        ecrm:P102_has_title       "Ordres" , "Ordre no 13" , "Treizième ordre" , "Les Lis naissans" , "Les Rozeaux" , "L'âme en peine" , "L'Engageante" , "Les Folies françoises, ou les Dominos" ;
+        ecrm:P3_has_note          "Ouvre le troisième livre publié en 1722. Couperin publie quatres livres sur une période de dix-sept ans (1713, 1717, 1722 et 1730) réunissant deux-cent-trente-trois pièces, groupés en vingt-sept \"Ordres\". Le 13ème ordre comprend : Les lis naissants (au précieux XVIIIème siècle, le lis est une fleur mais aussi le teint d'une jeune femme) ; Les rozeaux ; L'engageante ; Les folies françaises ou le dominos, ample comédie en douze parties, ou douze variations (les folies sont une allusion à la Follia, danse d'origine espagnole, dansée autrefois en travesti - d'où les dominos, qui sont des masques - et accompagnée de la guitare en improvisations chantées et mimées -d'où la forme à \"variations\". Elles deviennent avec Couperin bien françaises, sur un thème à trois temps, une série de petits tableaux qui se succèdent. ) ; L'âme en peine" .
+
+<http://data.doremus.org/event/f3e8099d-0dad-3dfe-8f09-e5f26673533a>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1955-1957" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1955/1957"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/7c090d69-93dc-397d-985f-a75268cbab51>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/064022e3-18a4-3c0b-bcfb-e3b6e297e36d> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/83320d92-deac-3351-83ff-7fe3a6f2f2a7> .
+
+<http://data.doremus.org/work/8e8eb819-8454-3b05-ba30-db69c95a2eb6>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/1f71e2f6-5d68-309d-9c4c-90b073db1c52> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a> .
+
+<http://data.doremus.org/work/dfe9ef0f-a60b-32d4-b80b-4b4ea2e6fb26>
+        a                          efrbroo:F14_Individual_Work ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/53534a2b-1034-3380-b891-521328fd619f> .
+
+<http://data.doremus.org/expression/7697d03e-8be3-37da-8dce-056b098cc711>
+        a                    efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre    [ a                         mus:M5_Genre ;
+                               ecrm:P1_is_identified_by  "musique contemporaine"@fr
+                             ] ;
+        mus:U13_has_casting  <http://data.doremus.org/expression/7697d03e-8be3-37da-8dce-056b098cc711/casting/1> ;
+        ecrm:P102_has_title  "Sequenza 11" , "Sequenza XI" ;
+        ecrm:P3_has_note     "Extrait du commentaire de F.-G. Tual : \"Dans la Sequenza pour guitare, l'instrument de la danse et de la sérénade ne cache rien de son passé, de ce qui fit son succès avant son entrée sur les scènes du concert. D'où un face-à-face opposant la tradition du flamenco (rasgado et effets de tambour) au patrimoine classique, un accord de base à celui naturellement dicté par les différentes cordes de la guitare. [...] L'art de concilier les contraires, échos de luth et de guitare électrique, tout en accentuant la théâtralité des gestes ; en milieu de pièce, le discours se brise avec humour comme si l'interprète devait réaccorder son instrument\". Commande : Associazione Filarmonica de Rovereto. Dédicace : Eliot Fisk, créateur de l'oeuvre. Durée : environ 15 minutes" , "Création : le 20 avril 1988 au théâtre Zandonai de Rovereto. Edité chez Universal" .
+
+<http://data.doremus.org/work/61349b1f-c8ca-36b8-aa3f-dc6f133a193e>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/5971933b-4d17-3b5b-b22d-530b97cf056b> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/6abaa561-fdab-3e17-a96f-ed7a10259138> .
+
+<http://data.doremus.org/performance/deb35121-a933-3e06-becc-531e10d4aea0>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créé à Vienne le 5 novembre 1920, par Maria Olszewka et le compositeur" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/5121a520-7f97-39c5-a11d-f4cc92f52d3e> .
+
+<http://data.doremus.org/event/a12aab4a-0263-391f-b120-025ae1744e25>
+        a                    efrbroo:F30_Publication_Event ;
+        ecrm:P3_has_note     "Editeur : Universal Edition." ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/d637722e-34e3-3ecf-ae2f-ffd2588fe64b> ;
+        efrbroo:R24_created  <http://data.doremus.org/publication/d7590ccd-dca9-375e-b2a5-10156416b642> .
+
+<http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e>
+        a                         efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number  "11" ;
+        mus:U11_has_key           [ a                         mus:M4_Key ;
+                                    ecrm:P1_is_identified_by  "Do mineur et majeur"@fr
+                                  ] ;
+        mus:U12_has_genre         <http://data.doremus.org/vocabulary/iaml/genre/su> ;
+        mus:U12_has_genre         [ a                         mus:M5_Genre ;
+                                    ecrm:P1_is_identified_by  "musique baroque"@fr
+                                  ] ;
+        mus:U13_has_casting       <http://data.doremus.org/expression/6041b81b-636b-3ce5-a581-7e85e7a9100e/casting/1> ;
+        ecrm:P102_has_title       "Onzième ordre" , "La Zénobie" , "Les Fastes de la grande et ancienne Ménestrandise." , "Les grâces-naturelles" , "Ordres" , "Pièces de clavecin. Livre 2 Ordre11" , "La Castelane" , "Ordre no 11" , "L'Etincelante ou la Bontemps" ;
+        ecrm:P3_has_note          "Fait partie du deuxième livre publié en 1716-1717. Couperin publie quatre livres en dix-sept ans (1713, 1717, 1722 et 1730). Deux-cent-trente-trois pièces sont groupées en vingt-sept ordres, . Le 11ème ordre comprend : La Castalane, L'Etincelante ou la Bontemps, Les Grâces naturelles, La Zénobie, Les Fastes de la grande et ancienne Ménestrandise. Les pièces de Couperin portent toujours un titre : le nom d'une danse, un sujet , souvent un nom de femme. Est-ce un portrait? une dédicace? Qui est la \"Castallane\" parmi les nombreux tenants de cette famille apparenté à Mme de Sévigné? Pour la \"Bontemps\"il s'agit de l'épouse de Louis-Alexandre de Bontemps, valet de chambre du roi, chargé d'organiser les concerts privés de sa majesté. Les\" Fastes de la grande et ancienne Ménestrandise\" renvoie à la querelle qui agita le monde musical dans les années 1692-95. La Corporation des Ménestrier dont le chef dirigeait la \"Bande des 24 violons du Roi\", prétendit que tous les musiciens, organistes, clavecinistes inclus, devraient être affiliés et cotiser. Les musiciens indépendants se révoltèrent et eurent gain de cause. Couperin, organiste du Roi et musicien de la \"Chambre\" était l'un d'eux.. Dans cette pièce en cinq parties, il se moque des prétentions des Ménéstriers à asservir tous les artistes." .
+
+<http://data.doremus.org/artist/c543bf3a-8b26-38c1-bd6b-b2b68dccbb17>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/event/569e56dd-3f09-33bc-a69f-e3c9ca778681>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/3f6c747c-f0a1-3baf-8d72-c75fefe42273> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/94085b38-d5da-3b12-82e4-7a824e2ad2f1> .
+
+<http://data.doremus.org/expression/37a086ee-aa6f-3dde-a760-b778fca313f9>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/94870bb5-ec69-34a7-b390-3122eb82a591> .
+
+<http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U12_has_genre           <http://data.doremus.org/vocabulary/diabolo/genre/lied> ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "22" ;
+                                      ecrm:P3_has_note         "Op. 22"
+                                    ] ;
+        ecrm:P102_has_title         "Trois Lieder" , "3 Lieder" , "Drei Lieder" ;
+        ecrm:P3_has_note            "Comprend : 1- Was Du mir bist ? (poème de Eleonore van der Straten). 2- Mit Dir zu schweigen (poème de Karl Kobald). 3- Welt ist stille eingeschlafen (poème de Karl Kobald)" .
+
+<http://data.doremus.org/work/beffc42f-2677-34e6-8a71-62952522d8d4>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/e3369dcb-e89e-3e72-a8e6-b019de778952> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/b2f051d5-c50a-3f54-b024-b8a9216e219d> .
+
+<http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U10_has_order_number    "4" ;
+        mus:U13_has_casting         <http://data.doremus.org/expression/d3b8443c-b193-3a2a-97ae-93de2a895194/casting/1> ;
+        mus:U17_has_opus_statement  [ a                        mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number  "37" ;
+                                      ecrm:P3_has_note         "Op. 37"
+                                    ] ;
+        ecrm:P102_has_title         "Quatuor à cordes no 4" , "Streichquartett" , "Quatuor no 4" , "String quartet" ;
+        ecrm:P3_has_note            "Création : 9 janvier 1937 à Los Angeles par le quatuor Kolisch" , "Commande d' Elizabeth Sprague-Coolidge. Ce quatuor, d'écriture sérielle, est divisé en quatre mouvements classiques : Allegro molto, energico ; Commodo ; Largo ; Allegro. Chacun de ces mouvements adopte les formes traditionnelles de sonate pour le premier, rondo pour le dernier, structure binaire pour le \"Largo\". Ce classiscisme est d'autant plus accentué que la série choisie favorise une thématique très clairement discernable, au sein d'un écriture particulièrement aérée." .
+
+<http://data.doremus.org/performance/7b2e72e1-f8ab-3f9a-9d2f-ef63d909b28d>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "15 juin 1995 au Théâtre du Châtelet, Paris, par Pascal Gallois, le dédicataire de l'oeuvre." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/702bae3d-ab5a-322e-8433-226cdcb80eb9> .
+
+<http://data.doremus.org/event/0d3307bd-fe42-3d52-baaf-cfb8ffa22182>
+        a                           efrbroo:F42_Representative_Expression_Assignment ;
+        efrbroo:R44_carried_out_by  <http://data.doremus.org/Philharmonie_de_Paris> ;
+        efrbroo:R50_assigned_to     <http://data.doremus.org/work/a60d9c12-c780-3763-9dda-dc1f600c079d> ;
+        efrbroo:R51_assigned        <http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6> .
+
+<http://data.doremus.org/performance/15330b86-9318-3ca8-87e1-b21d5705ac0a>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Créée en 1984 à Los Angeles Par David Stevens." ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/e9759004-27ec-30d4-8e30-cc6e519de14f> .
+
+<http://data.doremus.org/expression/87befd84-60fd-30f1-9279-55be8c2b1ab6>
+        a                       efrbroo:F25_Performance_Plan ;
+        ecrm:P165_incorporates  <http://data.doremus.org/expression/6d16439e-a187-33b2-91c2-4fb4b1360ee6> .
+
+<http://data.doremus.org/work/6d692eb4-29ae-3f2a-baa3-866213d6f31a>
+        a                          efrbroo:F14_Individual_Work ;
+        mus:U5_had_premiere        <http://data.doremus.org/performance/f8da3675-81f1-3868-92e0-1d71a4321de1> ;
+        efrbroo:R9_is_realised_in  <http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd> .
+
+<http://data.doremus.org/expression/c9e52b81-d42f-3da2-9efc-87e15b2f48a3>
+        a                           efrbroo:F22_Self-Contained_Expression ;
+        mus:U17_has_opus_statement  [ a                           mus:M2_Opus_Statement ;
+                                      mus:U42_has_opus_number     "118" ;
+                                      mus:U43_has_opus_subnumber  "3" ;
+                                      ecrm:P3_has_note            "Op. 118 no 3"
+                                    ] ;
+        ecrm:P102_has_title         "L'horizon chimérique" , "Diane Séléné" .
+
+<http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+        a       ecrm:E21_Person .
+
+<http://data.doremus.org/work/3f539bc4-9100-30c4-b8f3-b4ba3cf64164>
+        a                       efrbroo:F15_Complex_Work ;
+        efrbroo:R10_has_member  <http://data.doremus.org/work/1971940a-a9b2-33e5-908b-2c905749bf60> ;
+        efrbroo:R40_has_representative_expression
+                <http://data.doremus.org/expression/3276a718-43f2-3bbb-a756-1a17398107cd> .
+
+<http://data.doremus.org/event/92db3bb3-c3bb-378d-944a-d26743063270>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1966" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1966"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/32ae01e0-3543-3c0c-b20a-703fd4b0e997> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/0f22bb0f-95cc-3b97-968a-ddbbced997dc> .
+
+<http://data.doremus.org/event/97439ca0-15c9-3d6f-a16f-97f2a6bb7887>
+        a                      efrbroo:F28_Expression_Creation ;
+        ecrm:P10_falls_within  [ a                         ecrm:E4_Period ;
+                                 ecrm:P1_is_identified_by  "20 ème siècle - 2 ème moitié"
+                               ] ;
+        ecrm:P3_has_note       "1969" ;
+        ecrm:P4_has_time-span  [ a                             ecrm:E52_Time-Span ;
+                                 ecrm:P82_at_some_time_within  "1969"^^dcterms:W3CDTF
+                               ] ;
+        ecrm:P9_consists_of    [ a                             ecrm:E7_Activity ;
+                                 mus:U31_had_function_of_type  "compositeur"@fr ;
+                                 ecrm:P14_carried_out_by       <http://data.doremus.org/artist/c9449e42-4f79-3522-91e8-fc3156677a7a>
+                               ] ;
+        efrbroo:R17_created    <http://data.doremus.org/expression/a896127b-9658-3ee0-a714-44fa8247db64> ;
+        efrbroo:R19_created_a_realisation_of
+                <http://data.doremus.org/work/94a470ca-8531-300f-a8d6-6ed8a067a340> .
+
+<http://data.doremus.org/performance/cf86dbdb-1bd1-38c1-812e-9c8465ef865a>
+        a                      efrbroo:F31_Performance ;
+        ecrm:P3_has_note       "Création : 5 février 1907 à Vienne par le quatuor Rosé" ;
+        efrbroo:R25_performed  <http://data.doremus.org/expression/87befd84-60fd-30f1-9279-55be8c2b1ab6> .
+
+<http://data.doremus.org/expression/25189f7e-ebcb-34fe-a935-91afcd8089bf/casting/1>
+        a                 mus:M6_Casting ;
+        ecrm:P3_has_note  <http://data.doremus.org/vocabulary/diabolo/mop/basson> .
