@@ -1,2 +1,0 @@
-# DS<SUB>FP</SUB>
-Consists of a pair of datasets (from the BnF and the Philharmonie de Paris) containing each 33 musical works, which are very similar in their description. The data is given in their original MARC format and in a version converted to DOREMUS RDF. The aim here is to challenge the linking tools capacity to avoid the generation of false positives and match correctly instances in the presence of highly similar but still distinct candidates. The  refDS_FP.rdf file contains the refence (ground truth) alignmnet between the works. 
